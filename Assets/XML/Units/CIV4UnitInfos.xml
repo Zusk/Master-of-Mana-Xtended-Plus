@@ -4315,14 +4315,14 @@
             <Capture>NONE</Capture>
             <Combat>UNITCOMBAT_BEAST</Combat>
             <Domain>DOMAIN_LAND</Domain>
-            <DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
+            <DefaultUnitAI>UNITAI_ACHERON</DefaultUnitAI>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ACHERON</Description>
             <Civilopedia>TXT_KEY_UNIT_ACHERON_PEDIA</Civilopedia>
             <Strategy/>
             <Advisor>ADVISOR_MILITARY</Advisor>
-            <bAnimal>1</bAnimal>
+            <bAnimal>0</bAnimal>
             <bFood>0</bFood>
             <bNoBadGoodies>0</bNoBadGoodies>
             <bOnlyDefensive>0</bOnlyDefensive>
@@ -4332,6 +4332,7 @@
             <bMilitaryHappiness>1</bMilitaryHappiness>
             <bMilitarySupport>0</bMilitarySupport>
             <bMilitaryProduction>1</bMilitaryProduction>
+            <bPillage>1</bPillage>
             <bSpy>0</bSpy>
             <bSabotage>0</bSabotage>
             <bDestroy>0</bDestroy>
@@ -4407,8 +4408,8 @@
                     <iFlavor>10</iFlavor>
                 </Flavor>
             </Flavors>
-            <iAIWeight>0</iAIWeight>
-            <iCost>-1</iCost>
+            <iAIWeight>200</iAIWeight>
+            <iCost>100</iCost>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -4436,7 +4437,7 @@
             </TerrainPassableTechs>
             <FeaturePassableTechs>
             </FeaturePassableTechs>
-            <iCombat>46</iCombat>
+            <iCombat>15</iCombat>
             <iCombatLimit>100</iCombatLimit>
             <iAirCombat>0</iAirCombat>
             <iAirCombatLimit>0</iAirCombatLimit>
@@ -4456,24 +4457,8 @@
             <iHillsAttack>0</iHillsAttack>
             <iHillsDefense>0</iHillsDefense>
             <TerrainNatives>
-                <TerrainNative>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bTerrainNative>1</bTerrainNative>
-                </TerrainNative>
-                <TerrainNative>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bTerrainNative>1</bTerrainNative>
-                </TerrainNative>
             </TerrainNatives>
             <FeatureNatives>
-                <FeatureNative>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeatureNative>1</bFeatureNative>
-                </FeatureNative>
-                <FeatureNative>
-                    <FeatureType>FEATURE_FOREST_ANCIENT</FeatureType>
-                    <bFeatureNative>1</bFeatureNative>
-                </FeatureNative>
             </FeatureNatives>
             <TerrainAttacks>
             </TerrainAttacks>
@@ -4524,12 +4509,20 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <iHotKeyPriority>0</iHotKeyPriority>
             <FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MAGIC_RESISTANCE</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_DRAGON</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_FLYING</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
                 <FreePromotion>
-                    <PromotionType>PROMOTION_MAGIC_IMMUNE</PromotionType>
-                    <bFreePromotion>1</bFreePromotion>
-                </FreePromotion>
-                <FreePromotion>
-                    <PromotionType>PROMOTION_DRAGON</PromotionType>
+                    <PromotionType>PROMOTION_STONESKIN</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
                 <FreePromotion>
@@ -4543,11 +4536,35 @@
             </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <iCombatDefense>15</iCombatDefense>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_GOLD</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_GEMS</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MITHRIL</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
+            <DamageTypeCombats>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_FIRE</DamageType>
+                    <iCombat>4</iCombat>
+                </DamageTypeCombat>
+            </DamageTypeCombats>
             <iTier>4</iTier>
+            <PrereqCiv>CIVILIZATION_BARBARIAN</PrereqCiv>									
             <Image>Art/Interface/Popups/Acheron the Red Dragon.dds</Image>
             <PythonPostCombatLost>postCombatAcheron(pCaster,pOpponent)</PythonPostCombatLost>
-			<PrereqCiv>CIVILIZATION_ANIMAL</PrereqCiv>
-			<iMinWilderness>20</iMinWilderness>
         </UnitInfo>
         <UnitInfo>
             <Class>UNITCLASS_ADEPT</Class>
@@ -53267,6 +53284,10 @@
                 <ProductionTrait>
                     <ProductionTraitType>TRAIT_EGALITARIAN</ProductionTraitType>
                     <iProductionTrait>-50</iProductionTrait>
+                </ProductionTrait>
+                <ProductionTrait>
+                    <ProductionTraitType>TRAIT_BARBARIAN</ProductionTraitType>
+                    <iProductionTrait>-100</iProductionTrait>
                 </ProductionTrait>
             </ProductionTraits>
             <Flavors>
