@@ -933,6 +933,14 @@
 			<KFM/>
 			<NoShaderNIF/>
 			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ELEWEN</Type>
+			<Button>,Art/interface/LeaderHeads/Elewen_button.dds</Button>
+			<NIF>art/interface/LeaderHeads/Elewen.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
 		</LeaderheadArtInfo>		
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_KRO_MEAR</Type>
