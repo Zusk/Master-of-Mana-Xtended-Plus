@@ -500,6 +500,10 @@ class CvEventManager:
 				eTeam = gc.getTeam(pPlayer.getTeam())
 				eTeam.setHasTech(gc.getInfoTypeForString('TECH_SLAVERY'),true,-1,false,false)
 				
+			if pPlayer.hasTrait(gc.getInfoTypeForString('TRAIT_MERCIFUL')):
+				eTeam = gc.getTeam(pPlayer.getTeam())
+				eTeam.setHasTech(gc.getInfoTypeForString('TECH_HEALERS_GUILD'),true,-1,false,false)
+				
 			if pPlayer.hasTrait(gc.getInfoTypeForString('TRAIT_TRADER')):
 				eTeam = gc.getTeam(pPlayer.getTeam())
 				eTeam.setHasTech(gc.getInfoTypeForString('TECH_CARTOGRAPHY'),true,-1,false,false)
@@ -1303,6 +1307,20 @@ class CvEventManager:
 			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_HUGE'):
 				i = i + 3
 			cf.addBonus('BONUS_MANA',i,'Art/Interface/Buttons/WorldBuilder/mana_button.dds')
+
+		if iProjectType == gc.getInfoTypeForString('PROJECT_TWILIGHT_GENESIS'):
+			i = 7
+			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_DUEL'):
+				i = i - 3
+			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_TINY'):
+				i = i - 2
+			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_SMALL'):
+				i = i - 1
+			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_LARGE'):
+				i = i + 1
+			if CyMap().getWorldSize() == gc.getInfoTypeForString('WORLDSIZE_HUGE'):
+				i = i + 3
+			cf.addBonus('BONUS_RAZORWEED',i,'Art/Interface/Buttons/TechTree/Poisons.dds')
 
 		if iProjectType == gc.getInfoTypeForString('PROJECT_BLOOD_OF_THE_PHOENIX'):
 			py = PyPlayer(iPlayer)
