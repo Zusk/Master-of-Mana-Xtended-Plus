@@ -83,9 +83,15 @@
             <DamageTypeCombats>
                 <DamageTypeCombat>
                     <DamageType>DAMAGE_POISON</DamageType>
-                    <iCombat>4</iCombat>
+                    <iCombat>2</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
 			<bScaleWithTech>1</bScaleWithTech>			
         </UnitInfo>
         <UnitInfo>
@@ -117,7 +123,7 @@
             </UnitAIs>
             <iCost>50</iCost>
             <iMoves>1</iMoves>
-            <iCombat>7</iCombat>
+            <iCombat>6</iCombat>
 			<iConscription>2</iConscription>
 			<iCultureGarrison>2</iCultureGarrison>
              <UnitMeshGroups>
@@ -137,6 +143,12 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
             <iTier>2</iTier>
             <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
 			<bScaleWithTech>1</bScaleWithTech>	
@@ -168,7 +180,7 @@
             <iCost>70</iCost>
             <iMoves>2</iMoves>
             <iWorkRate>200</iWorkRate>
-            <iCombat>5</iCombat>
+            <iCombat>4</iCombat>
             <iAnimalCombat>100</iAnimalCombat>
             <SpecialCargo>SPECIALUNIT_BIRD</SpecialCargo>
             <DomainCargo>DOMAIN_AIR</DomainCargo>
@@ -260,6 +272,12 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
             <iTier>3</iTier>
             <iWeaponTier>3</iWeaponTier>
             <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
@@ -336,11 +354,17 @@
             <DamageTypeCombats>
                 <DamageTypeCombat>
                     <DamageType>DAMAGE_POISON</DamageType>
-                    <iCombat>4</iCombat>
+                    <iCombat>2</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>
             <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
 			<GlobalYieldTypeCost>YIELD_LEATHER</GlobalYieldTypeCost>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
 			<iGlobalYieldCost>400</iGlobalYieldCost>									
 			<bAIblockExplore>1</bAIblockExplore>
 			<bAIblockPatrol>1</bAIblockPatrol>
@@ -412,7 +436,7 @@
             <Combat>UNITCOMBAT_MELEE</Combat>
             <DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
             <Description>Iron Maiden</Description>
-            <Civilopedia></Civilopedia>
+            <Civilopedia>The replacement for Nightwatch in the late game.</Civilopedia>
             <Advisor>ADVISOR_MILITARY</Advisor>
             <PrereqTech>TECH_PHALANX</PrereqTech>
             <UnitAIs>
@@ -427,7 +451,7 @@
             </UnitAIs>
             <iCost>100</iCost>
             <iMoves>1</iMoves>
-            <iCombat>12</iCombat>
+            <iCombat>10</iCombat>
 			<iConscription>3</iConscription>
 			<iCultureGarrison>4</iCultureGarrison>
              <UnitMeshGroups>
@@ -462,6 +486,12 @@
             <iTier>4</iTier>
             <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
 			<GlobalYieldTypeCost>YIELD_METAL</GlobalYieldTypeCost>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
 			<iGlobalYieldCost>600</iGlobalYieldCost>									
 			<bScaleWithTech>1</bScaleWithTech>	
         </UnitInfo>
@@ -492,7 +522,7 @@
             <iCost>100</iCost>
             <iMoves>2</iMoves>
             <iWorkRate>200</iWorkRate>
-            <iCombat>15</iCombat>
+            <iCombat>13</iCombat>
             <iWithdrawalProb>20</iWithdrawalProb>
             <iWithdrawlProbDefensive>20</iWithdrawlProbDefensive>
             <iAnimalCombat>50</iAnimalCombat>
@@ -546,6 +576,12 @@
                 </DamageTypeCombat>
             </DamageTypeCombats>
             <iTier>4</iTier>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
             <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
 			<GlobalYieldTypeCost>YIELD_LEATHER</GlobalYieldTypeCost>
 			<iGlobalYieldCost>400</iGlobalYieldCost>									
