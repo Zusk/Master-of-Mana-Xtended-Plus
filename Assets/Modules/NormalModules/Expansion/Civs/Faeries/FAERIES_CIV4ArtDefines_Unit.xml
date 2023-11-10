@@ -1,0 +1,780 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:FAERIES_CIV4ArtDefinesSchema.xml">
+    <UnitArtInfos>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_LARINCSIDHE</Type>
+            <Button>Art/Interface/Buttons/Units/Seraph.dds</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Heroes/Larincsidhe/DeathAngel.nif</NIF>
+            <KFM>Art/Units/Heroes/Larincsidhe/DeathAngel.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.9</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_TREANT_SELECT</SelectionSound>												
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_ERLKING</Type>
+            <Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,7,2</Button>
+            <fScale>0.61</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Heroes/Erlking/Warrior.nif</NIF>
+            <KFM>Art/Units/Religions/Fellowship of Leaves/Satyr/warrior.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_HUMAN_FIGHTER_SELECT</SelectionSound>			
+            <ActionSound>AS3D_HUMAN_FIGHTER_SELECT</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_WARRIOR_FAERIES</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,4,14</Button>
+            <fScale>10</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Warrior/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>	
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_SCOUT_FAERIES</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,8,13</Button>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Scout/courtesan/Spy.nif</NIF>
+            <KFM>Art/Units/Civs/Balseraphs/Courtesan/Spy.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>	
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_HUNTER</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,1,13</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Hunter/succubus/sumerian_vulture.nif</NIF>
+            <KFM>Art\Units\Unique_Sumeria_Vulture\Unique_Sumerian_Vulture.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_RANGER</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,7,13</Button>
+            <fScale>0.52</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Ranger/Brigit/Brigit.nif</NIF>
+            <KFM>Art\Units\Unique_Sumeria_Vulture\Unique_Sumerian_Vulture blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIE_DRAKE</Type>
+            <Button>Art/Interface/Buttons/Units/FaerieMoon.dds</Button>
+            <fScale>11</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Faerie Dragon/storm_drake.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Faerie Dragon/storm_drake.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_LIZARDMAN_SELECT</SelectionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIE_DRAGON</Type>
+            <Button>Art/Interface/Buttons/Units/FaerieMoon.dds</Button>
+            <fScale>16</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Faerie Dragon/storm_drake.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Faerie Dragon/storm_drake.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_LIZARDMAN_SELECT</SelectionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIE_DRAGON_RIDER</Type>
+            <Button>Art/Interface/Buttons/Units/FaerieMoon.dds</Button>
+            <fScale>16</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Faerie Dragon Rider/storm_drake.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Faerie Dragon Rider/storm_drake.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_LIZARDMAN_SELECT</SelectionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_WILD_RIDER</Type>
+            <Button>,Art/Interface/Buttons/Units/HorseArcher.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,7</Button>
+            <fScale>0.42</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Wild Rider/HorseArcher.nif</NIF>
+            <KFM>Art/Units/HorseArcher/HorseArcher blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_HUMAN_FIGHTER_SELECT</SelectionSound>			
+            <ActionSound>AS3D_HUMAN_FIGHTER_SELECT</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_ARCHER</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,8,11</Button>
+            <fScale>0.4</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Archer/archer.nif</NIF>
+            <KFM>Art/Units/Archer/Archer blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_ELVEN_ARCHER_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_ELVEN_ARCHER_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_LONGBOWMAN</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,2,13</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Longbowman/Unique_Babylon_Bowman.nif</NIF>
+            <KFM>Art/Units/Unique_Babylon_Bowman/Unique_Babylon_Bowman blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_ELVEN_ARCHER_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_ELVEN_ARCHER_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_MARKSMAN</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,4,13</Button>
+            <fScale>0.4</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Marksman/Unique_Babylon_Bowman.nif</NIF>
+            <KFM>Art/Units/Unique_Babylon_Bowman/Unique_Babylon_Bowman blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_ELVEN_ARCHER_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_ELVEN_ARCHER_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_FLURRY</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,7,12</Button>
+            <fScale>0.4</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Flurry/waywatcher1.nif</NIF>
+            <KFM>Art/Units/Archer/Archer blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.85</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_ELVEN_ARCHER_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_ELVEN_ARCHER_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_ADEPT</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,7,11</Button>
+            <fScale>10</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Adept/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_AIR_ELEMENTAL_SELECT</SelectionSound>
+            <ActionSound>AS3D_AIR_ELEMENTAL_SELECT</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_MAGE</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,3,13</Button>
+            <fScale>14</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Mage/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_AIR_ELEMENTAL_SELECT</SelectionSound>
+            <ActionSound>AS3D_AIR_ELEMENTAL_SELECT</ActionSound>
+        </UnitArtInfo>	
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_ARCHMAGE</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,1,12</Button>
+            <fScale>18</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Archmage/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_AIR_ELEMENTAL_SELECT</SelectionSound>
+            <ActionSound>AS3D_AIR_ELEMENTAL_SELECT</ActionSound>
+        </UnitArtInfo>			
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_DRYAD</Type>
+			<Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,4,12</Button>
+			<fScale>16</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Civs/Faeries/Dryad/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+		</UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TROLL</Type>
+            <Button>Art/Interface/Buttons/Units/Troll.dds</Button>
+            <fScale>0.64</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Summons/Chaos Marauder/Warrior.nif</NIF>
+            <KFM>Art/Units/Warrior/warrior blood.kfm</KFM>
+            <SHADERNIF>Art/Units/Summons/Chaos Marauder/Warrior_FX.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PIXIE</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,6,13</Button>
+            <fScale>14</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Pixie/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_FEMALE_NEUTRAL_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_NEUTRAL_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAELORD</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,5,12</Button>
+            <fScale>0.36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Faelord/deathangel.nif</NIF>
+            <KFM>Art/Units/Civs/Mercurians/Seraph/DeathAngel.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_MALE_ELF_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_MALE_ELF_ORDER_VOX</ActionSound>
+        </UnitArtInfo>		
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAESUMMERLORD</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,2,14</Button>
+            <fScale>0.36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Summerlord/Seraph/deathangel.nif</NIF>
+            <KFM>Art/Units/Heroes/Larincsidhe/DeathAngel.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>1</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_MALE_ELF_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_MALE_ELF_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAEWINTERRLORD</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,5,14</Button>
+            <fScale>0.36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Winterlord/Seraph/deathangel.nif</NIF>
+            <KFM>Art/Units/Heroes/Larincsidhe/DeathAngel.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_MALE_ELF_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_MALE_ELF_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIESUN</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,3,14</Button>
+            <fScale>21</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Sun Faerie/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIEMOON</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,5,13</Button>
+            <fScale>21</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Moon Faerie/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_BEASTMASTER</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,2,12</Button>
+            <fScale>0.52</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Beastmaster/Brigit/Brigit.nif</NIF>
+            <KFM>Art\Units\Unique_Sumeria_Vulture\Unique_Sumerian_Vulture blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAE_DRUID</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,3,12</Button>
+            <fScale>21</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fae Druid/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_FEMALE_NEUTRAL_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_NEUTRAL_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FETCH</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,6,12</Button>
+            <fScale>21</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Fetch/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_FEMALE_EVIL_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_EVIL_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIE_FURIE</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,8,12</Button>
+            <fScale>16</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Furie/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_FEMALE_EVIL_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_EVIL_ORDER_VOX</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAERIE_SPRITE</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,1,14</Button>
+            <fScale>14</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Civs/Faeries/Sprite/golshan.nif</NIF>
+            <KFM>Art/Units/Civs/Faeries/Fae Warrior/golshan.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>0.0</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.20</fBattleDistance>
+                <fRangedDeathTime>0.28</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_FEMALE_FAERIES_SELECT</SelectionSound>
+            <ActionSound>AS3D_FEMALE_FAERIES_TRAIN</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FOXFIRE</Type>
+            <Button>Art/Interface/Buttons/Units/FoxFire.dds</Button>
+            <fScale>0.5</fScale>
+            <fInterfaceScale>1.4</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Heroes/Foxfire/Wolf.nif</NIF>
+            <KFM>Art/Units/Wolf/Wolf blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+                <ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_WOLF_FIDGT_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_WOLF_ATTK_VOX</ActionSound>
+        </UnitArtInfo>		
+    </UnitArtInfos>    
+</Civ4ArtDefines>

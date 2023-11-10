@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:ARISTRAKH_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PALACE_ARI</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/cities/med infernal/MIDGAR3.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NECROPOLIS_ARISTRAKH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,1,9</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_VAMPIRE_PALACE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Equipment/vampiric.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_UNDEAD_CITY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,16</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DECAYING_SOIL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,5,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HAUNTED_ROADS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,6,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MAUSOLEUM</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_UNHOLY_GLYPHS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,8,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BONE_CAGE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CATACOMBS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SOUL_PRISON</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,3,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_FORLORN_VAULT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HAUNTED_TOWER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,5,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HALLS_OF_THE_DEAD</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BURIAL_MOUND</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,6,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_UNEARTHED_GRAVES</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,8,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MORTUARY_ENCLOSURE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas2.dds,3,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SACRIFICIAL_PIT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas2.dds,4,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DEFILING_CATALYST</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,7,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_VOID_CATALYST</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,3,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NEXUS_KNOWLEDGE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,8,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NEXUS_WEALTH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,1,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NEXUS_POWER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,2,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NECROSAGE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,3,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CEMETERY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,1,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TAINTED_WELL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,7,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SOUL_FUNNEL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,8,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PERNICIOUS_DIRGE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,1,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CIRCLE_OF_DESPAIR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,4,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CIRCLE_OF_BLOOD</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CABAL_SHRINE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,2,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GRAVE_PACT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,8,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NECRA_SANCTUARY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,6,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MARK_OF_NIGHT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,7,12</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_VILE_REQUIEM</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NOXIOUS_FIELD</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,2,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BANEFUL_OMEN</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,3,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_UNHALLOWED_PIT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,6,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WITHERING_HEX</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,4,13</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_UNIVERSITY_ARISTRAKH</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/DarkIS/DIronSanctum.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,8</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

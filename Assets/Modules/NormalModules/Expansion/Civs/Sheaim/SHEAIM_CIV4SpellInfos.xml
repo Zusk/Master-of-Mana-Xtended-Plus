@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:SHEAIM_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+		<SpellInfo>
+			<Type>SPELL_SACRIFICE_POPULATION</Type>
+            <Description>TXT_KEY_SPELL_SACRIFICE_POPULATION</Description>
+            <Civilopedia>TXT_KEY_SPELL_SACRIFICE_POPULATION_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_SACRIFICE_POPULATION_HELP</Help>
+			<bAllowAI>1</bAllowAI>
+            <iAIWeight>200</iAIWeight>
+            <bInBordersOnly>1</bInBordersOnly>
+            <bInCityOnly>1</bInCityOnly>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <CreateBuildingType>BUILDING_DEMONIC_CITIZENS</CreateBuildingType>
+			<!-- <BuildingPrereq>BUILDING_DEMONIC_ENCLAVE</BuildingPrereq> -->
+			<bInCityOnly>1</bInCityOnly>
+			<bSacrificeCaster>1</bSacrificeCaster>
+			<iChangePopulation>-9</iChangePopulation>
+			<UnitCombatPrereq>UNITCOMBAT_ADEPT</UnitCombatPrereq>
+			<iCasterMinLevel>20</iCasterMinLevel>
+			<Effect>EFFECT_SACRIFICE</Effect>
+            <Sound>AS3D_SPELL_FEAST</Sound>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,7</Button>
+		</SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_CONSUME_SOUL</Type>
+            <Description>TXT_KEY_SPELL_CONSUME_SOUL</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_CONSUME_SOUL_HELP</Help>
+            <UnitPrereq>UNIT_EATER_OF_DREAMS</UnitPrereq>
+            <bInBordersOnly>1</bInBordersOnly>
+            <bInCityOnly>1</bInCityOnly>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bIgnoreHasCasted>1</bIgnoreHasCasted>
+            <AddPromotionType1>PROMOTION_WILLPOWER</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bRemoveHasCasted>1</bRemoveHasCasted>
+            <iChangePopulation>-1</iChangePopulation>
+            <Effect>EFFECT_WITHER</Effect>
+            <Sound>AS3D_SPELL_CONSUME_SOUL</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,3,2</Button>
+        </SpellInfo>		
+    </SpellInfos>
+</Civ4SpellInfos>

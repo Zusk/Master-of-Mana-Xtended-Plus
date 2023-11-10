@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_EPIC_ADVENTURE</Tag>
+        <English>Epic Destiny</English>
+        <French>Epic Destiny</French>
+        <German>Epic Destiny</German>
+        <Italian>Epic Destiny</Italian>
+        <Spanish>Epic Destiny</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_EPIC_ADVENTURE_STATUS</Tag>
+        <English>Status:</English>
+        <French>Status:</French>
+        <German>Status:</German>
+        <Italian>Status:</Italian>
+        <Spanish>Status:</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_EPIC_ADVENTURE_FINISHED</Tag>
+        <English>Finished</English>
+        <French>Finished</French>
+        <German>Finished</German>
+        <Italian>Finished</Italian>
+        <Spanish>Finished</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_EPIC_ADVENTURE_UNFINISHED</Tag>
+        <English>Unfinished</English>
+        <French>Unfinished</French>
+        <German>Unfinished</German>
+        <Italian>Unfinished</Italian>
+        <Spanish>Unfinished</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_EPIC_ADVENTURE_FAILED</Tag>
+        <English>Failed</English>
+        <French>Failed</French>
+        <German>Failed</German>
+        <Italian>Failed</Italian>
+        <Spanish>Failed</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VICTORY_SCREEN_EPIC_ADVENTURE_OK</Tag>
+        <English>Valid</English>
+        <French>Valid</French>
+        <German>Valid</German>
+        <Italian>Valid</Italian>
+        <Spanish>Valid</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DOVIELLO_EPIC1</Tag>
+        <English>Make War not Love</English>
+        <French>Make War not Love</French>
+        <German>Make War not Love</German>
+        <Italian>Make War not Love</Italian>
+        <Spanish>Make War not Love</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DOVIELLO_EPIC2</Tag>
+        <English>Lucian and his Men</English>
+        <French>Lucian and his Men</French>
+        <German>Lucian and his Men</German>
+        <Italian>Lucian and his Men</Italian>
+        <Spanish>Lucian and his Men</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DOVIELLO_EPIC3</Tag>
+        <English>Wild Warriors</English>
+        <French>Wild Warriors</French>
+        <German>Wild Warriors</German>
+        <Italian>Wild Warriors</Italian>
+        <Spanish>Wild Warriors</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION</Tag>
+        <English>Civilizations Destroyed: %D1 of %D2</English>
+        <French>Civilizations Destroyed: %D1 of %D2</French>
+        <German>Civilizations Destroyed: %D1 of %D2</German>
+        <Italian>Civilizations Destroyed: %D1 of %D2</Italian>
+        <Spanish>Civilizations Destroyed: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_IMPROVEMENT_PILLAGED</Tag>
+        <English>Improvements pillaged: %D1 of %D2</English>
+        <French>Improvements pillaged: %D1 of %D2</French>
+        <German>Improvements pillaged: %D1 of %D2</German>
+        <Italian>Improvements pillaged: %D1 of %D2</Italian>
+        <Spanish>Improvements pillaged: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SLAVES_CREATED</Tag>
+        <English>Slaves Created: %D1 of %D2</English>
+        <French>Slaves Created: %D1 of %D2</French>
+        <German>Slaves Created: %D1 of %D2</German>
+        <Italian>Slaves Created: %D1 of %D2</Italian>
+        <Spanish>Slaves Created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_MONK</Tag>
+        <English>Monks Created: %D1 of %D2</English>
+        <French>Monks Created: %D1 of %D2</French>
+        <German>Monks Created: %D1 of %D2</German>
+        <Italian>Monks Created: %D1 of %D2</Italian>
+        <Spanish>Monks Created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_UNITS_CIV_KILLED</Tag>
+        <English>Non barbarian Units killed: %D1 of %D2</English>
+        <French>Non barbarian Units killed: %D1 of %D2</French>
+        <German>Non barbarian Units killed: %D1 of %D2</German>
+        <Italian>Non barbarian Units killed: %D1 of %D2</Italian>
+        <Spanish>Non barbarian Units killed: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_LUCIAN_LEVEL_NEEDED_20</Tag>
+        <English>Lucian Coldiron reached Level 20</English>
+        <French>Lucian Coldiron reached Level 20</French>
+        <German>Lucian Coldiron reached Level 20</German>
+        <Italian>Lucian Coldiron reached Level 20</Italian>
+        <Spanish>Lucian Coldiron reached Level 20</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BARNAXUS_LEVEL_20</Tag>
+        <English>Barnaxus reached Level 20</English>
+        <French>Barnaxus reached Level 20</French>
+        <German>Barnaxus reached Level 20</German>
+        <Italian>Barnaxus reached Level 20</Italian>
+        <Spanish>Barnaxus reached Level 20</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CIRCLE_OF_URD_LEVEL_NEEDED_10</Tag>
+        <English>Circle of Urd Units reached Level 10: %D1 of %D2</English>
+        <French>Circle of Urd Units reached Level 10: %D1 of %D2</French>
+        <German>Circle of Urd Units reached Level 10: %D1 of %D2</German>
+        <Italian>Circle of Urd Units reached Level 10: %D1 of %D2</Italian>
+        <Spanish>Circle of Urd Units reached Level 10: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_VAMPIRE_LEVEL_20</Tag>
+        <English>Vampires reached Level 10: %D1 of %D2</English>
+        <French>Vampires reached Level 10: %D1 of %D2</French>
+        <German>Vampires reached Level 10: %D1 of %D2</German>
+        <Italian>Vampires reached Level 10: %D1 of %D2</Italian>
+        <Spanish>Vampires reached Level 10: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_VAMPIRE_LORD_LEVEL_30</Tag>
+        <English>Eternal Lord reached Level 15</English>
+        <French>Eternal Lord reached Level 15</French>
+        <German>Eternal Lord reached Level 15</German>
+        <Italian>Eternal Lord reached Level 15</Italian>
+        <Spanish>Eternal Lord reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_LOSHA_LEVEL_30</Tag>
+        <English>Losha reached Level 15</English>
+        <French>Losha reached Level 15</French>
+        <German>Losha reached Level 15</German>
+        <Italian>Losha reached Level 15</Italian>
+        <Spanish>Losha reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_GET_TROPHY_FROM_ANIMAL</Tag>
+        <English>Trophies from Animals gathered: %D1 of %D2</English>
+        <French>Trophies from Animals gathered: %D1 of %D2</French>
+        <German>Trophies from Animals gathered: %D1 of %D2</German>
+        <Italian>Trophies from Animals gathered: %D1 of %D2</Italian>
+        <Spanish>Trophies from Animals gathered: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_AMURITES_EPIC1</Tag>
+        <English>Arcana Unleashed</English>
+        <French>Arcana Unleashed</French>
+        <German>Arcana Unleashed</German>
+        <Italian>Arcana Unleashed</Italian>
+        <Spanish>Arcana Unleashed</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_AMURITES_EPIC2</Tag>
+        <English>Spell Research</English>
+        <French>Spell Research</French>
+        <German>Spell Research</German>
+        <Italian>Spell Research</Italian>
+        <Spanish>Spell Research</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_AMURITES_EPIC3</Tag>
+        <English>Govannons Legacy</English>
+        <French>Govannons Legacy</French>
+        <German>Govannons Legacy</German>
+        <Italian>Govannons Legacy</Italian>
+        <Spanish>Govannons Legacy</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SHEAIM_EPIC1</Tag>
+        <English>Immortality</English>
+        <French>Immortality</French>
+        <German>Immortality</German>
+        <Italian>Immortality</Italian>
+        <Spanish>Immortality</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SHEAIM_EPIC2</Tag>
+        <English>Demonae adiuvate me</English>
+        <French>Demonae adiuvate me</French>
+        <German>Demonae adiuvate me</German>
+        <Italian>Demonae adiuvate me</Italian>
+        <Spanish>Demonae adiuvate me</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SHEAIM_EPIC3</Tag>
+        <English>End of all things</English>
+        <French>End of all things</French>
+        <German>End of all things</German>
+        <Italian>End of all things</Italian>
+        <Spanish>End of all things</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_ANY_SPELL</Tag>
+        <English>Damage Spells Cast: %D1 of %D2</English>
+        <French>Damage Spells Cast: %D1 of %D2</French>
+        <German>Damage Spells Cast: %D1 of %D2</German>
+        <Italian>Damage Spells Cast: %D1 of %D2</Italian>
+        <Spanish>Damage Spells Cast: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_WIZARDS_CREATED</Tag>
+        <English>Adepts guided to become Wizards: %D1 of %D2</English>
+        <French>Adepts guided to become Wizards: %D1 of %D2</French>
+        <German>Adepts guided to become Wizards: %D1 of %D2</German>
+        <Italian>Adepts guided to become Wizards: %D1 of %D2</Italian>
+        <Spanish>Adepts guided to become Wizards: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_ARCHMAGES_CREATED</Tag>
+        <English>Wizards helped to become Archmages: %D1 of %D2</English>
+        <French>Wizards helped to become Archmages: %D1 of %D2</French>
+        <German>Wizards helped to become Archmages: %D1 of %D2</German>
+        <Italian>Wizards helped to become Archmages: %D1 of %D2</Italian>
+        <Spanish>Wizards helped to become Archmages: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_PROMOTE_METAMAGIC3</Tag>
+        <English>Units promoted to Metamagic3: %D1 of %D2</English>
+        <French>Units promoted to Metamagic3: %D1 of %D2</French>
+        <German>Units promoted to Metamagic3: %D1 of %D2</German>
+        <Italian>Units promoted to Metamagic3: %D1 of %D2</Italian>
+        <Spanish>Units promoted to Metamagic3: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_UNIT_GOVANNON_CREATED</Tag>
+        <English>Govannon created: %D1 of %D2</English>
+        <French>Govannon created: %D1 of %D2</French>
+        <German>Govannon created: %D1 of %D2</German>
+        <Italian>Govannon created: %D1 of %D2</Italian>
+        <Spanish>Govannon created: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OS_GABELLA_LEVEL_15</Tag>
+        <English>Os Gabella reached Level 15</English>
+        <French>Os Gabella reached Level 15</French>
+        <German>Os Gabella reached Level 15</German>
+        <Italian>Os Gabella reached Level 15</Italian>
+        <Spanish>Os Gabella reached Level 15</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_HARMATT_LEVEL_15</Tag>
+        <English>Harmatt reached Level 15</English>
+        <French>Harmatt reached Level 15</French>
+        <German>Harmatt reached Level 15</German>
+        <Italian>Harmatt reached Level 15</Italian>
+        <Spanish>Harmatt reached Level 15</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_RANTINE_LEVEL_15</Tag>
+        <English>Rantine reached Level 15</English>
+        <French>Rantine reached Level 15</French>
+        <German>Rantine reached Level 15</German>
+        <Italian>Rantine reached Level 15</Italian>
+        <Spanish>Rantine reached Level 15</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SHEIAM_SUMMON_DEMON</Tag>
+        <English>Demons summoned to Erebus: %D1 of %D2</English>
+        <French>Demons summoned to Erebus: %D1 of %D2</French>
+        <German>Demons summoned to Erebus: %D1 of %D2</German>
+        <Italian>Demons summoned to Erebus: %D1 of %D2</Italian>
+        <Spanish>Demons summoned to Erebus: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_AC_COUNTER_100</Tag>
+        <English>Armageddoncounter at 100</English>
+        <French>Armageddoncounter at 100</French>
+        <German>Armageddoncounter at 100</German>
+        <Italian>Armageddoncounter at 100</Italian>
+        <Spanish>Armageddoncounter at 100</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BALSERAPHS_EPIC1</Tag>
+        <English>The Freak Show</English>
+        <French>The Freak Show</French>
+        <German>The Freak Show</German>
+        <Italian>The Freak Show</Italian>
+        <Spanish>The Freak Show</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BALSERAPHS_EPIC2</Tag>
+        <English>Lets put a smile on that face</English>
+        <French>Lets put a smile on that face</French>
+        <German>Lets put a smile on that face</German>
+        <Italian>Lets put a smile on that face</Italian>
+        <Spanish>Lets put a smile on that face</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BALSERAPHS_EPIC3</Tag>
+        <English>Grand Menagerie</English>
+        <French>Grand Menagerie</French>
+        <German>Grand Menagerie</German>
+        <Italian>Grand Menagerie</Italian>
+        <Spanish>Grand Menagerie</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BALSERAPHS_EPIC4</Tag>
+        <English>Long Beards and they smell funny</English>
+        <French>Long Beards and they smell funny</French>
+        <German>Long Beards and they smell funny</German>
+        <Italian>Long Beards and they smell funny</Italian>
+        <Spanish>Long Beards and they smell funny</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BALSERAPHS_EPIC5</Tag>
+        <English>Stupid ears</English>
+        <French>Stupid ears</French>
+        <German>Stupid ears</German>
+        <Italian>Stupid ears</Italian>
+        <Spanish>Stupid ears</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_UNIT_FREAK_CREATED</Tag>
+        <English>Freaks created: %D1 of %D2</English>
+        <French>Freaks created: %D1 of %D2</French>
+        <German>Freaks created: %D1 of %D2</German>
+        <Italian>Freaks created: %D1 of %D2</Italian>
+        <Spanish>Freaks created: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_SHADE</Tag>
+        <English>Shades created: %D1 of %D2</English>
+        <French>Shades created: %D1 of %D2</French>
+        <German>Shades created: %D1 of %D2</German>
+        <Italian>Shades created: %D1 of %D2</Italian>
+        <Spanish>Shades created: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_ADVENTURESTEP_PROMOTE_MUTATED</Tag>
+        <English>Units mutated: %D1 of %D2</English>
+        <French>Units mutated: %D1 of %D2</French>
+        <German>Units mutated: %D1 of %D2</German>
+        <Italian>Units mutated: %D1 of %D2</Italian>
+        <Spanish>Units mutated: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_TAUNT</Tag>
+        <English>Units taunted: %D1 of %D2</English>
+        <French>Units taunted: %D1 of %D2</French>
+        <German>Units taunted: %D1 of %D2</German>
+        <Italian>Units taunted: %D1 of %D2</Italian>
+        <Spanish>Units taunted: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_BURNING_BLOOD</Tag>
+        <English>Moroi used Burning Blood: %D1 of %D2</English>
+        <French>Moroi used Burning Blood: %D1 of %D2</French>
+        <German>Moroi used Burning Blood: %D1 of %D2</German>
+        <Italian>Moroi used Burning Blood: %D1 of %D2</Italian>
+        <Spanish>Moroi used Burning Blood: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_FEED</Tag>
+        <English>Bloodpets feeded to Vampires: %D1 of %D2</English>
+        <French>Bloodpets feeded to Vampires: %D1 of %D2</French>
+        <German>Bloodpets feeded to Vampires: %D1 of %D2</German>
+        <Italian>Bloodpets feeded to Vampires: %D1 of %D2</Italian>
+        <Spanish>Bloodpets feeded to Vampires: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_MIMIC_PROMOTION</Tag>
+        <English>Promotions stolen by Mimics: %D1 of %D2</English>
+        <French>Promotions stolen by Mimics: %D1 of %D2</French>
+        <German>Promotions stolen by Mimics: %D1 of %D2</German>
+        <Italian>Promotions stolen by Mimics: %D1 of %D2</Italian>
+        <Spanish>Promotions stolen by Mimics: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_THE_MENAGERIE</Tag>
+        <English>Own the Menagerie</English>
+        <French>Own the Menagerie</French>
+        <German>Own the Menagerie</German>
+        <Italian>Own the Menagerie</Italian>
+        <Spanish>Own the Menagerie</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_A_DWARF_CAGE</Tag>
+        <English>Build a Cage for a dwarven Slave</English>
+        <French>Build a Cage for a dwarven Slave</French>
+        <German>Build a Cage for a dwarven Slave</German>
+        <Italian>Build a Cage for a dwarven Slave</Italian>
+        <Spanish>Build a Cage for a dwarven Slave</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_A_ELF_CAGE</Tag>
+        <English>Build a Cage for an elven Slave</English>
+        <French>Build a Cage for an elven Slave</French>
+        <German>Build a Cage for an elven Slave</German>
+        <Italian>Build a Cage for an elven Slave</Italian>
+        <Spanish>Build a Cage for an elven Slave</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BANNOR_EPIC1</Tag>
+        <English>One last Crusade</English>
+        <French>One last Crusade</French>
+        <German>One last Crusade</German>
+        <Italian>One last Crusade</Italian>
+        <Spanish>One last Crusade</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BANNOR_EPIC2</Tag>
+        <English>Send them to Hell</English>
+        <French>Send them to Hell</French>
+        <German>Send them to Hell</German>
+        <Italian>Send them to Hell</Italian>
+        <Spanish>Send them to Hell</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BANNOR_EPIC3</Tag>
+        <English>Ashen Veil, to ashes</English>
+        <French>Ashen Veil, to ashes</French>
+        <German>Ashen Veil, to ashes</German>
+        <Italian>Ashen Veil, to ashes</Italian>
+        <Spanish>Ashen Veil, to ashes</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_CRUSADE_CIVIC</Tag>
+        <English>Turns in Crusade: %D1 of %D2</English>
+        <French>Turns in Crusade: %D1 of %D2</French>
+        <German>Turns in Crusade: %D1 of %D2</German>
+        <Italian>Turns in Crusade: %D1 of %D2</Italian>
+        <Spanish>Turns in Crusade: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_PACIFISM_CIVIC</Tag>
+        <English>Turns in Pacifism: %D1 of %D2</English>
+        <French>Turns in Pacifism: %D1 of %D2</French>
+        <German>Turns in Pacifism: %D1 of %D2</German>
+        <Italian>Turns in Pacifism: %D1 of %D2</Italian>
+        <Spanish>Turns in Pacifism: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DEMAGOGS_CREATED</Tag>
+        <English>Demagogs recruited: %D1 of %D2</English>
+        <French>Demagogs recruited: %D1 of %D2</French>
+        <German>Demagogs recruited: %D1 of %D2</German>
+        <Italian>Demagogs recruited: %D1 of %D2</Italian>
+        <Spanish>Demagogs recruited: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION_SHEAIM</Tag>
+        <English>Sheaim Civilization destroyed</English>
+        <French>Sheaim Civilization destroyed</French>
+        <German>Sheaim Civilization destroyed</German>
+        <Italian>Sheaim Civilization destroyed</Italian>
+        <Spanish>Sheaim Civilization destroyed</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_RAZE_HOLY_CITY_ASHEN_VEIL</Tag>
+        <English>Raze Ashen Veil Holy City</English>
+        <French>Raze Ashen Veil Holy City</French>
+        <German>Raze Ashen Veil Holy City</German>
+        <Italian>Raze Ashen Veil Holy City</Italian>
+        <Spanish>Raze Ashen Veil Holy City</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_CALABIM_EPIC1</Tag>
+        <English>Fresh Meat</English>
+        <French>Fresh Meat</French>
+        <German>Fresh Meat</German>
+        <Italian>Fresh Meat</Italian>
+        <Spanish>Fresh Meat</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_CALABIM_EPIC2</Tag>
+        <English>Killing me Softly</English>
+        <French>Killing me Softly</French>
+        <German>Killing me Softly</German>
+        <Italian>Killing me Softly</Italian>
+        <Spanish>Killing me Softly</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ELOHIM_EPIC1</Tag>
+        <English>Prepared for Peace</English>
+        <French>Prepared for Peace</French>
+        <German>Prepared for Peace</German>
+        <Italian>Prepared for Peace</Italian>
+        <Spanish>Prepared for Peace</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ELOHIM_EPIC2</Tag>
+        <English>to Hell with the Armageddon</English>
+        <French>to Hell with the Armageddon</French>
+        <German>to Hell with the Armageddon</German>
+        <Italian>to Hell with the Armageddon</Italian>
+        <Spanish>to Hell with the Armageddon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_PURITY_COUNTER_100</Tag>
+        <English>Purity Counter 100</English>
+        <French>Purity Counter 100</French>
+        <German>Purity Counter 100</German>
+        <Italian>Purity Counter 100</Italian>
+        <Spanish>Purity Counter 100</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_REDUCE_AC_TO_10</Tag>
+        <English>Reduce Armageddon Counter below 10</English>
+        <French>Reduce Armageddon Counter below 10</French>
+        <German>Reduce Armageddon Counter below 10</German>
+        <Italian>Reduce Armageddon Counter below 10</Italian>
+        <Spanish>Reduce Armageddon Counter below 10</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_EXPLORE_DUNGEON</Tag>
+        <English>Dungeons explored: %D1 of %D2</English>
+        <French>Dungeons explored: %D1 of %D2</French>
+        <German>Dungeons explored: %D1 of %D2</German>
+        <Italian>Dungeons explored: %D1 of %D2</Italian>
+        <Spanish>Dungeons explored: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_ENLIGHTEN_CITY</Tag>
+        <English>Cities enlighted: %D1 of %D2</English>
+        <French>Cities enlighted: %D1 of %D2</French>
+        <German>Cities enlighted: %D1 of %D2</German>
+        <Italian>Cities enlighted: %D1 of %D2</Italian>
+        <Spanish>Cities enlighted: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_ADVENTURER</Tag>
+        <English>Adventurers Hired: %D1 of %D2</English>
+        <French>Adventurers Hired: %D1 of %D2</French>
+        <German>Adventurers Hired: %D1 of %D2</German>
+        <Italian>Adventurers Hired: %D1 of %D2</Italian>
+        <Spanish>Adventurers Hired: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_LUONOTAR</Tag>
+        <English>Luonnotars created: %D1 of %D2</English>
+        <French>Luonnotars created: %D1 of %D2</French>
+        <German>Luonnotars created: %D1 of %D2</German>
+        <Italian>Luonnotars created: %D1 of %D2</Italian>
+        <Spanish>Luonnotars created: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_HIPPUS_EPIC1</Tag>
+        <English>The Riders of Rhoanna</English>
+        <French>The Riders of Rhoanna</French>
+        <German>The Riders of Rhoanna</German>
+        <Italian>The Riders of Rhoanna</Italian>
+        <Spanish>The Riders of Rhoanna</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_HIPPUS_EPIC2</Tag>
+        <English>Magnadine at the Gates</English>
+        <French>Magnadine at the Gates</French>
+        <German>Magnadine at the Gates</German>
+        <Italian>Magnadine at the Gates</Italian>
+        <Spanish>Magnadine at the Gates</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_HIPPUS_EPIC3</Tag>
+        <English>They did not pay in time</English>
+        <French>They did not pay in time</French>
+        <German>They did not pay in time</German>
+        <Italian>They did not pay in time</Italian>
+        <Spanish>They did not pay in time</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_HORSEMAN</Tag>
+        <English>Horseman Hired: %D1 of %D2</English>
+        <French>Horseman Hired: %D1 of %D2</French>
+        <German>Horseman Hired: %D1 of %D2</German>
+        <Italian>Horseman Hired: %D1 of %D2</Italian>
+        <Spanish>Horseman Hired: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_HORSEARCHER</Tag>
+        <English>Horsearchers Hired: %D1 of %D2</English>
+        <French>Horsearchers Hired: %D1 of %D2</French>
+        <German>Horsearchers Hired: %D1 of %D2</German>
+        <Italian>Horsearchers Hired: %D1 of %D2</Italian>
+        <Spanish>Horsearchers Hired: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_WOOD_GOLEM</Tag>
+        <English>Woodgolems crafted: %D1 of %D2</English>
+        <French>Woodgolems crafted: %D1 of %D2</French>
+        <German>Woodgolems crafted: %D1 of %D2</German>
+        <Italian>Woodgolems crafted: %D1 of %D2</Italian>
+        <Spanish>Woodgolems crafted: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_IRON_GOLEM</Tag>
+        <English>Irongolems crafted: %D1 of %D2</English>
+        <French>Irongolems crafted: %D1 of %D2</French>
+        <German>Irongolems crafted: %D1 of %D2</German>
+        <Italian>Irongolems crafted: %D1 of %D2</Italian>
+        <Spanish>Irongolems crafted: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPELL_HIRE_UNITS</Tag>
+        <English>Units hired by Magnadine: %D1 of %D2</English>
+        <French>Units hired by Magnadine: %D1 of %D2</French>
+        <German>Units hired by Magnadine: %D1 of %D2</German>
+        <Italian>Units hired by Magnadine: %D1 of %D2</Italian>
+        <Spanish>Units hired by Magnadine: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_MAGNADINE_LEVEL_15</Tag>
+        <English>Magnadine reached Level 15</English>
+        <French>Magnadine reached Level 15</French>
+        <German>Magnadine reached Level 15</German>
+        <Italian>Magnadine reached Level 15</Italian>
+        <Spanish>Magnadine reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ILLIANS_EPIC1</Tag>
+        <English>Old Glory</English>
+        <French>Old Glory</French>
+        <German>Old Glory</German>
+        <Italian>Old Glory</Italian>
+        <Spanish>Old Glory</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_AURIC_ASCENDED</Tag>
+        <English>Auric ascended</English>
+        <French>Auric ascended</French>
+        <German>Auric ascended</German>
+        <Italian>Auric ascended</Italian>
+        <Spanish>Auric ascended</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DRIFA_LEVEL_15</Tag>
+        <English>Drifa reached Level 15</English>
+        <French>Drifa reached Level 15</French>
+        <German>Drifa reached Level 15</German>
+        <Italian>Drifa reached Level 15</Italian>
+        <Spanish>Drifa reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_TARANIS_ASCENDED</Tag>
+        <English>Taranis ascended</English>
+        <French>Taranis ascended</French>
+        <German>Taranis ascended</German>
+        <Italian>Taranis ascended</Italian>
+        <Spanish>Taranis ascended</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_TARANIS_ASCENDED_LEVEL_15</Tag>
+        <English>Taranis Ascended reached Level 15</English>
+        <French>Taranis Ascended reached Level 15</French>
+        <German>Taranis Ascended reached Level 15</German>
+        <Italian>Taranis Ascended reached Level 15</Italian>
+        <Spanish>Taranis Ascended reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_KURIOTATES_EPIC1</Tag>
+        <English>Legends of Erebus</English>
+        <French>Legends of Erebus</French>
+        <German>Legends of Erebus</German>
+        <Italian>Legends of Erebus</Italian>
+        <Spanish>Legends of Erebus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DURAL_EPIC1</Tag>
+        <English>Builders Paradise</English>
+        <French>Builders Paradise</French>
+        <German>Builders Paradise</German>
+        <Italian>Builders Paradise</Italian>
+        <Spanish>Builders Paradise</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DURAL_EPIC2</Tag>
+        <English>Great Minds</English>
+        <French>Great Minds</French>
+        <German>Great Minds</German>
+        <Italian>Great Minds</Italian>
+        <Spanish>Great Minds</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_DURAL_EPIC3</Tag>
+        <English>Wonders of Erebus</English>
+        <French>Wonders of Erebus</French>
+        <German>Wonders of Erebus</German>
+        <Italian>Wonders of Erebus</Italian>
+        <Spanish>Wonders of Erebus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_WORLDWONDER</Tag>
+        <English>Worldwonders build: %D1 of %D2</English>
+        <French>Worldwonders build: %D1 of %D2</French>
+        <German>Worldwonders build: %D1 of %D2</German>
+        <Italian>Worldwonders build: %D1 of %D2</Italian>
+        <Spanish>Worldwonders build: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_GREAT_ARTIST</Tag>
+        <English>Great Bards: %D1 of %D2</English>
+        <French>Great Bards: %D1 of %D2</French>
+        <German>Great Bards: %D1 of %D2</German>
+        <Italian>Great Bards: %D1 of %D2</Italian>
+        <Spanish>Great Bards: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_GREAT_PRIEST</Tag>
+        <English>Great Prophets: %D1 of %D2</English>
+        <French>Great Prophets: %D1 of %D2</French>
+        <German>Great Prophets: %D1 of %D2</German>
+        <Italian>Great Prophets: %D1 of %D2</Italian>
+        <Spanish>Great Prophets: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_GREAT_MERCHANT</Tag>
+        <English>Great Merchants: %D1 of %D2</English>
+        <French>Great Merchants: %D1 of %D2</French>
+        <German>Great Merchants: %D1 of %D2</German>
+        <Italian>Great Merchants: %D1 of %D2</Italian>
+        <Spanish>Great Merchants: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_GREAT_SCIENTIST</Tag>
+        <English>Great Scientists: %D1 of %D2</English>
+        <French>Great Scientists: %D1 of %D2</French>
+        <German>Great Scientists: %D1 of %D2</German>
+        <Italian>Great Scientists: %D1 of %D2</Italian>
+        <Spanish>Great Scientists: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_GREAT_ENGINEER</Tag>
+        <English>Great Engineers: %D1 of %D2</English>
+        <French>Great Engineers: %D1 of %D2</French>
+        <German>Great Engineers: %D1 of %D2</German>
+        <Italian>Great Engineers: %D1 of %D2</Italian>
+        <Spanish>Great Engineers: %D1 of %D2</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LJOSALFAR_EPIC1</Tag>
+        <English>Forests of Erebus</English>
+        <French>Forests of Erebus</French>
+        <German>Forests of Erebus</German>
+        <Italian>Forests of Erebus</Italian>
+        <Spanish>Forests of Erebus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LJOSALFAR_EPIC2</Tag>
+        <English>To the bitter end</English>
+        <French>To the bitter end</French>
+        <German>To the bitter end</German>
+        <Italian>To the bitter end</Italian>
+        <Spanish>To the bitter end</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LJOSALFAR_EPIC3</Tag>
+        <English>Thousand Memories</English>
+        <French>Thousand Memories</French>
+        <German>Thousand Memories</German>
+        <Italian>Thousand Memories</Italian>
+        <Spanish>Thousand Memories</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_GILDEN_SILVERIC_LEVEL_20</Tag>
+        <English>Gilden reached Level 20</English>
+        <French>Gilden reached Level 20</French>
+        <German>Gilden reached Level 20</German>
+        <Italian>Gilden reached Level 20</Italian>
+        <Spanish>Gilden reached Level 20</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_YVAIN_LEVEL_15</Tag>
+        <English>Yvain reached Level 15</English>
+        <French>Yvain reached Level 15</French>
+        <German>Yvain reached Level 15</German>
+        <Italian>Yvain reached Level 15</Italian>
+        <Spanish>Yvain reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_ANCIENT_FOREST</Tag>
+        <English>Ancient Forests created: %D1 of %D2</English>
+        <French>Ancient Forests created: %D1 of %D2</French>
+        <German>Ancient Forests created: %D1 of %D2</German>
+        <Italian>Ancient Forests created: %D1 of %D2</Italian>
+        <Spanish>Ancient Forests created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_DEEP_JUNGLE</Tag>
+        <English>Deep Jungles created: %D1 of %D2</English>
+        <French>Deep Jungles created: %D1 of %D2</French>
+        <German>Deep Jungles created: %D1 of %D2</German>
+        <Italian>Deep Jungles created: %D1 of %D2</Italian>
+        <Spanish>Deep Jungles created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_HL</Tag>
+        <English>Haunted Lands created: %D1 of %D2</English>
+        <French>Haunted Lands created: %D1 of %D2</French>
+        <German>Haunted Lands created: %D1 of %D2</German>
+        <Italian>Haunted Lands created: %D1 of %D2</Italian>
+        <Spanish>Haunted Lands created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION_SVARTALFAR</Tag>
+        <English>Svartalfar Civilization destroyed</English>
+        <French>Svartalfar Civilization destroyed</French>
+        <German>Svartalfar Civilization destroyed</German>
+        <Italian>Svartalfar Civilization destroyed</Italian>
+        <Spanish>Svartalfar Civilization destroyed</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_COATLANN_LEVEL_15</Tag>
+        <English>Coatlann reached Level 15</English>
+        <French>Coatlann reached Level 15</French>
+        <German>Coatlann reached Level 15</German>
+        <Italian>Coatlann reached Level 15</Italian>
+        <Spanish>Coatlann reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_AMBUSH_IN_DEEP_JUNGLE</Tag>
+        <English>Victims ambushed in Deep Jungles: %D1 of %D2</English>
+        <French>Victims ambushed in Deep Jungles: %D1 of %D2</French>
+        <German>Victims ambushed in Deep Jungles: %D1 of %D2</German>
+        <Italian>Victims ambushed in Deep Jungles: %D1 of %D2</Italian>
+        <Spanish>Victims ambushed in Deep Jungles: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION_LJOSALFAR</Tag>
+        <English>Ljosalfar Civilization destroyed</English>
+        <French>Ljosalfar Civilization destroyed</French>
+        <German>Ljosalfar Civilization destroyed</German>
+        <Italian>Ljosalfar Civilization destroyed</Italian>
+        <Spanish>Ljosalfar Civilization destroyed</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION_INFERNAL</Tag>
+        <English>Infernal Civilization destroyed</English>
+        <French>Infernal Civilization destroyed</French>
+        <German>Infernal Civilization destroyed</German>
+        <Italian>Infernal Civilization destroyed</Italian>
+        <Spanish>Infernal Civilization destroyed</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MERCURIANS_EPIC1</Tag>
+        <English>From once you came you shall remain</English>
+        <French>From once you came you shall remain</French>
+        <German>From once you came you shall remain</German>
+        <Italian>From once you came you shall remain</Italian>
+        <Spanish>From once you came you shall remain</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SVARTALFAR_EPIC1</Tag>
+        <English>To the bitter end</English>
+        <French>To the bitter end</French>
+        <German>To the bitter end</German>
+        <Italian>To the bitter end</Italian>
+        <Spanish>To the bitter end</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SVARTALFAR_EPIC2</Tag>
+        <English>We come in Peace</English>
+        <French>We come in Peace</French>
+        <German>We come in Peace</German>
+        <Italian>We come in Peace</Italian>
+        <Spanish>We come in Peace</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPELL_KIDNAP_UNITS</Tag>
+        <English>Greatpersons kidnapped: %D1 of %D2</English>
+        <French>Greatpersons kidnapped: %D1 of %D2</French>
+        <German>Greatpersons kidnapped: %D1 of %D2</German>
+        <Italian>Greatpersons kidnapped: %D1 of %D2</Italian>
+        <Spanish>Greatpersons kidnapped: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_FAERIES_EPIC1</Tag>
+        <English>Fey Courts</English>
+        <French>Fey Courts</French>
+        <German>Fey Courts</German>
+        <Italian>Fey Courts</Italian>
+        <Spanish>Fey Courts</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_SUMMER_COURT</Tag>
+        <English>Reign of the Summer Court: %D1 of %D2</English>
+        <French>Reign of the Summer Court: %D1 of %D2</French>
+        <German>Reign of the Summer Court: %D1 of %D2</German>
+        <Italian>Reign of the Summer Court: %D1 of %D2</Italian>
+        <Spanish>Reign of the Summer Court: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_WINTER_COURT</Tag>
+        <English>Reign of the Winter Court: %D1 of %D2</English>
+        <French>Reign of the Winter Court: %D1 of %D2</French>
+        <German>Reign of the Winter Court: %D1 of %D2</German>
+        <Italian>Reign of the Winter Court: %D1 of %D2</Italian>
+        <Spanish>Reign of the Winter Court: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_ETERNAL_COURT</Tag>
+        <English>Reign of the Eternal Court: %D1 of %D2</English>
+        <French>Reign of the Eternal Court: %D1 of %D2</French>
+        <German>Reign of the Eternal Court: %D1 of %D2</German>
+        <Italian>Reign of the Eternal Court: %D1 of %D2</Italian>
+        <Spanish>Reign of the Eternal Court: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_FAERIES_EPIC2</Tag>
+        <English>Restoration of Larincsidhe</English>
+        <French>Restoration of Larincsidhe</French>
+        <German>Restoration of Larincsidhe</German>
+        <Italian>Restoration of Larincsidhe</Italian>
+        <Spanish>Restoration of Larincsidhe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_LARRINC</Tag>
+        <English>Larincsidhe created: %D1 of %D2</English>
+        <French>Larincsidhe created: %D1 of %D2</French>
+        <German>Larincsidhe created: %D1 of %D2</German>
+        <Italian>Larincsidhe created: %D1 of %D2</Italian>
+        <Spanish>Larincsidhe created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DISCOVER_WHOLE_MAP</Tag>
+        <English>Discover whole Erebus</English>
+        <French>Discover whole Erebus</French>
+        <German>Discover whole Erebus</German>
+        <Italian>Discover whole Erebus</Italian>
+        <Spanish>Discover whole Erebus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_AUSTRIN_EPIC1</Tag>
+        <English>Wanderlust</English>
+        <French>Wanderlust</French>
+        <German>Wanderlust</German>
+        <Italian>Wanderlust</Italian>
+        <Spanish>Wanderlust</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_TRACKER</Tag>
+        <English>Wisp created: %D1 of %D2</English>
+        <French>Wisp created: %D1 of %D2</French>
+        <German>Wisp created: %D1 of %D2</German>
+        <Italian>Wisp created: %D1 of %D2</Italian>
+        <Spanish>Wisp created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_STEAL_CITIES</Tag>
+        <English>Cities stolen by Loki: %D1 of %D2</English>
+        <French>Cities stolen by Loki: %D1 of %D2</French>
+        <German>Cities stolen by Loki: %D1 of %D2</German>
+        <Italian>Cities stolen by Loki: %D1 of %D2</Italian>
+        <Spanish>Cities stolen by Loki: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_ORDER</Tag>
+        <English>Order Spread: %D1 of %D2</English>
+        <French>Order Spread: %D1 of %D2</French>
+        <German>Order Spread: %D1 of %D2</German>
+        <Italian>Order Spread: %D1 of %D2</Italian>
+        <Spanish>Order Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_EMPYREAN</Tag>
+        <English>Empyrean Spread: %D1 of %D2</English>
+        <French>Empyrean Spread: %D1 of %D2</French>
+        <German>Empyrean Spread: %D1 of %D2</German>
+        <Italian>Empyrean Spread: %D1 of %D2</Italian>
+        <Spanish>Empyrean Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_OCTOPUS_OVERLORDS</Tag>
+        <English>Overlords Spread: %D1 of %D2</English>
+        <French>Overlords Spread: %D1 of %D2</French>
+        <German>Overlords Spread: %D1 of %D2</German>
+        <Italian>Overlords Spread: %D1 of %D2</Italian>
+        <Spanish>Overlords Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_FOL</Tag>
+        <English>Leaves Spread: %D1 of %D2</English>
+        <French>Leaves Spread: %D1 of %D2</French>
+        <German>Leaves Spread: %D1 of %D2</German>
+        <Italian>Leaves Spread: %D1 of %D2</Italian>
+        <Spanish>Leaves Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_RUNES</Tag>
+        <English>Runes Spread: %D1 of %D2</English>
+        <French>Runes Spread: %D1 of %D2</French>
+        <German>Runes Spread: %D1 of %D2</German>
+        <Italian>Runes Spread: %D1 of %D2</Italian>
+        <Spanish>Runes Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SPREAD_AV</Tag>
+        <English>Veil Spread: %D1 of %D2</English>
+        <French>Veil Spread: %D1 of %D2</French>
+        <German>Veil Spread: %D1 of %D2</German>
+        <Italian>Veil Spread: %D1 of %D2</Italian>
+        <Spanish>Veil Spread: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_BANNOR_EPIC4</Tag>
+        <English>Follow the Order</English>
+        <French>Follow the Order</French>
+        <German>Follow the Order</German>
+        <Italian>Follow the Order</Italian>
+        <Spanish>Follow the Order</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ELOHIM_EPIC3</Tag>
+        <English>All the good things</English>
+        <French>All the good things</French>
+        <German>All the good things</German>
+        <Italian>All the good things</Italian>
+        <Spanish>All the good things</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_KHAZAD_EPIC1</Tag>
+        <English>Bounty of Kilmorph</English>
+        <French>Bounty of Kilmorph</French>
+        <German>Bounty of Kilmorph</German>
+        <Italian>Bounty of Kilmorph</Italian>
+        <Spanish>Bounty of Kilmorph</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_ACCUMULATE_100000_GOLD</Tag>
+        <English>Get 100,000 Gold</English>
+        <French>Get 100,000 Gold</French>
+        <German>Get 100,000 Gold</German>
+        <Italian>Get 100,000 Gold</Italian>
+        <Spanish>Get 100,000 Gold</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MALAKIM_EPIC1</Tag>
+        <English>Enlightment</English>
+        <French>Enlightment</French>
+        <German>Enlightment</German>
+        <Italian>Enlightment</Italian>
+        <Spanish>Enlightment</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CHALID_LEVEL_15</Tag>
+        <English>Chalid reached Level 15</English>
+        <French>Chalid reached Level 15</French>
+        <German>Chalid reached Level 15</German>
+        <Italian>Chalid reached Level 15</Italian>
+        <Spanish>Chalid reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_RISEN_EMPEROR_LEVEL_15</Tag>
+        <English>Risen Emperor reached Level 15</English>
+        <French>Risen Emperor reached Level 15</French>
+        <German>Risen Emperor reached Level 15</German>
+        <Italian>Risen Emperor reached Level 15</Italian>
+        <Spanish>Risen Emperor reached Level 15</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LANUN_EPIC1</Tag>
+        <English>Serve the Overlords</English>
+        <French>Serve the Overlords</French>
+        <German>Serve the Overlords</German>
+        <Italian>Serve the Overlords</Italian>
+        <Spanish>Serve the Overlords</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SIDAR_EPIC1</Tag>
+        <English>The Sidar Shade is Born!</English>
+        <French>The Sidar Shade is Born!</French>
+        <German>The Sidar Shade is Born!</German>
+        <Italian>The Sidar Shade is Born!</Italian>
+        <Spanish>The Sidar Shade is Born!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SIDAR_EPIC2</Tag>
+        <English>The Netherblade Strikes Again!</English>
+        <French>The Netherblade Strikes Again!</French>
+        <German>The Netherblade Strikes Again!</German>
+        <Italian>The Netherblade Strikes Again!</Italian>
+        <Spanish>The Netherblade Strikes Again!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_NETHER_BLADE</Tag>
+        <English>Heroes killed by the Blade: %D1 of %D2</English>
+        <French>Heroes killed by the Blade: %D1 of %D2</French>
+        <German>Heroes killed by the Blade: %D1 of %D2</German>
+        <Italian>Heroes killed by the Blade: %D1 of %D2</Italian>
+        <Spanish>Heroes killed by the Blade: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SCIONS_EPIC1</Tag>
+        <English>Uncreation</English>
+        <French>Uncreation</French>
+        <German>Uncreation</German>
+        <Italian>Uncreation</Italian>
+        <Spanish>Uncreation</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SCIONS_EPIC2</Tag>
+        <English>Angel of Good Intentions</English>
+        <French>Angel of Good Intentions</French>
+        <German>Angel of Good Intentions</German>
+        <Italian>Angel of Good Intentions</Italian>
+        <Spanish>Angel of Good Intentions</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SCIONS_EPIC3</Tag>
+        <English>Pax Patria</English>
+        <French>Pax Patria</French>
+        <German>Pax Patria</German>
+        <Italian>Pax Patria</Italian>
+        <Spanish>Pax Patria</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SCIONS_EPIC4</Tag>
+        <English>Dark Council</English>
+        <French>Dark Council</French>
+        <German>Dark Council</German>
+        <Italian>Dark Council</Italian>
+        <Spanish>Dark Council</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_REVENANT</Tag>
+        <English>Revenants created: %D1 of %D2</English>
+        <French>Revenants created: %D1 of %D2</French>
+        <German>Revenants created: %D1 of %D2</German>
+        <Italian>Revenants created: %D1 of %D2</Italian>
+        <Spanish>Revenants created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DARK_COUNCIL</Tag>
+        <English>Found the Dark Council</English>
+        <French>Found the Dark Council</French>
+        <German>Found the Dark Council</German>
+        <Italian>Found the Dark Council</Italian>
+        <Spanish>Found the Dark Council</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_PAX_PATRIA</Tag>
+        <English>OB with friendly Neighbours: %D1 of %D2</English>
+        <French>OB with friendly Neighbours: %D1 of %D2</French>
+        <German>OB with friendly Neighbours: %D1 of %D2</German>
+        <Italian>OB with friendly Neighbours: %D1 of %D2</Italian>
+        <Spanish>OB with friendly Neighbours: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_WORLDUNIT_DEFEATED</Tag>
+        <English>Legendary Units Killed: %D1 of %D2</English>
+        <French>Legendary Units Killed: %D1 of %D2</French>
+        <German>Legendary Units Killed: %D1 of %D2</German>
+        <Italian>Legendary Units Killed: %D1 of %D2</Italian>
+        <Spanish>Legendary Units Killed: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MALAKIM_EPIC2</Tag>
+        <English>Rule the Overcouncil</English>
+        <French>Rule the Overcouncil</French>
+        <German>Rule the Overcouncil</German>
+        <Italian>Rule the Overcouncil</Italian>
+        <Spanish>Rule the Overcouncil</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_LEAD_COUNCIL</Tag>
+        <English>Turns: %D1 of %D2</English>
+        <French>Turns: %D1 of %D2</French>
+        <German>Turns: %D1 of %D2</German>
+        <Italian>Turns: %D1 of %D2</Italian>
+        <Spanish>Turns: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SVARTALFAR_EPIC3</Tag>
+        <English>Rule the Undercouncil</English>
+        <French>Rule the Undercouncil</French>
+        <German>Rule the Undercouncil</German>
+        <Italian>Rule the Undercouncil</Italian>
+        <Spanish>Rule the Undercouncil</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DECLARE_WAR_AT_FRIENDLY</Tag>
+        <English>Declare War at Friendly: %D1 of %D2</English>
+        <French>Declare War at Friendly: %D1 of %D2</French>
+        <German>Declare War at Friendly: %D1 of %D2</German>
+        <Italian>Declare War at Friendly: %D1 of %D2</Italian>
+        <Spanish>Declare War at Friendly: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_INFERNAL_EPIC1</Tag>
+        <English>MetroDisis</English>
+        <French>MetroDisis</French>
+        <German>MetroDisis</German>
+        <Italian>MetroDisis</Italian>
+        <Spanish>MetroDisis</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_INFERNAL_EPIC2</Tag>
+        <English>Ashen Veil</English>
+        <French>Ashen Veil</French>
+        <German>Ashen Veil</German>
+        <Italian>Ashen Veil</Italian>
+        <Spanish>Ashen Veil</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAPITAL_POPULATION_200</Tag>
+        <English>200 Population in Capital</English>
+        <French>200 Population in Capital</French>
+        <German>200 Population in Capital</German>
+        <Italian>200 Population in Capital</Italian>
+        <Spanish>200 Population in Capital</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAPITAL_POPULATION_50</Tag>
+        <English>50 Population in Capital</English>
+        <French>50 Population in Capital</French>
+        <German>50 Population in Capital</German>
+        <Italian>50 Population in Capital</Italian>
+        <Spanish>50 Population in Capital</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAPITAL_POPULATION_15</Tag>
+        <English>15 Population in Capital</English>
+        <French>15 Population in Capital</French>
+        <German>15 Population in Capital</German>
+        <Italian>15 Population in Capital</Italian>
+        <Spanish>15 Population in Capital</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CONVERT_ALL_CIVS_TO_AV</Tag>
+        <English>Convert all Civs to AV</English>
+        <French>Convert all Civs to AV</French>
+        <German>Convert all Civs to AV</German>
+        <Italian>Convert all Civs to AV</Italian>
+        <Spanish>Convert all Civs to AV</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LUCHUIRP_EPIC1</Tag>
+        <English>Legacy of Barnaxus</English>
+        <French>Legacy of Barnaxus</French>
+        <German>Legacy of Barnaxus</German>
+        <Italian>Legacy of Barnaxus</Italian>
+        <Spanish>Legacy of Barnaxus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LUCHUIRP_EPIC2</Tag>
+        <English>Calculus</English>
+        <French>Calculus</French>
+        <German>Calculus</German>
+        <Italian>Calculus</Italian>
+        <Spanish>Calculus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LUCHUIRP_EPIC3</Tag>
+        <English>Golem Mastery</English>
+        <French>Golem Mastery</French>
+        <German>Golem Mastery</German>
+        <Italian>Golem Mastery</Italian>
+        <Spanish>Golem Mastery</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_SIDAR_EPIC3</Tag>
+        <English>Vanish</English>
+        <French>Vanish</French>
+        <German>Vanish</German>
+        <Italian>Vanish</Italian>
+        <Spanish>Vanish</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_MIST_LEVEL_IV</Tag>
+        <English>Hide 10 Cities in Mist</English>
+        <French>Hide 10 Cities in Mist</French>
+        <German>Hide 10 Cities in Mist</German>
+        <Italian>Hide 10 Cities in Mist</Italian>
+        <Spanish>Hide 10 Cities in Mist</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_KHAZAD_EPIC2</Tag>
+        <English>Treasures of the Earth</English>
+        <French>Treasures of the Earth</French>
+        <German>Treasures of the Earth</German>
+        <Italian>Treasures of the Earth</Italian>
+        <Spanish>Treasures of the Earth</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BONUS_IRON_1</Tag>
+        <English>Access to Iron</English>
+        <French>Access to Iron</French>
+        <German>Access to Iron</German>
+        <Italian>Access to Iron</Italian>
+        <Spanish>Access to Iron</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BONUS_BRONZE_1</Tag>
+        <English>Access to Bronze</English>
+        <French>Access to Bronze</French>
+        <German>Access to Bronze</German>
+        <Italian>Access to Bronze</Italian>
+        <Spanish>Access to Bronze</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BONUS_MITHRIL_1</Tag>
+        <English>Access to Mithril</English>
+        <French>Access to Mithril</French>
+        <German>Access to Mithril</German>
+        <Italian>Access to Mithril</Italian>
+        <Spanish>Access to Mithril</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BONUS_GOLD_1</Tag>
+        <English>Access to Gold</English>
+        <French>Access to Gold</French>
+        <German>Access to Gold</German>
+        <Italian>Access to Gold</Italian>
+        <Spanish>Access to Gold</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_BONUS_SILVER_1</Tag>
+        <English>Access to Silver</English>
+        <French>Access to Silver</French>
+        <German>Access to Silver</German>
+        <Italian>Access to Silver</Italian>
+        <Spanish>Access to Silver</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_AIR_MANA_7</Tag>
+        <English>Have 7 Air Mana</English>
+        <French>Have 7 Air Mana</French>
+        <German>Have 7 Air Mana</German>
+        <Italian>Have 7 Air Mana</Italian>
+        <Spanish>Have 7 Air Mana</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_AUSTRIN_EPIC2</Tag>
+        <English>Legacy of Harmatt</English>
+        <French>Legacy of Harmatt</French>
+        <German>Legacy of Harmatt</German>
+        <Italian>Legacy of Harmatt</Italian>
+        <Spanish>Legacy of Harmatt</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_CLAN_OF_EMBERS_EPIC1</Tag>
+        <English>Legacy of Rantine</English>
+        <French>Legacy of Rantine</French>
+        <German>Legacy of Rantine</German>
+        <Italian>Legacy of Rantine</Italian>
+        <Spanish>Legacy of Rantine</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CONVERT_CITY_RANTINE</Tag>
+        <English>Cities converted by Rantine: %D1 of %D2</English>
+        <French>Cities converted by Rantine: %D1 of %D2</French>
+        <German>Cities converted by Rantine: %D1 of %D2</German>
+        <Italian>Cities converted by Rantine: %D1 of %D2</Italian>
+        <Spanish>Cities converted by Rantine: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_GREATER_RIFT</Tag>
+        <English>Greater Rift cast: %D1 of %D2</English>
+        <French>Greater Rift cast: %D1 of %D2</French>
+        <German>Greater Rift cast: %D1 of %D2</German>
+        <Italian>Greater Rift cast: %D1 of %D2</Italian>
+        <Spanish>Greater Rift cast: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_METEOR_SWARM</Tag>
+        <English>Meteor Swarms cast: %D1 of %D2</English>
+        <French>Meteor Swarms cast: %D1 of %D2</French>
+        <German>Meteor Swarms cast: %D1 of %D2</German>
+        <Italian>Meteor Swarms cast: %D1 of %D2</Italian>
+        <Spanish>Meteor Swarms cast: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAST_EMPOWERED_LIGHTNING</Tag>
+        <English>Empowered Lightning cast: %D1 of %D2</English>
+        <French>Empowered Lightning cast: %D1 of %D2</French>
+        <German>Empowered Lightning cast: %D1 of %D2</German>
+        <Italian>Empowered Lightning cast: %D1 of %D2</Italian>
+        <Spanish>Empowered Lightning cast: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_CLAN_OF_EMBERS_EPIC2</Tag>
+        <English>Peaceful Barbarians</English>
+        <French>Peaceful Barbarians</French>
+        <German>Peaceful Barbarians</German>
+        <Italian>Peaceful Barbarians</Italian>
+        <Spanish>Peaceful Barbarians</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_NOT_DECLARE_WAR_BARBARIANS</Tag>
+        <English>Must stay at Peace with Barbarians</English>
+        <French>Must stay at Peace with Barbarians</French>
+        <German>Must stay at Peace with Barbarians</German>
+        <Italian>Must stay at Peace with Barbarians</Italian>
+        <Spanish>Must stay at Peace with Barbarians</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_GRIGORI_EPIC1</Tag>
+        <English>Holding out for a Hero</English>
+        <French>Holding out for a Hero</French>
+        <German>Holding out for a Hero</German>
+        <Italian>Holding out for a Hero</Italian>
+        <Spanish>Holding out for a Hero</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_GRIGORI_EPIC2</Tag>
+        <English>Luonnotars</English>
+        <French>Luonnotars</French>
+        <German>Luonnotars</German>
+        <Italian>Luonnotars</Italian>
+        <Spanish>Luonnotars</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_CLAN_OF_EMBERS_EPIC3</Tag>
+        <English>For the Horde</English>
+        <French>For the Horde</French>
+        <German>For the Horde</German>
+        <Italian>For the Horde</Italian>
+        <Spanish>For the Horde</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CREATE_WARCHIEF</Tag>
+        <English>Warchiefs created: %D1 of %D2</English>
+        <French>Warchiefs created: %D1 of %D2</French>
+        <German>Warchiefs created: %D1 of %D2</German>
+        <Italian>Warchiefs created: %D1 of %D2</Italian>
+        <Spanish>Warchiefs created: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_UNIT_COUNT_100</Tag>
+        <English>Amass 100 Units</English>
+        <French>Amass 100 Units</French>
+        <German>Amass 100 Units</German>
+        <Italian>Amass 100 Units</Italian>
+        <Spanish>Amass 100 Units</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_NEVER_ADOPT_THEOCRACY</Tag>
+        <English>Never adopt Religion Civic</English>
+        <French>Never adopt Religion Civic</French>
+        <German>Never adopt Religion Civic</German>
+        <Italian>Never adopt Religion Civic</Italian>
+        <Spanish>Never adopt Religion Civic</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_GRIGORI_EPIC3</Tag>
+        <English>Freedom of Speech</English>
+        <French>Freedom of Speech</French>
+        <German>Freedom of Speech</German>
+        <Italian>Freedom of Speech</Italian>
+        <Spanish>Freedom of Speech</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MERCURIANS_EPIC3</Tag>
+        <English>The Path of the Righteous man</English>
+        <French>The Path of the Righteous man</French>
+        <German>The Path of the Righteous man</German>
+        <Italian>The Path of the Righteous man</Italian>
+        <Spanish>The Path of the Righteous man</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MERCURIANS_EPIC2</Tag>
+        <English>To the end</English>
+        <French>To the end</French>
+        <German>To the end</German>
+        <Italian>To the end</Italian>
+        <Spanish>To the end</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_REMOVE_AV_FROM_CITIES</Tag>
+        <English>Remove Ashen Veil from all Cities</English>
+        <French>Remove Ashen Veil from all Cities</French>
+        <German>Remove Ashen Veil from all Cities</German>
+        <Italian>Remove Ashen Veil from all Cities</Italian>
+        <Spanish>Remove Ashen Veil from all Cities</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LANUN_EPIC2</Tag>
+        <English>Rule the Sea</English>
+        <French>Rule the Sea</French>
+        <German>Rule the Sea</German>
+        <Italian>Rule the Sea</Italian>
+        <Spanish>Rule the Sea</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_LANUN_EPIC3</Tag>
+        <English>A Pirate's treasure</English>
+        <French>A Pirate's treasure</French>
+        <German>A Pirate's treasure</German>
+        <Italian>A Pirate's treasure</Italian>
+        <Spanish>A Pirate's treasure</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_JOTNAR_EPIC1</Tag>
+        <English>Wisdom of the Elders</English>
+        <French>Wisdom of the Elders</French>
+        <German>Wisdom of the Elders</German>
+        <Italian>Wisdom of the Elders</Italian>
+        <Spanish>Wisdom of the Elders</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_PROMOTE_JOT_LEGENDARY_GIANT</Tag>
+        <English>Legendary Giants risen: %D1 of %D2</English>
+        <French>Legendary Giants risen: %D1 of %D2</French>
+        <German>Legendary Giants risen: %D1 of %D2</German>
+        <Italian>Legendary Giants risen: %D1 of %D2</Italian>
+        <Spanish>Legendary Giants risen: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_CAPTURE_SHIPS</Tag>
+        <English>Ships captured: %D1 of %D2</English>
+        <French>Ships captured: %D1 of %D2</French>
+        <German>Ships captured: %D1 of %D2</German>
+        <Italian>Ships captured: %D1 of %D2</Italian>
+        <Spanish>Ships captured: %D1 of %D2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_PLUNDER_GOLD</Tag>
+        <English>Gold plundered: %D1 of %D2</English>
+        <French>Gold plundered: %D1 of %D2</French>
+        <German>Gold plundered: %D1 of %D2</German>
+        <Italian>Gold plundered: %D1 of %D2</Italian>
+        <Spanish>Gold plundered: %D1 of %D2</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_THE_CATACOMB_LIBRALUS</Tag>
+        <English>Own the Catacomb Libralus</English>
+        <French>Own the Catacomb Libralus</French>
+        <German>Own the Catacomb Libralus</German>
+        <Italian>Own the Catacomb Libralus</Italian>
+        <Spanish>Own the Catacomb Libralus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ADDED</Tag>
+        <English>Adventure '%s1' added</English>
+        <French>Adventure '%s1' added</French>
+        <German>Adventure '%s1' added</German>
+        <Italian>Adventure '%s1' added</Italian>
+        <Spanish>Adventure '%s1' added</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_FINISHED</Tag>
+        <English>Adventure '%s1' finished</English>
+        <French>Adventure '%s1' finished</French>
+        <German>Adventure '%s1' finished</German>
+        <Italian>Adventure '%s1' finished</Italian>
+        <Spanish>Adventure '%s1' finished</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SKELETON_SPEARMEN_CREATED</Tag>
+        <English>Skeleton Spearmen Company created: %D1 of %D2</English>
+        <French>Skeleton Spearmen Company created: %D1 of %D2</French>
+        <German>Skeleton Spearmen Company created: %D1 of %D2</German>
+        <Italian>Skeleton Spearmen Company created: %D1 of %D2</Italian>
+        <Spanish>Skeleton Spearmen Company created: %D1 of %D2</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SKELETON_ARCHER_CREATED</Tag>
+        <English>Skeleton Archer Company created: %D1 of %D2</English>
+        <French>Skeleton Archer Company created: %D1 of %D2</French>
+        <German>Skeleton Archer Company created: %D1 of %D2</German>
+        <Italian>Skeleton Archer Company created: %D1 of %D2</Italian>
+        <Spanish>Skeleton Archer Company created: %D1 of %D2</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SKELETON_HORSEMAN_CREATED</Tag>
+        <English>Skeleton Horsemen Company created: %D1 of %D2</English>
+        <French>Skeleton Horsemen Company created: %D1 of %D2</French>
+        <German>Skeleton Horsemen Company created: %D1 of %D2</German>
+        <Italian>Skeleton Horsemen Company created: %D1 of %D2</Italian>
+        <Spanish>Skeleton Horsemen Company created: %D1 of %D2</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_SKELETON_HORSE_ARCHER_CREATED</Tag>
+        <English>Skeleton Horse Archer Company created: %D1 of %D2</English>
+        <French>Skeleton Horse Archer Company created: %D1 of %D2</French>
+        <German>Skeleton Horse Archer Company created: %D1 of %D2</German>
+        <Italian>Skeleton Horse Archer Company created: %D1 of %D2</Italian>
+        <Spanish>Skeleton Horse Archer Company created: %D1 of %D2</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_NIKEPHOROS_LEVEL_NEEDED_20</Tag>
+        <English>Nikephoros reached Level 20</English>
+        <French>Nikephoros reached Level 20</French>
+        <German>Nikephoros reached Level 20</German>
+        <Italian>Nikephoros reached Level 20</Italian>
+        <Spanish>Nikephoros reached Level 20</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DRAGONRIDER_LEVEL_NEEDED_20</Tag>
+        <English>Dracolich Rider reached Level 20: %D1 of %D2</English>
+        <French>Dracolich Rider reached Level 20</French>
+        <German>Dracolich Rider reached Level 20</German>
+        <Italian>Dracolich Rider reached Level 20</Italian>
+        <Spanish>Dracolich Rider reached Level 20</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_OWN_TOWER_OF_NECROMANCY</Tag>
+        <English>Own the Tower of Necromancy</English>
+        <French>Own the Tower of Necromancy</French>
+        <German>Own the Tower of Necromancy</German>
+        <Italian>Own the Tower of Necromancy</Italian>
+        <Spanish>Own the Tower of Necromancy</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_DEATH_MANA_4</Tag>
+        <English>Have 4 Death Mana</English>
+        <French>Have 4 Death Mana</French>
+        <German>Have 4 Death Mana</German>
+        <Italian>Have 4 Death Mana</Italian>
+        <Spanish>Have 4 Death Mana</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ARISTRAKH_EPIC1</Tag>
+        <English>Legion of Bones</English>
+        <French>Legion of Bones</French>
+        <German>Legion of Bones</German>
+        <Italian>Legion of Bones</Italian>
+        <Spanish>Legion of Bones</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ARISTRAKH_EPIC2</Tag>
+        <English>Lords of the Undead</English>
+        <French>Lords of the Undead</French>
+        <German>Lords of the Undead</German>
+        <Italian>Lords of the Undead</Italian>
+        <Spanish>Lords of the Undead</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_ARISTRAKH_EPIC3</Tag>
+        <English>Mastery of Death</English>
+        <French>Mastery of Death</French>
+        <German>Mastery of Death</German>
+        <Italian>Mastery of Death</Italian>
+        <Spanish>Mastery of Death</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MAZATL_EPIC1</Tag>
+        <English>Deep Jungle</English>
+        <French>Deep Jungle</French>
+        <German>Deep Jungle</German>
+        <Italian>Deep Jungle</Italian>
+        <Spanish>Deep Jungle</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MAZATL_EPIC3</Tag>
+        <English>Deeper into the Jungle</English>
+        <French>Deeper into the Jungle</French>
+        <German>Deeper into the Jungle</German>
+        <Italian>Deeper into the Jungle</Italian>
+        <Spanish>Deeper into the Jungle</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADVENTURE_MAZATL_EPIC2</Tag>
+        <English>Rise of Coatlann</English>
+        <French>Rise of Coatlann</French>
+        <German>Rise of Coatlann</German>
+        <Italian>Rise of Coatlann</Italian>
+        <Spanish>Rise of Coatlann</Spanish>
+    </TEXT>
+</Civ4GameText>

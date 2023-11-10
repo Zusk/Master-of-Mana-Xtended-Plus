@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:MAZATL_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Found Order of the Wyvern -->
+			<Type>SPELL_FOUND_ORDER_OF_THE_WYVERN</Type>
+			<Description>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN</Description>
+			<Civilopedia>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_STRATEGY</Strategy>
+			<Help>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_MAZATL</CivilizationPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bGlobal>1</bGlobal>
+			<bInCityOnly>1</bInCityOnly>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<CreateBuildingType>BUILDING_ORDER_OF_THE_WYVERN</CreateBuildingType>
+			<PyResult>__import__('mazatl').spellFoundWyvern(pCaster)</PyResult>
+			<PyRequirement>__import__('mazatl').reqFoundWyvern(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
+			<Button>Art/Interface/Buttons/Spells/orderwyvern.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Deepen Forest -->
+			<Type>SPELL_DEEPEN_FOREST</Type>
+			<Description>TXT_KEY_SPELL_DEEPEN_FOREST</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<Help>TXT_KEY_SPELL_SHAPE_JUNGLE_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_MAZATL</CivilizationPrereq>
+			<FeatureOrPrereq1>FEATURE_FOREST</FeatureOrPrereq1>
+			<FeatureOrPrereq2>FEATURE_FOREST_ANCIENT</FeatureOrPrereq2>
+            <TechPrereq>TECH_SANITATION</TechPrereq>
+			<UnitPrereq>UNIT_LIZARD_WORKER_MAZATL</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>1000</iAIWeight>
+			<bInBordersOnly>1</bInBordersOnly>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iDelay>2</iDelay>
+			<PyResult>__import__('mazatl').spellShapeJungle(pCaster)</PyResult>
+			<Effect>EFFECT_BLOOM</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<Button>Art/Interface/Buttons/TerrainFeatures/Jungle.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Clear Swamp -->
+			<Type>SPELL_CLEAR_SWAMP</Type>
+			<Description>TXT_KEY_SPELL_CLEAR_SWAMP</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<ImprovementPrereq>IMPROVEMENT_SWAMP</ImprovementPrereq>
+			<UnitPrereq>UNIT_LIZARD_WORKER_MAZATL</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+            <PyRequirement>__import__('mazatl').reqClearSwamp(pCaster)</PyRequirement>
+			<PyResult>__import__('mazatl').spellClearSwamp(pCaster)</PyResult>
+			<Effect>EFFECT_SCORCH</Effect>
+			<Sound>AS3D_SPELL_DEFILE</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<Button>Art/Interface/Buttons/Swamp/Swamp.dds</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Create Swamp -->
+			<Type>SPELL_CREATE_SWAMP</Type>
+			<Description>TXT_KEY_SPELL_CREATE_SWAMP</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitPrereq>UNIT_LIZARD_WORKER_MAZATL</UnitPrereq>
+            <CivilizationPrereq>CIVILIZATION_MAZATL</CivilizationPrereq>
+			<TerrainOrPrereq1>TERRAIN_MARSH</TerrainOrPrereq1>
+			<TerrainOrPrereq2>TERRAIN_SWAMP</TerrainOrPrereq2>
+			<bAllowAI>1</bAllowAI>
+			<iAIWeight>10</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<iManaCost>50</iManaCost>
+            <PyRequirement>__import__('mazatl').reqCreateSwamp(pCaster)</PyRequirement>
+			<PyResult>__import__('mazatl').spellCreateSwamp(pCaster)</PyResult>			
+            <CreateImprovementType>IMPROVEMENT_SWAMP</CreateImprovementType>
+			<Effect>EFFECT_SPRING</Effect>
+			<Sound>AS3D_SPELL_BLOOM</Sound>
+			<bGraphicalOnly>1</bGraphicalOnly>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,3,11</Button>
+		</SpellInfo>
+		<SpellInfo>			<!-- Wrath of Kalshekk -->
+			<Type>SPELL_WRATH_OF_KALSHEKK</Type>
+			<Description>TXT_KEY_SPELL_WRATH_OF_KALSHEKK</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitPrereq>UNIT_LIZARD_PRIEST_OF_KALSHEKK</UnitPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<bTargetedHostile>1</bTargetedHostile>
+            <iRange>1</iRange>
+			<iNumTargets>12</iNumTargets>
+			<iFaithCost>100</iFaithCost>
+            <iDamage>50</iDamage>
+            <iDamageLimit>50</iDamageLimit>
+			<DoTPromotion>PROMOTION_SPELL_ON_FIRE</DoTPromotion>
+            <DamageType>DAMAGE_FIRE</DamageType>
+            <Effect>EFFECT_RING_OF_FLAMES</Effect>
+            <Sound>AS3D_SPELL_FIREBALL</Sound>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,1</Button>
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

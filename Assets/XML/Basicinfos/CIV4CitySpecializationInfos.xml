@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<Civ4CitySpecializationInfos xmlns="x-schema:CIV4BasicInfoSchema.xml">
+	<CitySpecializationInfos>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_GOLD</Type>
+			<Description>CITYSPECIALIZATION_GOLD</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_RESEARCH</Type>
+			<Description>CITYSPECIALIZATION_RESEARCH</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_CULTURE</Type>
+			<Description>CITYSPECIALIZATION_CULTURE</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_ARCANE</Type>
+			<Description>CITYSPECIALIZATION_ARCANE</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_MILITARY</Type>
+			<Description>CITYSPECIALIZATION_MILITARY</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_METAL</Type>
+			<Description>CITYSPECIALIZATION_METAL</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_LUMBER</Type>
+			<Description>CITYSPECIALIZATION_LUMBER</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_LEATHER</Type>
+			<Description>CITYSPECIALIZATION_LEATHER</Description>
+		</CitySpecializationInfo>
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_STONE</Type>
+			<Description>CITYSPECIALIZATION_STONE</Description>
+		</CitySpecializationInfo>		
+		<CitySpecializationInfo>
+			<Type>CITYSPECIALIZATION_FAITH</Type>
+			<Description>CITYSPECIALIZATION_FAITH</Description>
+		</CitySpecializationInfo>
+		</CitySpecializationInfos>
+</Civ4CitySpecializationInfos>

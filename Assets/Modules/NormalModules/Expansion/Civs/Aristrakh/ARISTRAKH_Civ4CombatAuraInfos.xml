@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:ARISTRAKH_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>	
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_LURID_AGITATION</CombatAuraClassType>
+			<Type>COMBATAURA_LURID_AGITATION</Type>
+			<bBlessing>1</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>3</iTargets>
+			<iTier>4</iTier>
+			<iStrength>10</iStrength>
+			<iSpellPower>10</iSpellPower>
+			<PrereqPromotion>PROMOTION_BRITTLE_BONES</PrereqPromotion>
+			<Button>Art/Interface/Buttons/Promotions/luridagitation.dds</Button>
+			<iGuardianAngel>25</iGuardianAngel>
+		</CombatAuraInfo>		
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

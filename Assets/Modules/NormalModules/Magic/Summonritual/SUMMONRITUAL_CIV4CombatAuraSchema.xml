@@ -1,0 +1,101 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="CombatAuraClassType" content="textOnly"/>
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>		
+	<ElementType name="bBlessing" content="textOnly" dt:type="boolean"/>							
+	<ElementType name="iFear" content="textOnly" dt:type="int"/>
+	<ElementType name="PrereqPromotion" content="textOnly"/>	
+	<ElementType name="iRange" content="textOnly" dt:type="int"/>							
+	<ElementType name="iStrength" content="textOnly" dt:type="int"/>
+	<ElementType name="iTargets" content="textOnly" dt:type="int"/>	
+	<ElementType name="iTier" content="textOnly" dt:type="int"/>
+	<ElementType name="AlignmentType" content="textOnly"/>						
+	<ElementType name="iAttackAlignmentBonus" content="textOnly" dt:type="int"/>							
+	<ElementType name="iAttackPromotionBonus" content="textOnly" dt:type="int"/>
+	<ElementType name="iCityAttack" content="textOnly" dt:type="int"/>	
+	<ElementType name="iDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="DamageType" content="textOnly"/>						
+	<ElementType name="iExperience" content="textOnly" dt:type="int"/>							
+	<ElementType name="iFirststrikes" content="textOnly" dt:type="int"/>
+	<ElementType name="iGoldFromCombat" content="textOnly" dt:type="int"/>	
+	<ElementType name="iGuardianAngel" content="textOnly" dt:type="int"/>
+	<ElementType name="iHealing" content="textOnly" dt:type="int"/>						
+	<ElementType name="iHealthRegeneration" content="textOnly" dt:type="int"/>							
+	<ElementType name="iIgnoreFirststrikes" content="textOnly" dt:type="int"/>
+	<ElementType name="iMagicResistance" content="textOnly" dt:type="int"/>	
+	<ElementType name="iSpellPower" content="textOnly" dt:type="int"/>		
+	<ElementType name="PromotionType" content="textOnly"/>
+	<ElementType name="iSpellcasterXP" content="textOnly" dt:type="int"/>
+	<ElementType name="iUpgradePercent" content="textOnly" dt:type="int"/>
+	<ElementType name="Linked" content="textOnly" dt:type="boolean"/>		
+	<ElementType name="PromotionRemove" content="eltOnly">
+		<element type="PromotionType"/>
+		<element type="Linked"/>		
+	</ElementType>		
+	<ElementType name="PromotionsRemove" content="eltOnly">
+		<element type="PromotionRemove"/>
+	</ElementType>			
+	<ElementType name="PromotionApply" content="eltOnly">
+		<element type="PromotionType"/>
+		<element type="Linked"/>		
+	</ElementType>		
+	<ElementType name="PromotionsApply" content="eltOnly">
+		<element type="PromotionApply"/>
+	</ElementType>		
+	<ElementType name="Button" content="textOnly"/>	
+	<ElementType name="CombatAuraInfo" content="eltOnly" order="many">
+		<element type="CombatAuraClassType"/>	
+		<element type="Type"/>
+		<element type="Description" minOccurs="0"/>				
+		<element type="bBlessing" minOccurs="0"/>												
+		<element type="iFear" minOccurs="0"/>
+		<element type="PrereqPromotion" minOccurs="0"/>														
+		<element type="iRange" minOccurs="0"/>												
+		<element type="iStrength" minOccurs="0"/>
+		<element type="iTargets" minOccurs="0"/>		
+		<element type="iTier" minOccurs="0"/>
+		<element type="AlignmentType" minOccurs="0"/>										
+		<element type="iAttackAlignmentBonus" minOccurs="0"/>												
+		<element type="iAttackPromotionBonus" minOccurs="0"/>
+		<element type="iCityAttack" minOccurs="0"/>		
+		<element type="iDamage" minOccurs="0"/>
+		<element type="DamageType" minOccurs="0"/>										
+		<element type="iExperience" minOccurs="0"/>												
+		<element type="iFirststrikes" minOccurs="0"/>
+		<element type="iGoldFromCombat" minOccurs="0"/>		
+		<element type="iGuardianAngel" minOccurs="0"/>
+		<element type="iHealing" minOccurs="0"/>										
+		<element type="iHealthRegeneration" minOccurs="0"/>												
+		<element type="iIgnoreFirststrikes" minOccurs="0"/>
+		<element type="iMagicResistance" minOccurs="0"/>		
+		<element type="iSpellPower" minOccurs="0"/>				
+		<element type="PromotionType" minOccurs="0"/>
+		<element type="iSpellcasterXP" minOccurs="0"/>		
+		<element type="iUpgradePercent" minOccurs="0"/>	
+		<element type="PromotionsApply"/>
+		<element type="PromotionsRemove"/>		
+		<element type="Button" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CombatAuraInfos" content="eltOnly">
+		<element type="CombatAuraInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4CombatAuraInfos" content="eltOnly">
+		<element type="CombatAuraInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="CombatAuraClassInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description" minOccurs="0"/>
+		<element type="Button" maxOccurs="*"/>		
+	</ElementType>
+	<ElementType name="CombatAuraClassInfos" content="eltOnly">
+		<element type="CombatAuraClassInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4CombatAuraClassInfos" content="eltOnly">
+		<element type="CombatAuraClassInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+</Schema>

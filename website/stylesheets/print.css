@@ -1,0 +1,52 @@
+*{
+	font-family:"Lucida Grande", Geneva, Verdana, Arial, sans-serif;
+	font-size:12px;
+}
+#top_strip, #search, #sharing, #session, #footer, #subfooter, #strip, #edit_page, .video, ol, #col3{
+	display:none;
+}
+h1{
+	font-size:20px;
+}
+h2{
+	font-size:16px;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding-left:10px;
+}
+#col1{
+	width: 30%;
+	margin-right: 2%;
+	float:left;
+}
+#col3{
+	page-break-before: always;
+}
+.milestone_favicon{
+	float:left;
+}
+.meta_milestone{
+	font-size:10px;
+}
+
+a[title="edit"]{
+	display:none;
+}
+
+div#company_logo img{
+	width: 200px;
+}
+
+div.video, div.video_description {
+	display:none;
+}
+
+object{
+	display:none;
+}
+
+div.msg_notice{
+	display:none;
+}

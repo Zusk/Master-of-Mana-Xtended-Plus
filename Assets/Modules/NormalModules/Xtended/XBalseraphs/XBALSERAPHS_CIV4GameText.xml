@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_PUPPETEER</Tag>
+        <English>Puppeteer</English>
+		<French>Puppeteer</French>
+		<German>Puppeteer</German>
+		<Italian>Puppeteer</Italian>
+		<Spanish>Puppeteer</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CHANNELING_PUPPET</Tag>
+        <English>Channeling Puppet</English>
+		<French>Channeling Puppet</French>
+		<German>Channeling Puppet</German>
+		<Italian>Channeling Puppet</Italian>
+		<Spanish>Channeling Puppet</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SWAMP</Tag>
+        <English>Wetland</English>
+		<French>Wetland</French>
+		<German>Wetland</German>
+		<Italian>Wetland</Italian>
+		<Spanish>Wetland</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_TRAITS_FAITHFUL</Tag>
+        <English>[COLOR_GREEN]Faithful Trait[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Faithful Trait[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Faithful Trait[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Faithful Trait[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Faithful Trait[COLOR_REVERT]</Spanish>
+    </TEXT>	
+</Civ4GameText>

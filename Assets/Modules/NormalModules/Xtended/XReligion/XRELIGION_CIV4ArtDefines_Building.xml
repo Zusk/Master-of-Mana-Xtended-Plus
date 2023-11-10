@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:XRELIGION_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ABBEY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,7</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CATHEDRAL</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.25</fScale>
+			<fInterfaceScale>0.48</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MINSTER</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.25</fScale>
+			<fInterfaceScale>0.48</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,6,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_INFERNAL_EFFIGY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/Xtended/XReligion/Buttons/InfernalEffigy.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DANCE_OF_ECTASY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/Xtended/XReligion/Buttons/Ectasy.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_REQUIEM_LAST_HOPE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>Modules/NormalModules/Xtended/XReligion/Buttons/Hopeless.dds</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

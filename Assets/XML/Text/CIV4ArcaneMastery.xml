@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TREE_OF_LIFE</Tag>
+        <English>Tree of Life</English>
+        <French>Tree of Life</French>
+        <German>Tree of Life</German>
+        <Italian>Tree of Life</Italian>
+        <Spanish>Tree of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CURSED</Tag>
+        <English>Cursed</English>
+        <French>Cursed</French>
+        <German>Cursed</German>
+        <Italian>Cursed</Italian>
+        <Spanish>Cursed</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DESTROYER</Tag>
+        <English>Destroyer</English>
+        <French>Destroyer</French>
+        <German>Destroyer</German>
+        <Italian>Destroyer</Italian>
+        <Spanish>Destroyer</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_ALTERATION</Tag>
+        <English>Master of Alteration</English>
+        <French>Master of Alteration</French>
+        <German>Master of Alteration</German>
+        <Italian>Master of Alteration</Italian>
+        <Spanish>Master of Alteration</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_BODY_AND_ENCHANTMENT</Tag>
+        <English>Master of Body and Enchantment</English>
+        <French>Master of Body and Enchantment</French>
+        <German>Master of Body and Enchantment</German>
+        <Italian>Master of Body and Enchantment</Italian>
+        <Spanish>Master of Body and Enchantment</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_CHAOS_AND_ENTROPY</Tag>
+        <English>Master of Chaos and Entropy</English>
+        <French>Master of Chaos and Entropy</French>
+        <German>Master of Chaos and Entropy</German>
+        <Italian>Master of Chaos and Entropy</Italian>
+        <Spanish>Master of Chaos and Entropy</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_DEATH_AND_SHADOW</Tag>
+        <English>Master of Death and Shadow</English>
+        <French>Master of Death and Shadow</French>
+        <German>Master of Death and Shadow</German>
+        <Italian>Master of Death and Shadow</Italian>
+        <Spanish>Master of Death and Shadow</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_DIVINATION</Tag>
+        <English>Master of Divination</English>
+        <French>Master of Divination</French>
+        <German>Master of Divination</German>
+        <Italian>Master of Divination</Italian>
+        <Spanish>Master of Divination</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_EARTH_AND_AIR</Tag>
+        <English>Master of Earth and Air</English>
+        <French>Master of Earth and Air</French>
+        <German>Master of Earth and Air</German>
+        <Italian>Master of Earth and Air</Italian>
+        <Spanish>Master of Earth and Air</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_FIRE_AND_WATER</Tag>
+        <English>Master of Fire and Water</English>
+        <French>Master of Fire and Water</French>
+        <German>Master of Fire and Water</German>
+        <Italian>Master of Fire and Water</Italian>
+        <Spanish>Master of Fire and Water</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_LAW_AND_SUN</Tag>
+        <English>Master of Law and Sun</English>
+        <French>Master of Law and Sun</French>
+        <German>Master of Law and Sun</German>
+        <Italian>Master of Law and Sun</Italian>
+        <Spanish>Master of Law and Sun</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_LIFE_AND_NATURE</Tag>
+        <English>Master of Life and Nature</English>
+        <French>Master of Life and Nature</French>
+        <German>Master of Life and Nature</German>
+        <Italian>Master of Life and Nature</Italian>
+        <Spanish>Master of Life and Nature</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_MIND_AND_SPIRIT</Tag>
+        <English>Master of Mind and Spirit</English>
+        <French>Master of Mind and Spirit</French>
+        <German>Master of Mind and Spirit</German>
+        <Italian>Master of Mind and Spirit</Italian>
+        <Spanish>Master of Mind and Spirit</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_NECROMANCY</Tag>
+        <English>Master of Necromancy</English>
+        <French>Master of Necromancy</French>
+        <German>Master of Necromancy</German>
+        <Italian>Master of Necromancy</Italian>
+        <Spanish>Master of Necromancy</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_THE_ELEMENTS</Tag>
+        <English>Master of the Elements</English>
+        <French>Master of the Elements</French>
+        <German>Master of the Elements</German>
+        <Italian>Master of the Elements</Italian>
+        <Spanish>Master of the Elements</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MIGHT</Tag>
+        <English>Might</English>
+        <French>Might</French>
+        <German>Might</German>
+        <Italian>Might</Italian>
+        <Spanish>Might</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_OMNIPOTENCE</Tag>
+        <English>Omnipotence</English>
+        <French>Omnipotence</French>
+        <German>Omnipotence</German>
+        <Italian>Omnipotence</Italian>
+        <Spanish>Omnipotence</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PROTECTOR</Tag>
+        <English>Protector</English>
+        <French>Protector</French>
+        <German>Protector</German>
+        <Italian>Protector</Italian>
+        <Spanish>Protector</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TREE_OF_LIFE</Tag>
+        <English>Tree of Life</English>
+        <French>Tree of Life</French>
+        <German>Tree of Life</German>
+        <Italian>Tree of Life</Italian>
+        <Spanish>Tree of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_WICKED</Tag>
+        <English>Wicked</English>
+        <French>Wicked</French>
+        <German>Wicked</German>
+        <Italian>Wicked</Italian>
+        <Spanish>Wicked</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CURSE</Tag>
+        <English>Curse</English>
+        <French>Curse</French>
+        <German>Curse</German>
+        <Italian>Curse</Italian>
+        <Spanish>Curse</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_JUDGEMENT</Tag>
+        <English>Judgement</English>
+        <French>Judgement</French>
+        <German>Judgement</German>
+        <Italian>Judgement</Italian>
+        <Spanish>Judgement</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_JUDGEMENT_PEDIA</Tag>
+        <English>Also makes invisible units within 2 tiles visible.</English>
+        <French>Also makes invisible units within 2 tiles visible.</French>
+        <German>Also makes invisible units within 2 tiles visible.</German>
+        <Italian>Also makes invisible units within 2 tiles visible.</Italian>
+        <Spanish>Also makes invisible units within 2 tiles visible.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_MIGHT</Tag>
+        <English>Might</English>
+        <French>Might</French>
+        <German>Might</German>
+        <Italian>Might</Italian>
+        <Spanish>Might</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_RISE_OF_THE_WICKED</Tag>
+        <English>Rise of the Wicked</English>
+        <French>Rise of the Wicked</French>
+        <German>Rise of the Wicked</German>
+        <Italian>Rise of the Wicked</Italian>
+        <Spanish>Rise of the Wicked</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SHOOTING_STARS</Tag>
+        <English>Shooting Stars</English>
+        <French>Shooting Stars</French>
+        <German>Shooting Stars</German>
+        <Italian>Shooting Stars</Italian>
+        <Spanish>Shooting Stars</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_HOLY_AVENGER</Tag>
+        <English>Summon Holy Avenger</English>
+        <French>Summon Holy Avenger</French>
+        <German>Summon Holy Avenger</German>
+        <Italian>Summon Holy Avenger</Italian>
+        <Spanish>Summon Holy Avenger</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_TREE_OF_LIFE</Tag>
+        <English>Summon Tree of Life</English>
+        <French>Summon Tree of Life</French>
+        <German>Summon Tree of Life</German>
+        <Italian>Summon Tree of Life</Italian>
+        <Spanish>Summon Tree of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_VYRKUL</Tag>
+        <English>Summon Vyrkul</English>
+        <French>Summon Vyrkul</French>
+        <German>Summon Vyrkul</German>
+        <Italian>Summon Vyrkul</Italian>
+        <Spanish>Summon Vyrkul</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_VYRKUL_PEDIA</Tag>
+        <English>Summons a Vyrkul.</English>
+        <French>Summons a Vyrkul.</French>
+        <German>Summons a Vyrkul.</German>
+        <Italian>Summons a Vyrkul.</Italian>
+        <Spanish>Summons a Vyrkul.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_TOUCH_OF_LIFE</Tag>
+        <English>Touch of Life</English>
+        <French>Touch of Life</French>
+        <German>Touch of Life</German>
+        <Italian>Touch of Life</Italian>
+        <Spanish>Touch of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_TREE_OF_LIFE</Tag>
+        <English>Tree of Life</English>
+        <French>Tree of Life</French>
+        <German>Tree of Life</German>
+        <Italian>Tree of Life</Italian>
+        <Spanish>Tree of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_TREE_OF_LIFE_PEDIA</Tag>
+        <English>Creates a Tree of Life building in city that provides +10 Food, +5 Health and +5 Happiness. Units created in city start with the Touch of Life promotion.</English>
+        <French>Creates a Tree of Life building in city that provides +10 Food, +5 Health and +5 Happiness. Units created in city start with the Touch of Life promotion.</French>
+        <German>Creates a Tree of Life building in city that provides +10 Food, +5 Health and +5 Happiness. Units created in city start with the Touch of Life promotion.</German>
+        <Italian>Creates a Tree of Life building in city that provides +10 Food, +5 Health and +5 Happiness. Units created in city start with the Touch of Life promotion.</Italian>
+        <Spanish>Creates a Tree of Life building in city that provides +10 Food, +5 Health and +5 Happiness. Units created in city start with the Touch of Life promotion.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HOLY_AVENGER</Tag>
+        <English>Holy Avenger</English>
+        <French>Holy Avenger</French>
+        <German>Holy Avenger</German>
+        <Italian>Holy Avenger</Italian>
+        <Spanish>Holy Avenger</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HOLY_AVENGER_PEDIA</Tag>
+        <English>No Entry Yet.</English>
+        <French>No Entry Yet.</French>
+        <German>No Entry Yet.</German>
+        <Italian>No Entry Yet.</Italian>
+        <Spanish>No Entry Yet.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HOLY_AVENGER_STRATEGY</Tag>
+        <English>Use the Holy Avenger to smite forces of darkness.</English>
+        <French>Use the Holy Avenger to smite forces of darkness.</French>
+        <German>Use the Holy Avenger to smite forces of darkness.</German>
+        <Italian>Use the Holy Avenger to smite forces of darkness.</Italian>
+        <Spanish>Use the Holy Avenger to smite forces of darkness.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SHOOTING_STAR</Tag>
+        <English>Shooting Star</English>
+        <French>Shooting Star</French>
+        <German>Shooting Star</German>
+        <Italian>Shooting Star</Italian>
+        <Spanish>Shooting Star</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SHOOTING_STAR_PEDIA</Tag>
+        <English>Available only to those that have mastered all 4 elements, the Shooting Stars spell summons stars of energy that the caster can hurl at their enemies.</English>
+        <French>Available only to units that have mastered all 4 elements, the Shooting Stars spell summons stars of energy that the caster can hurl at their enemies.</French>
+        <German>Available only to units that have mastered all 4 elements, the Shooting Stars spell summons stars of energy that the caster can hurl at their enemies.</German>
+        <Italian>Available only to units that have mastered all 4 elements, the Shooting Stars spell summons stars of energy that the caster can hurl at their enemies.</Italian>
+        <Spanish>Available only to units that have mastered all 4 elements, the Shooting Stars spell summons stars of energy that the caster can hurl at their enemies.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SHOOTING_STAR_STRATEGY</Tag>
+        <English>Collateral damage: 60% up to 90% max, affects 2 units.</English>
+        <French>Collateral damage: 60% up to 90% max, affects 2 units.</French>
+        <German>Collateral damage: 60% up to 90% max, affects 2 units.</German>
+        <Italian>Collateral damage: 60% up to 90% max, affects 2 units.</Italian>
+        <Spanish>Collateral damage: 60% up to 90% max, affects 2 units.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_TREE_OF_LIFE</Tag>
+        <English>Tree of Life</English>
+        <French>Tree of Life</French>
+        <German>Tree of Life</German>
+        <Italian>Tree of Life</Italian>
+        <Spanish>Tree of Life</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_TREE_OF_LIFE_PEDIA</Tag>
+        <English>The Tree of Life can cast the Tree of Life spell in cities to provide certain bonuses.</English>
+        <French>The Tree of Life can cast the Tree of Life spell in cities to provide certain bonuses.</French>
+        <German>The Tree of Life can cast the Tree of Life spell in cities to provide certain bonuses.</German>
+        <Italian>The Tree of Life can cast the Tree of Life spell in cities to provide certain bonuses.</Italian>
+        <Spanish>The Tree of Life can cast the Tree of Life spell in cities to provide certain bonuses.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VYRKUL</Tag>
+        <English>Vyrkul</English>
+        <French>Vyrkul</French>
+        <German>Vyrkul</German>
+        <Italian>Vyrkul</Italian>
+        <Spanish>Vyrkul</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VYRKUL_PEDIA</Tag>
+        <English>A Vyrkul is an ancient wizard who transformed himself into an elemental king through rituals that have long been lost in the sands of time. He can only be summoned by those with an unprecedented knowledge of the elements and the arcane.</English>
+        <French>A Vyrkul is an ancient wizard who transformed himself into an elemental king through rituals that have long been lost in the sands of time. He can only be summoned by those with an unprecedented knowledge of the elements and the arcane.</French>
+        <German>A Vyrkul is an ancient wizard who transformed himself into an elemental king through rituals that have long been lost in the sands of time. He can only be summoned by those with an unprecedented knowledge of the elements and the arcane.</German>
+        <Italian>A Vyrkul is an ancient wizard who transformed himself into an elemental king through rituals that have long been lost in the sands of time. He can only be summoned by those with an unprecedented knowledge of the elements and the arcane.</Italian>
+        <Spanish>A Vyrkul is an ancient wizard who transformed himself into an elemental king through rituals that have long been lost in the sands of time. He can only be summoned by those with an unprecedented knowledge of the elements and the arcane.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VYRKUL_STRATEGY</Tag>
+        <English>It takes 7 turns to summon a Vyrkul.</English>
+        <French>It takes 7 turns to summon a Vyrkul.</French>
+        <German>It takes 7 turns to summon a Vyrkul.</German>
+        <Italian>It takes 7 turns to summon a Vyrkul.</Italian>
+        <Spanish>It takes 7 turns to summon a Vyrkul.</Spanish>
+    </TEXT>
+</Civ4GameText>

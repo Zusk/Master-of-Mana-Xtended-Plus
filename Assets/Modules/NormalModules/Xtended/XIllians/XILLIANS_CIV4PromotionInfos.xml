@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<Civ4PromotionInfos xmlns="x-schema:XILLIANS_CIV4UnitSchema.xml">
+    <PromotionInfos>
+        <PromotionInfo>
+            <Type>PROMOTION_WHITE_HAND</Type>
+            <Description>The White Hand</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/WhiteHand.dds</Button>
+			<UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+            <iMinLevel>-1</iMinLevel>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ILLIANS</PrereqCivilization>
+			</PrereqCivilizations>						
+            <CombatAuraDamageTypeResists>
+                <DamageTypeResist>
+                    <DamageType>DAMAGE_COLD</DamageType>
+                    <iResist>10</iResist>
+                </DamageTypeResist>
+            </CombatAuraDamageTypeResists>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_THE_DRAW</Type>
+            <Description>Ice Manifest</Description>
+			<bForceOverwrite>1</bForceOverwrite>
+			<PromotionMustHave>PROMOTION_WHITE_HAND</PromotionMustHave>
+			<bAnyUnitCombat>1</bAnyUnitCombat>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			<Button>Modules/NormalModules/Xtended/XPromotion/Buttons2/8_mastery_ice.dds</Button>
+            <bAlwaysHeal>1</bAlwaysHeal>
+            <DamageTypeCombats>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_COLD</DamageType>
+                    <iCombat>2</iCombat>
+                </DamageTypeCombat>
+            </DamageTypeCombats>
+        	<iPowerModifier>10</iPowerModifier>
+			<iMinLevel>-1</iMinLevel>
+            <bValidate>1</bValidate>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_CHILL_BONE</Type>
+            <Description>Chilled Bone</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/ChillBone.dds</Button>
+			<UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+            <PromotionPrereq>PROMOTION_WHITE_HAND</PromotionPrereq>
+			<iAIWeight>100</iAIWeight>
+            <iMinLevel>6</iMinLevel>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ILLIANS</PrereqCivilization>
+			</PrereqCivilizations>
+			<iCombatAuraStrengthChange>10</iCombatAuraStrengthChange>
+			<iCombatAuraHealthRegenerationChange>10</iCombatAuraHealthRegenerationChange>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_FROZEN_BODY</Type>
+            <Description>Frozen Body</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/FrozenBody.dds</Button>
+			<UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+            <PromotionPrereq>PROMOTION_WHITE_HAND</PromotionPrereq>
+			<iAIWeight>100</iAIWeight>
+            <iMinLevel>6</iMinLevel>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_ILLIANS</PrereqCivilization>
+			</PrereqCivilizations>
+			<iCombatAuraIgnoreFirstStrikes>100</iCombatAuraIgnoreFirstStrikes>
+			<iCombatAuraIncreaseFirstStrikes>100</iCombatAuraIncreaseFirstStrikes>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

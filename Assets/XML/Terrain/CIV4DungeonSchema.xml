@@ -1,0 +1,90 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>		
+	<ElementType name="PyResult" content="textOnly"/>
+	<ElementType name="PyRequirement" content="textOnly"/>		
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="iWeight" content="textOnly" dt:type="int"/>	
+	<ElementType name="iGameTurnMod" content="textOnly" dt:type="int"/>	
+	<ElementType name="ImprovementType" content="textOnly"/>
+	<ElementType name="AttitudeType" content="textOnly"/>		
+	<ElementType name="Result" content="textOnly"/>				
+	<ElementType name="bActive" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bPositive" content="textOnly" dt:type="boolean"/>			
+	<ElementType name="bTaunt" content="textOnly" dt:type="boolean"/>				
+	<ElementType name="bThreaten" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bConvert" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDonateUnits" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iMetal" content="textOnly" dt:type="int"/>		
+	<ElementType name="iLeather" content="textOnly" dt:type="int"/>			
+	<ElementType name="iPopulation" content="textOnly" dt:type="int"/>	<!-- modifies Population of Player -->		
+	<ElementType name="iPopulationChange" content="textOnly" dt:type="int"/>	<!-- modifies Population of Barbs -->			
+	<ElementType name="iPowerChange" content="textOnly" dt:type="int"/>	
+	<ElementType name="iGold" content="textOnly" dt:type="int"/>				
+	<ElementType name="PrereqOrAttitude" content="eltOnly">
+		<element type="AttitudeType"/>
+		<element type="bActive"/>
+	</ElementType>		
+	<ElementType name="PrereqOrAttitudes" content="eltOnly">
+		<element type="PrereqOrAttitude" minOccurs="0" maxOccurs="*"/>
+	</ElementType>			
+	<ElementType name="LairResult" content="eltOnly">
+		<element type="Result"/>
+		<element type="bActive"/>
+	</ElementType>		
+	<ElementType name="LairResults" content="eltOnly">
+		<element type="LairResult" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+	<ElementType name="DungeonEventInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="bPositive" minOccurs="0"/>
+		<element type="iGold" minOccurs="0"/>
+		<element type="iPopulation" minOccurs="0"/>
+		<element type="iPopulationChange" minOccurs="0"/>
+		<element type="iPowerChange" minOccurs="0"/>		
+		<element type="iMetal" minOccurs="0"/>
+		<element type="iLeather" minOccurs="0"/>		
+		<element type="bThreaten" minOccurs="0"/>
+		<element type="bTaunt" minOccurs="0"/>		
+		<element type="bConvert" minOccurs="0"/>
+		<element type="bDonateUnits" minOccurs="0"/>
+		<element type="PrereqOrAttitudes" minOccurs="0"/>						
+	</ElementType>		
+	<ElementType name="DungeonInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="ImprovementType" minOccurs="0"/>
+		<element type="LairResults" minOccurs="0"/>
+	</ElementType>	
+	<ElementType name="LairResultInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description" minOccurs="0"/>
+		<element type="PyResult" minOccurs="0"/>
+		<element type="PyRequirement" minOccurs="0"/>
+		<element type="iValue" minOccurs="0"/>
+		<element type="iWeight" minOccurs="0"/>
+		<element type="iGameTurnMod" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="DungeonEventInfos" content="eltOnly">
+		<element type="DungeonEventInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4DungeonEventInfos" content="eltOnly">
+		<element type="DungeonEventInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+	<ElementType name="DungeonInfos" content="eltOnly">
+		<element type="DungeonInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4DungeonInfos" content="eltOnly">
+		<element type="DungeonInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="LairResultInfos" content="eltOnly">
+		<element type="LairResultInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4LairResultInfos" content="eltOnly">
+		<element type="LairResultInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+</Schema>

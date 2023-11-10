@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Civ4CityStateInfos xmlns="x-schema:CIV4CityStateSchema.xml">
+	<CityStateInfos>
+		<CityStateInfo>
+			<Type>CITYSTATE_LJOSALFAR</Type>
+			<Description>Holy City Leaves</Description>
+			<CivilizationType>CIVILIZATION_LJOSALFAR</CivilizationType>
+			<LeaderType>LEADER_ELDARWEN</LeaderType>
+			<ReligionType>RELIGION_FELLOWSHIP_OF_LEAVES</ReligionType>
+			<NativeFeature>FEATURE_FOREST</NativeFeature>
+			<NativeImprovement>IMPROVEMENT_TOMB_OF_SUCELLUS</NativeImprovement>			
+		</CityStateInfo>
+		<CityStateInfo>
+			<Type>CITYSTATE_KHAZAD</Type>
+			<Description>Holy City Runes</Description>
+			<CivilizationType>CIVILIZATION_KHAZAD</CivilizationType>
+			<LeaderType>LEADER_VITNIR</LeaderType>			
+			<ReligionType>RELIGION_RUNES_OF_KILMORPH</ReligionType>						
+		</CityStateInfo>
+		<CityStateInfo>
+			<Type>CITYSTATE_LANUN</Type>
+			<Description>Holy City Overlords</Description>
+			<CivilizationType>CIVILIZATION_LANUN</CivilizationType>
+			<LeaderType>LEADER_PALGADEE</LeaderType>			
+			<ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
+			<bCoastal>1</bCoastal>
+		</CityStateInfo>
+		<CityStateInfo>
+			<Type>CITYSTATE_MALAKIM</Type>
+			<Description>Holy City Empyrean</Description>
+			<CivilizationType>CIVILIZATION_MALAKIM</CivilizationType>
+			<ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
+			<LeaderType>LEADER_SARALET</LeaderType>						
+			<NativeTerrain>TERRAIN_DESERT</NativeTerrain>
+			<NativeImprovement>IMPROVEMENT_MIRROR_OF_HEAVEN</NativeImprovement>			
+		</CityStateInfo>
+		<CityStateInfo>
+			<Type>CITYSTATE_BANNOR</Type>
+			<Description>Holy City Order</Description>
+			<CivilizationType>CIVILIZATION_BANNOR</CivilizationType>
+			<LeaderType>LEADER_ANGAAD</LeaderType>									
+			<ReligionType>RELIGION_THE_ORDER</ReligionType>			
+		</CityStateInfo>
+		<CityStateInfo>
+			<Type>CITYSTATE_SHEAIM</Type>
+			<Description>Holy City Ashen Veil</Description>
+			<CivilizationType>CIVILIZATION_SHEAIM</CivilizationType>
+			<LeaderType>LEADER_AVERAX</LeaderType>												
+			<ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>			
+			<NativeImprovement>IMPROVEMENT_BROKEN_SEPULCHER</NativeImprovement>			
+		</CityStateInfo>		
+	</CityStateInfos>
+</Civ4CityStateInfos>

@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ATHEL</Tag>
+        <English>Athel Revus</English>
+        <French>Athel Revus</French>
+        <German>Athel Revus</German>
+        <Italian>Athel Revus</Italian>
+        <Spanish>Atel Revus</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_ATHEL_PEDIA</Tag>
+        <English>[TAB]The dwarf looked down on a ghost town. Ten days ago there had been a thriving village at the mouth of the valley, built along the banks of a rocky stream. It had boasted a tavern and a trading-post for the furriers and shepherds who made their living in the high peaks of the area. Indeed, the dwarf had sat in that tavern drinking beer he'd paid for with money made by trading tools to the villagers. Now the buildings were empty, some with doors or windows broken but most intact. The trading post still smoldered where the fires had reduced it to an ash-heap. Here and there a discarded bucket or jug attested to efforts to stop the fire, and a strange smell hung in the air, but there was no other sign of the inhabitants. "So," the dwarf called over his shoulder, "I see things went about as expected." Behind him another dwarf, barely visible in the twilight, nodded agreement. "The booze you sold them put most of the men out," he stated flatly, "and when we fired the post the rest came running. We rounded them up with no trouble." The first dwarf chuckled and rubbed his hands together. "Good. If the lads hurry them along we'll have them on the block in Hexam before the week is out. I appreciate your taking care of this for me. I had a few other ventures that needed my personal attention in the last few days."[PARAGRAPH:1]"I hope one of them was getting rid of those papers. The Stewards don't like knowing someone's got their names in a file, and neither do I."[PARAGRAPH:1]"Of course you don't. Then again," the merchant snarled, "I don't like being told I'll be 'donating' triple this month if I want my spices to make it back to the Underhome. Do you have any idea what the horselords charge me for those damned roots? You're the ones who lit the fuse on this charge, not me. I admit, though, that I'm sorry I had to get you involved. Blame your cousin for letting on while we were out drinking. That's something you might want to look into when you get back to Halowell."[PARAGRAPH:1]The assassin spat, then melted away into the shadows, leaving Athel Revus to contemplate just what he was going to do with his new herd of sheep... and how long it would be before the cousin, who'd been undercutting him on provisions sales, would be out of the way.</English>
+        <French>[TAB]The dwarf looked down on a ghost town. Ten days ago there had been a thriving village at the mouth of the valley, built along the banks of a rocky stream. It had boasted a tavern and a trading-post for the furriers and shepherds who made their living in the high peaks of the area. Indeed, the dwarf had sat in that tavern drinking beer he'd paid for with money made by trading tools to the villagers. Now the buildings were empty, some with doors or windows broken but most intact. The trading post still smoldered where the fires had reduced it to an ash-heap. Here and there a discarded bucket or jug attested to efforts to stop the fire, and a strange smell hung in the air, but there was no other sign of the inhabitants. "So," the dwarf called over his shoulder, "I see things went about as expected." Behind him another dwarf, barely visible in the twilight, nodded agreement. "The booze you sold them put most of the men out," he stated flatly, "and when we fired the post the rest came running. We rounded them up with no trouble." The first dwarf chuckled and rubbed his hands together. "Good. If the lads hurry them along we'll have them on the block in Hexam before the week is out. I appreciate your taking care of this for me. I had a few other ventures that needed my personal attention in the last few days."[PARAGRAPH:1]"I hope one of them was getting rid of those papers. The Stewards don't like knowing someone's got their names in a file, and neither do I."[PARAGRAPH:1]"Of course you don't. Then again," the merchant snarled, "I don't like being told I'll be 'donating' triple this month if I want my spices to make it back to the Underhome. Do you have any idea what the horselords charge me for those damned roots? You're the ones who lit the fuse on this charge, not me. I admit, though, that I'm sorry I had to get you involved. Blame your cousin for letting on while we were out drinking. That's something you might want to look into when you get back to Halowell."[PARAGRAPH:1]The assassin spat, then melted away into the shadows, leaving Athel Revus to contemplate just what he was going to do with his new herd of sheep... and how long it would be before the cousin, who'd been undercutting him on provisions sales, would be out of the way.</French>
+        <German>[TAB]The dwarf looked down on a ghost town. Ten days ago there had been a thriving village at the mouth of the valley, built along the banks of a rocky stream. It had boasted a tavern and a trading-post for the furriers and shepherds who made their living in the high peaks of the area. Indeed, the dwarf had sat in that tavern drinking beer he'd paid for with money made by trading tools to the villagers. Now the buildings were empty, some with doors or windows broken but most intact. The trading post still smoldered where the fires had reduced it to an ash-heap. Here and there a discarded bucket or jug attested to efforts to stop the fire, and a strange smell hung in the air, but there was no other sign of the inhabitants. "So," the dwarf called over his shoulder, "I see things went about as expected." Behind him another dwarf, barely visible in the twilight, nodded agreement. "The booze you sold them put most of the men out," he stated flatly, "and when we fired the post the rest came running. We rounded them up with no trouble." The first dwarf chuckled and rubbed his hands together. "Good. If the lads hurry them along we'll have them on the block in Hexam before the week is out. I appreciate your taking care of this for me. I had a few other ventures that needed my personal attention in the last few days."[PARAGRAPH:1]"I hope one of them was getting rid of those papers. The Stewards don't like knowing someone's got their names in a file, and neither do I."[PARAGRAPH:1]"Of course you don't. Then again," the merchant snarled, "I don't like being told I'll be 'donating' triple this month if I want my spices to make it back to the Underhome. Do you have any idea what the horselords charge me for those damned roots? You're the ones who lit the fuse on this charge, not me. I admit, though, that I'm sorry I had to get you involved. Blame your cousin for letting on while we were out drinking. That's something you might want to look into when you get back to Halowell."[PARAGRAPH:1]The assassin spat, then melted away into the shadows, leaving Athel Revus to contemplate just what he was going to do with his new herd of sheep... and how long it would be before the cousin, who'd been undercutting him on provisions sales, would be out of the way.</German>
+        <Italian>[TAB]The dwarf looked down on a ghost town. Ten days ago there had been a thriving village at the mouth of the valley, built along the banks of a rocky stream. It had boasted a tavern and a trading-post for the furriers and shepherds who made their living in the high peaks of the area. Indeed, the dwarf had sat in that tavern drinking beer he'd paid for with money made by trading tools to the villagers. Now the buildings were empty, some with doors or windows broken but most intact. The trading post still smoldered where the fires had reduced it to an ash-heap. Here and there a discarded bucket or jug attested to efforts to stop the fire, and a strange smell hung in the air, but there was no other sign of the inhabitants. "So," the dwarf called over his shoulder, "I see things went about as expected." Behind him another dwarf, barely visible in the twilight, nodded agreement. "The booze you sold them put most of the men out," he stated flatly, "and when we fired the post the rest came running. We rounded them up with no trouble." The first dwarf chuckled and rubbed his hands together. "Good. If the lads hurry them along we'll have them on the block in Hexam before the week is out. I appreciate your taking care of this for me. I had a few other ventures that needed my personal attention in the last few days."[PARAGRAPH:1]"I hope one of them was getting rid of those papers. The Stewards don't like knowing someone's got their names in a file, and neither do I."[PARAGRAPH:1]"Of course you don't. Then again," the merchant snarled, "I don't like being told I'll be 'donating' triple this month if I want my spices to make it back to the Underhome. Do you have any idea what the horselords charge me for those damned roots? You're the ones who lit the fuse on this charge, not me. I admit, though, that I'm sorry I had to get you involved. Blame your cousin for letting on while we were out drinking. That's something you might want to look into when you get back to Halowell."[PARAGRAPH:1]The assassin spat, then melted away into the shadows, leaving Athel Revus to contemplate just what he was going to do with his new herd of sheep... and how long it would be before the cousin, who'd been undercutting him on provisions sales, would be out of the way.</Italian>
+        <Spanish>[TAB]El duende miraba hacia abajo al pueblo fantasma. Hace diez días que había un pueblo próspero en la desembocadura del valle, construido a lo largo de las orillas de un arroyo pedregoso. Había poseido un taberna y un puesto mercantil para los peleteros y shepherds who made their living in the high peaks of the area. Indeed, el duende había sentado en ese taberno bibiendo cerveza que había comprado con dinero hecho por trading tools to the villagers. Now the buildings were empty, some with doors or windows broken but most intact. The trading post still smoldered where the fires had reduced it to an ash-heap. Here and there a discarded bucket or jug attested to efforts to stop the fire, and a strange smell hung in the air, but there was no other sign of the inhabitants. "Pues," the dwarf called over his shoulder, "Veo que things went about as expected." Behind him another dwarf, barely visible in the twilight, nodded agreement. "The booze you sold them put most of the men out," he stated flatly, "y cuando provocamos el incendio en el puesto, el resto vinieron corriendo. Los detenimos sin problema." El primer duende se reyó and se frotaba las manos. "Bueno. Si los chicos hurry them along we'll have them on the block in Hexam before the week is out. I appreciate your taking care of this for me. I had a few other ventures that needed my personal attention in the last few days."[PARAGRAPH:1]"Espero que one of them was getting rid of those papers. The Stewards don't like knowing someone's got their names in a file, and neither do I."[PARAGRAPH:1]"Of course you don't. Then again," the merchant snarled, "I don't like being told I'll be 'donating' triple this month if I want my spices to make it back to the Underhome. Do you have any idea what the horselords charge me for those damned roots? You're the ones who lit the fuse on this charge, not me. I admit, though, that I'm sorry I had to get you involved. Blame your cousin for letting on while we were out drinking. That's something you might want to look into when you get back to Halowell."[PARAGRAPH:1]El asesino escupió, then melted away into the shadows, dejando Atel Revus to contemplate just what he was going to do with his new herd of sheep... and how long it would be before the cousin, who'd been undercutting him on provisions sales, would be out of the way.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ANAGANTIOS</Tag>
+        <English>Anagantios</English>
+        <French>Anagantios</French>
+        <German>Anagantios</German>
+        <Italian>Anagantios</Italian>
+        <Spanish>Anagantios</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_AVERAX</Tag>
+        <English>Averax the Cambion</English>
+        <French>Averax the Cambion</French>
+        <German>Averax the Cambion</German>
+        <Italian>Averax the Cambion</Italian>
+        <Spanish>Averax el Cambión</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_BLACKHEART</Tag>
+        <English>Captain Blackheart</English>
+        <French>Captain Blackheart</French>
+        <German>Captain Blackheart</German>
+        <Italian>Captain Blackheart</Italian>
+        <Spanish>Capitán Fondonegro</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_BRAEDEN</Tag>
+        <English>Braeden the Laconic</English>
+        <French>Braeden the Laconic</French>
+        <German>Braeden the Laconic</German>
+        <Italian>Braeden the Laconic</Italian>
+        <Spanish>Braeden el Lacónico</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_CASIN</Tag>
+        <English>Casin Loveless</English>
+        <French>
+			<Text>Casin Loveless</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Casin Loveless</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Casin Loveless</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Casin Sinamor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_CHERON</Tag>
+        <English>Cheron</English>
+        <French>Cheron</French>
+        <German>Cheron</German>
+        <Italian>Cheron</Italian>
+        <Spanish>Cheron</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_DUIN</Tag>
+        <English>Baron Duin Halfmorn</English>
+        <French>Baron Duin Halfmorn</French>
+        <German>Baron Duin Halfmorn</German>
+        <Italian>Baron Duin Halfmorn</Italian>
+        <Spanish>Barón Duin Halfmorn</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_DUMANNIOS</Tag>
+        <English>Dumannios</English>
+        <French>Dumannios</French>
+        <German>Dumannios</German>
+        <Italian>Dumannios</Italian>
+        <Spanish>Dumanios</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ELDARWEN</Tag>
+        <English>Eldarwen Alcarin</English>
+        <French>
+			<Text>Eldarwen Alcarin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Eldarwen Alcarin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Eldarwen Alcarin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Eldarwen Alcarin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_ELIJAH</Tag>
+        <English>Elijah Arnauld</English>
+        <French>Elijah Arnauld</French>
+        <German>Elijah Arnauld</German>
+        <Italian>Elijah Arnauld</Italian>
+        <Spanish>Elías Arnaldo</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_EMMA</Tag>
+        <English>Emma Vargamor</English>
+        <French>
+			<Text>Emma Vargamor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Emma Vargamor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Emma Vargamor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Emma Vargamor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_ESIRCE</Tag>
+        <English>Prime Minister Esirce</English>
+        <French>Prime Minister Esirce</French>
+        <German>Prime Minister Esirce</German>
+        <Italian>Prime Minister Esirce</Italian>
+        <Spanish>Primer Ministro Esirce</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_ESIRCE_PEDIA</Tag>
+        <English>[TAB]When I came into the chamber, Prime Minister Esirce was sitting at the head of the table, surrounded by his various sycophants and false friends. "Let me guess," he said when he saw me. "The Calabim again?" I nodded. He said, "they are a necessary evil. Tell me what they did this time." "Well, some of them are beginning to demand a return to the Old Ways..." "yes, yes, yes, fine, whatever. Does that mean following their religion?" It didn't, of course. The only time Lord Esirce could be expected to grow a spine was if religion was involved. "No," I said, "just their... hunting celebration." "We need the Calabim," Esirce said, putting on his Brilliant Overlord tone.[PARAGRAPH:1]"Yes, of course we do," Minister Alyeris said, smiling her false smile. Anybody with an ounce of sense knew that woman was loyal to either Faeryl Viconia or none but herself. It didn't matter, her effect on the empire was the same. She was presently bedding someone in the Calabim empire, I reckoned. Esirce was the only person on Erebus unaware of Alyeris' many, many questionable lovers. The debacle with the centaur was, of course, merely the most often joked about and satirized, but the list of confirmed partners ran on impressively, and was likely a fraction of the total. "You see," Alyeris continued, "the Calabim have many... unique skills that could serve our needs... wonderfully. As a matter of fact, I was speaking with Lady Tepes..." I grinned at my fellow clerk, Anna. "See," I said to her, "I told you, she likes women to." She silently handed over the coins we'd wagered as Alyeris continued gushing over the wonderful things the Calabim, especially the beautiful Lady Tepes, had to offer. Several other ministers went red, snickered, or showed sudden interest as they figured out the subText. Esirce was completely blind to it all.[PARAGRAPH:1]Ragas the Lone interrupted Alyeris' ramblings, to the relief of some and annoyance of others. Doviello were assumed to be big, brutish, and stupid. Ragas was definitely big, but while his methods were brutal, they were also surprisingly creative, and Ragas was far from stupid. He had an incredible animal cunning, and adapted just enough to Grigori culture to be tolerated, while still being seen as a fool. "My pack is interested in these gifts," he said. "Will the People of the Bat offer it to us, if we will provide them with much Prey?" Alyreis considered, but before she could respond, Ragas continued. "To speak of Prey, my assistant read me Words from Front." Another farce; Ragas' broken Grigori and illiteracy were both lies. He'd made mistakes that had revealed both; pass him a document, and he'd sometimes read it over before remembering to ask someone to do it for him, and he sometimes soliloquized in flawless Grigori when discussing his latest schemes with his allies. "People of the Dog," that was the Bannor, "will not kneel. I demand money given that I may make them heel." Esirce nodded. "You! Boy!" That meant me. "My name is Remus," I reminded him quietly. "Yes, yes," he said with a dismissive wave. "Make sure Minister Ragas gets the money he needs." His allies would be drinking well tonight. So be it. I made a note to do it later, and he quickly forgot me.[PARAGRAPH:1]Esirce then spoke to his fellow ministers. "Now, what shall we do about the economic crisis? My trusted assistant, Lord Wordsworth, has told me he has a solution to our problems. Care to tell the council?" Wordsworth grinned. "I have a proposal that would significantly increase our wealth through wise investing..." Anna was a merchant baron's daughter and heir apparent, and as Wordsworth explained in his double-talk, she translated. "He's proposing they invest in a bank owned by a man who, he failed to mention, is his brother-in-law. The interest rate is..." she quickly calculated, "less than half that offered by the Khazad banking establishments. He'll accuse the dwarves of being gold-hungry subhumans in... five, four, three, two... yep, there he goes. More racist ranting. If you start believing any of this nonsense, please tell me so I can hit you in the... ah, he's done. Now we get all sorts of words that don't have any meaning but sound really good, more, blah blah, yak yak, oh, looks like his bank is invested in only a few industries, none of them especially stable and... yeah, that's a pyramid scheme right there, with him and his political allies on top. And people ask me why I invest so heavily in foreign companies..."[PARAGRAPH:1]The meeting finally ended. The ministers all shuffled out, while Esirce stayed behind. He beckoned for me and Anna to come. "Ah, Romulus! And your girlfriend!" I didn't even bother correcting him on either. "See, what you saw there was politics at its finest! Did you not see how I played each and every one of my ministers for their strengths, while minimizing their weaknesses! How I kept their various little schemes and ambitions in my pocket, and force them to use their skills for the good of the Grigori empire! Watch me, and you may learn something!" He sounded so certain I almost believed him. Until he added, "I do wish Alyeris would find a husband, though. Why a woman of her beauty remains single is beyond me, especially considering how many excellent bachelors she knows."</English>
+        <French>[TAB]When I came into the chamber, Prime Minister Esirce was sitting at the head of the table, surrounded by his various sycophants and false friends. "Let me guess," he said when he saw me. "The Calabim again?" I nodded. He said, "they are a necessary evil. Tell me what they did this time." "Well, some of them are beginning to demand a return to the Old Ways..." "yes, yes, yes, fine, whatever. Does that mean following their religion?" It didn't, of course. The only time Lord Esirce could be expected to grow a spine was if religion was involved. "No," I said, "just their... hunting celebration." "We need the Calabim," Esirce said, putting on his Brilliant Overlord tone.[PARAGRAPH:1]"Yes, of course we do," Minister Alyeris said, smiling her false smile. Anybody with an ounce of sense knew that woman was loyal to either Faeryl Viconia or none but herself. It didn't matter, her effect on the empire was the same. She was presently bedding someone in the Calabim empire, I reckoned. Esirce was the only person on Erebus unaware of Alyeris' many, many questionable lovers. The debacle with the centaur was, of course, merely the most often joked about and satirized, but the list of confirmed partners ran on impressively, and was likely a fraction of the total. "You see," Alyeris continued, "the Calabim have many... unique skills that could serve our needs... wonderfully. As a matter of fact, I was speaking with Lady Tepes..." I grinned at my fellow clerk, Anna. "See," I said to her, "I told you, she likes women to." She silently handed over the coins we'd wagered as Alyeris continued gushing over the wonderful things the Calabim, especially the beautiful Lady Tepes, had to offer. Several other ministers went red, snickered, or showed sudden interest as they figured out the subText. Esirce was completely blind to it all.[PARAGRAPH:1]Ragas the Lone interrupted Alyeris' ramblings, to the relief of some and annoyance of others. Doviello were assumed to be big, brutish, and stupid. Ragas was definitely big, but while his methods were brutal, they were also surprisingly creative, and Ragas was far from stupid. He had an incredible animal cunning, and adapted just enough to Grigori culture to be tolerated, while still being seen as a fool. "My pack is interested in these gifts," he said. "Will the People of the Bat offer it to us, if we will provide them with much Prey?" Alyreis considered, but before she could respond, Ragas continued. "To speak of Prey, my assistant read me Words from Front." Another farce; Ragas' broken Grigori and illiteracy were both lies. He'd made mistakes that had revealed both; pass him a document, and he'd sometimes read it over before remembering to ask someone to do it for him, and he sometimes soliloquized in flawless Grigori when discussing his latest schemes with his allies. "People of the Dog," that was the Bannor, "will not kneel. I demand money given that I may make them heel." Esirce nodded. "You! Boy!" That meant me. "My name is Remus," I reminded him quietly. "Yes, yes," he said with a dismissive wave. "Make sure Minister Ragas gets the money he needs." His allies would be drinking well tonight. So be it. I made a note to do it later, and he quickly forgot me.[PARAGRAPH:1]Esirce then spoke to his fellow ministers. "Now, what shall we do about the economic crisis? My trusted assistant, Lord Wordsworth, has told me he has a solution to our problems. Care to tell the council?" Wordsworth grinned. "I have a proposal that would significantly increase our wealth through wise investing..." Anna was a merchant baron's daughter and heir apparent, and as Wordsworth explained in his double-talk, she translated. "He's proposing they invest in a bank owned by a man who, he failed to mention, is his brother-in-law. The interest rate is..." she quickly calculated, "less than half that offered by the Khazad banking establishments. He'll accuse the dwarves of being gold-hungry subhumans in... five, four, three, two... yep, there he goes. More racist ranting. If you start believing any of this nonsense, please tell me so I can hit you in the... ah, he's done. Now we get all sorts of words that don't have any meaning but sound really good, more, blah blah, yak yak, oh, looks like his bank is invested in only a few industries, none of them especially stable and... yeah, that's a pyramid scheme right there, with him and his political allies on top. And people ask me why I invest so heavily in foreign companies..."[PARAGRAPH:1]The meeting finally ended. The ministers all shuffled out, while Esirce stayed behind. He beckoned for me and Anna to come. "Ah, Romulus! And your girlfriend!" I didn't even bother correcting him on either. "See, what you saw there was politics at its finest! Did you not see how I played each and every one of my ministers for their strengths, while minimizing their weaknesses! How I kept their various little schemes and ambitions in my pocket, and force them to use their skills for the good of the Grigori empire! Watch me, and you may learn something!" He sounded so certain I almost believed him. Until he added, "I do wish Alyeris would find a husband, though. Why a woman of her beauty remains single is beyond me, especially considering how many excellent bachelors she knows."</French>
+        <German>[TAB]When I came into the chamber, Prime Minister Esirce was sitting at the head of the table, surrounded by his various sycophants and false friends. "Let me guess," he said when he saw me. "The Calabim again?" I nodded. He said, "they are a necessary evil. Tell me what they did this time." "Well, some of them are beginning to demand a return to the Old Ways..." "yes, yes, yes, fine, whatever. Does that mean following their religion?" It didn't, of course. The only time Lord Esirce could be expected to grow a spine was if religion was involved. "No," I said, "just their... hunting celebration." "We need the Calabim," Esirce said, putting on his Brilliant Overlord tone.[PARAGRAPH:1]"Yes, of course we do," Minister Alyeris said, smiling her false smile. Anybody with an ounce of sense knew that woman was loyal to either Faeryl Viconia or none but herself. It didn't matter, her effect on the empire was the same. She was presently bedding someone in the Calabim empire, I reckoned. Esirce was the only person on Erebus unaware of Alyeris' many, many questionable lovers. The debacle with the centaur was, of course, merely the most often joked about and satirized, but the list of confirmed partners ran on impressively, and was likely a fraction of the total. "You see," Alyeris continued, "the Calabim have many... unique skills that could serve our needs... wonderfully. As a matter of fact, I was speaking with Lady Tepes..." I grinned at my fellow clerk, Anna. "See," I said to her, "I told you, she likes women to." She silently handed over the coins we'd wagered as Alyeris continued gushing over the wonderful things the Calabim, especially the beautiful Lady Tepes, had to offer. Several other ministers went red, snickered, or showed sudden interest as they figured out the subText. Esirce was completely blind to it all.[PARAGRAPH:1]Ragas the Lone interrupted Alyeris' ramblings, to the relief of some and annoyance of others. Doviello were assumed to be big, brutish, and stupid. Ragas was definitely big, but while his methods were brutal, they were also surprisingly creative, and Ragas was far from stupid. He had an incredible animal cunning, and adapted just enough to Grigori culture to be tolerated, while still being seen as a fool. "My pack is interested in these gifts," he said. "Will the People of the Bat offer it to us, if we will provide them with much Prey?" Alyreis considered, but before she could respond, Ragas continued. "To speak of Prey, my assistant read me Words from Front." Another farce; Ragas' broken Grigori and illiteracy were both lies. He'd made mistakes that had revealed both; pass him a document, and he'd sometimes read it over before remembering to ask someone to do it for him, and he sometimes soliloquized in flawless Grigori when discussing his latest schemes with his allies. "People of the Dog," that was the Bannor, "will not kneel. I demand money given that I may make them heel." Esirce nodded. "You! Boy!" That meant me. "My name is Remus," I reminded him quietly. "Yes, yes," he said with a dismissive wave. "Make sure Minister Ragas gets the money he needs." His allies would be drinking well tonight. So be it. I made a note to do it later, and he quickly forgot me.[PARAGRAPH:1]Esirce then spoke to his fellow ministers. "Now, what shall we do about the economic crisis? My trusted assistant, Lord Wordsworth, has told me he has a solution to our problems. Care to tell the council?" Wordsworth grinned. "I have a proposal that would significantly increase our wealth through wise investing..." Anna was a merchant baron's daughter and heir apparent, and as Wordsworth explained in his double-talk, she translated. "He's proposing they invest in a bank owned by a man who, he failed to mention, is his brother-in-law. The interest rate is..." she quickly calculated, "less than half that offered by the Khazad banking establishments. He'll accuse the dwarves of being gold-hungry subhumans in... five, four, three, two... yep, there he goes. More racist ranting. If you start believing any of this nonsense, please tell me so I can hit you in the... ah, he's done. Now we get all sorts of words that don't have any meaning but sound really good, more, blah blah, yak yak, oh, looks like his bank is invested in only a few industries, none of them especially stable and... yeah, that's a pyramid scheme right there, with him and his political allies on top. And people ask me why I invest so heavily in foreign companies..."[PARAGRAPH:1]The meeting finally ended. The ministers all shuffled out, while Esirce stayed behind. He beckoned for me and Anna to come. "Ah, Romulus! And your girlfriend!" I didn't even bother correcting him on either. "See, what you saw there was politics at its finest! Did you not see how I played each and every one of my ministers for their strengths, while minimizing their weaknesses! How I kept their various little schemes and ambitions in my pocket, and force them to use their skills for the good of the Grigori empire! Watch me, and you may learn something!" He sounded so certain I almost believed him. Until he added, "I do wish Alyeris would find a husband, though. Why a woman of her beauty remains single is beyond me, especially considering how many excellent bachelors she knows."</German>
+        <Italian>[TAB]When I came into the chamber, Prime Minister Esirce was sitting at the head of the table, surrounded by his various sycophants and false friends. "Let me guess," he said when he saw me. "The Calabim again?" I nodded. He said, "they are a necessary evil. Tell me what they did this time." "Well, some of them are beginning to demand a return to the Old Ways..." "yes, yes, yes, fine, whatever. Does that mean following their religion?" It didn't, of course. The only time Lord Esirce could be expected to grow a spine was if religion was involved. "No," I said, "just their... hunting celebration." "We need the Calabim," Esirce said, putting on his Brilliant Overlord tone.[PARAGRAPH:1]"Yes, of course we do," Minister Alyeris said, smiling her false smile. Anybody with an ounce of sense knew that woman was loyal to either Faeryl Viconia or none but herself. It didn't matter, her effect on the empire was the same. She was presently bedding someone in the Calabim empire, I reckoned. Esirce was the only person on Erebus unaware of Alyeris' many, many questionable lovers. The debacle with the centaur was, of course, merely the most often joked about and satirized, but the list of confirmed partners ran on impressively, and was likely a fraction of the total. "You see," Alyeris continued, "the Calabim have many... unique skills that could serve our needs... wonderfully. As a matter of fact, I was speaking with Lady Tepes..." I grinned at my fellow clerk, Anna. "See," I said to her, "I told you, she likes women to." She silently handed over the coins we'd wagered as Alyeris continued gushing over the wonderful things the Calabim, especially the beautiful Lady Tepes, had to offer. Several other ministers went red, snickered, or showed sudden interest as they figured out the subText. Esirce was completely blind to it all.[PARAGRAPH:1]Ragas the Lone interrupted Alyeris' ramblings, to the relief of some and annoyance of others. Doviello were assumed to be big, brutish, and stupid. Ragas was definitely big, but while his methods were brutal, they were also surprisingly creative, and Ragas was far from stupid. He had an incredible animal cunning, and adapted just enough to Grigori culture to be tolerated, while still being seen as a fool. "My pack is interested in these gifts," he said. "Will the People of the Bat offer it to us, if we will provide them with much Prey?" Alyreis considered, but before she could respond, Ragas continued. "To speak of Prey, my assistant read me Words from Front." Another farce; Ragas' broken Grigori and illiteracy were both lies. He'd made mistakes that had revealed both; pass him a document, and he'd sometimes read it over before remembering to ask someone to do it for him, and he sometimes soliloquized in flawless Grigori when discussing his latest schemes with his allies. "People of the Dog," that was the Bannor, "will not kneel. I demand money given that I may make them heel." Esirce nodded. "You! Boy!" That meant me. "My name is Remus," I reminded him quietly. "Yes, yes," he said with a dismissive wave. "Make sure Minister Ragas gets the money he needs." His allies would be drinking well tonight. So be it. I made a note to do it later, and he quickly forgot me.[PARAGRAPH:1]Esirce then spoke to his fellow ministers. "Now, what shall we do about the economic crisis? My trusted assistant, Lord Wordsworth, has told me he has a solution to our problems. Care to tell the council?" Wordsworth grinned. "I have a proposal that would significantly increase our wealth through wise investing..." Anna was a merchant baron's daughter and heir apparent, and as Wordsworth explained in his double-talk, she translated. "He's proposing they invest in a bank owned by a man who, he failed to mention, is his brother-in-law. The interest rate is..." she quickly calculated, "less than half that offered by the Khazad banking establishments. He'll accuse the dwarves of being gold-hungry subhumans in... five, four, three, two... yep, there he goes. More racist ranting. If you start believing any of this nonsense, please tell me so I can hit you in the... ah, he's done. Now we get all sorts of words that don't have any meaning but sound really good, more, blah blah, yak yak, oh, looks like his bank is invested in only a few industries, none of them especially stable and... yeah, that's a pyramid scheme right there, with him and his political allies on top. And people ask me why I invest so heavily in foreign companies..."[PARAGRAPH:1]The meeting finally ended. The ministers all shuffled out, while Esirce stayed behind. He beckoned for me and Anna to come. "Ah, Romulus! And your girlfriend!" I didn't even bother correcting him on either. "See, what you saw there was politics at its finest! Did you not see how I played each and every one of my ministers for their strengths, while minimizing their weaknesses! How I kept their various little schemes and ambitions in my pocket, and force them to use their skills for the good of the Grigori empire! Watch me, and you may learn something!" He sounded so certain I almost believed him. Until he added, "I do wish Alyeris would find a husband, though. Why a woman of her beauty remains single is beyond me, especially considering how many excellent bachelors she knows."</Italian>
+        <Spanish>[TAB]When I came into the chamber, Prime Minister Esirce was sitting at the head of the table, surrounded by his various sycophants and false friends. "Let me guess," he said when he saw me. "The Calabim again?" I nodded. He said, "they are a necessary evil. Tell me what they did this time." "Well, some of them are beginning to demand a return to the Old Ways..." "yes, yes, yes, fine, whatever. Does that mean following their religion?" It didn't, of course. The only time Lord Esirce could be expected to grow a spine was if religion was involved. "No," I said, "just their... hunting celebration." "We need the Calabim," Esirce said, putting on his Brilliant Overlord tone.[PARAGRAPH:1]"Yes, of course we do," Minister Alyeris said, smiling her false smile. Anybody with an ounce of sense knew that woman was loyal to either Faeryl Viconia or none but herself. It didn't matter, her effect on the empire was the same. She was presently bedding someone in the Calabim empire, I reckoned. Esirce was the only person on Erebus unaware of Alyeris' many, many questionable lovers. The debacle with the centaur was, of course, merely the most often joked about and satirized, but the list of confirmed partners ran on impressively, and was likely a fraction of the total. "You see," Alyeris continued, "the Calabim have many... unique skills that could serve our needs... wonderfully. As a matter of fact, I was speaking with Lady Tepes..." I grinned at my fellow clerk, Anna. "See," I said to her, "I told you, she likes women to." She silently handed over the coins we'd wagered as Alyeris continued gushing over the wonderful things the Calabim, especially the beautiful Lady Tepes, had to offer. Several other ministers went red, snickered, or showed sudden interest as they figured out the subText. Esirce was completely blind to it all.[PARAGRAPH:1]Ragas the Lone interrupted Alyeris' ramblings, to the relief of some and annoyance of others. Doviello were assumed to be big, brutish, and stupid. Ragas was definitely big, but while his methods were brutal, they were also surprisingly creative, and Ragas was far from stupid. He had an incredible animal cunning, and adapted just enough to Grigori culture to be tolerated, while still being seen as a fool. "My pack is interested in these gifts," he said. "Will the People of the Bat offer it to us, if we will provide them with much Prey?" Alyreis considered, but before she could respond, Ragas continued. "To speak of Prey, my assistant read me Words from Front." Another farce; Ragas' broken Grigori and illiteracy were both lies. He'd made mistakes that had revealed both; pass him a document, and he'd sometimes read it over before remembering to ask someone to do it for him, and he sometimes soliloquized in flawless Grigori when discussing his latest schemes with his allies. "People of the Dog," that was the Bannor, "will not kneel. I demand money given that I may make them heel." Esirce nodded. "You! Boy!" That meant me. "My name is Remus," I reminded him quietly. "Yes, yes," he said with a dismissive wave. "Make sure Minister Ragas gets the money he needs." His allies would be drinking well tonight. So be it. I made a note to do it later, and he quickly forgot me.[PARAGRAPH:1]Esirce then spoke to his fellow ministers. "Now, what shall we do about the economic crisis? My trusted assistant, Lord Wordsworth, has told me he has a solution to our problems. Care to tell the council?" Wordsworth grinned. "I have a proposal that would significantly increase our wealth through wise investing..." Anna was a merchant baron's daughter and heir apparent, and as Wordsworth explained in his double-talk, she translated. "He's proposing they invest in a bank owned by a man who, he failed to mention, is his brother-in-law. The interest rate is..." she quickly calculated, "less than half that offered by the Khazad banking establishments. He'll accuse the dwarves of being gold-hungry subhumans in... five, four, three, two... yep, there he goes. More racist ranting. If you start believing any of this nonsense, please tell me so I can hit you in the... ah, he's done. Now we get all sorts of words that don't have any meaning but sound really good, more, blah blah, yak yak, oh, looks like his bank is invested in only a few industries, none of them especially stable and... yeah, that's a pyramid scheme right there, with him and his political allies on top. And people ask me why I invest so heavily in foreign companies..."[PARAGRAPH:1]The meeting finally ended. The ministers all shuffled out, while Esirce stayed behind. He beckoned for me and Anna to come. "Ah, Romulus! And your girlfriend!" I didn't even bother correcting him on either. "See, what you saw there was politics at its finest! Did you not see how I played each and every one of my ministers for their strengths, while minimizing their weaknesses! How I kept their various little schemes and ambitions in my pocket, and force them to use their skills for the good of the Grigori empire! Watch me, and you may learn something!" He sounded so certain I almost believed him. Until he added, "I do wish Alyeris would find a husband, though. Why a woman of her beauty remains single is beyond me, especially considering how many excellent bachelors she knows."</Spanish>
+</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FURIA</Tag>
+        <English>Furia the Mad</English>
+        <French>
+			<Text>Furia la Folle</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Furia the Mad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Furia the Mad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Furia la Loca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_FURIA_PEDIA</Tag>
+        <English>[TAB]it hurts it hurts it hurts it hurts it hurts it hurts it hurts[PARAGRAPH:1]Do you think you know fear? Do you think you know pain? Do you think you know anything? They call me mad, but I'm not mad. You are. You must be. If you weren't mad, the pain would make you scream.[PARAGRAPH:1]The pain. Everything is pain. Pain is everywhere. You can close your eyes and pretend it away. But I can't. I can't make the pain go away.[PARAGRAPH:1]why why why you must scream you want to scream you cant scream because youve forgotten how doesnt it hurt why arent you screaming dont you feel the pain i'll make you feel the pain pain pain pain[PARAGRAPH:1]"You look like an angel," they say. I should. Sirona's angels are beautiful. Sirona's angels are merciful. Sirona's angels are kind. Do you know what the Balseraphs do to things that are beautiful, merciful, kind? They defile them.[PARAGRAPH:1]And so I came to be. My mother tried to stop caring. They'd given up trying to make her suffer directly. No pain could make her scream any more. Except the pain of others.[PARAGRAPH:1]So when she was with child, they knew what to do. How to make her suffer more than ever before. They hurt me. But I wasn't like her. I hurt back.[PARAGRAPH:1]yes scream scream scream you fools how do you like it now you taught me well now i teach you yes this is pain pain embrace it beg for mercy does it hurt yes it hurts you must suffer you will suffer scream until your lungs explode pain all your life is pain beg me for death i will not give it slowly slowly make your pain last[PARAGRAPH:1]I killed my mother first, though. Quickly. It was the kindest thing anyone had done for her since the Balseraphs captured her. Maybe she's with Sirona. Maybe she has become nothing. She's in a better place either way.[PARAGRAPH:1]But I am her daughter, and yet a Balseraph. I cannot be like the other Balseraphs. I feel the pain of all of Jubilee, of tortured slaves and downtrodden peasants, freaks whipped for the amusement of the masses, gladiators seeking freedom, either in fame or death. I also tried to stop caring. But I succeeded. Every moment of my life is agony. Suffering. PAIN. I don't even notice another screaming voice in the chorus of misery. So I share this pain with anyone fool enough to cross my path.[PARAGRAPH:1]But sometimes, when I look in the mirror... just for a moment, I see my mother. I see goodness, beauty, hope, peace. I hear a feeble little voice... perhaps my mother, perhaps my conscience, perhaps Sirona herself, begging me to stop, to seek to help those suffering voices that scream in my head every hour of the day. And I hate it. I know its right, so I hate it all the more. I don't care anymore. They all need to die.</English>
+        <French>[TAB]it hurts it hurts it hurts it hurts it hurts it hurts it hurts[PARAGRAPH:1]Do you think you know fear? Do you think you know pain? Do you think you know anything? They call me mad, but I'm not mad. You are. You must be. If you weren't mad, the pain would make you scream.[PARAGRAPH:1]The pain. Everything is pain. Pain is everywhere. You can close your eyes and pretend it away. But I can't. I can't make the pain go away.[PARAGRAPH:1]why why why you must scream you want to scream you cant scream because youve forgotten how doesnt it hurt why arent you screaming dont you feel the pain i'll make you feel the pain pain pain pain[PARAGRAPH:1]"You look like an angel," they say. I should. Sirona's angels are beautiful. Sirona's angels are merciful. Sirona's angels are kind. Do you know what the Balseraphs do to things that are beautiful, merciful, kind? They defile them.[PARAGRAPH:1]And so I came to be. My mother tried to stop caring. They'd given up trying to make her suffer directly. No pain could make her scream any more. Except the pain of others.[PARAGRAPH:1]So when she was with child, they knew what to do. How to make her suffer more than ever before. They hurt me. But I wasn't like her. I hurt back.[PARAGRAPH:1]yes scream scream scream you fools how do you like it now you taught me well now i teach you yes this is pain pain embrace it beg for mercy does it hurt yes it hurts you must suffer you will suffer scream until your lungs explode pain all your life is pain beg me for death i will not give it slowly slowly make your pain last[PARAGRAPH:1]I killed my mother first, though. Quickly. It was the kindest thing anyone had done for her since the Balseraphs captured her. Maybe she's with Sirona. Maybe she has become nothing. She's in a better place either way.[PARAGRAPH:1]But I am her daughter, and yet a Balseraph. I cannot be like the other Balseraphs. I feel the pain of all of Jubilee, of tortured slaves and downtrodden peasants, freaks whipped for the amusement of the masses, gladiators seeking freedom, either in fame or death. I also tried to stop caring. But I succeeded. Every moment of my life is agony. Suffering. PAIN. I don't even notice another screaming voice in the chorus of misery. So I share this pain with anyone fool enough to cross my path.[PARAGRAPH:1]But sometimes, when I look in the mirror... just for a moment, I see my mother. I see goodness, beauty, hope, peace. I hear a feeble little voice... perhaps my mother, perhaps my conscience, perhaps Sirona herself, begging me to stop, to seek to help those suffering voices that scream in my head every hour of the day. And I hate it. I know its right, so I hate it all the more. I don't care anymore. They all need to die.</French>
+        <German>[TAB]it hurts it hurts it hurts it hurts it hurts it hurts it hurts[PARAGRAPH:1]Do you think you know fear? Do you think you know pain? Do you think you know anything? They call me mad, but I'm not mad. You are. You must be. If you weren't mad, the pain would make you scream.[PARAGRAPH:1]The pain. Everything is pain. Pain is everywhere. You can close your eyes and pretend it away. But I can't. I can't make the pain go away.[PARAGRAPH:1]why why why you must scream you want to scream you cant scream because youve forgotten how doesnt it hurt why arent you screaming dont you feel the pain i'll make you feel the pain pain pain pain[PARAGRAPH:1]"You look like an angel," they say. I should. Sirona's angels are beautiful. Sirona's angels are merciful. Sirona's angels are kind. Do you know what the Balseraphs do to things that are beautiful, merciful, kind? They defile them.[PARAGRAPH:1]And so I came to be. My mother tried to stop caring. They'd given up trying to make her suffer directly. No pain could make her scream any more. Except the pain of others.[PARAGRAPH:1]So when she was with child, they knew what to do. How to make her suffer more than ever before. They hurt me. But I wasn't like her. I hurt back.[PARAGRAPH:1]yes scream scream scream you fools how do you like it now you taught me well now i teach you yes this is pain pain embrace it beg for mercy does it hurt yes it hurts you must suffer you will suffer scream until your lungs explode pain all your life is pain beg me for death i will not give it slowly slowly make your pain last[PARAGRAPH:1]I killed my mother first, though. Quickly. It was the kindest thing anyone had done for her since the Balseraphs captured her. Maybe she's with Sirona. Maybe she has become nothing. She's in a better place either way.[PARAGRAPH:1]But I am her daughter, and yet a Balseraph. I cannot be like the other Balseraphs. I feel the pain of all of Jubilee, of tortured slaves and downtrodden peasants, freaks whipped for the amusement of the masses, gladiators seeking freedom, either in fame or death. I also tried to stop caring. But I succeeded. Every moment of my life is agony. Suffering. PAIN. I don't even notice another screaming voice in the chorus of misery. So I share this pain with anyone fool enough to cross my path.[PARAGRAPH:1]But sometimes, when I look in the mirror... just for a moment, I see my mother. I see goodness, beauty, hope, peace. I hear a feeble little voice... perhaps my mother, perhaps my conscience, perhaps Sirona herself, begging me to stop, to seek to help those suffering voices that scream in my head every hour of the day. And I hate it. I know its right, so I hate it all the more. I don't care anymore. They all need to die.</German>
+        <Italian>[TAB]it hurts it hurts it hurts it hurts it hurts it hurts it hurts[PARAGRAPH:1]Do you think you know fear? Do you think you know pain? Do you think you know anything? They call me mad, but I'm not mad. You are. You must be. If you weren't mad, the pain would make you scream.[PARAGRAPH:1]The pain. Everything is pain. Pain is everywhere. You can close your eyes and pretend it away. But I can't. I can't make the pain go away.[PARAGRAPH:1]why why why you must scream you want to scream you cant scream because youve forgotten how doesnt it hurt why arent you screaming dont you feel the pain i'll make you feel the pain pain pain pain[PARAGRAPH:1]"You look like an angel," they say. I should. Sirona's angels are beautiful. Sirona's angels are merciful. Sirona's angels are kind. Do you know what the Balseraphs do to things that are beautiful, merciful, kind? They defile them.[PARAGRAPH:1]And so I came to be. My mother tried to stop caring. They'd given up trying to make her suffer directly. No pain could make her scream any more. Except the pain of others.[PARAGRAPH:1]So when she was with child, they knew what to do. How to make her suffer more than ever before. They hurt me. But I wasn't like her. I hurt back.[PARAGRAPH:1]yes scream scream scream you fools how do you like it now you taught me well now i teach you yes this is pain pain embrace it beg for mercy does it hurt yes it hurts you must suffer you will suffer scream until your lungs explode pain all your life is pain beg me for death i will not give it slowly slowly make your pain last[PARAGRAPH:1]I killed my mother first, though. Quickly. It was the kindest thing anyone had done for her since the Balseraphs captured her. Maybe she's with Sirona. Maybe she has become nothing. She's in a better place either way.[PARAGRAPH:1]But I am her daughter, and yet a Balseraph. I cannot be like the other Balseraphs. I feel the pain of all of Jubilee, of tortured slaves and downtrodden peasants, freaks whipped for the amusement of the masses, gladiators seeking freedom, either in fame or death. I also tried to stop caring. But I succeeded. Every moment of my life is agony. Suffering. PAIN. I don't even notice another screaming voice in the chorus of misery. So I share this pain with anyone fool enough to cross my path.[PARAGRAPH:1]But sometimes, when I look in the mirror... just for a moment, I see my mother. I see goodness, beauty, hope, peace. I hear a feeble little voice... perhaps my mother, perhaps my conscience, perhaps Sirona herself, begging me to stop, to seek to help those suffering voices that scream in my head every hour of the day. And I hate it. I know its right, so I hate it all the more. I don't care anymore. They all need to die.</Italian>
+        <Spanish>[TAB]it hurts it hurts it hurts it hurts it hurts it hurts it hurts[PARAGRAPH:1]Do you think you know fear? Do you think you know pain? Do you think you know anything? They call me mad, but I'm not mad. You are. You must be. If you weren't mad, the pain would make you scream.[PARAGRAPH:1]The pain. Everything is pain. Pain is everywhere. You can close your eyes and pretend it away. But I can't. I can't make the pain go away.[PARAGRAPH:1]why why why you must scream you want to scream you cant scream because youve forgotten how doesnt it hurt why arent you screaming dont you feel the pain i'll make you feel the pain pain pain pain[PARAGRAPH:1]"You look like an angel," they say. I should. Sirona's angels are beautiful. Sirona's angels are merciful. Sirona's angels are kind. Do you know what the Balseraphs do to things that are beautiful, merciful, kind? They defile them.[PARAGRAPH:1]And so I came to be. My mother tried to stop caring. They'd given up trying to make her suffer directly. No pain could make her scream any more. Except the pain of others.[PARAGRAPH:1]So when she was with child, they knew what to do. How to make her suffer more than ever before. They hurt me. But I wasn't like her. I hurt back.[PARAGRAPH:1]yes scream scream scream you fools how do you like it now you taught me well now i teach you yes this is pain pain embrace it beg for mercy does it hurt yes it hurts you must suffer you will suffer scream until your lungs explode pain all your life is pain beg me for death i will not give it slowly slowly make your pain last[PARAGRAPH:1]I killed my mother first, though. Quickly. It was the kindest thing anyone had done for her since the Balseraphs captured her. Maybe she's with Sirona. Maybe she has become nothing. She's in a better place either way.[PARAGRAPH:1]But I am her daughter, and yet a Balseraph. I cannot be like the other Balseraphs. I feel the pain of all of Jubilee, of tortured slaves and downtrodden peasants, freaks whipped for the amusement of the masses, gladiators seeking freedom, either in fame or death. I also tried to stop caring. But I succeeded. Every moment of my life is agony. Suffering. PAIN. I don't even notice another screaming voice in the chorus of misery. So I share this pain with anyone fool enough to cross my path.[PARAGRAPH:1]But sometimes, when I look in the mirror... just for a moment, I see my mother. I see goodness, beauty, hope, peace. I hear a feeble little voice... perhaps my mother, perhaps my conscience, perhaps Sirona herself, begging me to stop, to seek to help those suffering voices that scream in my head every hour of the day. And I hate it. I know its right, so I hate it all the more. I don't care anymore. They all need to die.</Spanish>
+</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_GIMIL</Tag>
+        <English>Gimil</English>
+        <French>Gimil</French>
+        <German>Gimil</German>
+        <Italian>Gimil</Italian>
+        <Spanish>Gimil</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_GOODREAU</Tag>
+        <English>Goodreau</English>
+        <French>Goodreau</French>
+        <German>Goodreau</German>
+        <Italian>Goodreau</Italian>
+        <Spanish>Goodreau</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_GOODREAU_PEDIA</Tag>
+        <English>[TAB]The ale was bitter.[PARAGRAPH:1]Goodreau sighed as he the amber liquid sloshed in his mug, the wagon creaking as it passed through the crossroads. The road was desolate, dreary even as he clenched his teeth, a wind peircing through the thin cloak he wore. Raising the mug to his lips again, his face contorted as the pungent aroma of the booze wafted from the porcelain. Juno wasnt far, and from there it would be a two days ride to Midgar.[PARAGRAPH:1]The ale was sour.[PARAGRAPH:1]Memories of his past life plauged him as he took up the reins to his wagon, laden with goods as he left the gates of Juno. He remembered what Cassiel had told him in those halls, that day he had renounced his identity as Tamur. He didnt have this mug then.[PARAGRAPH:1]The ale was spilt.[PARAGRAPH:1]Goodreau sighed, watching the barmaid wipe up the booze as it soaked into the floorboards. The roadside inn he had stopped at was perpetually caught in this thick haze of smoke, but his own pipe did nothing but add to the smog. Despite this, his thoughts always drifted back to one thing instead of being lost in the smoke of antiquity.[PARAGRAPH:1]The ale was bittersweet.[PARAGRAPH:1]He saw the grey haze of smoke part slightly, as the barmaid returned with another ale for him.[PARAGRAPH:1]Goodreau smiled. He saw Elizabeth in the haze, waiting for him to fufill his dream.</English>
+        <French>[TAB]The ale was bitter.[PARAGRAPH:1]Goodreau sighed as he the amber liquid sloshed in his mug, the wagon creaking as it passed through the crossroads. The road was desolate, dreary even as he clenched his teeth, a wind peircing through the thin cloak he wore. Raising the mug to his lips again, his face contorted as the pungent aroma of the booze wafted from the porcelain. Juno wasnt far, and from there it would be a two days ride to Midgar.[PARAGRAPH:1]The ale was sour.[PARAGRAPH:1]Memories of his past life plauged him as he took up the reins to his wagon, laden with goods as he left the gates of Juno. He remembered what Cassiel had told him in those halls, that day he had renounced his identity as Tamur. He didnt have this mug then.[PARAGRAPH:1]The ale was spilt.[PARAGRAPH:1]Goodreau sighed, watching the barmaid wipe up the booze as it soaked into the floorboards. The roadside inn he had stopped at was perpetually caught in this thick haze of smoke, but his own pipe did nothing but add to the smog. Despite this, his thoughts always drifted back to one thing instead of being lost in the smoke of antiquity.[PARAGRAPH:1]The ale was bittersweet.[PARAGRAPH:1]He saw the grey haze of smoke part slightly, as the barmaid returned with another ale for him.[PARAGRAPH:1]Goodreau smiled. He saw Elizabeth in the haze, waiting for him to fufill his dream.</French>
+        <German>[TAB]The ale was bitter.[PARAGRAPH:1]Goodreau sighed as he the amber liquid sloshed in his mug, the wagon creaking as it passed through the crossroads. The road was desolate, dreary even as he clenched his teeth, a wind peircing through the thin cloak he wore. Raising the mug to his lips again, his face contorted as the pungent aroma of the booze wafted from the porcelain. Juno wasnt far, and from there it would be a two days ride to Midgar.[PARAGRAPH:1]The ale was sour.[PARAGRAPH:1]Memories of his past life plauged him as he took up the reins to his wagon, laden with goods as he left the gates of Juno. He remembered what Cassiel had told him in those halls, that day he had renounced his identity as Tamur. He didnt have this mug then.[PARAGRAPH:1]The ale was spilt.[PARAGRAPH:1]Goodreau sighed, watching the barmaid wipe up the booze as it soaked into the floorboards. The roadside inn he had stopped at was perpetually caught in this thick haze of smoke, but his own pipe did nothing but add to the smog. Despite this, his thoughts always drifted back to one thing instead of being lost in the smoke of antiquity.[PARAGRAPH:1]The ale was bittersweet.[PARAGRAPH:1]He saw the grey haze of smoke part slightly, as the barmaid returned with another ale for him.[PARAGRAPH:1]Goodreau smiled. He saw Elizabeth in the haze, waiting for him to fufill his dream.</German>
+        <Italian>[TAB]The ale was bitter.[PARAGRAPH:1]Goodreau sighed as he the amber liquid sloshed in his mug, the wagon creaking as it passed through the crossroads. The road was desolate, dreary even as he clenched his teeth, a wind peircing through the thin cloak he wore. Raising the mug to his lips again, his face contorted as the pungent aroma of the booze wafted from the porcelain. Juno wasnt far, and from there it would be a two days ride to Midgar.[PARAGRAPH:1]The ale was sour.[PARAGRAPH:1]Memories of his past life plauged him as he took up the reins to his wagon, laden with goods as he left the gates of Juno. He remembered what Cassiel had told him in those halls, that day he had renounced his identity as Tamur. He didnt have this mug then.[PARAGRAPH:1]The ale was spilt.[PARAGRAPH:1]Goodreau sighed, watching the barmaid wipe up the booze as it soaked into the floorboards. The roadside inn he had stopped at was perpetually caught in this thick haze of smoke, but his own pipe did nothing but add to the smog. Despite this, his thoughts always drifted back to one thing instead of being lost in the smoke of antiquity.[PARAGRAPH:1]The ale was bittersweet.[PARAGRAPH:1]He saw the grey haze of smoke part slightly, as the barmaid returned with another ale for him.[PARAGRAPH:1]Goodreau smiled. He saw Elizabeth in the haze, waiting for him to fufill his dream.</Italian>
+        <Spanish>[TAB]The ale was bitter.[PARAGRAPH:1]Goodreau sighed as he the amber liquid sloshed in his mug, the wagon creaking as it passed through the crossroads. The road was desolate, dreary even as he clenched his teeth, a wind peircing through the thin cloak he wore. Raising the mug to his lips again, his face contorted as the pungent aroma of the booze wafted from the porcelain. Juno wasnt far, and from there it would be a two days ride to Midgar.[PARAGRAPH:1]The ale was sour.[PARAGRAPH:1]Memories of his past life plauged him as he took up the reins to his wagon, laden with goods as he left the gates of Juno. He remembered what Cassiel had told him in those halls, that day he had renounced his identity as Tamur. He didnt have this mug then.[PARAGRAPH:1]The ale was spilt.[PARAGRAPH:1]Goodreau sighed, watching the barmaid wipe up the booze as it soaked into the floorboards. The roadside inn he had stopped at was perpetually caught in this thick haze of smoke, but his own pipe did nothing but add to the smog. Despite this, his thoughts always drifted back to one thing instead of being lost in the smoke of antiquity.[PARAGRAPH:1]The ale was bittersweet.[PARAGRAPH:1]He saw the grey haze of smoke part slightly, as the barmaid returned with another ale for him.[PARAGRAPH:1]Goodreau smiled. He saw Elizabeth in the haze, waiting for him to fufill his dream.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_GOSEA</Tag>
+        <English>Gosea</English>
+        <French>
+			<Text>Gosea</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Gosea</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Gosea</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Goséa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HAFGAN</Tag>
+        <English>Hafgan the Purger</English>
+        <French>Hafgan the Purger</French>
+        <German>Hafgan the Purger</German>
+        <Italian>Hafgan the Purger</Italian>
+        <Spanish>Hafgan el Purgador</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HERNE</Tag>
+        <English>Herne</English>
+        <French>Herne</French>
+        <German>Herne</German>
+        <Italian>Herne</Italian>
+        <Spanish>Herne</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_JUDECCA</Tag>
+        <English>Judecca</English>
+        <French>Judecca</French>
+        <German>Judecca</German>
+        <Italian>Judecca</Italian>
+        <Spanish>Judeca</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KANE</Tag>
+        <English>Kane</English>
+        <French>Kane</French>
+        <German>Kane</German>
+        <Italian>Kane</Italian>
+        <Spanish>Kane</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_KANE_PEDIA</Tag>
+        <English>[TAB]Kane looked upon the spoils of his latest conquest, piled impressively in his throne room. Gold and silver, jewels, and most beautiful of all, weapons and armor... the demon-kings, the wretched Calabim, had started another skirmish with his people, and been beaten back by the might of the Malakim empire. They were arrogant, Alexis and Flauros, even though they continued existing only because Kane whimmed it. They were a useful way to dispose of lesser warlords. But every so often, as now, they tried to attack him. As ever, they failed. Which gave Kane an excuse to send raiding parties of his own, to remind them of their place in the world; his pets, his hounds, nothing more Kane smiled, and thought it good.[PARAGRAPH:1]But that was not all. A minor tribe of orcs had attempted to defy his glory. Their precious "Bhall" had been deaf to their pleas as Kane's soldiers had slaughtered every man, woman, and child in one of their stinking towns. Kane had sent a few skulls to each and every other orcish tribe, and kept a few for his own; their warlord's in particular would serve as an excellent cup for his collection. It was a waste of lives, and Kane hardly enjoyed such slaughter, but the Orcs would not respect anything but brutality. Suffice it to say, the raids had stopped. Kane smiled, and thought it good.[PARAGRAPH:1]Meanwhile, Kane suspected the Svartalfar had planted yet another agent in his harem... they seemed to have an unusually large number of pretty women. He'd feed her some minor misinformation, and see if the Svartalfar acted on it. Sadly, after what happened to the first one he'd captured alive, the Svartalfar agents had taken to committing suicide upon discovery, or even suspicion of such. A shame, seeing how much fun he'd had with that first one. Kane was known to be far gentler to his women them most of the Malakim warlords, but when this wench had awoken the beast within him... Kane smiled, and thought it good.[PARAGRAPH:1]A messenger burst in. "My lord, word from Golden Leane." Kane regretted not burning that place to the ground. Technically, the man should have announced himself, and not charged in as he had, but Kane knew better then to do anything foolish. He waved off his attendants and gestured for the man to continue. "They've revolted. Again. They're lead by... an elf, of all things, name Varn Gosam." "Kill Varn. Is that so hard?" The messenger paused. Kane gussed from the look on the man's face that the answer was "yes." "I'll arrange for one of the elite to deal with this man. Tell me about him." The messenger did... and as he listened to the tales, Kane stopped smiling.</English>
+        <French>[TAB]Kane looked upon the spoils of his latest conquest, piled impressively in his throne room. Gold and silver, jewels, and most beautiful of all, weapons and armor... the demon-kings, the wretched Calabim, had started another skirmish with his people, and been beaten back by the might of the Malakim empire. They were arrogant, Alexis and Flauros, even though they continued existing only because Kane whimmed it. They were a useful way to dispose of lesser warlords. But every so often, as now, they tried to attack him. As ever, they failed. Which gave Kane an excuse to send raiding parties of his own, to remind them of their place in the world; his pets, his hounds, nothing more Kane smiled, and thought it good.[PARAGRAPH:1]But that was not all. A minor tribe of orcs had attempted to defy his glory. Their precious "Bhall" had been deaf to their pleas as Kane's soldiers had slaughtered every man, woman, and child in one of their stinking towns. Kane had sent a few skulls to each and every other orcish tribe, and kept a few for his own; their warlord's in particular would serve as an excellent cup for his collection. It was a waste of lives, and Kane hardly enjoyed such slaughter, but the Orcs would not respect anything but brutality. Suffice it to say, the raids had stopped. Kane smiled, and thought it good.[PARAGRAPH:1]Meanwhile, Kane suspected the Svartalfar had planted yet another agent in his harem... they seemed to have an unusually large number of pretty women. He'd feed her some minor misinformation, and see if the Svartalfar acted on it. Sadly, after what happened to the first one he'd captured alive, the Svartalfar agents had taken to committing suicide upon discovery, or even suspicion of such. A shame, seeing how much fun he'd had with that first one. Kane was known to be far gentler to his women them most of the Malakim warlords, but when this wench had awoken the beast within him... Kane smiled, and thought it good.[PARAGRAPH:1]A messenger burst in. "My lord, word from Golden Leane." Kane regretted not burning that place to the ground. Technically, the man should have announced himself, and not charged in as he had, but Kane knew better then to do anything foolish. He waved off his attendants and gestured for the man to continue. "They've revolted. Again. They're lead by... an elf, of all things, name Varn Gosam." "Kill Varn. Is that so hard?" The messenger paused. Kane gussed from the look on the man's face that the answer was "yes." "I'll arrange for one of the elite to deal with this man. Tell me about him." The messenger did... and as he listened to the tales, Kane stopped smiling.</French>
+        <German>[TAB]Kane looked upon the spoils of his latest conquest, piled impressively in his throne room. Gold and silver, jewels, and most beautiful of all, weapons and armor... the demon-kings, the wretched Calabim, had started another skirmish with his people, and been beaten back by the might of the Malakim empire. They were arrogant, Alexis and Flauros, even though they continued existing only because Kane whimmed it. They were a useful way to dispose of lesser warlords. But every so often, as now, they tried to attack him. As ever, they failed. Which gave Kane an excuse to send raiding parties of his own, to remind them of their place in the world; his pets, his hounds, nothing more Kane smiled, and thought it good.[PARAGRAPH:1]But that was not all. A minor tribe of orcs had attempted to defy his glory. Their precious "Bhall" had been deaf to their pleas as Kane's soldiers had slaughtered every man, woman, and child in one of their stinking towns. Kane had sent a few skulls to each and every other orcish tribe, and kept a few for his own; their warlord's in particular would serve as an excellent cup for his collection. It was a waste of lives, and Kane hardly enjoyed such slaughter, but the Orcs would not respect anything but brutality. Suffice it to say, the raids had stopped. Kane smiled, and thought it good.[PARAGRAPH:1]Meanwhile, Kane suspected the Svartalfar had planted yet another agent in his harem... they seemed to have an unusually large number of pretty women. He'd feed her some minor misinformation, and see if the Svartalfar acted on it. Sadly, after what happened to the first one he'd captured alive, the Svartalfar agents had taken to committing suicide upon discovery, or even suspicion of such. A shame, seeing how much fun he'd had with that first one. Kane was known to be far gentler to his women them most of the Malakim warlords, but when this wench had awoken the beast within him... Kane smiled, and thought it good.[PARAGRAPH:1]A messenger burst in. "My lord, word from Golden Leane." Kane regretted not burning that place to the ground. Technically, the man should have announced himself, and not charged in as he had, but Kane knew better then to do anything foolish. He waved off his attendants and gestured for the man to continue. "They've revolted. Again. They're lead by... an elf, of all things, name Varn Gosam." "Kill Varn. Is that so hard?" The messenger paused. Kane gussed from the look on the man's face that the answer was "yes." "I'll arrange for one of the elite to deal with this man. Tell me about him." The messenger did... and as he listened to the tales, Kane stopped smiling.</German>
+        <Italian>[TAB]Kane looked upon the spoils of his latest conquest, piled impressively in his throne room. Gold and silver, jewels, and most beautiful of all, weapons and armor... the demon-kings, the wretched Calabim, had started another skirmish with his people, and been beaten back by the might of the Malakim empire. They were arrogant, Alexis and Flauros, even though they continued existing only because Kane whimmed it. They were a useful way to dispose of lesser warlords. But every so often, as now, they tried to attack him. As ever, they failed. Which gave Kane an excuse to send raiding parties of his own, to remind them of their place in the world; his pets, his hounds, nothing more Kane smiled, and thought it good.[PARAGRAPH:1]But that was not all. A minor tribe of orcs had attempted to defy his glory. Their precious "Bhall" had been deaf to their pleas as Kane's soldiers had slaughtered every man, woman, and child in one of their stinking towns. Kane had sent a few skulls to each and every other orcish tribe, and kept a few for his own; their warlord's in particular would serve as an excellent cup for his collection. It was a waste of lives, and Kane hardly enjoyed such slaughter, but the Orcs would not respect anything but brutality. Suffice it to say, the raids had stopped. Kane smiled, and thought it good.[PARAGRAPH:1]Meanwhile, Kane suspected the Svartalfar had planted yet another agent in his harem... they seemed to have an unusually large number of pretty women. He'd feed her some minor misinformation, and see if the Svartalfar acted on it. Sadly, after what happened to the first one he'd captured alive, the Svartalfar agents had taken to committing suicide upon discovery, or even suspicion of such. A shame, seeing how much fun he'd had with that first one. Kane was known to be far gentler to his women them most of the Malakim warlords, but when this wench had awoken the beast within him... Kane smiled, and thought it good.[PARAGRAPH:1]A messenger burst in. "My lord, word from Golden Leane." Kane regretted not burning that place to the ground. Technically, the man should have announced himself, and not charged in as he had, but Kane knew better then to do anything foolish. He waved off his attendants and gestured for the man to continue. "They've revolted. Again. They're lead by... an elf, of all things, name Varn Gosam." "Kill Varn. Is that so hard?" The messenger paused. Kane gussed from the look on the man's face that the answer was "yes." "I'll arrange for one of the elite to deal with this man. Tell me about him." The messenger did... and as he listened to the tales, Kane stopped smiling.</Italian>
+        <Spanish>[TAB]Kane looked upon the spoils of his latest conquest, piled impressively in his throne room. Gold and silver, jewels, and most beautiful of all, weapons and armor... the demon-kings, the wretched Calabim, had started another skirmish with his people, and been beaten back by the might of the Malakim empire. They were arrogant, Alexis and Flauros, even though they continued existing only because Kane whimmed it. They were a useful way to dispose of lesser warlords. But every so often, as now, they tried to attack him. As ever, they failed. Which gave Kane an excuse to send raiding parties of his own, to remind them of their place in the world; his pets, his hounds, nothing more Kane smiled, and thought it good.[PARAGRAPH:1]But that was not all. A minor tribe of orcs had attempted to defy his glory. Their precious "Bhall" had been deaf to their pleas as Kane's soldiers had slaughtered every man, woman, and child in one of their stinking towns. Kane had sent a few skulls to each and every other orcish tribe, and kept a few for his own; their warlord's in particular would serve as an excellent cup for his collection. It was a waste of lives, and Kane hardly enjoyed such slaughter, but the Orcs would not respect anything but brutality. Suffice it to say, the raids had stopped. Kane smiled, and thought it good.[PARAGRAPH:1]Meanwhile, Kane suspected the Svartalfar had planted yet another agent in his harem... they seemed to have an unusually large number of pretty women. He'd feed her some minor misinformation, and see if the Svartalfar acted on it. Sadly, after what happened to the first one he'd captured alive, the Svartalfar agents had taken to committing suicide upon discovery, or even suspicion of such. A shame, seeing how much fun he'd had with that first one. Kane was known to be far gentler to his women them most of the Malakim warlords, but when this wench had awoken the beast within him... Kane smiled, and thought it good.[PARAGRAPH:1]A messenger burst in. "My lord, word from Golden Leane." Kane regretted not burning that place to the ground. Technically, the man should have announced himself, and not charged in as he had, but Kane knew better then to do anything foolish. He waved off his attendants and gestured for the man to continue. "They've revolted. Again. They're lead by... an elf, of all things, name Varn Gosam." "Kill Varn. Is that so hard?" The messenger paused. Kane gussed from the look on the man's face that the answer was "yes." "I'll arrange for one of the elite to deal with this man. Tell me about him." The messenger did... and as he listened to the tales, Kane stopped smiling.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KOUN</Tag>
+        <English>Minister Koun</English>
+        <French>Minister Koun</French>
+        <German>Minister Koun</German>
+        <Italian>Minister Koun</Italian>
+        <Spanish>Ministro Koun</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KOUN_PEDIA</Tag>
+        <English>No entry yet.</English>
+        <French>No entry yet.</French>
+        <German>Noch kein Eintrag</German>
+        <Italian>No entry yet.</Italian>
+        <Spanish>Ya no hay entrada.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LETHE</Tag>
+        <English>Lethe, Queen of Sorrow</English>
+        <French>
+			<Text>Lethe, Queen of Sorrow</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Lethe, Queen of Sorrow</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Lethe, Queen of Sorrow</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Lete, Reina de Pesar</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LETIGO</Tag>
+        <English>Letigo</English>
+        <French>Letigo</French>
+        <German>Letigo</German>
+        <Italian>Letigo</Italian>
+        <Spanish>Letigo</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_LORELEI</Tag>
+        <English>Lorelei Coral</English>
+        <French>
+			<Text>Lorelei Coral</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Lorelei Coral</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Lorelei Coral</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Lorelei Coral</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MAHON</Tag>
+        <English>Mahon the Butcher</English>
+        <French>Mahon the Butcher</French>
+        <German>Mahon the Butcher</German>
+        <Italian>Mahon the Butcher</Italian>
+        <Spanish>Majón el Carnicero</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MALCHAVIC</Tag>
+        <English>Malchavic</English>
+        <French>Malchavic</French>
+        <German>Malchavic</German>
+        <Italian>Malchavic</Italian>
+        <Spanish>Malchavic</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MELISANDRE</Tag>
+        <English>Melisandre</English>
+        <French>
+			<Text>Melisandre</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Melisandre</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		</German>
+        <Italian>
+			<Text>Melisandre</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Melisandre</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MERESIN</Tag>
+        <English>Meresin</English>
+        <French>Meresin</French>
+        <German>Meresin</German>
+        <Italian>Meresin</Italian>
+        <Spanish>Meresín</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MIRROUGH</Tag>
+        <English>Mirrough</English>
+        <French>Mirrough</French>
+        <German>Mirrough</German>
+        <Italian>Mirrough</Italian>
+        <Spanish>Mirrough</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_MORDMORGAN</Tag>
+        <English>Mordmorgan</English>
+        <French>Mordmorgan</French>
+        <German>Mordmorgan</German>
+        <Italian>Mordmorgan</Italian>
+        <Spanish>Mordmorgan</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_NOJAH</Tag>
+        <English>Nojah the Illusionist</English>
+        <French>Nojah the Illusionist</French>
+        <German>Nojah the Illusionist</German>
+        <Italian>Nojah the Illusionist</Italian>
+        <Spanish>Nojah el Ilusionista</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OSTANES</Tag>
+        <English>Captain Ostanes</English>
+        <French>Captain Ostanes</French>
+        <German>Captain Ostanes</German>
+        <Italian>Captain Ostanes</Italian>
+        <Spanish>Capitán Ostanes</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OUZZA</Tag>
+        <English>Ouzza</English>
+        <French>Ouzza</French>
+        <German>Ouzza</German>
+        <Italian>Ouzza</Italian>
+        <Spanish>Ouzza</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_REORX</Tag>
+        <English>Reorx Veinhunter</English>
+        <French>Reorx Veinhunter</French>
+        <German>Reorx Veinhunter</German>
+        <Italian>Reorx Veinhunter</Italian>
+        <Spanish>Reorx Vetacazador</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_RIUROS</Tag>
+        <English>Riuros</English>
+        <French>Riuros</French>
+        <German>Riuros</German>
+        <Italian>Riuros</Italian>
+        <Spanish>Riuros</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_RIVANNA</Tag>
+        <English>Rivanna the Wraith Lord</English>
+        <French>
+			<Text>Rivanna the Wraith Lord</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Rivanna the Wraith Lord</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Rivanna the Wraith Lord</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Rivanna, la Señora de Fantasmas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SALLOS</Tag>
+        <English>Duke Sallos</English>
+        <French>Duke Sallos</French>
+        <German>Duke Sallos</German>
+        <Italian>Duke Sallos</Italian>
+        <Spanish>Duque Sallos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SAUROS</Tag>
+        <English>Sauros</English>
+        <French>Sauros</French>
+        <German>Sauros</German>
+        <Italian>Sauros</Italian>
+        <Spanish>Sauros</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SHEKINAH</Tag>
+        <English>Shekinah</English>
+        <French>
+			<Text>Shekinah</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Shekinah</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Shekinah</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Shekinah</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_STATIUS</Tag>
+        <English>Statius the Redeemer</English>
+        <French>Statius the Redeemer</French>
+        <German>Statius the Redeemer</German>
+        <Italian>Statius the Redeemer</Italian>
+        <Spanish>Statius el Redentor</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_TETHIRA</Tag>
+        <English>Tethira</English>
+        <French>Tethira</French>
+        <German>Tethira</German>
+        <Italian>Tethira</Italian>
+        <Spanish>Tethira</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_THESSALONICA</Tag>
+        <English>Thessalonica</English>
+        <French>
+			<Text>Thessalonica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Thessalonica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Thessalonica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Thessalonica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_TYA</Tag>
+        <English>Tya Kiri</English>
+        <French>
+			<Text>Tya Kiri</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Tya Kiri</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Tya Kiri</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Tya Kiri</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ULDANOR</Tag>
+        <English>Captain Uldanor</English>
+        <French>Captain Uldanor</French>
+        <German>Captain Uldanor</German>
+        <Italian>Captain Uldanor</Italian>
+        <Spanish>Capitán Uldanor</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_UTIRUSO</Tag>
+        <English>Utiruso</English>
+        <French>Utiruso</French>
+        <German>Utiruso</German>
+        <Italian>Utiruso</Italian>
+        <Spanish>Utiruso</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_VOLANNA</Tag>
+        <English>Volanna</English>
+        <French>
+			<Text>Volanna</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+        <German>
+			<Text>Volanna</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+        <Italian>
+			<Text>Volanna</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Volanna</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_WEEVIL</Tag>
+        <English>Weevil, Pickle and Hyde</English>
+        <French>
+			<Text>Weevil, Pickle et Hyde</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+        <German>
+			<Text>Weevil, Pickle und Hyde</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</German>
+        <Italian>
+			<Text>Weevil, Pickle and Hyde</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+        <Spanish>
+			<Text>Weevil, Pickle y Hyde</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_YAKUT</Tag>
+        <English>Yakut</English>
+        <French>Yakut</French>
+        <German>Yakut</German>
+        <Italian>Yakut</Italian>
+        <Spanish>Yakut</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_BLOOD_THIRSTY</Tag>
+        <English>Blood Thirsty</English>
+        <French>Blood Thirsty</French>
+        <German>Blood Thirsty</German>
+        <Italian>Blood Thirsty</Italian>
+        <Spanish>
+			<Text>Sanguinario:Sanguinaria</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_BLOOD_THIRSTY_SHORT</Tag>
+        <English>Blood</English>
+        <French>Blood</French>
+        <German>Blood</German>
+        <Italian>Blood</Italian>
+        <Spanish>Sang</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_DOMINANT</Tag>
+        <English>Dominant</English>
+        <French>Dominant</French>
+        <German>Dominant</German>
+        <Italian>Dominant</Italian>
+        <Spanish>Dominante</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DOMINANT_SHORT</Tag>
+        <English>Dom</English>
+        <French>Dom</French>
+        <German>Dom</German>
+        <Italian>Dom</Italian>
+        <Spanish>Dom</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_FERAL</Tag>
+        <English>Feral</English>
+        <French>Feral</French>
+        <German>Feral</German>
+        <Italian>Feral</Italian>
+        <Spanish>Feral</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FERAL_SHORT</Tag>
+        <English>Feral</English>
+        <French>Feral</French>
+        <German>Feral</German>
+        <Italian>Feral</Italian>
+        <Spanish>Feral</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_FIRE_VULNERABILITY</Tag>
+        <English>Fire Vulnerability</English>
+        <French>Fire Vulnerability</French>
+        <German>Fire Vulnerability</German>
+        <Italian>Fire Vulnerability</Italian>
+        <Spanish>Vulneribilidad a Fuego</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_FIRE_VULNERABILITY_SHORT</Tag>
+        <English>Fire V</English>
+        <French>Fire V</French>
+        <German>Fire V</German>
+        <Italian>Fire V</Italian>
+        <Spanish>VulF</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_ILLUSIONIST</Tag>
+        <English>Illusionist</English>
+        <French>Illusionist</French>
+        <German>Illusionist</German>
+        <Italian>Illusionist</Italian>
+        <Spanish>Ilusionista</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_ILLUSIONIST_SHORT</Tag>
+        <English>Ill</English>
+        <French>Ill</French>
+        <German>Ill</German>
+        <Italian>Ill</Italian>
+        <Spanish>Il</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_LEGION</Tag>
+        <English>Legion</English>
+        <French>Legion</French>
+        <German>Legion</German>
+        <Italian>Legion</Italian>
+        <Spanish>Legión</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_LEGION_SHORT</Tag>
+        <English>Leg</English>
+        <French>Leg</French>
+        <German>Leg</German>
+        <Italian>Leg</Italian>
+        <Spanish>Leg</Spanish>
+    </TEXT>
+    <TEXT>
+		<Tag>TXT_KEY_TRAIT_MINOR</Tag>
+        <English>Emergent</English>
+        <French>Emergent</French>
+        <German>Emergent</German>
+        <Italian>Emergent</Italian>
+        <Spanish>Emergente</Spanish>
+    </TEXT>
+    <TEXT>
+		<Tag>TXT_KEY_TRAIT_MINOR_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Need less [ICON_CULTURE] to acquire additional traits.</English>
+        <French>[NEWLINE][ICON_BULLET]Need less [ICON_CULTURE] to acquire additional traits.</French>
+        <German>[NEWLINE][ICON_BULLET]Need less [ICON_CULTURE] to acquire additional traits.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Need less [ICON_CULTURE] to acquire additional traits.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Need less [ICON_CULTURE] to acquire additional traits.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_MINOR_SHORT</Tag>
+        <English>Emer</English>
+        <French>Emer</French>
+        <German>Emer</German>
+        <Italian>Emer</Italian>
+        <Spanish>Emer</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_OPPORTUNISTIC</Tag>
+        <English>Opportunistic</English>
+        <French>Opportunistic</French>
+        <German>Opportunistic</German>
+        <Italian>Opportunistic</Italian>
+        <Spanish>Oportunista</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_OPPORTUNISTIC_SHORT</Tag>
+        <English>Opp</English>
+        <French>Opp</French>
+        <German>Opp</German>
+        <Italian>Opp</Italian>
+        <Spanish>Op</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_PROTECTIVE</Tag>
+        <English>Protective</English>
+        <French>Protective</French>
+        <German>Protective</German>
+        <Italian>Protective</Italian>
+        <Spanish>
+			<Text>Protector:Protectora</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_PROTECTIVE_SHORT</Tag>
+        <English>Pro</English>
+        <French>Pro</French>
+        <German>Pro</German>
+        <Italian>Pro</Italian>
+        <Spanish>Pro</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SWASHBUCKLER</Tag>
+        <English>Swashbuckler</English>
+        <French>Swashbuckler</French>
+        <German>Swashbuckler</German>
+        <Italian>Swashbuckler</Italian>
+        <Spanish>
+			<Text>Intrépido:Intrépida</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SWASHBUCKLER_SHORT</Tag>
+        <English>Swash</English>
+        <French>Swash</French>
+        <German>Swash</German>
+        <Italian>Swash</Italian>
+        <Spanish>Intr</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TREACHEROUS</Tag>
+        <English>Treacherous</English>
+        <French>Treacherous</French>
+        <German>Treacherous</German>
+        <Italian>Treacherous</Italian>
+        <Spanish>
+			<Text>Traicionero:Traicionera</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TREACHEROUS_SHORT</Tag>
+        <English>Treach</English>
+        <French>Treach</French>
+        <German>Treach</German>
+        <Italian>Treach</Italian>
+        <Spanish>Traic</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_FINANCIAL_TRAIT</Tag>
+        <English>Gain the Financial Trait.</English>
+        <French>Gain the Financial Trait.</French>
+        <German>Gain the Financial Trait.</German>
+        <Italian>Gain the Financial Trait.</Italian>
+        <Spanish>Ganar el rasgo Financiero.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_FINANCIAL_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has focused on wealth and gained the Financial Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has focused on wealth and gained the Financial Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has focused on wealth and gained the Financial Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has focused on wealth and gained the Financial Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective ha concentrado en riquezas y ganó el rasgo Financiero.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_EXPANSIVE_TRAIT</Tag>
+        <English>Gain the Expansive Trait.</English>
+        <French>Gain the Expansive Trait.</French>
+        <German>Gain the Expansive Trait.</German>
+        <Italian>Gain the Expansive Trait.</Italian>
+        <Spanish>Gain the Expansive Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_EXPANSIVE_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has an eye for empire and gained the Expansive Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has an eye for empire and gained the Expansive Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has an eye for empire and gained the Expansive Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has an eye for empire and gained the Expansive Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective tiene buen ojo para imperio y ganó el rasgo Expansivo.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SUMMONER_TRAIT</Tag>
+        <English>Gain the Summoner Trait.</English>
+        <French>Gain the Summoner Trait.</French>
+        <German>Gain the Summoner Trait.</German>
+        <Italian>Gain the Summoner Trait.</Italian>
+        <Spanish>Gain the Summoner Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_SUMMONER_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has perfected the art of conjuring and gained the Summoner Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has perfected the art of conjuring and gained the Summoner Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has perfected the art of conjuring and gained the Summoner Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has perfected the art of conjuring and gained the Summoner Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has perfected the art of conjuring and gained the Summoner Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_AGGRESSIVE_TRAIT</Tag>
+        <English>Gain the Aggressive Trait.</English>
+        <French>Gain the Aggressive Trait.</French>
+        <German>Gain the Aggressive Trait.</German>
+        <Italian>Gain the Aggressive Trait.</Italian>
+        <Spanish>Ganar el rasgo Agresivo.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_AGGRESSIVE_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective doesn't play nice with others and has gained the Aggressive Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective doesn't play nice with others and has gained the Aggressive Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective doesn't play nice with others and has gained the Aggressive Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective doesn't play nice with others and has gained the Aggressive Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective doesn't play nice with others and has gained the Aggressive Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_PHILOSOPHICAL_TRAIT</Tag>
+        <English>Gain the Philosophical Trait.</English>
+        <French>Gain the Philosophical Trait.</French>
+        <German>Gain the Philosophical Trait.</German>
+        <Italian>Gain the Philosophical Trait.</Italian>
+        <Spanish>Ganar el rasgo Filosófico.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_PHILOSOPHICAL_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has achieved higher learning and gained the Philosophical Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has achieved higher learning and gained the Philosophical Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has achieved higher learning and gained the Philosophical Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has achieved higher learning and gained the Philosophical Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has achieved higher learning and gained the Philosophical Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_CREATIVE_TRAIT</Tag>
+        <English>Gain the Creative Trait.</English>
+        <French>Gain the Creative Trait.</French>
+        <German>Gain the Creative Trait.</German>
+        <Italian>Gain the Creative Trait.</Italian>
+        <Spanish>Ganar el rasgo Creativo.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_CREATIVE_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has displayed great vision and gained the Creative Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has displayed great vision and gained the Creative Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has displayed great vision and gained the Creative Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has displayed great vision and gained the Creative Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has displayed great vision and gained the Creative Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SPIRITUAL_TRAIT</Tag>
+        <English>Gain the Spiritual Trait.</English>
+        <French>Gain the Spiritual Trait.</French>
+        <German>Gain the Spiritual Trait.</German>
+        <Italian>Gain the Spiritual Trait.</Italian>
+        <Spanish>Ganar el rasgo Espiritual.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_SPIRITUAL_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has sought a higher power and gained the Spiritual Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has sought a higher power and gained the Spiritual Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has sought a higher power and gained the Spiritual Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has sought a higher power and gained the Spiritual Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has sought a higher power and gained the Spiritual Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_ARCANE_TRAIT</Tag>
+        <English>Gain the Arcane Trait.</English>
+        <French>Gain the Arcane Trait.</French>
+        <German>Gain the Arcane Trait.</German>
+        <Italian>Gain the Arcane Trait.</Italian>
+        <Spanish>Ganar el rasgo Arcano.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_ARCANE_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has displayed magical prowess and gained the Arcane Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has displayed magical prowess and gained the Arcane Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has displayed magical prowess and gained the Arcane Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has displayed magical prowess and gained the Arcane Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has displayed magical prowess and gained the Arcane Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_ORGANIZED_TRAIT</Tag>
+        <English>Gain the Organized Trait.</English>
+        <French>Gain the Organized Trait.</French>
+        <German>Gain the Organized Trait.</German>
+        <Italian>Gain the Organized Trait.</Italian>
+        <Spanish>Ganar el rasgo Organizado.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_ORGANIZED_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has become proficient in accounting and gained the Organized Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has become proficient in accounting and gained the Organized Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has become proficient in accounting and gained the Organized Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has become proficient in accounting and gained the Organized Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has become proficient in accounting and gained the Organized Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_INDUSTRIOUS_TRAIT</Tag>
+        <English>Gain the Industrious Trait.</English>
+        <French>Gain the Industrious Trait.</French>
+        <German>Gain the Industrious Trait.</German>
+        <Italian>Gain the Industrious Trait.</Italian>
+        <Spanish>Ganar el rasgo Diligente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_INDUSTRIOUS_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has become skilled in architecture and gained the Industrious Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has become skilled in architecture and gained the Industrious Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has become skilled in architecture and gained the Industrious Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has become skilled in architecture and gained the Industrious Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has become skilled in architecture and gained the Industrious Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_RAIDERS_TRAIT</Tag>
+        <English>Gain the Raiders Trait.</English>
+        <French>Gain the Raiders Trait.</French>
+        <German>Gain the Raiders Trait.</German>
+        <Italian>Gain the Raiders Trait.</Italian>
+        <Spanish>Ganar el rasgo Incursores.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_RAIDERS_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective likes to destroy nice things and gained the Raiders Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective likes to destroy nice things and gained the Raiders Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective likes to destroy nice things and gained the Raiders Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective likes to destroy nice things and gained the Raiders Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective likes to destroy nice things and gained the Raiders Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_DEFENDER_TRAIT</Tag>
+        <English>Gain the Defender Trait.</English>
+        <French>Gain the Defender Trait.</French>
+        <German>Gain the Defender Trait.</German>
+        <Italian>Gain the Defender Trait.</Italian>
+        <Spanish>Ganar el rasgo Defensor.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_DEFENDER_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has improved their defenses and gained the Defender Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has improved their defenses and gained the Defender Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has improved their defenses and gained the Defender Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has improved their defenses and gained the Defender Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has improved their defenses and gained the Defender Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_TREACHEROUS_TRAIT</Tag>
+        <English>Gain the Treacherous Trait.</English>
+        <French>Gain the Treacherous Trait.</French>
+        <German>Gain the Treacherous Trait.</German>
+        <Italian>Gain the Treacherous Trait.</Italian>
+        <Spanish>Ganar el rasgo Traicionero.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_TREACHEROUS_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective is skilled in the art of poisons and gained the Treacherous Trait.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective is skilled in the art of poisons and gained the Treacherous Trait.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective is skilled in the art of poisons and gained the Treacherous Trait.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective is skilled in the art of poisons and gained the Treacherous Trait.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective is skilled in the art of poisons and gained the Treacherous Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SWASHBUCKLER_TRAIT</Tag>
+        <English>Gain the Swashbuckler Trait.</English>
+        <French>Gain the Swashbuckler Trait.</French>
+        <German>Gain the Swashbuckler Trait.</German>
+        <Italian>Gain the Swashbuckler Trait.</Italian>
+        <Spanish>Ganar el rasgo Intrépido.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_SWASHBUCKLER_TRAIT</Tag>
+        <English>ARRR! A matey of the %s1_civ_adjective has tamed the high seas and gained the Swashbuckler Trait.</English>
+        <French>ARRR! A matey of the %s1_civ_adjective has tamed the high seas and gained the Swashbuckler Trait.</French>
+        <German>ARRR! A matey of the %s1_civ_adjective has tamed the high seas and gained the Swashbuckler Trait.</German>
+        <Italian>ARRR! A matey of the %s1_civ_adjective has tamed the high seas and gained the Swashbuckler Trait.</Italian>
+        <Spanish>ARRR! A matey of the %s1_civ_adjective has tamed the high seas and gained the Swashbuckler Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_INGENUITY_TRAIT</Tag>
+        <English>Gain the Ingenuity Trait.</English>
+        <French>Gain the Ingenuity Trait.</French>
+        <German>Gain the Ingenuity Trait.</German>
+        <Italian>Gain the Ingenuity Trait.</Italian>
+        <Spanish>Ganar el rasgo Ingenio.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_INGENUITY_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has improved unit training.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has improved unit training.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has improved unit training.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has improved unit training.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has improved unit training.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_MAGIC_RESISTANT_TRAIT</Tag>
+        <English>Gain the Magic Resistant Trait.</English>
+        <French>Gain the Magic Resistant Trait.</French>
+        <German>Gain the Magic Resistant Trait.</German>
+        <Italian>Gain the Magic Resistant Trait.</Italian>
+        <Spanish>Ganar el rasgo Resistente a Mágia.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_ADD_MAGIC_RESISTANT_TRAIT</Tag>
+        <English>Rumor has it that a leader of the %s1_civ_adjective has acquired magical defenses.</English>
+        <French>Rumor has it that a leader of the %s1_civ_adjective has acquired magical defenses.</French>
+        <German>Rumor has it that a leader of the %s1_civ_adjective has acquired magical defenses.</German>
+        <Italian>Rumor has it that a leader of the %s1_civ_adjective has acquired magical defenses.</Italian>
+        <Spanish>Según los rumores, un líder %s1_civ_adjective has acquired magical defenses.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_ADD_TRAIT_NONE</Tag>
+        <English>Decline Trait.</English>
+        <French>Decline Trait.</French>
+        <German>Decline Trait.</German>
+        <Italian>Decline Trait.</Italian>
+        <Spanish>Declinar rasgo.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_FINANCIAL_TRAIT_1</Tag>
+        <English>Gain the Financial Trait, Lose the Minor Trait.</English>
+        <French>Gain the Financial Trait, Lose the Minor Trait.</French>
+        <German>Gain the Financial Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Financial Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Financiero, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_EXPANSIVE_TRAIT_1</Tag>
+        <English>Gain the Expansive Trait, Lose the Minor Trait.</English>
+        <French>Gain the Expansive Trait, Lose the Minor Trait.</French>
+        <German>Gain the Expansive Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Expansive Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Expansivo, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SUMMONER_TRAIT_1</Tag>
+        <English>Gain the Summoner Trait, Lose the Minor Trait.</English>
+        <French>Gain the Summoner Trait, Lose the Minor Trait.</French>
+        <German>Gain the Summoner Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Summoner Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Gain the Summoner Trait, Lose the Minor Trait.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_AGGRESSIVE_TRAIT_1</Tag>
+        <English>Gain the Aggressive Trait, Lose the Minor Trait.</English>
+        <French>Gain the Aggressive Trait, Lose the Minor Trait.</French>
+        <German>Gain the Aggressive Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Aggressive Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Agresivo, perder el rasgo Emergente..</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_PHILOSOPHICAL_TRAIT_1</Tag>
+        <English>Gain the Philosophical Trait, Lose the Minor Trait.</English>
+        <French>Gain the Philosophical Trait, Lose the Minor Trait.</French>
+        <German>Gain the Philosophical Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Philosophical Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Filosófico, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_CREATIVE_TRAIT_1</Tag>
+        <English>Gain the Creative Trait, Lose the Minor Trait.</English>
+        <French>Gain the Creative Trait, Lose the Minor Trait.</French>
+        <German>Gain the Creative Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Creative Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Creativo, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SPIRITUAL_TRAIT_1</Tag>
+        <English>Gain the Spiritual Trait, Lose the Minor Trait.</English>
+        <French>Gain the Spiritual Trait, Lose the Minor Trait.</French>
+        <German>Gain the Spiritual Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Spiritual Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Espiritual, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_ARCANE_TRAIT_1</Tag>
+        <English>Gain the Arcane Trait, Lose the Minor Trait.</English>
+        <French>Gain the Arcane Trait, Lose the Minor Trait.</French>
+        <German>Gain the Arcane Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Arcane Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Arcano, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_ORGANIZED_TRAIT_1</Tag>
+        <English>Gain the Organized Trait, Lose the Minor Trait.</English>
+        <French>Gain the Organized Trait, Lose the Minor Trait.</French>
+        <German>Gain the Organized Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Organized Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Organizado, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_INDUSTRIOUS_TRAIT_1</Tag>
+        <English>Gain the Industrious Trait, Lose the Minor Trait.</English>
+        <French>Gain the Industrious Trait, Lose the Minor Trait.</French>
+        <German>Gain the Industrious Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Industrious Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Diligente, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_RAIDERS_TRAIT_1</Tag>
+        <English>Gain the Raiders Trait, Lose the Minor Trait.</English>
+        <French>Gain the Raiders Trait, Lose the Minor Trait.</French>
+        <German>Gain the Raiders Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Raiders Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Incursores, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_DEFENDER_TRAIT_1</Tag>
+        <English>Gain the Defender Trait, Lose the Minor Trait.</English>
+        <French>Gain the Defender Trait, Lose the Minor Trait.</French>
+        <German>Gain the Defender Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Defender Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Defensor, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_TREACHEROUS_TRAIT_1</Tag>
+        <English>Gain the Treacherous Trait, Lose the Minor Trait.</English>
+        <French>Gain the Treacherous Trait, Lose the Minor Trait.</French>
+        <German>Gain the Treacherous Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Treacherous Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Traicionero, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_SWASHBUCKLER_TRAIT_1</Tag>
+        <English>Gain the Swashbuckler Trait, Lose the Minor Trait.</English>
+        <French>Gain the Swashbuckler Trait, Lose the Minor Trait.</French>
+        <German>Gain the Swashbuckler Trait, Lose the Minor Trait.</German>
+        <Italian>Gain the Swashbuckler Trait, Lose the Minor Trait.</Italian>
+        <Spanish>Ganar el rasgo Intrépido, perder el rasgo Emergente.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_INGENUITY_TRAIT_1</Tag>
+        <English>Gain the Ingenuity Trait.</English>
+        <French>Gain the Ingenuity Trait.</French>
+        <German>Gain the Ingenuity Trait.</German>
+        <Italian>Gain the Ingenuity Trait.</Italian>
+        <Spanish>Ganar el rasgo Ingenio.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_ADD_MAGIC_RESISTANT_TRAIT_1</Tag>
+        <English>Gain the Magic Resistant Trait.</English>
+        <French>Gain the Magic Resistant Trait.</French>
+        <German>Gain the Magic Resistant Trait.</German>
+        <Italian>Gain the Magic Resistant Trait.</Italian>
+        <Spanish>Ganar el rasgo Resistente a Mágia.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_SEVEN_PINES</Tag>
+        <English>Your unit has entered Seven Pines.</English>
+        <French>Your unit has entered Seven Pines.</French>
+        <German>Your unit has entered Seven Pines.</German>
+        <Italian>Your unit has entered Seven Pines.</Italian>
+        <Spanish>Tu unidad ha entrado Siete Pinos.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_DEMONIC_PACT</Tag>
+        <English>Demonic Pact</English>
+        <French>Demonic Pact</French>
+        <German>Demonic Pact</German>
+        <Italian>Demonic Pact</Italian>
+        <Spanish>Demonic Pact</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_EMMA</Tag>
+        <English>Long has this tundra been ours to hunt and my pack grows more ferocious by the hour. Will you feel the pain of tooth and claw now, or shall we prolong things a bit further?</English>
+        <French>Long a été le nôtre cette toundra à la chasse, et mon pack de plus en plus féroce à l'heure. Voulez-vous sentir la douleur de la griffe et la dent aujourd'hui, ou devons-nous prolonger les choses un peu plus loin?</French>
+        <German>Lange hat dieser Tundra wurde uns auf die Jagd, und meine Packung wächst mehr von den wilden Stunde. Möchten Sie fühlen den Schmerz der Zähne und Klauen, oder wir verlängern die Dinge ein bisschen weiter?</German>
+        <Italian>Lunga è stata questa la nostra tundra di caccia, e il mio pacco cresce più feroce di ora in ora. Vuoi sentire il dolore di denti e ora chela, o dobbiamo prolungare ulteriormente le cose un po '?</Italian>
+        <Spanish>Este tiempo ha sido nuestro tundra para cazar, y mi mochila crece más feroz por la hora. ¿Quiere sentir el dolor de diente y garra ahora, o vamos a prolongar un poco más las cosas?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_EMMA</Tag>
+        <English>There is no reason for us to fight now, when weaker prey is so abundant.</English>
+        <French>Nous n'avons pas de raison de nous battre lorsque les proies plus faibles sont si abondantes.</French>
+        <German>Es gibt keinen Grund für uns, miteinander zu kämpfen, wenn schwächere Beute so reichlich vorhanden ist.</German>
+        <Italian>There is no reason for us to fight when weaker prey is so abundant.</Italian>
+        <Spanish>No hay razón para seguir luchando entre nosotros cuando presas más débiles abundan.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_DECLARE_WAR_LEADER_EMMA</Tag>
+        <English>My wolves are circling your lands as we speak. You have shown your weakness, and we are moving in for the kill.</English>
+        <French>Mon loups tournant vos terres que nous parlons. Vous êtes faibles, et vous avez la colère nous. Prépare-toi à mourir.</French>
+        <German>Meine Wölfe sind Platzrundenanflüge Ihr Land, wie wir sprechen. Sie sind schwach, und Sie haben uns geärgert. Bereiten Sie, um zu sterben.</German>
+        <Italian>Il mio lupi sono circuitazione vostre terre come si parla. Sei debole, e si sono arrabbiati noi. Preparati a morire.</Italian>
+        <Spanish>Mis lobos son sus tierras en círculos mientras hablamos. Usted está débil, y tiene enojados con nosotros. Prepárate para morir.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_EMMA</Tag>
+        <English>You would be wise to tread lightly around a bloodthirsty pack. Make it quick.</English>
+        <French>Faites vite. J'ai mieux à faire que d'écouter votre radotage.</French>
+        <German>Machen Sie es schnell. Ich habe Besseres zu tun, als sich Ihre Gefasel.</German>
+        <Italian>Rendere veloce. Ho di meglio da fare che ascoltare le vostre drivel.</Italian>
+        <Spanish>Hágalo rápido. Tengo cosas mejores que hacer que escuchar sus tonterías.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_EMMA</Tag>
+        <English>I pay no mind to the whimpering thoughts of feeble prey. </English>
+        <French>Je ne paient pas l'esprit à la pensée de faibles gémissements proie.</French>
+        <German>Ich zahle keinen Geist der whimpering Gedanken schwache Beute.</German>
+        <Italian>Io non pagano whimpering alla mente i pensieri di debole preda. </Italian>
+        <Spanish>No presto atención a los pensamientos de presa débil.</Spanish>
+    </TEXT>
+	    <TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_NOJAH</Tag>
+        <English>Ah, hello! I was just looking for a subject for my latest painting. Yes, I think you'll do quite nicely. What can I do for you?</English>
+        <French>Ah, bonjour! J'étais à la recherche d'un sujet pour ma dernière peinture. Oui .. Je pense que vous ferez très bien. Que puis-je faire pour vous?</French>
+        <German>Ach, hallo! Ich war nur der Suche nach einem Thema für meine neueste Malerei. Ja .. Ich glaube, Sie haben ganz schön. Was kann ich für Sie tun?</German>
+        <Italian>Ah, ciao! Ero solo alla ricerca di un oggetto per la mia ultima pittura. Sì .. penso che faremo molto bene. Che cosa posso fare per te?</Italian>
+        <Spanish>Ah, hola! Estaba buscando un tema para mi última pintura. Sí. .. creo que va a hacer muy bien. ¿Qué puedo hacer por usted?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_NOJAH</Tag>
+        <English>Someone new! How delightful! Which sort of plaything will you be? One that dances and sings? Or one that carries on with cries of sorrow. Oh how I do hate those...</English>
+        <French>Une nouvelle! Comment délicieux! Mon coup de créations ont toujours été ceux que la danse et de s'amuser. Pourtant, il ya ceux dont les cris deviennent assez gênants. Quel type de jouet-vous?</French>
+        <German>Jemand neu! Wie köstlich! Meine Lieblings-Werke waren schon immer diejenigen, die tanzen und amüsieren. Dennoch gibt es diejenigen, deren Schreie zu tun recht störend. Welche Art von Spielzeug sind Sie?</German>
+        <Italian>Qualcuno nuovo! Come delizioso! Il mio creazioni sono sempre stati quelli che ballano e si divertono. Eppure ci sono quelli il cui grido fare diventare abbastanza fastidioso. Quale tipo di giocattolo vi sarà?</Italian>
+        <Spanish>Alguien nuevo! ¿Cómo encantadora! Mis favoritos siempre han sido creaciones de los que la danza y divertirse. Sin embargo, son los gritos que se vuelven muy molestos. ¿Qué tipo de juguete se va a?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_NOJAH</Tag>
+        <English>You're my new best friend! Regrettably, I broke my last one.</English>
+        <French>Tu es mon nouveau meilleur ami. Malheureusement, ma dernière a dû être éliminés.</French>
+        <German>Du bist mein bester Freund. Leider ist meine letzte mussten beseitigt werden.</German>
+        <Italian>Sei il mio nuovo migliore amico. Purtroppo, il mio ultimo dovuto essere smaltiti.</Italian>
+        <Spanish>Eres mi nuevo mejor amigo. Lamentablemente, mi último tuvo que ser eliminados.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_NOJAH</Tag>
+        <English>Can't you see I have better things to do than carry on with the likes of you?</English>
+        <French>Ne peut pas vous voir, je suis occupé?</French>
+        <German>Sie können nicht sehen, ich bin beschäftigt?</German>
+        <Italian>Non potete vedere mi occupo?</Italian>
+        <Spanish>¿No ves que estoy ocupado?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_ELDARWEN</Tag>
+        <English>A star shall shine on the hour of our meeting.</English>
+        <French>Une étoile doit briller sur l'heure de notre réunion.</French>
+        <German>Ein Stern wird leuchten auf die Stunde der Sitzung.</German>
+        <Italian>Una stella a brillare è l'ora del nostro incontro.</Italian>
+        <Spanish>Una estrella se brillo en la hora de nuestra reunión.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ESIRCE</Tag>
+        <English>A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand.</English>
+        <French>A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand.</French>
+        <German>A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand.</German>
+        <Italian>A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand.</Italian>
+        <Spanish>A stupid man's report of what a clever man says can never be accurate, because he unconsciously translates what he hears into something he can understand.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ESIRCE</Tag>
+        <English>The only thing that will redeem mankind is cooperation. </English>
+        <French>The only thing that will redeem mankind is cooperation. </French>
+        <German>The only thing that will redeem mankind is cooperation. </German>
+        <Italian>The only thing that will redeem mankind is cooperation. </Italian>
+        <Spanish>The only thing that will redeem mankind is cooperation. </Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ESIRCE</Tag>
+        <English>It is a waste of energy to be angry with a man who behaves badly, just as it is to be angry with a horse that won't go.</English>
+        <French>It is a waste of energy to be angry with a man who behaves badly, just as it is to be angry with a horse that won't go.</French>
+        <German>It is a waste of energy to be angry with a man who behaves badly, just as it is to be angry with a horse that won't go.</German>
+        <Italian>It is a waste of energy to be angry with a man who behaves badly, just as it is to be angry with a horse that won't go.</Italian>
+        <Spanish>It is a waste of energy to be angry with a man who behaves badly, just as it is to be angry with a horse that won't go.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_ESIRCE</Tag>
+        <English>Life is nothing but a competition to be the criminal rather than the victim.</English>
+        <French>Life is nothing but a competition to be the criminal rather than the victim.</French>
+        <German>Life is nothing but a competition to be the criminal rather than the victim.</German>
+        <Italian>Life is nothing but a competition to be the criminal rather than the victim.</Italian>
+        <Spanish>Life is nothing but a competition to be the criminal rather than the victim.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_DECLARE_WAR_LEADER_ESIRCE</Tag>
+        <English>Many people would sooner die than think; In fact, they do so.</English>
+        <French>Many people would sooner die than think; In fact, they do so.</French>
+        <German>Many people would sooner die than think; In fact, they do so.</German>
+        <Italian>Many people would sooner die than think; In fact, they do so.</Italian>
+        <Spanish>Many people would sooner die than think; In fact, they do so.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_ACCEPT_LEADER_FURIA</Tag>
+        <English>Yes, this will do quite nicely</English>
+        <French>Yes, this will do quite nicely</French>
+        <German>Yes, this will do quite nicely</German>
+        <Italian>Yes, this will do quite nicely</Italian>
+        <Spanish>Yes, this will do quite nicely</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_DECLARE_WAR_LEADER_FURIA</Tag>
+        <English>You did not heed my warnings [CT_NAME], and now your screams will join the others as you beg for the mercy of death.</English>
+        <French>You did not heed my warnings [CT_NAME], and now your screams will join the others as you beg for the mercy of death.</French>
+        <German>You did not heed my warnings [CT_NAME], and now your screams will join the others as you beg for the mercy of death.</German>
+        <Italian>You did not heed my warnings [CT_NAME], and now your screams will join the others as you beg for the mercy of death.</Italian>
+        <Spanish>You did not heed my warnings [CT_NAME], and now your screams will join the others as you beg for the mercy of death.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_FURIA</Tag>
+        <English>Do you know what the Balseraphs do to things that are beautiful, merciful, and kind? We destroy them.</English>
+        <French>Do you know what the Balseraphs do to things that are beautiful, merciful, kind? We destroy them.</French>
+        <German>Do you know what the Balseraphs do to things that are beautiful, merciful, kind? We destroy them.</German>
+        <Italian>Do you know what the Balseraphs do to things that are beautiful, merciful, kind? We destroy them.</Italian>
+        <Spanish>Do you know what the Balseraphs do to things that are beautiful, merciful, kind? We destroy them.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_FURIA</Tag>
+        <English>Do not cross me [CT_NAME], or you will find that there are fates worse than death.</English>
+        <French>Do not cross me [CT_NAME], or you will find that there are fates worse than death.</French>
+        <German>Do not cross me [CT_NAME], or you will find that there are fates worse than death.</German>
+        <Italian>Do not cross me [CT_NAME], or you will find that there are fates worse than death.</Italian>
+        <Spanish>Do not cross me [CT_NAME], or you will find that there are fates worse than death.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_FURIA</Tag>
+        <English>Oh, but this is the part I enjoy the most. No time for words now. Not yet.</English>
+        <French>Oh, but this is the part I enjoy the most. No time for words now. Not yet.</French>
+        <German>Oh, but this is the part I enjoy the most. No time for words now. Not yet.</German>
+        <Italian>Oh, but this is the part I enjoy the most. No time for words now. Not yet.</Italian>
+        <Spanish>Ah, pero este es el parte que me encanta más. No hay tiempo para palabras. Todavía no.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_FURIA</Tag>
+        <English>You're my new best friend! I broke my last one.</English>
+        <French>Tu es mon nouveau meilleur ami. Malheureusement, ma dernière a dû être éliminés.</French>
+        <German>Du bist mein bester Freund. Leider ist meine letzte mussten beseitigt werden.</German>
+        <Italian>Sei il mio nuovo migliore amico. Purtroppo, il mio ultimo dovuto essere smaltiti.</Italian>
+        <Spanish>Eres mi nuevo mejor amigo. Lamentablemente, mi último tuvo que ser eliminados.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LORDGYRUN</Tag>
+        <English>Lord Gyrun</English>
+        <French>Lord Gyrun</French>
+        <German>Lord Gyrun</German>
+        <Italian>Lord Gyrun</Italian>
+        <Spanish>El Señor Gyrun</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LORDGYRUN_PEDIA</Tag>
+        <English>The greatest Opportunist of all Erebus.</English>
+        <French>The greatest Opportunist of all Erebus.</French>
+        <German>The greatest Opportunist of all Erebus.</German>
+        <Italian>The greatest Opportunist of all Erebus.</Italian>
+        <Spanish>El mejor opertunista en todo Erebus.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_OPPERTUNIST</Tag>
+        <English>Opportunist</English>
+        <French>Opportunist</French>
+        <German>Opportunist</German>
+        <Italian>Opportunist</Italian>
+        <Spanish>Opertunista</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_OPPERTUNIST_SHORT</Tag>
+        <English>Opp</English>
+        <French>Opp</French>
+        <German>Opp</German>
+        <Italian>Opp</Italian>
+        <Spanish>Op</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_VERLAIN</Tag>
+        <English>Verlain</English>
+        <French>Verlain</French>
+        <German>Verlain</German>
+        <Italian>Verlain</Italian>
+        <Spanish>Verlain</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HYDROMANCER</Tag>
+        <English>Hydromancer</English>
+        <French>Hydromancer</French>
+        <German>Hydromancer</German>
+        <Italian>Hydromancer</Italian>
+        <Spanish>Hydromancer</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HYDROMANCER_SHORT</Tag>
+        <English>Hyd</English>
+        <French>Hyd</French>
+        <German>Hyd</German>
+        <Italian>Hyd</Italian>
+        <Spanish>Hyd</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_VERLAIN_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WANDERER</Tag>
+        <English>Wanderer</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Trotamundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WANDERER_SHORT</Tag>
+        <English>Wan</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Trot</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_NOJAH</Tag>
+        <English>Hero</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Héroe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_NOJAH_SHORT</Tag>
+        <English>Hero</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Héroe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_NOJAH_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Nojah is a Hero of the Balseraph</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Nojah es un Héroe de los the Balseraphs</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TRADER</Tag>
+        <English>Trader</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Comerciante</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TRADER_SHORT</Tag>
+        <English>Trader</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Cmrc</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_THOUSAND_FACES</Tag>
+        <English>Thousand Faces</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Mil Caras</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_THOUSAND_FACES_SHORT</Tag>
+        <English>TF</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>MC</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_NELL</Tag>
+        <English>Nell</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>
+			<Text>Nell</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_XIVAN</Tag>
+        <English>Xivan</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Xivan</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OPHELIA</Tag>
+        <English>Ophelia</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>
+			<Text>Ofelia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEATHTOUCHED</Tag>
+		<English>Deathtouched</English>
+        <French>Deathtouched</French>
+        <German>Deathtouched</German>
+        <Italian>Deathtouched</Italian>
+        <Spanish>Tocado por Muerte</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEATHTOUCHED_SHORT</Tag>
+		<English>Dea</English>
+		<French>Dea</French>
+		<German>Dea</German>
+		<Italian>Dea</Italian>
+		<Spanish>Muer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEATHTOUCHED_HELP</Tag>
+		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Summoned Skeletons gain the Melee combat type</English>
+		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Summoned Skeletons gain the Melee combat type</French>
+		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Summoned Skeletons gain the Melee combat type</German>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Summoned Skeletons gain the Melee combat type</Italian>
+		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Esqueletos conjurados ganan el tipo de combate Cuerpo a Cuerpo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CONTROLLING</Tag>
+		<English>Controlling</English>
+        <French>Controlling</French>
+        <German>Controlling</German>
+        <Italian>Controlling</Italian>
+        <Spanish>
+			<Text>Regulador:Reguladora</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CONTROLLING_SHORT</Tag>
+		<English>Cnt</English>
+		<French>Cnt</French>
+		<German>Cnt</German>
+		<Italian>Cnt</Italian>
+		<Spanish>Cnt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_USURPER_SHORT</Tag>
+		<English>Usu</English>
+		<French>Usu</French>
+		<German>Usu</German>
+		<Italian>Usu</Italian>
+		<Spanish>Usu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_USURPER</Tag>
+		<English>Usurper</English>
+		<French>Usurper</French>
+		<German>Usurper</German>
+		<Italian>Usurper</Italian>
+		<Spanish>
+			<Text>Usurpador:Usurpadora</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GENERAL_SHORT</Tag>
+		<English>Gen</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Gen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GENERAL</Tag>
+		<English>General</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>General</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GREEDY_SHORT</Tag>
+		<English>Greed</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Cod</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GREEDY</Tag>
+		<English>Greedy</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>
+			<Text>Codicioso:Codiciosa</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CRAFTMASTER</Tag>
+		<English>Craftmaster</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>
+			<Text>Maestro de Artificio:Maestra de Artificio</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CRAFTMASTER_SHORT</Tag>
+		<English>Craft</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>MdA</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CRAFTMASTER_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Golem are crafted with higher mobility and Combat Strength.</English>
+		<French>[NEWLINE][ICON_BULLET]Golem are crafted with higher mobility and Combat Strength.</French>
+		<German>[NEWLINE][ICON_BULLET]Golem are crafted with higher mobility and Combat Strength.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Golem are crafted with higher mobility and Combat Strength.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Golem are crafted with higher mobility and Combat Strength.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_MINER</Tag>
+		<English>Miner</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>
+			<Text>Minero:Minera</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_MINER_SHORT</Tag>
+		<English>Min</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Min</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEVOTION</Tag>
+		<English>Endless Devotion</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Devoción Sin Fin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEVOTION_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]The Bannor may Adopt the [LINK=CIVIC_CRUSADE]Crusade[\LINK] Civic.[NEWLINE][ICON_BULLET]The Bannor gain Followers when they conquer Cities.</English>
+		<French>[NEWLINE][ICON_BULLET]The Bannor may Adopt the [LINK=CIVIC_CRUSADE]Crusade[\LINK] Civic.[NEWLINE][ICON_BULLET]The Bannor gain Followers when they conquer Cities.</French>
+		<German>[NEWLINE][ICON_BULLET]The Bannor may Adopt the [LINK=CIVIC_CRUSADE]Crusade[\LINK] Civic.[NEWLINE][ICON_BULLET]The Bannor gain Followers when they conquer Cities.</German>
+		<Italian>[NEWLINE][ICON_BULLET]The Bannor may Adopt the [LINK=CIVIC_CRUSADE]Crusade[\LINK] Civic.[NEWLINE][ICON_BULLET]The Bannor gain Followers when they conquer Cities.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Los Banores puede adoptar [LINK=CIVIC_CRUSADE]Cruzada[\LINK].[NEWLINE][ICON_BULLET]Los Banores ganan seguidores cuando conquistan ciudades.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GREAT_LEADER</Tag>
+		<English>Great Leader</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Gran Líder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GREAT_LEADER_SHORT</Tag>
+		<English>GL</English>
+        <French>GL</French>
+        <German>GL</German>
+        <Italian>GL</Italian>
+        <Spanish>GL</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_GREAT_LEADER_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Gains twice as many followers when conquering a City.</English>
+		<French>[NEWLINE][ICON_BULLET]Gains twice as many followers when conquering a City.</French>
+		<German>[NEWLINE][ICON_BULLET]Gains twice as many followers when conquering a City.</German>
+		<Italian>[NEWLINE][ICON_BULLET]Gains twice as many followers when conquering a City.</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Gana el doble de seguidores al conquistar una ciudad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FERAL</Tag>
+		<English>Feral</English>
+        <French>Feral</French>
+        <German>Feral</German>
+        <Italian>Feral</Italian>
+        <Spanish>Feral</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FERAL_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Living Doviello Units gain unique Promotions by defeating Animals.[NEWLINE][ICON_BULLET]Doviello can pick up the Weapons from Units they defeat in Battle.[NEWLINE][ICON_BULLET]Doviello can duel each other.[NEWLINE][ICON_BULLET]A bloodied battle can turn Doviello led by Baron Duin Halfmorn to Werewolfs</English>
+		<French>[NEWLINE][ICON_BULLET]Living Doviello Units gain unique Promotions by defeating Animals.[NEWLINE][ICON_BULLET]Doviello can pick up the Weapons from Units they defeat in Battle.[NEWLINE][ICON_BULLET]Doviello can duel each other.[NEWLINE][ICON_BULLET]A bloodied battle can turn Doviello led by Baron Duin Halfmorn to Werewolfs</French>
+		<German>[NEWLINE][ICON_BULLET]Living Doviello Units gain unique Promotions by defeating Animals.[NEWLINE][ICON_BULLET]Doviello can pick up the Weapons from Units they defeat in Battle.[NEWLINE][ICON_BULLET]Doviello can duel each other.[NEWLINE][ICON_BULLET]A bloodied battle can turn Doviello led by Baron Duin Halfmorn to Werewolfs</German>
+		<Italian>[NEWLINE][ICON_BULLET]Living Doviello Units gain unique Promotions by defeating Animals.[NEWLINE][ICON_BULLET]Doviello can pick up the Weapons from Units they defeat in Battle.[NEWLINE][ICON_BULLET]Doviello can duel each other.[NEWLINE][ICON_BULLET]A bloodied battle can turn Doviello led by Baron Duin Halfmorn to Werewolfs</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Unidades Doviellas viventes ganan ascensos únicos por derrotar animales.[NEWLINE][ICON_BULLET]Los Doviellos pueden recoger las armas de unidades que derrotan.[NEWLINE][ICON_BULLET]Los Doviellos pueden batirse en duelo.[NEWLINE][ICON_BULLET]Una batalla sangrienta puede convertir Doviellos dirigido por el Barón Duin Halfmorn a Hombres-lobos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HIPPUS_TACTICIAN</Tag>
+		<English>Hippus Tactician</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Táctico de Hippus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HIPPUS_TACTICIAN_SHORT</Tag>
+		<English>Tac</English>
+        <French>Tac</French>
+        <German>Tac</German>
+        <Italian>Tac</Italian>
+        <Spanish>Tác</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ENGINEER</Tag>
+		<English>Engineer</English>
+        <French>.</French>
+        <German>.</German>
+        <Italian>.</Italian>
+        <Spanish>Maquinista</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ENGINEER_SHORT</Tag>
+		<English>Eng</English>
+        <French>Eng</French>
+        <German>Eng</German>
+        <Italian>Eng</Italian>
+        <Spanish>Maq</Spanish>
+	</TEXT>
+</Civ4GameText>
+

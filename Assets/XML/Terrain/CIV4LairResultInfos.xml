@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Civ4LairResultInfos xmlns="x-schema:CIV4DungeonSchema.xml">
+	<LairResultInfos>
+		<LairResultInfo>
+			<Type>LAIRRESULT_STONE</Type>
+			<Description>TXT_KEY_LAIRRESULT_STONE</Description>
+			<iValue>100</iValue>
+			<iWeight>70</iWeight>						
+			<PyResult>LairResultStone(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>					
+		<LairResultInfo>
+			<Type>LAIRRESULT_LUMBER</Type>
+			<Description>TXT_KEY_LAIRRESULT_LUMBER</Description>
+			<iValue>100</iValue>
+			<iWeight>70</iWeight>									
+			<PyResult>LairResultLumber(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>							
+		<LairResultInfo>
+			<Type>LAIRRESULT_LEATHER</Type>
+			<Description>TXT_KEY_LAIRRESULT_LEATHER</Description>
+			<iValue>100</iValue>
+			<iWeight>70</iWeight>									
+			<PyResult>LairResultLeather(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>							
+		<LairResultInfo>
+			<Type>LAIRRESULT_HERB</Type>
+			<Description>TXT_KEY_LAIRRESULT_HERB</Description>
+			<iValue>100</iValue>
+			<iWeight>70</iWeight>									
+			<PyResult>LairResultHerb(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>							
+		<LairResultInfo>
+			<Type>LAIRRESULT_METAL</Type>
+			<Description>TXT_KEY_LAIRRESULT_METAL</Description>
+			<iValue>100</iValue>
+			<iWeight>70</iWeight>									
+			<PyResult>LairResultMetal(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>									
+		<LairResultInfo>
+			<Type>LAIRRESULT_PRODUCTION</Type>
+			<Description>TXT_KEY_LAIRRESULT_PRODUCTION</Description>
+			<iValue>50</iValue>
+			<iGameTurnMod>50</iGameTurnMod>									
+			<PyRequirement>reqNearCity(pAdventurer, iValue)</PyRequirement>						
+			<PyResult>LairResultProduction(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>															
+		<LairResultInfo>
+			<Type>LAIRRESULT_CULTURE</Type>
+			<Description>TXT_KEY_LAIRRESULT_CULTURE</Description>
+			<iValue>200</iValue>
+			<iGameTurnMod>400</iGameTurnMod>						
+			<PyRequirement>reqNearCity(pAdventurer, iValue)</PyRequirement>						
+			<PyResult>LairResultCulture(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>													
+		<LairResultInfo>
+			<Type>LAIRRESULT_RESEARCH</Type>
+			<Description>TXT_KEY_LAIRRESULT_RESEARCH</Description>
+			<iValue>200</iValue>
+			<PyRequirement>reqLairResultResearch(pAdventurer, iValue)</PyRequirement>									
+			<PyResult>LairResultResearch(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>													
+		<LairResultInfo>
+			<Type>LAIRRESULT_SPELLRESEARCH</Type>
+			<Description>TXT_KEY_LAIRRESULT_SPELLRESEARCH</Description>
+			<iValue>200</iValue>
+			<PyResult>LairResultSpellResearch(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>															
+		<LairResultInfo>
+			<Type>LAIRRESULT_GREATPERSON</Type>
+			<Description>TXT_KEY_LAIRRESULT_GREATPERSON</Description>
+			<PyRequirement>reqNearCity(pAdventurer, iValue)</PyRequirement>						
+			<PyResult>LairResultGreatPerson(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>											
+		<LairResultInfo>
+			<Type>LAIRRESULT_EQUIPMENT</Type>
+			<iWeight>120</iWeight>									
+			<PyRequirement>reqLairResultEquipment(pAdventurer, iValue)</PyRequirement>									
+			<PyResult>LairResultEquipment(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>
+		<LairResultInfo>
+			<Type>LAIRRESULT_GOLDENAGE</Type>
+			<Description>TXT_KEY_LAIRRESULT_GOLDENAGE</Description>
+			<iValue>5</iValue>
+			<iGameTurnMod>0</iGameTurnMod>			
+			<PyResult>LairResultGoldenage(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>													
+		<LairResultInfo>
+			<Type>LAIRRESULT_BUILDING</Type>
+			<Description>TXT_KEY_LAIRRESULT_BUILDING</Description>
+			<PyRequirement>reqLairResultBuilding(pAdventurer, iValue)</PyRequirement>									
+			<PyResult>LairResultBuilding(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>															
+		<LairResultInfo>
+			<Type>LAIRRESULT_AGGRESSIVE</Type>
+			<Description>TXT_KEY_LAIRRESULT_AGGRESSIVE</Description>
+			<PyRequirement>reqLairResultAggressive(pAdventurer, iValue)</PyRequirement>									
+			<PyResult>LairResultAggressive(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>																	
+		<LairResultInfo>
+			<Type>LAIRRESULT_WORKER</Type>
+			<Description>TXT_KEY_LAIRRESULT_WORKER</Description>
+			<iWeight>30</iWeight>			
+			<PyResult>LairResultWorker(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>
+		<LairResultInfo>
+			<Type>LAIRRESULT_GRIGORI_GREATER_MUSEUM</Type>
+			<Description>TXT_KEY_LAIRRESULT_GRIGORI_GREATER_MUSEUM</Description>
+			<PyRequirement>reqLairResultGrigoriGreaterMuseum(pAdventurer, iValue)</PyRequirement>									
+			<PyResult>LairResultGrigoriGreaterMuseum(pAdventurer, iValue)</PyResult>
+		</LairResultInfo>																			
+	</LairResultInfos>			
+</Civ4LairResultInfos>

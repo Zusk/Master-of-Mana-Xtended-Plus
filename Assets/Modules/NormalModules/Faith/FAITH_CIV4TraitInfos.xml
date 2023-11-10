@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:FAITH_CIV4CivilizationsSchema.xml">
+	<TraitInfos>
+		<TraitInfo>
+			<Type>TRAIT_SPIRITUAL</Type>
+			<iMaxAnarchy>-1</iMaxAnarchy>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>				
+			</CommerceModifiers>
+		</TraitInfo>
+	</TraitInfos>
+</Civ4TraitInfos>

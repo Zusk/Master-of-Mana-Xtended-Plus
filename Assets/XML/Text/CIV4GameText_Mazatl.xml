@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIV_MAZATL_ADJECTIVE</Tag>
+        <English>Mazatl</English>
+        <French>Mazatl</French>
+        <German>Mazatl'sch:Mazatl'schen:Mazatl'sche</German>
+        <Italian>Mazatl</Italian>
+        <Spanish>Mazatl</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_MAZATL_DESC</Tag>
+        <English>Mazatl</English>
+        <French>Mazatl</French>
+        <German>Reich der Mazatl</German>
+        <Italian>Mazatl</Italian>
+        <Spanish>Mazatl</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_MAZATL_SHORT_DESC</Tag>
+        <English>Mazatl</English>
+        <French>Mazatl</French>
+        <German>Mazatl</German>
+        <Italian>Mazatl</Italian>
+        <Spanish>Mazatl</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HIANTHROGH</Tag>
+        <English>Hianthrogh</English>
+        <French>Hianthrogh</French>
+        <German>Hianthrogh</German>
+        <Italian>Hianthrogh</Italian>
+        <Spanish>Hianthrogh</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MAZATL_PEDIA</Tag>
+        <English>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</English>
+        <French>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</French>
+        <German>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</German>
+        <Italian>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</Italian>
+        <Spanish>Hianthrogh stood upon the highest level of the temple-palace and looked to the burning horizon. The Sheaim approached Nochtli in force. Barbaric warriors, priests of dark power and otherworldly creatures filled their ranks. Within hours they would breach the wall of jungle and be upon the Mazatl capital. Smoke filled the air, as the sense of despair filled the hearts of the Mazatl. Below him, the warriors of Nochtli prepared a desperate defence. They could not hope to stand for long, but they would stand for as long as they could.[NEWLINE][NEWLINE]The shards of Coatlann - one of their most important symbols - had been transported away to another city. Preparations were being made for a second stand there, but there was no time. Unless Nochtli could stand, the Sheaim would sweep through the Mazatl empire. There was little chance to defend the city however, as the Sheaim had constructed great machines of war and wielded magic that could strike down their defenders whilst they stood upon the tall walls.[NEWLINE][NEWLINE]No, the enemy knew how to destroy cities well enough. Nochtli could not be defended. If defense is not possible and retreat unthinkable, the only recourse is... [PARAGRAPH]"We shall attack them as they approach" stated Hianthrogh to the temple-guards closest to him. "Carry my words to the warriors, abandon the defense preparations, set scouts upon the trails and prepare to ambush the Sheaim forces as they approach. We shall fight them in the burning jungle and they shall know of our resolve."[NEWLINE][NEWLINE]Few of Hianthrogh's warriors survived that day. The jungle and the city of Nochtli burned for days afterwards, but the toll exacted upon the Sheaim gave Tebryn Arbandi reason to pause. He had conquered a city stuck amongst deep swamp and charred jungle, which provided him little benefit. In exchange he had expended a large portion of his southern forces. His forces already depleted, he could expect the next assault against the lizards to be even more costly. The cost outweighed the benefit - for now, the lizards could keep their swamp. There were greater foes that were easier to topple.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_CIV_MAZATL_PEDIA</Tag>
+        <English>The Mazatl are part of the lizardman race that has existed since the Age of Dragons. They spent much of the Age of Magic separated from the rest of Erebus, deep in the jungles and swampland that proved inhospitable to other races, but allowed the lizardmen to thrive in their pyramid-cities.. As the Age of Ice dawned, the jungles were all but destroyed and the swampland froze. Many of the lizardmen died in a panicked exodus to try to escape the bitter cold - their reliance on warm climates meant that they were especially scarred by Mulcarn's entry into creation. The group that would later become the Mazatl took refuge in caves near an inactive volcano, where the heat from the molten earth itself kept them alive. As the Age of Ice passed, the lizards returned to the surface and rebuilt their civilization in the jungle. [NEWLINE][NEWLINE]Whilst the old civilization worshipped a whole pantheon of gods however, the reborn Mazatl civilization were more focused. They were eternally grateful to Kalshekk - their god of Earth - for protecting them during the Age of Ice, but the followers of Omorr - their god of foresight and learning - gained significant attention when their seers foretold that the world had not been saved from the influences of the Godswar. The icy reign of Mulcarn had been broken, but a time of Fire and Shadow lay ahead, in which the world would suffer the power of Agares himself. The Mazatl have chosen to stand against this fate and seek to avert Armageddon.</English>
+        <French>The Mazatl are part of the lizardman race that has existed since the Age of Dragons. They spent much of the Age of Magic separated from the rest of Erebus, deep in the jungles and swampland that proved inhospitable to other races, but allowed the lizardmen to thrive in their pyramid-cities.. As the Age of Ice dawned, the jungles were all but destroyed and the swampland froze. Many of the lizardmen died in a panicked exodus to try to escape the bitter cold - their reliance on warm climates meant that they were especially scarred by Mulcarn's entry into creation. The group that would later become the Mazatl took refuge in caves near an inactive volcano, where the heat from the molten earth itself kept them alive. As the Age of Ice passed, the lizards returned to the surface and rebuilt their civilization in the jungle. [NEWLINE][NEWLINE]Whilst the old civilization worshipped a whole pantheon of gods however, the reborn Mazatl civilization were more focused. They were eternally grateful to Kalshekk - their god of Earth - for protecting them during the Age of Ice, but the followers of Omorr - their god of foresight and learning - gained significant attention when their seers foretold that the world had not been saved from the influences of the Godswar. The icy reign of Mulcarn had been broken, but a time of Fire and Shadow lay ahead, in which the world would suffer the power of Agares himself. The Mazatl have chosen to stand against this fate and seek to avert Armageddon.</French>
+        <German>The Mazatl are part of the lizardman race that has existed since the Age of Dragons. They spent much of the Age of Magic separated from the rest of Erebus, deep in the jungles and swampland that proved inhospitable to other races, but allowed the lizardmen to thrive in their pyramid-cities.. As the Age of Ice dawned, the jungles were all but destroyed and the swampland froze. Many of the lizardmen died in a panicked exodus to try to escape the bitter cold - their reliance on warm climates meant that they were especially scarred by Mulcarn's entry into creation. The group that would later become the Mazatl took refuge in caves near an inactive volcano, where the heat from the molten earth itself kept them alive. As the Age of Ice passed, the lizards returned to the surface and rebuilt their civilization in the jungle. [NEWLINE][NEWLINE]Whilst the old civilization worshipped a whole pantheon of gods however, the reborn Mazatl civilization were more focused. They were eternally grateful to Kalshekk - their god of Earth - for protecting them during the Age of Ice, but the followers of Omorr - their god of foresight and learning - gained significant attention when their seers foretold that the world had not been saved from the influences of the Godswar. The icy reign of Mulcarn had been broken, but a time of Fire and Shadow lay ahead, in which the world would suffer the power of Agares himself. The Mazatl have chosen to stand against this fate and seek to avert Armageddon.</German>
+        <Italian>The Mazatl are part of the lizardman race that has existed since the Age of Dragons. They spent much of the Age of Magic separated from the rest of Erebus, deep in the jungles and swampland that proved inhospitable to other races, but allowed the lizardmen to thrive in their pyramid-cities.. As the Age of Ice dawned, the jungles were all but destroyed and the swampland froze. Many of the lizardmen died in a panicked exodus to try to escape the bitter cold - their reliance on warm climates meant that they were especially scarred by Mulcarn's entry into creation. The group that would later become the Mazatl took refuge in caves near an inactive volcano, where the heat from the molten earth itself kept them alive. As the Age of Ice passed, the lizards returned to the surface and rebuilt their civilization in the jungle. [NEWLINE][NEWLINE]Whilst the old civilization worshipped a whole pantheon of gods however, the reborn Mazatl civilization were more focused. They were eternally grateful to Kalshekk - their god of Earth - for protecting them during the Age of Ice, but the followers of Omorr - their god of foresight and learning - gained significant attention when their seers foretold that the world had not been saved from the influences of the Godswar. The icy reign of Mulcarn had been broken, but a time of Fire and Shadow lay ahead, in which the world would suffer the power of Agares himself. The Mazatl have chosen to stand against this fate and seek to avert Armageddon.</Italian>
+        <Spanish>The Mazatl are part of the lizardman race that has existed since the Age of Dragons. They spent much of the Age of Magic separated from the rest of Erebus, deep in the jungles and swampland that proved inhospitable to other races, but allowed the lizardmen to thrive in their pyramid-cities.. As the Age of Ice dawned, the jungles were all but destroyed and the swampland froze. Many of the lizardmen died in a panicked exodus to try to escape the bitter cold - their reliance on warm climates meant that they were especially scarred by Mulcarn's entry into creation. The group that would later become the Mazatl took refuge in caves near an inactive volcano, where the heat from the molten earth itself kept them alive. As the Age of Ice passed, the lizards returned to the surface and rebuilt their civilization in the jungle. [NEWLINE][NEWLINE]Whilst the old civilization worshipped a whole pantheon of gods however, the reborn Mazatl civilization were more focused. They were eternally grateful to Kalshekk - their god of Earth - for protecting them during the Age of Ice, but the followers of Omorr - their god of foresight and learning - gained significant attention when their seers foretold that the world had not been saved from the influences of the Godswar. The icy reign of Mulcarn had been broken, but a time of Fire and Shadow lay ahead, in which the world would suffer the power of Agares himself. The Mazatl have chosen to stand against this fate and seek to avert Armageddon.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_CIVIC_LOST_LANDS</Tag>
+        <English>Lost Lands</English>
+        <French>Lost Lands</French>
+        <German>Verlorene Lande</German>
+        <Italian>Lost Lands</Italian>
+        <Spanish>Lost Lands</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_CIVIC_LOST_LANDS_PEDIA</Tag>
+        <English>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire.</English>
+        <French>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire.</French>
+        <German>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire.</German>
+        <Italian>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire.</Italian>
+        <Spanish>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRIEST_OF_KALSHEKK</Tag>
+        <English>Priest of Kalshekk</English>
+        <French>Priest of Kalshekk</French>
+        <German>Priester des Kalshekk</German>
+        <Italian>Priest of Kalshekk</Italian>
+        <Spanish>Priest of Kalshekk</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRIEST_MAZATL_PEDIA</Tag>
+        <English>The Mazatl worship a number of different deities, but primarily Kalshekk and Omorr. Whilst none of these deities are exactly the same as those worshipped amongst the human population of Erebus, they do share aspects with some of them. Kalshekk for instance shares many similarities with Kilmorph, to the point that it is believed that both have the same origin but the current representations are derived from differing histories and mythologies. The same is true of the lizard deity Omorr and the human deity Oghma. Whether either race has the "correct" representation is a matter for philosophers and scholars to debate, but what is known is that the Priests of Kalshekk and Omorr display abilities akin to those of their counterpart religions.</English>
+        <French>The Mazatl worship a number of different deities, but primarily Kalshekk and Omorr. Whilst none of these deities are exactly the same as those worshipped amongst the human population of Erebus, they do share aspects with some of them. Kalshekk for instance shares many similarities with Kilmorph, to the point that it is believed that both have the same origin but the current representations are derived from differing histories and mythologies. The same is true of the lizard deity Omorr and the human deity Oghma. Whether either race has the "correct" representation is a matter for philosophers and scholars to debate, but what is known is that the Priests of Kalshekk and Omorr display abilities akin to those of their counterpart religions.</French>
+        <German>The Mazatl worship a number of different deities, but primarily Kalshekk and Omorr. Whilst none of these deities are exactly the same as those worshipped amongst the human population of Erebus, they do share aspects with some of them. Kalshekk for instance shares many similarities with Kilmorph, to the point that it is believed that both have the same origin but the current representations are derived from differing histories and mythologies. The same is true of the lizard deity Omorr and the human deity Oghma. Whether either race has the "correct" representation is a matter for philosophers and scholars to debate, but what is known is that the Priests of Kalshekk and Omorr display abilities akin to those of their counterpart religions.</German>
+        <Italian>The Mazatl worship a number of different deities, but primarily Kalshekk and Omorr. Whilst none of these deities are exactly the same as those worshipped amongst the human population of Erebus, they do share aspects with some of them. Kalshekk for instance shares many similarities with Kilmorph, to the point that it is believed that both have the same origin but the current representations are derived from differing histories and mythologies. The same is true of the lizard deity Omorr and the human deity Oghma. Whether either race has the "correct" representation is a matter for philosophers and scholars to debate, but what is known is that the Priests of Kalshekk and Omorr display abilities akin to those of their counterpart religions.</Italian>o
+        <Spanish>The Mazatl worship a number of different deities, but primarily Kalshekk and Omorr. Whilst none of these deities are exactly the same as those worshipped amongst the human population of Erebus, they do share aspects with some of them. Kalshekk for instance shares many similarities with Kilmorph, to the point that it is believed that both have the same origin but the current representations are derived from differing histories and mythologies. The same is true of the lizard deity Omorr and the human deity Oghma. Whether either race has the "correct" representation is a matter for philosophers and scholars to debate, but what is known is that the Priests of Kalshekk and Omorr display abilities akin to those of their counterpart religions.</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRIEST_OF_KALSHEKK_STRATEGY</Tag>
+        <English>Priests of Kalshekk have the ability to create gold from Copper resources, and to grant the Spiritual Hammer promotion to Disciple units.</English>
+        <French>Priests of Kalshekk have the ability to create gold from Copper resources, and to grant the Spiritual Hammer promotion to Disciple units.</French>
+        <German>Priester des Kalshekk können Gold aus Kupfer-Resourcen gewinnenen und die Beförderung Geistiger Hammer an Adepten verleihen.</German>
+        <Italian>Priests of Kalshekk have the ability to create gold from Copper resources, and to grant the Spiritual Hammer promotion to Disciple units.</Italian>
+        <Spanish>Priests of Kalshekk have the ability to create gold from Copper resources, and to grant the Spiritual Hammer promotion to Disciple units.</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRIEST_OF_OMORR</Tag>
+        <English>Priest of Omorr</English>
+        <French>Priest of Omorr</French>
+        <German>Priester des Omorr</German>
+        <Italian>Priest of Omorr</Italian>
+        <Spanish>Priest of Omorr</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PRIEST_OF_OMORR_STRATEGY</Tag>
+        <English>Priests of Omorr are useful when facing veil civs as they have the ability to sanctify hell terrain and cure diseases. They also possess the ability to cast Spirit Guide, ensuring their experience does not go to waste. Their seer-like abilities allow them to view approaching threats by using "Floating Eye".</English>
+        <French>Priests of Omorr are useful when facing veil civs as they have the ability to sanctify hell terrain and cure diseases. They also possess the ability to cast Spirit Guide, ensuring their experience does not go to waste. Their seer-like abilities allow them to view approaching threats by using "Floating Eye".</French>
+        <German>Priests of Omorr are useful when facing veil civs as they have the ability to sanctify hell terrain and cure diseases. They also possess the ability to cast Spirit Guide, ensuring their experience does not go to waste. Their seer-like abilities allow them to view approaching threats by using "Floating Eye".</German>
+        <Italian>Priests of Omorr are useful when facing veil civs as they have the ability to sanctify hell terrain and cure diseases. They also possess the ability to cast Spirit Guide, ensuring their experience does not go to waste. Their seer-like abilities allow them to view approaching threats by using "Floating Eye".</Italian>
+        <Spanish>Priests of Omorr are useful when facing veil civs as they have the ability to sanctify hell terrain and cure diseases. They also possess the ability to cast Spirit Guide, ensuring their experience does not go to waste. Their seer-like abilities allow them to view approaching threats by using "Floating Eye".</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEMPLE_OF_KALSHEKK</Tag>
+        <English>Sacellum of Kalshekk</English>
+        <French>Sacellum of Kalshekk</French>
+        <German>Sacellum von Kalshekk</German>
+        <Italian>Sacellum of Kalshekk</Italian>
+        <Spanish>Sacellum of Kalshekk</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEMPLE_OF_OMORR</Tag>
+        <English>Sacellum of Omorr</English>
+        <French>Sacellum of Omorr</French>
+        <German>Sacellum von Omorr</German>
+        <Italian>Sacellum of Omorr</Italian>
+        <Spanish>Sacellum of Omorr</Spanish>
+    </TEXT>       
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEMPLE_OF_KALSHEKK_PEDIA</Tag>
+        <English>The temples, or "Sacella" of Kalshekk resemble stone pyramids, with the public spaces open to the air. Inside the Sacellum itself, a small network of tunnels and chambers provide housing for the priests. The walls are decorated with gold and the priests practice crafting with iron and mithril alike. It is rumoured that the great Sacellum of Kalshekk in the oldest of lizard-cities - lost since before the Age of Ice - contains more precious metals and finer craftworks than the surviving dwarven kingdoms combined. Of course, the Dwarves are not prone to listen to such rumours.</English>
+        <French>The temples, or "Sacella" of Kalshekk resemble stone pyramids, with the public spaces open to the air. Inside the Sacellum itself, a small network of tunnels and chambers provide housing for the priests. The walls are decorated with gold and the priests practice crafting with iron and mithril alike. It is rumoured that the great Sacellum of Kalshekk in the oldest of lizard-cities - lost since before the Age of Ice - contains more precious metals and finer craftworks than the surviving dwarven kingdoms combined. Of course, the Dwarves are not prone to listen to such rumours.</French>
+        <German>The temples, or "Sacella" of Kalshekk resemble stone pyramids, with the public spaces open to the air. Inside the Sacellum itself, a small network of tunnels and chambers provide housing for the priests. The walls are decorated with gold and the priests practice crafting with iron and mithril alike. It is rumoured that the great Sacellum of Kalshekk in the oldest of lizard-cities - lost since before the Age of Ice - contains more precious metals and finer craftworks than the surviving dwarven kingdoms combined. Of course, the Dwarves are not prone to listen to such rumours.</German>
+        <Italian>The temples, or "Sacella" of Kalshekk resemble stone pyramids, with the public spaces open to the air. Inside the Sacellum itself, a small network of tunnels and chambers provide housing for the priests. The walls are decorated with gold and the priests practice crafting with iron and mithril alike. It is rumoured that the great Sacellum of Kalshekk in the oldest of lizard-cities - lost since before the Age of Ice - contains more precious metals and finer craftworks than the surviving dwarven kingdoms combined. Of course, the Dwarves are not prone to listen to such rumours.</Italian>
+        <Spanish>The temples, or "Sacella" of Kalshekk resemble stone pyramids, with the public spaces open to the air. Inside the Sacellum itself, a small network of tunnels and chambers provide housing for the priests. The walls are decorated with gold and the priests practice crafting with iron and mithril alike. It is rumoured that the great Sacellum of Kalshekk in the oldest of lizard-cities - lost since before the Age of Ice - contains more precious metals and finer craftworks than the surviving dwarven kingdoms combined. Of course, the Dwarves are not prone to listen to such rumours.</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TEMPLE_OF_OMORR_PEDIA</Tag>
+        <English>The Sacella of Omorr look similar to those belonging to the priests of Kalshekk on the surface, but within the stone-walls they could not be more different. Whilst the priests of Kalshekk reside in small chambers and cramped tunnels, the Sacella of Omorr are practically hollow, but filled with stacks of notes, prophecies, legends and literature. It was the priests of Omorr that first divined the impending strife and the danger to the world, shaping the society of the Mazatl during the Age of Rebirth. Now they work tirelessly to discover a way to avert Armageddon.</English>
+        <French>The Sacella of Omorr look similar to those belonging to the priests of Kalshekk on the surface, but within the stone-walls they could not be more different. Whilst the priests of Kalshekk reside in small chambers and cramped tunnels, the Sacella of Omorr are practically hollow, but filled with stacks of notes, prophecies, legends and literature. It was the priests of Omorr that first divined the impending strife and the danger to the world, shaping the society of the Mazatl during the Age of Rebirth. Now they work tirelessly to discover a way to avert Armageddon.</French>
+        <German>The Sacella of Omorr look similar to those belonging to the priests of Kalshekk on the surface, but within the stone-walls they could not be more different. Whilst the priests of Kalshekk reside in small chambers and cramped tunnels, the Sacella of Omorr are practically hollow, but filled with stacks of notes, prophecies, legends and literature. It was the priests of Omorr that first divined the impending strife and the danger to the world, shaping the society of the Mazatl during the Age of Rebirth. Now they work tirelessly to discover a way to avert Armageddon.</German>
+        <Italian>The Sacella of Omorr look similar to those belonging to the priests of Kalshekk on the surface, but within the stone-walls they could not be more different. Whilst the priests of Kalshekk reside in small chambers and cramped tunnels, the Sacella of Omorr are practically hollow, but filled with stacks of notes, prophecies, legends and literature. It was the priests of Omorr that first divined the impending strife and the danger to the world, shaping the society of the Mazatl during the Age of Rebirth. Now they work tirelessly to discover a way to avert Armageddon.</Italian>
+        <Spanish>The Sacella of Omorr look similar to those belonging to the priests of Kalshekk on the surface, but within the stone-walls they could not be more different. Whilst the priests of Kalshekk reside in small chambers and cramped tunnels, the Sacella of Omorr are practically hollow, but filled with stacks of notes, prophecies, legends and literature. It was the priests of Omorr that first divined the impending strife and the danger to the world, shaping the society of the Mazatl during the Age of Rebirth. Now they work tirelessly to discover a way to avert Armageddon.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DRAGON_GUARDIAN</Tag>
+        <English>Wyvern Guardian</English>
+        <French>Wyvern Guardian</French>
+        <German>Wyvern Wächter</German>
+        <Italian>Wyvern Guardian</Italian>
+        <Spanish>Wyvern Guardian</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DRAGON_GUARDIAN_STRATEGY</Tag>
+        <English>The Wyvern Guardians are a limited unit and only 12 may exist at a single time. They are however potent defensive units and may become further empowered if granted a Spiritual Hammer by a Priest of Kalshekk.</English>
+        <French>The Wyvern Guardians are a limited unit and only 12 may exist at a single time. They are however potent defensive units and may become further empowered if granted a Spiritual Hammer by a Priest of Kalshekk.</French>
+        <German>The Wyvern Guardians are a limited unit and only 12 may exist at a single time. They are however potent defensive units and may become further empowered if granted a Spiritual Hammer by a Priest of Kalshekk.</German>
+        <Italian>The Wyvern Guardians are a limited unit and only 12 may exist at a single time. They are however potent defensive units and may become further empowered if granted a Spiritual Hammer by a Priest of Kalshekk.</Italian>
+        <Spanish>The Wyvern Guardians are a limited unit and only 12 may exist at a single time. They are however potent defensive units and may become further empowered if granted a Spiritual Hammer by a Priest of Kalshekk.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DRAGON_GUARDIAN_PEDIA</Tag>
+        <English>The priests of Omorr study tirelessly to discover a way that Armageddon may be averted, but there are those amongst them who believe that the event itself cannot be prevented. These priests have grown to believe that the only way to survive Armageddon is to fight and win in the "final battle". Once they have become so closed minded, they are no longer welcomed in Omorr's service, so they retire themselves to hidden monastries and there they prepare. They have discovered the legend of Coatlann, and believe his assistance will be essential to survive the battle. Twelve Guardians were appointed to defend the egg-relic of Coatlann, whilst others within the order work endlessly to call back the essence of the Wyvern itself.</English>
+        <French>The priests of Omorr study tirelessly to discover a way that Armageddon may be averted, but there are those amongst them who believe that the event itself cannot be prevented. These priests have grown to believe that the only way to survive Armageddon is to fight and win in the "final battle". Once they have become so closed minded, they are no longer welcomed in Omorr's service, so they retire themselves to hidden monastries and there they prepare. They have discovered the legend of Coatlann, and believe his assistance will be essential to survive the battle. Twelve Guardians were appointed to defend the egg-relic of Coatlann, whilst others within the order work endlessly to call back the essence of the Wyvern itself.</French>
+        <German>The priests of Omorr study tirelessly to discover a way that Armageddon may be averted, but there are those amongst them who believe that the event itself cannot be prevented. These priests have grown to believe that the only way to survive Armageddon is to fight and win in the "final battle". Once they have become so closed minded, they are no longer welcomed in Omorr's service, so they retire themselves to hidden monastries and there they prepare. They have discovered the legend of Coatlann, and believe his assistance will be essential to survive the battle. Twelve Guardians were appointed to defend the egg-relic of Coatlann, whilst others within the order work endlessly to call back the essence of the Wyvern itself.</German>
+        <Italian>The priests of Omorr study tirelessly to discover a way that Armageddon may be averted, but there are those amongst them who believe that the event itself cannot be prevented. These priests have grown to believe that the only way to survive Armageddon is to fight and win in the "final battle". Once they have become so closed minded, they are no longer welcomed in Omorr's service, so they retire themselves to hidden monastries and there they prepare. They have discovered the legend of Coatlann, and believe his assistance will be essential to survive the battle. Twelve Guardians were appointed to defend the egg-relic of Coatlann, whilst others within the order work endlessly to call back the essence of the Wyvern itself.</Italian>
+        <Spanish>The priests of Omorr study tirelessly to discover a way that Armageddon may be averted, but there are those amongst them who believe that the event itself cannot be prevented. These priests have grown to believe that the only way to survive Armageddon is to fight and win in the "final battle". Once they have become so closed minded, they are no longer welcomed in Omorr's service, so they retire themselves to hidden monastries and there they prepare. They have discovered the legend of Coatlann, and believe his assistance will be essential to survive the battle. Twelve Guardians were appointed to defend the egg-relic of Coatlann, whilst others within the order work endlessly to call back the essence of the Wyvern itself.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVIC_LOST_LANDS</Tag>
+        <English>Lost Lands</English>
+        <French>Lost Lands</French>
+        <German>Verlorene Lande</German>
+        <Italian>Lost Lands</Italian>
+        <Spanish>Lost Lands</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRAGON_MONASTARY</Tag>
+        <English>Wyvern Monastary</English>
+        <French>Wyvern Monastary</French>
+        <German>Kloster der Ledernen Schwingen</German>
+        <Italian>Wyvern Monastary</Italian>
+        <Spanish>Wyvern Monastary</Spanish>
+    </TEXT>   
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DRAGON_MONASTARY_STRATEGY</Tag>
+        <English>The Wyvern Monastary allows the city to build the Wyvern Guardian limited unit. Each one also increases the length of Golden Ages by 5%.</English>
+        <French>The Wyvern Monastary allows the city to build the Wyvern Guardian limited unit. Each one also increases the length of Golden Ages by 5%.</French>
+        <German>Das Kloster der Ledernen Schwingen erlaubt der Stadt die Ausbildung der limitierten Wyvern Wächter. Jeder davon verlängert ein Goldenes Zeitalter um 5%.</German>
+        <Italian>The Wyvern Monastary allows the city to build the Wyvern Guardian limited unit. Each one also increases the length of Golden Ages by 5%.</Italian>
+        <Spanish>The Wyvern Monastary allows the city to build the Wyvern Guardian limited unit. Each one also increases the length of Golden Ages by 5%.</Spanish>
+    </TEXT>   
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD_WORKER_MAZATL</Tag>
+        <English>Lizardman Shaper</English>
+        <French>Lizardman Shaper</French>
+        <German>Geschuppte Gestalter</German>
+        <Italian>Lizardman Shaper</Italian>
+        <Spanish>Lizardman Shaper</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD_WORKER_MAZATL_STRATEGY</Tag>
+        <English>Lizard workers are slow when compared to those of other races but the workers of the Mazatl are able to cast Spring and Scorch. These spells allow them greater control over the spread of Wetlands and Swamps. They are also able to construct "Trails", hidden paths which act as roads for Swampdwelling civilizations but provide almost no benefit to others.</English>
+        <French>Lizard workers are slow when compared to those of other races but the workers of the Mazatl are able to cast Spring and Scorch. These spells allow them greater control over the spread of Wetlands and Swamps. They are also able to construct "Trails", hidden paths which act as roads for Swampdwelling civilizations but provide almost no benefit to others.</French>
+        <German>Lizard workers are slow when compared to those of other races but the workers of the Mazatl are able to cast Spring and Scorch. These spells allow them greater control over the spread of Wetlands and Swamps. They are also able to construct "Trails", hidden paths which act as roads for Swampdwelling civilizations but provide almost no benefit to others.</German>
+        <Italian>Lizard workers are slow when compared to those of other races but the workers of the Mazatl are able to cast Spring and Scorch. These spells allow them greater control over the spread of Wetlands and Swamps. They are also able to construct "Trails", hidden paths which act as roads for Swampdwelling civilizations but provide almost no benefit to others.</Italian>
+        <Spanish>Lizard workers are slow when compared to those of other races but the workers of the Mazatl are able to cast Spring and Scorch. These spells allow them greater control over the spread of Wetlands and Swamps. They are also able to construct "Trails", hidden paths which act as roads for Swampdwelling civilizations but provide almost no benefit to others.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD_BLOWPIPE</Tag>
+        <English>Blowpipe</English>
+        <French>Blowpipe</French>
+        <German>Feuerschleuderer</German>
+        <Italian>Blowpipe</Italian>
+        <Spanish>Blowpipe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD_BLOWPIPE_STRATEGY</Tag>
+        <English>Blowpipe units are adept at both attack and defence. Replacing Longbowmen, they are fast enough to strike and Withdraw and they are also able to weaken and slow the healing of any unit they engage with their Poisoned Weapons.</English>
+        <French>Blowpipe units are adept at both attack and defence. Replacing Longbowmen, they are fast enough to strike and Withdraw and they are also able to weaken and slow the healing of any unit they engage with their Poisoned Weapons.</French>
+        <German>Blowpipe units are adept at both attack and defence. Replacing Longbowmen, they are fast enough to strike and Withdraw and they are also able to weaken and slow the healing of any unit they engage with their Poisoned Weapons.</German>
+        <Italian>Blowpipe units are adept at both attack and defence. Replacing Longbowmen, they are fast enough to strike and Withdraw and they are also able to weaken and slow the healing of any unit they engage with their Poisoned Weapons.</Italian>
+        <Spanish>Blowpipe units are adept at both attack and defence. Replacing Longbowmen, they are fast enough to strike and Withdraw and they are also able to weaken and slow the healing of any unit they engage with their Poisoned Weapons.</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD_BLOWPIPE_PEDIA</Tag>
+        <English>A blowgun or blowpipe is a simple weapon consisting of a small tube for firing light projectiles, or darts. The wielder blows into one end, forcing the dart out the other. Its propulsive power is its user's respiratory muscles. Sometimes, for increased effectiveness, the dart is tipped with a poison, allowing the user to attack and flee, then return later to deal with foe once the poison has done its work.</English>
+        <French>A blowgun or blowpipe is a simple weapon consisting of a small tube for firing light projectiles, or darts. The wielder blows into one end, forcing the dart out the other. Its propulsive power is its user's respiratory muscles. Sometimes, for increased effectiveness, the dart is tipped with a poison, allowing the user to attack and flee, then return later to deal with foe once the poison has done its work.</French>
+        <German>A blowgun or blowpipe is a simple weapon consisting of a small tube for firing light projectiles, or darts. The wielder blows into one end, forcing the dart out the other. Its propulsive power is its user's respiratory muscles. Sometimes, for increased effectiveness, the dart is tipped with a poison, allowing the user to attack and flee, then return later to deal with foe once the poison has done its work.</German>
+        <Italian>A blowgun or blowpipe is a simple weapon consisting of a small tube for firing light projectiles, or darts. The wielder blows into one end, forcing the dart out the other. Its propulsive power is its user's respiratory muscles. Sometimes, for increased effectiveness, the dart is tipped with a poison, allowing the user to attack and flee, then return later to deal with foe once the poison has done its work.</Italian>
+        <Spanish>A blowgun or blowpipe is a simple weapon consisting of a small tube for firing light projectiles, or darts. The wielder blows into one end, forcing the dart out the other. Its propulsive power is its user's respiratory muscles. Sometimes, for increased effectiveness, the dart is tipped with a poison, allowing the user to attack and flee, then return later to deal with foe once the poison has done its work.</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PANTHEON</Tag>
+        <English>Pantheon</English>
+        <French>Pantheon</French>
+        <German>Pantheon</German>
+        <Italian>Pantheon</Italian>
+        <Spanish>Pantheon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PANTHEON_PEDIA</Tag>
+        <English>A Pantheon is a temple dedicated to not just one deity, but all deities of a given mythos. Few Mazatl dedicate themselves to only a single god (and these often become priests) and most will acknowledge all of their deities - although naturally they favour some more than others.</English>
+        <French>A Pantheon is a temple dedicated to not just one deity, but all deities of a given mythos. Few Mazatl dedicate themselves to only a single god (and these often become priests) and most will acknowledge all of their deities - although naturally they favour some more than others.</French>
+        <German>A Pantheon is a temple dedicated to not just one deity, but all deities of a given mythos. Few Mazatl dedicate themselves to only a single god (and these often become priests) and most will acknowledge all of their deities - although naturally they favour some more than others.</German>
+        <Italian>A Pantheon is a temple dedicated to not just one deity, but all deities of a given mythos. Few Mazatl dedicate themselves to only a single god (and these often become priests) and most will acknowledge all of their deities - although naturally they favour some more than others.</Italian>
+        <Spanish>A Pantheon is a temple dedicated to not just one deity, but all deities of a given mythos. Few Mazatl dedicate themselves to only a single god (and these often become priests) and most will acknowledge all of their deities - although naturally they favour some more than others.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PANTHEON_STRATEGY</Tag>
+        <English>The Pantheon allows a number of different specialists to be assigned, allowing you to tailor your Great Person Production early in the game.</English>
+        <French>The Pantheon allows a number of different specialists to be assigned, allowing you to tailor your Great Person Production early in the game.</French>
+        <German>The Pantheon allows a number of different specialists to be assigned, allowing you to tailor your Great Person Production early in the game.</German>
+        <Italian>The Pantheon allows a number of different specialists to be assigned, allowing you to tailor your Great Person Production early in the game.</Italian>
+        <Spanish>The Pantheon allows a number of different specialists to be assigned, allowing you to tailor your Great Person Production early in the game.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COATLANN</Tag>
+        <English>Coatlann the Wyvern</English>
+        <French>Coatlann the Wyvern</French>
+        <German>Coatlann die Wyver</German>
+        <Italian>Coatlann the Wyvern</Italian>
+        <Spanish>Coatlann the Wyvern</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COATLANN_PEDIA</Tag>
+        <English>In the Age of Dragons, the mortal races cowered in caves as the Godswar raged across creation. The great dragons were created to serve the Angels and unleashed their terrible powers upon each other across the length and breadth of Erebus. When the compact was signed and the angels retreated from creation, the dragons too disappeared. Some say they left with the angels, others say that they sleep beneath the earth. There are even rumours that some of the dragons never left at all and still dwell amongst the mortal races.[NEWLINE][PARAGRAPH]Coatlann was a wyvern in the service of Kilmorph during the Age of Dragons. The wyverns were among the lesser beasts created in that age, but were still massively powerful and wise. Looking much akin to a dragon - though lacking forelimbs - the wyvern was favoured for its speed and cunning where the brute force of a dragon may not suffice alone.[NEWLINE][PARAGRAPH]Coatlann constantly waged war against the forces of Aeron and Mammon during that first age - and survived. When the compact was signed, Coatlann left Erebus and resides on a plane beyond, ready to re-enter battle should the compact be broken and the Godswar restart in full.</English>
+        <French>In the Age of Dragons, the mortal races cowered in caves as the Godswar raged across creation. The great dragons were created to serve the Angels and unleashed their terrible powers upon each other across the length and breadth of Erebus. When the compact was signed and the angels retreated from creation, the dragons too disappeared. Some say they left with the angels, others say that they sleep beneath the earth. There are even rumours that some of the dragons never left at all and still dwell amongst the mortal races.[NEWLINE][PARAGRAPH]Coatlann was a wyvern in the service of Kilmorph during the Age of Dragons. The wyverns were among the lesser beasts created in that age, but were still massively powerful and wise. Looking much akin to a dragon - though lacking forelimbs - the wyvern was favoured for its speed and cunning where the brute force of a dragon may not suffice alone.[NEWLINE][PARAGRAPH]Coatlann constantly waged war against the forces of Aeron and Mammon during that first age - and survived. When the compact was signed, Coatlann left Erebus and resides on a plane beyond, ready to re-enter battle should the compact be broken and the Godswar restart in full.</French>
+        <German>In the Age of Dragons, the mortal races cowered in caves as the Godswar raged across creation. The great dragons were created to serve the Angels and unleashed their terrible powers upon each other across the length and breadth of Erebus. When the compact was signed and the angels retreated from creation, the dragons too disappeared. Some say they left with the angels, others say that they sleep beneath the earth. There are even rumours that some of the dragons never left at all and still dwell amongst the mortal races.[NEWLINE][PARAGRAPH]Coatlann was a wyvern in the service of Kilmorph during the Age of Dragons. The wyverns were among the lesser beasts created in that age, but were still massively powerful and wise. Looking much akin to a dragon - though lacking forelimbs - the wyvern was favoured for its speed and cunning where the brute force of a dragon may not suffice alone.[NEWLINE][PARAGRAPH]Coatlann constantly waged war against the forces of Aeron and Mammon during that first age - and survived. When the compact was signed, Coatlann left Erebus and resides on a plane beyond, ready to re-enter battle should the compact be broken and the Godswar restart in full.</German>
+        <Italian>In the Age of Dragons, the mortal races cowered in caves as the Godswar raged across creation. The great dragons were created to serve the Angels and unleashed their terrible powers upon each other across the length and breadth of Erebus. When the compact was signed and the angels retreated from creation, the dragons too disappeared. Some say they left with the angels, others say that they sleep beneath the earth. There are even rumours that some of the dragons never left at all and still dwell amongst the mortal races.[NEWLINE][PARAGRAPH]Coatlann was a wyvern in the service of Kilmorph during the Age of Dragons. The wyverns were among the lesser beasts created in that age, but were still massively powerful and wise. Looking much akin to a dragon - though lacking forelimbs - the wyvern was favoured for its speed and cunning where the brute force of a dragon may not suffice alone.[NEWLINE][PARAGRAPH]Coatlann constantly waged war against the forces of Aeron and Mammon during that first age - and survived. When the compact was signed, Coatlann left Erebus and resides on a plane beyond, ready to re-enter battle should the compact be broken and the Godswar restart in full.</Italian>
+        <Spanish>In the Age of Dragons, the mortal races cowered in caves as the Godswar raged across creation. The great dragons were created to serve the Angels and unleashed their terrible powers upon each other across the length and breadth of Erebus. When the compact was signed and the angels retreated from creation, the dragons too disappeared. Some say they left with the angels, others say that they sleep beneath the earth. There are even rumours that some of the dragons never left at all and still dwell amongst the mortal races.[NEWLINE][PARAGRAPH]Coatlann was a wyvern in the service of Kilmorph during the Age of Dragons. The wyverns were among the lesser beasts created in that age, but were still massively powerful and wise. Looking much akin to a dragon - though lacking forelimbs - the wyvern was favoured for its speed and cunning where the brute force of a dragon may not suffice alone.[NEWLINE][PARAGRAPH]Coatlann constantly waged war against the forces of Aeron and Mammon during that first age - and survived. When the compact was signed, Coatlann left Erebus and resides on a plane beyond, ready to re-enter battle should the compact be broken and the Godswar restart in full.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COATLANN_STRATEGY</Tag>
+        <English>Whilst Coatlann is less powerful than the other dragons in Fall from Heaven, he is still of dragonkind and a mighty wyrm. Immune to magic, able to roar and breath fire, causing fear in his foes and stronger than most other units in the game - as well as boasting a greater speed and lower research cost than his more powerful kin -  Coatlann may be the answer the Mazatl seek to avert the destruction of Erebus.</English>
+        <French>Whilst Coatlann is less powerful than the other dragons in Fall from Heaven, he is still of dragonkind and a mighty wyrm. Immune to magic, able to roar and breath fire, causing fear in his foes and stronger than most other units in the game - as well as boasting a greater speed and lower research cost than his more powerful kin -  Coatlann may be the answer the Mazatl seek to avert the destruction of Erebus.</French>
+        <German>Whilst Coatlann is less powerful than the other dragons in Fall from Heaven, he is still of dragonkind and a mighty wyrm. Immune to magic, able to roar and breath fire, causing fear in his foes and stronger than most other units in the game - as well as boasting a greater speed and lower research cost than his more powerful kin -  Coatlann may be the answer the Mazatl seek to avert the destruction of Erebus.</German>
+        <Italian>Whilst Coatlann is less powerful than the other dragons in Fall from Heaven, he is still of dragonkind and a mighty wyrm. Immune to magic, able to roar and breath fire, causing fear in his foes and stronger than most other units in the game - as well as boasting a greater speed and lower research cost than his more powerful kin -  Coatlann may be the answer the Mazatl seek to avert the destruction of Erebus.</Italian>
+        <Spanish>Whilst Coatlann is less powerful than the other dragons in Fall from Heaven, he is still of dragonkind and a mighty wyrm. Immune to magic, able to roar and breath fire, causing fear in his foes and stronger than most other units in the game - as well as boasting a greater speed and lower research cost than his more powerful kin -  Coatlann may be the answer the Mazatl seek to avert the destruction of Erebus.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MARK_OF_THE_WARDEN</Tag>
+        <English>Mark of the Warden</English>
+        <French>Mark of the Warden</French>
+        <German>Abzeichen der W&#228;chter</German>
+        <Italian>Mark of the Warden</Italian>
+        <Spanish>Mark of the Warden</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MARK_OF_THE_WARDEN_PEDIA</Tag>
+        <English>[ICON_BULLET]The Armageddon counter is lowered when this unit is created, but will rise again if the unit is slain.</English>
+        <French>[ICON_BULLET]The Armageddon counter is lowered when this unit is created, but will rise again if the unit is slain.</French>
+        <German>[ICON_BULLET]Der Armageddonz&#228;hler wird bei der Erschaffung dieser Einheit verringert, steigt bei ihrer Vernichtung aber wieder an.</German>
+        <Italian>[ICON_BULLET]The Armageddon counter is lowered when this unit is created, but will rise again if the unit is slain.</Italian>
+        <Spanish>[ICON_BULLET]The Armageddon counter is lowered when this unit is created, but will rise again if the unit is slain.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ORDER_OF_THE_WYVERN</Tag>
+        <English>Order of the Wyvern</English>
+        <French>Order of the Wyvern</French>
+        <German>Orden der Wyver</German>
+        <Italian>Order of the Wyvern</Italian>
+        <Spanish>Order of the Wyvern</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ORDER_OF_THE_WYVERN_STRATEGY</Tag>
+        <English>Once all twelve of the Wyvern Guardians are appointed, the Mazatl civilization may found The Order of the Wyvern in any of its cities. The Order creates Wyvern Monastaries in every Mazatl city and provides a boost to Golden Age duration and reduces global war weariness considerably.</English>
+        <French>Once all twelve of the Wyvern Guardians are appointed, the Mazatl civilization may found The Order of the Wyvern in any of its cities. The Order creates Wyvern Monastaries in every Mazatl city and provides a boost to Golden Age duration and reduces global war weariness considerably.</French>
+        <German>Sind erst alle 12 Wyvern Wächter ernannt worden, können die Mazatl den Orden der Wyver in jeder ihrer Städte gründen. Der Orden erschafft Kloster der Ledernen Schwingen in jeder Stadt der Mazatl und gewährt eine Verlängerung des Goldenen Zeitalters und eine Reduzierung der Kriegsmüdigkeit.</German>
+        <Italian>Once all twelve of the Wyvern Guardians are appointed, the Mazatl civilization may found The Order of the Wyvern in any of its cities. The Order creates Wyvern Monastaries in every Mazatl city and provides a boost to Golden Age duration and reduces global war weariness considerably.</Italian>
+        <Spanish>Once all twelve of the Wyvern Guardians are appointed, the Mazatl civilization may found The Order of the Wyvern in any of its cities. The Order creates Wyvern Monastaries in every Mazatl city and provides a boost to Golden Age duration and reduces global war weariness considerably.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ORDER_OF_THE_WYVERN_PEDIA</Tag>
+        <English>Initially the Wyvern-guardians and the monks they defended were considered to radical and outlandish. As the Order of the Wyvern grew in influence however, the Mazatl society began to be increasingly shaped by the discoveries of the Order. Some believe that if it were not for the influence of the Wyvern Guardians, Erebus would have been consumed by the flames already.</English>
+        <French>Initially the Wyvern-guardians and the monks they defended were considered to radical and outlandish. As the Order of the Wyvern grew in influence however, the Mazatl society began to be increasingly shaped by the discoveries of the Order. Some believe that if it were not for the influence of the Wyvern Guardians, Erebus would have been consumed by the flames already.</French>
+        <German>Initially the Wyvern-guardians and the monks they defended were considered to radical and outlandish. As the Order of the Wyvern grew in influence however, the Mazatl society began to be increasingly shaped by the discoveries of the Order. Some believe that if it were not for the influence of the Wyvern Guardians, Erebus would have been consumed by the flames already.</German>
+        <Italian>Initially the Wyvern-guardians and the monks they defended were considered to radical and outlandish. As the Order of the Wyvern grew in influence however, the Mazatl society began to be increasingly shaped by the discoveries of the Order. Some believe that if it were not for the influence of the Wyvern Guardians, Erebus would have been consumed by the flames already.</Italian>
+        <Spanish>Initially the Wyvern-guardians and the monks they defended were considered to radical and outlandish. As the Order of the Wyvern grew in influence however, the Mazatl society began to be increasingly shaped by the discoveries of the Order. Some believe that if it were not for the influence of the Wyvern Guardians, Erebus would have been consumed by the flames already.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN</Tag>
+        <English>Found Order of the Wyvern</English>
+        <French>Found Order of the Wyvern</French>
+        <German>Orden der Wyver gr&#252;nden</German>
+        <Italian>Found Order of the Wyvern</Italian>
+        <Spanish>Found Order of the Wyvern</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_PEDIA</Tag>
+        <English>It was time. The twelve Wyvern Guardians strode out into the streets of Tlacotl, walking with purpose toward the newly constructed palace. [NEWLINE]"We seek audience with Lord Hianthrogh" stated the foremost warrior, "He will see us". The guard looked unsure for a second, before nodding his consent. The party was flanked by twice their number in armoured lizards as they ascended the stone stairs on the exterior of the palace, then onto the steps inlaid with gold that made up the last stretch of the climb. Finally, they reached the top and were ushered into the council chamber of Hianthrogh.[NEWLINE][PARAGRAPH]"I know why you have come and I must agree. Though I still mourn the loss of Nochtli, it is time that we put aside that which has gone before and stand once again in the path of the Sheaim and their allies." The old lizard paused for a second, peering intently at the faces before him. "Do you honestly believe that it can be done?"[NEWLINE]One of the Wyvern Guardians stepped forward and offered a scroll to Hianthrogh. "It can". Hianthrogh studied the scroll for a long moment, before nodding his reply.[NEWLINE]"Yes, I believe it can. Establish your order in every city, train those warriors you deem worthy, prepare our nation for what lies ahead."</English>
+        <French>It was time. The twelve Wyvern Guardians strode out into the streets of Tlacotl, walking with purpose toward the newly constructed palace. [NEWLINE]"We seek audience with Lord Hianthrogh" stated the foremost warrior, "He will see us". The guard looked unsure for a second, before nodding his consent. The party was flanked by twice their number in armoured lizards as they ascended the stone stairs on the exterior of the palace, then onto the steps inlaid with gold that made up the last stretch of the climb. Finally, they reached the top and were ushered into the council chamber of Hianthrogh.[NEWLINE][PARAGRAPH]"I know why you have come and I must agree. Though I still mourn the loss of Nochtli, it is time that we put aside that which has gone before and stand once again in the path of the Sheaim and their allies." The old lizard paused for a second, peering intently at the faces before him. "Do you honestly believe that it can be done?"[NEWLINE]One of the Wyvern Guardians stepped forward and offered a scroll to Hianthrogh. "It can". Hianthrogh studied the scroll for a long moment, before nodding his reply.[NEWLINE]"Yes, I believe it can. Establish your order in every city, train those warriors you deem worthy, prepare our nation for what lies ahead."</French>
+        <German>It was time. The twelve Wyvern Guardians strode out into the streets of Tlacotl, walking with purpose toward the newly constructed palace. [NEWLINE]"We seek audience with Lord Hianthrogh" stated the foremost warrior, "He will see us". The guard looked unsure for a second, before nodding his consent. The party was flanked by twice their number in armoured lizards as they ascended the stone stairs on the exterior of the palace, then onto the steps inlaid with gold that made up the last stretch of the climb. Finally, they reached the top and were ushered into the council chamber of Hianthrogh.[NEWLINE][PARAGRAPH]"I know why you have come and I must agree. Though I still mourn the loss of Nochtli, it is time that we put aside that which has gone before and stand once again in the path of the Sheaim and their allies." The old lizard paused for a second, peering intently at the faces before him. "Do you honestly believe that it can be done?"[NEWLINE]One of the Wyvern Guardians stepped forward and offered a scroll to Hianthrogh. "It can". Hianthrogh studied the scroll for a long moment, before nodding his reply.[NEWLINE]"Yes, I believe it can. Establish your order in every city, train those warriors you deem worthy, prepare our nation for what lies ahead."</German>
+        <Italian>It was time. The twelve Wyvern Guardians strode out into the streets of Tlacotl, walking with purpose toward the newly constructed palace. [NEWLINE]"We seek audience with Lord Hianthrogh" stated the foremost warrior, "He will see us". The guard looked unsure for a second, before nodding his consent. The party was flanked by twice their number in armoured lizards as they ascended the stone stairs on the exterior of the palace, then onto the steps inlaid with gold that made up the last stretch of the climb. Finally, they reached the top and were ushered into the council chamber of Hianthrogh.[NEWLINE][PARAGRAPH]"I know why you have come and I must agree. Though I still mourn the loss of Nochtli, it is time that we put aside that which has gone before and stand once again in the path of the Sheaim and their allies." The old lizard paused for a second, peering intently at the faces before him. "Do you honestly believe that it can be done?"[NEWLINE]One of the Wyvern Guardians stepped forward and offered a scroll to Hianthrogh. "It can". Hianthrogh studied the scroll for a long moment, before nodding his reply.[NEWLINE]"Yes, I believe it can. Establish your order in every city, train those warriors you deem worthy, prepare our nation for what lies ahead."</Italian>
+        <Spanish>It was time. The twelve Wyvern Guardians strode out into the streets of Tlacotl, walking with purpose toward the newly constructed palace. [NEWLINE]"We seek audience with Lord Hianthrogh" stated the foremost warrior, "He will see us". The guard looked unsure for a second, before nodding his consent. The party was flanked by twice their number in armoured lizards as they ascended the stone stairs on the exterior of the palace, then onto the steps inlaid with gold that made up the last stretch of the climb. Finally, they reached the top and were ushered into the council chamber of Hianthrogh.[NEWLINE][PARAGRAPH]"I know why you have come and I must agree. Though I still mourn the loss of Nochtli, it is time that we put aside that which has gone before and stand once again in the path of the Sheaim and their allies." The old lizard paused for a second, peering intently at the faces before him. "Do you honestly believe that it can be done?"[NEWLINE]One of the Wyvern Guardians stepped forward and offered a scroll to Hianthrogh. "It can". Hianthrogh studied the scroll for a long moment, before nodding his reply.[NEWLINE]"Yes, I believe it can. Establish your order in every city, train those warriors you deem worthy, prepare our nation for what lies ahead."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_STRATEGY</Tag>
+        <English>Founding the Order of the Wyvern provides a free Wyvern Monastry in every city, as well as reducing global war-weariness as the Mazatl people prepare for the inevitable conflict ahead.</English>
+        <French>Founding the Order of the Wyvern provides a free Wyvern Monastry in every city, as well as reducing global war-weariness as the Mazatl people prepare for the inevitable conflict ahead.</French>
+        <German>Die Gründung des Ordens der Wyver gewährt ein freies Kloster der Ledernen Schwingen in jeder Stadt. Außerdem wird die Kriegsmüdigkeit reduziert, da sich das Mazatl'sche Volk auf den bevorstehenden, unabwendbaren Konflikt vorbereitet.</German>
+        <Italian>Founding the Order of the Wyvern provides a free Wyvern Monastry in every city, as well as reducing global war-weariness as the Mazatl people prepare for the inevitable conflict ahead.</Italian>
+        <Spanish>Founding the Order of the Wyvern provides a free Wyvern Monastry in every city, as well as reducing global war-weariness as the Mazatl people prepare for the inevitable conflict ahead.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FOUND_ORDER_OF_THE_WYVERN_HELP</Tag>
+        <English>[ICON_BULLET]Can only be cast once all twelve Wyvern Guardians have been appointed. Creates a Priest of Kalshekk</English>
+        <French>[ICON_BULLET]Can only be cast once all twelve Wyvern Guardians have been appointed. Creates a Priest of Kalshekk</French>
+        <German>[ICON_BULLET]Zauber kann nur gewirkt werden, wenn alle 12 Wyvern Wächter ernannt worden sind. Erschafft einen Priester von Kalshekk</German>
+        <Italian>[ICON_BULLET]Can only be cast once all twelve Wyvern Guardians have been appointed. Creates a Priest of Kalshekk</Italian>
+        <Spanish>[ICON_BULLET]Can only be cast once all twelve Wyvern Guardians have been appointed. Creates a Priest of Kalshekk</Spanish>
+    </TEXT>    
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_MAZATL</Tag>
+        <English>Mazatl Palace</English>
+        <French>Mazatl Palace</French>
+        <German>Palast der Mazatl</German>
+        <Italian>Mazatl Palace</Italian>
+        <Spanish>Mazatl Palace</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_HIANTHROGH</Tag>
+        <English>We wished to save Erebus, but why save the world for such as you? It is better off ended.</English>
+        <French>We wished to save Erebus, but why save the world for such as you? It is better off ended.</French>
+        <German>Unser Wunsch war es, Erebus zu bewahren, aber weshalb sollten wir die Welt f&#252;r jemanden wie Euch erhalten? Es ist besser, wenn es nun endet.</German>
+        <Italian>We wished to save Erebus, but why save the world for such as you? It is better off ended.</Italian>
+        <Spanish>We wished to save Erebus, but why save the world for such as you? It is better off ended.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_ACCEPT_LEADER_MAZATL</Tag>
+        <English>The deal is both prudent and wise. We accept.</English>
+        <French>The deal is both prudent and wise. We accept.</French>
+        <German>Der Handel ist sowohl umsichtig, als auch weise. Wir nehmen an.</German>
+        <Italian>The deal is both prudent and wise. We accept.</Italian>
+        <Spanish>The deal is both prudent and wise. We accept.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>AI_DIPLO_DECLARE_WAR_LEADER_MAZATL</Tag>
+        <English>To prevent the destruction of all, you have to destroy some yourself.</English>
+        <French>To prevent the destruction of all, you have to destroy some yourself.</French>
+        <German>Um die Zerst&#246;rung der Welt zu verhindern, m&#252;sst Ihr ein wenig Euch selbst zerst&#246;ren.</German>
+        <Italian>To prevent the destruction of all, you have to destroy some yourself.</Italian>
+        <Spanish>To prevent the destruction of all, you have to destroy some yourself.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_DEMAND_REJECTED_LEADER_MAZATL</Tag>
+        <English>I wish you would reconsider. You do not understand what is to come.</English>
+        <French>I wish you would reconsider. You do not understand what is to come.</French>
+        <German>Ich w&#252;nschte, Ihr w&#252;rdet das noch einmal &#252;berdenken. Ihr versteht nicht, was zu Kommen im Begriff ist.</German>
+        <Italian>I wish you would reconsider. You do not understand what is to come.</Italian>
+        <Spanish>I wish you would reconsider. You do not understand what is to come.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MAZATL</Tag>
+        <English>In the deep jungle, we thrive. Turn not your eyes toward our lands and we shall live in peace.</English>
+        <French>In the deep jungle, we thrive. Turn not your eyes toward our lands and we shall live in peace.</French>
+        <German>Tief im Dschungel gedeihen wir. Wendet Eure gierigen Augen nicht auf unser Land, und wir werden in Frieden leben.</German>
+        <Italian>In the deep jungle, we thrive. Turn not your eyes toward our lands and we shall live in peace.</Italian>
+        <Spanish>In the deep jungle, we thrive. Turn not your eyes toward our lands and we shall live in peace.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MAZATL</Tag>
+        <English>Fear not, [CT_NAME]. There is still hope for the world so long as you and I remain in it.</English>
+        <French>Fear not, [CT_NAME]. There is still hope for the world so long as you and I remain in it.</French>
+        <German>F&#252;rchtet Euch nicht, [CT_NAME]. Es besteht noch Hoffnung f&#252;r die Welt, solange wir und Ihr uns noch darin befinden.</German>
+        <Italian>Fear not, [CT_NAME]. There is still hope for the world so long as you and I remain in it.</Italian>
+        <Spanish>Fear not, [CT_NAME]. There is still hope for the world so long as you and I remain in it.</Spanish>
+    </TEXT>
+    
+    <TEXT>
+        <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MAZATL</Tag>
+        <English>Your path could lead to the end of us all. We will not allow you to walk it much longer, [CT_NAME].</English>
+        <French>Your path could lead to the end of us all. We will not allow you to walk it much longer, [CT_NAME].</French>
+        <German>Der von Euch eingeschlagene Weg k&#246;nnte in unserer aller Ende gipfeln. Wir werden es Euch nicht gestatten, ihn noch l&#228;nger zu beschreiten, [CT_NAME].</German>
+        <Italian>Your path could lead to the end of us all. We will not allow you to walk it much longer, [CT_NAME].</Italian>
+        <Spanish>Your path could lead to the end of us all. We will not allow you to walk it much longer, [CT_NAME].</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MAZATL</Tag>
+        <English>Your words are lies and we see through them. Leave whilst you can still speak.</English>
+        <French>Your words are lies and we see through them. Leave whilst you can still speak.</French>
+        <German>Eure Worte sind nichts als L&#252;ge, und wir durchschauen sie. Geht, solange Ihr noch reden k&#246;nnt.</German>
+        <Italian>Your words are lies and we see through them. Leave whilst you can still speak.</Italian>
+        <Spanish>Your words are lies and we see through them. Leave whilst you can still speak.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_MAZATL</Tag>
+        <English>The peace is welcome. We hope it will last the Age.</English>
+        <French>The peace is welcome. We hope it will last the Age.</French>
+        <German>Der Friede ist willkommen. Wir hoffen, er &#252;berdauert die Zeit.</German>
+        <Italian>The peace is welcome. We hope it will last the Age.</Italian>
+        <Spanish>The peace is welcome. We hope it will last the Age.</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>AI_DIPLO_NO_PEACE_LEADER_MAZATL</Tag>
+        <English>Have you truly changed your ways? I cannot take that chance.</English>
+        <French>Have you truly changed your ways? I cannot take that chance.</French>
+        <German>Habt Ihr tats&#228;chlich Euren Weg verlassen? Ich werde diese einmalige Chance ungenutzt verstreichen lassen.</German>
+        <Italian>Have you truly changed your ways? I cannot take that chance.</Italian>
+        <Spanish>Have you truly changed your ways? I cannot take that chance.</Spanish>
+    </TEXT>   
+     <TEXT>
+        <Tag>AI_DIPLO_OFFER_PEACE_LEADER_MAZATL</Tag>
+        <English>There is too much conflict in the world - more than it can bear. Is there a way for us to find peace in the maelstrom?</English>
+        <French>There is too much conflict in the world - more than it can bear. Is there a way for us to find peace in the maelstrom?</French>
+        <German>Die Welt wird beherrscht von zu vielen Konflikten - von mehr, als sie ertragen kann. Existiert da ein Weg f&#252;r uns, der uns Frieden finden l&#228;sst in diesem Mahlstrom?</German>
+        <Italian>There is too much conflict in the world - more than it can bear. Is there a way for us to find peace in the maelstrom?</Italian>
+        <Spanish>There is too much conflict in the world - more than it can bear. Is there a way for us to find peace in the maelstrom?</Spanish>
+    </TEXT>     
+     <TEXT>
+        <Tag>AI_DIPLO_REJECT_LEADER_MAZATL</Tag>
+        <English>Your words lack wisdom, [CT_NAME]</English>
+        <French>Your words lack wisdom, [CT_NAME]</French>
+        <German>Eure Worte entbehren jedweder Weisheit, [CT_NAME]</German>
+        <Italian>Your words lack wisdom, [CT_NAME]</Italian>
+        <Spanish>Your words lack wisdom, [CT_NAME]</Spanish>
+    </TEXT>    
+     <TEXT>
+        <Tag>AI_DIPLO_THANKS_LEADER_MAZATL</Tag>
+        <English>We thank you for this.</English>
+        <French>We thank you for this.</French>
+        <German>Wir danken Euch daf&#252;r.</German>
+        <Italian>We thank you for this.</Italian>
+        <Spanish>We thank you for this.</Spanish>
+    </TEXT> 
+     <TEXT>
+        <Tag>TXT_KEY_SPELL_PURIFY</Tag>
+        <English>Purify</English>
+        <French>Purify</French>
+        <German>Reinigen</German>
+        <Italian>Purify</Italian>
+        <Spanish>Purify</Spanish>
+    </TEXT> 
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_BARTERHOUSE</Tag>
+        <English>Barterhouse</English>
+        <French>Barterhouse</French>
+        <German>Haus des Tausches</German>
+        <Italian>Barterhouse</Italian>
+        <Spanish>Barterhouse</Spanish>
+    </TEXT>     
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_BARTERHOUSE_PEDIA</Tag>
+        <English>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire. Central to this economy were the "barterhouses" (literal translation). Deals were struck and arrangments for trade of resources made over the course of long negotiations. The talks were not solely between the representatives of the involved parties, but included representatives of other cities to ensure the deal made was best for the Mazatl civilization as a whole. As all parties must be in agreement, a relatively simply arrangement may take an inordinate length of time to agree upon, but this is accepted by the Mazatl and their economy is impressive as a result.</English>
+        <French>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire. Central to this economy were the "barterhouses" (literal translation). Deals were struck and arrangments for trade of resources made over the course of long negotiations. The talks were not solely between the representatives of the involved parties, but included representatives of other cities to ensure the deal made was best for the Mazatl civilization as a whole. As all parties must be in agreement, a relatively simply arrangement may take an inordinate length of time to agree upon, but this is accepted by the Mazatl and their economy is impressive as a result..</French>
+        <German>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire. Central to this economy were the "barterhouses" (literal translation). Deals were struck and arrangments for trade of resources made over the course of long negotiations. The talks were not solely between the representatives of the involved parties, but included representatives of other cities to ensure the deal made was best for the Mazatl civilization as a whole. As all parties must be in agreement, a relatively simply arrangement may take an inordinate length of time to agree upon, but this is accepted by the Mazatl and their economy is impressive as a result..</German>
+        <Italian>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire. Central to this economy were the "barterhouses" (literal translation). Deals were struck and arrangments for trade of resources made over the course of long negotiations. The talks were not solely between the representatives of the involved parties, but included representatives of other cities to ensure the deal made was best for the Mazatl civilization as a whole. As all parties must be in agreement, a relatively simply arrangement may take an inordinate length of time to agree upon, but this is accepted by the Mazatl and their economy is impressive as a result..</Italian>
+        <Spanish>The Mazatl civilization emerged from the Age of Ice in relative isolation. The swampland they inhabited proved inhospitable to other races whilst the Mazatl thrived there alone. Trading only amongst themselves, they developed an advanced barter-economy that shared work across the empire. Central to this economy were the "barterhouses" (literal translation). Deals were struck and arrangments for trade of resources made over the course of long negotiations. The talks were not solely between the representatives of the involved parties, but included representatives of other cities to ensure the deal made was best for the Mazatl civilization as a whole. As all parties must be in agreement, a relatively simply arrangement may take an inordinate length of time to agree upon, but this is accepted by the Mazatl and their economy is impressive as a result..</Spanish>
+    </TEXT> 
+     <TEXT>
+        <Tag>TXT_KEY_CIVIC_LOST_LANDS_STRATEGY</Tag>
+        <English>The Lost Lands civic represents the advanced barter economy that the Mazatl developed during their time in isolation. It prevents you establishing external trade, but all internal routes have potential to provide Production and Food as well as Commerce.</English>
+        <French>The Lost Lands civic represents the advanced barter economy that the Mazatl developed during their time in isolation. It prevents you establishing external trade, but all internal routes have potential to provide Production and Food as well as Commerce.</French>
+        <German>The Lost Lands civic represents the advanced barter economy that the Mazatl developed during their time in isolation. It prevents you establishing external trade, but all internal routes have potential to provide Production and Food as well as Commerce.</German>
+        <Italian>The Lost Lands civic represents the advanced barter economy that the Mazatl developed during their time in isolation. It prevents you establishing external trade, but all internal routes have potential to provide Production and Food as well as Commerce.</Italian>
+        <Spanish>The Lost Lands civic represents the advanced barter economy that the Mazatl developed during their time in isolation. It prevents you establishing external trade, but all internal routes have potential to provide Production and Food as well as Commerce.</Spanish>
+    </TEXT>     
+     <TEXT>
+        <Tag>TXT_KEY_SPELL_SPIRITUAL_HAMMER</Tag>
+        <English>Spiritual Hammer</English>
+        <French>Spiritual Hammer</French>
+        <German>Geistiger Hammer</German>
+        <Italian>Spiritual Hammer</Italian>
+        <Spanish>Spiritual Hammer</Spanish>
+    </TEXT> 
+     <TEXT>
+        <Tag>TXT_KEY_SPELL_SPIRIT_GUIDE</Tag>
+        <English>Spirit Guide</English>
+        <French>Spirit Guide</French>
+        <German>Geistf&#252;hrer</German>
+        <Italian>Spirit Guide</Italian>
+        <Spanish>Spirit Guide</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_SPELL_TRANSMUTATION</Tag>
+        <English>Transmutation</English>
+        <French>Transmutation</French>
+        <German>Transmutation</German>
+        <Italian>Transmutation</Italian>
+        <Spanish>Transmutation</Spanish>
+    </TEXT>     
+     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SPIRITUAL_HAMMER</Tag>
+        <English>Spiritual Hammer</English>
+        <French>Spiritual Hammer</French>
+        <German>Geistiger Hammer</German>
+        <Italian>Spiritual Hammer</Italian>
+        <Spanish>Spiritual Hammer</Spanish>
+    </TEXT>    
+     <TEXT>
+        <Tag>TXT_KEY_TECH_SWAMPDWELLING</Tag>
+        <English>Swampdwelling</English>
+        <French>Swampdwelling</French>
+        <German>Swampdwelling</German>
+        <Italian>Swampdwelling</Italian>
+        <Spanish>Swampdwelling</Spanish>
+    </TEXT>        
+     <TEXT>
+        <Tag>TXT_KEY_ROUTE_TRAIL</Tag>
+        <English>Trail</English>
+        <French>Trail</French>
+        <German>Trail</German>
+        <Italian>Trail</Italian>
+        <Spanish>Trail</Spanish>
+    </TEXT>        	
+     <TEXT>
+        <Tag>TXT_KEY_SPELL_CLEAR_SWAMP</Tag>
+        <English>Clear Swamp</English>
+        <French>Clear Swamp</French>
+        <German>Clear Swamp</German>
+        <Italian>Clear Swamp</Italian>
+        <Spanish>Clear Swamp</Spanish>
+    </TEXT>        
+     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SWAMP</Tag>
+        <English>Swamp</English>
+        <French>Swamp</French>
+        <German>Swamp</German>
+        <Italian>Swamp</Italian>
+        <Spanish>Swamp</Spanish>
+    </TEXT>        	
+     <TEXT>
+        <Tag>TXT_KEY_BUILD_TRAIL</Tag>
+        <English>Build a Trail</English>
+        <French>Build a Trail</French>
+        <German>Build a Trail</German>
+        <Italian>Build a Trail</Italian>
+        <Spanish>Build a Trail</Spanish>
+    </TEXT>        		
+</Civ4GameText>

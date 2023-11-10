@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement Infos -->
+<Civ4ImprovementInfos xmlns="x-schema:MEM_CIV4TerrainSchema.xml">
+    <ImprovementInfos>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_BROKEN_SEPULCHER</Type>
+			<bTypeDependency>1</bTypeDependency>			
+            <PythonOnMove>onMoveBrokenSepulcher(pCaster, pPlot)</PythonOnMove>
+        </ImprovementInfo>
+    </ImprovementInfos>
+</Civ4ImprovementInfos>

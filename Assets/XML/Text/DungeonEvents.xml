@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Game Text - Dungeon Events -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DUNGEON_EVENT</Tag>
+        <English>Your scouts report an uprising of barbarian activity at the fringes of our beloved Empire.</English>
+        <French>Your scouts report an uprising of barbarian activity at the fringes of our beloved Empire.</French>
+        <German>Your scouts report an uprising of barbarian activity at the fringes of our beloved Empire.</German>
+        <Italian>Your scouts report an uprising of barbarian activity at the fringes of our beloved Empire.</Italian>
+        <Spanish>Your scouts report an uprising of barbarian activity at the fringes of our beloved Empire.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DUNGEON_EVENT_ATTITUDE</Tag>
+        <English>[NEWLINE][NEWLINE]Attitude: [COLOR_RED]%s1[COLOR_REVERT][NEWLINE]Population: %s2[NEWLINE]Power: %s3</English>
+        <French>Attitude: [COLOR_RED]%s1[COLOR_REVERT]</French>
+        <German>Attitude: [COLOR_RED]%s1[COLOR_REVERT]</German>
+        <Italian>Attitude: [COLOR_RED]%s1[COLOR_REVERT]</Italian>
+        <Spanish>Attitude: [COLOR_RED]%s1[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DUNGEON_EVENT_RELIGION</Tag>
+        <English>[NEWLINE]Religion: %s1</English>
+        <French>[NEWLINE]Religion: %s1</French>
+        <German>[NEWLINE]Religion: %s1</German>
+        <Italian>[NEWLINE]Religion: %s1</Italian>
+        <Spanish>[NEWLINE]Religion: %s1</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DUNGEON_EVENT_WEALTHY</Tag>
+        <English>[NEWLINE][COLOR_YELLOW]Their bags seem full of [ICON_GOLD]Gold[COLOR_REVERT]</English>
+        <French>[NEWLINE][COLOR_YELLOW]Their bags seem full of [ICON_GOLD]Gold[COLOR_REVERT]</French>
+        <German>[NEWLINE][COLOR_YELLOW]Their bags seem full of [ICON_GOLD]Gold[COLOR_REVERT]</German>
+        <Italian>[NEWLINE][COLOR_YELLOW]Their bags seem full of [ICON_GOLD]Gold[COLOR_REVERT]</Italian>
+        <Spanish>[NEWLINE][COLOR_YELLOW]Their bags seem full of [ICON_GOLD]Gold[COLOR_REVERT]</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_SELL_SLAVES</Tag>
+        <English>Sell the savages some population as slaves. That should calm them for a while and Gold is more useful than these peasents.</English>
+        <French>Sell the savages some population as slaves. That should calm them for a while and Gold is more useful than these peasents.</French>
+        <German>Sell the savages some population as slaves. That should calm them for a while and Gold is more useful than these peasents.</German>
+        <Italian>Sell the savages some population as slaves. That should calm them for a while and Gold is more useful than these peasents.</Italian>
+        <Spanish>Sell the savages some population as slaves. That should calm them for a while and Gold is more useful than these peasents.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_PAY_TRIBUTE</Tag>
+        <English>A barbarian Invasion would spell doom at this moment. Pay a few gold coins as Tribute in these dire times. </English>
+        <French>A barbarian Invasion would spell doom at this moment. Pay a few gold coins as Tribute in these dire times. </French>
+        <German>A barbarian Invasion would spell doom at this moment. Pay a few gold coins as Tribute in these dire times. </German>
+        <Italian>A barbarian Invasion would spell doom at this moment. Pay a few gold coins as Tribute in these dire times. </Italian>
+        <Spanish>A barbarian Invasion would spell doom at this moment. Pay a few gold coins as Tribute in these dire times. </Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_SELL_WEAPONS</Tag>
+        <English>Look at these foolish Brutes. Their clubs and spears maybe scare old women. But we could make a fortune selling them some decent metal Weapons.</English>
+        <French>Look at these foolish Brutes. Their clubs and spears maybe scare old women. But we could make a fortune selling them some decent metal Weapons.</French>
+        <German>Look at these foolish Brutes. Their clubs and spears maybe scare old women. But we could make a fortune selling them some decent metal Weapons.</German>
+        <Italian>Look at these foolish Brutes. Their clubs and spears maybe scare old women. But we could make a fortune selling them some decent metal Weapons.</Italian>
+        <Spanish>Look at these foolish Brutes. Their clubs and spears maybe scare old women. But we could make a fortune selling them some decent metal Weapons.</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_REFUSE</Tag>
+        <English>We will not cooperate with barbarians. The moment they set foot in our empire is the moment we cleanse them off the face of Erebus.</English>
+        <French>We will not cooperate with barbarians. The moment they set foot in our empire is the moment we cleanse them off the face of Erebus.</French>
+        <German>We will not cooperate with barbarians. The moment they set foot in our empire is the moment we cleanse them off the face of Erebus.</German>
+        <Italian>We will not cooperate with barbarians. The moment they set foot in our empire is the moment we cleanse them off the face of Erebus.</Italian>
+        <Spanish>We will not cooperate with barbarians. The moment they set foot in our empire is the moment we cleanse them off the face of Erebus.</Spanish>
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_THREATEN</Tag>
+        <English>Lets hope these fools show up in numbers, our soldiers are fat and bored. [THREATEN]</English>
+        <French>Lets hope these fools show up in numbers, our soldiers are fat and bored. [THREATEN]</French>
+        <German>Lets hope these fools show up in numbers, our soldiers are fat and bored. [THREATEN]</German>
+        <Italian>Lets hope these fools show up in numbers, our soldiers are fat and bored. [THREATEN]</Italian>
+        <Spanish>Lets hope these fools show up in numbers, our soldiers are fat and bored. [THREATEN]</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_TAUNT</Tag>
+        <English>Orthus, you smash like a little girl. Your father was the size of a dwarf and your mother had the beauty of an elf. [TAUNT ORTHUS]</English>
+        <French>Orthus, you smash like a little girl. Your father was the size of a dwarf and your mother had the beauty of an elf. [TAUNT ORTHUS]</French>
+        <German>Orthus, you smash like a little girl. Your father was the size of a dwarf and your mother had the beauty of an elf. [TAUNT ORTHUS]</German>
+        <Italian>Orthus, you smash like a little girl. Your father was the size of a dwarf and your mother had the beauty of an elf. [TAUNT ORTHUS]</Italian>
+        <Spanish>Orthus, you smash like a little girl. Your father was the size of a dwarf and your mother had the beauty of an elf. [TAUNT ORTHUS]</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_BUY_FURS</Tag>
+        <English>These Savages know how to hunt. We could use some pelts</English>
+        <French>These Savages know how to hunt. We could use some pelts</French>
+        <German>These Savages know how to hunt. We could use some pelts</German>
+        <Italian>These Savages know how to hunt. We could use some pelts</Italian>
+        <Spanish>These Savages know how to hunt. We could use some pelts</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_SPREAD_DISEASES</Tag>
+        <English>Too powerful they have become. They trust us enough so our scouts can spread diseases among them</English>
+        <French>Too powerful they have become. They trust us enough so our scouts can spread diseases among them</French>
+        <German>Too powerful they have become. They trust us enough so our scouts can spread diseases among them</German>
+        <Italian>Too powerful they have become. They trust us enough so our scouts can spread diseases among them</Italian>
+        <Spanish>Too powerful they have become. They trust us enough so our scouts can spread diseases among them</Spanish>
+    </TEXT>			
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_RECRUIT</Tag>
+        <English>These Fools will do anything for a few gold coins. Let them join our army</English>
+        <French>These Fools will do anything for a few gold coins. Let them join our army</French>
+        <German>These Fools will do anything for a few gold coins. Let them join our army</German>
+        <Italian>These Fools will do anything for a few gold coins. Let them join our army</Italian>
+        <Spanish>These Fools will do anything for a few gold coins. Let them join our army</Spanish>
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_ATTITUDE_INCREASE</Tag>
+        <English>Attitude to these Barbarians increases to %s1</English>
+        <French>Attitude to these Barbarians increases to %s1</French>
+        <German>Attitude to these Barbarians increases to %s1</German>
+        <Italian>Attitude to these Barbarians increases to %s1</Italian>
+        <Spanish>Attitude to these Barbarians increases to %s1</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_ATTITUDE_DECREASE</Tag>
+        <English>Attitude to these Barbarians decreases to %s1</English>
+        <French>Attitude to these Barbarians decreases to %s1</French>
+        <German>Attitude to these Barbarians decreases to %s1</German>
+        <Italian>Attitude to these Barbarians decreases to %s1</Italian>
+        <Spanish>Attitude to these Barbarians decreases to %s1</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_GOLD_COST</Tag>
+        <English>%d1[ICON_GOLD] given to Barbarians</English>
+        <French>%d1[ICON_GOLD] given to Barbarians</French>
+        <German>%d1[ICON_GOLD] given to Barbarians</German>
+        <Italian>%d1[ICON_GOLD] given to Barbarians</Italian>
+        <Spanish>%d1[ICON_GOLD] given to Barbarians</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_METAL_COST</Tag>
+        <English>%d1[ICON_METAL] given to Barbarians</English>
+        <French>%d1[ICON_METAL] given to Barbarians</French>
+        <German>%d1[ICON_METAL] given to Barbarians</German>
+        <Italian>%d1[ICON_METAL] given to Barbarians</Italian>
+        <Spanish>%d1[ICON_METAL] given to Barbarians</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_LEATHER_COST</Tag>
+        <English>%d1[ICON_LEATHER] given to Barbarians</English>
+        <French>%d1[ICON_LEATHER] given to Barbarians</French>
+        <German>%d1[ICON_LEATHER] given to Barbarians</German>
+        <Italian>%d1[ICON_LEATHER] given to Barbarians</Italian>
+        <Spanish>%d1[ICON_LEATHER] given to Barbarians</Spanish>
+    </TEXT>			
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_GOLD_GAINED</Tag>
+        <English>%d1[ICON_GOLD] gained from Barbarians</English>
+        <French>%d1[ICON_GOLD] gained from Barbarians</French>
+        <German>%d1[ICON_GOLD] gained from Barbarians</German>
+        <Italian>%d1[ICON_GOLD] gained from Barbarians</Italian>
+        <Spanish>%d1[ICON_GOLD] gained from Barbarians</Spanish>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_LEATHER_GAINED</Tag>
+        <English>%d1[ICON_LEATHER] gained from Barbarians</English>
+        <French>%d1[ICON_LEATHER] gained from Barbarians</French>
+        <German>%d1[ICON_LEATHER] gained from Barbarians</German>
+        <Italian>%d1[ICON_LEATHER] gained from Barbarians</Italian>
+        <Spanish>%d1[ICON_LEATHER] gained from Barbarians</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DUNGEONEVENT_REDUCED_POPULATION</Tag>
+        <English>Population in all Cities reduced by 10%</English>
+        <French>Population in all Cities reduced by 10%</French>
+        <German>Population in all Cities reduced by 10%</German>
+        <Italian>Population in all Cities reduced by 10%</Italian>
+        <Spanish>Population in all Cities reduced by 10%</Spanish>
+    </TEXT>	
+</Civ4GameText>

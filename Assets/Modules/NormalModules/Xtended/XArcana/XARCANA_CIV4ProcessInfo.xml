@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Process -->
+<Civ4ProcessInfo xmlns="x-schema:XARCANA_CIV4GameInfoSchema.xml">
+	<ProcessInfos>
+		<ProcessInfo>
+			<Type>PROCESS_ARCANE</Type>
+			<Description>Spellresearch</Description>
+			<Strategy/>
+			<TechPrereq>TECH_ARCANE_POWER</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>				
+				<iProductionToCommerceModifier>25</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/CommerceArcane.dds</Button>
+		</ProcessInfo>
+	</ProcessInfos>
+</Civ4ProcessInfo>

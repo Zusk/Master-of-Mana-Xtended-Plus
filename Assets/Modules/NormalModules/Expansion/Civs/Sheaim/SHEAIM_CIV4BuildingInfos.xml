@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Infos -->
+<Civ4BuildingInfos xmlns="x-schema:SHEAIM_CIV4BuildingsSchema.xml">
+    <BuildingInfos>
+        <BuildingInfo>
+            <BuildingClass>BUILDINGCLASS_PLANAR_GATE</BuildingClass>
+            <Type>BUILDING_PLANAR_GATE</Type>
+            <PrereqCiv>CIVILIZATION_SHEAIM</PrereqCiv>			
+        </BuildingInfo>	
+		<BuildingInfo>
+            <BuildingClass>BUILDINGCLASS_CERIDWENS_FAVOR</BuildingClass>
+            <Type>BUILDING_CERIDWENS_FAVOR</Type>
+            <Description>TXT_KEY_BUILDING_CERIDWENS_FAVOR</Description>
+            <Civilopedia>TXT_KEY_BUILDING_CERIDWENS_FAVOR_PEDIA</Civilopedia>
+            <Advisor>ADVISOR_CULTURE</Advisor>
+            <ArtDefineTag>ART_DEF_BUILDING_BREEDING_PIT</ArtDefineTag> <!-- needs new art tag -->
+            <PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
+            <FreeBonus>BONUS_RAZORWEED</FreeBonus>
+            <iNumFreeBonuses>2</iNumFreeBonuses>
+            <iCost>300</iCost>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>100</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iAsset>10</iAsset>
+            <iPower>20</iPower>
+            <fVisibilityPriority>15000</fVisibilityPriority>
+            <FreeBonus2>BONUS_GULAGARM</FreeBonus2>
+            <FreeBonus3>NONE</FreeBonus3>
+            <PrereqCiv>CIVILIZATION_SHEAIM</PrereqCiv>
+        </BuildingInfo>
+    </BuildingInfos>			
+</Civ4BuildingInfos>

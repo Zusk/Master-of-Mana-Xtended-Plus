@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:DURAL_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PALACE_DURAL</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/PalaceDural/dural.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,9</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_THE_FALLEN_ONE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,8,9</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_THE_DREAMER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_JUNIL</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_KILMORPH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,3,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_CERNUNNOS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_LUGUS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,5,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SCHOOL_OF_ESUS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,6,10</Button>
+		</BuildingArtInfo>				
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_COURAGE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Courage/Courage.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,8,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_LOYALTY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Loyalty/Loyalty.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,9</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_VALOR</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Valor/Valor.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,6,9</Button>
+		</BuildingArtInfo>
+			<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_HOPE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Hope/Hope.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,9</Button>
+		</BuildingArtInfo>
+			<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_INSPIRATION</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Inspiration/Inspiration.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,3,9</Button>
+		</BuildingArtInfo>
+			<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_PURITY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Purity/Purity.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,5,9</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STATUE_GLORY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Statues/Glory/Glory.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,9</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ARTISANS_QUARTER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,10</Button>
+		</BuildingArtInfo>	
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BARDS_CORNER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,4,9</Button>
+		</BuildingArtInfo>	
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HALLS_OF_KNOWLEDGE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,11</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GRAND_TRADING_CENTER</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/structures/buildings/generic/nobuilding.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,7,8</Button>
+		</BuildingArtInfo>		
+	</BuildingArtInfos>
+</Civ4ArtDefines>

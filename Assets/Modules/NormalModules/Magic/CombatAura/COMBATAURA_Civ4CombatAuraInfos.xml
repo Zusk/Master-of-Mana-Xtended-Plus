@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:COMBATAURA_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_ARCANE_AURA</CombatAuraClassType>
+			<Type>COMBATAURA_ARCANE_AURA</Type>
+			<bBlessing>1</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>6</iTargets>
+			<iTier>4</iTier>
+		</CombatAuraInfo>
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_STRENGTH</CombatAuraClassType>
+			<Type>COMBATAURA_BATTLECAPTAIN</Type>
+			<bBlessing>1</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>6</iTargets>
+			<iTier>4</iTier>
+			<iStrength>10</iStrength>			
+			<iExperience>10</iExperience>						
+		</CombatAuraInfo>				
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

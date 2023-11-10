@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONDANTIS</Tag>
+        <English>Condatis</English>
+		<French>Condatis</French>
+		<German>Condatis</German>
+		<Italian>Condatis</Italian>
+		<Spanish>Condatis</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONDANTIS_PEDIA</Tag>
+        <English>Condatis is the Archangel of Danalin. Looking for a mean to awaken her master, Condantis often fight against Hastur and the forces of Octopus Overlords. When first entered Erebus, Condatis can build a Shrine to Danalin. While the Shrine does not offer much benefit in itself, the Shrine gives happiness for all Temple of Remembrances in your realm.</English>
+		<French>Condatis is the Archangel of Danalin. Looking for a mean to awaken her master, Condantis often fight against Hastur and the forces of Octopus Overlords. When first entered Erebus, Condatis can build a Shrine to Danalin. While the Shrine does not offer much benefit in itself, the Shrine gives happiness for all Temple of Remembrances in your realm.</French>
+		<German>Condatis is the Archangel of Danalin. Looking for a mean to awaken her master, Condantis often fight against Hastur and the forces of Octopus Overlords. When first entered Erebus, Condatis can build a Shrine to Danalin. While the Shrine does not offer much benefit in itself, the Shrine gives happiness for all Temple of Remembrances in your realm.</German>
+		<Italian>Condatis is the Archangel of Danalin. Looking for a mean to awaken her master, Condantis often fight against Hastur and the forces of Octopus Overlords. When first entered Erebus, Condatis can build a Shrine to Danalin. While the Shrine does not offer much benefit in itself, the Shrine gives happiness for all Temple of Remembrances in your realm.</Italian>
+		<Spanish>Condatis is the Archangel of Danalin. Looking for a mean to awaken her master, Condantis often fight against Hastur and the forces of Octopus Overlords. When first entered Erebus, Condatis can build a Shrine to Danalin. While the Shrine does not offer much benefit in itself, the Shrine gives happiness for all Temple of Remembrances in your realm.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONDANTIS_STRATEGY</Tag>
+        <English>Condatis starts with curse aura which makes enemies more vulnerable to cold damage. She also able to cast Eye of Storm, dealing cold damage to enemy units.</English>
+		<French>Condatis starts with curse aura which makes enemies more vulnerable to cold damage. She also able to cast Eye of Storm, dealing cold damage to enemy units.</French>
+		<German>Condatis starts with curse aura which makes enemies more vulnerable to cold damage. She also able to cast Eye of Storm, dealing cold damage to enemy units.</German>
+		<Italian>Condatis starts with curse aura which makes enemies more vulnerable to cold damage. She also able to cast Eye of Storm, dealing cold damage to enemy units.</Italian>
+		<Spanish>Condatis starts with curse aura which makes enemies more vulnerable to cold damage. She also able to cast Eye of Storm, dealing cold damage to enemy units.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHILD_OF_CONDANTIS</Tag>
+        <English>Child of Condatis</English>
+		<French>Child of Condatis</French>
+		<German>Child of Condatis</German>
+		<Italian>Child of Condatis</Italian>
+		<Spanish>Child of Condatis</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHILD_OF_CONDANTIS_PEDIA</Tag>
+        <English>Attendants of Condatis, these priestess took a vow to awaken Danalin. Although limited in numbers, they provide vital assistance to those who fight the Overlords.</English>
+		<French>Attendants of Condatis, these priestess took a vow to awaken Danalin. Although limited in numbers, they provide vital assistance to those who fight the Overlords.</French>
+		<German>Attendants of Condatis, these priestess took a vow to awaken Danalin. Although limited in numbers, they provide vital assistance to those who fight the Overlords.</German>
+		<Italian>Attendants of Condatis, these priestess took a vow to awaken Danalin. Although limited in numbers, they provide vital assistance to those who fight the Overlords.</Italian>
+		<Spanish>Attendants of Condatis, these priestess took a vow to awaken Danalin. Although limited in numbers, they provide vital assistance to those who fight the Overlords.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CTHULTHU</Tag>
+        <English>Terror-that-lurks-beneath</English>
+		<French>Terror-that-lurks-beneath</French>
+		<German>Terror-that-lurks-beneath</German>
+		<Italian>Terror-that-lurks-beneath</Italian>
+		<Spanish>Terror-that-lurks-beneath</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CTHULTHU_PEDIA</Tag>
+        <English>Terror-that-lurks-beneath, that is what the Cultists called it. The monster. It seems insubstantial, weak as a babe in physical sense. But the horrible nightmares that it command... I shudder to remember the day when me and my party stood facing it.[NEWLINE][NEWLINE]None of us were able to move. Not even Dachias, the Paladin. Nor Azaniel, Seraph of the Mercurians. Even Selia's blessings and holy chants were unable to protect our mind from the invading tentacles of unholy thoughts.[NEWLINE][NEWLINE]I did not remember exactly what had happened. It was too horrible for my mind to memorize clearly. All of my nightmares were present, feasting on every little glimmers of my soul. But even in the deepest nightmare, I can still see the others. Each in their own nightmare, each experiencing terrible agony. And that made my nightmare even more horrifying, knowing that nobody will come to rescue me.[NEWLINE][NEWLINE]The torture were last for eternity; or maybe just a few minutes. All of sudden, the monster lifted its curses from us. With terrible sound ripped from the deepest abyss, the monster suddenly shook and ran amok. This gave us the opportunity to regroup, and launched magical-divine attacks which evaporated the monster.[NEWLINE][NEWLINE]After we vanquished the monster, Dachias looked at me, wanting an explanation. "What was happened? Why did it lift the curses from us?"[NEWLINE][NEWLINE]I shook my head, unable to answer his question.[NEWLINE][NEWLINE]Selia was the one who break our stunned silence. "Terrible it was, the monster was nothing more than nightmare. Even the strongest nightmare will perish, when the dreamer awaken, and dispel it from the thought."[NEWLINE][NEWLINE]Excerpt from the Vanquishing Terror, by Amirahad, High Sage of Cahir Abbey</English>
+		<French>Terror-that-lurks-beneath, that is what the Cultists called it. The monster. It seems insubstantial, weak as a babe in physical sense. But the horrible nightmares that it command... I shudder to remember the day when me and my party stood facing it.[NEWLINE][NEWLINE]None of us were able to move. Not even Dachias, the Paladin. Nor Azaniel, Seraph of the Mercurians. Even Selia's blessings and holy chants were unable to protect our mind from the invading tentacles of unholy thoughts.[NEWLINE][NEWLINE]I did not remember exactly what had happened. It was too horrible for my mind to memorize clearly. All of my nightmares were present, feasting on every little glimmers of my soul. But even in the deepest nightmare, I can still see the others. Each in their own nightmare, each experiencing terrible agony. And that made my nightmare even more horrifying, knowing that nobody will come to rescue me.[NEWLINE][NEWLINE]The torture were last for eternity; or maybe just a few minutes. All of sudden, the monster lifted its curses from us. With terrible sound ripped from the deepest abyss, the monster suddenly shook and ran amok. This gave us the opportunity to regroup, and launched magical-divine attacks which evaporated the monster.[NEWLINE][NEWLINE]After we vanquished the monster, Dachias looked at me, wanting an explanation. "What was happened? Why did it lift the curses from us?"[NEWLINE][NEWLINE]I shook my head, unable to answer his question.[NEWLINE][NEWLINE]Selia was the one who break our stunned silence. "Terrible it was, the monster was nothing more than nightmare. Even the strongest nightmare will perish, when the dreamer awaken, and dispel it from the thought."[NEWLINE][NEWLINE]Excerpt from the Vanquishing Terror, by Amirahad, High Sage of Cahir Abbey</French>
+		<German>Terror-that-lurks-beneath, that is what the Cultists called it. The monster. It seems insubstantial, weak as a babe in physical sense. But the horrible nightmares that it command... I shudder to remember the day when me and my party stood facing it.[NEWLINE][NEWLINE]None of us were able to move. Not even Dachias, the Paladin. Nor Azaniel, Seraph of the Mercurians. Even Selia's blessings and holy chants were unable to protect our mind from the invading tentacles of unholy thoughts.[NEWLINE][NEWLINE]I did not remember exactly what had happened. It was too horrible for my mind to memorize clearly. All of my nightmares were present, feasting on every little glimmers of my soul. But even in the deepest nightmare, I can still see the others. Each in their own nightmare, each experiencing terrible agony. And that made my nightmare even more horrifying, knowing that nobody will come to rescue me.[NEWLINE][NEWLINE]The torture were last for eternity; or maybe just a few minutes. All of sudden, the monster lifted its curses from us. With terrible sound ripped from the deepest abyss, the monster suddenly shook and ran amok. This gave us the opportunity to regroup, and launched magical-divine attacks which evaporated the monster.[NEWLINE][NEWLINE]After we vanquished the monster, Dachias looked at me, wanting an explanation. "What was happened? Why did it lift the curses from us?"[NEWLINE][NEWLINE]I shook my head, unable to answer his question.[NEWLINE][NEWLINE]Selia was the one who break our stunned silence. "Terrible it was, the monster was nothing more than nightmare. Even the strongest nightmare will perish, when the dreamer awaken, and dispel it from the thought."[NEWLINE][NEWLINE]Excerpt from the Vanquishing Terror, by Amirahad, High Sage of Cahir Abbey</German>
+		<Italian>Terror-that-lurks-beneath, that is what the Cultists called it. The monster. It seems insubstantial, weak as a babe in physical sense. But the horrible nightmares that it command... I shudder to remember the day when me and my party stood facing it.[NEWLINE][NEWLINE]None of us were able to move. Not even Dachias, the Paladin. Nor Azaniel, Seraph of the Mercurians. Even Selia's blessings and holy chants were unable to protect our mind from the invading tentacles of unholy thoughts.[NEWLINE][NEWLINE]I did not remember exactly what had happened. It was too horrible for my mind to memorize clearly. All of my nightmares were present, feasting on every little glimmers of my soul. But even in the deepest nightmare, I can still see the others. Each in their own nightmare, each experiencing terrible agony. And that made my nightmare even more horrifying, knowing that nobody will come to rescue me.[NEWLINE][NEWLINE]The torture were last for eternity; or maybe just a few minutes. All of sudden, the monster lifted its curses from us. With terrible sound ripped from the deepest abyss, the monster suddenly shook and ran amok. This gave us the opportunity to regroup, and launched magical-divine attacks which evaporated the monster.[NEWLINE][NEWLINE]After we vanquished the monster, Dachias looked at me, wanting an explanation. "What was happened? Why did it lift the curses from us?"[NEWLINE][NEWLINE]I shook my head, unable to answer his question.[NEWLINE][NEWLINE]Selia was the one who break our stunned silence. "Terrible it was, the monster was nothing more than nightmare. Even the strongest nightmare will perish, when the dreamer awaken, and dispel it from the thought."[NEWLINE][NEWLINE]Excerpt from the Vanquishing Terror, by Amirahad, High Sage of Cahir Abbey</Italian>
+		<Spanish>Terror-that-lurks-beneath, that is what the Cultists called it. The monster. It seems insubstantial, weak as a babe in physical sense. But the horrible nightmares that it command... I shudder to remember the day when me and my party stood facing it.[NEWLINE][NEWLINE]None of us were able to move. Not even Dachias, the Paladin. Nor Azaniel, Seraph of the Mercurians. Even Selia's blessings and holy chants were unable to protect our mind from the invading tentacles of unholy thoughts.[NEWLINE][NEWLINE]I did not remember exactly what had happened. It was too horrible for my mind to memorize clearly. All of my nightmares were present, feasting on every little glimmers of my soul. But even in the deepest nightmare, I can still see the others. Each in their own nightmare, each experiencing terrible agony. And that made my nightmare even more horrifying, knowing that nobody will come to rescue me.[NEWLINE][NEWLINE]The torture were last for eternity; or maybe just a few minutes. All of sudden, the monster lifted its curses from us. With terrible sound ripped from the deepest abyss, the monster suddenly shook and ran amok. This gave us the opportunity to regroup, and launched magical-divine attacks which evaporated the monster.[NEWLINE][NEWLINE]After we vanquished the monster, Dachias looked at me, wanting an explanation. "What was happened? Why did it lift the curses from us?"[NEWLINE][NEWLINE]I shook my head, unable to answer his question.[NEWLINE][NEWLINE]Selia was the one who break our stunned silence. "Terrible it was, the monster was nothing more than nightmare. Even the strongest nightmare will perish, when the dreamer awaken, and dispel it from the thought."[NEWLINE][NEWLINE]Excerpt from the Vanquishing Terror, by Amirahad, High Sage of Cahir Abbey</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CTHULTHU_STRATEGY</Tag>
+        <English>Terror-that-lurks-beneath is the strongest in Octopus Overlords' array of units. Eventhough its base attack is low and most of its strength lies in unholy power, not even undead, demon and devil immune to its powers. Since the monster is a manifestation of nightmares, it will run amok and wildly attack nearby enemy. Only Hemah can control the monster and provide direct guidance to it.</English>
+		<French>Terror-that-lurks-beneath is the strongest in Octopus Overlords' array of units. Eventhough its base attack is low and most of its strength lies in unholy power, not even undead, demon and devil immune to its powers. Since the monster is a manifestation of nightmares, it will run amok and wildly attack nearby enemy. Only Hemah can control the monster and provide direct guidance to it.</French>
+		<German>Terror-that-lurks-beneath is the strongest in Octopus Overlords' array of units. Eventhough its base attack is low and most of its strength lies in unholy power, not even undead, demon and devil immune to its powers. Since the monster is a manifestation of nightmares, it will run amok and wildly attack nearby enemy. Only Hemah can control the monster and provide direct guidance to it.</German>
+		<Italian>Terror-that-lurks-beneath is the strongest in Octopus Overlords' array of units. Eventhough its base attack is low and most of its strength lies in unholy power, not even undead, demon and devil immune to its powers. Since the monster is a manifestation of nightmares, it will run amok and wildly attack nearby enemy. Only Hemah can control the monster and provide direct guidance to it.</Italian>
+		<Spanish>Terror-that-lurks-beneath is the strongest in Octopus Overlords' array of units. Eventhough its base attack is low and most of its strength lies in unholy power, not even undead, demon and devil immune to its powers. Since the monster is a manifestation of nightmares, it will run amok and wildly attack nearby enemy. Only Hemah can control the monster and provide direct guidance to it.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_CTHULTHU</Tag>
+        <English>Summon Octopus Overlord</English>
+		<French>Summon Octopus Overlord</French>
+		<German>Summon Octopus Overlord</German>
+		<Italian>Summon Octopus Overlord</Italian>
+		<Spanish>Summon Octopus Overlord</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SHRINE_OF_DANALIN</Tag>
+        <English>Build Shrine of Danalin</English>
+		<French>Build Shrine of Danalin</French>
+		<German>Build Shrine of Danalin</German>
+		<Italian>Build Shrine of Danalin</Italian>
+		<Spanish>Build Shrine of Danalin</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_TEMPLE_OF_REMEMBRANCE</Tag>
+        <English>Build Temple of Remembrance</English>
+		<French>Build Temple of Remembrance</French>
+		<German>Build Temple of Remembrance</German>
+		<Italian>Build Temple of Remembrance</Italian>
+		<Spanish>Build Temple of Remembrance</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_EYE_OF_STORM</Tag>
+        <English>Eye of Storm</English>
+		<French>Eye of Storm</French>
+		<German>Eye of Storm</German>
+		<Italian>Eye of Storm</Italian>
+		<Spanish>Eye of Storm</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_ICE_SPEARS</Tag>
+        <English>Ice Spears</English>
+		<French>Ice Spears</French>
+		<German>Ice Spears</German>
+		<Italian>Ice Spears</Italian>
+		<Spanish>Ice Spears</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_ICE_SPEARS_ADV</Tag>
+        <English>Frozen Spears</English>
+		<French>Frozen Spears</French>
+		<German>Frozen Spears</German>
+		<Italian>Frozen Spears</Italian>
+		<Spanish>Frozen Spears</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_MIRAGE_DANALIN</Tag>
+        <English>Mirage</English>
+		<French>Mirage</French>
+		<German>Mirage</German>
+		<Italian>Mirage</Italian>
+		<Spanish>Mirage</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SERENITY</Tag>
+        <English>Serenity</English>
+		<French>Serenity</French>
+		<German>Serenity</German>
+		<Italian>Serenity</Italian>
+		<Spanish>Serenity</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_1</Tag>
+        <English>At first, it just a whisper. Then, dreams. Later, it became a vision for every prophets, sages and seers in your realm. And last, it appear in front of you. A beautiful woman, stood above the sea water. Her dress is rippling ocean foam. Her wings translucent green, her eyes pearly black.[NEWLINE][NEWLINE]"I am Condatis, archangel of Danalin."[NEWLINE][NEWLINE]"Danalin!? The god of the Overlords!?" You stammered. You have done everything you could, so that the Octopus Overlords does not gain influence in your realm. Will this archangel exact revenge for your acts?[NEWLINE][NEWLINE]"The Overlords!" Condatis spat the name, as if acid. "I have nothing to do with those mindless beasts! I serve Danalin, the Sleeping God of Endless Sea. Those Overlords were nightmare created by Hastur to usurp His Realm!" She paused and looked intently. "I saw how you manouvre to drive the Overlords from your realm. I might provide an assistance to you, as long as you give assistance to me. What you say, mortal?"</English>
+		<French>At first, it just a whisper. Then, dreams. Later, it became a vision for every prophets, sages and seers in your realm. And last, it appear in front of you. A beautiful woman, stood above the sea water. Her dress is rippling ocean foam. Her wings translucent green, her eyes pearly black.[NEWLINE][NEWLINE]"I am Condatis, archangel of Danalin."[NEWLINE][NEWLINE]"Danalin!? The god of the Overlords!?" You stammered. You have done everything you could, so that the Octopus Overlords does not gain influence in your realm. Will this archangel exact revenge for your acts?[NEWLINE][NEWLINE]"The Overlords!" Condatis spat the name, as if acid. "I have nothing to do with those mindless beasts! I serve Danalin, the Sleeping God of Endless Sea. Those Overlords were nightmare created by Hastur to usurp His Realm!" She paused and looked intently. "I saw how you manouvre to drive the Overlords from your realm. I might provide an assistance to you, as long as you give assistance to me. What you say, mortal?"</French>
+		<German>At first, it just a whisper. Then, dreams. Later, it became a vision for every prophets, sages and seers in your realm. And last, it appear in front of you. A beautiful woman, stood above the sea water. Her dress is rippling ocean foam. Her wings translucent green, her eyes pearly black.[NEWLINE][NEWLINE]"I am Condatis, archangel of Danalin."[NEWLINE][NEWLINE]"Danalin!? The god of the Overlords!?" You stammered. You have done everything you could, so that the Octopus Overlords does not gain influence in your realm. Will this archangel exact revenge for your acts?[NEWLINE][NEWLINE]"The Overlords!" Condatis spat the name, as if acid. "I have nothing to do with those mindless beasts! I serve Danalin, the Sleeping God of Endless Sea. Those Overlords were nightmare created by Hastur to usurp His Realm!" She paused and looked intently. "I saw how you manouvre to drive the Overlords from your realm. I might provide an assistance to you, as long as you give assistance to me. What you say, mortal?"</German>
+		<Italian>At first, it just a whisper. Then, dreams. Later, it became a vision for every prophets, sages and seers in your realm. And last, it appear in front of you. A beautiful woman, stood above the sea water. Her dress is rippling ocean foam. Her wings translucent green, her eyes pearly black.[NEWLINE][NEWLINE]"I am Condatis, archangel of Danalin."[NEWLINE][NEWLINE]"Danalin!? The god of the Overlords!?" You stammered. You have done everything you could, so that the Octopus Overlords does not gain influence in your realm. Will this archangel exact revenge for your acts?[NEWLINE][NEWLINE]"The Overlords!" Condatis spat the name, as if acid. "I have nothing to do with those mindless beasts! I serve Danalin, the Sleeping God of Endless Sea. Those Overlords were nightmare created by Hastur to usurp His Realm!" She paused and looked intently. "I saw how you manouvre to drive the Overlords from your realm. I might provide an assistance to you, as long as you give assistance to me. What you say, mortal?"</Italian>
+		<Spanish>At first, it just a whisper. Then, dreams. Later, it became a vision for every prophets, sages and seers in your realm. And last, it appear in front of you. A beautiful woman, stood above the sea water. Her dress is rippling ocean foam. Her wings translucent green, her eyes pearly black.[NEWLINE][NEWLINE]"I am Condatis, archangel of Danalin."[NEWLINE][NEWLINE]"Danalin!? The god of the Overlords!?" You stammered. You have done everything you could, so that the Octopus Overlords does not gain influence in your realm. Will this archangel exact revenge for your acts?[NEWLINE][NEWLINE]"The Overlords!" Condatis spat the name, as if acid. "I have nothing to do with those mindless beasts! I serve Danalin, the Sleeping God of Endless Sea. Those Overlords were nightmare created by Hastur to usurp His Realm!" She paused and looked intently. "I saw how you manouvre to drive the Overlords from your realm. I might provide an assistance to you, as long as you give assistance to me. What you say, mortal?"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_CONDANTIS_1</Tag>
+        <English>Astrologers have observed strange reflection in Danalin's sacred constellation. Overlords High Speaker warns about danger coming from the sea.</English>
+		<French>Astrologers have observed strange reflection in Danalin's sacred constellation. Overlords High Speaker warns about danger coming from the sea.</French>
+		<German>Astrologers have observed strange reflection in Danalin's sacred constellation. Overlords High Speaker warns about danger coming from the sea.</German>
+		<Italian>Astrologers have observed strange reflection in Danalin's sacred constellation. Overlords High Speaker warns about danger coming from the sea.</Italian>
+		<Spanish>Astrologers have observed strange reflection in Danalin's sacred constellation. Overlords High Speaker warns about danger coming from the sea.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_1_1</Tag>
+        <English>"No! I do not want to meddle my hand into your affairs and theirs!"</English>
+		<French>"No! I do not want to meddle my hand into your affairs and theirs!"</French>
+		<German>"No! I do not want to meddle my hand into your affairs and theirs!"</German>
+		<Italian>"No! I do not want to meddle my hand into your affairs and theirs!"</Italian>
+		<Spanish>"No! I do not want to meddle my hand into your affairs and theirs!"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_1_2</Tag>
+        <English>"Yes, I will help you as long as you help me fight them!"</English>
+		<French>"Yes, I will help you as long as you help me fight them!"</French>
+		<German>"Yes, I will help you as long as you help me fight them!"</German>
+		<Italian>"Yes, I will help you as long as you help me fight them!"</Italian>
+		<Spanish>"Yes, I will help you as long as you help me fight them!"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_1_1_HELP</Tag>
+        <English>[ICON_BULLET]Gain +2 diplomatic relations to all Octopus Overlords states.</English>
+		<French>[ICON_BULLET]Gain +2 diplomatic relations to all Octopus Overlords states.</French>
+		<German>[ICON_BULLET]Gain +2 diplomatic relations to all Octopus Overlords states.</German>
+		<Italian>[ICON_BULLET]Gain +2 diplomatic relations to all Octopus Overlords states.</Italian>
+		<Spanish>[ICON_BULLET]Gain +2 diplomatic relations to all Octopus Overlords states.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_1_2_HELP</Tag>
+        <English>[ICON_BULLET]Suffer -4 diplomatic relations with all Octopus Overlords states.</English>
+		<French>[ICON_BULLET]Suffer -4 diplomatic relations with all Octopus Overlords states.</French>
+		<German>[ICON_BULLET]Suffer -4 diplomatic relations with all Octopus Overlords states.</German>
+		<Italian>[ICON_BULLET]Suffer -4 diplomatic relations with all Octopus Overlords states.</Italian>
+		<Spanish>[ICON_BULLET]Suffer -4 diplomatic relations with all Octopus Overlords states.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_2</Tag>
+        <English>"Mortal," A sudden breeze and waft of oceanic scent were all warning you have. Condatis. She has spoken to you before, and her words of gentle, serene Danalin intrigued you. Her teaching also captivated many common folks. Sailors, fishermen, all those who were expecting bounties from the sea, but hesitate to delve into the depravity inducted by the Cultists and Speakers.[NEWLINE][NEWLINE]"I am understand that the dirty hands of the Overlords had tried to enter your realm," Condatis spoke. Her voice was melodious, like trickles of water in little streams.[NEWLINE][NEWLINE]"Yes," you reluctantly agree. "Two of your attendants were killed yesterday. They were tortured and violated. I have issued arrest to the suspects."[NEWLINE][NEWLINE]Condatis hesitated for a moment. You saw sadness in her eyes. "Not only that," She spoke again. "The Cultists has summoned a beast of terrible power. They set the beast to your capital. I can help you to face the beast," Condatis said. "All I need is your permit to establish a shrine to Danalin, and I will have the power to manifest physically in Erebus. What will you say, mortal?"</English>
+		<French>"Mortal," A sudden breeze and waft of oceanic scent were all warning you have. Condatis. She has spoken to you before, and her words of gentle, serene Danalin intrigued you. Her teaching also captivated many common folks. Sailors, fishermen, all those who were expecting bounties from the sea, but hesitate to delve into the depravity inducted by the Cultists and Speakers.[NEWLINE][NEWLINE]"I am understand that the dirty hands of the Overlords had tried to enter your realm," Condatis spoke. Her voice was melodious, like trickles of water in little streams.[NEWLINE][NEWLINE]"Yes," you reluctantly agree. "Two of your attendants were killed yesterday. They were tortured and violated. I have issued arrest to the suspects."[NEWLINE][NEWLINE]Condatis hesitated for a moment. You saw sadness in her eyes. "Not only that," She spoke again. "The Cultists has summoned a beast of terrible power. They set the beast to your capital. I can help you to face the beast," Condatis said. "All I need is your permit to establish a shrine to Danalin, and I will have the power to manifest physically in Erebus. What will you say, mortal?"</French>
+		<German>"Mortal," A sudden breeze and waft of oceanic scent were all warning you have. Condatis. She has spoken to you before, and her words of gentle, serene Danalin intrigued you. Her teaching also captivated many common folks. Sailors, fishermen, all those who were expecting bounties from the sea, but hesitate to delve into the depravity inducted by the Cultists and Speakers.[NEWLINE][NEWLINE]"I am understand that the dirty hands of the Overlords had tried to enter your realm," Condatis spoke. Her voice was melodious, like trickles of water in little streams.[NEWLINE][NEWLINE]"Yes," you reluctantly agree. "Two of your attendants were killed yesterday. They were tortured and violated. I have issued arrest to the suspects."[NEWLINE][NEWLINE]Condatis hesitated for a moment. You saw sadness in her eyes. "Not only that," She spoke again. "The Cultists has summoned a beast of terrible power. They set the beast to your capital. I can help you to face the beast," Condatis said. "All I need is your permit to establish a shrine to Danalin, and I will have the power to manifest physically in Erebus. What will you say, mortal?"</German>
+		<Italian>"Mortal," A sudden breeze and waft of oceanic scent were all warning you have. Condatis. She has spoken to you before, and her words of gentle, serene Danalin intrigued you. Her teaching also captivated many common folks. Sailors, fishermen, all those who were expecting bounties from the sea, but hesitate to delve into the depravity inducted by the Cultists and Speakers.[NEWLINE][NEWLINE]"I am understand that the dirty hands of the Overlords had tried to enter your realm," Condatis spoke. Her voice was melodious, like trickles of water in little streams.[NEWLINE][NEWLINE]"Yes," you reluctantly agree. "Two of your attendants were killed yesterday. They were tortured and violated. I have issued arrest to the suspects."[NEWLINE][NEWLINE]Condatis hesitated for a moment. You saw sadness in her eyes. "Not only that," She spoke again. "The Cultists has summoned a beast of terrible power. They set the beast to your capital. I can help you to face the beast," Condatis said. "All I need is your permit to establish a shrine to Danalin, and I will have the power to manifest physically in Erebus. What will you say, mortal?"</Italian>
+		<Spanish>"Mortal," A sudden breeze and waft of oceanic scent were all warning you have. Condatis. She has spoken to you before, and her words of gentle, serene Danalin intrigued you. Her teaching also captivated many common folks. Sailors, fishermen, all those who were expecting bounties from the sea, but hesitate to delve into the depravity inducted by the Cultists and Speakers.[NEWLINE][NEWLINE]"I am understand that the dirty hands of the Overlords had tried to enter your realm," Condatis spoke. Her voice was melodious, like trickles of water in little streams.[NEWLINE][NEWLINE]"Yes," you reluctantly agree. "Two of your attendants were killed yesterday. They were tortured and violated. I have issued arrest to the suspects."[NEWLINE][NEWLINE]Condatis hesitated for a moment. You saw sadness in her eyes. "Not only that," She spoke again. "The Cultists has summoned a beast of terrible power. They set the beast to your capital. I can help you to face the beast," Condatis said. "All I need is your permit to establish a shrine to Danalin, and I will have the power to manifest physically in Erebus. What will you say, mortal?"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_CONDANTIS_2</Tag>
+        <English>Rumour tells of a mysterious figure emerged from in the middle of ocean, claiming as the archangel of Danalin. The temples of Octopus Overlords denied this claim and responded harshly to any parties supporting this claim.</English>
+		<French>Rumour tells of a mysterious figure emerged from in the middle of ocean, claiming as the archangel of Danalin. The temples of Octopus Overlords denied this claim and responded harshly to any parties supporting this claim.</French>
+		<German>Rumour tells of a mysterious figure emerged from in the middle of ocean, claiming as the archangel of Danalin. The temples of Octopus Overlords denied this claim and responded harshly to any parties supporting this claim.</German>
+		<Italian>Rumour tells of a mysterious figure emerged from in the middle of ocean, claiming as the archangel of Danalin. The temples of Octopus Overlords denied this claim and responded harshly to any parties supporting this claim.</Italian>
+		<Spanish>Rumour tells of a mysterious figure emerged from in the middle of ocean, claiming as the archangel of Danalin. The temples of Octopus Overlords denied this claim and responded harshly to any parties supporting this claim.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_2_1</Tag>
+        <English>"No! All these bloodshed were because I listened to you! Enough is enough!"</English>
+		<French>"No! All these bloodshed were because I listened to you! Enough is enough!"</French>
+		<German>"No! All these bloodshed were because I listened to you! Enough is enough!"</German>
+		<Italian>"No! All these bloodshed were because I listened to you! Enough is enough!"</Italian>
+		<Spanish>"No! All these bloodshed were because I listened to you! Enough is enough!"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_2_2</Tag>
+        <English>"Yes! I will allow the construction of the Shrine!"</English>
+		<French>"Yes! I will allow the construction of the Shrine!"</French>
+		<German>"Yes! I will allow the construction of the Shrine!"</German>
+		<Italian>"Yes! I will allow the construction of the Shrine!"</Italian>
+		<Spanish>"Yes! I will allow the construction of the Shrine!"</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_2_1_HELP</Tag>
+        <English>[ICON_BULLET]Gain +4 diplomatic relations to all Octopus Overlords states.</English>
+		<French>[ICON_BULLET]Gain +4 diplomatic relations to all Octopus Overlords states.</French>
+		<German>[ICON_BULLET]Gain +4 diplomatic relations to all Octopus Overlords states.</German>
+		<Italian>[ICON_BULLET]Gain +4 diplomatic relations to all Octopus Overlords states.</Italian>
+		<Spanish>[ICON_BULLET]Gain +4 diplomatic relations to all Octopus Overlords states.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONDANTIS_2_2_HELP</Tag>
+        <English>[ICON_BULLET]Suffer -6 diplomatic relations and declare war against all Octopus Overlords states.</English>
+		<French>[ICON_BULLET]Suffer -6 diplomatic relations and declare war against all Octopus Overlords states.</French>
+		<German>[ICON_BULLET]Suffer -6 diplomatic relations and declare war against all Octopus Overlords states.</German>
+		<Italian>[ICON_BULLET]Suffer -6 diplomatic relations and declare war against all Octopus Overlords states.</Italian>
+		<Spanish>[ICON_BULLET]Suffer -6 diplomatic relations and declare war against all Octopus Overlords states.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_TEMPLE_REMEMBRANCE</Tag>
+        <English>A line of young women had received miraculous dream and began the cult of Danalin.</English>
+		<French>A line of young women had received miraculous dream and began the cult of Danalin.</French>
+		<German>A line of young women had received miraculous dream and began the cult of Danalin.</German>
+		<Italian>A line of young women had received miraculous dream and began the cult of Danalin.</Italian>
+		<Spanish>A line of young women had received miraculous dream and began the cult of Danalin.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TEMPLE_REMEMBRANCE</Tag>
+        <English>Condatis was true to her words. During her stay in your realm, she established a temple dedicated to Danalin. While small, the temple soon become a center of study. Not long after the establishment of the temple, a line of young women received a miracle. They slept for several days, and trained by Condatis during the dream. Awaken, they became master of water magic, and pledged support to your realm.</English>
+		<French>Condatis was true to her words. During her stay in your realm, she established a temple dedicated to Danalin. While small, the temple soon become a center of study. Not long after the establishment of the temple, a line of young women received a miracle. They slept for several days, and trained by Condatis during the dream. Awaken, they became master of water magic, and pledged support to your realm.</French>
+		<German>Condatis was true to her words. During her stay in your realm, she established a temple dedicated to Danalin. While small, the temple soon become a center of study. Not long after the establishment of the temple, a line of young women received a miracle. They slept for several days, and trained by Condatis during the dream. Awaken, they became master of water magic, and pledged support to your realm.</German>
+		<Italian>Condatis was true to her words. During her stay in your realm, she established a temple dedicated to Danalin. While small, the temple soon become a center of study. Not long after the establishment of the temple, a line of young women received a miracle. They slept for several days, and trained by Condatis during the dream. Awaken, they became master of water magic, and pledged support to your realm.</Italian>
+		<Spanish>Condatis was true to her words. During her stay in your realm, she established a temple dedicated to Danalin. While small, the temple soon become a center of study. Not long after the establishment of the temple, a line of young women received a miracle. They slept for several days, and trained by Condatis during the dream. Awaken, they became master of water magic, and pledged support to your realm.</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TEMPLE_REMEMBRANCE_1</Tag>
+        <English>Continue</English>
+		<French>Continue</French>
+		<German>Continue</German>
+		<Italian>Continue</Italian>
+		<Spanish>Continue</Spanish>				
+    </TEXT>		
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_CONDANTIS_LEFT</Tag>
+        <English>Insulted by your betrayal, the followers of Danalin left your realm.</English>
+		<French>Insulted by your betrayal, the followers of Danalin left your realm.</French>
+		<German>Insulted by your betrayal, the followers of Danalin left your realm.</German>
+		<Italian>Insulted by your betrayal, the followers of Danalin left your realm.</Italian>
+		<Spanish>Insulted by your betrayal, the followers of Danalin left your realm.</Spanish>				
+    </TEXT>		
+</Civ4GameText>

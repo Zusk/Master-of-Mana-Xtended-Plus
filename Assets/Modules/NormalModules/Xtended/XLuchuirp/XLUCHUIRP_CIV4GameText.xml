@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARTIFICER</Tag>
+        <English>Artificer</English>
+		<French>Artificer</French>
+		<German>Artificer</German>
+		<Italian>Artificer</Italian>
+		<Spanish>Artificer</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARTIFICER_HELP</Tag>
+        <English>[ICON_BULLET]Artificer boosts Golem.</English>
+		<French>[ICON_BULLET]Artificer boosts Golem.</French>
+		<German>[ICON_BULLET]Artificer boosts Golem.</German>
+		<Italian>[ICON_BULLET]Artificer boosts Golem.</Italian>
+		<Spanish>[ICON_BULLET]Artificer boosts Golem.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ARTIFICER_PEDIA</Tag>
+        <English>There are two paths for the magically inclined Dwarves in Luchuirp empire. Just as other empires train these magically gifted individuals as adepts or shamans, the Luchuirp opens a sophisticated Mage Guild dedicated to arcane research. But, unlike other empires, the Luchuirp also incorporated these gifted individuals in workshops and studios. There, they learn how to craft golem and infuse it with their magic power. By the end of their apprenticeship, these individuals become Luchuirp's famous Artificers. They can not cast any spells or provide aura support as their adept counterpart. But, they can enchant the golems, which has become Luchuirp's main army.</English>
+		<French>There are two paths for the magically inclined Dwarves in Luchuirp empire. Just as other empires train these magically gifted individuals as adepts or shamans, the Luchuirp opens a sophisticated Mage Guild dedicated to arcane research. But, unlike other empires, the Luchuirp also incorporated these gifted individuals in workshops and studios. There, they learn how to craft golem and infuse it with their magic power. By the end of their apprenticeship, these individuals become Luchuirp's famous Artificers. They can not cast any spells or provide aura support as their adept counterpart. But, they can enchant the golems, which has become Luchuirp's main army.</French>
+		<German>There are two paths for the magically inclined Dwarves in Luchuirp empire. Just as other empires train these magically gifted individuals as adepts or shamans, the Luchuirp opens a sophisticated Mage Guild dedicated to arcane research. But, unlike other empires, the Luchuirp also incorporated these gifted individuals in workshops and studios. There, they learn how to craft golem and infuse it with their magic power. By the end of their apprenticeship, these individuals become Luchuirp's famous Artificers. They can not cast any spells or provide aura support as their adept counterpart. But, they can enchant the golems, which has become Luchuirp's main army.</German>
+		<Italian>There are two paths for the magically inclined Dwarves in Luchuirp empire. Just as other empires train these magically gifted individuals as adepts or shamans, the Luchuirp opens a sophisticated Mage Guild dedicated to arcane research. But, unlike other empires, the Luchuirp also incorporated these gifted individuals in workshops and studios. There, they learn how to craft golem and infuse it with their magic power. By the end of their apprenticeship, these individuals become Luchuirp's famous Artificers. They can not cast any spells or provide aura support as their adept counterpart. But, they can enchant the golems, which has become Luchuirp's main army.</Italian>
+		<Spanish>There are two paths for the magically inclined Dwarves in Luchuirp empire. Just as other empires train these magically gifted individuals as adepts or shamans, the Luchuirp opens a sophisticated Mage Guild dedicated to arcane research. But, unlike other empires, the Luchuirp also incorporated these gifted individuals in workshops and studios. There, they learn how to craft golem and infuse it with their magic power. By the end of their apprenticeship, these individuals become Luchuirp's famous Artificers. They can not cast any spells or provide aura support as their adept counterpart. But, they can enchant the golems, which has become Luchuirp's main army.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARTIFICER</Tag>
+        <English>Artificer</English>
+		<French>Artificer</French>
+		<German>Artificer</German>
+		<Italian>Artificer</Italian>
+		<Spanish>Artificer</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_1</Tag>
+        <English>Infused Golem 1</English>
+		<French>Infused Golem 1</French>
+		<German>Infused Golem 1</German>
+		<Italian>Infused Golem 1</Italian>
+		<Spanish>Infused Golem 1</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_2</Tag>
+        <English>Infused Golem 2</English>
+		<French>Infused Golem 2</French>
+		<German>Infused Golem 2</German>
+		<Italian>Infused Golem 2</Italian>
+		<Spanish>Infused Golem 2</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_3</Tag>
+        <English>Infused Golem 3</English>
+		<French>Infused Golem 3</French>
+		<German>Infused Golem 3</German>
+		<Italian>Infused Golem 3</Italian>
+		<Spanish>Infused Golem 3</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_4</Tag>
+        <English>Infused Golem 4</English>
+		<French>Infused Golem 4</French>
+		<German>Infused Golem 4</German>
+		<Italian>Infused Golem 4</Italian>
+		<Spanish>Infused Golem 4</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_5</Tag>
+        <English>Infused Golem 5</English>
+		<French>Infused Golem 5</French>
+		<German>Infused Golem 5</German>
+		<Italian>Infused Golem 5</Italian>
+		<Spanish>Infused Golem 5</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_CRAFTER</Tag>
+        <English>Master Artificer</English>
+		<French>Master Artificer</French>
+		<German>Master Artificer</German>
+		<Italian>Master Artificer</Italian>
+		<Spanish>Master Artificer</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_CRAFTED_GOLEM</Tag>
+        <English>Mastercrafted</English>
+		<French>Mastercrafted</French>
+		<German>Mastercrafted</German>
+		<Italian>Mastercrafted</Italian>
+		<Spanish>Mastercrafted</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GRANDMASTER_CRAFTER</Tag>
+        <English>Grand Artificer</English>
+		<French>Grand Artificer</French>
+		<German>Grand Artificer</German>
+		<Italian>Grand Artificer</Italian>
+		<Spanish>Grand Artificer</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GRANDMASTER_CRAFTED_GOLEM</Tag>
+        <English>Grandmastercrafted</English>
+		<French>Grandmastercrafted</French>
+		<German>Grandmastercrafted</German>
+		<Italian>Grandmastercrafted</Italian>
+		<Spanish>Grandmastercrafted</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ACCELERATE_GOLEM</Tag>
+        <English>Acceleration</English>
+		<French>Acceleration</French>
+		<German>Acceleration</German>
+		<Italian>Acceleration</Italian>
+		<Spanish>Acceleration</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ACCELERATED_GOLEM</Tag>
+        <English>Accelerated Golem</English>
+		<French>Accelerated Golem</French>
+		<German>Accelerated Golem</German>
+		<Italian>Accelerated Golem</Italian>
+		<Spanish>Accelerated Golem</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ASSAULT_GOLEM</Tag>
+        <English>Assault Golem</English>
+		<French>Assault Golem</French>
+		<German>Assault Golem</German>
+		<Italian>Assault Golem</Italian>
+		<Spanish>Assault Golem</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_POWER_GOLEM</Tag>
+        <English>Powerbuild</English>
+		<French>Powerbuild</French>
+		<German>Powerbuild</German>
+		<Italian>Powerbuild</Italian>
+		<Spanish>Powerbuild</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_POWERBUILT_GOLEM</Tag>
+        <English>Powerbuilt Golem</English>
+		<French>Powerbuilt Golem</French>
+		<German>Powerbuilt Golem</German>
+		<Italian>Powerbuilt Golem</Italian>
+		<Spanish>Powerbuilt Golem</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHIELD_GOLEM</Tag>
+        <English>Shield Golem</English>
+		<French>Shield Golem</French>
+		<German>Shield Golem</German>
+		<Italian>Shield Golem</Italian>
+		<Spanish>Shield Golem</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSE_LIFE</Tag>
+        <English>Infuse Life</English>
+		<French>Infuse Life</French>
+		<German>Infuse Life</German>
+		<Italian>Infuse Life</Italian>
+		<Spanish>Infuse Life</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFUSED_LIFE</Tag>
+        <English>Infused Life</English>
+		<French>Infused Life</French>
+		<German>Infused Life</German>
+		<Italian>Infused Life</Italian>
+		<Spanish>Infused Life</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SMOKE_SCREEN</Tag>
+        <English>Smoke Screen</English>
+		<French>Smoke Screen</French>
+		<German>Smoke Screen</German>
+		<Italian>Smoke Screen</Italian>
+		<Spanish>Smoke Screen</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HIDDEN_GOLEM</Tag>
+        <English>Hidden</English>
+		<French>Hidden</French>
+		<German>Hidden</German>
+		<Italian>Hidden</Italian>
+		<Spanish>Hidden</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_FIRE_GOLEM</Tag>
+        <English>Fire Oscillator</English>
+		<French>Fire Oscillator</French>
+		<German>Fire Oscillator</German>
+		<Italian>Fire Oscillator</Italian>
+		<Spanish>Fire Oscillator</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FIRE_FIST</Tag>
+        <English>Fire Fist</English>
+		<French>Fire Fist</French>
+		<German>Fire Fist</German>
+		<Italian>Fire Fist</Italian>
+		<Spanish>Fire Fist</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_IMPLANT_MANA</Tag>
+        <English>Implant Manashard</English>
+		<French>Implant Manashard</French>
+		<German>Implant Manashard</German>
+		<Italian>Implant Manashard</Italian>
+		<Spanish>Implant Manashard</Spanish>				
+    </TEXT>   			
+</Civ4GameText>

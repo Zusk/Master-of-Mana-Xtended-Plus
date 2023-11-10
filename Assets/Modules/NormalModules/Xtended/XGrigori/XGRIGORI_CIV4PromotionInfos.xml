@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<Civ4PromotionInfos xmlns="x-schema:XGRIGORI_CIV4UnitSchema.xml">
+    <PromotionInfos>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_AMURITES</Type>
+            <Description>Origin - Amurites</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_AUSTRIN</Type>
+            <Description>Origin - Austrin</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_BALSERAPHS</Type>
+            <Description>Origin - Balseraphs</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_BANNOR</Type>
+            <Description>Origin - Bannor</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_DOVIELLO</Type>
+            <Description>Origin - Doviello</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_ELOHIM</Type>
+            <Description>Origin - Elohim</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_MALAKIM</Type>
+            <Description>Origin - Malakim</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_SIDAR</Type>
+            <Description>Origin - Sidar</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_GRIGORI</Type>
+            <Description>Origin - Grigori</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_ORIGIN_HIPPUS</Type>
+            <Description>Origin - Hippus</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Modules/NormalModules/Xtended/XGrigori/Buttons/Origin.dds</Button>
+            <bRace>1</bRace>
+            <bGraphicalOnly>1</bGraphicalOnly>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

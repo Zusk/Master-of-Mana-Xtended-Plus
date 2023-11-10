@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Civ4GameText xmlns="http//www.firaxis.com">
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Events -->
+<!-- MAGIC OF EREBUS START -->
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUSTRIN_NOMAD</Tag>
+		<English>Nomads</English>
+		<French>Nomads</French>
+		<German>Nomads</German>
+		<Italian>Nomads</Italian>
+		<Spanish>Nomads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUSTRIN_NOMAD_PEDIA</Tag>
+		<English>Nomads, the Austrin was able to adapt with any kind of enviroment. They navigate through the deserts as easy as a walk in grassland, never needing road to connect their trade points.</English>
+		<French>Nomads, the Austrin was able to adapt with any kind of enviroment. They navigate through the deserts as easy as a walk in grassland, never needing road to connect their trade points</French>
+		<German>Nomads, the Austrin was able to adapt with any kind of enviroment. They navigate through the deserts as easy as a walk in grassland, never needing road to connect their trade points</German>
+		<Italian>Nomads, the Austrin was able to adapt with any kind of enviroment. They navigate through the deserts as easy as a walk in grassland, never needing road to connect their trade points</Italian>
+		<Spanish>Nomads, the Austrin was able to adapt with any kind of enviroment. They navigate through the deserts as easy as a walk in grassland, never needing road to connect their trade points</Spanish>
+	</TEXT>
+</Civ4GameText>

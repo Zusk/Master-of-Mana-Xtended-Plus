@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XSHEAIM_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_CONSUME_SOUL</Type>
+            <Description>TXT_KEY_SPELL_CONSUME_SOUL</Description>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_CONSUME_SOUL_HELP</Help>
+            <UnitPrereq>UNIT_EATER_OF_DREAMS</UnitPrereq>
+            <bInBordersOnly>1</bInBordersOnly>
+            <bInCityOnly>1</bInCityOnly>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bIgnoreHasCasted>1</bIgnoreHasCasted>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bRemoveHasCasted>1</bRemoveHasCasted>
+            <iChangePopulation>-1</iChangePopulation>
+            <Effect>EFFECT_WITHER</Effect>
+            <Sound>AS3D_SPELL_CONSUME_SOUL</Sound>
+            <Button>Modules/NormalModules/Xtended/XSheaim/Arts/Buttons/ConsumeSoul.dds</Button>
+			<iManaCost>-100</iManaCost>
+		</SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_DOMINATE_UNDEAD</Type>
+            <Description>Dominate Undead</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitCombatPrereq>UNITCOMBAT_ADEPT</UnitCombatPrereq>
+            <CivilizationPrereq>CIVILIZATION_SHEAIM</CivilizationPrereq>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+			<iAIWeight>999</iAIWeight>
+            <iRange>1</iRange>
+            <AddPromotionType1>PROMOTION_CHARMED</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <Effect>EFFECT_ENTANGLE</Effect>
+            <Sound>AS3D_SPELL_DOMINATION</Sound>
+            <Button>Modules/NormalModules/Xtended/XSheaim/Arts/Buttons/DominateSummon.dds</Button>
+			<bTargetedHostile>1</bTargetedHostile>			
+			<DamageSpellPrereqPromotion>PROMOTION_UNDEAD</DamageSpellPrereqPromotion>
+            <bDomination>1</bDomination>			
+			<iNumTargets>1</iNumTargets>			
+			<iManaCost>30</iManaCost>															
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SEDUCE</Type>
+            <Description>Seduce</Description>
+            <Civilopedia>TXT_KEY_SPELL_WAND_PEDIA</Civilopedia>
+            <UnitPrereq>UNIT_SUCCUBUS</UnitPrereq>
+            <bAbility>1</bAbility>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+            <iRange>1</iRange>
+            <iResistModify>20</iResistModify>
+            <AddPromotionType1>PROMOTION_CHARMED</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <bImmuneNotAlive>1</bImmuneNotAlive>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_CHARM_PERSON</Sound>
+            <Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,3,8</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iAIWeight>999</iAIWeight>
+			<iNumTargets>-1</iNumTargets>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_CLOSE_DEVIL_GATE_GOOD</Type>
+            <Description>Seal Devil Gate</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<PrereqAlignment>ALIGNMENT_GOOD</PrereqAlignment>
+			<ImprovementPrereq>IMPROVEMENT_DEVIL_PORTAL</ImprovementPrereq>
+			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
+			<Help>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_GOODX_HELP</Help>
+            <bAllowAI>1</bAllowAI>
+			<iAIWeight>999</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+           	<bAbility>1</bAbility>
+			<PyResult>__import__('CvDevils').spellCloseDevilGateGood(pCaster)</PyResult>
+			<PyRequirement>__import__('CvDevils').reqCloseDevilGateGood(pCaster)</PyRequirement>
+            <Effect>EFFECT_TURN_UNDEAD_SPELL</Effect>
+            <Sound>AS3D_SPELL_HOPE</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,4,11</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_CLOSE_DEVIL_GATE_NEUTRAL</Type>
+            <Description>Purge Devil Gate</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<PrereqAlignment>ALIGNMENT_NEUTRAL</PrereqAlignment>
+			<ImprovementPrereq>IMPROVEMENT_DEVIL_PORTAL</ImprovementPrereq>
+			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
+			<Help>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_NEUTRALX_HELP</Help>
+            <bAllowAI>1</bAllowAI>
+			<iAIWeight>999</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+           	<bAbility>1</bAbility>
+            <Effect>EFFECT_SPELL2</Effect>
+            <Sound>AS3D_SPELL_FIREBALL</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,6,11</Button>
+			<PyResult>__import__('CvDevils').spellCloseDevilGateNeutral(pCaster)</PyResult>
+			<PyRequirement>__import__('CvDevils').reqCloseDevilGateNeutral(pCaster)</PyRequirement>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_CLOSE_DEVIL_GATE_EVIL</Type>
+            <Description>Usurp Devil Power</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<PrereqAlignment>ALIGNMENT_EVIL</PrereqAlignment>
+			<ImprovementPrereq>IMPROVEMENT_DEVIL_PORTAL</ImprovementPrereq>
+			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
+			<Help>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_EVILX_HELP</Help>
+			<AddPromotionType1>PROMOTION_DEVIL_POWER</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAllowAI>1</bAllowAI>
+			<iAIWeight>999</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+           	<bAbility>1</bAbility>
+            <Effect>EFFECT_FIRESTORM_SPELL</Effect>
+            <Sound>AS3D_SPELL_DEFILE</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,5,11</Button>
+			<PyResult>__import__('CvDevils').spellCloseDevilGateEvil(pCaster)</PyResult>
+			<PyRequirement>__import__('CvDevils').reqCloseDevilGateEvil(pCaster)</PyRequirement>
+        </SpellInfo>    </SpellInfos>
+</Civ4SpellInfos>

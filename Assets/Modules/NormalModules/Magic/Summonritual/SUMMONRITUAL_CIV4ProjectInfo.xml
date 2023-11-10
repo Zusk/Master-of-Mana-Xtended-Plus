@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:SUMMONRITUAL_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_AIR_ELEMENTAL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_AIR_ELEMENTAL</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUMMON_AIR_ELEMENTAL_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_AIR_ELEMENTAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,2,3</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_AIR_ELEMENTAL</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_ANGEL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_ANGEL</Description>
+			<Civilopedia>TXT_KEY_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_ANGEL_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,2,4</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_GUARDIAN_ANGEL</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_AUREALIS</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_AUREALIS</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_AUREALIS</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,3,9</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_AUREALIS</TechPrereq>
+			<iManaCost>300</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_BALOR</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_BALOR</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_BALOR_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_BALOR_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,6,11</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_DARK_CREATURES3</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>	
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_CHAOS_MARAUDER</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_CHAOS_MARAUDER</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_CHAOS_MARAUDER</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,5,2</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_BERSERK</TechPrereq>
+			<iManaCost>200</iManaCost>
+		</ProjectInfo>						
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_CRUSADER</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_CRUSADER</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_CRUSADER_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,5,4</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_ALTAR_OF_BATTLE</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>				
+		<ProjectInfo>
+			<Type>PROJECT_SUMMON_DJINN</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_DJINN</Description>
+			<Civilopedia>TXT_KEY_UNIT_DJINN_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_DJINN</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,1,6</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_DJINN</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_EARTH_ELEMENTAL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_EARTH_ELEMENTAL</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_EARTH_ELEMENTAL_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_EARTH_ELEMENTAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,7,7</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_ELEMENTALS</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_ELEMENTAL_HORDE</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_ELEMENTAL_HORDE</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_ELEMENTAL_HORDE</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,7,6</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_ELEMENTALS3</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>				
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_FIRE_ELEMENTAL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_FIRE_ELEMENTAL</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_FIRE_ELEMENTAL_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_FIRE_ELEMENTAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,8,8</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_FIRE_ELEMENTAL</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_FLESH_GOLEM</Type>
+			<Description>TXT_KEY_PROJECT_SUMMON_FLESH_GOLEM</Description>
+			<Civilopedia>TXT_KEY_SPELL_GRAFT_FLESH_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_FLESH_GOLEM</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,4,9</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_FORBIDDEN_EXPERIMENTS</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_HOLY_AVENGER</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_HOLY_AVENGER</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_HOLY_AVENGER</SummonUnitType>			
+			<Button>Art/Interface/Buttons/Units/Holyavenger.dds</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_ANGELS3</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_EINHERJAR</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_EINHERJAR</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_EINHERJAR_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_EINHERJAR</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,2,8</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_HEROIC_VALOR</TechPrereq>
+			<iManaCost>300</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_ICE_ELEMENTAL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_ICE_ELEMENTAL</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_ICE_ELEMENTAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas3.dds,8,1</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_ELEMENTALS2</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_MISTFORM</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_MISTFORM</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_MISTFORM</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas3.dds,8,10</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_MISTFORM</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_PIT_BEAST</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_PIT_BEAST</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_PIT_BEAST_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_PIT_BEAST</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas3.dds,1,15</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_DARK_CREATURES2</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_SAND_LION</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_SAND_LION</Description>
+			<Civilopedia>TXT_KEY_UNIT_SAND_LION_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_SAND_LION</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,6,2</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_SAND_LION</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_SUMMON_SKELETON</Type>
+			<Description>TXT_KEY_PROJECT_SUMMON_SKELETON</Description>
+			<Civilopedia>TXT_KEY_SPELL_RAISE_SKELETON_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_SKELETON_RITUAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,6,9</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_SKELETONS</TechPrereq>
+			<iManaCost>200</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_SPECTRE</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_SPECTRE</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUMMON_SPECTRE_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_SPECTRE_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,4,7</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_SPECTRE</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_TIGER</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_TIGER</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_TIGER_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_TIGER_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,6,9</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_TIGER</TechPrereq>
+			<iManaCost>300</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_TREANT</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_TREANT</Description>
+            <Civilopedia>TXT_KEY_SPELL_SUMMON_TREANT_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_TREANT_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,7,9</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>TECH_HIDDEN_PATHS</TechPrereq>
+			<iFaithCost>300</iFaithCost>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_SUMMON_VYRKUL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_VYRKUL</Description>
+            <Civilopedia>TXT_KEY_UNIT_VYRKUL_PEDIA</Civilopedia>
+			<iMaxTeamInstances>1</iMaxTeamInstances>
+			<SummonUnitType>UNIT_VYRKUL</SummonUnitType>			
+			<Button>Art/Interface/Buttons/Units/Vyrkul.dds</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_RIFT_GREATER</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_SUMMON_WAR_BEAR</Type>
+			<Description>Summon War Bears</Description>
+			<Civilopedia></Civilopedia>
+			<SummonUnitType>UNIT_WAR_BEAR</SummonUnitType>			
+			<Button>Art/Interface/Buttons/Units/Bear.dds</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_TAMED_WILDERNESS</TechPrereq>
+			<iManaCost>400</iManaCost>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_SUMMON_WOLF_PACK</Type>
+			<Description>Summon Wolf Pack</Description>
+			<Civilopedia></Civilopedia>
+			<SummonUnitType>UNIT_WOLF_SUMMON</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,1,15</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_NATURE_CALL</TechPrereq>
+			<iManaCost>200</iManaCost>
+		</ProjectInfo>		
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_WATER_ELEMENTAL</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_WATER_ELEMENTAL</Description>
+			<Civilopedia>TXT_KEY_UNIT_WATER_ELEMENTAL_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_WATER_ELEMENTAL</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_atlas4.dds,3,14</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_WATER_MASTERY</TechPrereq>
+			<iManaCost>300</iManaCost>
+		</ProjectInfo>				
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_WRAITH</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_WRAITH</Description>
+			<Civilopedia>TXT_KEY_SPELL_SUMMON_WRAITH_PEDIA</Civilopedia>
+			<SummonUnitType>UNIT_WRAITH</SummonUnitType>			
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas4.dds,5,16</Button>			
+			<iCost>-1</iCost>
+			<TechPrereq>SPELLRESEARCH_WRAITH</TechPrereq>
+			<iManaCost>500</iManaCost>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:Frozen_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_CALL_BLIZZARD</Type>
+            <bTypeDependency>1</bTypeDependency>
+			<PromotionPrereq1>PROMOTION_BLIZZARD_CALLER</PromotionPrereq1>
+			<UnitClassPrereq>NONE</UnitClassPrereq>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_WINTERING</Type>
+            <Description>TXT_KEY_SPELL_WINTERING</Description>
+            <Civilopedia>TXT_KEY_SPELL_WINTERING_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_WINTERING_HELP</Help>
+            <CivilizationPrereq>CIVILIZATION_FROZEN</CivilizationPrereq>
+            <TechPrereq>TECH_SORCERY</TechPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bGlobal>1</bGlobal>
+            <iAIWeight>50</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<PyResult>__import__('frozen').spellWintering(pCaster)</PyResult>
+			<PyRequirement>__import__('frozen').reqWintering(pCaster)</PyRequirement>
+            <Effect>EFFECT_SNOWFALL</Effect>
+            <Sound>AS3D_SPELL_EARTHQUAKE</Sound>
+            <Button>Art/Interface/Buttons/Spells/Wintering.dds</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_PASSIVE_SNOW</Type>
+            <Description>TXT_KEY_SPELL_SNOWFALL</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_SNOWFALL_HELP</Help>
+            <UnitClassPrereq>UNITCLASS_AURIC_ASCENDED</UnitClassPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>0</bDisplayWhenDisabled>
+            <bIgnoreHasCasted>1</bIgnoreHasCasted>
+            <PyRequirement>__import__('frozen').spellSnowfallPassive(pCaster)</PyRequirement>
+            <Effect>EFFECT_SNOWFALL_GREATOR</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,1,11</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_FREEZE_FOREST</Type>
+            <Description>TXT_KEY_SPELL_FREEZE_FOREST</Description>
+            <Civilopedia>TXT_KEY_SPELL_FREEZE_FOREST_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_FREEZE_FOREST_HELP</Help>
+            <UnitPrereq>UNIT_ICE_DRUID</UnitPrereq>
+            <bAllowAI>1</bAllowAI>
+			<bCausesWar>1</bCausesWar>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <PyResult>__import__('frozen').spellFreezeForest(pCaster)</PyResult>
+            <PyRequirement>__import__('frozen').reqFreezeForest(pCaster)</PyRequirement>
+            <Effect>EFFECT_SNOWFALL</Effect>
+            <Sound>AS3D_SPELL_DEFILE</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,7,12</Button>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

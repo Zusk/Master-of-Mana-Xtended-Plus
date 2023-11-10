@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_FIRESTORM_DEVIL</Tag>
+        <English>Firestorm</English>
+        <French>Firestorm</French>
+        <German>Firestorm</German>
+        <Italian>Firestorm</Italian>
+        <Spanish>Firestorm</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_FIREBALL_DEVIL</Tag>
+        <English>Fireball</English>
+        <French>Fireball</French>
+        <German>Fireball</German>
+        <Italian>Fireball</Italian>
+        <Spanish>Fireball</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_DEVIL_MELEE</Tag>
+        <English>Barbazu</English>
+        <French>Barbazu</French>
+        <German>Barbazu</German>
+        <Italian>Barbazu</Italian>
+        <Spanish>Barbazu</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_DEVIL_CASTER</Tag>
+        <English>Xerfilstyx</English>
+        <French>Xerfilstyx</French>
+        <German>Xerfilstyx</German>
+        <Italian>Xerfilstyx</Italian>
+        <Spanish>Xerfilstyx</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEVIL</Tag>
+        <English>Devil</English>
+        <French>Devil</French>
+        <German>Devil</German>
+        <Italian>Devil</Italian>
+        <Spanish>Devil</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEVIL_HELP</Tag>
+        <English>[ICON_BULLET]Increases in combat strength when the Armageddon Counter rises.</English>
+        <French>[ICON_BULLET]Increases in combat strength when the Armageddon Counter rises.</French>
+        <German>[ICON_BULLET]Increases in combat strength when the Armageddon Counter rises.</German>
+        <Italian>[ICON_BULLET]Increases in combat strength when the Armageddon Counter rises.</Italian>
+        <Spanish>[ICON_BULLET]Increases in combat strength when the Armageddon Counter rises.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEVIL_PORTAL</Tag>
+        <English>Portal to Hell</English>
+        <French>Portal to Hell</French>
+        <German>Portal to Hell</German>
+        <Italian>Portal to Hell</Italian>
+        <Spanish>Portal to Hell</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_DEVIL_HEAVY_MELEE</Tag>
+        <English>Nupperibo</English>
+        <French>Nupperibo</French>
+        <German>Nupperibo</German>
+        <Italian>Nupperibo</Italian>
+        <Spanish>Nupperibo</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_DEVIL_DISCIPLE</Tag>
+        <English>Advespa</English>
+        <French>Advespa</French>
+        <German>Advespa</German>
+        <Italian>Advespa</Italian>
+        <Spanish>Advespa</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_GOOD</Tag>
+        <English>Purge the Gate</English>
+        <French>Purge the Gate</French>
+        <German>Purge the Gate</German>
+        <Italian>Purge the Gate</Italian>
+        <Spanish>Purge the Gate</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_NEUTRAL</Tag>
+        <English>Usurp Infernal Powers</English>
+        <French>Usurp Infernal Powers</French>
+        <German>Usurp Infernal Powers</German>
+        <Italian>Usurp Infernal Powers</Italian>
+        <Spanish>Usurp Infernal Powers</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_EVIL</Tag>
+        <English>Close the Gate</English>
+        <French>Close the Gate</French>
+        <German>Close the Gate</German>
+        <Italian>Close the Gate</Italian>
+        <Spanish>Close the Gate</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_GOOD_HELP</Tag>
+        <English>[ICON_BULLET]Gain 1000 Faith[NEWLINE][ICON_BULLET]Reduce the Armageddon Counter by 20[NEWLINE][ICON_BULLET]Changes your Alignment to Good</English>
+        <French>[ICON_BULLET]Gain 1000 Faith[NEWLINE][ICON_BULLET]Reduce the Armageddon Counter by 20[NEWLINE][ICON_BULLET]Changes your Alignment to Good</French>
+        <German>[ICON_BULLET]Gain 1000 Faith[NEWLINE][ICON_BULLET]Reduce the Armageddon Counter by 20[NEWLINE][ICON_BULLET]Changes your Alignment to Good</German>
+        <Italian>[ICON_BULLET]Gain 1000 Faith[NEWLINE][ICON_BULLET]Reduce the Armageddon Counter by 20[NEWLINE][ICON_BULLET]Changes your Alignment to Good</Italian>
+        <Spanish>[ICON_BULLET]Gain 1000 Faith[NEWLINE][ICON_BULLET]Reduce the Armageddon Counter by 20[NEWLINE][ICON_BULLET]Changes your Alignment to Good</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_NEUTRAL_HELP</Tag>
+        <English>[ICON_BULLET]Gain the ability to cast Firestorms[NEWLINE][ICON_BULLET]Closes the Gate[NEWLINE][ICON_BULLET]Changes your Alignment to Evil</English>
+        <French>[ICON_BULLET]Gain the ability to cast Firestorms[NEWLINE][ICON_BULLET]Closes the Gate[NEWLINE][ICON_BULLET]Changes your Alignment to Evil</French>
+        <German>[ICON_BULLET]Gain the ability to cast Firestorms[NEWLINE][ICON_BULLET]Closes the Gate[NEWLINE][ICON_BULLET]Changes your Alignment to Evil</German>
+        <Italian>[ICON_BULLET]Gain the ability to cast Firestorms[NEWLINE][ICON_BULLET]Closes the Gate[NEWLINE][ICON_BULLET]Changes your Alignment to Evil</Italian>
+        <Spanish>[ICON_BULLET]Gain the ability to cast Firestorms[NEWLINE][ICON_BULLET]Closes the Gate[NEWLINE][ICON_BULLET]Changes your Alignment to Evil</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CLOSE_DEVIL_GATE_EVIL_HELP</Tag>
+        <English>[ICON_BULLET]Gain 1000 Mana</English>
+        <French>[ICON_BULLET]Gain 1000 Mana</French>
+        <German>[ICON_BULLET]Gain 1000 Mana</German>
+        <Italian>[ICON_BULLET]Gain 1000 Mana</Italian>
+        <Spanish>[ICON_BULLET]Gain 1000 Mana</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEVIL_POWER</Tag>
+        <English>Torch of the Abyss</English>
+        <French>Torch of the Abyss</French>
+        <German>Torch of the Abyss</German>
+        <Italian>Torch of the Abyss</Italian>
+        <Spanish>Torch of the Abyss</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_DEVILI</Tag>
+        <English>Advanced Gating I</English>
+        <French>Advanced Gating I</French>
+        <German>Advanced Gating I</German>
+        <Italian>Advanced Gating I</Italian>
+        <Spanish>Advanced Gating I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_DEVILII</Tag>
+        <English>Advanced Gating II</English>
+        <French>Advanced Gating II</French>
+        <German>Advanced Gating II</German>
+        <Italian>Advanced Gating II</Italian>
+        <Spanish>Advanced Gating II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_SUMMON_DEVILIII</Tag>
+        <English>Advanced Gating III</English>
+        <French>Advanced Gating III</French>
+        <German>Advanced Gating III</German>
+        <Italian>Advanced Gating III</Italian>
+        <Spanish>Advanced Gating III</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_DEVIL_PEDIA</Tag>
+        <English>The intrusion of the Devils into Erebus has a lasting corrupting influence on the world. The Sheaim, seeking its destruction, are therefore natural supporters of the Devils. Being masters in the arts of Dimensional Magic they have the ability to gate additional Devils into Erebus.</English>
+        <French>The intrusion of the Devils into Erebus has a lasting corrupting influence on the world. The Sheaim, seeking its destruction, are therefore natural supporters of the Devils. Being masters in the arts of Dimensional Magic they have the ability to gate additional Devils into Erebus.</French>
+        <German>The intrusion of the Devils into Erebus has a lasting corrupting influence on the world. The Sheaim, seeking its destruction, are therefore natural supporters of the Devils. Being masters in the arts of Dimensional Magic they have the ability to gate additional Devils into Erebus.</German>
+        <Italian>The intrusion of the Devils into Erebus has a lasting corrupting influence on the world. The Sheaim, seeking its destruction, are therefore natural supporters of the Devils. Being masters in the arts of Dimensional Magic they have the ability to gate additional Devils into Erebus.</Italian>
+        <Spanish>The intrusion of the Devils into Erebus has a lasting corrupting influence on the world. The Sheaim, seeking its destruction, are therefore natural supporters of the Devils. Being masters in the arts of Dimensional Magic they have the ability to gate additional Devils into Erebus.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_DEVIL_INFO</Tag>
+        <English>With Hyborem invading Erebus, a rival faction from hell has arrived. Because they look quite distinct from the Demons following Hyborem our people call them Devils, although such a distinction might be misleading as they are still creatures from the Vaults of Hell. We don't know of the internal power struggles, what we do know is that their presence will corrupt Erebus even faster. Defeating them and closing their Gates will yield an significant reward. You are good advised by fortifying your realm and getting resistance to fire for your troops.</English>
+        <French>With Hyborem invading Erebus, a rival faction from hell has arrived. Because they look quite distinct from the Demons following Hyborem our people call them Devils, although such a distinction might be misleading as they are still creatures from the Vaults of Hell. We don't know of the internal power struggles, what we do know is that their presence will corrupt Erebus even faster. Defeating them and closing their Gates will yield an significant reward. You are good advised by fortifying your realm and getting resistance to fire for your troops.</French>
+        <German>With Hyborem invading Erebus, a rival faction from hell has arrived. Because they look quite distinct from the Demons following Hyborem our people call them Devils, although such a distinction might be misleading as they are still creatures from the Vaults of Hell. We don't know of the internal power struggles, what we do know is that their presence will corrupt Erebus even faster. Defeating them and closing their Gates will yield an significant reward. You are good advised by fortifying your realm and getting resistance to fire for your troops.</German>
+        <Italian>With Hyborem invading Erebus, a rival faction from hell has arrived. Because they look quite distinct from the Demons following Hyborem our people call them Devils, although such a distinction might be misleading as they are still creatures from the Vaults of Hell. We don't know of the internal power struggles, what we do know is that their presence will corrupt Erebus even faster. Defeating them and closing their Gates will yield an significant reward. You are good advised by fortifying your realm and getting resistance to fire for your troops.</Italian>
+        <Spanish>With Hyborem invading Erebus, a rival faction from hell has arrived. Because they look quite distinct from the Demons following Hyborem our people call them Devils, although such a distinction might be misleading as they are still creatures from the Vaults of Hell. We don't know of the internal power struggles, what we do know is that their presence will corrupt Erebus even faster. Defeating them and closing their Gates will yield an significant reward. You are good advised by fortifying your realm and getting resistance to fire for your troops.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_DEVIL_INFO_SHEAIM</Tag>
+        <English>With Hyborem invading Erebus, a rival faction from hell has arrived. Their Presence is corrupting Erebus and therefore they are our natural allies. Being master of Dimensional Magic we can summon additional reinforcements for them as long as the world is getting more and more corrupted. Since they came to Erebus to fight Hyborem and his followers we assume this is an internal power struggle. The foolish peasants of the other civilizations call them Devils for their different look and they also don't understand that wars between demon lords are fairly common. We can either decide to help them and thus accelerating the end of the world or we could wage war on them and gain a significant reward for closing the gate.</English>
+        <French>With Hyborem invading Erebus, a rival faction from hell has arrived. Their Presence is corrupting Erebus and therefore they are our natural allies. Being master of Dimensional Magic we can summon additional reinforcements for them as long as the world is getting more and more corrupted. Since they came to Erebus to fight Hyborem and his followers we assume this is an internal power struggle. The foolish peasants of the other civilizations call them Devils for their different look and they also don't understand that wars between demon lords are fairly common. We can either decide to help them and thus accelerating the end of the world or we could wage war on them and gain a significant reward for closing the gate.</French>
+        <German>With Hyborem invading Erebus, a rival faction from hell has arrived. Their Presence is corrupting Erebus and therefore they are our natural allies. Being master of Dimensional Magic we can summon additional reinforcements for them as long as the world is getting more and more corrupted. Since they came to Erebus to fight Hyborem and his followers we assume this is an internal power struggle. The foolish peasants of the other civilizations call them Devils for their different look and they also don't understand that wars between demon lords are fairly common. We can either decide to help them and thus accelerating the end of the world or we could wage war on them and gain a significant reward for closing the gate.</German>
+        <Italian>With Hyborem invading Erebus, a rival faction from hell has arrived. Their Presence is corrupting Erebus and therefore they are our natural allies. Being master of Dimensional Magic we can summon additional reinforcements for them as long as the world is getting more and more corrupted. Since they came to Erebus to fight Hyborem and his followers we assume this is an internal power struggle. The foolish peasants of the other civilizations call them Devils for their different look and they also don't understand that wars between demon lords are fairly common. We can either decide to help them and thus accelerating the end of the world or we could wage war on them and gain a significant reward for closing the gate.</Italian>
+        <Spanish>With Hyborem invading Erebus, a rival faction from hell has arrived. Their Presence is corrupting Erebus and therefore they are our natural allies. Being master of Dimensional Magic we can summon additional reinforcements for them as long as the world is getting more and more corrupted. Since they came to Erebus to fight Hyborem and his followers we assume this is an internal power struggle. The foolish peasants of the other civilizations call them Devils for their different look and they also don't understand that wars between demon lords are fairly common. We can either decide to help them and thus accelerating the end of the world or we could wage war on them and gain a significant reward for closing the gate.</Spanish>
+    </TEXT>
+</Civ4GameText>

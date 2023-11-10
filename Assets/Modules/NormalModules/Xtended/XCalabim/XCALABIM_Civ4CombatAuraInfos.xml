@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:XHERO_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>	
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_BLACK_LORD</CombatAuraClassType>
+			<Type>COMBATAURA_BLACK_LORD</Type>
+			<bBlessing>1</bBlessing>
+			<PrereqPromotion>PROMOTION_UNDEAD</PrereqPromotion>
+			<iRange>1</iRange>
+			<iTargets>6</iTargets>
+			<iTier>4</iTier>
+			<iHealing>3</iHealing>
+			<Button>Modules/NormalModules/Xtended/XCalabim/Arts/Buttons/BlackLord.dds</Button>
+		</CombatAuraInfo>		
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

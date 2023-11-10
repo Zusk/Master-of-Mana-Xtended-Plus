@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_LURID_AGITATION</Tag>
+        <English>Eternal Reign</English>
+        <French>Eternal Reign</French>
+        <German>Eternal Reign</German>
+        <Italian>Eternal Reign</Italian>
+        <Spanish>Eternal Reign</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOULDRINKER</Tag>
+        <English>Souldrinker</English>
+        <French>Souldrinker</French>
+        <German>Souldrinker</German>
+        <Italian>Souldrinker</Italian>
+        <Spanish>Souldrinker</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOULDRINKER_HELP</Tag>
+        <English>[ICON_BULLET]Recieve additional [COLOR_TECH_TEXT]Souls[COLOR_REVERT] from combat[NEWLINE][ICON_BULLET]Gain [LINK=PROMOTION_MURDEROUS_FRENZY1]Murderous Frenzy[\LINK] from combat</English>
+        <French>[ICON_BULLET]Recieve additional [COLOR_TECH_TEXT]Souls[COLOR_REVERT] from combat[NEWLINE][ICON_BULLET]Gain [LINK=PROMOTION_MURDEROUS_FRENZY1]Murderous Frenzy[\LINK] from combat</French>
+        <German>[ICON_BULLET]Recieve additional [COLOR_TECH_TEXT]Souls[COLOR_REVERT] from combat[NEWLINE][ICON_BULLET]Gain [LINK=PROMOTION_MURDEROUS_FRENZY1]Murderous Frenzy[\LINK] from combat</German>
+        <Italian>[ICON_BULLET]Recieve additional [COLOR_TECH_TEXT]Souls[COLOR_REVERT] from combat[NEWLINE][ICON_BULLET]Gain [LINK=PROMOTION_MURDEROUS_FRENZY1]Murderous Frenzy[\LINK] from combat</Italian>
+        <Spanish>[ICON_BULLET]Recieve additional [COLOR_TECH_TEXT]Souls[COLOR_REVERT] from combat[NEWLINE][ICON_BULLET]Gain [LINK=PROMOTION_MURDEROUS_FRENZY1]Murderous Frenzy[\LINK] from combat</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNDEAD_DRAGON</Tag>
+        <English>Undead Dragon</English>
+        <French>Undead Dragon</French>
+        <German>Undead Dragon</German>
+        <Italian>Undead Dragon</Italian>
+        <Spanish>Undead Dragon</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SOUL_HARVEST_PEDIA</Tag>
+        <English> [PARAGRAPH:1] "It was the only task I would undertake. [PARAGRAPH:1] To reap the harvest that was mine, [PARAGRAPH:1] and left me helpless in your embrace. [PARAGRAPH:1] The bond we never spoke of, once stark and enticing, [PARAGRAPH:1] now slowly smoldering to dust. [PARAGRAPH:1]  [PARAGRAPH:1] The everlasting touch, from grey to black. [PARAGRAPH:1] A fathomless void enclosing. [PARAGRAPH:1] Unwritten beneath the cobwebs. [PARAGRAPH:1] I can not endure. [PARAGRAPH:1]  [PARAGRAPH:1] And so I rose from my sleep. [PARAGRAPH:1] The moon turned away its face. [PARAGRAPH:1] Overture of the long, black night begins... [PARAGRAPH:1]  [PARAGRAPH:1] Until now we have shared the same aura. [PARAGRAPH:1] Your ashes within my hands. [PARAGRAPH:1]  [PARAGRAPH:1] My breath in the speculchral mound. [PARAGRAPH:1] You know that your night is my day. [PARAGRAPH:1] That final spark that blew life into me." [PARAGRAPH:1] -O.</English>
+        <French> [PARAGRAPH:1] "It was the only task I would undertake. [PARAGRAPH:1] To reap the harvest that was mine, [PARAGRAPH:1] and left me helpless in your embrace. [PARAGRAPH:1] The bond we never spoke of, once stark and enticing, [PARAGRAPH:1] now slowly smoldering to dust. [PARAGRAPH:1]  [PARAGRAPH:1] The everlasting touch, from grey to black. [PARAGRAPH:1] A fathomless void enclosing. [PARAGRAPH:1] Unwritten beneath the cobwebs. [PARAGRAPH:1] I can not endure. [PARAGRAPH:1]  [PARAGRAPH:1] And so I rose from my sleep. [PARAGRAPH:1] The moon turned away its face. [PARAGRAPH:1] Overture of the long, black night begins... [PARAGRAPH:1]  [PARAGRAPH:1] Until now we have shared the same aura. [PARAGRAPH:1] Your ashes within my hands. [PARAGRAPH:1]  [PARAGRAPH:1] My breath in the speculchral mound. [PARAGRAPH:1] You know that your night is my day. [PARAGRAPH:1] That final spark that blew life into me." [PARAGRAPH:1] -O.</French>
+        <German> [PARAGRAPH:1] "It was the only task I would undertake. [PARAGRAPH:1] To reap the harvest that was mine, [PARAGRAPH:1] and left me helpless in your embrace. [PARAGRAPH:1] The bond we never spoke of, once stark and enticing, [PARAGRAPH:1] now slowly smoldering to dust. [PARAGRAPH:1]  [PARAGRAPH:1] The everlasting touch, from grey to black. [PARAGRAPH:1] A fathomless void enclosing. [PARAGRAPH:1] Unwritten beneath the cobwebs. [PARAGRAPH:1] I can not endure. [PARAGRAPH:1]  [PARAGRAPH:1] And so I rose from my sleep. [PARAGRAPH:1] The moon turned away its face. [PARAGRAPH:1] Overture of the long, black night begins... [PARAGRAPH:1]  [PARAGRAPH:1] Until now we have shared the same aura. [PARAGRAPH:1] Your ashes within my hands. [PARAGRAPH:1]  [PARAGRAPH:1] My breath in the speculchral mound. [PARAGRAPH:1] You know that your night is my day. [PARAGRAPH:1] That final spark that blew life into me." [PARAGRAPH:1] -O.</German>
+        <Italian> [PARAGRAPH:1] "It was the only task I would undertake. [PARAGRAPH:1] To reap the harvest that was mine, [PARAGRAPH:1] and left me helpless in your embrace. [PARAGRAPH:1] The bond we never spoke of, once stark and enticing, [PARAGRAPH:1] now slowly smoldering to dust. [PARAGRAPH:1]  [PARAGRAPH:1] The everlasting touch, from grey to black. [PARAGRAPH:1] A fathomless void enclosing. [PARAGRAPH:1] Unwritten beneath the cobwebs. [PARAGRAPH:1] I can not endure. [PARAGRAPH:1]  [PARAGRAPH:1] And so I rose from my sleep. [PARAGRAPH:1] The moon turned away its face. [PARAGRAPH:1] Overture of the long, black night begins... [PARAGRAPH:1]  [PARAGRAPH:1] Until now we have shared the same aura. [PARAGRAPH:1] Your ashes within my hands. [PARAGRAPH:1]  [PARAGRAPH:1] My breath in the speculchral mound. [PARAGRAPH:1] You know that your night is my day. [PARAGRAPH:1] That final spark that blew life into me." [PARAGRAPH:1] -O.</Italian>
+        <Spanish> [PARAGRAPH:1] "It was the only task I would undertake. [PARAGRAPH:1] To reap the harvest that was mine, [PARAGRAPH:1] and left me helpless in your embrace. [PARAGRAPH:1] The bond we never spoke of, once stark and enticing, [PARAGRAPH:1] now slowly smoldering to dust. [PARAGRAPH:1]  [PARAGRAPH:1] The everlasting touch, from grey to black. [PARAGRAPH:1] A fathomless void enclosing. [PARAGRAPH:1] Unwritten beneath the cobwebs. [PARAGRAPH:1] I can not endure. [PARAGRAPH:1]  [PARAGRAPH:1] And so I rose from my sleep. [PARAGRAPH:1] The moon turned away its face. [PARAGRAPH:1] Overture of the long, black night begins... [PARAGRAPH:1]  [PARAGRAPH:1] Until now we have shared the same aura. [PARAGRAPH:1] Your ashes within my hands. [PARAGRAPH:1]  [PARAGRAPH:1] My breath in the speculchral mound. [PARAGRAPH:1] You know that your night is my day. [PARAGRAPH:1] That final spark that blew life into me." [PARAGRAPH:1] -O.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_DEATHS_EMBRACE_HELP</Tag>
+        <English>[ICON_BULLET]Decreases your relationship with all other civilizations.</English>
+        <French>[ICON_BULLET]Decreases your relationship with all other civilizations.</French>
+        <German>[ICON_BULLET]Decreases your relationship with all other civilizations.</German>
+        <Italian>[ICON_BULLET]Decreases your relationship with all other civilizations.</Italian>
+        <Spanish>[ICON_BULLET]Decreases your relationship with all other civilizations.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BONE_DRAKE</Tag>
+        <English>Dracolich</English>
+        <French>Dracolich</French>
+        <German>Dracolich</German>
+        <Italian>Dracolich</Italian>
+        <Spanish>Dracolich</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BONE_DRAKE_PEDIA</Tag>
+        <English> [PARAGRAPH:1] "Monolith of terror, [PARAGRAPH:1] Avatar of despair. [PARAGRAPH:1] The tormented air [PARAGRAPH:1] Writhes in dread [PARAGRAPH:1] At his malevolence. [PARAGRAPH:1]  [PARAGRAPH:1] Ruined form [PARAGRAPH:1] Desecration of life [PARAGRAPH:1] A hellish prison [PARAGRAPH:1] Of tortured flesh. [PARAGRAPH:1] The putrid stench [PARAGRAPH:1] Of eternal decay. [PARAGRAPH:1]  [PARAGRAPH:1] Abandon hope and [PARAGRAPH:1] Be torn asunder [PARAGRAPH:1] By the horror, [PARAGRAPH:1] The roiling despair. [PARAGRAPH:1]  [PARAGRAPH:1] Be plunged into [PARAGRAPH:1] The eternal void [PARAGRAPH:1] This inevitable oblivion. [PARAGRAPH:1]  [PARAGRAPH:1] Dread Overlord, [PARAGRAPH:1] Despair personified [PARAGRAPH:1] Fear incarnate." [PARAGRAPH:1] -J.A.</English>
+        <French> [PARAGRAPH:1] "Monolith of terror, [PARAGRAPH:1] Avatar of despair. [PARAGRAPH:1] The tormented air [PARAGRAPH:1] Writhes in dread [PARAGRAPH:1] At his malevolence. [PARAGRAPH:1]  [PARAGRAPH:1] Ruined form [PARAGRAPH:1] Desecration of life [PARAGRAPH:1] A hellish prison [PARAGRAPH:1] Of tortured flesh. [PARAGRAPH:1] The putrid stench [PARAGRAPH:1] Of eternal decay. [PARAGRAPH:1]  [PARAGRAPH:1] Abandon hope and [PARAGRAPH:1] Be torn asunder [PARAGRAPH:1] By the horror, [PARAGRAPH:1] The roiling despair. [PARAGRAPH:1]  [PARAGRAPH:1] Be plunged into [PARAGRAPH:1] The eternal void [PARAGRAPH:1] This inevitable oblivion. [PARAGRAPH:1]  [PARAGRAPH:1] Dread Overlord, [PARAGRAPH:1] Despair personified [PARAGRAPH:1] Fear incarnate." [PARAGRAPH:1] -J.A.</French>
+        <German> [PARAGRAPH:1] "Monolith of terror, [PARAGRAPH:1] Avatar of despair. [PARAGRAPH:1] The tormented air [PARAGRAPH:1] Writhes in dread [PARAGRAPH:1] At his malevolence. [PARAGRAPH:1]  [PARAGRAPH:1] Ruined form [PARAGRAPH:1] Desecration of life [PARAGRAPH:1] A hellish prison [PARAGRAPH:1] Of tortured flesh. [PARAGRAPH:1] The putrid stench [PARAGRAPH:1] Of eternal decay. [PARAGRAPH:1]  [PARAGRAPH:1] Abandon hope and [PARAGRAPH:1] Be torn asunder [PARAGRAPH:1] By the horror, [PARAGRAPH:1] The roiling despair. [PARAGRAPH:1]  [PARAGRAPH:1] Be plunged into [PARAGRAPH:1] The eternal void [PARAGRAPH:1] This inevitable oblivion. [PARAGRAPH:1]  [PARAGRAPH:1] Dread Overlord, [PARAGRAPH:1] Despair personified [PARAGRAPH:1] Fear incarnate." [PARAGRAPH:1] -J.A.</German>
+        <Italian> [PARAGRAPH:1] "Monolith of terror, [PARAGRAPH:1] Avatar of despair. [PARAGRAPH:1] The tormented air [PARAGRAPH:1] Writhes in dread [PARAGRAPH:1] At his malevolence. [PARAGRAPH:1]  [PARAGRAPH:1] Ruined form [PARAGRAPH:1] Desecration of life [PARAGRAPH:1] A hellish prison [PARAGRAPH:1] Of tortured flesh. [PARAGRAPH:1] The putrid stench [PARAGRAPH:1] Of eternal decay. [PARAGRAPH:1]  [PARAGRAPH:1] Abandon hope and [PARAGRAPH:1] Be torn asunder [PARAGRAPH:1] By the horror, [PARAGRAPH:1] The roiling despair. [PARAGRAPH:1]  [PARAGRAPH:1] Be plunged into [PARAGRAPH:1] The eternal void [PARAGRAPH:1] This inevitable oblivion. [PARAGRAPH:1]  [PARAGRAPH:1] Dread Overlord, [PARAGRAPH:1] Despair personified [PARAGRAPH:1] Fear incarnate." [PARAGRAPH:1] -J.A.</Italian>
+        <Spanish> [PARAGRAPH:1] "Monolith of terror, [PARAGRAPH:1] Avatar of despair. [PARAGRAPH:1] The tormented air [PARAGRAPH:1] Writhes in dread [PARAGRAPH:1] At his malevolence. [PARAGRAPH:1]  [PARAGRAPH:1] Ruined form [PARAGRAPH:1] Desecration of life [PARAGRAPH:1] A hellish prison [PARAGRAPH:1] Of tortured flesh. [PARAGRAPH:1] The putrid stench [PARAGRAPH:1] Of eternal decay. [PARAGRAPH:1]  [PARAGRAPH:1] Abandon hope and [PARAGRAPH:1] Be torn asunder [PARAGRAPH:1] By the horror, [PARAGRAPH:1] The roiling despair. [PARAGRAPH:1]  [PARAGRAPH:1] Be plunged into [PARAGRAPH:1] The eternal void [PARAGRAPH:1] This inevitable oblivion. [PARAGRAPH:1]  [PARAGRAPH:1] Dread Overlord, [PARAGRAPH:1] Despair personified [PARAGRAPH:1] Fear incarnate." [PARAGRAPH:1] -J.A.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_UNDEAD_CITY</Tag>
+        <English>Undead City</English>
+        <French>Undead City</French>
+        <German>Undead City</German>
+        <Italian>Undead City</Italian>
+        <Spanish>Undead City</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_UNDEAD_CITY_HELP</Tag>
+        <English>[ICON_BULLET]An Undead City requires [COLOR_TECH_TEXT]Souls[COLOR_REVERT] instead of [ICON_FOOD] to grow.[NEWLINE][ICON_BULLET]No [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are added if city is [ICON_UNHAPPY].[NEWLINE][ICON_BULLET]Converts 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] from the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT] per turn.</English>
+        <French>[ICON_BULLET]An Undead City requires [COLOR_TECH_TEXT]Souls[COLOR_REVERT] instead of [ICON_FOOD] to grow.[NEWLINE][ICON_BULLET]No [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are added if city is [ICON_UNHAPPY].[NEWLINE][ICON_BULLET]Converts 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] from the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT] per turn.</French>
+        <German>[ICON_BULLET]An Undead City requires [COLOR_TECH_TEXT]Souls[COLOR_REVERT] instead of [ICON_FOOD] to grow.[NEWLINE][ICON_BULLET]No [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are added if city is [ICON_UNHAPPY].[NEWLINE][ICON_BULLET]Converts 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] from the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT] per turn.</German>
+        <Italian>[ICON_BULLET]An Undead City requires [COLOR_TECH_TEXT]Souls[COLOR_REVERT] instead of [ICON_FOOD] to grow.[NEWLINE][ICON_BULLET]No [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are added if city is [ICON_UNHAPPY].[NEWLINE][ICON_BULLET]Converts 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] from the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT] per turn.</Italian>
+        <Spanish>[ICON_BULLET]An Undead City requires [COLOR_TECH_TEXT]Souls[COLOR_REVERT] instead of [ICON_FOOD] to grow.[NEWLINE][ICON_BULLET]No [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are added if city is [ICON_UNHAPPY].[NEWLINE][ICON_BULLET]Converts 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] from the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT] per turn.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VAMPIRE_COUNT</Tag>
+        <English>Vampire Count</English>
+        <French>Vampire Count</French>
+        <German>Vampire Count</German>
+        <Italian>Vampire Count</Italian>
+        <Spanish>Vampire Count</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON1</Tag>
+        <English>Barrow Warrior</English>
+        <French>Barrow Warrior</French>
+        <German>Barrow Warrior</German>
+        <Italian>Barrow Warrior</Italian>
+        <Spanish>Barrow Warrior</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON_PEDIA</Tag>
+        <English>Skeleton Spearmen are very basic troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city attack capabilities.</English>
+        <French>Skeleton Spearmen are very basic troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city attack capabilities.</French>
+        <German>Skeleton Spearmen are very basic troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city attack capabilities.</German>
+        <Italian>Skeleton Spearmen are very basic troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city attack capabilities.</Italian>
+        <Spanish>Skeleton Spearmen are very basic troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city attack capabilities.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON2</Tag>
+        <English>Pale Protector</English>
+        <French>Pale Protector</French>
+        <German>Pale Protector</German>
+        <Italian>Pale Protector</Italian>
+        <Spanish>Pale Protector</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON3</Tag>
+        <English>Deathknell Cryptguard</English>
+        <French>Deathknell Cryptguard</French>
+        <German>Deathknell Cryptguard</German>
+        <Italian>Deathknell Cryptguard</Italian>
+        <Spanish>Deathknell Cryptguard</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON_ARCHER1</Tag>
+        <English>Barrow Archer</English>
+        <French>Barrow Archer</French>
+        <German>Barrow Archer</German>
+        <Italian>Barrow Archer</Italian>
+        <Spanish>Barrow Archer</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON_ARCHER_PEDIA</Tag>
+        <English>Skeleton Archers are weak ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city and hills defense and a stronger randed attack.</English>
+        <French>Skeleton Archers are weak ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city and hills defense and a stronger randed attack.</French>
+        <German>Skeleton Archers are weak ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city and hills defense and a stronger randed attack.</German>
+        <Italian>Skeleton Archers are weak ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city and hills defense and a stronger randed attack.</Italian>
+        <Spanish>Skeleton Archers are weak ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional city and hills defense and a stronger randed attack.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON_ARCHER2</Tag>
+        <English>Pale Warden</English>
+        <French>Pale Warden</French>
+        <German>Pale Warden</German>
+        <Italian>Pale Warden</Italian>
+        <Spanish>Pale Warden</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SKELETON_ARCHER3</Tag>
+        <English>Deathknell Cairnwatch</English>
+        <French>Deathknell Cairnwatch</French>
+        <German>Deathknell Cairnwatch</German>
+        <Italian>Deathknell Cairnwatch</Italian>
+        <Spanish>Deathknell Cairnwatch</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UNDEAD_HORSEMAN1</Tag>
+        <English>Barrow Horsemen</English>
+        <French>Barrow Horsemen</French>
+        <German>Barrow Horsemen</German>
+        <Italian>Barrow Horsemen</Italian>
+        <Spanish>Barrow Horsemen</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UNDEAD_HORSEMAN_PEDIA</Tag>
+        <English>Skeleton Horsemen are mediocre mounted troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</English>
+        <French>Skeleton Horsemen are mediocre mounted troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</French>
+        <German>Skeleton Horsemen are mediocre mounted troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</German>
+        <Italian>Skeleton Horsemen are mediocre mounted troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</Italian>
+        <Spanish>Skeleton Horsemen are mediocre mounted troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UNDEAD_HORSEMAN2</Tag>
+        <English>Deathknell Gravecharger</English>
+        <French>Deathknell Gravecharger</French>
+        <German>Deathknell Gravecharger</German>
+        <Italian>Deathknell Gravecharger</Italian>
+        <Spanish>Deathknell Gravecharger</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UNDEAD_HORSE_ARCHER1</Tag>
+        <English>Pale Rider</English>
+        <French>Pale Rider</French>
+        <German>Pale Rider</German>
+        <Italian>Pale Rider</Italian>
+        <Spanish>Pale Rider</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UNDEAD_HORSE_ARCHER_PEDIA</Tag>
+        <English>Skeleton Horse Archers are feeble ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</English>
+        <French>Skeleton Horse Archers are feeble ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</French>
+        <German>Skeleton Horse Archers are feeble ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</German>
+        <Italian>Skeleton Horse Archers are feeble ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</Italian>
+        <Spanish>Skeleton Horse Archers are feeble ranged troops, however they do not cost any upkeep and are easy to field. Any weapon of quality would be a waste on them. The Standard Bearer grants them additional maneuverability, allowing them to disengage from combat.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SETTLER_ACOLYTES</Tag>
+        <English>Acolytes</English>
+        <French>Acolytes</French>
+        <German>Acolytes</German>
+        <Italian>Acolytes</Italian>
+        <Spanish>Acolytes</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SETTLER_ACOLYTES_PEDIA</Tag>
+        <English>Acolytes are the founders of new cities for the Aristrakh. Instead of sending citizens to settle on undiscovered land, the Aristrakh send acolytes which can raise the remnants of warriors long gone and ordering them to build a city. The acolytes must stay in control of their minions and will no longer be available after founding of a new city.</English>
+        <French>Acolytes are the founders of new cities for the Aristrakh. Instead of sending citizens to settle on undiscovered land, the Aristrakh send acolytes which can raise the remnants of warriors long gone and ordering them to build a city. The acolytes must stay in control of their minions and will no longer be available after founding of a new city.</French>
+        <German>Acolytes are the founders of new cities for the Aristrakh. Instead of sending citizens to settle on undiscovered land, the Aristrakh send acolytes which can raise the remnants of warriors long gone and ordering them to build a city. The acolytes must stay in control of their minions and will no longer be available after founding of a new city.</German>
+        <Italian>Acolytes are the founders of new cities for the Aristrakh. Instead of sending citizens to settle on undiscovered land, the Aristrakh send acolytes which can raise the remnants of warriors long gone and ordering them to build a city. The acolytes must stay in control of their minions and will no longer be available after founding of a new city.</Italian>
+        <Spanish>Acolytes are the founders of new cities for the Aristrakh. Instead of sending citizens to settle on undiscovered land, the Aristrakh send acolytes which can raise the remnants of warriors long gone and ordering them to build a city. The acolytes must stay in control of their minions and will no longer be available after founding of a new city.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_ZOMBIES1</Tag>
+        <English>Walking Dead</English>
+        <French>Walking Dead</French>
+        <German>Walking Dead</German>
+        <Italian>Walking Dead</Italian>
+        <Spanish>Walking Dead</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_ZOMBIES1_PEDIA</Tag>
+        <English>Zombies are expendable "troops". Since they don't fight in a formation, but rather in an uncontrolled mob, every attempt at using terrain advantages or fighting in cities is futile. Their foul stench can be smelt miles away and paired with their slow movement every enemy has enough time to prepare for an attack. Their craving for flesh makes them good counters to animals.</English>
+        <French>Zombies are expendable "troops". Since they don't fight in a formation, but rather in an uncontrolled mob, every attempt at using terrain advantages or fighting in cities is futile. Their foul stench can be smelt miles away and paired with their slow movement every enemy has enough time to prepare for an attack. Their craving for flesh makes them good counters to animals.</French>
+        <German>Zombies are expendable "troops". Since they don't fight in a formation, but rather in an uncontrolled mob, every attempt at using terrain advantages or fighting in cities is futile. Their foul stench can be smelt miles away and paired with their slow movement every enemy has enough time to prepare for an attack. Their craving for flesh makes them good counters to animals.</German>
+        <Italian>Zombies are expendable "troops". Since they don't fight in a formation, but rather in an uncontrolled mob, every attempt at using terrain advantages or fighting in cities is futile. Their foul stench can be smelt miles away and paired with their slow movement every enemy has enough time to prepare for an attack. Their craving for flesh makes them good counters to animals.</Italian>
+        <Spanish>Zombies are expendable "troops". Since they don't fight in a formation, but rather in an uncontrolled mob, every attempt at using terrain advantages or fighting in cities is futile. Their foul stench can be smelt miles away and paired with their slow movement every enemy has enough time to prepare for an attack. Their craving for flesh makes them good counters to animals.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_ZOMBIES2</Tag>
+        <English>Zombies</English>
+        <French>Zombies</French>
+        <German>Zombies</German>
+        <Italian>Zombies</Italian>
+        <Spanish>Zombies</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_ZOMBIES3</Tag>
+        <English>Ghoul</English>
+        <French>Ghoul</French>
+        <German>Ghoul</German>
+        <Italian>Ghoul</Italian>
+        <Spanish>Ghoul</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ZOMBIE_MOB</Tag>
+        <English>Zombie Mob</English>
+        <French>Zombie Mob</French>
+        <German>Zombie Mob</German>
+        <Italian>Zombie Mob</Italian>
+        <Spanish>Zombie Mob</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_NIKEPHOROS</Tag>
+        <English>Nikephoros</English>
+        <French>Nikephoros</French>
+        <German>Nikephoros</German>
+        <Italian>Nikephoros</Italian>
+        <Spanish>Nikephoros</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_ADD_POPULATION_LOCAL1_PEDIA</Tag>
+        <English>[PARAGRAPH:1][PARAGRAPH:1]"Under night close[PARAGRAPH:1]Death rose to greet me.[PARAGRAPH:1]I turned, looked back,[PARAGRAPH:1]Though nothing beckoned[PARAGRAPH:1]No one cried or mourned.[PARAGRAPH:1][PARAGRAPH:1]Scorned by all,[PARAGRAPH:1]My fellow race,[PARAGRAPH:1]I shed the byes to empty space, then[PARAGRAPH:1]Gazed upon the stone face[PARAGRAPH:1]Of Death anon, and[PARAGRAPH:1]So chose my fate."</English>
+        <French>[PARAGRAPH:1][PARAGRAPH:1]"Under night close[PARAGRAPH:1]Death rose to greet me.[PARAGRAPH:1]I turned, looked back,[PARAGRAPH:1]Though nothing beckoned[PARAGRAPH:1]No one cried or mourned.[PARAGRAPH:1][PARAGRAPH:1]Scorned by all,[PARAGRAPH:1]My fellow race,[PARAGRAPH:1]I shed the byes to empty space, then[PARAGRAPH:1]Gazed upon the stone face[PARAGRAPH:1]Of Death anon, and[PARAGRAPH:1]So chose my fate."</French>
+        <German>[PARAGRAPH:1][PARAGRAPH:1]"Under night close[PARAGRAPH:1]Death rose to greet me.[PARAGRAPH:1]I turned, looked back,[PARAGRAPH:1]Though nothing beckoned[PARAGRAPH:1]No one cried or mourned.[PARAGRAPH:1][PARAGRAPH:1]Scorned by all,[PARAGRAPH:1]My fellow race,[PARAGRAPH:1]I shed the byes to empty space, then[PARAGRAPH:1]Gazed upon the stone face[PARAGRAPH:1]Of Death anon, and[PARAGRAPH:1]So chose my fate."</German>
+        <Italian>[PARAGRAPH:1][PARAGRAPH:1]"Under night close[PARAGRAPH:1]Death rose to greet me.[PARAGRAPH:1]I turned, looked back,[PARAGRAPH:1]Though nothing beckoned[PARAGRAPH:1]No one cried or mourned.[PARAGRAPH:1][PARAGRAPH:1]Scorned by all,[PARAGRAPH:1]My fellow race,[PARAGRAPH:1]I shed the byes to empty space, then[PARAGRAPH:1]Gazed upon the stone face[PARAGRAPH:1]Of Death anon, and[PARAGRAPH:1]So chose my fate."</Italian>
+        <Spanish>[PARAGRAPH:1][PARAGRAPH:1]"Under night close[PARAGRAPH:1]Death rose to greet me.[PARAGRAPH:1]I turned, looked back,[PARAGRAPH:1]Though nothing beckoned[PARAGRAPH:1]No one cried or mourned.[PARAGRAPH:1][PARAGRAPH:1]Scorned by all,[PARAGRAPH:1]My fellow race,[PARAGRAPH:1]I shed the byes to empty space, then[PARAGRAPH:1]Gazed upon the stone face[PARAGRAPH:1]Of Death anon, and[PARAGRAPH:1]So chose my fate."</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CIV_ARISTRAKH_DESC</Tag>
+        <English>Aristrakh</English>
+        <French>Aristrakh</French>
+        <German>Aristrakh</German>
+        <Italian>Aristrakh</Italian>
+        <Spanish>Aristrakh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CIV_ARISTRAKH_SHORT_DESC</Tag>
+        <English>Aristrakh</English>
+        <French>Aristrakh</French>
+        <German>Aristrakh</German>
+        <Italian>Aristrakh</Italian>
+        <Spanish>Aristrakh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CIV_ARISTRAKH_ADJECTIVE</Tag>
+        <English>Aristrakh</English>
+        <French>Aristrakh</French>
+        <German>Aristrakh</German>
+        <Italian>Aristrakh</Italian>
+        <Spanish>Aristrakh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_ARISTRAKH</Tag>
+        <English>Palace of the Aristrakh</English>
+        <French>Palace of the Aristrakh</French>
+        <German>Palace of the Aristrakh</German>
+        <Italian>Palace of the Aristrakh</Italian>
+        <Spanish>Palace of the Aristrakh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_ARISTRAKH_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 3.</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 3.</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 3.</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 3.</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 3.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_DEATH_MARCH</Tag>
+        <English>Death March</English>
+        <French>Death March</French>
+        <German>Death March</German>
+        <Italian>Death March</Italian>
+        <Spanish>Death March</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_DEATH_MARCH_HELP</Tag>
+        <English>[ICON_BULLET]Gives all your undead units the Death March promotion.</English>
+        <French>[ICON_BULLET]Gives all your undead units the Death March promotion.</French>
+        <German>[ICON_BULLET]Gives all your undead units the Death March promotion.</German>
+        <Italian>[ICON_BULLET]Gives all your undead units the Death March promotion.</Italian>
+        <Spanish>[ICON_BULLET]Gives all your undead units the Death March promotion.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_NIKEPHOROS</Tag>
+        <English>Nikephoros</English>
+        <French>Nikephoros</French>
+        <German>Nikephoros</German>
+        <Italian>Nikephoros</Italian>
+        <Spanish>Nikephoros</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_DEATHS_EMBRACE</Tag>
+        <English>Death's Embrace</English>
+        <French>Death's Embrace</French>
+        <German>Death's Embrace</German>
+        <Italian>Death's Embrace</Italian>
+        <Spanish>Death's Embrace</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_DEATHS_EMBRACE_HELP</Tag>
+        <English>[ICON_BULLET]Change your Calabim realm to the Vampires of the Aristrakh.</English>
+        <French>[ICON_BULLET]Change your Calabim realm to the Vampires of the Aristrakh.</French>
+        <German>[ICON_BULLET]Change your Calabim realm to the Vampires of the Aristrakh.</German>
+        <Italian>[ICON_BULLET]Change your Calabim realm to the Vampires of the Aristrakh.</Italian>
+        <Spanish>[ICON_BULLET]Change your Calabim realm to the Vampires of the Aristrakh.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_HAUNTED_ROADS</Tag>
+        <English>Haunted Roads</English>
+        <French>Haunted Roads</French>
+        <German>Haunted Roads</German>
+        <Italian>Haunted Roads</Italian>
+        <Spanish>Haunted Roads</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_DECAYING_SOIL</Tag>
+        <English>Decaying Soil</English>
+        <French>Decaying Soil</French>
+        <German>Decaying Soil</German>
+        <Italian>Decaying Soil</Italian>
+        <Spanish>Decaying Soil</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_MAUSOLEUM</Tag>
+        <English>Mausoleum</English>
+        <French>Mausoleum</French>
+        <German>Mausoleum</German>
+        <Italian>Mausoleum</Italian>
+        <Spanish>Mausoleum</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_UNHOLY_GLYPHS</Tag>
+        <English>Unholy Glyphs</English>
+        <French>Unholy Glyphs</French>
+        <German>Unholy Glyphs</German>
+        <Italian>Unholy Glyphs</Italian>
+        <Spanish>Unholy Glyphs</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BONE_CAGE</Tag>
+        <English>Bone Cage</English>
+        <French>Bone Cage</French>
+        <German>Bone Cage</German>
+        <Italian>Bone Cage</Italian>
+        <Spanish>Bone Cage</Spanish>		
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CATACOMBS</Tag>
+        <English>Catacombs</English>
+        <French>Catacombs</French>
+        <German>Catacombs</German>
+        <Italian>Catacombs</Italian>
+        <Spanish>Catacombs</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_SOUL_PRISON</Tag>
+        <English>Soulprison</English>
+        <French>Soulprison</French>
+        <German>Soulprison</German>
+        <Italian>Soulprison</Italian>
+        <Spanish>Soulprison</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_FORLORN_VAULT</Tag>
+        <English>Forlorn Vault</English>
+        <French>Forlorn Vault</French>
+        <German>Forlorn Vault</German>
+        <Italian>Forlorn Vault</Italian>
+        <Spanish>Forlorn Vault</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_HAUNTED_TOWER</Tag>
+        <English>Haunted Tower</English>
+        <French>Haunted Tower</French>
+        <German>Haunted Tower</German>
+        <Italian>Haunted Tower</Italian>
+        <Spanish>Haunted Tower</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_HALLS_OF_THE_DEAD</Tag>
+        <English>Halls of the Dead</English>
+        <French>Halls of the Dead</French>
+        <German>Halls of the Dead</German>
+        <Italian>Halls of the Dead</Italian>
+        <Spanish>Halls of the Dead</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BURIAL_MOUND</Tag>
+        <English>Burial Mound</English>
+        <French>Burial Mound</French>
+        <German>Burial Mound</German>
+        <Italian>Burial Mound</Italian>
+        <Spanish>Burial Mound</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_UNEARTHED_GRAVES</Tag>
+        <English>Unearthed Graves</English>
+        <French>Unearthed Graves</French>
+        <German>Unearthed Graves</German>
+        <Italian>Unearthed Graves</Italian>
+        <Spanish>Unearthed Graves</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_NIKEPHOROS_PEDIA</Tag>
+        <English>"So you took the long journey just to judge me. You left your petty castles in which you hide like mere animals. Let me ask you: Do you still lick your lips when a foreigner enters? Are you still getting nervous when the bootlicks of the Empyrean enter your so called cities? Do you still feel a lingering hunger after every feast you take?
+
+You want to judge me, but it is you being judged! The world judges you, for you are abominations in their eyes, an evil that needs to be put down. And I judge you for what you are: Cowards! You are being given the most marvelous gift in the whole of Erebus but still you let the jealousy of those lesser creatures impede on your true nature.
+I once was like you, filling the void inside me with endless nights feasting on the puppets in my realm, concealing my true nature from outsiders and myself and living with that disgust for i would not embrace my true nature.
+
+I give you a choice, do like i do or begone! There are only two ways: Be what you are or be swept away by the lesser races."
+
+
+Nikephoros was the first Calabim defector that would outright satisfy his hunger with the souls of his victims, not caring what other people might think. His disgust for the Calabim that still maintain their way of life is well known and an anathema to other leaders of the Calabim, although some secretly want to join him. It is his pride that gave him the courage to truly live as himself and it is his pride that might kill him for every other civilization despises the Aristrakh for either being an abomination on the face of the earth or a very dangerous opponent in their plans for domination.</English>
+        <French>"So you took the long journey just to judge me. You left your petty castles in which you hide like mere animals. Let me ask you: Do you still lick your lips when a foreigner enters? Are you still getting nervous when the bootlicks of the Empyrean enter your so called cities? Do you still feel a lingering hunger after every feast you take?
+
+You want to judge me, but is you being judged! The world judges you, for you are abominations in their eyes, an evil that needs to be put down. And I judge you for what you are: Cowards! You are being given the most marvelous gift in the whole of Erebus but still you let the jealousy of those lesser creatures impede on your true nature.
+I once was like you, filling the void inside me with endless nights feasting on the puppets in my realm, concealing my true nature from outsiders and myself and living with that disgust for i would not embrace my true nature.
+
+I give you a choice, do like i do or begone! There are only two ways: Be what you are or be swept away by the lesser races."
+
+
+Nikephoros was the first Calabim defector that would outright satisfy his hunger with the souls of his victims, not caring what other people might think. His disgust for the Calabim that still maintain their way of life is well known and an anathema to other leaders of the Calabim, although some secretly want to join him. It is his pride that gave him the courage to truly live as himself and it is his pride that might kill him for every other civilization despises the Aristrakh for either being an abomination on the face of the earth or a very dangerous opponent in their plans for domination.</French>
+        <German>"So you took the long journey just to judge me. You left your petty castles in which you hide like mere animals. Let me ask you: Do you still lick your lips when a foreigner enters? Are you still getting nervous when the bootlicks of the Empyrean enter your so called cities? Do you still feel a lingering hunger after every feast you take?
+
+You want to judge me, but is you being judged! The world judges you, for you are abominations in their eyes, an evil that needs to be put down. And I judge you for what you are: Cowards! You are being given the most marvelous gift in the whole of Erebus but still you let the jealousy of those lesser creatures impede on your true nature.
+I once was like you, filling the void inside me with endless nights feasting on the puppets in my realm, concealing my true nature from outsiders and myself and living with that disgust for i would not embrace my true nature.
+
+I give you a choice, do like i do or begone! There are only two ways: Be what you are or be swept away by the lesser races."
+
+
+Nikephoros was the first Calabim defector that would outright satisfy his hunger with the souls of his victims, not caring what other people might think. His disgust for the Calabim that still maintain their way of life is well known and an anathema to other leaders of the Calabim, although some secretly want to join him. It is his pride that gave him the courage to truly live as himself and it is his pride that might kill him for every other civilization despises the Aristrakh for either being an abomination on the face of the earth or a very dangerous opponent in their plans for domination.</German>
+        <Italian>"So you took the long journey just to judge me. You left your petty castles in which you hide like mere animals. Let me ask you: Do you still lick your lips when a foreigner enters? Are you still getting nervous when the bootlicks of the Empyrean enter your so called cities? Do you still feel a lingering hunger after every feast you take?
+
+You want to judge me, but is you being judged! The world judges you, for you are abominations in their eyes, an evil that needs to be put down. And I judge you for what you are: Cowards! You are being given the most marvelous gift in the whole of Erebus but still you let the jealousy of those lesser creatures impede on your true nature.
+I once was like you, filling the void inside me with endless nights feasting on the puppets in my realm, concealing my true nature from outsiders and myself and living with that disgust for i would not embrace my true nature.
+
+I give you a choice, do like i do or begone! There are only two ways: Be what you are or be swept away by the lesser races."
+
+
+Nikephoros was the first Calabim defector that would outright satisfy his hunger with the souls of his victims, not caring what other people might think. His disgust for the Calabim that still maintain their way of life is well known and an anathema to other leaders of the Calabim, although some secretly want to join him. It is his pride that gave him the courage to truly live as himself and it is his pride that might kill him for every other civilization despises the Aristrakh for either being an abomination on the face of the earth or a very dangerous opponent in their plans for domination.</Italian>
+        <Spanish>"So you took the long journey just to judge me. You left your petty castles in which you hide like mere animals. Let me ask you: Do you still lick your lips when a foreigner enters? Are you still getting nervous when the bootlicks of the Empyrean enter your so called cities? Do you still feel a lingering hunger after every feast you take?
+
+You want to judge me, but is you being judged! The world judges you, for you are abominations in their eyes, an evil that needs to be put down. And I judge you for what you are: Cowards! You are being given the most marvelous gift in the whole of Erebus but still you let the jealousy of those lesser creatures impede on your true nature.
+I once was like you, filling the void inside me with endless nights feasting on the puppets in my realm, concealing my true nature from outsiders and myself and living with that disgust for i would not embrace my true nature.
+
+I give you a choice, do like i do or begone! There are only two ways: Be what you are or be swept away by the lesser races."
+
+
+Nikephoros was the first Calabim defector that would outright satisfy his hunger with the souls of his victims, not caring what other people might think. His disgust for the Calabim that still maintain their way of life is well known and an anathema to other leaders of the Calabim, although some secretly want to join him. It is his pride that gave him the courage to truly live as himself and it is his pride that might kill him for every other civilization despises the Aristrakh for either being an abomination on the face of the earth or a very dangerous opponent in their plans for domination.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CIV_ARISTRAKH_PEDIA</Tag>
+        <English>[BOLD]Gameplay:[\BOLD][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=IMPROVEMENT_ADVENT_DARK_RITUAL]Economy: Consume World[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=UNIT_UD_GENERAL]Military: Undead Horde[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=BUILDING_UNDEAD_CITY]Population: Gather Souls[\LINK][NEWLINE][NEWLINE][BOLD]Lore:[\BOLD][NEWLINE]The Aristrakh are a group of Calabim defectors, lead by Nikephoros. Following his paradigm the Aristrakh strengthen their vampiric characteristics by consuming the life-force of their realm. Since there are only very few Airstrakh Vampires they have to make use of their necromantic powers to raise an army of undead and even their cities are inhabited by the walking dead. Being mere puppets of the will of their masters, those undead are average warriors at best. It is the endless horde of bones and rotting flesh that gives them their strength to compete with other civilizations. Once the Aristrakh Civilization has significantly progressed, it may attract more Vampires to join their ranks. Those Vampires are more powerful then any Calabim counterpart, or any other comparable creature for that matter. Once a Vampire ascends to Lordship he can use his daunting powers to control the terrifying Dracolich. Since no living creature dares to enter the realm of the Aristrakh, or only with the intend of purging them, Nikephoros taught the Aristrakh his powers to raise warriors of eons long ago to serve them. Doing so however is an affront to every other civilization for they either honor the dead or fear what may happen if the Aristrakh become too strong. Every significant undead army will nourish on the population of the Aristrakh cities, meaning that maintaining a powerful undead legion will most propably cause war with most races.</English>
+        <French>[BOLD]Gameplay:[\BOLD][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=IMPROVEMENT_ADVENT_DARK_RITUAL]Economy: Consume World[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=UNIT_UD_GENERAL]Military: Undead Horde[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=BUILDING_UNDEAD_CITY]Population: Gather Souls[\LINK][NEWLINE][NEWLINE][BOLD]Lore:[\BOLD][NEWLINE]The Aristrakh are a group of Calabim defectors, lead by Nikephoros. Following his paradigm the Aristrakh strengthen their vampiric characteristics by consuming the life-force of their realm. Since there are only very few Airstrakh Vampires they have to make use of their necromantic powers to raise an army of undead and even their cities are inhabited by the walking dead. Being mere puppets of the will of their masters, those undead are average warriors at best. It is the endless horde of bones and rotting flesh that gives them their strength to compete with other civilizations. Once the Aristrakh Civilization has significantly progressed, it may attract more Vampires to join their ranks. Those Vampires are more powerful then any Calabim counterpart, or any other comparable creature for that matter. Once a Vampire ascends to Lordship he can use his daunting powers to control the terrifying Dracolich. Since no living creature dares to enter the realm of the Aristrakh, or only with the intend of purging them, Nikephoros taught the Aristrakh his powers to raise warriors of eons long ago to serve them. Doing so however is an affront to every other civilization for they either honor the dead or fear what may happen if the Aristrakh become too strong. Every significant undead army will nourish on the population of the Aristrakh cities, meaning that maintaining a powerful undead legion will most propably cause war with most races</French>
+        <German>[BOLD]Gameplay:[\BOLD][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=IMPROVEMENT_ADVENT_DARK_RITUAL]Economy: Consume World[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=UNIT_UD_GENERAL]Military: Undead Horde[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=BUILDING_UNDEAD_CITY]Population: Gather Souls[\LINK][NEWLINE][NEWLINE][BOLD]Lore:[\BOLD][NEWLINE]The Aristrakh are a group of Calabim defectors, lead by Nikephoros. Following his paradigm the Aristrakh strengthen their vampiric characteristics by consuming the life-force of their realm. Since there are only very few Airstrakh Vampires they have to make use of their necromantic powers to raise an army of undead and even their cities are inhabited by the walking dead. Being mere puppets of the will of their masters, those undead are average warriors at best. It is the endless horde of bones and rotting flesh that gives them their strength to compete with other civilizations. Once the Aristrakh Civilization has significantly progressed, it may attract more Vampires to join their ranks. Those Vampires are more powerful then any Calabim counterpart, or any other comparable creature for that matter. Once a Vampire ascends to Lordship he can use his daunting powers to control the terrifying Dracolich. Since no living creature dares to enter the realm of the Aristrakh, or only with the intend of purging them, Nikephoros taught the Aristrakh his powers to raise warriors of eons long ago to serve them. Doing so however is an affront to every other civilization for they either honor the dead or fear what may happen if the Aristrakh become too strong. Every significant undead army will nourish on the population of the Aristrakh cities, meaning that maintaining a powerful undead legion will most propably cause war with most races</German>
+        <Italian>[BOLD]Gameplay:[\BOLD][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=IMPROVEMENT_ADVENT_DARK_RITUAL]Economy: Consume World[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=UNIT_UD_GENERAL]Military: Undead Horde[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=BUILDING_UNDEAD_CITY]Population: Gather Souls[\LINK][NEWLINE][NEWLINE][BOLD]Lore:[\BOLD][NEWLINE]The Aristrakh are a group of Calabim defectors, lead by Nikephoros. Following his paradigm the Aristrakh strengthen their vampiric characteristics by consuming the life-force of their realm. Since there are only very few Airstrakh Vampires they have to make use of their necromantic powers to raise an army of undead and even their cities are inhabited by the walking dead. Being mere puppets of the will of their masters, those undead are average warriors at best. It is the endless horde of bones and rotting flesh that gives them their strength to compete with other civilizations. Once the Aristrakh Civilization has significantly progressed, it may attract more Vampires to join their ranks. Those Vampires are more powerful then any Calabim counterpart, or any other comparable creature for that matter. Once a Vampire ascends to Lordship he can use his daunting powers to control the terrifying Dracolich. Since no living creature dares to enter the realm of the Aristrakh, or only with the intend of purging them, Nikephoros taught the Aristrakh his powers to raise warriors of eons long ago to serve them. Doing so however is an affront to every other civilization for they either honor the dead or fear what may happen if the Aristrakh become too strong. Every significant undead army will nourish on the population of the Aristrakh cities, meaning that maintaining a powerful undead legion will most propably cause war with most races</Italian>
+        <Spanish>[BOLD]Gameplay:[\BOLD][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=IMPROVEMENT_ADVENT_DARK_RITUAL]Economy: Consume World[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=UNIT_UD_GENERAL]Military: Undead Horde[\LINK][NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET][LINK=BUILDING_UNDEAD_CITY]Population: Gather Souls[\LINK][NEWLINE][NEWLINE][BOLD]Lore:[\BOLD][NEWLINE]The Aristrakh are a group of Calabim defectors, lead by Nikephoros. Following his paradigm the Aristrakh strengthen their vampiric characteristics by consuming the life-force of their realm. Since there are only very few Airstrakh Vampires they have to make use of their necromantic powers to raise an army of undead and even their cities are inhabited by the walking dead. Being mere puppets of the will of their masters, those undead are average warriors at best. It is the endless horde of bones and rotting flesh that gives them their strength to compete with other civilizations. Once the Aristrakh Civilization has significantly progressed, it may attract more Vampires to join their ranks. Those Vampires are more powerful then any Calabim counterpart, or any other comparable creature for that matter. Once a Vampire ascends to Lordship he can use his daunting powers to control the terrifying Dracolich. Since no living creature dares to enter the realm of the Aristrakh, or only with the intend of purging them, Nikephoros taught the Aristrakh his powers to raise warriors of eons long ago to serve them. Doing so however is an affront to every other civilization for they either honor the dead or fear what may happen if the Aristrakh become too strong. Every significant undead army will nourish on the population of the Aristrakh cities, meaning that maintaining a powerful undead legion will most propably cause war with most races</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_DEATHS_EMBRACE_PEDIA</Tag>
+        <English>Completing this ritual will kill all of your living nonvampirc units and change your civilization to the Aristrakh. Make sure to spread the gift of Vampirism to every unit possible and growing your cities to the fullest extend before finishing this ritual.</English>
+        <French>Completing this ritual will kill all of your living nonvampirc units and change your civilization to the Aristrakh. Make sure to spread the gift of Vampirism to every unit possible and growing your cities to the fullest extend before finishing this ritual.</French>
+        <German>Completing this ritual will kill all of your living nonvampirc units and change your civilization to the Aristrakh. Make sure to spread the gift of Vampirism to every unit possible and growing your cities to the fullest extend before finishing this ritual.</German>
+        <Italian>Completing this ritual will kill all of your living nonvampirc units and change your civilization to the Aristrakh. Make sure to spread the gift of Vampirism to every unit possible and growing your cities to the fullest extend before finishing this ritual.</Italian>
+        <Spanish>Completing this ritual will kill all of your living nonvampirc units and change your civilization to the Aristrakh. Make sure to spread the gift of Vampirism to every unit possible and growing your cities to the fullest extend before finishing this ritual.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MURDEROUS_FRENZY1</Tag>
+        <English>Murderous Frenzy I</English>
+        <French>Murderous Frenzy I</French>
+        <German>Murderous Frenzy I</German>
+        <Italian>Murderous Frenzy I</Italian>
+        <Spanish>Murderous Frenzy I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MURDEROUS_FRENZY2</Tag>
+        <English>Murderous Frenzy II</English>
+        <French>Murderous Frenzy II</French>
+        <German>Murderous Frenzy II</German>
+        <Italian>Murderous Frenzy II</Italian>
+        <Spanish>Murderous Frenzy II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MURDEROUS_FRENZY3</Tag>
+        <English>Murderous Frenzy III</English>
+        <French>Murderous Frenzy III</French>
+        <German>Murderous Frenzy III</German>
+        <Italian>Murderous Frenzy III</Italian>
+        <Spanish>Murderous Frenzy III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MURDEROUS_FRENZY4</Tag>
+        <English>Murderous Frenzy IV</English>
+        <French>Murderous Frenzy IV</French>
+        <German>Murderous Frenzy IV</German>
+        <Italian>Murderous Frenzy IV</Italian>
+        <Spanish>Murderous Frenzy IV</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MURDEROUS_FRENZY5</Tag>
+        <English>Murderous Frenzy V</English>
+        <French>Murderous Frenzy V</French>
+        <German>Murderous Frenzy V</German>
+        <Italian>Murderous Frenzy V</Italian>
+        <Spanish>Murderous Frenzy V</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BURIAL_MOUND_PEDIA</Tag>
+        <English>Almost all the civilizations of Erebus store their food during the harvest season in order to feed their people and their troops throughout the whole year. The Aristrakh however do not put as much stock in the "tasteless" things that the other civilizations seem to, instead they prefer their dining to be "fresh" ! The Vampire Lords bury the recently deceased in massive unmarked graves with the knowledge that the souls of the dead will return to their skeletal remains. The size and closeness of the bodies catalyzes the decomposing process at a much faster rate then what is "normal". As the dead rise, the labor force and the economy of the Aristrakh rises, this unusual phenomana is caused from the sleepless hours the laborers devote to their tasks.</English>
+        <French>Almost all the civilizations of Erebus store their food during the harvest season in order to feed their people and their troops throughout the whole year. The Aristrakh however do not put as much stock in the "tasteless" things that the other civilizations seem to, instead they prefer their dining to be "fresh" ! The Vampire Lords bury the recently deceased in massive unmarked graves with the knowledge that the souls of the dead will return to their skeletal remains. The size and closeness of the bodies catalyzes the decomposing process at a much faster rate then what is "normal". As the dead rise, the labor force and the economy of the Aristrakh rises, this unusual phenomana is caused from the sleepless hours the laborers devote to their tasks.</French>
+        <German>Almost all the civilizations of Erebus store their food during the harvest season in order to feed their people and their troops throughout the whole year. The Aristrakh however do not put as much stock in the "tasteless" things that the other civilizations seem to, instead they prefer their dining to be "fresh" ! The Vampire Lords bury the recently deceased in massive unmarked graves with the knowledge that the souls of the dead will return to their skeletal remains. The size and closeness of the bodies catalyzes the decomposing process at a much faster rate then what is "normal". As the dead rise, the labor force and the economy of the Aristrakh rises, this unusual phenomana is caused from the sleepless hours the laborers devote to their tasks.</German>
+        <Italian>Almost all the civilizations of Erebus store their food during the harvest season in order to feed their people and their troops throughout the whole year. The Aristrakh however do not put as much stock in the "tasteless" things that the other civilizations seem to, instead they prefer their dining to be "fresh" ! The Vampire Lords bury the recently deceased in massive unmarked graves with the knowledge that the souls of the dead will return to their skeletal remains. The size and closeness of the bodies catalyzes the decomposing process at a much faster rate then what is "normal". As the dead rise, the labor force and the economy of the Aristrakh rises, this unusual phenomana is caused from the sleepless hours the laborers devote to their tasks.</Italian>
+        <Spanish>Almost all the civilizations of Erebus store their food during the harvest season in order to feed their people and their troops throughout the whole year. The Aristrakh however do not put as much stock in the "tasteless" things that the other civilizations seem to, instead they prefer their dining to be "fresh" ! The Vampire Lords bury the recently deceased in massive unmarked graves with the knowledge that the souls of the dead will return to their skeletal remains. The size and closeness of the bodies catalyzes the decomposing process at a much faster rate then what is "normal". As the dead rise, the labor force and the economy of the Aristrakh rises, this unusual phenomana is caused from the sleepless hours the laborers devote to their tasks.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BONE_CAGE_PEDIA</Tag>
+        <English>As the enemy spies witness the atrocities and the oddities that occur within the Aristrakhithian cities, things such as the Bone Cage, the reports say there are piles of bones from the cage victims. This alone terrifies the foreign citizens who happen to find themselves within the city walls after dark. This Terror spreads to the the civilian populace of foreign nations and gives them reason to pause before attacking the powerful Vampire Lords, though the more "Righteous" may find this as Just-Cause as well. Though these bone piles may be shocking and strike fear into the hearts of an opposing nation's people, it also increases the cultural identity of Aristrakh by sheer terror. The Bones are the remains of brave warriors that lay in wait to be used by the vampire lords when they call upon their hordes of the undead. The Vampire Lords stack these bones inside the cages and sometimes find them amusing or emotionally invoking as if the piles were works of art.</English>
+        <French>As the enemy spies witness the atrocities and the oddities that occur within the Aristrakhithian cities, things such as the Bone Cage, the reports say there are piles of bones from the cage victims. This alone terrifies the foreign citizens who happen to find themselves within the city walls after dark. This Terror spreads to the the civilian populace of foreign nations and gives them reason to pause before attacking the powerful Vampire Lords, though the more "Righteous" may find this as Just-Cause as well. Though these bone piles may be shocking and strike fear into the hearts of an opposing nation's people, it also increases the cultural identity of Aristrakh by sheer terror. The Bones are the remains of brave warriors that lay in wait to be used by the vampire lords when they call upon their hordes of the undead. The Vampire Lords stack these bones inside the cages and sometimes find them amusing or emotionally invoking as if the piles were works of art.</French>
+        <German>As the enemy spies witness the atrocities and the oddities that occur within the Aristrakhithian cities, things such as the Bone Cage, the reports say there are piles of bones from the cage victims. This alone terrifies the foreign citizens who happen to find themselves within the city walls after dark. This Terror spreads to the the civilian populace of foreign nations and gives them reason to pause before attacking the powerful Vampire Lords, though the more "Righteous" may find this as Just-Cause as well. Though these bone piles may be shocking and strike fear into the hearts of an opposing nation's people, it also increases the cultural identity of Aristrakh by sheer terror. The Bones are the remains of brave warriors that lay in wait to be used by the vampire lords when they call upon their hordes of the undead. The Vampire Lords stack these bones inside the cages and sometimes find them amusing or emotionally invoking as if the piles were works of art.</German>
+        <Italian>As the enemy spies witness the atrocities and the oddities that occur within the Aristrakhithian cities, things such as the Bone Cage, the reports say there are piles of bones from the cage victims. This alone terrifies the foreign citizens who happen to find themselves within the city walls after dark. This Terror spreads to the the civilian populace of foreign nations and gives them reason to pause before attacking the powerful Vampire Lords, though the more "Righteous" may find this as Just-Cause as well. Though these bone piles may be shocking and strike fear into the hearts of an opposing nation's people, it also increases the cultural identity of Aristrakh by sheer terror. The Bones are the remains of brave warriors that lay in wait to be used by the vampire lords when they call upon their hordes of the undead. The Vampire Lords stack these bones inside the cages and sometimes find them amusing or emotionally invoking as if the piles were works of art.</Italian>
+        <Spanish>As the enemy spies witness the atrocities and the oddities that occur within the Aristrakhithian cities, things such as the Bone Cage, the reports say there are piles of bones from the cage victims. This alone terrifies the foreign citizens who happen to find themselves within the city walls after dark. This Terror spreads to the the civilian populace of foreign nations and gives them reason to pause before attacking the powerful Vampire Lords, though the more "Righteous" may find this as Just-Cause as well. Though these bone piles may be shocking and strike fear into the hearts of an opposing nation's people, it also increases the cultural identity of Aristrakh by sheer terror. The Bones are the remains of brave warriors that lay in wait to be used by the vampire lords when they call upon their hordes of the undead. The Vampire Lords stack these bones inside the cages and sometimes find them amusing or emotionally invoking as if the piles were works of art.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BONE_CAGE_STRATEGY</Tag>
+        <English>The Bone Cage is a cultural benefit to the Vampire Lord society, and their mirth increases the war-weariness of all enemies.</English>
+        <French>The Bone Cage is a cultural benefit to the Vampire Lord society, and their mirth increases the war-weariness of all enemies.</French>
+        <German>The Bone Cage is a cultural benefit to the Vampire Lord society, and their mirth increases the war-weariness of all enemies.</German>
+        <Italian>The Bone Cage is a cultural benefit to the Vampire Lord society, and their mirth increases the war-weariness of all enemies.</Italian>
+        <Spanish>The Bone Cage is a cultural benefit to the Vampire Lord society, and their mirth increases the war-weariness of all enemies.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UD_GENERAL</Tag>
+        <English>Tomb Lord</English>
+        <French>Tomb Lord</French>
+        <German>Tomb Lord</German>
+        <Italian>Tomb Lord</Italian>
+        <Spanish>Tomb Lord</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UD_GENERAL_PEDIA</Tag>
+        <English>The Aristrakh Vampires have an innate command over the dead. In dire Situations however they may imbue their powers in a mighty fallen commander, who becomes a nexus for the power of the Aristrakh.</English>
+        <French>The Aristrakh Vampires have an innate command over the dead. In dire Situations however they may imbue their powers in a mighty fallen commander, who becomes a nexus for the power of the Aristrakh.</French>
+        <German>The Aristrakh Vampires have an innate command over the dead. In dire Situations however they may imbue their powers in a mighty fallen commander, who becomes a nexus for the power of the Aristrakh.</German>
+        <Italian>The Aristrakh Vampires have an innate command over the dead. In dire Situations however they may imbue their powers in a mighty fallen commander, who becomes a nexus for the power of the Aristrakh.</Italian>
+        <Spanish>The Aristrakh Vampires have an innate command over the dead. In dire Situations however they may imbue their powers in a mighty fallen commander, who becomes a nexus for the power of the Aristrakh.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_UD_GENERAL_STRATEGY</Tag>
+        <English>The Aristrakh Military consists out of a horde of lesser undead minions and powerful undead lords with a strong synergy between the two:[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead can not gain experience.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead start with the Eternal Servitude promotion.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords affect all Lesser Undead by the Eternal Reign aura.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords consume Souls from the Soul Vault.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain more Souls from combat.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires can heal all Undead.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain Battle Frenzy in combat.</English>
+        <French>The Aristrakh Military consists out of a horde of lesser undead minions and powerful undead lords with a strong synergy between the two:[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead can not gain experience.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead start with the Eternal Servitude promotion.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords affect all Lesser Undead by the Eternal Reign aura.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords consume Souls from the Soul Vault.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain more Souls from combat.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires can heal all Undead.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain Battle Frenzy in combat.</French>
+        <German>The Aristrakh Military consists out of a horde of lesser undead minions and powerful undead lords with a strong synergy between the two:[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead can not gain experience.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead start with the Eternal Servitude promotion.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords affect all Lesser Undead by the Eternal Reign aura.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords consume Souls from the Soul Vault.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain more Souls from combat.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires can heal all Undead.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain Battle Frenzy in combat.</German>
+        <Italian>The Aristrakh Military consists out of a horde of lesser undead minions and powerful undead lords with a strong synergy between the two:[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead can not gain experience.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead start with the Eternal Servitude promotion.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords affect all Lesser Undead by the Eternal Reign aura.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords consume Souls from the Soul Vault.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain more Souls from combat.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires can heal all Undead.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain Battle Frenzy in combat.</Italian>
+        <Spanish>The Aristrakh Military consists out of a horde of lesser undead minions and powerful undead lords with a strong synergy between the two:[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead can not gain experience.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Lesser Undead start with the Eternal Servitude promotion.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords affect all Lesser Undead by the Eternal Reign aura.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Undead Lords consume Souls from the Soul Vault.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain more Souls from combat.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires can heal all Undead.[NEWLINE][SPACE][SPACE][SPACE][SPACE][ICON_BULLET]Vampires gain Battle Frenzy in combat.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNDEAD_COMMAND</Tag>
+        <English>Vampiric Command</English>
+        <French>Vampiric Command</French>
+        <German>Vampiric Command</German>
+        <Italian>Vampiric Command</Italian>
+        <Spanish>Vampiric Command</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VAMPIRE_COUNT_PEDIA</Tag>
+        <English>The Aristrakh Counts are powerful Vampire Lords that are few in number, however do not mistake this for a weakness. Due to their superior strength, intellect, and magical abilities to raise and manipulate the dead, they are a very formidable foe. They have "lived" since times unknown and have continued to exist by their individual strength, cunning, skill knowledge that has accumulated over the millennia. Individually they are strong, but when combined with legions of the undead they become a sinister and deadly force. Before the formation of the Aristrakhan Empire these dark and twisted souls masked themselves inside human populations, acting and playing the parts of noble lords in the various kingdoms. News spread of the Aristrakha's success; first developing a successful government and the second of forming an elite military force. One by one the blood thirsty Aristrakh Counts traversed the corners of Erebus to join in the slaughter upon receiving the call from the various sources. The small battles and wars at first distant and insignificant, then suddenly the insidiousness and true scope was revealed as the Aristrakh Empire was born.</English>
+        <French>The Aristrakh Counts are powerful Vampire Lords that are few in number, however do not mistake this for a weakness. Due to their superior strength, intellect, and magical abilities to raise and manipulate the dead, they are a very formidable foe. They have "lived" since times unknown and have continued to exist by their individual strength, cunning, skill knowledge that has accumulated over the millennia. Individually they are strong, but when combined with legions of the undead they become a sinister and deadly force. Before the formation of the Aristrakhan Empire these dark and twisted souls masked themselves inside human populations, acting and playing the parts of noble lords in the various kingdoms. News spread of the Aristrakha's success; first developing a successful government and the second of forming an elite military force. One by one the blood thirsty Aristrakh Counts traversed the corners of Erebus to join in the slaughter upon receiving the call from the various sources. The small battles and wars at first distant and insignificant, then suddenly the insidiousness and true scope was revealed as the Aristrakh Empire was born.</French>
+        <German>The Aristrakh Counts are powerful Vampire Lords that are few in number, however do not mistake this for a weakness. Due to their superior strength, intellect, and magical abilities to raise and manipulate the dead, they are a very formidable foe. They have "lived" since times unknown and have continued to exist by their individual strength, cunning, skill knowledge that has accumulated over the millennia. Individually they are strong, but when combined with legions of the undead they become a sinister and deadly force. Before the formation of the Aristrakhan Empire these dark and twisted souls masked themselves inside human populations, acting and playing the parts of noble lords in the various kingdoms. News spread of the Aristrakha's success; first developing a successful government and the second of forming an elite military force. One by one the blood thirsty Aristrakh Counts traversed the corners of Erebus to join in the slaughter upon receiving the call from the various sources. The small battles and wars at first distant and insignificant, then suddenly the insidiousness and true scope was revealed as the Aristrakh Empire was born.</German>
+        <Italian>The Aristrakh Counts are powerful Vampire Lords that are few in number, however do not mistake this for a weakness. Due to their superior strength, intellect, and magical abilities to raise and manipulate the dead, they are a very formidable foe. They have "lived" since times unknown and have continued to exist by their individual strength, cunning, skill knowledge that has accumulated over the millennia. Individually they are strong, but when combined with legions of the undead they become a sinister and deadly force. Before the formation of the Aristrakhan Empire these dark and twisted souls masked themselves inside human populations, acting and playing the parts of noble lords in the various kingdoms. News spread of the Aristrakha's success; first developing a successful government and the second of forming an elite military force. One by one the blood thirsty Aristrakh Counts traversed the corners of Erebus to join in the slaughter upon receiving the call from the various sources. The small battles and wars at first distant and insignificant, then suddenly the insidiousness and true scope was revealed as the Aristrakh Empire was born.</Italian>
+        <Spanish>The Aristrakh Counts are powerful Vampire Lords that are few in number, however do not mistake this for a weakness. Due to their superior strength, intellect, and magical abilities to raise and manipulate the dead, they are a very formidable foe. They have "lived" since times unknown and have continued to exist by their individual strength, cunning, skill knowledge that has accumulated over the millennia. Individually they are strong, but when combined with legions of the undead they become a sinister and deadly force. Before the formation of the Aristrakhan Empire these dark and twisted souls masked themselves inside human populations, acting and playing the parts of noble lords in the various kingdoms. News spread of the Aristrakha's success; first developing a successful government and the second of forming an elite military force. One by one the blood thirsty Aristrakh Counts traversed the corners of Erebus to join in the slaughter upon receiving the call from the various sources. The small battles and wars at first distant and insignificant, then suddenly the insidiousness and true scope was revealed as the Aristrakh Empire was born.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CATACOMBS_PEDIA</Tag>
+        <English>Though the legions of the undead walk through the city streets and on the battle fields for the Aristrakh Empire, shocking and terrifying the living populations of foreign nations, the vampire lords find them quite un-amusing. Their preference of the Catacombs is viewed as quite odd by the spies of other nations, that the depths of the dark catacombs entertain, or at the least, comfort the ruling class of Aristrakh. Some of the vampires find inspiration from this place of death and use that inspiration to channel their emotional feelings into music, a surprising skill many of the ancient vampires posses. Some of the spies have observed that there is a correlation in that the longer a vampire dwells in the Catacombs, the more inspired he becomes. Some reports indicate that this "ritual" can last for decades even![NEWLINE]The deep twisting tunnels, and the seemingly never ending turns, passageways with hidden rooms prevent the majority of adventurer's from entering and exposing what secrets lay within the Catacombs. The rumors include places of torture within, this also keeps the casual visitor away. One rumor whispered, is how the vampire lords deal with corruption, administering secret punishments by which they ensure the empire is running as it should be. Another rumor indicates that there are other areas of a dark secretive nature, where they perform rituals to raise the dead to fight for the Aristrakh cause!</English>
+        <French>Though the legions of the undead walk through the city streets and on the battle fields for the Aristrakh Empire, shocking and terrifying the living populations of foreign nations, the vampire lords find them quite un-amusing. Their preference of the Catacombs is viewed as quite odd by the spies of other nations, that the depths of the dark catacombs entertain, or at the least, comfort the ruling class of Aristrakh. Some of the vampires find inspiration from this place of death and use that inspiration to channel their emotional feelings into music, a surprising skill many of the ancient vampires posses. Some of the spies have observed that there is a correlation in that the longer a vampire dwells in the Catacombs, the more inspired he becomes. Some reports indicate that this "ritual" can last for decades even![NEWLINE]The deep twisting tunnels, and the seemingly never ending turns, passageways with hidden rooms prevent the majority of adventurer's from entering and exposing what secrets lay within the Catacombs. The rumors include places of torture within, this also keeps the casual visitor away. One rumor whispered, is how the vampire lords deal with corruption, administering secret punishments by which they ensure the empire is running as it should be. Another rumor indicates that there are other areas of a dark secretive nature, where they perform rituals to raise the dead to fight for the Aristrakh cause!</French>
+        <German>Though the legions of the undead walk through the city streets and on the battle fields for the Aristrakh Empire, shocking and terrifying the living populations of foreign nations, the vampire lords find them quite un-amusing. Their preference of the Catacombs is viewed as quite odd by the spies of other nations, that the depths of the dark catacombs entertain, or at the least, comfort the ruling class of Aristrakh. Some of the vampires find inspiration from this place of death and use that inspiration to channel their emotional feelings into music, a surprising skill many of the ancient vampires posses. Some of the spies have observed that there is a correlation in that the longer a vampire dwells in the Catacombs, the more inspired he becomes. Some reports indicate that this "ritual" can last for decades even![NEWLINE]The deep twisting tunnels, and the seemingly never ending turns, passageways with hidden rooms prevent the majority of adventurer's from entering and exposing what secrets lay within the Catacombs. The rumors include places of torture within, this also keeps the casual visitor away. One rumor whispered, is how the vampire lords deal with corruption, administering secret punishments by which they ensure the empire is running as it should be. Another rumor indicates that there are other areas of a dark secretive nature, where they perform rituals to raise the dead to fight for the Aristrakh cause!</German>
+        <Italian>Though the legions of the undead walk through the city streets and on the battle fields for the Aristrakh Empire, shocking and terrifying the living populations of foreign nations, the vampire lords find them quite un-amusing. Their preference of the Catacombs is viewed as quite odd by the spies of other nations, that the depths of the dark catacombs entertain, or at the least, comfort the ruling class of Aristrakh. Some of the vampires find inspiration from this place of death and use that inspiration to channel their emotional feelings into music, a surprising skill many of the ancient vampires posses. Some of the spies have observed that there is a correlation in that the longer a vampire dwells in the Catacombs, the more inspired he becomes. Some reports indicate that this "ritual" can last for decades even![NEWLINE]The deep twisting tunnels, and the seemingly never ending turns, passageways with hidden rooms prevent the majority of adventurer's from entering and exposing what secrets lay within the Catacombs. The rumors include places of torture within, this also keeps the casual visitor away. One rumor whispered, is how the vampire lords deal with corruption, administering secret punishments by which they ensure the empire is running as it should be. Another rumor indicates that there are other areas of a dark secretive nature, where they perform rituals to raise the dead to fight for the Aristrakh cause!</Italian>
+        <Spanish>Though the legions of the undead walk through the city streets and on the battle fields for the Aristrakh Empire, shocking and terrifying the living populations of foreign nations, the vampire lords find them quite un-amusing. Their preference of the Catacombs is viewed as quite odd by the spies of other nations, that the depths of the dark catacombs entertain, or at the least, comfort the ruling class of Aristrakh. Some of the vampires find inspiration from this place of death and use that inspiration to channel their emotional feelings into music, a surprising skill many of the ancient vampires posses. Some of the spies have observed that there is a correlation in that the longer a vampire dwells in the Catacombs, the more inspired he becomes. Some reports indicate that this "ritual" can last for decades even![NEWLINE]The deep twisting tunnels, and the seemingly never ending turns, passageways with hidden rooms prevent the majority of adventurer's from entering and exposing what secrets lay within the Catacombs. The rumors include places of torture within, this also keeps the casual visitor away. One rumor whispered, is how the vampire lords deal with corruption, administering secret punishments by which they ensure the empire is running as it should be. Another rumor indicates that there are other areas of a dark secretive nature, where they perform rituals to raise the dead to fight for the Aristrakh cause!</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CATACOMBS_STRATEGY</Tag>
+        <English>The Catacombs are a place of fear and terror for the outside world, but a place of comfort, inspiration and deliverance for the Vampire Lords!</English>
+        <French>The Catacombs are a place of fear and terror for the outside world, but a place of comfort, inspiration and deliverance for the Vampire Lords!</French>
+        <German>The Catacombs are a place of fear and terror for the outside world, but a place of comfort, inspiration and deliverance for the Vampire Lords!</German>
+        <Italian>The Catacombs are a place of fear and terror for the outside world, but a place of comfort, inspiration and deliverance for the Vampire Lords!</Italian>
+        <Spanish>The Catacombs are a place of fear and terror for the outside world, but a place of comfort, inspiration and deliverance for the Vampire Lords!</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_DECAYING_SOIL_PEDIA</Tag>
+        <English>The Decaying Soil radiates from the epicenter from where it is cast, it spreads consuming the earth not yet tainted by its vampiric power. It continues expanding until another force of some "nature" is powerful enough to stop it's growth. As it spreads, it kills any vegetation that it comes into contact with. With with no plantlife in the environment, the plant-eaters depart, and the predators are not far behind them.[NEWLINE]By the end of the ritual, life is completely inhospitable, leaving only room for the dead. The Decaying Soil becomes a deterrent for living organisms, and the lack of living obstacles makes it easier for the undead movement. Like a river begins as a small stream, and as each branch is joined, eventually becomes a raging tide of water. Except this motion of force is not alive, but of the Undead![NEWLINE]Even foreign trade becomes more difficult for the empire, though trade within the Aristrakh cities becomes more productive. Thus allowing the Aristrakh culture to spread faster, enhanced by the lack of foreign influences within the Empire.</English>
+        <French>The Decaying Soil radiates from the epicenter from where it is cast, it spreads consuming the earth not yet tainted by its vampiric power. It continues expanding until another force of some "nature" is powerful enough to stop it's growth. As it spreads, it kills any vegetation that it comes into contact with. With with no plantlife in the environment, the plant-eaters depart, and the predators are not far behind them.[NEWLINE]By the end of the ritual, life is completely inhospitable, leaving only room for the dead. The Decaying Soil becomes a deterrent for living organisms, and the lack of living obstacles makes it easier for the undead movement. Like a river begins as a small stream, and as each branch is joined, eventually becomes a raging tide of water. Except this motion of force is not alive, but of the Undead![NEWLINE]Even foreign trade becomes more difficult for the empire, though trade within the Aristrakh cities becomes more productive. Thus allowing the Aristrakh culture to spread faster, enhanced by the lack of foreign influences within the Empire.</French>
+        <German>The Decaying Soil radiates from the epicenter from where it is cast, it spreads consuming the earth not yet tainted by its vampiric power. It continues expanding until another force of some "nature" is powerful enough to stop it's growth. As it spreads, it kills any vegetation that it comes into contact with. With with no plantlife in the environment, the plant-eaters depart, and the predators are not far behind them.[NEWLINE]By the end of the ritual, life is completely inhospitable, leaving only room for the dead. The Decaying Soil becomes a deterrent for living organisms, and the lack of living obstacles makes it easier for the undead movement. Like a river begins as a small stream, and as each branch is joined, eventually becomes a raging tide of water. Except this motion of force is not alive, but of the Undead![NEWLINE]Even foreign trade becomes more difficult for the empire, though trade within the Aristrakh cities becomes more productive. Thus allowing the Aristrakh culture to spread faster, enhanced by the lack of foreign influences within the Empire.</German>
+        <Italian>The Decaying Soil radiates from the epicenter from where it is cast, it spreads consuming the earth not yet tainted by its vampiric power. It continues expanding until another force of some "nature" is powerful enough to stop it's growth. As it spreads, it kills any vegetation that it comes into contact with. With with no plantlife in the environment, the plant-eaters depart, and the predators are not far behind them.[NEWLINE]By the end of the ritual, life is completely inhospitable, leaving only room for the dead. The Decaying Soil becomes a deterrent for living organisms, and the lack of living obstacles makes it easier for the undead movement. Like a river begins as a small stream, and as each branch is joined, eventually becomes a raging tide of water. Except this motion of force is not alive, but of the Undead![NEWLINE]Even foreign trade becomes more difficult for the empire, though trade within the Aristrakh cities becomes more productive. Thus allowing the Aristrakh culture to spread faster, enhanced by the lack of foreign influences within the Empire.</Italian>
+        <Spanish>The Decaying Soil radiates from the epicenter from where it is cast, it spreads consuming the earth not yet tainted by its vampiric power. It continues expanding until another force of some "nature" is powerful enough to stop it's growth. As it spreads, it kills any vegetation that it comes into contact with. With with no plantlife in the environment, the plant-eaters depart, and the predators are not far behind them.[NEWLINE]By the end of the ritual, life is completely inhospitable, leaving only room for the dead. The Decaying Soil becomes a deterrent for living organisms, and the lack of living obstacles makes it easier for the undead movement. Like a river begins as a small stream, and as each branch is joined, eventually becomes a raging tide of water. Except this motion of force is not alive, but of the Undead![NEWLINE]Even foreign trade becomes more difficult for the empire, though trade within the Aristrakh cities becomes more productive. Thus allowing the Aristrakh culture to spread faster, enhanced by the lack of foreign influences within the Empire.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_MORTUARY_ENCLOSURE</Tag>
+        <English>Mortuary Enclosure</English>
+        <French>Mortuary Enclosure</French>
+        <German>Mortuary Enclosure</German>
+        <Italian>Mortuary Enclosure</Italian>
+        <Spanish>Mortuary Enclosure</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_SACRIFICIAL_PIT</Tag>
+        <English>Sacrificial Pit</English>
+        <French>Sacrificial Pit</French>
+        <German>Sacrificial Pit</German>
+        <Italian>Sacrificial Pit</Italian>
+        <Spanish>Sacrificial Pit</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_HALLS_OF_THE_DEAD_PEDIA</Tag>
+        <English>Crime and punishment are the core reasons that courthouses exist in Erebus. With such a limited populated ruling class, the courts are not necessary for the Aristrakh. The Vampire Lords have their own methods for dealing with corruption![NEWLINE]Compared to the effectiveness of other structures in the empire, such as the Catacombs, the Halls of the Dead are twice as effective in corruption control. The Halls are fronted as a place of celebration similar to a dining hall, many of the ruling vampire come here to dine before battle or before rituals.[NEWLINE]Many enemies of the Aristrakh rulers find themselves in the Halls of the Dead for a short period of time, only to disappear mysteriosly![NEWLINE]The Aristrakh society as a whole, have said that the Halls of the Dead serve as a secret torture and execution area. For one to end up as a guest in the Halls of the Dead, indicates they were causing great labor upon the state.[NEWLINE]It is rumored that it is a place of punishment, and it is questioned how any of the Vampires living in Aristrakh would know this? It is also believed these stories are leaked by the ruling Vampire Lord, intentionally, to spread fear among the uninitiated; not that the Lord would not mind dealing with a lost soul or two.</English>
+		<French>Crime and punishment are the core reasons that courthouses exist in Erebus. With such a limited populated ruling class, the courts are not necessary for the Aristrakh. The Vampire Lords have their own methods for dealing with corruption![NEWLINE]Compared to the effectiveness of other structures in the empire, such as the Catacombs, the Halls of the Dead are twice as effective in corruption control. The Halls are fronted as a place of celebration similar to a dining hall, many of the ruling vampire come here to dine before battle or before rituals.[NEWLINE]Many enemies of the Aristrakh rulers find themselves in the Halls of the Dead for a short period of time, only to disappear mysteriosly![NEWLINE]The Aristrakh society as a whole, have said that the Halls of the Dead serve as a secret torture and execution area. For one to end up as a guest in the Halls of the Dead, indicates they were causing great labor upon the state.[NEWLINE]It is rumored that it is a place of punishment, and it is questioned how any of the Vampires living in Aristrakh would know this? It is also believed these stories are leaked by the ruling Vampire Lord, intentionally, to spread fear among the uninitiated; not that the Lord would not mind dealing with a lost soul or two.</French>
+		<German>Crime and punishment are the core reasons that courthouses exist in Erebus. With such a limited populated ruling class, the courts are not necessary for the Aristrakh. The Vampire Lords have their own methods for dealing with corruption![NEWLINE]Compared to the effectiveness of other structures in the empire, such as the Catacombs, the Halls of the Dead are twice as effective in corruption control. The Halls are fronted as a place of celebration similar to a dining hall, many of the ruling vampire come here to dine before battle or before rituals.[NEWLINE]Many enemies of the Aristrakh rulers find themselves in the Halls of the Dead for a short period of time, only to disappear mysteriosly![NEWLINE]The Aristrakh society as a whole, have said that the Halls of the Dead serve as a secret torture and execution area. For one to end up as a guest in the Halls of the Dead, indicates they were causing great labor upon the state.[NEWLINE]It is rumored that it is a place of punishment, and it is questioned how any of the Vampires living in Aristrakh would know this? It is also believed these stories are leaked by the ruling Vampire Lord, intentionally, to spread fear among the uninitiated; not that the Lord would not mind dealing with a lost soul or two.</German>
+		<Italian>Crime and punishment are the core reasons that courthouses exist in Erebus. With such a limited populated ruling class, the courts are not necessary for the Aristrakh. The Vampire Lords have their own methods for dealing with corruption![NEWLINE]Compared to the effectiveness of other structures in the empire, such as the Catacombs, the Halls of the Dead are twice as effective in corruption control. The Halls are fronted as a place of celebration similar to a dining hall, many of the ruling vampire come here to dine before battle or before rituals.[NEWLINE]Many enemies of the Aristrakh rulers find themselves in the Halls of the Dead for a short period of time, only to disappear mysteriosly![NEWLINE]The Aristrakh society as a whole, have said that the Halls of the Dead serve as a secret torture and execution area. For one to end up as a guest in the Halls of the Dead, indicates they were causing great labor upon the state.[NEWLINE]It is rumored that it is a place of punishment, and it is questioned how any of the Vampires living in Aristrakh would know this? It is also believed these stories are leaked by the ruling Vampire Lord, intentionally, to spread fear among the uninitiated; not that the Lord would not mind dealing with a lost soul or two.</Italian>
+		<Spanish>Crime and punishment are the core reasons that courthouses exist in Erebus. With such a limited populated ruling class, the courts are not necessary for the Aristrakh. The Vampire Lords have their own methods for dealing with corruption![NEWLINE]Compared to the effectiveness of other structures in the empire, such as the Catacombs, the Halls of the Dead are twice as effective in corruption control. The Halls are fronted as a place of celebration similar to a dining hall, many of the ruling vampire come here to dine before battle or before rituals.[NEWLINE]Many enemies of the Aristrakh rulers find themselves in the Halls of the Dead for a short period of time, only to disappear mysteriosly![NEWLINE]The Aristrakh society as a whole, have said that the Halls of the Dead serve as a secret torture and execution area. For one to end up as a guest in the Halls of the Dead, indicates they were causing great labor upon the state.[NEWLINE]It is rumored that it is a place of punishment, and it is questioned how any of the Vampires living in Aristrakh would know this? It is also believed these stories are leaked by the ruling Vampire Lord, intentionally, to spread fear among the uninitiated; not that the Lord would not mind dealing with a lost soul or two.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_HALLS_OF_THE_DEAD_STRAT</Tag>
+        <English>Being invited as a foreigner or as a "guest" to the Halls of the Dead, brings a new meaning to the phrase "to die for".[NEWLINE] The Aristrakh Halls of the Dead eliminates twice the corruption of "normal" courthouse on Erebus, and doubles as a feeding ground for the Vampire Lords!</English>
+		<French>Being invited as a foreigner or as a "guest" to the Halls of the Dead, brings a new meaning to the phrase "to die for".[NEWLINE] The Aristrakh Halls of the Dead eliminates twice the corruption of "normal" courthouse on Erebus, and doubles as a feeding ground for the Vampire Lords!</French>
+		<German>Being invited as a foreigner or as a "guest" to the Halls of the Dead, brings a new meaning to the phrase "to die for".[NEWLINE] The Aristrakh Halls of the Dead eliminates twice the corruption of "normal" courthouse on Erebus, and doubles as a feeding ground for the Vampire Lords!</German>
+		<Italian>Being invited as a foreigner or as a "guest" to the Halls of the Dead, brings a new meaning to the phrase "to die for".[NEWLINE] The Aristrakh Halls of the Dead eliminates twice the corruption of "normal" courthouse on Erebus, and doubles as a feeding ground for the Vampire Lords!</Italian>
+		<Spanish>Being invited as a foreigner or as a "guest" to the Halls of the Dead, brings a new meaning to the phrase "to die for".[NEWLINE] The Aristrakh Halls of the Dead eliminates twice the corruption of "normal" courthouse on Erebus, and doubles as a feeding ground for the Vampire Lords!</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_INQUISITION_ARISTRAKH</Tag>
+        <English>Dispunge Heretics</English>
+        <French>Dispunge Heretics</French>
+        <German>Dispunge Heretics</German>
+        <Italian>Dispunge Heretics</Italian>
+        <Spanish>Dispunge Heretics</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_MIRACLE_ARISTRAKH_HEAL</Tag>
+        <English>Necrosis</English>
+        <French>Necrosis</French>
+        <German>Necrosis</German>
+        <Italian>Necrosis</Italian>
+        <Spanish>Necrosis</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_MIRACLE_ARISTRAKH_HEAL_HELP</Tag>
+        <English>[ICON_BULLET]Mends all undead troops in the plot</English>
+        <French>[ICON_BULLET]Mends all undead troops in the plot</French>
+        <German>[ICON_BULLET]Mends all undead troops in the plot</German>
+        <Italian>[ICON_BULLET]Mends all undead troops in the plot</Italian>
+        <Spanish>[ICON_BULLET]Mends all undead troops in the plot</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMPIRE_LORD</Tag>
+        <English>Vampire Lord</English>
+        <French>Vampire Lord</French>
+        <German>Vampire Lord</German>
+        <Italian>Vampire Lord</Italian>
+        <Spanish>Vampire Lord</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMPIRE_LORD_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vampires start with [LINK=PROMOTION_UNDEAD_COMMAND]Vampiric Command[\LINK].[NEWLINE][SPACE][SPACE][ICON_BULLET]Start with 50 more Souls.</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vampires start with [LINK=PROMOTION_UNDEAD_COMMAND]Vampiric Command[\LINK].[NEWLINE][SPACE][SPACE][ICON_BULLET]Start with 50 more Souls.</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vampires start with [LINK=PROMOTION_UNDEAD_COMMAND]Vampiric Command[\LINK].[NEWLINE][SPACE][SPACE][ICON_BULLET]Start with 50 more Souls.</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vampires start with [LINK=PROMOTION_UNDEAD_COMMAND]Vampiric Command[\LINK].[NEWLINE][SPACE][SPACE][ICON_BULLET]Start with 50 more Souls.</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vampires start with [LINK=PROMOTION_UNDEAD_COMMAND]Vampiric Command[\LINK].[NEWLINE][SPACE][SPACE][ICON_BULLET]Start with 50 more Souls.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_NAJESH</Tag>
+        <English>Najesh</English>
+        <French>Najesh</French>
+        <German>Najesh</German>
+        <Italian>Najesh</Italian>
+        <Spanish>Najesh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_NAJESH_PEDIA</Tag>
+        <English>Najesh was once a powerful Priest who served the Gods his whole mortal life, only to become obsessed by their power. To prolong the time he needed he willfully sought the daunting gift of vampirism which he was granted by Nikephoros.[NEWLINE]In return Najesh would teach Nikephoros how to corrupt the blessings of the gods to strengthen the Aristrkah realm.[NEWLINE]While Najesh lacks the power of a powerful vampire lord like Nikephoros, his experience as a priest makes him the most effective leader to raise the dead and grow the empire of the Aristrkah.</English>
+        <French>Najesh was once a powerful Priest who served the Gods his whole mortal life, only to become obsessed by their power. To prolong the time he needed he willfully sought the daunting gift of vampirism which he was granted by Nikephoros.[NEWLINE]In return Najesh would teach Nikephoros how to corrupt the blessings of the gods to strengthen the Aristrkah realm.[NEWLINE]While Najesh lacks the power of a powerful vampire lord like Nikephoros, his experience as a priest makes him the most effective leader to raise the dead and grow the empire of the Aristrkah.</French>
+        <German>Najesh was once a powerful Priest who served the Gods his whole mortal life, only to become obsessed by their power. To prolong the time he needed he willfully sought the daunting gift of vampirism which he was granted by Nikephoros.[NEWLINE]In return Najesh would teach Nikephoros how to corrupt the blessings of the gods to strengthen the Aristrkah realm.[NEWLINE]While Najesh lacks the power of a powerful vampire lord like Nikephoros, his experience as a priest makes him the most effective leader to raise the dead and grow the empire of the Aristrkah.</German>
+        <Italian>Najesh was once a powerful Priest who served the Gods his whole mortal life, only to become obsessed by their power. To prolong the time he needed he willfully sought the daunting gift of vampirism which he was granted by Nikephoros.[NEWLINE]In return Najesh would teach Nikephoros how to corrupt the blessings of the gods to strengthen the Aristrkah realm.[NEWLINE]While Najesh lacks the power of a powerful vampire lord like Nikephoros, his experience as a priest makes him the most effective leader to raise the dead and grow the empire of the Aristrkah.</Italian>
+        <Spanish>Najesh was once a powerful Priest who served the Gods his whole mortal life, only to become obsessed by their power. To prolong the time he needed he willfully sought the daunting gift of vampirism which he was granted by Nikephoros.[NEWLINE]In return Najesh would teach Nikephoros how to corrupt the blessings of the gods to strengthen the Aristrkah realm.[NEWLINE]While Najesh lacks the power of a powerful vampire lord like Nikephoros, his experience as a priest makes him the most effective leader to raise the dead and grow the empire of the Aristrkah.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_HERALD_OF_DEATH_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Defeated enemies and conquered cities give bonus income to the Soul Vault.[NEWLINE][SPACE][SPACE][ICON_BULLET]25% faster production of [LINK=UNIT_NOFUOS]Nofuos[\LINK].</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Defeated enemies and conquered cities give bonus income to the Soul Vault.[NEWLINE][SPACE][SPACE][ICON_BULLET]25% faster production of [LINK=UNIT_NOFUOS]Nofuos[\LINK].</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Defeated enemies and conquered cities give bonus income to the Soul Vault.[NEWLINE][SPACE][SPACE][ICON_BULLET]25% faster production of [LINK=UNIT_NOFUOS]Nofuos[\LINK].</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Defeated enemies and conquered cities give bonus income to the Soul Vault.[NEWLINE][SPACE][SPACE][ICON_BULLET]25% faster production of [LINK=UNIT_NOFUOS]Nofuos[\LINK].</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Defeated enemies and conquered cities give bonus income to the Soul Vault.[NEWLINE][SPACE][SPACE][ICON_BULLET]25% faster production of [LINK=UNIT_NOFUOS]Nofuos[\LINK].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_HERALD_OF_DEATH</Tag>
+        <English>Herald of Death</English>
+        <French>Herald of Death</French>
+        <German>Herald of Death</German>
+        <Italian>Herald of Death</Italian>
+        <Spanish>Herald of Death</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNDEAD_COMMANDER</Tag>
+        <English>Undead Commander</English>
+        <French>Undead Commander</French>
+        <German>Undead Commander</German>
+        <Italian>Undead Commander</Italian>
+        <Spanish>Undead Commander</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BRITTLE_BONES</Tag>
+        <English>Eternal Servitude</English>
+        <French>Eternal Servitude</French>
+        <German>Eternal Servitude</German>
+        <Italian>Eternal Servitude</Italian>
+        <Spanish>Eternal Servitude</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BRITTLE_BONES_HELP</Tag>
+        <English>[ICON_BULLET]Affected by Eternal Reign Combat Aura</English>
+        <French>[ICON_BULLET]Affected by Eternal Reign Combat Aura</French>
+        <German>[ICON_BULLET]Affected by Eternal Reign Combat Aura</German>
+        <Italian>[ICON_BULLET]Affected by Eternal Reign Combat Aura</Italian>
+        <Spanish>[ICON_BULLET]Affected by Eternal Reign Combat Aura</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BONE_ARCHMAGE</Tag>
+        <English>Deathknell Spellweaver</English>
+        <French>Deathknell Spellweaver</French>
+        <German>Deathknell Spellweaver</German>
+        <Italian>Deathknell Spellweaver</Italian>
+        <Spanish>Deathknell Spellweaver</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BONE_MAGE</Tag>
+        <English>Pale Embalmer</English>
+        <French>Pale Embalmer</French>
+        <German>Pale Embalmer</German>
+        <Italian>Pale Embalmer</Italian>
+        <Spanish>Pale Embalmer</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BONE_ADEPT</Tag>
+        <English>Barrow Adept</English>
+        <French>Barrow Adept</French>
+        <German>Barrow Adept</German>
+        <Italian>Barrow Adept</Italian>
+        <Spanish>Barrow Adept</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MOUNTED_VAMPIRE</Tag>
+        <English>Vampire Prince</English>
+        <French>Vampire Prince</French>
+        <German>Vampire Prince</German>
+        <Italian>Vampire Prince</Italian>
+        <Spanish>Vampire Prince</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BLOOD_SEEKER</Tag>
+        <English>Blood Seeker</English>
+        <French>Blood Seeker</French>
+        <German>Blood Seeker</German>
+        <Italian>Blood Seeker</Italian>
+        <Spanish>Blood Seeker</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_VAMPIRE_PALACE</Tag>
+        <English>Vampire Palace</English>
+        <French>Vampire Palace</French>
+        <German>Vampire Palace</German>
+        <Italian>Vampire Palace</Italian>
+        <Spanish>Vampire Palace</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CIRCLE_OF_BLOOD_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 2.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 0.5 [ICON_PRODUCTION].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 2.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 0.5 [ICON_PRODUCTION].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 2.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 0.5 [ICON_PRODUCTION].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 2.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 0.5 [ICON_PRODUCTION].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 2.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 0.5 [ICON_PRODUCTION].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NECROPOLIS</Tag>
+        <English>Necropolis</English>
+        <French>Necropolis</French>
+        <German>Necropolis</German>
+        <Italian>Necropolis</Italian>
+        <Spanish>Necropolis</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CIRCLE_OF_DESPAIR_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_CULTURE].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_CULTURE].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_CULTURE].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_CULTURE].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_CULTURE].[NEWLINE][ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENDLESS_HORDE</Tag>
+        <English>Endless Horde</English>
+        <French>Endless Horde</French>
+        <German>Endless Horde</German>
+        <Italian>Endless Horde</Italian>
+        <Spanish>Endless Horde</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PHYLACTERY_OF_NAJESH</Tag>
+        <English>Phylactery of Najesh</English>
+        <French>Phylactery of Najesh</French>
+        <German>Phylactery of Najesh</German>
+        <Italian>Phylactery of Najesh</Italian>
+        <Spanish>Phylactery of Najesh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PHYLACTERY_OF_NAJESH_HELP</Tag>
+        <English>[ICON_BULLET]Empowers Nufuos with a soul, allowing him to gain experience.</English>
+        <French>[ICON_BULLET]Empowers Nufuos with a soul, allowing him to gain experience.</French>
+        <German>[ICON_BULLET]Empowers Nufuos with a soul, allowing him to gain experience.</German>
+        <Italian>[ICON_BULLET]Empowers Nufuos with a soul, allowing him to gain experience.</Italian>
+        <Spanish>[ICON_BULLET]Empowers Nufuos with a soul, allowing him to gain experience.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_NOFUOS</Tag>
+        <English>Nofuos the Imperishable</English>
+        <French>Nofuos the Imperishable</French>
+        <German>Nofuos the Imperishable</German>
+        <Italian>Nofuos the Imperishable</Italian>
+        <Spanish>Nofuos the Imperishable</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_VAMPIRE_LORD_SHORT</Tag>
+        <English>VL</English>
+        <French>VL</French>
+        <German>VL</German>
+        <Italian>VL</Italian>
+        <Spanish>VL</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_HERALD_OF_DEATH_SHORT</Tag>
+        <English>HoD</English>
+        <French>HoD</French>
+        <German>HoD</German>
+        <Italian>HoD</Italian>
+        <Spanish>HoD</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_1</Tag>
+        <English>Deathknell</English>
+        <French>Deathknell</French>
+        <German>Deathknell</German>
+        <Italian>Deathknell</Italian>
+        <Spanish>Deathknell</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_2</Tag>
+        <English>Heresh</English>
+        <French>Heresh</French>
+        <German>Heresh</German>
+        <Italian>Heresh</Italian>
+        <Spanish>Heresh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_3</Tag>
+        <English>Tarfah</English>
+        <French>Tarfah</French>
+        <German>Tarfah</German>
+        <Italian>Tarfah</Italian>
+        <Spanish>Tarfah</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_4</Tag>
+        <English>Azhar</English>
+        <French>Azhar</French>
+        <German>Azhar</German>
+        <Italian>Azhar</Italian>
+        <Spanish>Azhar</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_5</Tag>
+        <English>Ishkun</English>
+        <French>Ishkun</French>
+        <German>Ishkun</German>
+        <Italian>Ishkun</Italian>
+        <Spanish>Ishkun</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_6</Tag>
+        <English>Talgath</English>
+        <French>Talgath</French>
+        <German>Talgath</German>
+        <Italian>Talgath</Italian>
+        <Spanish>Talgath</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_7</Tag>
+        <English>Yeshad</English>
+        <French>Yeshad</French>
+        <German>Yeshad</German>
+        <Italian>Yeshad</Italian>
+        <Spanish>Yeshad</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_8</Tag>
+        <English>Yirkesh</English>
+        <French>Yirkesh</French>
+        <German>Yirkesh</German>
+        <Italian>Yirkesh</Italian>
+        <Spanish>Yirkesh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_9</Tag>
+        <English>Narkash</English>
+        <French>Narkash</French>
+        <German>Narkash</German>
+        <Italian>Narkash</Italian>
+        <Spanish>Narkash</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_10</Tag>
+        <English>Tarsh</English>
+        <French>Tarsh</French>
+        <German>Tarsh</German>
+        <Italian>Tarsh</Italian>
+        <Spanish>Tarsh</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CITY_ARISTRAKH_11</Tag>
+        <English>Vramin</English>
+        <French>Vramin</French>
+        <German>Vramin</German>
+        <Italian>Vramin</Italian>
+        <Spanish>Vramin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_ARISTRAKH_12</Tag>
+        <English>Vramin</English>
+        <French>Vramin</French>
+        <German>Vramin</German>
+        <Italian>Vramin</Italian>
+        <Spanish>Vramin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_ARISTRAKH_13</Tag>
+        <English>Shumkect</English>
+        <French>Shumkect</French>
+        <German>Shumkect</German>
+        <Italian>Shumkect</Italian>
+        <Spanish>Shumkect</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_ARISTRAKH_14</Tag>
+        <English>Yithus</English>
+        <French>Yithus</French>
+        <German>Yithus</German>
+        <Italian>Yithus</Italian>
+        <Spanish>Yithus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_ARISTRAKH_15</Tag>
+        <English>Yinesh</English>
+        <French>Yinesh</French>
+        <German>Yinesh</German>
+        <Italian>Yinesh</Italian>
+        <Spanish>Yinesh</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_ARISTRAKH_16</Tag>
+        <English>Yirreni</English>
+        <French>Yirreni</French>
+        <German>Yirreni</German>
+        <Italian>Yirreni</Italian>
+        <Spanish>Yirreni</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TERRAIN_WASTELAND</Tag>
+        <English>Wasteland</English>
+        <French>Wasteland</French>
+        <German>Wasteland</German>
+        <Italian>Wasteland</Italian>
+        <Spanish>Wasteland</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
+        <English>Sandstorm</English>
+        <French>Sandstorm</French>
+        <German>Sandstorm</German>
+        <Italian>Sandstorm</Italian>
+        <Spanish>Sandstorm</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_ADVENT_DARK_RITUAL_PEDIA</Tag>
+        <English>Death oozes from the Aristrakh cities, consuming the life force of the land, creatures and vegetation. This agonizing transformation of the landscape is further intensified by the use of [LINK=PROJECT_ADD_POPULATION_LOCAL1]Blood Magic Rituals[\LINK]. This process creates Dark Rituals or even more [LINK=IMPROVEMENT_DARK_RITUAL]Potent Versions[\LINK], if a living resource is consumed.  However both versions will eventually [LINK=IMPROVEMENT_DARK_RITUAL_FADING]fade[\LINK], leaving nothing but barren [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] behind, ravaged by vicious [LINK=FEATURE_SANDSTORM]Sandstorms[\LINK]. Due to their life draining nature, Aristrakh workers can only build the most basic improvements on lifeless resources.[PARAGRAPH:1][PARAGRAPH:1]"A tower grim, a glowering darkness,[PARAGRAPH:1]And only brown of red the other hue[PARAGRAPH:1]- I saw it in the distant eyes -[PARAGRAPH:1]And yes, He knew, but focused only[PARAGRAPH:1]On the mortal soul of mine,[PARAGRAPH:1]After all, He had a role to play,[PARAGRAPH:1]And wine. My shivering blood to quaff![PARAGRAPH:1]If only i could Him betray -[PARAGRAPH:1]To break the seal of destiny,[PARAGRAPH:1]Escape the lone cacophony[PARAGRAPH:1]That emanates from wailing minds![PARAGRAPH:1][PARAGRAPH:1]Damn the fate of His - it awes and blinds![PARAGRAPH:1]The slow approach of Him upon the knoll[PARAGRAPH:1]Commences exudation of a dying heart.[PARAGRAPH:1]Endorsing all, I honed my final part."</English>
+        <French>Death oozes from the Aristrakh cities, consuming the life force of the land, creatures and vegetation. This agonizing transformation of the landscape is further intensified by the use of [LINK=PROJECT_ADD_POPULATION_LOCAL1]Blood Magic Rituals[\LINK]. This process creates Dark Rituals or even more [LINK=IMPROVEMENT_DARK_RITUAL]Potent Versions[\LINK], if a living resource is consumed.  However both versions will eventually [LINK=IMPROVEMENT_DARK_RITUAL_FADING]fade[\LINK], leaving nothing but barren [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] behind, ravaged by vicious [LINK=FEATURE_SANDSTORM]Sandstorms[\LINK]. Due to their life draining nature, Aristrakh workers can only build the most basic improvements on lifeless resources.[PARAGRAPH:1][PARAGRAPH:1]"A tower grim, a glowering darkness,[PARAGRAPH:1]And only brown of red the other hue[PARAGRAPH:1]- I saw it in the distant eyes -[PARAGRAPH:1]And yes, He knew, but focused only[PARAGRAPH:1]On the mortal soul of mine,[PARAGRAPH:1]After all, He had a role to play,[PARAGRAPH:1]And wine. My shivering blood to quaff![PARAGRAPH:1]If only i could Him betray -[PARAGRAPH:1]To break the seal of destiny,[PARAGRAPH:1]Escape the lone cacophony[PARAGRAPH:1]That emanates from wailing minds![PARAGRAPH:1][PARAGRAPH:1]Damn the fate of His - it awes and blinds![PARAGRAPH:1]The slow approach of Him upon the knoll[PARAGRAPH:1]Commences exudation of a dying heart.[PARAGRAPH:1]Endorsing all, I honed my final part."</French>
+        <German>Death oozes from the Aristrakh cities, consuming the life force of the land, creatures and vegetation. This agonizing transformation of the landscape is further intensified by the use of [LINK=PROJECT_ADD_POPULATION_LOCAL1]Blood Magic Rituals[\LINK]. This process creates Dark Rituals or even more [LINK=IMPROVEMENT_DARK_RITUAL]Potent Versions[\LINK], if a living resource is consumed.  However both versions will eventually [LINK=IMPROVEMENT_DARK_RITUAL_FADING]fade[\LINK], leaving nothing but barren [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] behind, ravaged by vicious [LINK=FEATURE_SANDSTORM]Sandstorms[\LINK]. Due to their life draining nature, Aristrakh workers can only build the most basic improvements on lifeless resources.[PARAGRAPH:1][PARAGRAPH:1]"A tower grim, a glowering darkness,[PARAGRAPH:1]And only brown of red the other hue[PARAGRAPH:1]- I saw it in the distant eyes -[PARAGRAPH:1]And yes, He knew, but focused only[PARAGRAPH:1]On the mortal soul of mine,[PARAGRAPH:1]After all, He had a role to play,[PARAGRAPH:1]And wine. My shivering blood to quaff![PARAGRAPH:1]If only i could Him betray -[PARAGRAPH:1]To break the seal of destiny,[PARAGRAPH:1]Escape the lone cacophony[PARAGRAPH:1]That emanates from wailing minds![PARAGRAPH:1][PARAGRAPH:1]Damn the fate of His - it awes and blinds![PARAGRAPH:1]The slow approach of Him upon the knoll[PARAGRAPH:1]Commences exudation of a dying heart.[PARAGRAPH:1]Endorsing all, I honed my final part."</German>
+        <Italian>Death oozes from the Aristrakh cities, consuming the life force of the land, creatures and vegetation. This agonizing transformation of the landscape is further intensified by the use of [LINK=PROJECT_ADD_POPULATION_LOCAL1]Blood Magic Rituals[\LINK]. This process creates Dark Rituals or even more [LINK=IMPROVEMENT_DARK_RITUAL]Potent Versions[\LINK], if a living resource is consumed.  However both versions will eventually [LINK=IMPROVEMENT_DARK_RITUAL_FADING]fade[\LINK], leaving nothing but barren [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] behind, ravaged by vicious [LINK=FEATURE_SANDSTORM]Sandstorms[\LINK]. Due to their life draining nature, Aristrakh workers can only build the most basic improvements on lifeless resources.[PARAGRAPH:1][PARAGRAPH:1]"A tower grim, a glowering darkness,[PARAGRAPH:1]And only brown of red the other hue[PARAGRAPH:1]- I saw it in the distant eyes -[PARAGRAPH:1]And yes, He knew, but focused only[PARAGRAPH:1]On the mortal soul of mine,[PARAGRAPH:1]After all, He had a role to play,[PARAGRAPH:1]And wine. My shivering blood to quaff![PARAGRAPH:1]If only i could Him betray -[PARAGRAPH:1]To break the seal of destiny,[PARAGRAPH:1]Escape the lone cacophony[PARAGRAPH:1]That emanates from wailing minds![PARAGRAPH:1][PARAGRAPH:1]Damn the fate of His - it awes and blinds![PARAGRAPH:1]The slow approach of Him upon the knoll[PARAGRAPH:1]Commences exudation of a dying heart.[PARAGRAPH:1]Endorsing all, I honed my final part."</Italian>
+        <Spanish>Death oozes from the Aristrakh cities, consuming the life force of the land, creatures and vegetation. This agonizing transformation of the landscape is further intensified by the use of [LINK=PROJECT_ADD_POPULATION_LOCAL1]Blood Magic Rituals[\LINK]. This process creates Dark Rituals or even more [LINK=IMPROVEMENT_DARK_RITUAL]Potent Versions[\LINK], if a living resource is consumed.  However both versions will eventually [LINK=IMPROVEMENT_DARK_RITUAL_FADING]fade[\LINK], leaving nothing but barren [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] behind, ravaged by vicious [LINK=FEATURE_SANDSTORM]Sandstorms[\LINK]. Due to their life draining nature, Aristrakh workers can only build the most basic improvements on lifeless resources.[PARAGRAPH:1][PARAGRAPH:1]"A tower grim, a glowering darkness,[PARAGRAPH:1]And only brown of red the other hue[PARAGRAPH:1]- I saw it in the distant eyes -[PARAGRAPH:1]And yes, He knew, but focused only[PARAGRAPH:1]On the mortal soul of mine,[PARAGRAPH:1]After all, He had a role to play,[PARAGRAPH:1]And wine. My shivering blood to quaff![PARAGRAPH:1]If only i could Him betray -[PARAGRAPH:1]To break the seal of destiny,[PARAGRAPH:1]Escape the lone cacophony[PARAGRAPH:1]That emanates from wailing minds![PARAGRAPH:1][PARAGRAPH:1]Damn the fate of His - it awes and blinds![PARAGRAPH:1]The slow approach of Him upon the knoll[PARAGRAPH:1]Commences exudation of a dying heart.[PARAGRAPH:1]Endorsing all, I honed my final part."</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WASTELAND_ECON</Tag>
+        <English>Defiling Magic</English>
+        <French>Defiling Magic</French>
+        <German>Defiling Magic</German>
+        <Italian>Defiling Magic</Italian>
+        <Spanish>Defiling Magic</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WASTELAND_ECON_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gain Souls by spreading [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] or controlling Hell Terrain.[NEWLINE][SPACE][SPACE][ICON_BULLET]Can only sustain Quarries and Mines.</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gain Souls by spreading [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] or controlling Hell Terrain.[NEWLINE][SPACE][SPACE][ICON_BULLET]Can only sustain Quarries and Mines.</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gain Souls by spreading [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] or controlling Hell Terrain.[NEWLINE][SPACE][SPACE][ICON_BULLET]Can only sustain Quarries and Mines.</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gain Souls by spreading [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] or controlling Hell Terrain.[NEWLINE][SPACE][SPACE][ICON_BULLET]Can only sustain Quarries and Mines.</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gain Souls by spreading [LINK=TERRAIN_WASTELAND]Wasteland[\LINK] or controlling Hell Terrain.[NEWLINE][SPACE][SPACE][ICON_BULLET]Can only sustain Quarries and Mines.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WASTELAND_ECON_SHORT</Tag>
+        <English>DM</English>
+        <French>DM</French>
+        <German>DM</German>
+        <Italian>DM</Italian>
+        <Spanish>DM</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_DEFILING_CATALYST</Tag>
+        <English>Defiling Catalyst</English>
+        <French>Defiling Catalyst</French>
+        <German>Defiling Catalyst</German>
+        <Italian>Defiling Catalyst</Italian>
+        <Spanish>Defiling Catalyst</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_POWER</Tag>
+        <English>Nexus of Power</English>
+        <French>Nexus of Power</French>
+        <German>Nexus of Power</German>
+        <Italian>Nexus of Power</Italian>
+        <Spanish>Nexus of Power</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_WEALTH</Tag>
+        <English>Nexus of Wealth</English>
+        <French>Nexus of Wealth</French>
+        <German>Nexus of Wealth</German>
+        <Italian>Nexus of Wealth</Italian>
+        <Spanish>Nexus of Wealth</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_KNOWLEDGE</Tag>
+        <English>Nexus of Knowledge</English>
+        <French>Nexus of Knowledge</French>
+        <German>Nexus of Knowledge</German>
+        <Italian>Nexus of Knowledge</Italian>
+        <Spanish>Nexus of Knowledge</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_VOID_CATALYST</Tag>
+        <English>Void Catalyst</English>
+        <French>Void Catalyst</French>
+        <German>Void Catalyst</German>
+        <Italian>Void Catalyst</Italian>
+        <Spanish>Void Catalyst</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SOUL_CONSUMPTION_STRATEGY</Tag>
+        <English>Bonuses from [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption depend on [COLOR_TECH_TEXT]Souls[COLOR_REVERT] that are consumed by the City the building is constructed in. The bonuses are added to the Building itself and thus are enhanced by modifiers from other Buildings, Civics etc.</English>
+        <French>Bonuses from [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption depend on [COLOR_TECH_TEXT]Souls[COLOR_REVERT] that are consumed by the City the building is constructed in. The bonuses are added to the Building itself and thus are enhanced by modifiers from other Buildings, Civics etc.</French>
+        <German>Bonuses from [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption depend on [COLOR_TECH_TEXT]Souls[COLOR_REVERT] that are consumed by the City the building is constructed in. The bonuses are added to the Building itself and thus are enhanced by modifiers from other Buildings, Civics etc.</German>
+        <Italian>Bonuses from [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption depend on [COLOR_TECH_TEXT]Souls[COLOR_REVERT] that are consumed by the City the building is constructed in. The bonuses are added to the Building itself and thus are enhanced by modifiers from other Buildings, Civics etc.</Italian>
+        <Spanish>Bonuses from [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption depend on [COLOR_TECH_TEXT]Souls[COLOR_REVERT] that are consumed by the City the building is constructed in. The bonuses are added to the Building itself and thus are enhanced by modifiers from other Buildings, Civics etc.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_VOID_CATALYST_HELP</Tag>
+        <English>[ICON_BULLET]City no longer consumes [COLOR_TECH_TEXT]Souls[COLOR_REVERT].[NEWLINE][ICON_BULLET]Generates 4 [COLOR_TECH_TEXT]Souls[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Surplus [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are returned to the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT].[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</English>
+        <French>[ICON_BULLET]City no longer consumes [COLOR_TECH_TEXT]Souls[COLOR_REVERT].[NEWLINE][ICON_BULLET]Generates 4 [COLOR_TECH_TEXT]Souls[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Surplus [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are returned to the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT].[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</French>
+        <German>[ICON_BULLET]City no longer consumes [COLOR_TECH_TEXT]Souls[COLOR_REVERT].[NEWLINE][ICON_BULLET]Generates 4 [COLOR_TECH_TEXT]Souls[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Surplus [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are returned to the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT].[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</German>
+        <Italian>[ICON_BULLET]City no longer consumes [COLOR_TECH_TEXT]Souls[COLOR_REVERT].[NEWLINE][ICON_BULLET]Generates 4 [COLOR_TECH_TEXT]Souls[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Surplus [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are returned to the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT].[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</Italian>
+        <Spanish>[ICON_BULLET]City no longer consumes [COLOR_TECH_TEXT]Souls[COLOR_REVERT].[NEWLINE][ICON_BULLET]Generates 4 [COLOR_TECH_TEXT]Souls[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Surplus [COLOR_TECH_TEXT]Souls[COLOR_REVERT] are returned to the [COLOR_TECH_TEXT]Soul Vault[COLOR_REVERT].[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_DEFILING_CATALYST_HELP</Tag>
+        <English>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</English>
+        <French>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</French>
+        <German>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</German>
+        <Italian>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</Italian>
+        <Spanish>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_COMMERCE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.[NEWLINE][ICON_BULLET]Accelerates Defiling Magic.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_POWER_HELP</Tag>
+        <English>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_ARCANE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</English>
+        <French>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_ARCANE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</French>
+        <German>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_ARCANE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</German>
+        <Italian>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_ARCANE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Italian>
+        <Spanish>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_ARCANE].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_WEALTH_HELP</Tag>
+        <English>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 4 [ICON_GOLD].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</English>
+        <French>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 4 [ICON_GOLD].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</French>
+        <German>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 4 [ICON_GOLD].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</German>
+        <Italian>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 4 [ICON_GOLD].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Italian>
+        <Spanish>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 4 [ICON_GOLD].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NEXUS_KNOWLEDGE_HELP</Tag>
+        <English>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_RESEARCH].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</English>
+        <French>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_RESEARCH].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</French>
+        <German>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_RESEARCH].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</German>
+        <Italian>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_RESEARCH].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Italian>
+        <Spanish>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 5 [ICON_RESEARCH].[NEWLINE][ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SOUL_COST_2_HELP</Tag>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 30[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 30[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</French>
+        <German>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 30[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 30[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 30[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SOUL_COST_1_HELP</Tag>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 15[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 15[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</French>
+        <German>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 15[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 15[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 15[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SOUL_COST_3_HELP</Tag>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 50[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 50[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</French>
+        <German>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 50[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 50[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Costs 50[COLOR_REVERT] [COLOR_TECH_TEXT]Souls[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NECROSAGE</Tag>
+        <English>Necrosage</English>
+        <French>Necrosage</French>
+        <German>Necrosage</German>
+        <Italian>Necrosage</Italian>
+        <Spanish>Necrosage</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CEMETERY</Tag>
+        <English>Cemetery</English>
+        <French>Cemetery</French>
+        <German>Cemetery</German>
+        <Italian>Cemetery</Italian>
+        <Spanish>Cemetery</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAINTED_WELL</Tag>
+        <English>Tainted Well</English>
+        <French>Tainted Well</French>
+        <German>Tainted Well</German>
+        <Italian>Tainted Well</Italian>
+        <Spanish>Tainted Well</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAINTED_WELL_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 1.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_SOUL_PRISON_HELP</Tag>
+        <English>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</English>
+        <French>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</French>
+        <German>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</German>
+        <Italian>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Italian>
+        <Spanish>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_SOUL_FUNNEL</Tag>
+        <English>Soul Funnel</English>
+        <French>Soul Funnel</French>
+        <German>Soul Funnel</German>
+        <Italian>Soul Funnel</Italian>
+        <Spanish>Soul Funnel</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CATACOMBS_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 4.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PERNICIOUS_DIRGE</Tag>
+        <English>Pernicious Dirge</English>
+        <French>Pernicious Dirge</French>
+        <German>Pernicious Dirge</German>
+        <Italian>Pernicious Dirge</Italian>
+        <Spanish>Pernicious Dirge</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CIRCLE_OF_DESPAIR</Tag>
+        <English>Circle of Despair</English>
+        <French>Circle of Despair</French>
+        <German>Circle of Despair</German>
+        <Italian>Circle of Despair</Italian>
+        <Spanish>Circle of Despair</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NECROPOLIS_VAMPPAL_HELP</Tag>
+        <English>[ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</English>
+        <French>[ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</French>
+        <German>[ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CIRCLE_OF_BLOOD</Tag>
+        <English>Circle of Blood</English>
+        <French>Circle of Blood</French>
+        <German>Circle of Blood</German>
+        <Italian>Circle of Blood</Italian>
+        <Spanish>Circle of Blood</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CABAL_SHRINE_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 5.[NEWLINE][ICON_BULLET][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 5.[NEWLINE][ICON_BULLET][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 5.[NEWLINE][ICON_BULLET][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 5.[NEWLINE][ICON_BULLET][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 5.[NEWLINE][ICON_BULLET][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_DESPAIR]Circle of Despair[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_CIRCLE_OF_BLOOD]Circle of Blood[\LINK][COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVE_PACT_HELP</Tag>
+        <English>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 7.[NEWLINE][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_NECROPOLIS_ARISTRAKH]Necropolis[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_VAMPIRE_PALACE]Vampire Palace[\LINK][COLOR_REVERT].</English>
+        <French>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 7.[NEWLINE][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_NECROPOLIS_ARISTRAKH]Necropolis[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_VAMPIRE_PALACE]Vampire Palace[\LINK][COLOR_REVERT].</French>
+        <German>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 7.[NEWLINE][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_NECROPOLIS_ARISTRAKH]Necropolis[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_VAMPIRE_PALACE]Vampire Palace[\LINK][COLOR_REVERT].</German>
+        <Italian>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 7.[NEWLINE][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_NECROPOLIS_ARISTRAKH]Necropolis[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_VAMPIRE_PALACE]Vampire Palace[\LINK][COLOR_REVERT].</Italian>
+        <Spanish>[ICON_BULLET]Increases [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumption by 7.[NEWLINE][ICON_BULLET]Requires [COLOR_LIGHT_GREY][LINK=BUILDING_NECROPOLIS_ARISTRAKH]Necropolis[\LINK][COLOR_REVERT] or [COLOR_LIGHT_GREY][LINK=BUILDING_VAMPIRE_PALACE]Vampire Palace[\LINK][COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CABAL_SHRINE</Tag>
+        <English>Cabal Shrine</English>
+        <French>Cabal Shrine</French>
+        <German>Cabal Shrine</German>
+        <Italian>Cabal Shrine</Italian>
+        <Spanish>Cabal Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVE_PACT</Tag>
+        <English>Grave Pact</English>
+        <French>Grave Pact</French>
+        <German>Grave Pact</German>
+        <Italian>Grave Pact</Italian>
+        <Spanish>Grave Pact</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NECRA_SANCTUARY</Tag>
+        <English>Necra Sanctuary</English>
+        <French>Necra Sanctuary</French>
+        <German>Necra Sanctuary</German>
+        <Italian>Necra Sanctuary</Italian>
+        <Spanish>Necra Sanctuary</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_VILE_REQUIEM</Tag>
+        <English>Vile Requiem</English>
+        <French>Vile Requiem</French>
+        <German>Vile Requiem</German>
+        <Italian>Vile Requiem</Italian>
+        <Spanish>Vile Requiem</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_MARK_OF_NIGHT</Tag>
+        <English>Mark of Night</English>
+        <French>Mark of Night</French>
+        <German>Mark of Night</German>
+        <Italian>Mark of Night</Italian>
+        <Spanish>Mark of Night</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_NOXIOUS_FIELD</Tag>
+        <English>Noxious Field</English>
+        <French>Noxious Field</French>
+        <German>Noxious Field</German>
+        <Italian>Noxious Field</Italian>
+        <Spanish>Noxious Field</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_BANEFUL_OMEN</Tag>
+        <English>Baneful Omen</English>
+        <French>Baneful Omen</French>
+        <German>Baneful Omen</German>
+        <Italian>Baneful Omen</Italian>
+        <Spanish>Baneful Omen</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_UNHALLOWED_PIT</Tag>
+        <English>Unhallowed Pit</English>
+        <French>Unhallowed Pit</French>
+        <German>Unhallowed Pit</German>
+        <Italian>Unhallowed Pit</Italian>
+        <Spanish>Unhallowed Pit</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_WITHERING_HEX</Tag>
+        <English>Withering Hex</English>
+        <French>Withering Hex</French>
+        <German>Withering Hex</German>
+        <Italian>Withering Hex</Italian>
+        <Spanish>Withering Hex</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_WITHERING_HEX_HELP</Tag>
+        <English>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_MANA].</English>
+        <French>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_MANA].</French>
+        <German>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_MANA].</German>
+        <Italian>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_MANA].</Italian>
+        <Spanish>[ICON_BULLET]Every [COLOR_TECH_TEXT]Soul[COLOR_REVERT] consumed adds 1 [ICON_MANA].</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER1</Tag>
+        <English>Latent Defiler</English>
+        <French>Latent Defiler</French>
+        <German>Latent Defiler</German>
+        <Italian>Latent Defiler</Italian>
+        <Spanish>Latent Defiler</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER1_HELP</Tag>
+        <English>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Can only be build on certain Resources.[NEWLINE][ICON_BULLET]Consumes Resources and Terrain after construction.</English>
+        <French>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Can only be build on certain Resources.[NEWLINE][ICON_BULLET]Consumes Resources and Terrain after construction.</French>
+        <German>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Can only be build on certain Resources.[NEWLINE][ICON_BULLET]Consumes Resources and Terrain after construction.</German>
+        <Italian>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Can only be build on certain Resources.[NEWLINE][ICON_BULLET]Consumes Resources and Terrain after construction.</Italian>
+        <Spanish>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.[NEWLINE][ICON_BULLET]Can only be build on certain Resources.[NEWLINE][ICON_BULLET]Consumes Resources and Terrain after construction.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_CIVIC_UNDEAD_POPULATION</Tag>
+        <English>Undead Population</English>
+        <French>Undead Population</French>
+        <German>Undead Population</German>
+        <Italian>Undead Population</Italian>
+        <Spanish>Undead Population</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER2</Tag>
+        <English>Awakened Defiler</English>
+        <French>Awakened Defiler</French>
+        <German>Awakened Defiler</German>
+        <Italian>Awakened Defiler</Italian>
+        <Spanish>Awakened Defiler</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER2_HELP</Tag>
+        <English>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</English>
+        <French>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</French>
+        <German>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</German>
+        <Italian>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Italian>
+        <Spanish>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER3</Tag>
+        <English>Restored Defiler</English>
+        <French>Restored Defiler</French>
+        <German>Restored Defiler</German>
+        <Italian>Restored Defiler</Italian>
+        <Spanish>Restored Defiler</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_DEFILER3_HELP</Tag>
+        <English>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</English>
+        <French>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</French>
+        <German>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</German>
+        <Italian>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Italian>
+        <Spanish>[ICON_BULLET]Generates 1 [COLOR_TECH_TEXT]Soul[COLOR_REVERT] per turn.</Spanish>
+	</TEXT>
+</Civ4GameText>

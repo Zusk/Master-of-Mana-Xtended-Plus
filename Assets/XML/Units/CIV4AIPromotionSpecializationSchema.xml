@@ -1,0 +1,55 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="bSaveUpPromotions" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="iCityAttack" content="textOnly" dt:type="int"/>						
+	<ElementType name="iCityDefense" content="textOnly" dt:type="int"/>						
+	<ElementType name="iCombatPromotions" content="textOnly" dt:type="int"/>					
+	<ElementType name="iDefensiveStrikes" content="textOnly" dt:type="int"/>							
+	<ElementType name="iFirstStrikes" content="textOnly" dt:type="int"/>								
+	<ElementType name="iGuardsman" content="textOnly" dt:type="int"/>											
+	<ElementType name="iHunter" content="textOnly" dt:type="int"/>										
+	<ElementType name="iLandscape" content="textOnly" dt:type="int"/>									
+	<ElementType name="iMobility" content="textOnly" dt:type="int"/>										
+	<ElementType name="iSight" content="textOnly" dt:type="int"/>								
+	<ElementType name="iWithdraw" content="textOnly" dt:type="int"/>										
+	<ElementType name="PromotionType" content="textOnly"/>
+	<ElementType name="AIGroup" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>		
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="Promotion" content="eltOnly">
+		<element type="PromotionType"/>
+		<element type="iValue"/>
+	</ElementType>
+	<ElementType name="Promotions" content="eltOnly">
+		<element type="Promotion" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="AIPromotionSpecializationInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="bSaveUpPromotions" minOccurs="0"/>								
+		<element type="iCityAttack" minOccurs="0"/>										
+		<element type="iCityDefense" minOccurs="0"/>								
+		<element type="iCombatPromotions" minOccurs="0"/>			
+		<element type="iDefensiveStrikes" minOccurs="0"/>			
+		<element type="iFirstStrikes" minOccurs="0"/>					
+		<element type="iGuardsman" minOccurs="0"/>							
+		<element type="iHunter" minOccurs="0"/>									
+		<element type="iLandscape" minOccurs="0"/>											
+		<element type="iMobility" minOccurs="0"/>													
+		<element type="iSight" minOccurs="0"/>							
+		<element type="iWithdraw" minOccurs="0"/>																	
+		<element type="Promotions" minOccurs="0"/>		
+		<element type="AIGroup" minOccurs="0"/>	
+		<element type="Description" minOccurs="0"/>			
+	</ElementType>
+	<ElementType name="AIPromotionSpecializationInfos" content="eltOnly">
+		<element type="AIPromotionSpecializationInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4AIPromotionSpecializationInfos" content="eltOnly">
+		<element type="AIPromotionSpecializationInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+</Schema>

@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:XHERO_CIV4UnitSchema.xml">
+    <PromotionInfos>
+        <PromotionInfo>
+            <Type>PROMOTION_AURA_PUPPETEER</Type>
+            <Description>TXT_KEY_PROMOTION_AURA_PUPPETEER</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			<UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+            <iMinLevel>1</iMinLevel>
+            <Button>Modules/NormalModules/Xtended/XBalseraphs/Puppeteer.dds</Button>
+			<PrereqCivilizations>
+				<PrereqCivilization>CIVILIZATION_BALSERAPHS</PrereqCivilization>
+			</PrereqCivilizations>						
+            <CombatAuraApplyPromotions>
+				<CombatAuraApplyPromotion>
+					<PromotionType>PROMOTION_CHANNELING_PUPPET</PromotionType>
+					<bApplied>1</bApplied>				
+				</CombatAuraApplyPromotion>			
+			</CombatAuraApplyPromotions>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+        <PromotionInfo>
+            <Type>PROMOTION_CHANNELING_PUPPET</Type>
+            <Description>TXT_KEY_PROMOTION_CHANNELING_PUPPET</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Art/Interface/Buttons/Promotions/Channeling1.dds</Button>
+			<bAnyUnitCombat>1</bAnyUnitCombat>
+			<bDispellable>1</bDispellable>
+			<iAIWeight>10</iAIWeight>
+			<iExpireChance>100</iExpireChance>
+			<iMinLevel>-1</iMinLevel>			
+			<PromotionMustHave>PROMOTION_PUPPET</PromotionMustHave>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+        <PromotionInfo>	<!-- allows Taunt Ability -->
+            <Type>PROMOTION_TAUNTING_PRESENCE</Type>
+            <Description>TXT_KEY_PROMOTION_TAUNTING_PRESENCE</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+            <Button>Art/Interface/Buttons/Promotions/Taunt.dds</Button>
+			<bAnyUnitCombat>1</bAnyUnitCombat>
+            <iMinLevel>-1</iMinLevel>
+        	<iPowerModifier>0</iPowerModifier>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>

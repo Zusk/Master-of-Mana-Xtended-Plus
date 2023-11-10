@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:XDANALIN_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo> 
+			<Type>PROJECT_SUMMON_CTHULTHU</Type>
+			<Description>TXT_KEY_SPELL_SUMMON_CTHULTHU</Description>
+            <Civilopedia>TXT_KEY_UNIT_CTHULTHU_PEDIA</Civilopedia>
+			<Button>Modules/NormalModules/Xtended/XDanalin/Buttons/Cthulthu.dds</Button>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>1</iMaxTeamInstances>
+			<iCost>-1</iCost>
+			<TechPrereq>TECH_DIVINE_OVERLORDS</TechPrereq>
+			<iFaithCost>3333</iFaithCost>
+			<PrereqReligion>RELIGION_OCTOPUS_OVERLORDS</PrereqReligion>
+			<bGlobalEnchantment>1</bGlobalEnchantment>
+			<PyResult>SummonCthulthu(iPlayer)</PyResult>
+		</ProjectInfo>		
+	</ProjectInfos>
+</Civ4ProjectInfo>

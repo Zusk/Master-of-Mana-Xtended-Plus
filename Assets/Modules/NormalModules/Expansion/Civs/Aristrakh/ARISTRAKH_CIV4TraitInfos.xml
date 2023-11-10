@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leader Trait Infos -->
+<Civ4TraitInfos xmlns="x-schema:ARISTRAKH_CIV4CivilizationsSchema.xml">
+	<TraitInfos>
+		<TraitInfo>
+			<Type>TRAIT_VAMPIRE_LORD</Type>
+			<Description>TXT_KEY_TRAIT_VAMPIRE_LORD</Description>
+			<ShortDescription>TXT_KEY_TRAIT_VAMPIRE_LORD_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_VAMPIRE_LORD_HELP</Help>
+			<iMaxAnarchy>-1</iMaxAnarchy>
+			<iMaxCities>-1</iMaxCities>
+		</TraitInfo>		
+		<TraitInfo>
+			<Type>TRAIT_HERALD_OF_DEATH</Type>
+			<Description>TXT_KEY_TRAIT_HERALD_OF_DEATH</Description>
+			<ShortDescription>TXT_KEY_TRAIT_HERALD_OF_DEATH_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_HERALD_OF_DEATH_HELP</Help>
+			<iMaxAnarchy>-1</iMaxAnarchy>
+			<iMaxCities>-1</iMaxCities>
+		</TraitInfo>	
+		<TraitInfo>
+			<Type>TRAIT_WASTELAND_ECON</Type>
+			<Description>TXT_KEY_TRAIT_WASTELAND_ECON</Description>
+			<ShortDescription>TXT_KEY_TRAIT_WASTELAND_ECON_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_WASTELAND_ECON_HELP</Help>
+			<iMaxAnarchy>-1</iMaxAnarchy>
+			<iMaxCities>-1</iMaxCities>
+<!--			<iExtraImprovementPerCity>-4</iExtraImprovementPerCity>	-->
+		</TraitInfo>
+	</TraitInfos>
+</Civ4TraitInfos>

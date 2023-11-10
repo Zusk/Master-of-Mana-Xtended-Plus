@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building art path information -->
+<Civ4ArtDefines xmlns="x-schema:GLOBAL_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_INSPIRATION</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Buildings/Buildings_Atlas1.dds,6,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HOPE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Buildings/Buildings_Atlas1.dds,2,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WALL_OF_FORCE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>10.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/Ring of Carcer/relic_pad_effect.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Improvements/Ring of Carcer.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WALL_OF_STONE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,7</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> 
+			<Type>ART_DEF_BUILDING_WALL_OF_FIRE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>100.0</fScale> <!-- tweaked by tesb -->
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/flamewall/firewall3.nif</NIF> <!-- tweaked by tesb -->
+			<KFM/>
+			<Button>Art/Interface/Buttons/Spells/WallofFire.dds</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo> <!-- new -->
+			<Type>ART_DEF_BUILDING_DARK_RITUALS</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/curse/curse.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Unyieldingorder.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo> <!-- new -->
+			<Type>ART_DEF_BUILDING_CLOUD_OF_FEAR</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>90.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/curse/curse2.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Unyieldingorder.dds</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo> <!-- new -->
+			<Type>ART_DEF_BUILDING_GROWTH</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/growth/growth.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Granary.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,3</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TREE_OF_LIFE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Buildings/Buildings_Atlas1.dds,2,8</Button>
+		</BuildingArtInfo>	
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ENCHANTED_WALLS</Type>
+			<LSystem>LSYSTEM_ENCHANTED_WALLS</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Walls/Walls.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,4,10</Button>
+		</BuildingArtInfo>	
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_RICHES_OF_THE_SEA</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>40.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Hope/sfx_epic_healer_crush_1h.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,6,10</Button>
+		</BuildingArtInfo>		
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HIDDEN_CITY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>50.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mist/mistwall.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,8</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MIST</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mist/mist.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,3,8</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

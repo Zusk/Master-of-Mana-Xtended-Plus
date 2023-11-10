@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_ENCHANTED_ROADS</Tag>
+        <English>Enchanted Roads</English>
+        <French>Enchanted Roads</French>
+        <German>Enchanted Roads</German>
+        <Italian>Enchanted Roads</Italian>
+        <Spanish>Enchanted Roads</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_ARCANE_ARMOR</Tag>
+        <English>Arcane Armor</English>
+        <French>Arcane Armor</French>
+        <German>Arcane Armor</German>
+        <Italian>Arcane Armor</Italian>
+        <Spanish>Arcane Armor</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_ENCHANTED_WALLS</Tag>
+        <English>Enchanted Walls</English>
+        <French>Enchanted Walls</French>
+        <German>Enchanted Walls</German>
+        <Italian>Enchanted Walls</Italian>
+        <Spanish>Enchanted Walls</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_RICHES_OF_THE_SEA</Tag>
+        <English>Riches of the Sea</English>
+        <French>Riches of the Sea</French>
+        <German>Riches of the Sea</German>
+        <Italian>Riches of the Sea</Italian>
+        <Spanish>Riches of the Sea</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SPELLTARGETS1</Tag>
+        <English>Spell Targets I</English>
+        <French>Spell Targets I</French>
+        <German>Spell Targets I</German>
+        <Italian>Spell Targets I</Italian>
+        <Spanish>Spell Targets I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SPELLTARGETS2</Tag>
+        <English>Spell Targets II</English>
+        <French>Spell Targets II</French>
+        <German>Spell Targets II</German>
+        <Italian>Spell Targets II</Italian>
+        <Spanish>Spell Targets II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SPELLTARGETS3</Tag>
+        <English>Spell Targets III</English>
+        <French>Spell Targets III</French>
+        <German>Spell Targets III</German>
+        <Italian>Spell Targets III</Italian>
+        <Spanish>Spell Targets III</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SMALL_EXPLOSION</Tag>
+        <English>Explosion</English>
+        <French>Explosion</French>
+        <German>Explosion</German>
+        <Italian>Explosion</Italian>
+        <Spanish>Explosion</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_EXPLOSION</Tag>
+        <English>Chain Explosion</English>
+        <French>Chain Explosion</French>
+        <German>Chain Explosion</German>
+        <Italian>Chain Explosion</Italian>
+        <Spanish>Chain Explosion</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_MAGIC_MISSILE</Tag>
+        <English>Magic Missile</English>
+        <French>Magic Missile</French>
+        <German>Magic Missile</German>
+        <Italian>Magic Missile</Italian>
+        <Spanish>Magic Missile</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_MAGIC_MISSILE_BARRAGE</Tag>
+        <English>Magic Missile Barrage</English>
+        <French>Magic Missile Barrage</French>
+        <German>Magic Missile Barrage</German>
+        <Italian>Magic Missile Barrage</Italian>
+        <Spanish>Magic Missile Barrage</Spanish>
+    </TEXT>
+</Civ4GameText>

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4UnitInfos xmlns="x-schema:XMALAKIM_CIV4UnitSchema.xml">
+    <UnitInfos>
+        <UnitInfo>
+            <Class>UNITCLASS_SLAVE</Class>
+            <Type>UNIT_SLAVE</Type>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_CAMP_MALAKIM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY_SCIONS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+		</UnitInfo>
+        <UnitInfo>
+            <Class>UNITCLASS_WORKER</Class>
+            <Type>UNIT_MUD_GOLEM</Type>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_CAMP_MALAKIM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY_SCIONS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+		</UnitInfo>
+        <UnitInfo>
+            <Class>UNITCLASS_WORKER</Class>
+            <Type>UNIT_WORKER</Type>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_CAMP_MALAKIM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY_SCIONS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+		</UnitInfo>
+        <UnitInfo>
+            <Class>UNITCLASS_WORKER</Class>
+            <Type>UNIT_WORKER_CLAN</Type>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_CAMP_MALAKIM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY_SCIONS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+		</UnitInfo>		
+    </UnitInfos>
+</Civ4UnitInfos>

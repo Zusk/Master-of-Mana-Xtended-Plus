@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:DURAL_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_DANNMOS</Type>
+			<Button>art/interface/LeaderHeads/Dannmosbutton.dds</Button>
+			<NIF>art/interface/LeaderHeads/Dannmos.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ALLISOL</Type>
+			<Button>art/interface/LeaderHeads/allisol_button.dds</Button>
+			<NIF>art/interface/LeaderHeads/allisol.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>		
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

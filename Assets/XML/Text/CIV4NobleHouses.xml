@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CORPORATION_HOUSE_KUNDARAK_PEDIA</Tag>
+        <English>The amount of trade between the various nations is so great, merely shipping gold coins back and forth between all of the involved parties at any given time would require more ships than even the Lanun could provide. House Kundarak is running the largest banking system Erebus has ever known. Through it’s issuance of letters of credit, and its ability to honor such letters of almost any size on demand has made modern living possible, and has made House Kundarak quite rich in the process.</English>
+        <French>The amount of trade between the various nations is so great, merely shipping gold coins back and forth between all of the involved parties at any given time would require more ships than even the Lanun could provide. House Kundarak is running the largest banking system Erebus has ever known. Through it’s issuance of letters of credit, and its ability to honor such letters of almost any size on demand has made modern living possible, and has made House Kundarak quite rich in the process.</French>
+        <German>Der Handel zwischen den verschiedenen Reichen hat inzwischen so gewaltige Ausmaße angenommen, dass das Verschiffen der benötigten Goldmünzen mehr Schiffe benötigen würde, als selbst die Lanun bereitstellen könnten. Haus Kundarak leitet die größte Bank, die Erebus jemals gesehen hat. Durch die Ausgabe von Pfandbriefen und der Möglichkeit solche Briefe in fast beliebiger Menge einzulösen wurde die moderne Lebensart erst möglich und dies hat Haus Kundarak sehr, sehr reich gemacht.</German>
+        <Italian>The amount of trade between the various nations is so great, merely shipping gold coins back and forth between all of the involved parties at any given time would require more ships than even the Lanun could provide. House Kundarak is running the largest banking system Erebus has ever known. Through it’s issuance of letters of credit, and its ability to honor such letters of almost any size on demand has made modern living possible, and has made House Kundarak quite rich in the process.</Italian>
+        <Spanish>The amount of trade between the various nations is so great, merely shipping gold coins back and forth between all of the involved parties at any given time would require more ships than even the Lanun could provide. House Kundarak is running the largest banking system Erebus has ever known. Through it’s issuance of letters of credit, and its ability to honor such letters of almost any size on demand has made modern living possible, and has made House Kundarak quite rich in the process.</Spanish>
+    </TEXT>
+</Civ4GameText>

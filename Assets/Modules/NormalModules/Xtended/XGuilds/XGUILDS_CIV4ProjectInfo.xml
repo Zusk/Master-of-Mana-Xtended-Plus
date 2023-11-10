@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:XGUILDS_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>
+			<Type>PROJECT_GLOBAL_ADVENTURE</Type>
+			<Description>Discover a Dungeon</Description>
+			<Civilopedia>TXT_KEY_PROJECT_PLACEHOLDER_PEDIA</Civilopedia>
+			<PrereqCivilization>CIVILIZATION_GRIGORI</PrereqCivilization>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<TechPrereq>TECH_CARAVANSARY</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>-1</iCost>
+			<Button>Modules/NormalModules/Xtended/XGrigori/Buttons/AdventurerTale.dds</Button>
+			<CreateSound/>
+			<MovieDefineTag/>
+			<iAIWeight>-100</iAIWeight>
+			<iManaCost>100</iManaCost>
+			<bGlobalEnchantment>1</bGlobalEnchantment>
+			<bEffectOnly>1</bEffectOnly>
+			<PyResult>GrigoriAdventure(iPlayer)</PyResult>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

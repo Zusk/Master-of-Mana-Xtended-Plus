@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_HINT_MOM_1</Tag>
+		<English>Visit the official Master of Mana Forum to download Patches, Manuals or take part in the Mod Development at www.masterofmana.com</English>
+		<French>Visit the official Master of Mana Forum to download Patches, Manuals or take part in the Mod Development at www.masterofmana.com</French>
+		<German>Besucht das offizielle Master of Mana - Forum, um Patches herunterzuladen oder um an der Modentwicklung teilzunehmen... auf www.masterofmana.com</German>
+		<Italian>Visit the official Master of Mana Forum to download Patches, Manuals or take part in the Mod Development at www.masterofmana.com</Italian>
+		<Spanish>Visit the official Master of Mana Forum to download Patches, Manuals or take part in the Mod Development at www.masterofmana.com</Spanish>				
+    </TEXT>		
+</Civ4GameText>

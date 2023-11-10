@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XAMURITES_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_FIREBALL_GREATER_FIREBOW</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>TXT_KEY_SPELL_FIREBALL</Description>
+            <Civilopedia>TXT_KEY_UNIT_FIREBALL_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_FIREBOW</PromotionPrereq1>
+			<bFlameFeatures>1</bFlameFeatures>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <iDamage>15</iDamage>
+            <iDamageLimit>70</iDamageLimit>
+            <DamageType>DAMAGE_FIRE</DamageType>
+            <Effect>EFFECT_FIREBALL_SPELL</Effect>
+            <Sound>AS3D_SPELL_FIREBALL</Sound>
+            <Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,1,9</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<DoTPromotion>PROMOTION_SPELL_ON_FIRE</DoTPromotion>
+			<iAIWeight>100</iAIWeight>
+			<iNumTargets>6</iNumTargets>
+			<iManaCost>20</iManaCost>
+			<bBombard>1</bBombard>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_ESCAPE</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>TXT_KEY_SPELL_ESCAPE</Description>
+            <Civilopedia>TXT_KEY_SPELL_ESCAPE_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_ESCAPE_HELP</Help>
+            <PromotionPrereq1>PROMOTION_WARP_CHANTER</PromotionPrereq1>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <PyResult>spellTeleport(pCaster,'Capital')</PyResult>
+            <PyRequirement>reqEscape(pCaster)</PyRequirement>
+            <Effect>EFFECT_SPELL2</Effect>
+            <Sound>AS3D_SPELL_ESCAPE</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,2,4</Button>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

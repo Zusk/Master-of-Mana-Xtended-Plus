@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:ARISTRAKH_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_LURID_AGITATION</Type>
+			<Description>TXT_KEY_SPELL_LURID_AGITATION</Description>
+			<Button>Art/Interface/Buttons/Promotions/luridagitation.dds</Button>
+		</CombatAuraClassInfo>		
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

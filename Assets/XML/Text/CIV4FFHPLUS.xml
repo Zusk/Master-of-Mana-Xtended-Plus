@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_WIZARDS_HALL</Tag>
+        <English>Wizard's Hall</English>
+        <French>Wizard's Hall</French>
+        <German>Wizard's Hall</German>
+        <Italian>Wizard's Hall</Italian>
+        <Spanish>Auditorio de Brujos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_WIZARDS_HALL_PEDIA</Tag>
+        <English>While other empires' mages are cloistered up in guilds that have limited access to and from the outside world, Amurite wizards are more than welcome to share their knowledge with their fellow citizens.  This change in view is due to both the actions of Kylorin and the example of Govannon.  The Wizard's Hall is open to all Amurites, meaning any citizen of the empire could pick something up.  It also serves the same purposes as a mage's guild - training adepts to go out into the world.</English>
+        <French>While other empires' mages are cloistered up in guilds that have limited access to and from the outside world, Amurite wizards are more than welcome to share their knowledge with their fellow citizens.  This change in view is due to both the actions of Kylorin and the example of Govannon.  The Wizard's Hall is open to all Amurites, meaning any citizen of the empire could pick something up.  It also serves the same purposes as a mage's guild - training adepts to go out into the world.</French>
+        <German>While other empires' mages are cloistered up in guilds that have limited access to and from the outside world, Amurite wizards are more than welcome to share their knowledge with their fellow citizens.  This change in view is due to both the actions of Kylorin and the example of Govannon.  The Wizard's Hall is open to all Amurites, meaning any citizen of the empire could pick something up.  It also serves the same purposes as a mage's guild - training adepts to go out into the world.</German>
+        <Italian>While other empires' mages are cloistered up in guilds that have limited access to and from the outside world, Amurite wizards are more than welcome to share their knowledge with their fellow citizens.  This change in view is due to both the actions of Kylorin and the example of Govannon.  The Wizard's Hall is open to all Amurites, meaning any citizen of the empire could pick something up.  It also serves the same purposes as a mage's guild - training adepts to go out into the world.</Italian>
+        <Spanish>Mientras los magos de otros imperios están enclaustrado en grenios que tienen aceso mínimo al mundo exterior, magos Amuritos son recibido con mucho agrado en compartir su conocimiento con sus compatriotas. Este cambio es a cause de las acciones de Kylorin y también el ejemplo de Govannon. El Auditorio de Brujos está abierto a todos los Amuritos, así cualquiera compatriota del imperio puede aprender algo. También cumple el mismo utilidad de un gremio de magos - enseñar a los adeptos para ir al mundo.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WIZARDS_HALL_HELP</Tag>
+		<English>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 1 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</English>
+        <French>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 1 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</French>
+        <German>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 1 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</German>
+        <Italian>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 1 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</Italian>
+        <Spanish>[ICON_BULLET]Le da a las unidades nuevas de cada tipo que se construye en la ciudad la posibilidad de empezar con un hechizo aleatorio de nivel I.[NEWLINE][ICON_BULLET]Los hechizos son basados en tu mana, y más mana aumenta la posibilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAVE_OF_ANCESTORS_HELP</Tag>
+		<English>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 2 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</English>
+        <French>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 2 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</French>
+        <German>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 2 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</German>
+        <Italian>[ICON_BULLET]Gives new units of any type that are built in the city a random chance to start with a random level 2 spell.[NEWLINE][ICON_BULLET]Spells are based on your mana and more mana increases the chances.</Italian>
+        <Spanish>[ICON_BULLET]Le da a las unidades nuevas de cada tipo que se construye en la ciudad la posibilidad de empezar con un hechizo aleatorio de nivel II.[NEWLINE][ICON_BULLET]Los hechizos son basados en tu mana, y más mana aumenta la posibilidad.</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SWORDMAGE</Tag>
+        <English>Swordmage</English>
+        <French>Swordmage</French>
+        <German>Swordmage</German>
+        <Italian>Swordmage</Italian>
+        <Spanish>Mago de espada</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BATTLEMAGE</Tag>
+        <English>Battlemage</English>
+        <French>Battlemage</French>
+        <German>Battlemage</German>
+        <Italian>Battlemage</Italian>
+        <Spanish>Mago de Batalla</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_WALL_OF_WARDING</Tag>
+        <English>Wall of Warding</English>
+        <French>Wall of Warding</French>
+        <German>Wall of Warding</German>
+        <Italian>Wall of Warding</Italian>
+        <Spanish>Pared de Vigilar</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_WALL_OF_WARDING_PEDIA</Tag>
+        <English>These magical walls give the abilty to negate first strikes from attackers.</English>
+        <French>These magical walls give the abilty to negate first strikes from attackers.</French>
+        <German>These magical walls give the abilty to negate first strikes from attackers.</German>
+        <Italian>These magical walls give the abilty to negate first strikes from attackers.</Italian>
+        <Spanish>Estas paredes dan la abilidad de invalidar ataques de iniciativa.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_ARCANE_FORGE</Tag>
+        <English>Arcane Forge</English>
+        <French>Arcane Forge</French>
+        <German>Arcane Forge</German>
+        <Italian>Arcane Forge</Italian>
+        <Spanish>Forja Arcana</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_ARCANE_FORGE_PEDIA</Tag>
+        <English>The blades crafted in this forge have a strong magical aura.</English>
+        <French>The blades crafted in this forge have a strong magical aura.</French>
+        <German>The blades crafted in this forge have a strong magical aura.</German>
+        <Italian>The blades crafted in this forge have a strong magical aura.</Italian>
+        <Spanish>Las hojas hechas en esta forja tienen una aura mágica fuerte.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TRANSMUTATION_LAB</Tag>
+        <English>Transmutation Lab</English>
+        <French>Transmutation Lab</French>
+        <German>Transmutation Lab</German>
+        <Italian>Transmutation Lab</Italian>
+        <Spanish>Laboratorio de Transmutación</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TRANSMUTATION_LAB_PEDIA</Tag>
+        <English>This Pedia Text Needs Work.</English>
+        <French>This Pedia Text Needs Work.</French>
+        <German>This Pedia Text Needs Work.</German>
+        <Italian>This Pedia Text Needs Work.</Italian>
+        <Spanish>This Pedia Text Needs Work.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_KYLORIN_LEGACY</Tag>
+        <English>Kylorin&#39;s Legacy</English>
+        <French>Kylorin&#39;s Legacy</French>
+        <German>Kylorin&#39;s Legacy</German>
+        <Italian>Kylorin&#39;s Legacy</Italian>
+        <Spanish>Legado de Kylorin</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_ARCANE_MASTERY_AMURITES</Tag>
+        <English>Arcane Mastery of the Amurites</English>
+        <French>Arcane Mastery of the Amurites</French>
+        <German>Arcane Mastery of the Amurites</German>
+        <Italian>Arcane Mastery of the Amurites</Italian>
+        <Spanish>Arcane Mastery of the Amurites</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_ARCANE_MASTERY_AMURITES_SHORT</Tag>
+        <English>ArcM</English>
+        <French>ArcM</French>
+        <German>ArcM</German>
+        <Italian>ArcM</Italian>
+        <Spanish>LegK</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_ARCANE_MASTERY_AMURITES_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Level III Battlemages automatically gain the Guardsman Promotion. [NEWLINE][ICON_BULLET]Level VI Battlemages automatically gain Channeling II Promotion.</English>
+        <French>[NEWLINE][ICON_BULLET]Level III Battlemages automatically gain the Guardsman Promotion. [NEWLINE][ICON_BULLET]Level VI Battlemages automatically gain Channeling II Promotion.</French>
+        <German>[NEWLINE][ICON_BULLET]Level III Battlemages automatically gain the Guardsman Promotion. [NEWLINE][ICON_BULLET]Level VI Battlemages automatically gain Channeling II Promotion.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Level III Battlemages automatically gain the Guardsman Promotion. [NEWLINE][ICON_BULLET]Level VI Battlemages automatically gain Channeling II Promotion.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Nivel III Magos de Batalla ganan automatically the Guardsman Promotion. [NEWLINE][ICON_BULLET]Level VI Battlemages automatically gain Channeling II Promotion.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_MIND_MAGIC_MASTERY</Tag>
+        <English>Mastery of Mind Magic</English>
+        <French>Mastery of Mind Magic</French>
+        <German>Mastery of Mind Magic</German>
+        <Italian>Mastery of Mind Magic</Italian>
+        <Spanish>Domino de Mágico del Mente</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_MIND_MAGIC_MASTERY_SHORT</Tag>
+        <English>ArcMM</English>
+        <French>ArcMM</French>
+        <German>ArcMM</German>
+        <Italian>ArcMM</Italian>
+        <Spanish>ArcMM</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_MIND_MAGIC_MASTERY_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Provides access to additional Mind Mana.</English>
+        <French>[NEWLINE][ICON_BULLET]Provides access to additional Mind Mana.</French>
+        <German>[NEWLINE][ICON_BULLET]Provides access to additional Mind Mana.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Provides access to additional Mind Mana.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Provides access to additional Mind Mana.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_EARTH_MAGIC_MASTERY</Tag>
+        <English>Mastery of Earth Magic</English>
+        <French>Mastery of Earth Magic</French>
+        <German>Mastery of Earth Magic</German>
+        <Italian>Mastery of Earth Magic</Italian>
+        <Spanish>Dominio de Mágico de la Tierra</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_EARTH_MAGIC_MASTERY_SHORT</Tag>
+        <English>ArcEM</English>
+        <French>ArcEM</French>
+        <German>ArcEM</German>
+        <Italian>ArcEM</Italian>
+        <Spanish>ArcMT</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_EARTH_MAGIC_MASTERY_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</English>
+        <French>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</French>
+        <German>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WATER_MAGIC_MASTERY</Tag>
+        <English>Mastery of Water Magic</English>
+        <French>Mastery of Water Magic</French>
+        <German>Mastery of Water Magic</German>
+        <Italian>Mastery of Water Magic</Italian>
+        <Spanish>Dominio de Mágico del Agua</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WATER_MAGIC_MASTERY_SHORT</Tag>
+        <English>ArcWM</English>
+        <French>ArcWM</French>
+        <German>ArcWM</German>
+        <Italian>ArcWM</Italian>
+        <Spanish>ArcWM</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WATER_MAGIC_MASTERY_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</English>
+        <French>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</French>
+        <German>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Provides access to additional Nature Mana.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PLANESHIFTER</Tag>
+        <English>Planeshifter</English>
+        <French>Planeshifter</French>
+        <German>Planeshifter</German>
+        <Italian>Planeshifter</Italian>
+        <Spanish>Traslador de Planos</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SHADOW_MAGIC_MASTERY</Tag>
+        <English>Mastery of Shadow Magic</English>
+        <French>Mastery of Shadow Magic</French>
+        <German>Mastery of Shadow Magic</German>
+        <Italian>Mastery of Shadow Magic</Italian>
+        <Spanish>Dominio de Mágico de Sombra</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SHADOW_MAGIC_MASTERY_SHORT</Tag>
+        <English>ArcSM</English>
+        <French>ArcSM</French>
+        <German>ArcSM</German>
+        <Italian>ArcSM</Italian>
+        <Spanish>ArcSM</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SHADOW_MAGIC_MASTERY_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Provides access to additional Death Mana.</English>
+        <French>[NEWLINE][ICON_BULLET]Provides access to additional Death Mana.</French>
+        <German>[NEWLINE][ICON_BULLET]Provides access to additional Death Mana.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Provides access to additional Death Mana.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Provides access to additional Death Mana.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_LAW_MAGIC_MASTERY</Tag>
+        <English>Mastery of Law Magic</English>
+        <French>Mastery of Law Magic</French>
+        <German>Mastery of Law Magic</German>
+        <Italian>Mastery of Law Magic</Italian>
+        <Spanish>Dominio de Mágico de Ley</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_LAW_MAGIC_MASTERY_SHORT</Tag>
+        <English>ArcLM</English>
+        <French>ArcLM</French>
+        <German>ArcLM</German>
+        <Italian>ArcLM</Italian>
+        <Spanish>ArcDL</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_LAW_MAGIC_MASTERY_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Provides access to additional Life Mana.</English>
+        <French>[NEWLINE][ICON_BULLET]Provides access to additional Life Mana.</French>
+        <German>[NEWLINE][ICON_BULLET]Provides access to additional Life Mana.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Provides access to additional Life Mana.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Provides access to additional Life Mana.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SCIENTIFIC_SHORT</Tag>
+        <English>Sci</English>
+        <French>Sci</French>
+        <German>Sci</German>
+        <Italian>Sci</Italian>
+        <Spanish>Ci</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SCIENTIFIC_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Double Production Great Library</English>
+        <French>[NEWLINE][ICON_BULLET]Double Production Great Library</French>
+        <German>[NEWLINE][ICON_BULLET]Double Production Great Library</German>
+        <Italian>[NEWLINE][ICON_BULLET]Double Production Great Library</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Dobla la velocidad de producci&#243;n del Gran Libraria</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_GRANARY_HELP</Tag>
+        <English>[ICON_BULLET]This Building allows the City to export Food.</English>
+        <French>[ICON_BULLET]This Building allows the City to export Food.</French>
+        <German>[ICON_BULLET]This Building allows the City to export Food.</German>
+        <Italian>[ICON_BULLET]This Building allows the City to export Food.</Italian>
+        <Spanish>Este edificio permite que la ciudad exporte la comida.</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_SMOKEHOUSE_HELP</Tag>
+        <English>[ICON_BULLET]This Building allows the City to export Food.</English>
+        <French>[ICON_BULLET]This Building allows the City to export Food.</French>
+        <German>[ICON_BULLET]This Building allows the City to export Food.</German>
+        <Italian>[ICON_BULLET]This Building allows the City to export Food.</Italian>
+        <Spanish>Este edificio permite que la ciudad exporte la comida.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_IMPORT_FOOD</Tag>
+        <English>Food Import</English>
+        <French>Food Import</French>
+        <German>Food Import</German>
+        <Italian>Food Import</Italian>
+        <Spanish>Importar Comida</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_EXPORT_FOOD</Tag>
+        <English>Food Export</English>
+        <French>Food Export</French>
+        <German>Food Export</German>
+        <Italian>Food Export</Italian>
+        <Spanish>Exportar Comida</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_IMPORT_FOOD_HELP</Tag>
+        <English>[ICON_BULLET]Use a Unit to order the City to stop importing Food</English>
+        <French>[ICON_BULLET]Use a Unit to order the City to stop importing Food</French>
+        <German>[ICON_BULLET]Use a Unit to order the City to stop importing Food</German>
+        <Italian>[ICON_BULLET]Use a Unit to order the City to stop importing Food</Italian>
+        <Spanish>[ICON_BULLET]Usa una unidad para ordenar a la ciudad que pare la importación de comida.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_EXPORT_FOOD_HELP</Tag>
+        <English>[ICON_BULLET]Can only be cancelled if the cities of an empire import less food than they export.[NEWLINE][ICON_BULLET]Use a Unit to order the City to stop exporting Food.</English>
+        <French>[ICON_BULLET]Can only be cancelled if the cities of an empire import less food than they export.[NEWLINE][ICON_BULLET]Use a Unit to order the City to stop exporting Food.</French>
+        <German>[ICON_BULLET]Can only be cancelled if the cities of an empire import less food than they export.[NEWLINE][ICON_BULLET]Use a Unit to order the City to stop exporting Food.</German>
+        <Italian>[ICON_BULLET]Can only be cancelled if the cities of an empire import less food than they export.[NEWLINE][ICON_BULLET]Use a Unit to order the City to stop exporting Food.</Italian>
+        <Spanish>[ICON_BULLET]Se puede anular solamente si las ciudades del imperio importen menos comida que exporten.[NEWLINE][ICON_BULLET]Usa una unidad para ordenar a la ciudad que pare la exportación de comida.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_EXPORT_FOOD</Tag>
+        <English>Order the City to export Food</English>
+        <French>Order the City to export Food</French>
+        <German>Order the City to export Food</German>
+        <Italian>Order the City to export Food</Italian>
+        <Spanish>Ordenar que la ciudad exporte comida</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_IMPORT_FOOD</Tag>
+        <English>Order the City to import Food</English>
+        <French>Order the City to import Food</French>
+        <German>Order the City to import Food</German>
+        <Italian>Order the City to import Food</Italian>
+        <Spanish>Ordenar que la ciudad importe comida</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CANCEL_EXPORT_FOOD</Tag>
+        <English>Order the City to stop exporting Food</English>
+        <French>Order the City to stop exporting Food</French>
+        <German>Order the City to stop exporting Food</German>
+        <Italian>Order the City to stop exporting Food</Italian>
+        <Spanish>Ordenar que la ciudad pare la exportación de comida</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_CANCEL_IMPORT_FOOD</Tag>
+        <English>Order the City to stop importing Food</English>
+        <French>Order the City to stop importing Food</French>
+        <German>Order the City to stop importing Food</German>
+        <Italian>Order the City to stop importing Food</Italian>
+        <Spanish>Ordenar que la ciudad pare la importación de comida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_REPUBLIC_ELECTION_HAWK_VS_DOVE</Tag>
+        <English>As the election grows near, disputes have broken out in the Senate. One group favours an aggressive foreign policy and suggests war against old rivals. The other advocates a more diplomatic approach and concentration of forces for defense only. Whichever side gains the most support will shape the senate for the coming term.</English>
+        <French>As the election grows near, disputes have broken out in the Senate. One group favours an aggressive foreign policy and suggests war against old rivals. The other advocates a more diplomatic approach and concentration of forces for defense only. Whichever side gains the most support will shape the senate for the coming term.</French>
+        <German>As the election grows near, disputes have broken out in the Senate. One group favours an aggressive foreign policy and suggests war against old rivals. The other advocates a more diplomatic approach and concentration of forces for defense only. Whichever side gains the most support will shape the senate for the coming term.</German>
+        <Italian>As the election grows near, disputes have broken out in the Senate. One group favours an aggressive foreign policy and suggests war against old rivals. The other advocates a more diplomatic approach and concentration of forces for defense only. Whichever side gains the most support will shape the senate for the coming term.</Italian>
+        <Spanish>Mientras la elección se acerca, disputas se han desatado en el Senado. Un grupo prefiere una policia exterior agresiva y sugiere guerra contra rivales viejos. El otro aboga de un enfoque más diplomático y concentración de fuerzas para defender solamente. Cualquier lado gana lo más soporte moldeará el Senado durante el mandato que viene.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_REPUBLIC_ELECTION_LANDOWNER_VS_PEASANTS</Tag>
+        <English>Some areas of the republic are close to revolt due to disputes between wealthy landowners and the poorer populace that live on their lands. The landowners seek more money from the peasants, but they can ill afford to pay. As the election approaches, this is sure to be a topic in the debates.</English>
+        <French>Some areas of the republic are close to revolt due to disputes between wealthy landowners and the poorer populace that live on their lands. The landowners seek more money from the peasants, but they can ill afford to pay. As the election approaches, this is sure to be a topic in the debates.</French>
+        <German>Some areas of the republic are close to revolt due to disputes between wealthy landowners and the poorer populace that live on their lands. The landowners seek more money from the peasants, but they can ill afford to pay. As the election approaches, this is sure to be a topic in the debates.</German>
+        <Italian>Some areas of the republic are close to revolt due to disputes between wealthy landowners and the poorer populace that live on their lands. The landowners seek more money from the peasants, but they can ill afford to pay. As the election approaches, this is sure to be a topic in the debates.</Italian>
+        <Spanish>Unas areas del repúblico están acercándose de una rebelión a causa de disputas entre terratenientes ricos y la población más pobre que viven en sus propiedades. Los terratenientes buscan más dinero de los campesinos, pero los campesinos no pueden pagar. Mientras se acerca la elección, seguramente esto será un tópico en los debates.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_REPUBLIC_ELECTION_CHURCH_VS_STATE</Tag>
+        <English>Some members of the senate are suggesting that old laws stemming from religious tradition are hampering the ability of the government to provide for the people. Others argue that without the laws our nation would be without a moral compass and prone to fall prey to our baser desires. Both sides are lobbying for support in the coming election.</English>
+        <French>Some members of the senate are suggesting that old laws stemming from religious tradition are hampering the ability of the government to provide for the people. Others argue that without the laws our nation would be without a moral compass and prone to fall prey to our baser desires. Both sides are lobbying for support in the coming election.</French>
+        <German>Some members of the senate are suggesting that old laws stemming from religious tradition are hampering the ability of the government to provide for the people. Others argue that without the laws our nation would be without a moral compass and prone to fall prey to our baser desires. Both sides are lobbying for support in the coming election.</German>
+        <Italian>Some members of the senate are suggesting that old laws stemming from religious tradition are hampering the ability of the government to provide for the people. Others argue that without the laws our nation would be without a moral compass and prone to fall prey to our baser desires. Both sides are lobbying for support in the coming election.</Italian>
+        <Spanish>Unos miembros del Senado están sugeriendo que leyes viejos stemming from religious tradition are hampering the ability of the government to provide for the people. Others argue that without the laws our nation would be without a moral compass and prone to fall prey to our baser desires. Both sides are lobbying for support in the coming election.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_REPUBLIC_ELECTION_LABOR_VS_ACADEMIA</Tag>
+        <English>The senate is divided. Several popular senators have recently criticized the lack of education amongst the working class, leading to some heated rebuttals. Those senators supporting the interests of the workers argue that without the sweat and blood of those workers, the empire would be nothing. The two sides have become deadlocked whenever funds must be divided between the workers or the intellectuals. Hopefully the results of the election will free the senate to act.</English>
+        <French>The senate is divided. Several popular senators have recently criticized the lack of education amongst the working class, leading to some heated rebuttals. Those senators supporting the interests of the workers argue that without the sweat and blood of those workers, the empire would be nothing. The two sides have become deadlocked whenever funds must be divided between the workers or the intellectuals. Hopefully the results of the election will free the senate to act.</French>
+        <German>The senate is divided. Several popular senators have recently criticized the lack of education amongst the working class, leading to some heated rebuttals. Those senators supporting the interests of the workers argue that without the sweat and blood of those workers, the empire would be nothing. The two sides have become deadlocked whenever funds must be divided between the workers or the intellectuals. Hopefully the results of the election will free the senate to act.</German>
+        <Italian>The senate is divided. Several popular senators have recently criticized the lack of education amongst the working class, leading to some heated rebuttals. Those senators supporting the interests of the workers argue that without the sweat and blood of those workers, the empire would be nothing. The two sides have become deadlocked whenever funds must be divided between the workers or the intellectuals. Hopefully the results of the election will free the senate to act.</Italian>
+        <Spanish>El Senado está dividido. Several popular senators have recently criticized the lack of education amongst the working class, leading to some heated rebuttals. Those senators supporting the interests of the workers argue that without the sweat and blood of those workers, the empire would be nothing. The two sides have become deadlocked whenever funds must be divided between the workers or the intellectuals. Hopefully the results of the election will free the senate to act.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_OPPOSITION_PARTY_WINS</Tag>
+        <English>The election is fiercely contested, but your support was not enough. The opposition have a majority, which will make life more difficult for you this term.</English>
+        <French>The election is fiercely contested, but your support was not enough. The opposition have a majority, which will make life more difficult for you this term.</French>
+        <German>The election is fiercely contested, but your support was not enough. The opposition have a majority, which will make life more difficult for you this term.</German>
+        <Italian>The election is fiercely contested, but your support was not enough. The opposition have a majority, which will make life more difficult for you this term.</Italian>
+        <Spanish>The election is fiercely contested, but your support was not enough. The opposition have a majority, which will make life more difficult for you this term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_HAWK</Tag>
+        <English>'This is hardly the time for soft words, we must respond with action. If war is needed, then war we shall have!'</English>
+        <French>'This is hardly the time for soft words, we must respond with action. If war is needed, then war we shall have!'</French>
+        <German>'This is hardly the time for soft words, we must respond with action. If war is needed, then war we shall have!'</German>
+        <Italian>'This is hardly the time for soft words, we must respond with action. If war is needed, then war we shall have!'</Italian>
+        <Spanish>'This is hardly the time for soft words, we must respond with action. If war is needed, then war we shall have!'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_DOVE</Tag>
+        <English>'The world is violent enough - surely the solution cannot be more warfare. Give peace a chance.'</English>
+        <French>'The world is violent enough - surely the solution cannot be more warfare. Give peace a chance.'</French>
+        <German>'The world is violent enough - surely the solution cannot be more warfare. Give peace a chance.'</German>
+        <Italian>'The world is violent enough - surely the solution cannot be more warfare. Give peace a chance.'</Italian>
+        <Spanish>'The world is violent enough - surely the solution cannot be more warfare. Give peace a chance.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_FAIR_HAWK_VS_DOVE</Tag>
+        <English>'Let the people decide what is worth fighting for.'</English>
+        <French>'Let the people decide what is worth fighting for.'</French>
+        <German>'Let the people decide what is worth fighting for.'</German>
+        <Italian>'Let the people decide what is worth fighting for.'</Italian>
+        <Spanish>'Let the people decide what is worth fighting for.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_LANDOWNER</Tag>
+        <English>'The landowners are the key to our economy and our wealth - why should we care about a few complaining peasants?'</English>
+        <French>'The landowners are the key to our economy and our wealth - why should we care about a few complaining peasants?'</French>
+        <German>'The landowners are the key to our economy and our wealth - why should we care about a few complaining peasants?'</German>
+        <Italian>'The landowners are the key to our economy and our wealth - why should we care about a few complaining peasants?'</Italian>
+        <Spanish>'The landowners are the key to our economy and our wealth - why should we care about a few complaining peasants?'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_PEASANT</Tag>
+        <English>'The job of the senate is to serve the people. We must hear their grievances and act upon them.'</English>
+        <French>'The job of the senate is to serve the people. We must hear their grievances and act upon them.'</French>
+        <German>'The job of the senate is to serve the people. We must hear their grievances and act upon them.'</German>
+        <Italian>'The job of the senate is to serve the people. We must hear their grievances and act upon them.'</Italian>
+        <Spanish>'The job of the senate is to serve the people. We must hear their grievances and act upon them.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_FAIR_LANDOWNER_VS_PEASANT</Tag>
+        <English>'Let the votes reflect the will of the majority.'</English>
+        <French>'Let the votes reflect the will of the majority.'</French>
+        <German>'Let the votes reflect the will of the majority.'</German>
+        <Italian>'Let the votes reflect the will of the majority.'</Italian>
+        <Spanish>'Let the votes reflect the will of the majority.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_CHURCH</Tag>
+        <English>'These laws are the foundation of our civilization - how can we now turn our back on tradition?'</English>
+        <French>'These laws are the foundation of our civilization - how can we now turn our back on tradition?'</French>
+        <German>'These laws are the foundation of our civilization - how can we now turn our back on tradition?'</German>
+        <Italian>'These laws are the foundation of our civilization - how can we now turn our back on tradition?'</Italian>
+        <Spanish>'These laws are the foundation of our civilization - how can we now turn our back on tradition?'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_STATE</Tag>
+        <English>'We are a civilized nation - removing these antiquated laws will not change that. Let our government progress with the times.'</English>
+        <French>'We are a civilized nation - removing these antiquated laws will not change that. Let our government progress with the times.'</French>
+        <German>'We are a civilized nation - removing these antiquated laws will not change that. Let our government progress with the times.'</German>
+        <Italian>'We are a civilized nation - removing these antiquated laws will not change that. Let our government progress with the times.'</Italian>
+        <Spanish>'We are a civilized nation - removing these antiquated laws will not change that. Let our government progress with the times.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_FAIR_CHURCH_VS_STATE</Tag>
+        <English>'The senate is able to decide for themselves which laws need to be repealed or upheld'</English>
+        <French>'The senate is able to decide for themselves which laws need to be repealed or upheld'</French>
+        <German>'The senate is able to decide for themselves which laws need to be repealed or upheld'</German>
+        <Italian>'The senate is able to decide for themselves which laws need to be repealed or upheld'</Italian>
+        <Spanish>'The senate is able to decide for themselves which laws need to be repealed or upheld'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_LABOR</Tag>
+        <English>'The workers are the bedrock of our civilization. Let no man residing in a high tower scorn them, for they built his high tower with their own hands.'</English>
+        <French>'The workers are the bedrock of our civilization. Let no man residing in a high tower scorn them, for they built his high tower with their own hands.'</French>
+        <German>'The workers are the bedrock of our civilization. Let no man residing in a high tower scorn them, for they built his high tower with their own hands.'</German>
+        <Italian>'The workers are the bedrock of our civilization. Let no man residing in a high tower scorn them, for they built his high tower with their own hands.'</Italian>
+        <Spanish>'The workers are the bedrock of our civilization. Let no man residing in a high tower scorn them, for they built his high tower with their own hands.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_SUPPORT_ACADEMIA</Tag>
+        <English>'The working man has not the knowledge to comprehend the nature of government with all of its complexity. The senate should be controlled by the wisest among us.'</English>
+        <French>'The working man has not the knowledge to comprehend the nature of government with all of its complexity. The senate should be controlled by the wisest among us.'</French>
+        <German>'The working man has not the knowledge to comprehend the nature of government with all of its complexity. The senate should be controlled by the wisest among us.'</German>
+        <Italian>'The working man has not the knowledge to comprehend the nature of government with all of its complexity. The senate should be controlled by the wisest among us.'</Italian>
+        <Spanish>'The working man has not the knowledge to comprehend the nature of government with all of its complexity. The senate should be controlled by the wisest among us.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_FAIR_LABOR_VS_ACADEMIA</Tag>
+        <English>'I hold both parties in equal esteem and we cannot do without either. I suggest you settle the dispute quickly.'</English>
+        <French>'I hold both parties in equal esteem and we cannot do without either. I suggest you settle the dispute quickly.'</French>
+        <German>'I hold both parties in equal esteem and we cannot do without either. I suggest you settle the dispute quickly.'</German>
+        <Italian>'I hold both parties in equal esteem and we cannot do without either. I suggest you settle the dispute quickly.'</Italian>
+        <Spanish>'I hold both parties in equal esteem and we cannot do without either. I suggest you settle the dispute quickly.'</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS_ALREADY_AGGRESSIVE</Tag>
+        <English>Your people have long known the value of war, but one senator argued with a passion beyond the norm. You invite him to speak with you privately and find he has great potential as a Commander.</English>
+        <French>Your people have long known the value of war, but one senator argued with a passion beyond the norm. You invite him to speak with you privately and find he has great potential as a Commander.</French>
+        <German>Your people have long known the value of war, but one senator argued with a passion beyond the norm. You invite him to speak with you privately and find he has great potential as a Commander.</German>
+        <Italian>Your people have long known the value of war, but one senator argued with a passion beyond the norm. You invite him to speak with you privately and find he has great potential as a Commander.</Italian>
+        <Spanish>Your people have long known the value of war, but one senator argued with a passion beyond the norm. You invite him to speak with you privately and find he has great potential as a Commander.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HAWK_WINS</Tag>
+        <English>The people have chosen to follow those who took an aggressive stance in the debate. Perhaps this would be a good time to capitalize on their desire for war. [Gained Aggressive for this election term]</English>
+        <French>The people have chosen to follow those who took an aggressive stance in the debate. Perhaps this would be a good time to capitalize on their desire for war. [Gained Aggressive for this election term]</French>
+        <German>The people have chosen to follow those who took an aggressive stance in the debate. Perhaps this would be a good time to capitalize on their desire for war. [Gained Aggressive for this election term]</German>
+        <Italian>The people have chosen to follow those who took an aggressive stance in the debate. Perhaps this would be a good time to capitalize on their desire for war. [Gained Aggressive for this election term]</Italian>
+        <Spanish>The people have chosen to follow those who took an aggressive stance in the debate. Perhaps this would be a good time to capitalize on their desire for war. [Gained Aggressive for this election term]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_HAWK_ALREADY_AGGRESSIVE</Tag>
+        <English>[ICON_BULLET]80% chance to gain a Great Commander.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain a Great Commander.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain a Great Commander.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain a Great Commander.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de recibir un Gran Comandante.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_HAWK</Tag>
+        <English>[ICON_BULLET]80% chance to gain Aggressive trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Aggressive trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Aggressive trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Aggressive trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Aggressive trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_DOVE_WINS_ALREADY_DEFENSIVE</Tag>
+        <English>The people tire of bloodshed and the senate pursues diplomatic means to resolve our national disputes [Temporary bonus of +3 Diplomatic Relations with all nations]</English>
+        <French>The people tire of bloodshed and the senate pursues diplomatic means to resolve our national disputes [Temporary bonus of +3 Diplomatic Relations with all nations]</French>
+        <German>The people tire of bloodshed and the senate pursues diplomatic means to resolve our national disputes [Temporary bonus of +3 Diplomatic Relations with all nations]</German>
+        <Italian>The people tire of bloodshed and the senate pursues diplomatic means to resolve our national disputes [Temporary bonus of +3 Diplomatic Relations with all nations]</Italian>
+        <Spanish>The people tire of bloodshed and the senate pursues diplomatic means to resolve our national disputes [Temporary bonus of +3 Diplomatic Relations with all nations]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_DOVE_WINS</Tag>
+        <English>The people do not wish for our forces to be wasted fighting wars abroad. The senate draws up plans to improve our home defense instead. [Gained Defender Trait for this election term]</English>
+        <French>The people do not wish for our forces to be wasted fighting wars abroad. The senate draws up plans to improve our home defense instead. [Gained Defender Trait for this election term]</French>
+        <German>The people do not wish for our forces to be wasted fighting wars abroad. The senate draws up plans to improve our home defense instead. [Gained Defender Trait for this election term]</German>
+        <Italian>The people do not wish for our forces to be wasted fighting wars abroad. The senate draws up plans to improve our home defense instead. [Gained Defender Trait for this election term]</Italian>
+        <Spanish>The people do not wish for our forces to be wasted fighting wars abroad. The senate draws up plans to improve our home defense instead. [Gained Defender Trait for this election term]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_DOVE_ALREADY_DEFENSIVE</Tag>
+        <English>[ICON_BULLET]80% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_DOVE</Tag>
+        <English>[ICON_BULLET]80% chance to gain Defender trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Defender trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Defender trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Defender trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Defender trait for the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_HAWK_ALREADY_AGGRESSIVE</Tag>
+        <English>[ICON_BULLET]50% chance to gain a Great Commander.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain a Great Commander.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain a Great Commander.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain a Great Commander.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de recibir un Gran Comandante.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_HAWK</Tag>
+        <English>[ICON_BULLET]50% chance to gain Aggressive trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Aggressive trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Aggressive trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Aggressive trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Aggressive trait for the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_DOVE_ALREADY_DEFENSIVE</Tag>
+        <English>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance for +3 Diplomatic Relations with all nations over the coming election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_DOVE</Tag>
+        <English>[ICON_BULLET]50% chance to gain Defender trait for the following election term.</English>
+        <French>[ICON_BULLET]50% chance to gain Defender trait for the following election term.</French>
+        <German>[ICON_BULLET]50% chance to gain Defender trait for the following election term.</German>
+        <Italian>[ICON_BULLET]50% chance to gain Defender trait for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Defender trait for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS_ALREADY_FINANCIAL</Tag>
+        <English>The senate is won over by a senator with a shrewd sense of the economy. Perhaps he may be of other use to your empire as well.</English>
+        <French>The senate is won over by a senator with a shrewd sense of the economy. Perhaps he may be of other use to your empire as well.</French>
+        <German>The senate is won over by a senator with a shrewd sense of the economy. Perhaps he may be of other use to your empire as well.</German>
+        <Italian>The senate is won over by a senator with a shrewd sense of the economy. Perhaps he may be of other use to your empire as well.</Italian>
+        <Spanish>The senate is won over by a senator with a shrewd sense of the economy. Perhaps he may be of other use to your empire as well.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_LANDOWNER_WINS</Tag>
+        <English>The good of the economy *is* the good of the people, or so the senate has decided. [Gained the Financial trait for this election term]</English>
+        <French>The good of the economy *is* the good of the people, or so the senate has decided. [Gained the Financial trait for this election term]</French>
+        <German>The good of the economy *is* the good of the people, or so the senate has decided. [Gained the Financial trait for this election term]</German>
+        <Italian>The good of the economy *is* the good of the people, or so the senate has decided. [Gained the Financial trait for this election term]</Italian>
+        <Spanish>The good of the economy *is* the good of the people, or so the senate has decided. [Gained the Financial trait for this election term]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_LANDOWNER_ALREADY_FINANCIAL</Tag>
+        <English>[ICON_BULLET]80% chance to receive a Great Merchant.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to receive a Great Merchant.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to receive a Great Merchant.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to receive a Great Merchant.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to receive a Great Merchant.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_LANDOWNER</Tag>
+        <English>[ICON_BULLET]80% chance to gain Financial trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Financial trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Financial trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Financial trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Financial trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_PEASANT_WINS_ALREADY_EXPANSIVE</Tag>
+        <English>The purpose of the republic is to serve the people and so that is what it must now do. Life will never be perfect, but it is better for your citizens with a government that listens [Gained substantial temporary [ICON_HAPPY] and [ICON_HEALTH] in all cities]</English>
+        <French>The purpose of the republic is to serve the people and so that is what it must now do. Life will never be perfect, but it is better for your citizens with a government that listens [Gained substantial temporary [ICON_HAPPY] and [ICON_HEALTH] in all cities]</French>
+        <German>The purpose of the republic is to serve the people and so that is what it must now do. Life will never be perfect, but it is better for your citizens with a government that listens [Gained substantial temporary [ICON_HAPPY] and [ICON_HEALTH] in all cities]</German>
+        <Italian>The purpose of the republic is to serve the people and so that is what it must now do. Life will never be perfect, but it is better for your citizens with a government that listens [Gained substantial temporary [ICON_HAPPY] and [ICON_HEALTH] in all cities]</Italian>
+        <Spanish>The purpose of the republic is to serve the people and so that is what it must now do. Life will never be perfect, but it is better for your citizens with a government that listens [Gained substantial temporary [ICON_HAPPY] and [ICON_HEALTH] in all cities]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_PEASANT_WINS</Tag>
+        <English>The people are demanding a better quality of life and the senate has responded [Gained Expansive trait for this election term.]</English>
+        <French>The people are demanding a better quality of life and the senate has responded [Gained Expansive trait for this election term.]</French>
+        <German>The people are demanding a better quality of life and the senate has responded [Gained Expansive trait for this election term.]</German>
+        <Italian>The people are demanding a better quality of life and the senate has responded [Gained Expansive trait for this election term.]</Italian>
+        <Spanish>The people are demanding a better quality of life and the senate has responded [Gained Expansive trait for this election term.]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_PEASANT_ALREADY_EXPANSIVE</Tag>
+        <English>[ICON_BULLET]80% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_PEASANT</Tag>
+        <English>[ICON_BULLET]80% chance to gain Expansive trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Expansive trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Expansive trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Expansive trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Expansive trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_LANDOWNER_ALREADY_FINANCIAL</Tag>
+        <English>[ICON_BULLET]50% chance to receive Great Merchant.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to receive Great Merchant.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to receive Great Merchant.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to receive Great Merchant.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de recibir un Gran Mercader.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_LANDOWNER</Tag>
+        <English>[ICON_BULLET]50% chance to gain Financial trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Financial trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Financial trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Financial trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Financial trait for the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_PEASANT_ALREADY_EXPANSIVE</Tag>
+        <English>[ICON_BULLET]50% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain a substantial [ICON_HAPPY] and [ICON_HEALTHY] bonus in all cities during the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_PEASANT</Tag>
+        <English>[ICON_BULLET]50% chance to gain Expansive trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Expansive trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Expansive trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Expansive trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Expansive trait for the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS_ALREADY_SPIRITUAL</Tag>
+        <English>Your people have always been spiritual, so it is not surprising that they have chosen to respect tradition. It is said however that even deaf ears were turned by the words of a single street preacher...</English>
+        <French>Your people have always been spiritual, so it is not surprising that they have chosen to respect tradition. It is said however that even deaf ears were turned by the words of a single street preacher...</French>
+        <German>Your people have always been spiritual, so it is not surprising that they have chosen to respect tradition. It is said however that even deaf ears were turned by the words of a single street preacher...</German>
+        <Italian>Your people have always been spiritual, so it is not surprising that they have chosen to respect tradition. It is said however that even deaf ears were turned by the words of a single street preacher...</Italian>
+        <Spanish>Your people have always been spiritual, so it is not surprising that they have chosen to respect tradition. It is said however that even deaf ears were turned by the words of a single street preacher...</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_CHURCH_WINS</Tag>
+        <English>In the end, the senate was forced to concede that even the most forward thinking of nations must respect their roots. The debate itself has left the senators with a greater sense of spirituality [Gained the Spiritual trait for this election term].</English>
+        <French>In the end, the senate was forced to concede that even the most forward thinking of nations must respect their roots. The debate itself has left the senators with a greater sense of spirituality [Gained the Spiritual trait for this election term].</French>
+        <German>In the end, the senate was forced to concede that even the most forward thinking of nations must respect their roots. The debate itself has left the senators with a greater sense of spirituality [Gained the Spiritual trait for this election term].</German>
+        <Italian>In the end, the senate was forced to concede that even the most forward thinking of nations must respect their roots. The debate itself has left the senators with a greater sense of spirituality [Gained the Spiritual trait for this election term].</Italian>
+        <Spanish>In the end, the senate was forced to concede that even the most forward thinking of nations must respect their roots. The debate itself has left the senators with a greater sense of spirituality [Gained the Spiritual trait for this election term].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_CHURCH_ALREADY_SPIRITUAL</Tag>
+        <English>[ICON_BULLET]80% chance to receive a Great Prophet.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to receive a Great Prophet.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to receive a Great Prophet.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to receive a Great Prophet.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de recibir un Gran Profeta.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_CHURCH</Tag>
+        <English>[ICON_BULLET]80% chance to gain Spiritual trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Spiritual trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Spiritual trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Spiritual trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Spiritual trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_STATE_WINS_ALREADY_ORGANIZED</Tag>
+        <English>By forming this republic you have shown your people that the future is what they make of it. With the old laws repealed, your nation enters an era of prosperity and productivity.</English>
+        <French>By forming this republic you have shown your people that the future is what they make of it. With the old laws repealed, your nation enters an era of prosperity and productivity.</French>
+        <German>By forming this republic you have shown your people that the future is what they make of it. With the old laws repealed, your nation enters an era of prosperity and productivity.</German>
+        <Italian>By forming this republic you have shown your people that the future is what they make of it. With the old laws repealed, your nation enters an era of prosperity and productivity.</Italian>
+        <Spanish>By forming this republic you have shown your people that the future is what they make of it. With the old laws repealed, your nation enters an era of prosperity and productivity.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_STATE_WINS</Tag>
+        <English>Without the burden of the old ways, your government is able to reduce costs and improve your cities [Gained the Organized trait for this election term].</English>
+        <French>Without the burden of the old ways, your government is able to reduce costs and improve your cities [Gained the Organized trait for this election term].</French>
+        <German>Without the burden of the old ways, your government is able to reduce costs and improve your cities [Gained the Organized trait for this election term].</German>
+        <Italian>Without the burden of the old ways, your government is able to reduce costs and improve your cities [Gained the Organized trait for this election term].</Italian>
+        <Spanish>Without the burden of the old ways, your government is able to reduce costs and improve your cities [Gained the Organized trait for this election term].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_STATE_ALREADY_ORGANIZED</Tag>
+        <English>[ICON_BULLET]80% chance to start a Golden Age.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to start a Golden Age.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to start a Golden Age.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to start a Golden Age.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de empezar una Edad de Oro.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_STATE</Tag>
+        <English>[ICON_BULLET]80% chance to gain Organized trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Organized trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Organized trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Organized trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% chance to gain Organized trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_CHURCH_ALREADY_SPIRITUAL</Tag>
+        <English>[ICON_BULLET]50% chance to receive Great Prophet.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to receive Great Prophet.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to receive Great Prophet.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to receive Great Prophet.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de recibir un Gran Profeta.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_CHURCH</Tag>
+        <English>[ICON_BULLET]50% chance to gain Spiritual trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Spiritual trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Spiritual trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Spiritual trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Spiritual trait for the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_STATE_ALREADY_ORGANIZED</Tag>
+        <English>[ICON_BULLET]50% chance to start a Golden Age.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to start a Golden Age.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to start a Golden Age.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to start a Golden Age.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de empezar una Edad de Oro.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_STATE</Tag>
+        <English>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS_ALREADY_INDUSTRIOUS</Tag>
+        <English>As a nation built upon the hard work of its people, the senate recognizes the workers by appointing the most talented to oversee a great project.</English>
+        <French>As a nation built upon the hard work of its people, the senate recognizes the workers by appointing the most talented to oversee a great project.</French>
+        <German>As a nation built upon the hard work of its people, the senate recognizes the workers by appointing the most talented to oversee a great project.</German>
+        <Italian>As a nation built upon the hard work of its people, the senate recognizes the workers by appointing the most talented to oversee a great project.</Italian>
+        <Spanish>As a nation built upon the hard work of its people, the senate recognizes the workers by appointing the most talented to oversee a great project.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_LABOR_WINS</Tag>
+        <English>The workforce is key to the future of your civilization and thankfully the senate has realized it. [Gained the Industrious trait for this election term].</English>
+        <French>The workforce is key to the future of your civilization and thankfully the senate has realized it. [Gained the Industrious trait for this election term].</French>
+        <German>The workforce is key to the future of your civilization and thankfully the senate has realized it. [Gained the Industrious trait for this election term].</German>
+        <Italian>The workforce is key to the future of your civilization and thankfully the senate has realized it. [Gained the Industrious trait for this election term].</Italian>
+        <Spanish>The workforce is key to the future of your civilization and thankfully the senate has realized it. [Gained the Industrious trait for this election term].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS_ALREADY_PHILOSOPHICAL</Tag>
+        <English>It is only natural that the wisest minds lead the senate to the best decisions, in the interests of the people. Fortunately you have some of the wisest minds amongst your counsellors.</English>
+        <French>It is only natural that the wisest minds lead the senate to the best decisions, in the interests of the people. Fortunately you have some of the wisest minds amongst your counsellors.</French>
+        <German>It is only natural that the wisest minds lead the senate to the best decisions, in the interests of the people. Fortunately you have some of the wisest minds amongst your counsellors.</German>
+        <Italian>It is only natural that the wisest minds lead the senate to the best decisions, in the interests of the people. Fortunately you have some of the wisest minds amongst your counsellors.</Italian>
+        <Spanish>It is only natural that the wisest minds lead the senate to the best decisions, in the interests of the people. Fortunately you have some of the wisest minds amongst your counsellors.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_ACADEMIA_WINS</Tag>
+        <English>The working class is concerned with things that are, but the senate should be concerned with things that could be. [Gained the Philosophical trait for this election term].</English>
+        <French>The working class is concerned with things that are, but the senate should be concerned with things that could be. [Gained the Philosophical trait for this election term].</French>
+        <German>The working class is concerned with things that are, but the senate should be concerned with things that could be. [Gained the Philosophical trait for this election term].</German>
+        <Italian>The working class is concerned with things that are, but the senate should be concerned with things that could be. [Gained the Philosophical trait for this election term].</Italian>
+        <Spanish>La clase trabajadora está preocupada con lo que es, but the senate should be concerned with things that could be. [Gained the Philosophical trait for this election term].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_LABOR_ALREADY_INDUSTRIOUS</Tag>
+        <English>[ICON_BULLET]80% chance to receive a Great Engineer.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to receive a Great Engineer.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to receive a Great Engineer.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to receive a Great Engineer.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de recibir un Gran Ingeniero.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_LABOR</Tag>
+        <English>[ICON_BULLET]80% chance to gain Industrious trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Industrious trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Industrious trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Industrious trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de ganar el rasgo Diligente para el termo que viene.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_ACADEMIA_ALREADY_PHILOSOPHICAL</Tag>
+        <English>[ICON_BULLET]80% chance to receive a Great Sage.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to receive a Great Sage.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to receive a Great Sage.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to receive a Great Sage.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de recibir un Gran Sabio.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_SUPPORT_ACADEMIA</Tag>
+        <English>[ICON_BULLET]80% chance to gain Philosophical trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</English>
+        <French>[ICON_BULLET]80% chance to gain Philosophical trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</French>
+        <German>[ICON_BULLET]80% chance to gain Philosophical trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</German>
+        <Italian>[ICON_BULLET]80% chance to gain Philosophical trait for the next election term.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Italian>
+        <Spanish>[ICON_BULLET]80% posibilidad de ganar el rasgo Filosófico para el termo que viene.[NEWLINE][ICON_BULLET]20% chance to receive no benefit for the following election term.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_LABOR_ALREADY_INDUSTRIOUS</Tag>
+        <English>[ICON_BULLET]50% chance to receive Great Engineer.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to receive Great Engineer.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to receive Great Engineer.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to receive Great Engineer.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de recibir un Gran Ingeniero.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_LABOR</Tag>
+        <English>[ICON_BULLET]50% chance to gain Industrious trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Industrious trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Industrious trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Industrious trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de ganar el rasgo Diligente para el termo que viene.[NEWLINE]</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_ACADEMIA_ALREADY_PHILOSOPHICAL</Tag>
+        <English>[ICON_BULLET]50% chance to receive a Great Sage.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to receive a Great Sage.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to receive a Great Sage.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to receive a Great Sage.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de recibir un Gran Sabio.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_REPUBLIC_ELECTION_HELP_FAIR_ACADEMIA</Tag>
+        <English>[ICON_BULLET]50% chance to gain Philosophical trait for the following election term.[NEWLINE]</English>
+        <French>[ICON_BULLET]50% chance to gain Organized trait for the following election term.[NEWLINE]</French>
+        <German>[ICON_BULLET]50% chance to gain Philosophical trait for the following election term.[NEWLINE]</German>
+        <Italian>[ICON_BULLET]50% chance to gain Philosophical trait for the following election term.[NEWLINE]</Italian>
+        <Spanish>[ICON_BULLET]50% posibilidad de ganar el rasgo Filosófico para el termo que viene.[NEWLINE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVIC_REPUBLIC_HELP</Tag>
+        <English>[ICON_BULLET]Elections take place periodically, offering a chance of bonus traits and other benefits</English>
+        <French>[ICON_BULLET]Elections take place periodically, offering a chance of bonus traits and other benefits</French>
+        <German>[ICON_BULLET]Elections take place periodically, offering a chance of bonus traits and other benefits</German>
+        <Italian>[ICON_BULLET]Elections take place periodically, offering a chance of bonus traits and other benefits</Italian>
+        <Spanish>[ICON_BULLET]Elecciónes suceden periódicamente, ofreciendo la posibilidad de rasgos adicionales y otros beneficios</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NOJAH</Tag>
+        <English>Nojah</English>
+        <French>Nojah</French>
+        <German>Nojah</German>
+        <Italian>Nojah</Italian>
+        <Spanish>Nojah</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_WILDMANA_DESC</Tag>
+        <English>Guardians of Wildmana</English>
+        <French>Guardians of Wildmana</French>
+        <German>Guardians of Wildmana</German>
+        <Italian>Guardians of Wildmana</Italian>
+        <Spanish>Guardianes de Wildmana</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_WILDMANA_SHORT_DESC</Tag>
+        <English>Wildmana</English>
+        <French>Wildmana</French>
+        <German>Wildmana</German>
+        <Italian>Wildmana</Italian>
+        <Spanish>Wildmana</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_WILDMANA_ADJECTIVE</Tag>
+        <English>wildmana</English>
+        <French>Wildmana</French>
+        <German>Wildmana</German>
+        <Italian>Wildmana</Italian>
+        <Spanish>wildmana</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ANIMAL_DESC</Tag>
+        <English>Animals and Beasts</English>
+        <French>Animals and Beasts</French>
+        <German>Animals and Beasts</German>
+        <Italian>Animals and Beasts</Italian>
+        <Spanish>Animales y Bestias</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ANIMAL_SHORT_DESC</Tag>
+        <English>Animals</English>
+        <French>Animals</French>
+        <German>Animals</German>
+        <Italian>Animals</Italian>
+        <Spanish>Animales</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ANIMAL_ADJECTIVE</Tag>
+        <English>Beast</English>
+        <French>Bête</French>
+        <German>Beast</German>
+        <Italian>Beast</Italian>
+        <Spanish>Bestia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWER_OF_SORCERY</Tag>
+        <English>Tower of Sorcery</English>
+        <French>Tower of Sorcery</French>
+        <German>Tower of Sorcery</German>
+        <Italian>.</Italian>
+        <Spanish>Torre de Hechicería</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_TAUNTING_PRESENCE</Tag>
+        <English>Taunting Presence</English>
+        <French>Taunting Presence</French>
+        <German>Taunting Presence</German>
+        <Italian>Taunting Presence</Italian>
+        <Spanish>Presencia de Mofa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BALSERAPHS_TEMPLE</Tag>
+        <English>Festival of the Freaks</English>
+        <French>Festival of the Freaks</French>
+        <German>Festival of the Freaks</German>
+        <Italian>Festival of the Freaks</Italian>
+        <Spanish>Festival de los Extraños</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CLEANING</Tag>
+        <English>Visit the public bath</English>
+        <French>Visit the public bath</French>
+        <German>Visit the public bath</German>
+        <Italian>Visit the public bath</Italian>
+        <Spanish>Visitar el baño público</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ALLOSAUR</Tag>
+        <English>Allosaur</English>
+        <French>Allosaur</French>
+        <German>Allosaur</German>
+        <Italian>Allosaur</Italian>
+        <Spanish>Allosaurus</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BLACK_DRAKE</Tag>
+        <English>Black Drake</English>
+        <French>Black Drake</French>
+        <German>Black Drake</German>
+        <Italian>Black Drake</Italian>
+        <Spanish>Dragón Negro</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RED_DRAKE</Tag>
+        <English>Red Drake</English>
+        <French>Red Drake</French>
+        <German>Red Drake</German>
+        <Italian>Red Drake</Italian>
+        <Spanish>Dragón Rojo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_WHITE_DRAKE</Tag>
+        <English>White Drake</English>
+        <French>White Drake</French>
+        <German>White Drake</German>
+        <Italian>White Drake</Italian>
+        <Spanish>Dragón Blanco</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BRASS_DRAKE</Tag>
+        <English>Brass Drake</English>
+        <French>Brass Drake</French>
+        <German>Brass Drake</German>
+        <Italian>Brass Drake</Italian>
+        <Spanish>Dragón Cobre</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIZARD</Tag>
+        <English>Lizard</English>
+        <French>Lizard</French>
+        <German>Lizard</German>
+        <Italian>Lizard</Italian>
+        <Spanish>Lagartija</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SCORPION</Tag>
+        <English>Scorpion</English>
+        <French>Scorpion</French>
+        <German>Scorpion</German>
+        <Italian>Scorpion</Italian>
+        <Spanish>Alacrán</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAMMOTH</Tag>
+        <English>Mammoth</English>
+        <French>Mammoth</French>
+        <German>Mammoth</German>
+        <Italian>Mammoth</Italian>
+        <Spanish>Mamut</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEGASUS</Tag>
+        <English>Pegasus</English>
+        <French>Pegasus</French>
+        <German>Pegasus</German>
+        <Italian>Pegasus</Italian>
+        <Spanish>Pegaso</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MALIGNANT_FLORA</Tag>
+        <English>Malignant Flora</English>
+        <French>Malignant Flora</French>
+        <German>Malignant Flora</German>
+        <Italian>Malignant Flora</Italian>
+        <Spanish>Malignant Flora</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_PIRATES_INVASION</Tag>
+        <English>Rumours say the legendary Pirate Captain Skyre Noktis plans to plunder one of your cities. What shall we do?</English>
+        <French>Rumours say the legendary Pirate Captain Skyre Noktis plans to plunder one of your cities. What shall we do?</French>
+        <German>Rumours say the legendary Pirate Captain Skyre Noktis plans to plunder one of your cities. What shall we do?</German>
+        <Italian>Rumours say the legendary Pirate Captain Skyre Noktis plans to plunder one of your cities. What shall we do?</Italian>
+        <Spanish>Rumours say the legendary Pirate Captain Skyre Noktis plans to plunder one of your cities. What shall we do?</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PIRATES_INVASION_1</Tag>
+        <English>Bribe him to plunder someone else!</English>
+        <French>Bribe him to plunder someone else!</French>
+        <German>Bribe him to plunder someone else!</German>
+        <Italian>Bribe him to plunder someone else!</Italian>
+        <Spanish>Sobornarle para que saquee alguien diferente!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PIRATES_INVASION_2</Tag>
+        <English>Call the Kraken!</English>
+        <French>Call the Kraken!</French>
+        <German>Call the Kraken!</German>
+        <Italian>Call the Kraken!</Italian>
+        <Spanish>¡Llame al Kraken!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PIRATES_INVASION_3</Tag>
+        <English>Never heard of that Pirate!</English>
+        <French>Never heard of that Pirate!</French>
+        <German>Never heard of that Pirate!</German>
+        <Italian>Never heard of that Pirate!</Italian>
+        <Spanish>Nunca he oído de ese pirata!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PIRATES_DESC</Tag>
+        <English>Pirates of the Eurebean Sea</English>
+        <French>Pirates of the Eurebean Sea</French>
+        <German>Pirates of the Eurebean Sea</German>
+        <Italian>Pirates of the Eurebean Sea</Italian>
+        <Spanish>Piratas del Mar Eurebeo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PIRATES_SHORT_DESC</Tag>
+        <English>Pirates</English>
+        <French>Pirates</French>
+        <German>Pirates</German>
+        <Italian>Pirates</Italian>
+        <Spanish>Piratas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PIRATES_ADJECTIVE</Tag>
+        <English>pirate</English>
+        <French>pirate</French>
+        <German>pirate</German>
+        <Italian>pirate</Italian>
+        <Spanish>pirata</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_KELP</Tag>
+        <English>Kelp</English>
+        <French>Kelp</French>
+        <German>Kelp</German>
+        <Italian>Kelp</Italian>
+        <Spanish>Alga</Spanish>
+    </TEXT>
+    <TEXT>
+		<Tag>TXT_KEY_SPELL_AWAKEN_COLDIRON</Tag>
+		<English>Awaken Cold Iron</English>
+        <French>Awaken Cold Iron</French>
+        <German>Awaken Cold Iron</German>
+        <Italian>Awaken Cold Iron</Italian>
+        <Spanish>Despertar el Hierro Frío</Spanish>
+	</TEXT>
+    <TEXT>
+		<Tag>TXT_KEY_SPELL_AWAKEN_COLDIRON_PEDIA</Tag>
+		<English>Today's battle with Fadious was epic&#59; few could have survived the wounds
+		inflicted on Lucian.  But Lucian had to be strong or some upstart pup would challenge him.  The
+		march to Illian lands will be hard, and he would only have one night to lick his wounds.  With
+		camp set, Lucian retired to his bear pelt tent.  The vomit could not be held back any longer and
+		with a great purge every wound on his body opened filling the room with the stench of blood and
+		bile. His strength gone and the world spinning, Lucian passed out.  Dreams of victory, loss,
+		blood, gore, riches all filled his head and a voice range out, "You will die tonight - your battles will be in vain."  Lucian could not respond. "I can save you", the voice said, "but the price itself may get you killed". Lucian did not care; he was dying anyway. With one thought he agreed to the voice's unknown terms. "I am Cold Iron, forged by the god of winter, slayer of
+		thousands. The weapon you have defiled with your blood and bile will bind your wounds and consume half
+		of your soul."  Lucian awakened bathed in his own juices, but there were no wounds; however, a
+		deep weakness pulsed through him. He would have to be careful and hope a priest can restore some
+		of his strength. Looking over at his axe, two points of blue light shown in the eye sockets of
+		its skull, but no words would ever come forth from it again.
+		</English>
+        <French>Today's battle with Fadious was epic&#59; few could have survived the wounds
+		inflicted on Lucian.  But Lucian had to be strong or some upstart pup would challenge him.  The
+		march to Illian lands will be hard, and he would only have one night to lick his wounds.  With
+		camp set, Lucian retired to his bear pelt tent.  The vomit could not be held back any longer and
+		with a great purge every wound on his body opened filling the room with the stench of blood and
+		bile. His strength gone and the world spinning, Lucian passed out.  Dreams of victory, loss,
+		blood, gore, riches all filled his head and a voice range out, "You will die tonight - your battles will be in vain."  Lucian could not respond. "I can save you", the voice said, "but the price itself may get you killed". Lucian did not care; he was dying anyway. With one thought he agreed to the voice's unknown terms. "I am Cold Iron, forged by the god of winter, slayer of
+		thousands. The weapon you have defiled with your blood and bile will bind your wounds and consume half
+		of your soul."  Lucian awakened bathed in his own juices, but there were no wounds; however, a
+		deep weakness pulsed through him. He would have to be careful and hope a priest can restore some
+		of his strength. Looking over at his axe, two points of blue light shown in the eye sockets of
+		its skull, but no words would ever come forth from it again.
+		</French>
+        <German>Today's battle with Fadious was epic&#59; few could have survived the wounds
+		inflicted on Lucian.  But Lucian had to be strong or some upstart pup would challenge him.  The
+		march to Illian lands will be hard, and he would only have one night to lick his wounds.  With
+		camp set, Lucian retired to his bear pelt tent.  The vomit could not be held back any longer and
+		with a great purge every wound on his body opened filling the room with the stench of blood and
+		bile. His strength gone and the world spinning, Lucian passed out.  Dreams of victory, loss,
+		blood, gore, riches all filled his head and a voice range out, "You will die tonight - your battles will be in vain."  Lucian could not respond. "I can save you", the voice said, "but the price itself may get you killed". Lucian did not care; he was dying anyway. With one thought he agreed to the voice's unknown terms. "I am Cold Iron, forged by the god of winter, slayer of
+		thousands. The weapon you have defiled with your blood and bile will bind your wounds and consume half
+		of your soul."  Lucian awakened bathed in his own juices, but there were no wounds; however, a
+		deep weakness pulsed through him. He would have to be careful and hope a priest can restore some
+		of his strength. Looking over at his axe, two points of blue light shown in the eye sockets of
+		its skull, but no words would ever come forth from it again.
+		</German>
+        <Italian>Today's battle with Fadious was epic&#59; few could have survived the wounds
+		inflicted on Lucian.  But Lucian had to be strong or some upstart pup would challenge him.  The
+		march to Illian lands will be hard, and he would only have one night to lick his wounds.  With
+		camp set, Lucian retired to his bear pelt tent.  The vomit could not be held back any longer and
+		with a great purge every wound on his body opened filling the room with the stench of blood and
+		bile. His strength gone and the world spinning, Lucian passed out.  Dreams of victory, loss,
+		blood, gore, riches all filled his head and a voice range out, "You will die tonight - your battles will be in vain."  Lucian could not respond. "I can save you", the voice said, "but the price itself may get you killed". Lucian did not care; he was dying anyway. With one thought he agreed to the voice's unknown terms. "I am Cold Iron, forged by the god of winter, slayer of
+		thousands. The weapon you have defiled with your blood and bile will bind your wounds and consume half
+		of your soul."  Lucian awakened bathed in his own juices, but there were no wounds; however, a
+		deep weakness pulsed through him. He would have to be careful and hope a priest can restore some
+		of his strength. Looking over at his axe, two points of blue light shown in the eye sockets of
+		its skull, but no words would ever come forth from it again.
+		</Italian>
+        <Spanish>La batalla con Fadioso hoy fue épica&#59; pocos pudiera sobrevivir las heridas
+		infligidas a Lucian. Pero Lucian tenía que quedarse fuerte o algún avenedizo le lanzaría desafío. La
+		marcha a la tierra de los Ilianos será difícil, y tendría solamente una noche para lamerse las heridas. Con
+		la campa hecha, Lucian se retiró a su tienda de piel de oso. No podía contenir el vómito y
+		con un gran purgo cada herida de su cuerpo se abrió, llenando el cuarto co el hediondez de sangre y
+		bilis. Su fuerza perdido y el mundo dándole vueltas, Lucian se desmayó. Sueños de victorias, pérdidas,
+		sangre, y riquezas llenaron su cabeza y una voz resonó, "Usted se morirá esta noche - sus batallas están en vanos." Lucian no podía responder. "Puedo salvarle," la voz dijo, "pero el precio puede matarle." A Lucian no importó; estaba muriendo en todo caso. Con un pensado estaba de acuerdo con los termos desconocidos de la voz. "Soy Hierro Frío, forjado por el dios del invierno, matador de
+		miles. El arma que has manchado con su sangre y bilis vendará sus heridas y consumirá una mitad
+		de su alma." Lucian se despertó bañado en sus propios jugos
+		</Spanish>
+	</TEXT>
+    <TEXT>
+		<Tag>TXT_KEY_UNIT_LUCIAN_COLDIRON</Tag>
+		<English>Lucian Cold Iron</English>
+        <French>Lucian Cold Iron</French>
+        <German>Lucian Cold Iron</German>
+        <Italian>Lucian Cold Iron</Italian>
+        <Spanish>Lucian de Hierro Frío</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE</Tag>
+		<English>Issue Challenge</English>
+		<French>Issue Challenge</French>
+		<German>Issue Challenge</German>
+		<Italian>Issue Challenge</Italian>
+		<Spanish>Lanzar desafío</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE_PEDIA</Tag>
+		<English>Issues a challenge to all units in the stack, daring them to fight.</English>
+		<French>Issues a challenge to all units in the stack, daring them to fight.</French>
+		<German>Issues a challenge to all units in the stack, daring them to fight.</German>
+		<Italian>Issues a challenge to all units in the stack, daring them to fight.</Italian>
+		<Spanish>Lanza un desafío a todas las unidades en el apilamiento, daring them to fight.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE_HELP</Tag>
+		<English>[ICON_BULLET]Challenge a unit in the stack to a duel to the death.[NEWLINE][ICON_BULLET]gain small amount of Mana</English>
+		<French>[ICON_BULLET]Challenge a unit in the stack to a duel to the death.[NEWLINE][ICON_BULLET]gain small amount of Mana</French>
+		<German>[ICON_BULLET]Challenge a unit in the stack to a duel to the death.[NEWLINE][ICON_BULLET]gain small amount of Mana</German>
+		<Italian>[ICON_BULLET]Challenge a unit in the stack to a duel to the death.[NEWLINE][ICON_BULLET]gain small amount of Mana</Italian>
+		<Spanish>[ICON_BULLET]Challenge a unit in the stack to a duel to the death.[NEWLINE][ICON_BULLET]gain small amount of Mana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE_ACCEPT</Tag>
+		<English>Accept Challenge</English>
+		<French>Accept Challenge</French>
+		<German>Accept Challenge</German>
+		<Italian>Accept Challenge</Italian>
+		<Spanish>Aceptar desafío</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE_ACCEPT_HELP</Tag>
+		<English>Participate in a duel.</English>
+		<French>Challenge units in the stack to a duel.</French>
+		<German>Challenge units in the stack to a duel.</German>
+		<Italian>Challenge units in the stack to a duel.</Italian>
+		<Spanish>Lanzar un desafío a las unidades en el apilamiento.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DOVIELLO_CHALLENGE_ACCEPT_PEDIA</Tag>
+		<English>Accepts another unit's challenge, initiating a fight to the death.</English>
+		<French>Accepts another unit's challenge, initiating a fight to the death.</French>
+		<German>Accepts another unit's challenge, initiating a fight to the death.</German>
+		<Italian>Accepts another unit's challenge, initiating a fight to the death.</Italian>
+		<Spanish>Acepta el desafío de otra unidad, empezando una lucha al muerte.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_DOVIELLO_DUEL_DRAW</Tag>
+		<English>Your units fight to a draw, neither able to achieve victory.</English>
+		<French>Your units fight to a draw, neither able to achieve victory.</French>
+		<German>Your units fight to a draw, neither able to achieve victory.</German>
+		<Italian>Your units fight to a draw, neither able to achieve victory.</Italian>
+		<Spanish>Las unidades se empatan&#59; ninguno podía ganar.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ARENA_DEATH_DEFENDER</Tag>
+		<English>The Defender won, but succumbed to his injuries...</English>
+		<French>The Defender won, but succumbed to his injuries...</French>
+		<German>The Defender won, but succumbed to his injuries...</German>
+		<Italian>The Defender won, but succumbed to his injuries...</Italian>
+		<Spanish>El defensor ganó, pero murió de sus heridas...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ARENA_DEATH_CHALLENGER</Tag>
+		<English>The Challenger won, but succumbed to his injuries...</English>
+		<French>The Challenger won, but succumbed to his injuries...</French>
+		<German>The Challenger won, but succumbed to his injuries...</German>
+		<Italian>The Challenger won, but succumbed to his injuries...</Italian>
+		<Spanish>El aspirante ganó, pero murió de sus heridas...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_DOVIELLO_DUEL_LOSS</Tag>
+		<English>The Challenger wins!</English>
+		<French>The Challenger wins!</French>
+		<German>The Challenger wins!</German>
+		<Italian>The Challenger wins!</Italian>
+		<Spanish>¡El aspirante gana!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_DOVIELLO_DUEL_WIN</Tag>
+		<English>The Defender wins!</English>
+		<French>The Defender wins!</French>
+		<German>The Defender wins!</German>
+		<Italian>The Defender wins!</Italian>
+		<Spanish>¡El defensor gana!</Spanish>
+	</TEXT>
+</Civ4GameText>

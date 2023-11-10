@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XBARBARIAN_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_UPGRADE_SPECTRE</Type>
+            <iCasterMinLevel>5</iCasterMinLevel>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_UPGRADE_WRAITH</Type>
+            <iCasterMinLevel>7</iCasterMinLevel>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

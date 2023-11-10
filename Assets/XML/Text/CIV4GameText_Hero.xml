@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_DEEPWOOD_SPIDER</Tag>
+        <English>Deepwood Spider</English>
+        <French>Deepwood Spider</French>
+        <German>Deepwood Spider</German>
+        <Italian>Deepwood Spider</Italian>
+        <Spanish>Deepwood Spider</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SALVATION_HERO</Tag>
+        <English>Salvation</English>
+        <French>Salvation</French>
+        <German>Salvation</German>
+        <Italian>Salvation</Italian>
+        <Spanish>Salvation</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_TIME_STOP_HERO</Tag>
+        <English>Time Stop</English>
+        <French>Time Stop</French>
+        <German>Time Stop</German>
+        <Italian>Time Stop</Italian>
+        <Spanish>Time Stop</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_ARCANE_CHAINS</Tag>
+        <English>Arcane Chains</English>
+        <French>Arcane Chains</French>
+        <German>Arcane Chains</German>
+        <Italian>Arcane Chains</Italian>
+        <Spanish>Arcane Chains</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_ARCANE_PRISON_HERO</Tag>
+        <English>Arcane Prison</English>
+        <French>Arcane Prison</French>
+        <German>Arcane Prison</German>
+        <Italian>Arcane Prison</Italian>
+        <Spanish>Arcane Prison</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BATTLE_STANCE_HERO</Tag>
+        <English>Battle Stance</English>
+        <French>Battle Stance</French>
+        <German>Battle Stance</German>
+        <Italian>Battle Stance</Italian>
+        <Spanish>Battle Stance</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RAGE_HERO</Tag>
+        <English>Combat Frenzy</English>
+        <French>Combat Frenzy</French>
+        <German>Combat Frenzy</German>
+        <Italian>Combat Frenzy</Italian>
+        <Spanish>Combat Frenzy</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONCUSSIVE_HIT_HERO_DEBUFF</Tag>
+        <English>Concussive Hit</English>
+        <French>Concussive Hit</French>
+        <German>Concussive Hit</German>
+        <Italian>Concussive Hit</Italian>
+        <Spanish>Concussive Hit</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_KEEN_BLADE_HERO</Tag>
+        <English>Keen Blade</English>
+        <French>Keen Blade</French>
+        <German>Keen Blade</German>
+        <Italian>Keen Blade</Italian>
+        <Spanish>Keen Blade</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DREAD_VISAGE_HERO</Tag>
+        <English>Dread Visage</English>
+        <French>Dread Visage</French>
+        <German>Dread Visage</German>
+        <Italian>Dread Visage</Italian>
+        <Spanish>Dread Visage</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_VERDICT_HERO_DEBUFF</Tag>
+        <English>Verdict</English>
+        <French>Verdict</French>
+        <German>Verdict</German>
+        <Italian>Verdict</Italian>
+        <Spanish>Verdict</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLESSING_HERO</Tag>
+        <English>Blessing</English>
+        <French>Blessing</French>
+        <German>Blessing</German>
+        <Italian>Blessing</Italian>
+        <Spanish>Blessing</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DARK_BLESSING_HERO</Tag>
+        <English>Dark Blessing</English>
+        <French>Dark Blessing</French>
+        <German>Dark Blessing</German>
+        <Italian>Dark Blessing</Italian>
+        <Spanish>Dark Blessing</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNSTABLE_POWER_HERO</Tag>
+        <English>Unstable Power</English>
+        <French>Unstable Power</French>
+        <German>Unstable Power</German>
+        <Italian>Unstable Power</Italian>
+        <Spanish>Unstable Power</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TEMPORAL_FLOWS_HERO</Tag>
+        <English>Temporal Flows</English>
+        <French>Temporal Flows</French>
+        <German>Temporal Flows</German>
+        <Italian>Temporal Flows</Italian>
+        <Spanish>Temporal Flows</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RAPID_SHOT_HERO</Tag>
+        <English>Rapid Shot</English>
+        <French>Rapid Shot</French>
+        <German>Rapid Shot</German>
+        <Italian>Rapid Shot</Italian>
+        <Spanish>Rapid Shot</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_SHOT_HERO</Tag>
+        <English>Arcane Shot</English>
+        <French>Arcane Shot</French>
+        <German>Arcane Shot</German>
+        <Italian>Arcane Shot</Italian>
+        <Spanish>Arcane Shot</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_POISON_WEAKNESS_HERO_DEBUFF</Tag>
+        <English>Poison Weakness</English>
+        <French>Poison Weakness</French>
+        <German>Poison Weakness</German>
+        <Italian>Poison Weakness</Italian>
+        <Spanish>Poison Weakness</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BACKSTAB_HERO</Tag>
+        <English>Backstab</English>
+        <French>Backstab</French>
+        <German>Backstab</German>
+        <Italian>Backstab</Italian>
+        <Spanish>Backstab</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_WARRIOR_HERO</Tag>
+        <English>Warrior</English>
+        <French>Warrior</French>
+        <German>Warrior</German>
+        <Italian>Warrior</Italian>
+        <Spanish>Warrior</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BASE_CLASS_HERO_HELP</Tag>
+        <English>[ICON_BULLET]Base Class</English>
+        <French>[ICON_BULLET]Base Class</French>
+        <German>[ICON_BULLET]Base Class</German>
+        <Italian>[ICON_BULLET]Base Class</Italian>
+        <Spanish>[ICON_BULLET]Base Class</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BARBARIAN_HERO</Tag>
+        <English>Barbarian</English>
+        <French>Barbarian</French>
+        <German>Barbarian</German>
+        <Italian>Barbarian</Italian>
+        <Spanish>Barbarian</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_COMBAT_MASTERY_I_HERO</Tag>
+        <English>Combat Mastery I</English>
+        <French>Combat Mastery I</French>
+        <German>Combat Mastery I</German>
+        <Italian>Combat Mastery I</Italian>
+        <Spanish>Combat Mastery I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_COMBAT_MASTERY_II_HERO</Tag>
+        <English>Combat Mastery II</English>
+        <French>Combat Mastery II</French>
+        <German>Combat Mastery II</German>
+        <Italian>Combat Mastery II</Italian>
+        <Spanish>Combat Mastery II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RESISTANCE_I_HERO</Tag>
+        <English>Resistance I</English>
+        <French>Resistance I</French>
+        <German>Resistance I</German>
+        <Italian>Resistance I</Italian>
+        <Spanish>Resistance I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RESISTANCE_II_HERO</Tag>
+        <English>Resistance II</English>
+        <French>Resistance II</French>
+        <German>Resistance II</German>
+        <Italian>Resistance II</Italian>
+        <Spanish>Resistance II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONTROLLED_RAGE_I_HERO</Tag>
+        <English>Controlled Rage I</English>
+        <French>Controlled Rage I</French>
+        <German>Controlled Rage I</German>
+        <Italian>Controlled Rage I</Italian>
+        <Spanish>Controlled Rage I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONTROLLED_RAGE_II_HERO</Tag>
+        <English>Controlled Rage II</English>
+        <French>Controlled Rage II</French>
+        <German>Controlled Rage II</German>
+        <Italian>Controlled Rage II</Italian>
+        <Spanish>Controlled Rage II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONCUSSIVE_BLOWS_I_HERO</Tag>
+        <English>Concussive Blows I</English>
+        <French>Concussive Blows I</French>
+        <German>Concussive Blows I</German>
+        <Italian>Concussive Blows I</Italian>
+        <Spanish>Concussive Blows I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONCUSSIVE_BLOWS_II_HERO</Tag>
+        <English>Concussive Blows II</English>
+        <French>Concussive Blows II</French>
+        <German>Concussive Blows II</German>
+        <Italian>Concussive Blows II</Italian>
+        <Spanish>Concussive Blows II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_SPELL_SALVATION_HERO</Tag>
+        <English>Salvation</English>
+        <French>Salvation</French>
+        <German>Salvation</German>
+        <Italian>Salvation</Italian>
+        <Spanish>Salvation</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MYRMIDON_HERO</Tag>
+        <English>Myrmidon</English>
+        <French>Myrmidon</French>
+        <German>Myrmidon</German>
+        <Italian>Myrmidon</Italian>
+        <Spanish>Myrmidon</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PRESTIGE_CLASS_HERO_HELP</Tag>
+        <English>[ICON_BULLET]Prestige Class</English>
+        <French>[ICON_BULLET]Prestige Class</French>
+        <German>[ICON_BULLET]Prestige Class</German>
+        <Italian>[ICON_BULLET]Prestige Class</Italian>
+        <Spanish>[ICON_BULLET]Prestige Class</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DREAD_LORD_HERO</Tag>
+        <English>Dread Lord</English>
+        <French>Dread Lord</French>
+        <German>Dread Lord</German>
+        <Italian>Dread Lord</Italian>
+        <Spanish>Dread Lord</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_WEAPON_MASTERY_I_HERO</Tag>
+        <English>Weapon Mastery I</English>
+        <French>Weapon Mastery I</French>
+        <German>Weapon Mastery I</German>
+        <Italian>Weapon Mastery I</Italian>
+        <Spanish>Weapon Mastery I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_WEAPON_MASTERY_II_HERO</Tag>
+        <English>Weapon Mastery II</English>
+        <French>Weapon Mastery II</French>
+        <German>Weapon Mastery II</German>
+        <Italian>Weapon Mastery II</Italian>
+        <Spanish>Weapon Mastery II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FIGHTING_SPIRIT_I_HERO</Tag>
+        <English>Fighting Spirit I</English>
+        <French>Fighting Spirit I</French>
+        <German>Fighting Spirit I</German>
+        <Italian>Fighting Spirit I</Italian>
+        <Spanish>Fighting Spirit I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FIGHTING_SPIRIT_II_HERO</Tag>
+        <English>Fighting Spirit II</English>
+        <French>Fighting Spirit II</French>
+        <German>Fighting Spirit II</German>
+        <Italian>Fighting Spirit II</Italian>
+        <Spanish>Fighting Spirit II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TERRIFYING_RAGE_I_HERO</Tag>
+        <English>Terrifying Rage I</English>
+        <French>Terrifying Rage I</French>
+        <German>Terrifying Rage I</German>
+        <Italian>Terrifying Rage I</Italian>
+        <Spanish>Terrifying Rage I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TERRIFYING_RAGE_II_HERO</Tag>
+        <English>Terrifying Rage II</English>
+        <French>Terrifying Rage II</French>
+        <German>Terrifying Rage II</German>
+        <Italian>Terrifying Rage II</Italian>
+        <Spanish>Terrifying Rage II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENDURANCE_I_HERO</Tag>
+        <English>Endurance I</English>
+        <French>Endurance I</French>
+        <German>Endurance I</German>
+        <Italian>Endurance I</Italian>
+        <Spanish>Endurance I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENDURANCE_II_HERO</Tag>
+        <English>Endurance II</English>
+        <French>Endurance II</French>
+        <German>Endurance II</German>
+        <Italian>Endurance II</Italian>
+        <Spanish>Endurance II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CLERIC_HERO</Tag>
+        <English>Cleric</English>
+        <French>Cleric</French>
+        <German>Cleric</German>
+        <Italian>Cleric</Italian>
+        <Spanish>Cleric</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PALADIN_HERO</Tag>
+        <English>Paladin</English>
+        <French>Paladin</French>
+        <German>Paladin</German>
+        <Italian>Paladin</Italian>
+        <Spanish>Paladin</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SALVATION_HERO</Tag>
+        <English>Salvation</English>
+        <French>Salvation</French>
+        <German>Salvation</German>
+        <Italian>Salvation</Italian>
+        <Spanish>Salvation</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BANE_OF_EXTERNALS_HERO</Tag>
+        <English>Bane of Externals</English>
+        <French>Bane of Externals</French>
+        <German>Bane of Externals</German>
+        <Italian>Bane of Externals</Italian>
+        <Spanish>Bane of Externals</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_APOSTATE_HUNTER_I_HERO</Tag>
+        <English>Apostate Hunter I</English>
+        <French>Apostate Hunter I</French>
+        <German>Apostate Hunter I</German>
+        <Italian>Apostate Hunter I</Italian>
+        <Spanish>Apostate Hunter I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_APOSTATE_HUNTER_II_HERO</Tag>
+        <English>Apostate Hunter II</English>
+        <French>Apostate Hunter II</French>
+        <German>Apostate Hunter II</German>
+        <Italian>Apostate Hunter II</Italian>
+        <Spanish>Apostate Hunter II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FAVORED_SOUL_I_HERO</Tag>
+        <English>Favored Soul I</English>
+        <French>Favored Soul I</French>
+        <German>Favored Soul I</German>
+        <Italian>Favored Soul I</Italian>
+        <Spanish>Favored Soul I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FAVORED_SOUL_II_HERO</Tag>
+        <English>Favored Soul II</English>
+        <French>Favored Soul II</French>
+        <German>Favored Soul II</German>
+        <Italian>Favored Soul II</Italian>
+        <Spanish>Favored Soul II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FANATICISM_I_HERO</Tag>
+        <English>Fanaticism I</English>
+        <French>Fanaticism I</French>
+        <German>Fanaticism I</German>
+        <Italian>Fanaticism I</Italian>
+        <Spanish>Fanaticism I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_FANATICISM_II_HERO</Tag>
+        <English>Fanaticism II</English>
+        <French>Fanaticism II</French>
+        <German>Fanaticism II</German>
+        <Italian>Fanaticism II</Italian>
+        <Spanish>Fanaticism II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_JUSTICAR_HERO</Tag>
+        <English>Justicar</English>
+        <French>Justicar</French>
+        <German>Justicar</German>
+        <Italian>Justicar</Italian>
+        <Spanish>Justicar</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ETERNAL_GUARD_HERO</Tag>
+        <English>Eternal Guard</English>
+        <French>Eternal Guard</French>
+        <German>Eternal Guard</German>
+        <Italian>Eternal Guard</Italian>
+        <Spanish>Eternal Guard</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEVOTION_I_HERO</Tag>
+        <English>Devotion I</English>
+        <French>Devotion I</French>
+        <German>Devotion I</German>
+        <Italian>Devotion I</Italian>
+        <Spanish>Devotion I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEVOTION_II_HERO</Tag>
+        <English>Devotion II</English>
+        <French>Devotion II</French>
+        <German>Devotion II</German>
+        <Italian>Devotion II</Italian>
+        <Spanish>Devotion II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CORRUPTED_DEVOTION_I_HERO</Tag>
+        <English>Corrupted Devotion I</English>
+        <French>Corrupted Devotion I</French>
+        <German>Corrupted Devotion I</German>
+        <Italian>Corrupted Devotion I</Italian>
+        <Spanish>Corrupted Devotion I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CORRUPTED_DEVOTION_II_HERO</Tag>
+        <English>Corrupted Devotion II</English>
+        <French>Corrupted Devotion II</French>
+        <German>Corrupted Devotion II</German>
+        <Italian>Corrupted Devotion II</Italian>
+        <Spanish>Corrupted Devotion II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_JUDGMENT_I_HERO</Tag>
+        <English>Judgement I</English>
+        <French>Judgement I</French>
+        <German>Judgement I</German>
+        <Italian>Judgement I</Italian>
+        <Spanish>Judgement I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_JUDGMENT_II_HERO</Tag>
+        <English>Judgement II</English>
+        <French>Judgement II</French>
+        <German>Judgement II</German>
+        <Italian>Judgement II</Italian>
+        <Spanish>Judgement II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_LAST_STAND_I_HERO</Tag>
+        <English>Last Stand I</English>
+        <French>Last Stand I</French>
+        <German>Last Stand I</German>
+        <Italian>Last Stand I</Italian>
+        <Spanish>Last Stand I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_LAST_STAND_II_HERO</Tag>
+        <English>Last Stand II</English>
+        <French>Last Stand II</French>
+        <German>Last Stand II</German>
+        <Italian>Last Stand II</Italian>
+        <Spanish>Last Stand II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DIVINE_SEAL_I_HERO</Tag>
+        <English>Divine Seal I</English>
+        <French>Divine Seal I</French>
+        <German>Divine Seal I</German>
+        <Italian>Divine Seal I</Italian>
+        <Spanish>Divine Seal I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DIVINE_SEAL_II_HERO</Tag>
+        <English>Divine Seal II</English>
+        <French>Divine Seal II</French>
+        <German>Divine Seal II</German>
+        <Italian>Divine Seal II</Italian>
+        <Spanish>Divine Seal II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ELEMENTALIST_HERO</Tag>
+        <English>Elementalist</English>
+        <French>Elementalist</French>
+        <German>Elementalist</German>
+        <Italian>Elementalist</Italian>
+        <Spanish>Elementalist</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_SCHOLAR_HERO</Tag>
+        <English>Arcane Scholar</English>
+        <French>Arcane Scholar</French>
+        <German>Arcane Scholar</German>
+        <Italian>Arcane Scholar</Italian>
+        <Spanish>Arcane Scholar</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_FIRE_HERO</Tag>
+        <English>Mastery of Fire</English>
+        <French>Mastery of Fire</French>
+        <German>Mastery of Fire</German>
+        <Italian>Mastery of Fire</Italian>
+        <Spanish>Mastery of Fire</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_ICE_HERO</Tag>
+        <English>Mastery of Ice</English>
+        <French>Mastery of Ice</French>
+        <German>Mastery of Ice</German>
+        <Italian>Mastery of Ice</Italian>
+        <Spanish>Mastery of Ice</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_LIGHTNING_HERO</Tag>
+        <English>Mastery of Lighting</English>
+        <French>Mastery of Lighting</French>
+        <German>Mastery of Lighting</German>
+        <Italian>Mastery of Lighting</Italian>
+        <Spanish>Mastery of Lighting</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MASTER_OF_ELEMENTS_HERO</Tag>
+        <English>Master of Elements</English>
+        <French>Master of Elements</French>
+        <German>Master of Elements</German>
+        <Italian>Master of Elements</Italian>
+        <Spanish>Master of Elements</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PREPARATION_I_HERO</Tag>
+        <English>Preparation I</English>
+        <French>Preparation I</French>
+        <German>Preparation I</German>
+        <Italian>Preparation I</Italian>
+        <Spanish>Preparation I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PREPARATION_II_HERO</Tag>
+        <English>Preparation II</English>
+        <French>Preparation II</French>
+        <German>Preparation II</German>
+        <Italian>Preparation II</Italian>
+        <Spanish>Preparation II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENCHANTMENT_MASTERY_I_HERO</Tag>
+        <English>Enchantment Mastery I</English>
+        <French>Enchantment Mastery I</French>
+        <German>Enchantment Mastery I</German>
+        <Italian>Enchantment Mastery I</Italian>
+        <Spanish>Enchantment Mastery I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENCHANTMENT_MASTERY_II_HERO</Tag>
+        <English>Enchantment Mastery II</English>
+        <French>Enchantment Mastery II</French>
+        <German>Enchantment Mastery II</German>
+        <Italian>Enchantment Mastery II</Italian>
+        <Spanish>Enchantment Mastery II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_WARLOCK_HERO</Tag>
+        <English>Warlock</English>
+        <French>Warlock</French>
+        <German>Warlock</German>
+        <Italian>Warlock</Italian>
+        <Spanish>Warlock</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ORACLE_HERO</Tag>
+        <English>Oracle</English>
+        <French>Oracle</French>
+        <German>Oracle</German>
+        <Italian>Oracle</Italian>
+        <Spanish>Oracle</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RAW_POWER_I_HERO</Tag>
+        <English>Raw Power I</English>
+        <French>Raw Power I</French>
+        <German>Raw Power I</German>
+        <Italian>Raw Power I</Italian>
+        <Spanish>Raw Power I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RAW_POWER_II_HERO</Tag>
+        <English>Raw Power II</English>
+        <French>Raw Power II</French>
+        <German>Raw Power II</German>
+        <Italian>Raw Power II</Italian>
+        <Spanish>Raw Power II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_AFFINITY_I_HERO</Tag>
+        <English>Arcane Affinity I</English>
+        <French>Arcane Affinity I</French>
+        <German>Arcane Affinity I</German>
+        <Italian>Arcane Affinity I</Italian>
+        <Spanish>Arcane Affinity I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_AFFINITY_II_HERO</Tag>
+        <English>Arcane Affinity II</English>
+        <French>Arcane Affinity II</French>
+        <German>Arcane Affinity II</German>
+        <Italian>Arcane Affinity II</Italian>
+        <Spanish>Arcane Affinity II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TIME_MASTERY_I_HERO</Tag>
+        <English>Time Mastery I</English>
+        <French>Time Mastery I</French>
+        <German>Time Mastery I</German>
+        <Italian>Time Mastery I</Italian>
+        <Spanish>Time Mastery I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TIME_MASTERY_II_HERO</Tag>
+        <English>Time Mastery II</English>
+        <French>Time Mastery II</French>
+        <German>Time Mastery II</German>
+        <Italian>Time Mastery II</Italian>
+        <Spanish>Time Mastery II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_FLOWS_I_HERO</Tag>
+        <English>Arcane Flows I</English>
+        <French>Arcane Flows I</French>
+        <German>Arcane Flows I</German>
+        <Italian>Arcane Flows I</Italian>
+        <Spanish>Arcane Flows I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_FLOWS_II_HERO</Tag>
+        <English>Arcane Flows II</English>
+        <French>Arcane Flows II</French>
+        <German>Arcane Flows II</German>
+        <Italian>Arcane Flows II</Italian>
+        <Spanish>Arcane Flows II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_RANGER_HERO</Tag>
+        <English>Ranger</English>
+        <French>>Ranger</French>
+        <German>>Ranger</German>
+        <Italian>>Ranger</Italian>
+        <Spanish>>Ranger</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLACKWOOD_ARCHER_HERO</Tag>
+        <English>Blackwood Archer</English>
+        <French>Blackwood Archer</French>
+        <German>Blackwood Archer</German>
+        <Italian>Blackwood Archer</Italian>
+        <Spanish>Blackwood Archer</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHADOW_DANCER_HERO</Tag>
+        <English>Shadow Dancer</English>
+        <French>Shadow Dancer</French>
+        <German>Shadow Dancer</German>
+        <Italian>Shadow Dancer</Italian>
+        <Spanish>Shadow Dancer</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BEAST_HUNTER_HERO</Tag>
+        <English>Beast Hunter</English>
+        <French>Beast Hunter</French>
+        <German>Beast Hunter</German>
+        <Italian>Beast Hunter</Italian>
+        <Spanish>Beast Hunter</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DRAGON_HUNTER_HERO</Tag>
+        <English>Dragon Hunter</English>
+        <French>Dragon Hunter</French>
+        <German>Dragon Hunter</German>
+        <Italian>Dragon Hunter</Italian>
+        <Spanish>Dragon Hunter</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CARTOGRPAHY_I_HERO</Tag>
+        <English>Cartography I</English>
+        <French>Cartography I</French>
+        <German>Cartography I</German>
+        <Italian>Cartography I</Italian>
+        <Spanish>Cartography I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_CARTOGRAPHY_II_HERO</Tag>
+        <English>Cartography II</English>
+        <French>Cartography II</French>
+        <German>Cartography II</German>
+        <Italian>Cartography II</Italian>
+        <Spanish>Cartography II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_STORM_OF_ARROWS_I_HERO</Tag>
+        <English>Storm of Arrows I</English>
+        <French>Storm of Arrows I</French>
+        <German>Storm of Arrows I</German>
+        <Italian>Storm of Arrows I</Italian>
+        <Spanish>Storm of Arrows I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_STORM_OF_ARROWS_II_HERO</Tag>
+        <English>Storm of Arrows II</English>
+        <French>Storm of Arrows II</French>
+        <German>Storm of Arrows II</German>
+        <Italian>Storm of Arrows II</Italian>
+        <Spanish>Storm of Arrows II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PERFECT_AIM_I_HERO</Tag>
+        <English>Perfect Aim I</English>
+        <French>Perfect Aim I</French>
+        <German>Perfect Aim I</German>
+        <Italian>Perfect Aim I</Italian>
+        <Spanish>Perfect Aim I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_PERFECT_AIM_II_HERO</Tag>
+        <English>Perfect Aim II</English>
+        <French>Perfect Aim II</French>
+        <German>Perfect Aim II</German>
+        <Italian>Perfect Aim II</Italian>
+        <Spanish>Perfect Aim II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHADOWMERGE_I_HERO</Tag>
+        <English>Shadow Merge I</English>
+        <French>Shadow Merge I</French>
+        <German>Shadow Merge I</German>
+        <Italian>Shadow Merge I</Italian>
+        <Spanish>Shadow Merge I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHADOWMERGE_II_HERO</Tag>
+        <English>Shadow Merge II</English>
+        <French>Shadow Merge II</French>
+        <German>Shadow Merge II</German>
+        <Italian>Shadow Merge II</Italian>
+        <Spanish>Shadow Merge II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHADOW_STEP_I_HERO</Tag>
+        <English>Shadow Step I</English>
+        <French>Shadow Step I</French>
+        <German>Shadow Step I</German>
+        <Italian>Shadow Step I</Italian>
+        <Spanish>Shadow Step I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHADOW_STEP_II_HERO</Tag>
+        <English>Shadow Step II</English>
+        <French>Shadow Step II</French>
+        <German>Shadow Step II</German>
+        <Italian>Shadow Step II</Italian>
+        <Spanish>Shadow Step II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_ARCHER_HERO</Tag>
+        <English>Arcane Archer</English>
+        <French>Arcane Archer</French>
+        <German>Arcane Archer</German>
+        <Italian>Arcane Archer</Italian>
+        <Spanish>Arcane Archer</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEEPWOOD_STALKER_HERO</Tag>
+        <English>Deepwood Stalker</English>
+        <French>Deepwood Stalker</French>
+        <German>Deepwood Stalker</German>
+        <Italian>Deepwood Stalker</Italian>
+        <Spanish>Deepwood Stalker</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLOOD_BLADE_HERO</Tag>
+        <English>Blood Blade</English>
+        <French>Blood Blade</French>
+        <German>Blood Blade</German>
+        <Italian>Blood Blade</Italian>
+        <Spanish>Blood Blade</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_ARROW_I_HERO</Tag>
+        <English>Arcane Arrow I</English>
+        <French>Arcane Arrow I</French>
+        <German>Arcane Arrow I</German>
+        <Italian>Arcane Arrow I</Italian>
+        <Spanish>Arcane Arrow I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_ARROW_II_HERO</Tag>
+        <English>Arcane Arrow II</English>
+        <French>Arcane Arrow II</French>
+        <German>Arcane Arrow II</German>
+        <Italian>Arcane Arrow II</Italian>
+        <Spanish>Arcane Arrow II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_INFUSION_I_HERO</Tag>
+        <English>Arcane Infusion I</English>
+        <French>Arcane Infusion I</French>
+        <German>Arcane Infusion I</German>
+        <Italian>Arcane Infusion I</Italian>
+        <Spanish>Arcane Infusion I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARCANE_INFUSION_II_HERO</Tag>
+        <English>Arcane Infusion II</English>
+        <French>Arcane Infusion II</French>
+        <German>Arcane Infusion II</German>
+        <Italian>Arcane Infusion II</Italian>
+        <Spanish>Arcane Infusion II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEEPWOOD_SPIDER_EGGS_I_HERO</Tag>
+        <English>Deepwood Spider Eggs I</English>
+        <French>Deepwood Spider Eggs I</French>
+        <German>Deepwood Spider Eggs I</German>
+        <Italian>Deepwood Spider Eggs I</Italian>
+        <Spanish>Deepwood Spider Eggs I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEEPWOOD_SPIDER_EGGS_II_HERO</Tag>
+        <English>Deepwood Spider Eggs II</English>
+        <French>Deepwood Spider Eggs II</French>
+        <German>Deepwood Spider Eggs II</German>
+        <Italian>Deepwood Spider Eggs II</Italian>
+        <Spanish>Deepwood Spider Eggs II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TOXIN_KNOWLEDGE_I_HERO</Tag>
+        <English>Toxin Knowledge I</English>
+        <French>Toxin Knowledge I</French>
+        <German>Toxin Knowledge I</German>
+        <Italian>Toxin Knowledge I</Italian>
+        <Spanish>Toxin Knowledge I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_TOXIN_KNOWLEDGE_II_HERO</Tag>
+        <English>Toxin Knowledge II</English>
+        <French>Toxin Knowledge II</French>
+        <German>Toxin Knowledge II</German>
+        <Italian>Toxin Knowledge II</Italian>
+        <Spanish>Toxin Knowledge II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SNEAK_ATTACK_I_HERO</Tag>
+        <English>Sneak Attack I</English>
+        <French>Sneak Attack I</French>
+        <German>Sneak Attack I</German>
+        <Italian>Sneak Attack I</Italian>
+        <Spanish>Sneak Attack I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_SNEAK_ATTACK_II_HERO</Tag>
+        <English>Sneak Attack II</English>
+        <French>Sneak Attack II</French>
+        <German>Sneak Attack II</German>
+        <Italian>Sneak Attack II</Italian>
+        <Spanish>Sneak Attack II</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLOOD_FEAST_I_HERO</Tag>
+        <English>Blood Feast I</English>
+        <French>Blood Feast I</French>
+        <German>Blood Feast I</German>
+        <Italian>Blood Feast I</Italian>
+        <Spanish>Blood Feast I</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLOOD_FEAST_II_HERO</Tag>
+        <English>Blood Feast II</English>
+        <French>Blood Feast II</French>
+        <German>Blood Feast II</German>
+        <Italian>Blood Feast II</Italian>
+        <Spanish>Blood Feast II</Spanish>
+    </TEXT>
+</Civ4GameText>

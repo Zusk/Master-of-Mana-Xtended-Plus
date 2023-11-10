@@ -1,0 +1,37 @@
+Changelog version 3 (5 April 2015)
+
+[LIST=1]
+[*]Religion:
+[LIST][*]Holy city is now founded when a civ acquire second Sacred Knowledge, thanks to CarnivalBizzarre!
+[LIST][*]Code of Junil: +4 culture, +1 gold per Order city, +Life mana, +no unhappiness, +2 Commander GPP, +2 Priest slots.
+[*]Dies Diei: +2 faith, +2 culture, +1 faith per Empyrean city, +Fire mana, +2 Prophet GPP, see invisible, +1 global happiness, +1 Sage slot, +2 Priest slot.
+[*]Tablet of Bambur: +2 gold, +2 culture, +1 culture per ROK city, +Life mana, +2 Engineer GPP, +10% global GPP, +1 happy from Temple of ROK, +1 Engineer slot, +2 Priest slot.
+[*]Song of Autumn: +4 culture, +1 faith per FOL city, +Nature mana, +2 Bard GPP, +Golden Age, +100% Golden Age length, +2 Bard slot, +1 Priest slot.
+[*]Necronomicon: +2 science, +2 culture, +1 science per OO city, +Water mana, +2 Prophet GPP, +1 science from state religion commerce, +1 Bard slot, +1 Priest slot, +1 Sage slot.
+[*]Stigmata: +2 mana, +2 culture, +1 mana per AV city, +Chaos mana, +2 Sage GPP, +Stigmata promotion, +1 mana for Priest/Sage, +2 mana for Great Prophet/Great Sage, +2 Priest slot, +1 Sage slot.[/LIST]
+[*]FOL players now get faith mainly from Ancient Forests. To balance this, Forests and Jungles now upgraded to AFs.
+[*]AV players can summon Azer after acquiring Infernal Pact.
+[*]Religious wars: a chance for all civs with different religion to declare war against you when you acquire Sacred Knowledge.[/LIST]
+[*]District is reworked:
+[LIST][*]Noble District no longer gives +culture income. It gives only happiness from resources, including Ale, Ivory, Fine Clothes and Salt.
+[*]Bard District gives +1 culture/pop.
+[*]Temple District gives +2 faith/pop, -20% production and commerce.
+[*]Merchant District gives +1 gold/pop. It no longer doubles resources in city's BFC.
+[*]Foreign Trade District is renamed to Trading District. It gives +2 gold/pop.
+[*]Warehouse District gives +100% for all yield types in BFC.
+[*]Luxury District gives one random luxury resource and doubles resources in BFC.
+[*]Sage District gives +1 science/pop and +20% GPP.
+[*]Salon gives +2 science/pop, +20% GPP and open slots for one Bard, Engineer and Sage.
+[*]Schola Arcana gives +2 spell research and +1 spell research/mana resources.
+[*]Elder Council gives +2 research and no longer requires Sage District. Early civs can use it to boost research. It requires 200 lumber, though.
+[*]Library and Observatory requires Sage District.
+[*]Public School, Archives and University require Salon. Leaders with Scientific trait get +2 happiness from each.[/LIST]
+[*]Clan of Embers and Doviello can not build Sage District, Salon and Schola Arcana. They can not build any buildings requiring those Districts. They can build Elder Council and Mage Guild.
+[*]Malakim: Dervish now requires Warrior Caste and is 9 str.
+[*]Sheaim can summon Planar Gate creature regardless unit support value. The number of creatures of each type is determined by the number of Planar Gate and AC:
+[LIST][*]AC < 50: 1* number of Planar Gates.
+[*]50 <= AC < 100: 2* number of Planar Gates.
+[*]AC = 100: 3* number of Planar Gates.
+[*]Os-Gabella's trait doubles the value.[/LIST]
+[*]Since AI can not handle Flying, all creatures that should have Flying now have "can move impassable".
+[/LIST]

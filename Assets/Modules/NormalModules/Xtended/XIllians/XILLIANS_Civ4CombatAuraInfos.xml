@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:XILLIANS_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>	
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_WHITE_HAND</CombatAuraClassType>
+			<Type>COMBATAURA_FROSTMAIDEN</Type>
+			<bBlessing>0</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>-1</iTargets>
+			<iTier>2</iTier>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/WhiteHand.dds</Button>
+		</CombatAuraInfo>		
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_WHITE_HAND</CombatAuraClassType>
+			<Type>COMBATAURA_PRIEST_OF_WINTER</Type>
+			<bBlessing>0</bBlessing>
+			<iRange>2</iRange>
+			<iTargets>-1</iTargets>
+			<iTier>3</iTier>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/WhiteHand.dds</Button>
+		</CombatAuraInfo>		
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

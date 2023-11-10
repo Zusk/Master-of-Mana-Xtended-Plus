@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:XILLIANS_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_WHITE_HAND</Type>
+			<Description>Winter Grasp</Description>
+			<Button>Modules/NormalModules/Xtended/XIllians/Buttons/WhiteHand.dds</Button>
+		</CombatAuraClassInfo>		
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:ARISTRAKH_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+		<SpellInfo>
+            <Type>SPELL_DEATH_MARCH</Type>
+            <Description>TXT_KEY_SPELL_DEATH_MARCH</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_DEATH_MARCH_HELP</Help>
+			<TechPrereq>TECH_KNOWLEDGE_OF_THE_ETHER</TechPrereq>
+            <CivilizationPrereq>CIVILIZATION_ARISTRAKH</CivilizationPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bGlobal>1</bGlobal>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<bNoInterruptUnitCycling>1</bNoInterruptUnitCycling>
+			<PyResult>__import__('aristrakh').spellDeathMarch(pCaster)</PyResult>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_INSPIRATION</Sound>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,1,16</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_INQUISITION_ARISTRAKH</Type>
+            <Description>TXT_KEY_SPELL_INQUISITION_ARISTRAKH</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_INQUISITION_HELP</Help>
+            <UnitPrereq>UNIT_NIKEPHOROS</UnitPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>100</iAIWeight>
+            <bInCityOnly>1</bInCityOnly>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>spellInquisition(pCaster)</PyResult>
+            <PyRequirement>reqInquisition(pCaster)</PyRequirement>
+            <Effect>EFFECT_CREATION</Effect>
+            <Sound>AS3D_SPELL_INQUISITION</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,6,14</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_MIRACLE_ARISTRAKH_HEAL</Type>
+            <Description>TXT_KEY_SPELL_MIRACLE_ARISTRAKH_HEAL</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_MIRACLE_ARISTRAKH_HEAL_HELP</Help>
+            <PromotionPrereq1>PROMOTION_SOULDRINKER</PromotionPrereq1>
+			<CivilizationPrereq>CIVILIZATION_ARISTRAKH</CivilizationPrereq>
+			<bAllowAI>1</bAllowAI>
+            <bAllowAuto>1</bAllowAuto>												
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>			
+            <PyResult>__import__('aristrakh').spellHealUD(pCaster,20)</PyResult>
+			<PyRequirement>__import__('aristrakh').reqHealUD(pCaster)</PyRequirement>
+            <Effect>EFFECT_SACRIFICE</Effect>
+            <Sound>AS3D_SPELL_FEAST</Sound>
+            <Button>Art/Interface/Buttons/Promotions/endless_horde.dds</Button>
+			<iManaCost>20</iManaCost>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

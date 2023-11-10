@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_DISAPPOINTED_BY_ALIGNMENT</Tag>
+        <English>Angry with your alignment, some of your units have abandoned your cause!</English>
+		<French>Angry with your alignment, some of your units have abandoned your cause!</French>
+		<German>Angry with your alignment, some of your units have abandoned your cause!</German>
+		<Italian>Angry with your alignment, some of your units have abandoned your cause!</Italian>
+		<Spanish>Angry with your alignment, some of your units have abandoned your cause!</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_SPIRIT_GUIDE</Tag>
+        <English>Spiritual Guru</English>
+		<French>Spiritual Guru</French>
+		<German>Spiritual Guru</German>
+		<Italian>Spiritual Guru</Italian>
+		<Spanish>Spiritual Guru</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ENLIGHTENMENT</Tag>
+        <English>Enlightenment</English>
+		<French>Enlightenment</French>
+		<German>Enlightenment</German>
+		<Italian>Enlightenment</Italian>
+		<Spanish>Enlightenment</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_THE_EXEMPLAR</Tag>
+        <English>The Exemplar</English>
+		<French>The Exemplar</French>
+		<German>The Exemplar</German>
+		<Italian>The Exemplar</Italian>
+		<Spanish>The Exemplar</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_REVELATIONX_HELP</Tag>
+        <English>[ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</English>
+        <French>[ICON_BULLET]Retire l'invisibilité et la Nationalité Caché de toutes les unités ennemies à portée</French>
+        <German>[ICON_BULLET]entfernt [LINK=PROMOTION_INVISIBLE]Unsichtbarkeit[\LINK] und [LINK=PROMOTION_HIDDEN_NATIONALITY]Verborgene Nationalität[\LINK] von allen feindlichen Einheiten in Reichweite</German>
+        <Italian>[ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</Italian>
+        <Spanish>[ICON_BULLET]Removes invisibility and Hidden Nationality from all enemy units within range</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WALL_OF_LIGHT_HELP</Tag>
+		<English>[ICON_BULLET]Might cause enemy unable to attack city.</English>
+		<French>[ICON_BULLET]Might cause enemy unable to attack city.</French>
+		<German>[ICON_BULLET]Might cause enemy unable to attack city.</German>
+		<Italian>[ICON_BULLET]Might cause enemy unable to attack city.</Italian>
+		<Spanish>[ICON_BULLET]Might cause enemy unable to attack city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_WALL_OF_LIGHT_PEDIA</Tag>
+		<English>The walls of Kwythellar remained unbreachable by the massed horde of the Hippus  - a shimmering field preventing their approach.</English>
+		<French>The walls of Kwythellar remained unbreachable by the massed horde of the Hippus - a shimmering field preventing their approach.</French>
+		<German>The walls of Kwythellar remained unbreachable by the massed horde of the Hippus - a shimmering field preventing their approach.</German>
+		<Italian>The walls of Kwythellar remained unbreachable by the massed horde of the Hippus - a shimmering field preventing their approach.</Italian>
+		<Spanish>Las paredes de Kwythellar se quedaban impenetrables por la horde del Hippus - un campo rielante impidiendo su llegada.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_WALL_OF_LIGHT_STRATEGY</Tag>
+		<English>The Wall of Light prevents any unit of less than Level 6 from attacking or entering the city, unless they are team-mates of the city's owner. This can prevent large stacks of weak troops from breaking down your defenders, though the field only lasts so long as the archmage remains in the city - beware of highly promoted assassins.</English>
+		<French>The Wall of Light prevents any unit of less than Level 6 from attacking or entering the city, unless they are team-mates of the city's owner. This can prevent large stacks of weak troops from breaking down your defenders, though the field only lasts so long as the archmage remains in the city - beware of highly promoted assassins.</French>
+		<German>The Wall of Light prevents any unit of less than Level 6 from attacking or entering the city, unless they are team-mates of the city's owner. This can prevent large stacks of weak troops from breaking down your defenders, though the field only lasts so long as the archmage remains in the city - beware of highly promoted assassins.</German>
+		<Italian>The Wall of Light prevents any unit of less than Level 6 from attacking or entering the city, unless they are team-mates of the city's owner. This can prevent large stacks of weak troops from breaking down your defenders, though the field only lasts so long as the archmage remains in the city - beware of highly promoted assassins.</Italian>
+		<Spanish>La Pared de Fuerza impide que una unidad menos de nivel 6 ataque o entre la ciudad, a menos que sea en el equipo del dueño de la ciudad. Esta puede impedir que apilamientos grandes de tropas débiles quebren tus defensores, aunque queda solamente mientras el arcmago queda en la ciudad - ¡cuidado con asesinos ascendidos!</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHIELD_OF_FAITH</Tag>
+        <English>Shield of Faith</English>
+		<French>Shield of Faith</French>
+		<German>Shield of Faith</German>
+		<Italian>Shield of Faith</Italian>
+		<Spanish>Shield of Faith</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RUNE_OF_GALLANTRY</Tag>
+        <English>Rune of Gallantry</English>
+		<French>Rune of Gallantry</French>
+		<German>Rune of Gallantry</German>
+		<Italian>Rune of Gallantry</Italian>
+		<Spanish>Rune of Gallantry</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RUNE_OF_HEALING</Tag>
+        <English>Rune of Healing</English>
+		<French>Rune of Healing</French>
+		<German>Rune of Healing</German>
+		<Italian>Rune of Healing</Italian>
+		<Spanish>Rune of Healing</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RUNE_OF_PROTECTION</Tag>
+        <English>Rune of Protection</English>
+		<French>Rune of Protection</French>
+		<German>Rune of Protection</German>
+		<Italian>Rune of Protection</Italian>
+		<Spanish>Rune of Protection</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RUNE_OF_WARDING</Tag>
+        <English>Rune of Warding</English>
+		<French>Rune of Warding</French>
+		<German>Rune of Warding</German>
+		<Italian>Rune of Warding</Italian>
+		<Spanish>Rune of Warding</Spanish>				
+    </TEXT>   			
+	<TEXT>
+        <Tag>TXT_KEY_PROMOTION_MAGIC_WARD</Tag>
+        <English>Magic Ward</English>
+		<French>Magic Ward</French>
+		<German>Magic Ward</German>
+		<Italian>Magic Ward</Italian>
+		<Spanish>Magic Ward</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NATURE_BOND</Tag>
+        <English>Nature Bond</English>
+		<French>Nature Bond</French>
+		<German>Nature Bond</German>
+		<Italian>Nature Bond</Italian>
+		<Spanish>Nature Bond</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_SENTINEL</Tag>
+        <English>Song of Sentinels</English>
+		<French>Song of Sentinels</French>
+		<German>Song of Sentinels</German>
+		<Italian>Song of Sentinels</Italian>
+		<Spanish>Song of Sentinels</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SENTINEL</Tag>
+        <English>Sentinel</English>
+		<French>Sentinel</French>
+		<German>Sentinel</German>
+		<Italian>Sentinel</Italian>
+		<Spanish>Sentinel</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SATYR_INCARNATE</Tag>
+        <English>[ICON_BULLET]Might affect adjacent tiles.</English>
+		<French>Sentinel</French>
+		<German>Sentinel</German>
+		<Italian>Sentinel</Italian>
+		<Spanish>Sentinel</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DREAMWEAVER</Tag>
+        <English>Dream Weaver</English>
+		<French>Dream Weaver</French>
+		<German>Dream Weaver</German>
+		<Italian>Dream Weaver</Italian>
+		<Spanish>Dream Weaver</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FEEBLEMIND</Tag>
+        <English>Feeblemind</English>
+		<French>Feeblemind</French>
+		<German>Feeblemind</German>
+		<Italian>Feeblemind</Italian>
+		<Spanish>Feeblemind</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FEEBLEMIND_HELP</Tag>
+        <English>[ICON_BULLET]Reduce combat exp gained by enemy units.</English>
+		<French>[ICON_BULLET]Reduce combat exp gained by enemy units.</French>
+		<German>[ICON_BULLET]Reduce combat exp gained by enemy units.</German>
+		<Italian>[ICON_BULLET]Reduce combat exp gained by enemy units.</Italian>
+		<Spanish>[ICON_BULLET]Reduce combat exp gained by enemy units.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WARD_OF_TERROR</Tag>
+        <English>Ward of Terror</English>
+		<French>Ward of Terror</French>
+		<German>Ward of Terror</German>
+		<Italian>Ward of Terror</Italian>
+		<Spanish>Ward of Terror</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AURA_WHISPER_OF_PAIN</Tag>
+        <English>Whisper of Pain</English>
+		<French>Whisper of Pain</French>
+		<German>Whisper of Pain</German>
+		<Italian>Whisper of Pain</Italian>
+		<Spanish>Whisper of Pain</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WHISPERING_PAIN</Tag>
+        <English>Whispering Pain</English>
+		<French>Whispering Pain</French>
+		<German>Whispering Pain</German>
+		<Italian>Whispering Pain</Italian>
+		<Spanish>Whispering Pain</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MESMERIZED</Tag>
+        <English>Mesmerized</English>
+		<French>Mesmerized</French>
+		<German>Mesmerized</German>
+		<Italian>Mesmerized</Italian>
+		<Spanish>Mesmerized</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNHOLY_WARD</Tag>
+        <English>Unholy Ward</English>
+		<French>Unholy Ward</French>
+		<German>Unholy Ward</German>
+		<Italian>Unholy Ward</Italian>
+		<Spanish>Unholy Ward</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_UNHOLY_CHANT</Tag>
+        <English>Unholy Chant</English>
+		<French>Unholy Chant</French>
+		<German>Unholy Chant</German>
+		<Italian>Unholy Chant</Italian>
+		<Spanish>Unholy Chant</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_PURGE</Tag>
+        <English>Purge</English>
+		<French>Purge</French>
+		<German>Purge</German>
+		<Italian>Purge</Italian>
+		<Spanish>Purge</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_PURGE_PEDIA</Tag>
+        <English>"Foolish are those who try to undermine Junil's Chosen using vile magics."[NEWLINE][NEWLINE]Inscription on the Warbanner of Bannor's 2nd Regiment</English>
+		<French>"Foolish are those who try to undermine Junil's Chosen using vile magics."[NEWLINE][NEWLINE]Inscription on the Warbanner of Bannor's 2nd Regiment</French>
+		<German>"Foolish are those who try to undermine Junil's Chosen using vile magics."[NEWLINE][NEWLINE]Inscription on the Warbanner of Bannor's 2nd Regiment</German>
+		<Italian>"Foolish are those who try to undermine Junil's Chosen using vile magics."[NEWLINE][NEWLINE]Inscription on the Warbanner of Bannor's 2nd Regiment</Italian>
+		<Spanish>"Foolish are those who try to undermine Junil's Chosen using vile magics."[NEWLINE][NEWLINE]Inscription on the Warbanner of Bannor's 2nd Regiment</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUPPRESS_MAGIC</Tag>
+        <English>Suppress Magic</English>
+		<French>Suppress Magic</French>
+		<German>Suppress Magic</German>
+		<Italian>Suppress Magic</Italian>
+		<Spanish>Suppress Magic</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SUPPRESS_MAGIC_PEDIA</Tag>
+        <English>When the dusk had come, every people in the city was afraid. Sheaim army was already at their gate. Necromancers, pyromancers and various members of Sheaim magical sects were in the army. No one doubted that the Sheaim army were very enthusiastic in entering the city. No one could imagine what kind of horror and slaughter would befall on their beloved city. No, wait, everyone can. Thus the fear, and hopelessness.[NEWLINE][NEWLINE]The city were manned by strong soldiers, but the Sheaim employed deadly magics. Even the strongest warrior would fall in the face of tremendous magic. And each fallen comrade would be arisen by the necromancers as new enemy. There was no hope, since steel and muscle could not defeat magic and sorcery.[NEWLINE][NEWLINE]The old Prior could taste the fear. Even when his eyes no longer see, he could feel it tangible in the air. He was old. He was neither warrior or mage. He was not capable of helping his fellow townsmate in the front line. Thus, he did the only thing he can do; he knelt down by the altar, and started to pray.[NEWLINE][NEWLINE]Unbeknown to him, his act of praying was followed by everyone in the chapel. Women and children, priests and laymen. All who were unable to bear weapon and face the enemy were gathered in the chapel. All felt the despair, the terror. The old prior's act of praying provide them with a purpose. Instead of waiting for the inevitable death, they would face it during prayers.[NEWLINE][NEWLINE]And so, the Sheaim attacked. Their conjurers fired deadly magics. Their summoners called terrible beasts. Their necromancers waited, ready to bind dead bodies under their unholy command. On the defender side, all warriors raised their weapon. The war priests chanted blessings. The medics waited, ready to fight death using all of their skills. All were ready, and yet, the outcome was clear. The Sheaim would win, and the citizens would be massacred.[NEWLINE][NEWLINE]Or so they thought.[NEWLINE][NEWLINE]History of Erebus, Chapter 7 : the Siege of Athel Maraya</English>
+		<French>When the dusk had come, every people in the city was afraid. Sheaim army was already at their gate. Necromancers, pyromancers and various members of Sheaim magical sects were in the army. No one doubted that the Sheaim army were very enthusiastic in entering the city. No one could imagine what kind of horror and slaughter would befall on their beloved city. No, wait, everyone can. Thus the fear, and hopelessness.[NEWLINE][NEWLINE]The city were manned by strong soldiers, but the Sheaim employed deadly magics. Even the strongest warrior would fall in the face of tremendous magic. And each fallen comrade would be arisen by the necromancers as new enemy. There was no hope, since steel and muscle could not defeat magic and sorcery.[NEWLINE][NEWLINE]The old Prior could taste the fear. Even when his eyes no longer see, he could feel it tangible in the air. He was old. He was neither warrior or mage. He was not capable of helping his fellow townsmate in the front line. Thus, he did the only thing he can do; he knelt down by the altar, and started to pray.[NEWLINE][NEWLINE]Unbeknown to him, his act of praying was followed by everyone in the chapel. Women and children, priests and laymen. All who were unable to bear weapon and face the enemy were gathered in the chapel. All felt the despair, the terror. The old prior's act of praying provide them with a purpose. Instead of waiting for the inevitable death, they would face it during prayers.[NEWLINE][NEWLINE]And so, the Sheaim attacked. Their conjurers fired deadly magics. Their summoners called terrible beasts. Their necromancers waited, ready to bind dead bodies under their unholy command. On the defender side, all warriors raised their weapon. The war priests chanted blessings. The medics waited, ready to fight death using all of their skills. All were ready, and yet, the outcome was clear. The Sheaim would win, and the citizens would be massacred.[NEWLINE][NEWLINE]Or so they thought.[NEWLINE][NEWLINE]History of Erebus, Chapter 7 : the Siege of Athel Maraya</French>
+		<German>When the dusk had come, every people in the city was afraid. Sheaim army was already at their gate. Necromancers, pyromancers and various members of Sheaim magical sects were in the army. No one doubted that the Sheaim army were very enthusiastic in entering the city. No one could imagine what kind of horror and slaughter would befall on their beloved city. No, wait, everyone can. Thus the fear, and hopelessness.[NEWLINE][NEWLINE]The city were manned by strong soldiers, but the Sheaim employed deadly magics. Even the strongest warrior would fall in the face of tremendous magic. And each fallen comrade would be arisen by the necromancers as new enemy. There was no hope, since steel and muscle could not defeat magic and sorcery.[NEWLINE][NEWLINE]The old Prior could taste the fear. Even when his eyes no longer see, he could feel it tangible in the air. He was old. He was neither warrior or mage. He was not capable of helping his fellow townsmate in the front line. Thus, he did the only thing he can do; he knelt down by the altar, and started to pray.[NEWLINE][NEWLINE]Unbeknown to him, his act of praying was followed by everyone in the chapel. Women and children, priests and laymen. All who were unable to bear weapon and face the enemy were gathered in the chapel. All felt the despair, the terror. The old prior's act of praying provide them with a purpose. Instead of waiting for the inevitable death, they would face it during prayers.[NEWLINE][NEWLINE]And so, the Sheaim attacked. Their conjurers fired deadly magics. Their summoners called terrible beasts. Their necromancers waited, ready to bind dead bodies under their unholy command. On the defender side, all warriors raised their weapon. The war priests chanted blessings. The medics waited, ready to fight death using all of their skills. All were ready, and yet, the outcome was clear. The Sheaim would win, and the citizens would be massacred.[NEWLINE][NEWLINE]Or so they thought.[NEWLINE][NEWLINE]History of Erebus, Chapter 7 : the Siege of Athel Maraya</German>
+		<Italian>When the dusk had come, every people in the city was afraid. Sheaim army was already at their gate. Necromancers, pyromancers and various members of Sheaim magical sects were in the army. No one doubted that the Sheaim army were very enthusiastic in entering the city. No one could imagine what kind of horror and slaughter would befall on their beloved city. No, wait, everyone can. Thus the fear, and hopelessness.[NEWLINE][NEWLINE]The city were manned by strong soldiers, but the Sheaim employed deadly magics. Even the strongest warrior would fall in the face of tremendous magic. And each fallen comrade would be arisen by the necromancers as new enemy. There was no hope, since steel and muscle could not defeat magic and sorcery.[NEWLINE][NEWLINE]The old Prior could taste the fear. Even when his eyes no longer see, he could feel it tangible in the air. He was old. He was neither warrior or mage. He was not capable of helping his fellow townsmate in the front line. Thus, he did the only thing he can do; he knelt down by the altar, and started to pray.[NEWLINE][NEWLINE]Unbeknown to him, his act of praying was followed by everyone in the chapel. Women and children, priests and laymen. All who were unable to bear weapon and face the enemy were gathered in the chapel. All felt the despair, the terror. The old prior's act of praying provide them with a purpose. Instead of waiting for the inevitable death, they would face it during prayers.[NEWLINE][NEWLINE]And so, the Sheaim attacked. Their conjurers fired deadly magics. Their summoners called terrible beasts. Their necromancers waited, ready to bind dead bodies under their unholy command. On the defender side, all warriors raised their weapon. The war priests chanted blessings. The medics waited, ready to fight death using all of their skills. All were ready, and yet, the outcome was clear. The Sheaim would win, and the citizens would be massacred.[NEWLINE][NEWLINE]Or so they thought.[NEWLINE][NEWLINE]History of Erebus, Chapter 7 : the Siege of Athel Maraya</Italian>
+		<Spanish>When the dusk had come, every people in the city was afraid. Sheaim army was already at their gate. Necromancers, pyromancers and various members of Sheaim magical sects were in the army. No one doubted that the Sheaim army were very enthusiastic in entering the city. No one could imagine what kind of horror and slaughter would befall on their beloved city. No, wait, everyone can. Thus the fear, and hopelessness.[NEWLINE][NEWLINE]The city were manned by strong soldiers, but the Sheaim employed deadly magics. Even the strongest warrior would fall in the face of tremendous magic. And each fallen comrade would be arisen by the necromancers as new enemy. There was no hope, since steel and muscle could not defeat magic and sorcery.[NEWLINE][NEWLINE]The old Prior could taste the fear. Even when his eyes no longer see, he could feel it tangible in the air. He was old. He was neither warrior or mage. He was not capable of helping his fellow townsmate in the front line. Thus, he did the only thing he can do; he knelt down by the altar, and started to pray.[NEWLINE][NEWLINE]Unbeknown to him, his act of praying was followed by everyone in the chapel. Women and children, priests and laymen. All who were unable to bear weapon and face the enemy were gathered in the chapel. All felt the despair, the terror. The old prior's act of praying provide them with a purpose. Instead of waiting for the inevitable death, they would face it during prayers.[NEWLINE][NEWLINE]And so, the Sheaim attacked. Their conjurers fired deadly magics. Their summoners called terrible beasts. Their necromancers waited, ready to bind dead bodies under their unholy command. On the defender side, all warriors raised their weapon. The war priests chanted blessings. The medics waited, ready to fight death using all of their skills. All were ready, and yet, the outcome was clear. The Sheaim would win, and the citizens would be massacred.[NEWLINE][NEWLINE]Or so they thought.[NEWLINE][NEWLINE]History of Erebus, Chapter 7 : the Siege of Athel Maraya</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_ARCANE_INQUISITION</Tag>
+        <English>Arcane Inquisition</English>
+		<French>Arcane Inquisition</French>
+		<German>Arcane Inquisition</German>
+		<Italian>Arcane Inquisition</Italian>
+		<Spanish>Arcane Inquisition</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_ARCANE_INQUISITION_PEDIA</Tag>
+        <English>"It is the Governor-Mage! It is the Governor-Mage who killed my daughter with his unholy magics! It is him! HIM!"[NEWLINE][NEWLINE]It was started with a man, in deep anguish over his dead daughter. It ended with riots, the toppling of Amurites' magocracy and the starting of Amurites Republic.[NEWLINE][NEWLINE]Never underestimate a man's fear. Never.</English>
+		<French>"It is the Governor-Mage! It is the Governor-Mage who killed my daughter with his unholy magics! It is him! HIM!"[NEWLINE][NEWLINE]It was started with a man, in deep anguish over his dead daughter. It ended with riots, the toppling of Amurites' magocracy and the starting of Amurites Republic.[NEWLINE][NEWLINE]Never underestimate a man's fear. Never.</French>
+		<German>"It is the Governor-Mage! It is the Governor-Mage who killed my daughter with his unholy magics! It is him! HIM!"[NEWLINE][NEWLINE]It was started with a man, in deep anguish over his dead daughter. It ended with riots, the toppling of Amurites' magocracy and the starting of Amurites Republic.[NEWLINE][NEWLINE]Never underestimate a man's fear. Never.</German>
+		<Italian>"It is the Governor-Mage! It is the Governor-Mage who killed my daughter with his unholy magics! It is him! HIM!"[NEWLINE][NEWLINE]It was started with a man, in deep anguish over his dead daughter. It ended with riots, the toppling of Amurites' magocracy and the starting of Amurites Republic.[NEWLINE][NEWLINE]Never underestimate a man's fear. Never.</Italian>
+		<Spanish>"It is the Governor-Mage! It is the Governor-Mage who killed my daughter with his unholy magics! It is him! HIM!"[NEWLINE][NEWLINE]It was started with a man, in deep anguish over his dead daughter. It ended with riots, the toppling of Amurites' magocracy and the starting of Amurites Republic.[NEWLINE][NEWLINE]Never underestimate a man's fear. Never.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_WALL_OF_LIGHT</Tag>
+        <English>Protected Realm</English>
+		<French>Protected Realm</French>
+		<German>Protected Realm</German>
+		<Italian>Protected Realm</Italian>
+		<Spanish>Protected Realm</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_GLOBAL_WALL_OF_LIGHT_PEDIA</Tag>
+        <English>We don't rely on muscles and magic, but miracle from Lugus. The best barrier is not made of stone or mana, but of prayers and faith.</English>
+		<French>We don't rely on muscles and magic, but miracle from Lugus. The best barrier is not made of stone or mana, but of prayers and faith.</French>
+		<German>We don't rely on muscles and magic, but miracle from Lugus. The best barrier is not made of stone or mana, but of prayers and faith.</German>
+		<Italian>We don't rely on muscles and magic, but miracle from Lugus. The best barrier is not made of stone or mana, but of prayers and faith.</Italian>
+		<Spanish>We don't rely on muscles and magic, but miracle from Lugus. The best barrier is not made of stone or mana, but of prayers and faith.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SEARING_LIGHT</Tag>
+        <English>Searing Light</English>
+		<French>Searing Light</French>
+		<German>Searing Light</German>
+		<Italian>Searing Light</Italian>
+		<Spanish>Searing Light</Spanish>				
+    </TEXT>   			    
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_SEARING_LIGHT_PEDIA</Tag>
+        <English>The situation was dire. Naggarond had fallen to Hippus' advaced cavalry. At the same time, Lanun's corsairs were approaching waters near Kwythellar. This was more than bad, since all Kuriotates main armies were too busy fighting the Calabim in the west. There would be no time for the armies to go east, and arrive in time to save Kwythellar.[NEWLINE][NEWLINE]Seh-Tassehk was furious with herself. The alliance between Hippus and Lanun had been foreseeable, but their involvement in Kuriotates-Calabim war had been not. Her diplomats had been sure, that both Hippus and Lanun were satisfied with bribe provided by Kuriotates government. Alas, the mercenaries and pirates were more greedy than her diplomats had tought![NEWLINE][NEWLINE]"Your Majesssty." Seh-Tassehk slithered into the throne room. She bowed deeply to the Boy-King of Kuriotates.[NEWLINE][NEWLINE]"Lady," Cardith Lorda acknowledged his diplomatic advisor and motioned her to come forward. "The situation is dire, I believe."[NEWLINE][NEWLINE]"Yesss, Your Majesssty." Seh-Tassehk bowed again. "I am terribly sssorry for my failuresss."[NEWLINE][NEWLINE]Cardith Lorda patted her fingers. An assurance which did nothing to lighten the burden in Seh-Tassehk's heart. "Do not worry, Lady. Not all is lost. We are not alone in this war. I just met an angelic messenger Lady Ethne had sent. She told me that the Elohim were praying for a miracle to lighten our burden. I believe in her, and in our patron. Lugus will not abandon us and let the realm of Kuriotates is swallowed by terrible darkness."[NEWLINE][NEWLINE]Seh-Tassehk bowed her head. She understood the Boy-King's deep faith in Lugus and the Empyreans. She herself found the faith attractive, and considered to convert sometime in the future. But she could not fathom, what kind of miracle would be able to save them. Not to mention, the Elohim was too far for sending direct reinforcements, angelic or not.[NEWLINE][NEWLINE]The enemies were approaching. Lanun's corsairs were visible in the coastline. Seh-Tassehk was preparing her fireball spell, when suddenly a bright light erupted in the sky. Cries were heard from the pirate's fleets, but none of Kuriotates' soldiers were hurt by the light.[NEWLINE][NEWLINE]"That is Lugus' Answer to ours and our ally's prayers." Cardith Lorda solemnly said. "Their sights and movements will be impaired by the searing light. It is our time to launch an attack! Prepare all of your Lamias, Lady. Cast your holy spells and destroy our enemy for good!"</English>
+		<French>The situation was dire. Naggarond had fallen to Hippus' advaced cavalry. At the same time, Lanun's corsairs were approaching waters near Kwythellar. This was more than bad, since all Kuriotates main armies were too busy fighting the Calabim in the west. There would be no time for the armies to go east, and arrive in time to save Kwythellar.[NEWLINE][NEWLINE]Seh-Tassehk was furious with herself. The alliance between Hippus and Lanun had been foreseeable, but their involvement in Kuriotates-Calabim war had been not. Her diplomats had been sure, that both Hippus and Lanun were satisfied with bribe provided by Kuriotates government. Alas, the mercenaries and pirates were more greedy than her diplomats had tought![NEWLINE][NEWLINE]"Your Majesssty." Seh-Tassehk slithered into the throne room. She bowed deeply to the Boy-King of Kuriotates.[NEWLINE][NEWLINE]"Lady," Cardith Lorda acknowledged his diplomatic advisor and motioned her to come forward. "The situation is dire, I believe."[NEWLINE][NEWLINE]"Yesss, Your Majesssty." Seh-Tassehk bowed again. "I am terribly sssorry for my failuresss."[NEWLINE][NEWLINE]Cardith Lorda patted her fingers. An assurance which did nothing to lighten the burden in Seh-Tassehk's heart. "Do not worry, Lady. Not all is lost. We are not alone in this war. I just met an angelic messenger Lady Ethne had sent. She told me that the Elohim were praying for a miracle to lighten our burden. I believe in her, and in our patron. Lugus will not abandon us and let the realm of Kuriotates is swallowed by terrible darkness."[NEWLINE][NEWLINE]Seh-Tassehk bowed her head. She understood the Boy-King's deep faith in Lugus and the Empyreans. She herself found the faith attractive, and considered to convert sometime in the future. But she could not fathom, what kind of miracle would be able to save them. Not to mention, the Elohim was too far for sending direct reinforcements, angelic or not.[NEWLINE][NEWLINE]The enemies were approaching. Lanun's corsairs were visible in the coastline. Seh-Tassehk was preparing her fireball spell, when suddenly a bright light erupted in the sky. Cries were heard from the pirate's fleets, but none of Kuriotates' soldiers were hurt by the light.[NEWLINE][NEWLINE]"That is Lugus' Answer to ours and our ally's prayers." Cardith Lorda solemnly said. "Their sights and movements will be impaired by the searing light. It is our time to launch an attack! Prepare all of your Lamias, Lady. Cast your holy spells and destroy our enemy for good!"</French>
+		<German>The situation was dire. Naggarond had fallen to Hippus' advaced cavalry. At the same time, Lanun's corsairs were approaching waters near Kwythellar. This was more than bad, since all Kuriotates main armies were too busy fighting the Calabim in the west. There would be no time for the armies to go east, and arrive in time to save Kwythellar.[NEWLINE][NEWLINE]Seh-Tassehk was furious with herself. The alliance between Hippus and Lanun had been foreseeable, but their involvement in Kuriotates-Calabim war had been not. Her diplomats had been sure, that both Hippus and Lanun were satisfied with bribe provided by Kuriotates government. Alas, the mercenaries and pirates were more greedy than her diplomats had tought![NEWLINE][NEWLINE]"Your Majesssty." Seh-Tassehk slithered into the throne room. She bowed deeply to the Boy-King of Kuriotates.[NEWLINE][NEWLINE]"Lady," Cardith Lorda acknowledged his diplomatic advisor and motioned her to come forward. "The situation is dire, I believe."[NEWLINE][NEWLINE]"Yesss, Your Majesssty." Seh-Tassehk bowed again. "I am terribly sssorry for my failuresss."[NEWLINE][NEWLINE]Cardith Lorda patted her fingers. An assurance which did nothing to lighten the burden in Seh-Tassehk's heart. "Do not worry, Lady. Not all is lost. We are not alone in this war. I just met an angelic messenger Lady Ethne had sent. She told me that the Elohim were praying for a miracle to lighten our burden. I believe in her, and in our patron. Lugus will not abandon us and let the realm of Kuriotates is swallowed by terrible darkness."[NEWLINE][NEWLINE]Seh-Tassehk bowed her head. She understood the Boy-King's deep faith in Lugus and the Empyreans. She herself found the faith attractive, and considered to convert sometime in the future. But she could not fathom, what kind of miracle would be able to save them. Not to mention, the Elohim was too far for sending direct reinforcements, angelic or not.[NEWLINE][NEWLINE]The enemies were approaching. Lanun's corsairs were visible in the coastline. Seh-Tassehk was preparing her fireball spell, when suddenly a bright light erupted in the sky. Cries were heard from the pirate's fleets, but none of Kuriotates' soldiers were hurt by the light.[NEWLINE][NEWLINE]"That is Lugus' Answer to ours and our ally's prayers." Cardith Lorda solemnly said. "Their sights and movements will be impaired by the searing light. It is our time to launch an attack! Prepare all of your Lamias, Lady. Cast your holy spells and destroy our enemy for good!"</German>
+		<Italian>The situation was dire. Naggarond had fallen to Hippus' advaced cavalry. At the same time, Lanun's corsairs were approaching waters near Kwythellar. This was more than bad, since all Kuriotates main armies were too busy fighting the Calabim in the west. There would be no time for the armies to go east, and arrive in time to save Kwythellar.[NEWLINE][NEWLINE]Seh-Tassehk was furious with herself. The alliance between Hippus and Lanun had been foreseeable, but their involvement in Kuriotates-Calabim war had been not. Her diplomats had been sure, that both Hippus and Lanun were satisfied with bribe provided by Kuriotates government. Alas, the mercenaries and pirates were more greedy than her diplomats had tought![NEWLINE][NEWLINE]"Your Majesssty." Seh-Tassehk slithered into the throne room. She bowed deeply to the Boy-King of Kuriotates.[NEWLINE][NEWLINE]"Lady," Cardith Lorda acknowledged his diplomatic advisor and motioned her to come forward. "The situation is dire, I believe."[NEWLINE][NEWLINE]"Yesss, Your Majesssty." Seh-Tassehk bowed again. "I am terribly sssorry for my failuresss."[NEWLINE][NEWLINE]Cardith Lorda patted her fingers. An assurance which did nothing to lighten the burden in Seh-Tassehk's heart. "Do not worry, Lady. Not all is lost. We are not alone in this war. I just met an angelic messenger Lady Ethne had sent. She told me that the Elohim were praying for a miracle to lighten our burden. I believe in her, and in our patron. Lugus will not abandon us and let the realm of Kuriotates is swallowed by terrible darkness."[NEWLINE][NEWLINE]Seh-Tassehk bowed her head. She understood the Boy-King's deep faith in Lugus and the Empyreans. She herself found the faith attractive, and considered to convert sometime in the future. But she could not fathom, what kind of miracle would be able to save them. Not to mention, the Elohim was too far for sending direct reinforcements, angelic or not.[NEWLINE][NEWLINE]The enemies were approaching. Lanun's corsairs were visible in the coastline. Seh-Tassehk was preparing her fireball spell, when suddenly a bright light erupted in the sky. Cries were heard from the pirate's fleets, but none of Kuriotates' soldiers were hurt by the light.[NEWLINE][NEWLINE]"That is Lugus' Answer to ours and our ally's prayers." Cardith Lorda solemnly said. "Their sights and movements will be impaired by the searing light. It is our time to launch an attack! Prepare all of your Lamias, Lady. Cast your holy spells and destroy our enemy for good!"</Italian>
+		<Spanish>The situation was dire. Naggarond had fallen to Hippus' advaced cavalry. At the same time, Lanun's corsairs were approaching waters near Kwythellar. This was more than bad, since all Kuriotates main armies were too busy fighting the Calabim in the west. There would be no time for the armies to go east, and arrive in time to save Kwythellar.[NEWLINE][NEWLINE]Seh-Tassehk was furious with herself. The alliance between Hippus and Lanun had been foreseeable, but their involvement in Kuriotates-Calabim war had been not. Her diplomats had been sure, that both Hippus and Lanun were satisfied with bribe provided by Kuriotates government. Alas, the mercenaries and pirates were more greedy than her diplomats had tought![NEWLINE][NEWLINE]"Your Majesssty." Seh-Tassehk slithered into the throne room. She bowed deeply to the Boy-King of Kuriotates.[NEWLINE][NEWLINE]"Lady," Cardith Lorda acknowledged his diplomatic advisor and motioned her to come forward. "The situation is dire, I believe."[NEWLINE][NEWLINE]"Yesss, Your Majesssty." Seh-Tassehk bowed again. "I am terribly sssorry for my failuresss."[NEWLINE][NEWLINE]Cardith Lorda patted her fingers. An assurance which did nothing to lighten the burden in Seh-Tassehk's heart. "Do not worry, Lady. Not all is lost. We are not alone in this war. I just met an angelic messenger Lady Ethne had sent. She told me that the Elohim were praying for a miracle to lighten our burden. I believe in her, and in our patron. Lugus will not abandon us and let the realm of Kuriotates is swallowed by terrible darkness."[NEWLINE][NEWLINE]Seh-Tassehk bowed her head. She understood the Boy-King's deep faith in Lugus and the Empyreans. She herself found the faith attractive, and considered to convert sometime in the future. But she could not fathom, what kind of miracle would be able to save them. Not to mention, the Elohim was too far for sending direct reinforcements, angelic or not.[NEWLINE][NEWLINE]The enemies were approaching. Lanun's corsairs were visible in the coastline. Seh-Tassehk was preparing her fireball spell, when suddenly a bright light erupted in the sky. Cries were heard from the pirate's fleets, but none of Kuriotates' soldiers were hurt by the light.[NEWLINE][NEWLINE]"That is Lugus' Answer to ours and our ally's prayers." Cardith Lorda solemnly said. "Their sights and movements will be impaired by the searing light. It is our time to launch an attack! Prepare all of your Lamias, Lady. Cast your holy spells and destroy our enemy for good!"</Spanish>				
+    </TEXT>   			    
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_IMPAIRED_SIGHT</Tag>
+        <English>Impaired Sight</English>
+		<French>Impaired Sight</French>
+		<German>Impaired Sight</German>
+		<Italian>Impaired Sight</Italian>
+		<Spanish>Impaired Sight</Spanish>				
+    </TEXT>   			    
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_BARREN_LAND</Tag>
+        <English>Shifting Land</English>
+		<French>Shifting Land</French>
+		<German>Shifting Land</German>
+		<Italian>Shifting Land</Italian>
+		<Spanish>Shifting Land</Spanish>				
+    </TEXT>   			    
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_BARREN_LAND_PEDIA</Tag>
+        <English>Kilmorph is Gentle.[NEWLINE]Her Care is Tender.[NEWLINE]But beware of Her Divine Wrath,[NEWLINE]O, enemy of mine,[NEWLINE]She can turns sands[NEWLINE]and collapse your precious land.</English>
+		<French>Kilmorph is Gentle.[NEWLINE]Her Care is Tender.[NEWLINE]But beware of Her Divine Wrath,[NEWLINE]O, enemy of mine,[NEWLINE]She can turns sands[NEWLINE]and collapse your precious land.</French>
+		<German>Kilmorph is Gentle.[NEWLINE]Her Care is Tender.[NEWLINE]But beware of Her Divine Wrath,[NEWLINE]O, enemy of mine,[NEWLINE]She can turns sands[NEWLINE]and collapse your precious land.</German>
+		<Italian>Kilmorph is Gentle.[NEWLINE]Her Care is Tender.[NEWLINE]But beware of Her Divine Wrath,[NEWLINE]O, enemy of mine,[NEWLINE]She can turns sands[NEWLINE]and collapse your precious land.</Italian>
+		<Spanish>Kilmorph is Gentle.[NEWLINE]Her Care is Tender.[NEWLINE]But beware of Her Divine Wrath,[NEWLINE]O, enemy of mine,[NEWLINE]She can turns sands[NEWLINE]and collapse your precious land.</Spanish>				
+    </TEXT>   			    
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_LOCUST_SWARM</Tag>
+        <English>Locust Swarm</English>
+		<French>Locust Swarm</French>
+		<German>Locust Swarm</German>
+		<Italian>Locust Swarm</Italian>
+		<Spanish>Locust Swarm</Spanish>				
+    </TEXT>   			
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_LOCUST_SWARM_PEDIA</Tag>
+        <English>Even the smallest creature, can bring big trouble, if they gather plenty enough.</English>
+		<French>Even the smallest creature, can bring big trouble, if they gather plenty enough.</French>
+		<German>Even the smallest creature, can bring big trouble, if they gather plenty enough.</German>
+		<Italian>Even the smallest creature, can bring big trouble, if they gather plenty enough.</Italian>
+		<Spanish>Even the smallest creature, can bring big trouble, if they gather plenty enough.</Spanish>				
+    </TEXT>   			
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_EVERGROW</Tag>
+        <English>Evergrow Realm</English>
+		<French>Evergrow Realm</French>
+		<German>Evergrow Realm</German>
+		<Italian>Evergrow Realm</Italian>
+		<Spanish>Evergrow Realm</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_EVERGROW_PEDIA</Tag>
+        <English>"Faith is the best nutrient for our land."[NEWLINE][NEWLINE]~Yvain~</English>
+		<French>"Faith is the best nutrient for our land."[NEWLINE][NEWLINE]~Yvain~</French>
+		<German>"Faith is the best nutrient for our land."[NEWLINE][NEWLINE]~Yvain~</German>
+		<Italian>"Faith is the best nutrient for our land."[NEWLINE][NEWLINE]~Yvain~</Italian>
+		<Spanish>"Faith is the best nutrient for our land."[NEWLINE][NEWLINE]~Yvain~</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_MANTLE_OF_CERNUNNOS</Tag>
+        <English>Mantle of Cernunnos</English>
+		<French>Mantle of Cernunnos</French>
+		<German>Mantle of Cernunnos</German>
+		<Italian>Mantle of Cernunnos</Italian>
+		<Spanish>Mantle of Cernunnos</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_MANTLE_OF_CERNUNNOS_PEDIA</Tag>
+        <English>"Protect us,[NEWLINE]Oh, Mighty Cernunnos,[NEWLINE]from the flame,[NEWLINE]from the winter,[NEWLINE]from the despair."[NEWLINE][NEWLINE]~Ljosalfar morning prayer~</English>
+		<French>"Protect us,[NEWLINE]Oh, Mighty Cernunnos,[NEWLINE]from the flame,[NEWLINE]from the winter,[NEWLINE]from the despair."[NEWLINE][NEWLINE]~Ljosalfar morning prayer~</French>
+		<German>"Protect us,[NEWLINE]Oh, Mighty Cernunnos,[NEWLINE]from the flame,[NEWLINE]from the winter,[NEWLINE]from the despair."[NEWLINE][NEWLINE]~Ljosalfar morning prayer~</German>
+		<Italian>"Protect us,[NEWLINE]Oh, Mighty Cernunnos,[NEWLINE]from the flame,[NEWLINE]from the winter,[NEWLINE]from the despair."[NEWLINE][NEWLINE]~Ljosalfar morning prayer~</Italian>
+		<Spanish>"Protect us,[NEWLINE]Oh, Mighty Cernunnos,[NEWLINE]from the flame,[NEWLINE]from the winter,[NEWLINE]from the despair."[NEWLINE][NEWLINE]~Ljosalfar morning prayer~</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_PURITY</Tag>
+        <English>Purity</English>
+		<French>Purity</French>
+		<German>Purity</German>
+		<Italian>Purity</Italian>
+		<Spanish>Purity</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_PURITY_PEDIA</Tag>
+        <English>Even the vilest of evil, will find healing under the touch of the righteous.[NEWLINE][NEWLINE]Elohim sayings</English>
+		<French>Even the vilest of evil, will find healing under the touch of the righteous.[NEWLINE][NEWLINE]Elohim sayings</French>
+		<German>Even the vilest of evil, will find healing under the touch of the righteous.[NEWLINE][NEWLINE]Elohim sayings</German>
+		<Italian>Even the vilest of evil, will find healing under the touch of the righteous.[NEWLINE][NEWLINE]Elohim sayings</Italian>
+		<Spanish>Even the vilest of evil, will find healing under the touch of the righteous.[NEWLINE][NEWLINE]Elohim sayings</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_DANCE_OF_ECTASY</Tag>
+        <English>Dance of Ecstasy</English>
+		<French>Dance of Ecstasy</French>
+		<German>Dance of Ecstasy</German>
+		<Italian>Dance of Ecstasy</Italian>
+		<Spanish>Dance of Ecstasy</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_DANCE_OF_ECTASY_PEDIA</Tag>
+        <English>Dance... dance... dance...[NEWLINE]Sing... sing... sing...[NEWLINE]Dance... dance... dance...[NEWLINE]Leave your burdens behind.[NEWLINE][NEWLINE]Come... come... come...[NEWLINE]Dance to the light.[NEWLINE]Come... come... come...[NEWLINE]Leave your life behind.</English>
+		<French>Dance... dance... dance...[NEWLINE]Sing... sing... sing...[NEWLINE]Dance... dance... dance...[NEWLINE]Leave your burdens behind.[NEWLINE][NEWLINE]Come... come... come...[NEWLINE]Dance to the light.[NEWLINE]Come... come... come...[NEWLINE]Leave your life behind.</French>
+		<German>Dance... dance... dance...[NEWLINE]Sing... sing... sing...[NEWLINE]Dance... dance... dance...[NEWLINE]Leave your burdens behind.[NEWLINE][NEWLINE]Come... come... come...[NEWLINE]Dance to the light.[NEWLINE]Come... come... come...[NEWLINE]Leave your life behind.</German>
+		<Italian>Dance... dance... dance...[NEWLINE]Sing... sing... sing...[NEWLINE]Dance... dance... dance...[NEWLINE]Leave your burdens behind.[NEWLINE][NEWLINE]Come... come... come...[NEWLINE]Dance to the light.[NEWLINE]Come... come... come...[NEWLINE]Leave your life behind.</Italian>
+		<Spanish>Dance... dance... dance...[NEWLINE]Sing... sing... sing...[NEWLINE]Dance... dance... dance...[NEWLINE]Leave your burdens behind.[NEWLINE][NEWLINE]Come... come... come...[NEWLINE]Dance to the light.[NEWLINE]Come... come... come...[NEWLINE]Leave your life behind.</Spanish>
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_LETHARGY</Tag>
+        <English>Lethargy</English>
+		<French>Lethargy</French>
+		<German>Lethargy</German>
+		<Italian>Lethargy</Italian>
+		<Spanish>Lethargy</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_LETHARGY_PEDIA</Tag>
+        <English>"Why should I do something today, if I can delay it to tomorrow?[NEWLINE]Why should I do something tomorrow, if I can delay it to the day after?[NEWLINE]Why should I do something the day after, if I can delay it infinitely?[NEWLINE]Fool, fool maybe I am,[NEWLINE]but more foolish are those who strive now[NEWLINE]and never have fun, until tomorrow.[NEWLINE][NEWLINE]Tales of Hummimbung the Fool</English>
+		<French>"Why should I do something today, if I can delay it to tomorrow?[NEWLINE]Why should I do something tomorrow, if I can delay it to the day after?[NEWLINE]Why should I do something the day after, if I can delay it infinitely?[NEWLINE]Fool, fool maybe I am,[NEWLINE]but more foolish are those who strive now[NEWLINE]and never have fun, until tomorrow.[NEWLINE][NEWLINE]Tales of Hummimbung the Fool</French>
+		<German>"Why should I do something today, if I can delay it to tomorrow?[NEWLINE]Why should I do something tomorrow, if I can delay it to the day after?[NEWLINE]Why should I do something the day after, if I can delay it infinitely?[NEWLINE]Fool, fool maybe I am,[NEWLINE]but more foolish are those who strive now[NEWLINE]and never have fun, until tomorrow.[NEWLINE][NEWLINE]Tales of Hummimbung the Fool</German>
+		<Italian>"Why should I do something today, if I can delay it to tomorrow?[NEWLINE]Why should I do something tomorrow, if I can delay it to the day after?[NEWLINE]Why should I do something the day after, if I can delay it infinitely?[NEWLINE]Fool, fool maybe I am,[NEWLINE]but more foolish are those who strive now[NEWLINE]and never have fun, until tomorrow.[NEWLINE][NEWLINE]Tales of Hummimbung the Fool</Italian>
+		<Spanish>"Why should I do something today, if I can delay it to tomorrow?[NEWLINE]Why should I do something tomorrow, if I can delay it to the day after?[NEWLINE]Why should I do something the day after, if I can delay it infinitely?[NEWLINE]Fool, fool maybe I am,[NEWLINE]but more foolish are those who strive now[NEWLINE]and never have fun, until tomorrow.[NEWLINE][NEWLINE]Tales of Hummimbung the Fool</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_MASTER_OF_NIGHTMARE</Tag>
+        <English>Master of Nightmare</English>
+		<French>Master of Nightmare</French>
+		<German>Master of Nightmare</German>
+		<Italian>Master of Nightmare</Italian>
+		<Spanish>Master of Nightmare</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_MASTER_OF_NIGHTMARE_PEDIA</Tag>
+        <English>The nightmare had been so horrible. Jaem woke up with sluggish mind and tired body. He felt like he had not rested at all last night. When he attended the Academy, his mentor was concerned. It had been the same nightmare for three days in a row, and it had begun to affect his study. Jaem wanted to be an artist. He had the talent, he had the genius musicians at the Academy as his mentor. But he had not the energy to learn and practice, not after his terrible nightmare.[NEWLINE][NEWLINE]Coming home at dusk, Jaem felt very tired. His parents ushered him to the bed. They could see how weary he was. But, standing at the side of his bed, Jaem hesitated. He was afraid that the same nightmare would plague his sleep again.[NEWLINE][NEWLINE]Eventually, tiredness won. Jaem laid down his body, and pray that gentle Sirona would provide him with restful sleep.[NEWLINE][NEWLINE]Jaem closed his eyes, and soon his body started to relax. His consciousness slowly faded.[NEWLINE][NEWLINE]Few seconds later, Jaem started to trash in his sleep. His nightmare had arrived!</English>
+		<French>The nightmare had been so horrible. Jaem woke up with sluggish mind and tired body. He felt like he had not rested at all last night. When he attended the Academy, his mentor was concerned. It had been the same nightmare for three days in a row, and it had begun to affect his study. Jaem wanted to be an artist. He had the talent, he had the genius musicians at the Academy as his mentor. But he had not the energy to learn and practice, not after his terrible nightmare.[NEWLINE][NEWLINE]Coming home at dusk, Jaem felt very tired. His parents ushered him to the bed. They could see how weary he was. But, standing at the side of his bed, Jaem hesitated. He was afraid that the same nightmare would plague his sleep again.[NEWLINE][NEWLINE]Eventually, tiredness won. Jaem laid down his body, and pray that gentle Sirona would provide him with restful sleep.[NEWLINE][NEWLINE]Jaem closed his eyes, and soon his body started to relax. His consciousness slowly faded.[NEWLINE][NEWLINE]Few seconds later, Jaem started to trash in his sleep. His nightmare had arrived!</French>
+		<German>The nightmare had been so horrible. Jaem woke up with sluggish mind and tired body. He felt like he had not rested at all last night. When he attended the Academy, his mentor was concerned. It had been the same nightmare for three days in a row, and it had begun to affect his study. Jaem wanted to be an artist. He had the talent, he had the genius musicians at the Academy as his mentor. But he had not the energy to learn and practice, not after his terrible nightmare.[NEWLINE][NEWLINE]Coming home at dusk, Jaem felt very tired. His parents ushered him to the bed. They could see how weary he was. But, standing at the side of his bed, Jaem hesitated. He was afraid that the same nightmare would plague his sleep again.[NEWLINE][NEWLINE]Eventually, tiredness won. Jaem laid down his body, and pray that gentle Sirona would provide him with restful sleep.[NEWLINE][NEWLINE]Jaem closed his eyes, and soon his body started to relax. His consciousness slowly faded.[NEWLINE][NEWLINE]Few seconds later, Jaem started to trash in his sleep. His nightmare had arrived!</German>
+		<Italian>The nightmare had been so horrible. Jaem woke up with sluggish mind and tired body. He felt like he had not rested at all last night. When he attended the Academy, his mentor was concerned. It had been the same nightmare for three days in a row, and it had begun to affect his study. Jaem wanted to be an artist. He had the talent, he had the genius musicians at the Academy as his mentor. But he had not the energy to learn and practice, not after his terrible nightmare.[NEWLINE][NEWLINE]Coming home at dusk, Jaem felt very tired. His parents ushered him to the bed. They could see how weary he was. But, standing at the side of his bed, Jaem hesitated. He was afraid that the same nightmare would plague his sleep again.[NEWLINE][NEWLINE]Eventually, tiredness won. Jaem laid down his body, and pray that gentle Sirona would provide him with restful sleep.[NEWLINE][NEWLINE]Jaem closed his eyes, and soon his body started to relax. His consciousness slowly faded.[NEWLINE][NEWLINE]Few seconds later, Jaem started to trash in his sleep. His nightmare had arrived!</Italian>
+		<Spanish>The nightmare had been so horrible. Jaem woke up with sluggish mind and tired body. He felt like he had not rested at all last night. When he attended the Academy, his mentor was concerned. It had been the same nightmare for three days in a row, and it had begun to affect his study. Jaem wanted to be an artist. He had the talent, he had the genius musicians at the Academy as his mentor. But he had not the energy to learn and practice, not after his terrible nightmare.[NEWLINE][NEWLINE]Coming home at dusk, Jaem felt very tired. His parents ushered him to the bed. They could see how weary he was. But, standing at the side of his bed, Jaem hesitated. He was afraid that the same nightmare would plague his sleep again.[NEWLINE][NEWLINE]Eventually, tiredness won. Jaem laid down his body, and pray that gentle Sirona would provide him with restful sleep.[NEWLINE][NEWLINE]Jaem closed his eyes, and soon his body started to relax. His consciousness slowly faded.[NEWLINE][NEWLINE]Few seconds later, Jaem started to trash in his sleep. His nightmare had arrived!</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_ROTTEN_FLESH</Tag>
+        <English>Plague of Rotten Flesh</English>
+		<French>Plague of Rotten Flesh</French>
+		<German>Plague of Rotten Flesh</German>
+		<Italian>Plague of Rotten Flesh</Italian>
+		<Spanish>Plague of Rotten Flesh</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_ROTTEN_FLESH_PEDIA</Tag>
+        <English>It started in one city. Just a small cough, a little weakening of bodily functions. No one notice, since at that time, the Bannor empire had been in the holy war against the cursed Sheaim.[NEWLINE][NEWLINE]It then spread to several more cities. The sickness began to grow. Children and the elders were the primary victims. Some even could not get up from the bed. But, our healers and medics were too consumed by the battlefield.[NEWLINE][NEWLINE]Finally, it spread to the entire nation. Somehow, the sickness managed to transform itself into lethal killer. Not only common folks were fallen. Nobles, warriors, mages, even priests too became the victims of this plague. All of them died in horrible death, after consumed by terrible pains.[NEWLINE][NEWLINE]Only after this had become a national disaster, we managed to gain the government's attention. Alas, it had been too late. Too many had died, and many more would follow. The Plague of Rotten Flesh had brought the once-powerful Bannor empire into its demise.</English>
+		<French>It started in one city. Just a small cough, a little weakening of bodily functions. No one notice, since at that time, the Bannor empire had been in the holy war against the cursed Sheaim.[NEWLINE][NEWLINE]It then spread to several more cities. The sickness began to grow. Children and the elders were the primary victims. Some even could not get up from the bed. But, our healers and medics were too consumed by the battlefield.[NEWLINE][NEWLINE]Finally, it spread to the entire nation. Somehow, the sickness managed to transform itself into lethal killer. Not only common folks were fallen. Nobles, warriors, mages, even priests too became the victims of this plague. All of them died in horrible death, after consumed by terrible pains.[NEWLINE][NEWLINE]Only after this had become a national disaster, we managed to gain the government's attention. Alas, it had been too late. Too many had died, and many more would follow. The Plague of Rotten Flesh had brought the once-powerful Bannor empire into its demise.</French>
+		<German>It started in one city. Just a small cough, a little weakening of bodily functions. No one notice, since at that time, the Bannor empire had been in the holy war against the cursed Sheaim.[NEWLINE][NEWLINE]It then spread to several more cities. The sickness began to grow. Children and the elders were the primary victims. Some even could not get up from the bed. But, our healers and medics were too consumed by the battlefield.[NEWLINE][NEWLINE]Finally, it spread to the entire nation. Somehow, the sickness managed to transform itself into lethal killer. Not only common folks were fallen. Nobles, warriors, mages, even priests too became the victims of this plague. All of them died in horrible death, after consumed by terrible pains.[NEWLINE][NEWLINE]Only after this had become a national disaster, we managed to gain the government's attention. Alas, it had been too late. Too many had died, and many more would follow. The Plague of Rotten Flesh had brought the once-powerful Bannor empire into its demise.</German>
+		<Italian>It started in one city. Just a small cough, a little weakening of bodily functions. No one notice, since at that time, the Bannor empire had been in the holy war against the cursed Sheaim.[NEWLINE][NEWLINE]It then spread to several more cities. The sickness began to grow. Children and the elders were the primary victims. Some even could not get up from the bed. But, our healers and medics were too consumed by the battlefield.[NEWLINE][NEWLINE]Finally, it spread to the entire nation. Somehow, the sickness managed to transform itself into lethal killer. Not only common folks were fallen. Nobles, warriors, mages, even priests too became the victims of this plague. All of them died in horrible death, after consumed by terrible pains.[NEWLINE][NEWLINE]Only after this had become a national disaster, we managed to gain the government's attention. Alas, it had been too late. Too many had died, and many more would follow. The Plague of Rotten Flesh had brought the once-powerful Bannor empire into its demise.</Italian>
+		<Spanish>It started in one city. Just a small cough, a little weakening of bodily functions. No one notice, since at that time, the Bannor empire had been in the holy war against the cursed Sheaim.[NEWLINE][NEWLINE]It then spread to several more cities. The sickness began to grow. Children and the elders were the primary victims. Some even could not get up from the bed. But, our healers and medics were too consumed by the battlefield.[NEWLINE][NEWLINE]Finally, it spread to the entire nation. Somehow, the sickness managed to transform itself into lethal killer. Not only common folks were fallen. Nobles, warriors, mages, even priests too became the victims of this plague. All of them died in horrible death, after consumed by terrible pains.[NEWLINE][NEWLINE]Only after this had become a national disaster, we managed to gain the government's attention. Alas, it had been too late. Too many had died, and many more would follow. The Plague of Rotten Flesh had brought the once-powerful Bannor empire into its demise.</Spanish>		
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_RAIN_OF_FIRE</Tag>
+        <English>Rain of Fire</English>
+		<French>Rain of Fire</French>
+		<German>Rain of Fire</German>
+		<Italian>Rain of Fire</Italian>
+		<Spanish>Rain of Fire</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_RAIN_OF_FIRE_PEDIA</Tag>
+        <English>O, Bhall,[NEWLINE]O, Lady of Fire,[NEWLINE]bestow your might upon us.[NEWLINE]Bestow your wrath upon our enemies.[NEWLINE]Bring forth the rain of fire,[NEWLINE]which will makes gods and mortals tremble,[NEWLINE]alike.</English>
+		<French>O, Bhall,[NEWLINE]O, Lady of Fire,[NEWLINE]bestow your might upon us.[NEWLINE]Bestow your wrath upon our enemies.[NEWLINE]Bring forth the rain of fire,[NEWLINE]which will makes gods and mortals tremble,[NEWLINE]alike.</French>
+		<German>O, Bhall,[NEWLINE]O, Lady of Fire,[NEWLINE]bestow your might upon us.[NEWLINE]Bestow your wrath upon our enemies.[NEWLINE]Bring forth the rain of fire,[NEWLINE]which will makes gods and mortals tremble,[NEWLINE]alike.</German>
+		<Italian>O, Bhall,[NEWLINE]O, Lady of Fire,[NEWLINE]bestow your might upon us.[NEWLINE]Bestow your wrath upon our enemies.[NEWLINE]Bring forth the rain of fire,[NEWLINE]which will makes gods and mortals tremble,[NEWLINE]alike.</Italian>
+		<Spanish>O, Bhall,[NEWLINE]O, Lady of Fire,[NEWLINE]bestow your might upon us.[NEWLINE]Bestow your wrath upon our enemies.[NEWLINE]Bring forth the rain of fire,[NEWLINE]which will makes gods and mortals tremble,[NEWLINE]alike.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_REQUIEM</Tag>
+        <English>Requiem for the Last Hope</English>
+		<French>Requiem for the Last Hope</French>
+		<German>Requiem for the Last Hope</German>
+		<Italian>Requiem for the Last Hope</Italian>
+		<Spanish>Requiem for the Last Hope</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_REQUIEM_PEDIA</Tag>
+        <English>When the candle of last hope[NEWLINE]flickers out...[NEWLINE]When the angels cries[NEWLINE]their anguished laments...[NEWLINE]When the sky shook[NEWLINE]and seek to unleash its deepest fury...[NEWLINE][NEWLINE]When the candle of last hope[NEWLINE]flickers out...[NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]The end is coming,[NEWLINE]and by its end,[NEWLINE]you will be released from[NEWLINE]all of your sufferings.[NEWLINE][NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]Because you will find release[NEWLINE]when the candle of last hope[NEWLINE]flickers out.</English>
+		<French>When the candle of last hope[NEWLINE]flickers out...[NEWLINE]When the angels cries[NEWLINE]their anguished laments...[NEWLINE]When the sky shook[NEWLINE]and seek to unleash its deepest fury...[NEWLINE][NEWLINE]When the candle of last hope[NEWLINE]flickers out...[NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]The end is coming,[NEWLINE]and by its end,[NEWLINE]you will be released from[NEWLINE]all of your sufferings.[NEWLINE][NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]Because you will find release[NEWLINE]when the candle of last hope[NEWLINE]flickers out.</French>
+		<German>When the candle of last hope[NEWLINE]flickers out...[NEWLINE]When the angels cries[NEWLINE]their anguished laments...[NEWLINE]When the sky shook[NEWLINE]and seek to unleash its deepest fury...[NEWLINE][NEWLINE]When the candle of last hope[NEWLINE]flickers out...[NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]The end is coming,[NEWLINE]and by its end,[NEWLINE]you will be released from[NEWLINE]all of your sufferings.[NEWLINE][NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]Because you will find release[NEWLINE]when the candle of last hope[NEWLINE]flickers out.</German>
+		<Italian>When the candle of last hope[NEWLINE]flickers out...[NEWLINE]When the angels cries[NEWLINE]their anguished laments...[NEWLINE]When the sky shook[NEWLINE]and seek to unleash its deepest fury...[NEWLINE][NEWLINE]When the candle of last hope[NEWLINE]flickers out...[NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]The end is coming,[NEWLINE]and by its end,[NEWLINE]you will be released from[NEWLINE]all of your sufferings.[NEWLINE][NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]Because you will find release[NEWLINE]when the candle of last hope[NEWLINE]flickers out.</Italian>
+		<Spanish>When the candle of last hope[NEWLINE]flickers out...[NEWLINE]When the angels cries[NEWLINE]their anguished laments...[NEWLINE]When the sky shook[NEWLINE]and seek to unleash its deepest fury...[NEWLINE][NEWLINE]When the candle of last hope[NEWLINE]flickers out...[NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]The end is coming,[NEWLINE]and by its end,[NEWLINE]you will be released from[NEWLINE]all of your sufferings.[NEWLINE][NEWLINE]Rejoice![NEWLINE]Rejoice![NEWLINE]Because you will find release[NEWLINE]when the candle of last hope[NEWLINE]flickers out.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_DESECRATION</Tag>
+        <English>Desecration</English>
+		<French>Desecration</French>
+		<German>Desecration</German>
+		<Italian>Desecration</Italian>
+		<Spanish>Desecration</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_CALL_TO_POWER</Tag>
+        <English>Call to Power</English>
+		<French>Call to Power</French>
+		<German>Call to Power</German>
+		<Italian>Call to Power</Italian>
+		<Spanish>Call to Power</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_CALL_TO_POWER_PEDIA</Tag>
+        <English>Every power, come with price.[NEWLINE]Desire to use the power, should attended by the willingness to pay the price.</English>
+		<French>Every power, come with price.[NEWLINE]Desire to use the power, should attended by the willingness to pay the price.</French>
+		<German>Every power, come with price.[NEWLINE]Desire to use the power, should attended by the willingness to pay the price.</German>
+		<Italian>Every power, come with price.[NEWLINE]Desire to use the power, should attended by the willingness to pay the price.</Italian>
+		<Spanish>Every power, come with price.[NEWLINE]Desire to use the power, should attended by the willingness to pay the price.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_DISCIPLE</Tag>
+        <English>A Disciple has joined your cause.</English>
+        <French>A Disciple has joined your cause.</French>
+        <German>A Disciple has joined your cause.</German>
+        <Italian>A Disciple has joined your cause.</Italian>
+        <Spanish>A Disciple has joined your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_RADIANT_GUARD</Tag>
+        <English>A Radiant Guard has joined your cause.</English>
+        <French>A Radiant Guard has joined your cause.</French>
+        <German>A Radiant Guard has joined your cause.</German>
+        <Italian>A Radiant Guard has joined your cause.</Italian>
+        <Spanish>A Radiant Guard has joined your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_KILMORPH</Tag>
+        <English>A Soldier of Kilmorph has joined your cause.</English>
+        <French>A Soldier of Kilmorph has joined your cause.</French>
+        <German>A Soldier of Kilmorph has joined your cause.</German>
+        <Italian>A Soldier of Kilmorph has joined your cause.</Italian>
+        <Spanish>A Soldier of Kilmorph has joined your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_FAWN</Tag>
+        <English>A Fawn has joined your cause.</English>
+        <French>A Fawn has joined your cause.</French>
+        <German>A Fawn has joined your cause.</German>
+        <Italian>A Fawn has joined your cause.</Italian>
+        <Spanish>A Fawn has joined your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_CULTIST</Tag>
+        <English>A Cultist has joined your cause.</English>
+        <French>A Cultist has joined your cause.</French>
+        <German>A Cultist has joined your cause.</German>
+        <Italian>A Cultist has joined your cause.</Italian>
+        <Spanish>A Cultist has joined your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MISSIONARY_SPAWN_AZER</Tag>
+        <English>The Ritualists have summoned an Azer to support your cause.</English>
+        <French>The Ritualists have summonnd an Azer to support your cause.</French>
+        <German>The Ritualists have summoned an Azer to support your cause.</German>
+        <Italian>The Ritualists have summoned an Azer to support your cause.</Italian>
+        <Spanish>The Ritualists have summoned an Azer to support your cause.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_AZER_PEDIA</Tag>
+        <English>Also known as the "Eye of Bhall", Azers are the faithful servants of the fallen Fire Goddess. Before the fall of Bhall, Azers were considered to be the personification of her righteous flame. They travelled far and wide, seeking injustisce and hunting evil magi. Now, the Azers serve as Bhall's spy, herald and executor.</English>
+		<French>Also known as the "Eye of Bhall", Azers are the faithful servants of the fallen Fire Goddess. Before the fall of Bhall, Azers were considered to be the personification of her righteous flame. They travelled far and wide, seeking injustisce and hunting evil magi. Now, the Azers serve as Bhall's spy, herald and executor.</French>
+		<German>Also known as the "Eye of Bhall", Azers are the faithful servants of the fallen Fire Goddess. Before the fall of Bhall, Azers were considered to be the personification of her righteous flame. They travelled far and wide, seeking injustisce and hunting evil magi. Now, the Azers serve as Bhall's spy, herald and executor.</German>
+		<Italian>Also known as the "Eye of Bhall", Azers are the faithful servants of the fallen Fire Goddess. Before the fall of Bhall, Azers were considered to be the personification of her righteous flame. They travelled far and wide, seeking injustisce and hunting evil magi. Now, the Azers serve as Bhall's spy, herald and executor.</Italian>
+		<Spanish>Also known as the "Eye of Bhall", Azers are the faithful servants of the fallen Fire Goddess. Before the fall of Bhall, Azers were considered to be the personification of her righteous flame. They travelled far and wide, seeking injustisce and hunting evil magi. Now, the Azers serve as Bhall's spy, herald and executor.</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DRUID_SKYROVER_PEDIA</Tag>
+        <English>These mystics are followers of Tali. While they shared same affinity toward the God of Air, like their whimsical patron, the Skyrovers are both fickle and reclusive, some prefer the lonely life in mountains while others serve communities scattered around Erebus. Most of them are humans of Austrin descent but humans from other cultural background are also observed. Since Tali never demands formal worship, the Skyrovers never formed an established religion.</English>
+		<French>These mystics are followers of Tali. While they shared same affinity toward the God of Air, like their whimsical patron, the Skyrovers are both fickle and reclusive, some prefer the lonely life in mountains while others serve communities scattered around Erebus. Most of them are humans of Austrin descent but humans from other cultural background are also observed. Since Tali never demands formal worship, the Skyrovers never formed an established religion.</French>
+		<German>These mystics are followers of Tali. While they shared same affinity toward the God of Air, like their whimsical patron, the Skyrovers are both fickle and reclusive, some prefer the lonely life in mountains while others serve communities scattered around Erebus. Most of them are humans of Austrin descent but humans from other cultural background are also observed. Since Tali never demands formal worship, the Skyrovers never formed an established religion.</German>
+		<Italian>These mystics are followers of Tali. While they shared same affinity toward the God of Air, like their whimsical patron, the Skyrovers are both fickle and reclusive, some prefer the lonely life in mountains while others serve communities scattered around Erebus. Most of them are humans of Austrin descent but humans from other cultural background are also observed. Since Tali never demands formal worship, the Skyrovers never formed an established religion.</Italian>
+		<Spanish>These mystics are followers of Tali. While they shared same affinity toward the God of Air, like their whimsical patron, the Skyrovers are both fickle and reclusive, some prefer the lonely life in mountains while others serve communities scattered around Erebus. Most of them are humans of Austrin descent but humans from other cultural background are also observed. Since Tali never demands formal worship, the Skyrovers never formed an established religion.</Spanish>				
+    </TEXT>   			
+</Civ4GameText>

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit art path information -->
+<Civ4ArtDefines xmlns="x-schema:ITEMS_CIV4ArtDefinesSchema.xml">
+    <UnitArtInfos>
+        <UnitArtInfo>
+            <Type>ART_DEF_EQUIPMENT_SEVEN_LEAGUE</Type>
+            <Button>Art/Interface/Buttons/Equipment/SevenLeague.dds</Button>
+            <fScale>8</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Equipment/Healing Salve/yelflask_sfx.nif</NIF>
+            <KFM>Art/Units/Meteor/wolf.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_STONE_SCRAPE</SelectionSound>
+            <ActionSound>AS3D_UN_STONE_SCRAPE</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_EQUIPMENT_PRESERVER</Type>
+            <Button>Art/Interface/Buttons/Equipment/Preserver.dds</Button>
+            <fScale>8</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Equipment/Healing Salve/yelflask_sfx.nif</NIF>
+            <KFM>Art/Units/Meteor/wolf.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_STONE_SCRAPE</SelectionSound>
+            <ActionSound>AS3D_UN_STONE_SCRAPE</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_EQUIPMENT_MARTYR_CROWN</Type>
+            <Button>Art/Interface/Buttons/Equipment/MartyrCrown.dds</Button>
+            <fScale>8</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Equipment/Healing Salve/yelflask_sfx.nif</NIF>
+            <KFM>Art/Units/Meteor/wolf.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_STONE_SCRAPE</SelectionSound>
+            <ActionSound>AS3D_UN_STONE_SCRAPE</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_EQUIPMENT_LIFESAPPER</Type>
+            <Button>Art/Interface/Buttons/Equipment/Lifesapper.dds</Button>
+            <fScale>8</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Equipment/Healing Salve/yelflask_sfx.nif</NIF>
+            <KFM>Art/Units/Meteor/wolf.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_STONE_SCRAPE</SelectionSound>
+            <ActionSound>AS3D_UN_STONE_SCRAPE</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_EQUIPMENT_ALSOPHOCUS_TOME</Type>
+            <Button>Art/Interface/Buttons/Equipment/AlsophocusTome.dds</Button>
+            <fScale>8</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Equipment/Healing Salve/yelflask_sfx.nif</NIF>
+            <KFM>Art/Units/Meteor/wolf.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_STONE_SCRAPE</SelectionSound>
+            <ActionSound>AS3D_UN_STONE_SCRAPE</ActionSound>
+        </UnitArtInfo>	
+    </UnitArtInfos>    
+</Civ4ArtDefines>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XHERO_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_SPRINT</Type>
+            <Description>TXT_KEY_SPELL_SPRINT</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_CENTAUR</PromotionPrereq1>
+            <bHasCasted>1</bHasCasted>
+            <AddPromotionType1>PROMOTION_HASTED</AddPromotionType1>
+            <AddPromotionType2>PROMOTION_FATIGUED</AddPromotionType2>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAbility>1</bAbility>
+            <PyRequirement>reqSprint(pCaster)</PyRequirement>
+            <Effect>EFFECT_WIND_SWIRL</Effect>
+            <Sound>AS3D_SPELL_HASTE</Sound>
+            <Button>Modules/NormalModules/Xtended/XKuriotates/Arts/sprint.dds</Button>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

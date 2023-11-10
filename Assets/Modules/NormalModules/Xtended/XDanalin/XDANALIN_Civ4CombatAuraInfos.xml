@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:XDANALIN_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>	
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_DANALIN</CombatAuraClassType>
+			<Type>COMBATAURA_DANALIN1</Type>
+			<bBlessing>0</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>-1</iTargets>
+			<iDamage>10</iDamage>	
+			<DamageType>DAMAGE_COLD</DamageType>
+			<iTier>4</iTier>
+			<Button>Modules/NormalModules/Xtended/XDanalin/Buttons/Danalin.dds</Button>
+		</CombatAuraInfo>		
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_CTHULTHU</CombatAuraClassType>
+			<Type>COMBATAURA_TERROR</Type>
+			<bBlessing>0</bBlessing>
+			<iRange>1</iRange>
+			<iTargets>-1</iTargets>
+			<iDamage>33</iDamage>	
+			<DamageType>DAMAGE_UNHOLY</DamageType>
+			<iTier>4</iTier>
+			<Button>Modules/NormalModules/Xtended/XDanalin/Buttons/Cthulthu.dds</Button>
+		</CombatAuraInfo>		
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

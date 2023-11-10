@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+	Main BUG Mod Initialization
+
+	This file initializes the BUG Core and all mods.
+
+	Copyright (c) 2008 The BUG Mod.
+-->
+<mod id="BUG"
+	 name="BUG Mod"
+	 version="3.5"
+	 build="1324"
+	 date="08/17/2008">
+
+	<!-- BUG Core -->
+
+	<load mod="BUG Core"/>
+
+	<init module="BugEventManager" function="configure" immediate="True">
+		<arg name="logging" type="boolean" value="False"/>
+		<arg name="noLogEvents" type="set">
+			"gameUpdate",
+			"mouseEvent",
+			"kbdEvent"
+		</arg>
+	</init>
+
+	<event type="LanguageChanged" module="BugOptions" function="clearAllTranslations"/>
+	<event type="LanguageChanged" module="BugOptionsScreen" function="clearAllTranslations"/>
+
+	<events module="HelpEventManager">
+		<!--arg type="key" value="Alt Ctrl F1"/-->
+		<!--arg type="string" value="TXT_KEY_BUG_HELP_FILE"/-->
+	</events>
+	<events module="BugOptionsEventManager">
+		<!--arg type="key" value="Alt Ctrl O | Alt J"/-->
+		<!--arg type="string" value="BUGFull"/-->
+	</events>
+
+
+	<!-- Civilization Core -->
+
+	<!-- Domestic and Military Advisors and Civilopedia are chosen by options -->
+	<init module="CvScreensInterface" function="init"/>
+
+
+	<!-- Utility Modules -->
+
+	<init module="FontUtil" function="init" immediate="True"/>
+	<symbol id="war" from="COMMERCE_GOLD" offset="25"/>
+	<symbol id="peace"/>
+	<symbol id="space"/>  <!-- blank symbol the same size as other standard symbols -->
+	<symbol id="militaryinstructor" name="MILITARY_INSTRUCTOR"/>
+	<symbol id="land" name="DOMAIN_LAND"/>
+	<symbol id="sea" name="DOMAIN_SEA"/>
+	<symbol id="air" name="DOMAIN_AIR"/>
+	<symbol id="sentry" name="ORDER_SENTRY"/>
+	<symbol id="fortify" name="ORDER_FORTIFY"/>
+	<symbol id="wait" name="ORDER_WAIT"/>
+	<symbol id="upgrade"/>
+	<symbol id="cancel"/>
+	<symbol id="citizen" from="POWER" offset="1"/>
+	<symbol id="greatgeneral" name="GREAT_GENERAL"/>
+
+	<init module="AttitudeUtil" function="init">
+		<!-- Furious, Annoyed, Cautious, Pleased, Friendly -->
+		<arg name="colors" type="tuple">
+			"COLOR_RED",
+			"COLOR_CYAN",
+			"COLOR_CLEAR",
+			"COLOR_GREEN",
+			"COLOR_YELLOW"
+		</arg>
+		<!-- Non-memory attitude modifier keys -->
+		<arg name="modifiers" type="tuple">
+			"TXT_KEY_MISC_ATTITUDE_LAND_TARGET",
+			"TXT_KEY_MISC_ATTITUDE_WAR",
+			"TXT_KEY_MISC_ATTITUDE_PEACE",
+			"TXT_KEY_MISC_ATTITUDE_SAME_RELIGION",
+			"TXT_KEY_MISC_ATTITUDE_DIFFERENT_RELIGION",
+			"TXT_KEY_MISC_ATTITUDE_BONUS_TRADE",
+			"TXT_KEY_MISC_ATTITUDE_OPEN_BORDERS",
+			"TXT_KEY_MISC_ATTITUDE_DEFENSIVE_PACT",
+			"TXT_KEY_MISC_ATTITUDE_RIVAL_DEFENSIVE_PACT",
+			"TXT_KEY_MISC_ATTITUDE_RIVAL_VASSAL",
+			"TXT_KEY_MISC_ATTITUDE_SHARE_WAR",
+			"TXT_KEY_MISC_ATTITUDE_FAVORITE_CIVIC",
+			"TXT_KEY_MISC_ATTITUDE_TRADE",
+			"TXT_KEY_MISC_ATTITUDE_RIVAL_TRADE",
+			"TXT_KEY_MISC_ATTITUDE_FREEDOM",
+			"TXT_KEY_MISC_ATTITUDE_EXTRA_GOOD",
+			"TXT_KEY_MISC_ATTITUDE_EXTRA_BAD"
+		</arg>
+	</init>
+	<event type="LanguageChanged" module="AttitudeUtil" function="initModifiers"/>
+	<symbol id="furious" name="ATTITUDE_FURIOUS" from="POWER" offset="4"/>
+	<symbol id="annoyed" name="ATTITUDE_ANNOYED"/>
+	<symbol id="cautious" name="ATTITUDE_CAUTIOUS"/>
+	<symbol id="pleased" name="ATTITUDE_PLEASED"/>
+	<symbol id="friendly" name="ATTITUDE_FRIENDLY"/>
+
+	<init module="ColorUtil" function="init">
+		<!--
+			You can safely modify this list to change the color dropdown menus
+			for color options. You can change the text displayed in the menus by
+			adding translations for your new colors to Colors_CIV4GameText.xml
+			in the XML/Text directory.
+		-->
+		<arg name="colors" type="tuple">
+			"COLOR_RED",
+			"COLOR_YELLOW",
+			"COLOR_CYAN",
+			"COLOR_GREEN",
+			"COLOR_BLUE",
+			"COLOR_MAGENTA",
+			"COLOR_WHITE",
+			"COLOR_LIGHT_GREY",
+			"COLOR_GREY",
+			"COLOR_DARK_GREY",
+			"COLOR_BLACK"
+		</arg>
+	</init>
+	<event type="LanguageChanged" module="ColorUtil" function="createColors"/>
+
+	<events module="DealUtil" function="addEvents"/>
+	<events module="DiplomacyUtil" function="addEvents"/>
+	<init module="GPUtil" function="init"/>
+	<init module="TechUtil" function="init"/>
+	<init module="TradeUtil" function="init"/>
+	<init module="TraitUtil" function="init"/>
+	<init module="UnitUtil" function="init"/>
+
+
+	<!-- Mods -->
+
+	<load mod="BUG Main Interface"/>
+	<load mod="BUG City Screen"/>
+	<load mod="BUG Advisors"/>
+	<load mod="Better Espionage"/>
+	<load mod="All Eras Dawn of Man Screen"/>
+	<load mod="TechWindow"/>
+	<load mod="Expansion"/>
+	<load mod="Not Just Another Game Clock"/>
+	<load mod="Advanced Scoreboard"/>
+<!--	<load mod="Plot List Enhancements"/>	-->
+
+<!--	<load mod="Autolog"/>	-->
+<!--	<load mod="Reminder"/> --> <!-- requires Autolog -->
+<!--	<load mod="Civ4lerts"/>
+	<load mod="MoreCiv4lerts"/> -->
+	<load mod="FavoriteCivicDetector"/>
+	<load mod="Strategy Overlay"/>
+
+
+
+	<!-- Options Screens -->
+
+	<!--screen id="BUGSimple">
+		<tab module="BugGeneralOptionsTab"/>
+		<tab module="BugAdvisorOptionsTab"/>
+	</screen-->
+
+	<screen id="BUGFull">
+		<tab module="BugGeneralOptionsTab"/>
+		<tab module="BugAdvisorOptionsTab"/>
+
+		<tab module="BugCityScreenOptionsTab"/>
+
+<!--		<tab module="BugAlertsOptionsTab"/>	-->
+		<tab module="BugScoreOptionsTab"/>
+		<tab module="BugNJAGCOptionsTab"/>
+
+<!--		<tab module="BugPleOptionsTab"/>	-->
+<!--		<tab module="BugUnitNameOptionsTab"/>	-->
+
+<!--		<tab module="BugAutologOptionsTab"/>	-->
+
+		<tab module="BugSystemOptionsTab"/>
+		<tab module="BugCreditsOptionsTab"/>
+	</screen>
+</mod>

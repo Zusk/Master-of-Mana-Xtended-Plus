@@ -1,0 +1,66 @@
+changelog Xtended 5.1
+- [CIVIC] Liberty causes +50% more maintenance (it was +100%).
+- [CIVPEDIA] Added quick strategy to civilizations' pages in pedia.
+- [CIVPEDIA] Added several pages on Magic, Religion etc in Master of Mana category.
+- [CLASS] Beast Lord is changed to Beast King, has combat aura strengthening animal units.
+- [AMURITES] Rename Witches to Sorceress to avoid confusion with Calabim's Blood Witch.
+- [AOS SI] Aos Si leaders are now Neutral. Aos Si Palace of each leader has different mana corresponding to aspects of the faeries (Air/Water/Nature).
+- [BALSERAPHS] Added Goblin Cage and Lizardman Cage to Balseraphs UB.
+- [BALSERAPHS] Mimic requires Focused Discipline and Entertainment (instead of Masters of Wildland) and Arena building.
+- [BALSERAPHS] Arena gives +5 free xp to Melee, Mounted and Recon units.
+- [BANNOR] Bannor now has Imperial Archer (200 lumber but starts with Leather Armor).
+- [CALABIM] Vampirism now make units vulnerable to Fire (-10% resist) and Holy (-20% to resist)
+- [CALABIM] Boiling Blood is now exclusive to Calabim Blood Witches.
+- [DOVIELLO] Changed Lucian Cold Iron mechanic to prevent loop.
+- [GRIGORI] Adventurers now require unit support slot.
+- [HIPPUS] Hippus Horselord trait gives +1 First Strike instead of +1 Movement (almost all Hippus units start with Horses anyway).
+- [INFERNALS] Gives Chaos mana affinity to Hyborem, Ravagers, Ram Demons, Balors and Soul Hunters.
+- [INFERNALS] Gives Fire mana affinity to Cacofiend.
+- [INFERNALS] Gives Cannibalize to Hell Hound.
+- [KURIOTATES] Centaur Glade requires 200 stone (it was 300 stone).
+- [LJOSALFAR] Ljosalfar no longer starts with Adventurer but with Scout instead.
+- [LUCHUIRP] Added Hydrofactory, Geomancer's Station and Infernal Machine UB to Luchuirp, unlocked at Sorcery.
+- [LUCHUIRP] Nullstone Golem requires Machinery and Arcane Lore.
+- [LUCHUIRP] Sculptor's Studio gives +4 unit supply but no free xp. 
+- [MALAKIM] Malakim's stable requires 100 lumber (instead of 200).
+- [MALAKIM] Citadel of Light now requires Radiant Dawn (Empyrean II) instead of Sorcery.
+- [BUILDING] Palaces now give +12 commerce (instead of +8). Lanun Palace gives +16 commerce (instead of +12). 
+- [BUILDING] All buildings which give "xp training" effect now give free xp instead. Only Sidar UBs keep the "xp training" effect.
+- [BUILDING] Training Yard gives +10 xp to Melee units.
+- [BUILDING] Barrack gives +10 xp to Melee units.
+- [BUILDING] Hunter's Hall is renamed to Raiders Hall and gives +10 xp to Recon units.
+- [BUILDING] Ranged Combat Traininghall is renamed to Archers Tower and gives +10 xp to Archery units.
+- [BUILDING] Jousting Tilt gives +10 xp to Mounted units.
+- [BUILDING] War Academy gives +10 xp to Archery, Melee, Mounted, Recon units.
+- [BUILDING] Hunting Ground gives +10 xp to Recon units.
+- [BUILDING] Grand Trading Centre (Malakim/Kuriotates/Lanun/Dural UB) gives +2 gold and +3 gold/population.
+- [GEAR] Horses mount equipments require Mounted Warfare I or II and Horse resource.
+- [GAME] Starting settler has +2 vision range and ignore terrain penalty so can reach better settling area in Turn 1.
+- [GUILD] Moved Shipyard to Merchant Guild line.
+- [GUILD] Buying slaves is now 100, 80 and 50 gold (reduced by techs in Slavers' Guild).
+- [GUILD] Silk is tradeable with Harvesting (Rangers Guild tech).
+- [IMPROVEMENT] Farms can find resources in various tiles.
+- [IMPROVEMENT] Plantations can find resources in various tiles. 
+- [MAGIC] Added Phantasmagoria GE to Mind Magic (Illusion units gain +50% heal after combat, +1 Mind Mana affinity).
+- [MAGIC] Dark Priest class promotion requires Necromancy (Death Magic) and Divine Discipline.
+- [MAGIC] Added Aura of Dominance combataura to Death Magic (living enemy units will be raised as Skeleton if killed in battle).
+- [MAGIC] Added Crippling Hex hostile GE to Death Magic (enemy units get Crippling promotion).
+- [MAGIC] Added Soul Jar enchantment to Death Magic ("ressurected if killed" for Sheaim/Aristarkh units).
+- [MAGIC] Added Spirit Totem enchantment to Nature Magic (gives chance for Arcane units to gain XP).
+- [MAGIC] Added Flameskin armor to Fire Magic (Clan/Infernals/Luchuirp/Malakim).
+- [MAGIC] Added Fleet of Foot combataura to Air Magic (add Hasted promotion to friendly units).
+- [MAGIC] Added Paradise GE to Water Magic (turned Hell terrains into Ice terrain).
+- [MAGIC] Air Magic spells now add Stunned promotions to target stack (instead of chance to deal 3x damage).
+- [MAGIC] Life Magic spells now has chance to deal 3x damage (and no longer immobilise targets; only Empyrean's Sunlight does).
+- [MAGIC] Death Magic spells now add Cursed and remove Blessed and Black Prayer promotions.
+- [PROMOTION] Defense discipline now +25% defense, +10% magic resistance (it was +30% defense).
+- [PROMOTION] Wizardry discipline increases resistance to Holy/Unholy/Cold/Fire/Lightning by 5 (it was by 2).
+- [PROMOTION] Warlock class bonus is now +25% spell damage and -10 spell resistance to enemy (it was +30% and -15% respectively).
+- [PROMOTION] Switch Roar to Draconic Disciple and Firebreath to Red Dragon Aspect (requires Channeling II).
+- [PROMOTION] Combat III now grants +5% magic resistance.
+- [PROMOTION] March now requires level 8.
+- [RELIGION] Radiant Guard can only be upgraded to Ratha.
+- [RELIGION] Fixes various Disciple units without CombatAura.
+- [RACE] Dark Elven racial now -10% Fire instead of -10% Cold.
+- [RACE] Dwarf racial now gives +10% magic resistance and +10% poison resist (it was +25%).
+- [TRAIT] Illusion trait now make all summons has Illusion as their race. Powerful when combined with Phantasmogoria in Mind School.

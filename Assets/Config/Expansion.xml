@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+	MoM Python Events
+-->
+<mod id="Expansion" 
+	 name="Expansion" 
+	 author="Sephi" 
+	 version="1.0" 
+	 date="01/01/00"
+	 module="CvExpansion">
+
+<!-- Global Enchantments -->
+	<event type="unitCreated"
+			module="CvGlobalEnchantments" function="UnitCreated"/>
+			
+	<event type="BeginPlayerTurn"
+			module="CvGlobalEnchantments" function="onPlayerTurn"/>
+							
+<!-- Wildmana Guardian -->
+	<event type="combatResult"
+			module="CvExpansion" function="WildmanaGuardianDefeated"/>
+		
+<!-- Traits -->				
+	<event type="unitCreated"
+			module="CvExpansion" function="TraitEffectonUnitCreated"/>
+
+	<event type="combatResult"
+			module="CvExpansion" function="TraitEffectAfterCombat"/>
+		
+<!-- Buildings and Wonders -->
+	<event type="buildingBuilt"
+			module="CvExpansion" function="BuildingCreated"/>
+			
+<!-- Houses of Erebus -->  
+	<event type="buildingBuilt"
+			module="CvNobleHouses" function="GuildHouseBuild"/>			
+		   
+<!-- Milita Mod-->		   
+	<event type="unitBuilt" 
+		   module="CvMilitiaMod" function="MilitiaMod"/>
+
+<!-- Blizzard Mod -->
+	<event type="BeginGameTurn"
+			module="CvBlizzards" function="DoTheBlizzard"/>
+
+<!-- Frozen Mod -->
+	<event type="projectBuilt"
+			module="CvFrozen" function="onProjectFrozen"/>
+
+	<event type="unitKilled"
+			module="CvFrozen" function="onWinteredKilled"/>
+
+	<event type="cityBuilt"
+			module="CvFrozen" function="onFrozenCityBuilt"/>
+
+	<event type="cityAcquired"
+			module="CvFrozen" function="onFrozenCityAcquired"/>
+
+	<event type="cityDoTurn"
+			module="CvFrozen" function="onFrozenCityDoTurn"/>
+
+<!-- Barbarians -->
+	<event type="unitCreated"
+			module="CvBarbarians" function="DoBarbSpawn"/>
+			
+	<event type="combatResult"
+			module="CvBarbarians" function="BarbarianDefeated"/>
+					
+<!-- Pirates 
+	<event type="BeginGameTurn"
+			module="CvPirates" function="DoSpawnPirates"/>
+-->		
+<!-- Storms and Deep Oceans 
+	<event type="BeginGameTurn"
+			module="CvDeepOcean" function="DoStorms"/>
+-->
+			
+<!-- Amurites -->	 
+	<event type="GameStart" 
+		   module="CvCivilization" function="AmuriteLeaderStartResearch"/>
+
+<!-- Balseraph -->
+	<event type="cityBuilt"
+			module="CvCivilization" function="doCityBuilt"/>
+
+<!-- Bannor -->
+	<event type="cityAcquired"
+			module="CvCivilization" function="BannorGainFollowers"/>
+
+<!-- Doviello -->
+	<event type="combatResult"
+			module="CvDoviello" function="FeralScavengeWeapons"/>
+						
+<!-- Grigori -->
+	<event type="unitBuilt"
+			module="CvGrigori" function="doTraitDiverse"/>
+
+	<event type="combatResult"
+			module="CvGrigori" function="GrigoriHero"/>
+	
+<!-- Malakim -->
+	<event type="BeginGameTurn"
+			module="CvMalakim" function="doMalakimTurn"/>
+	
+<!-- Scions	-->
+		
+	<event type="cityAcquired"
+			module="CvScions" function="onScionsCaptureCity"/>
+
+	<event type="cityrazed"
+			module="CvScions" function="onScionsRazeCity"/>
+			
+	<event type="unitCreated"
+			module="CvScions" function="ScionUnitCreated"/>
+			
+	<event type="BeginGameTurn"
+			module="CvScions" function="onBeginGameTurnScions"/>
+
+	<event type="BeginPlayerTurn"
+			module="CvScions" function="onBeginScionsTurn"/>
+<!-- Mazatl -->
+
+	<event type="BeginGameTurn"
+			module="CvMazatl" function="doMazatlTurn"/>
+
+<!-- Faeries -->
+	<event type="unitCreated"
+			module="CvFaeries" function="onFaerieCreated"/>
+			
+	<event type="BeginGameTurn"
+			module="CvFaeries" function="onBeginFaeriesTurn"/>
+	
+	<event type="BeginPlayerTurn"
+			module="CvFaeries" function="onEndFaeriesTurn"/>
+		
+	<event type="GameStart"
+			module="CvFaeries" function="DoGameStartFaeries"/>
+				
+<!-- Austrin -->			
+	<event type="cityAcquired"
+			module="CvAustrin" function="onAustrinCityAcquired"/>
+
+	<event type="buildingBuilt"
+			module="CvAustrin" function="onAustrinBuildingBuilt"/>
+	
+	<event type="projectBuilt"
+			module="CvAustrin" function="onAustrinProjectBuilt"/>
+			
+<!-- Jotnar -->						
+	<event type="cityBuilt"
+			module="CvJotnar" function="onJotnarCityBuilt"/>
+
+	<event type="cityAcquired"
+			module="CvJotnar" function="onJotnarCityAcquired"/>
+
+	<event type="cityDoTurn"
+			module="CvJotnar" function="onJotnarCityDoTurn"/>	
+
+	<event type="BeginPlayerTurn"
+			module="CvJotnar" function="onJotnarDoTurn"/>
+
+<!-- Aristrakh -->
+	<event type="GameStart" 
+		   module="CvAristrakh" function="SoulVaultinit"/>
+
+	<event type="unitCreated"
+			module="CvAristrakh" function="UnitSoulCost"/>
+			
+	<event type="projectBuilt"
+			module="CvAristrakh" function="onAristrakhProjectBuilt"/>
+
+	<event type="combatResult"
+			module="CvAristrakh" function="BattleFrenzy"/>
+			
+	<event type="cityBuilt"
+			module="CvAristrakh" function="onAristrakhCityBuilt"/>
+			
+	<event type="cityAcquired"
+			module="CvAristrakh" function="onAristrakhCityAcquired"/>
+	
+	<event type="BeginPlayerTurn"
+			module="CvAristrakh" function="doTurnAristrakh"/>
+			
+	<event type="buildingBuilt"
+			module="CvAristrakh" function="onAriBuildingBuilt"/>
+
+<!-- Unblemished 
+			
+	<event type="unitKilled"
+			module="CvUnblemishedEvents" function="UnitKilledAccordEvent"/>	
+			
+	<event type="unitCreated"
+			module="CvUnblemishedEvents" function="GPAccordEvent"/>		
+			
+	<event type="cityLost"
+			module="CvUnblemishedEvents" function="CityLostAccordEvent"/>
+			
+	<event type="cityGrowth"
+			module="CvUnblemishedEvents" function="CityGrowthAccordEvent"/>
+			
+	<event type="cityAcquiredAndKept"
+			module="CvUnblemishedEvents" function="CityAcquiredAndKeptAccordEvent"/>
+			
+	<event type="cityAcquired"
+			module="CvUnblemishedEvents" function="CityAcquiredAccordEvent"/>
+
+	<event type="buildingBuilt"
+			module="CvUnblemishedEvents" function="BuildingBuiltAccordEvent"/>
+
+	<event type="unitPromoted"
+			module="CvUnblemishedEvents" function="UnitPromotedAccordEvent"/>
+
+	<event type="techAcquired"
+			module="CvUnblemishedEvents" function="TechAcquiredAccordEvent"/>
+
+	<event type="goldenAge"
+			module="CvUnblemishedEvents" function="GoldenAgeAccordEvent"/>
+		-->
+</mod>

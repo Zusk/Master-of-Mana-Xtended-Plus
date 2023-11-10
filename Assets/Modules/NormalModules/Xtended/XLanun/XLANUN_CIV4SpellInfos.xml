@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XLANUN_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+		<SpellInfo>			<!-- Assemble Shoreparty -->
+			<Type>SPELL_ASSEMBLE_SHOREPARTY</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+			<Description>TXT_KEY_SPELL_ASSEMBLE_SHOREPARTY</Description>
+			<Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitCombatPrereq>UNITCOMBAT_NAVAL</UnitCombatPrereq>
+			<CivilizationPrereq>CIVILIZATION_LANUN</CivilizationPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bHasCasted>1</bHasCasted>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+			<CreateUnitType>UNIT_THUG</CreateUnitType>
+			<iCreateUnitNum>3</iCreateUnitNum>
+			<bNoInterruptUnitCycling>1</bNoInterruptUnitCycling>			
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS3D_SPELL_ENCHANTMENT</Sound>
+			<Button>Art/Interface/Buttons/Units/ShoreParty.dds</Button>
+		</SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_TSUNAMI_HAG</Type>
+            <Description>TXT_KEY_SPELL_TSUNAMI</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TSUNAMI_HELP</Help>
+			<UnitPrereq>UNIT_SEA_HAG</UnitPrereq>
+            <bAdjacentToWaterOnly>1</bAdjacentToWaterOnly>
+            <bAllowAI>1</bAllowAI>
+            <bCausesWar>1</bCausesWar>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <iRange>2</iRange>
+			<iFaithCost>300</iFaithCost>
+            <PyResult>spellTsunami(pCaster)</PyResult>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TSUNAMI</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,4,12</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_DROWN_HAG</Type>
+            <Description>Raise Corpses</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitPrereq>UNIT_SEA_HAG</UnitPrereq>
+            <TerrainOrPrereq1>TERRAIN_COAST</TerrainOrPrereq1>
+            <TerrainOrPrereq2>TERRAIN_OCEAN</TerrainOrPrereq2>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <CreateUnitType>UNIT_DROWN_HAG</CreateUnitType>
+            <iCreateUnitNum>1</iCreateUnitNum>
+			<iFaithCost>100</iFaithCost>
+            <Effect>EFFECT_ENTANGLE</Effect>
+            <Sound>AS3D_SPELL_CONTAGION</Sound>
+            <Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,6,6</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_CHARM_WENCH</Type>
+            <Description>Beguile</Description>
+            <Civilopedia>TXT_KEY_SPELL_CHARM_PERSON_PEDIA</Civilopedia>
+			<UnitPrereq>UNIT_WENCH</UnitPrereq>
+			<bAbility>1</bAbility>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+			<iAIWeight>999</iAIWeight>
+            <iRange>1</iRange>
+            <AddPromotionType1>PROMOTION_CHARMED</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <bImmuneNotAlive>1</bImmuneNotAlive>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_CHARM_PERSON</Sound>
+            <Button>, ,Art/Interface/Buttons/Promotions/Promotions_Atlas1.dds,2,4</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>1</iNumTargets>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SING</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>TXT_KEY_SPELL_SING</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>[ICON_BULLET]Guybrush's singing can create chaos in his enemy's mind.</Help>
+            <UnitPrereq>UNIT_GUYBRUSH</UnitPrereq>
+            <bIgnoreHasCasted>1</bIgnoreHasCasted>
+            <bAbility>1</bAbility>
+			<bNoInterruptUnitCycling>1</bNoInterruptUnitCycling>
+            <PyResult>spellSing(pCaster)</PyResult>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,6,10</Button>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

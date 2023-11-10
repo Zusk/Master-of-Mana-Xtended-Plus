@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:XAUSTRIN_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>		<!-- Nomads -->
+			<Type>TECH_AUSTRIN_NOMAD</Type>
+			<Description>Nomads</Description>
+			<bForceOverwrite>1</bForceOverwrite>
+			<Civilopedia>TXT_KEY_TECH_AUSTRIN_NOMAD_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<bDisable>1</bDisable>
+			<iGridX>1</iGridX>
+			<iGridY>14</iGridY>
+			<TerrainTrades>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_MUSHGROUND</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_DARK_MUSHGROUND</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+			</TerrainTrades>						
+			<Flavors>
+			</Flavors>
+			<Quote>TXT_KEY_TECH_DESERTPEOPLE_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas2.dds,3,1</Button>
+		</TechInfo>
+	</TechInfos>
+</Civ4TechInfos>

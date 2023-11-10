@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:XDANALIN_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_DANALIN</Type>
+			<Description>Wrath of the Sea</Description>
+            <Button>Modules/NormalModules/Xtended/XDanalin/Buttons/Danalin.dds</Button>
+		</CombatAuraClassInfo>		
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_CTHULTHU</Type>
+			<Description>Terror</Description>
+			<Button>Modules/NormalModules/Xtended/XDanalin/Buttons/Cthulthu.dds</Button>
+		</CombatAuraClassInfo>		
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MANA_AIR_PEDIA</Tag>
+        <English>Grants access to Air spells. This will allow Adepts to cast Windwall. Additional sources of this resource will increase the strength of Air Elementals summoned by Archmages.</English>
+        <French>Grants access to Air spells. This will allow Adepts to cast Windwall. Additional sources of this resource will increase the strength of Air Elementals summoned by Archmages.</French>
+        <German>Dieses Mana ermöglicht Luftmagie und erlaubt Adepten den Zauber "Windwall" zu wirken. Weitere Brunnen dieses Manas [COLOR_HIGHLIGHT_TEXT]erhöhen die Stärke von Luftelementaren[COLOR_REVERT], die von Erzmagiern beschworen wurden.</German>
+        <Italian>Grants access to Air spells. This will allow Adepts to cast Windwall. Additional sources of this resource will increase the strength of Air Elementals summoned by Archmages.</Italian>
+        <Spanish>Grants access to Air spells. This will allow Adepts to cast Windwall. Additional sources of this resource will increase the strength of Air Elementals summoned by Archmages.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_JUSTICE</Tag>
+        <English>Justice</English>
+        <French>Justice</French>
+        <German>Gericht</German>
+        <Italian>Justice</Italian>
+        <Spanish>Justice</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CONFUSED</Tag>
+        <English>Confused</English>
+        <French>Confused</French>
+        <German>Verwirrt</German>
+        <Italian>Confused</Italian>
+        <Spanish>Confused</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FIRESHIELD</Tag>
+        <English>Fireshield</English>
+        <French>Fireshield</French>
+        <German>Feuerschild</German>
+        <Italian>Fireshield</Italian>
+        <Spanish>Fireshield</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FIRESHIELD</Tag>
+        <English>Fireshield</English>
+        <French>Fireshield</French>
+        <German>Feuerschild</German>
+        <Italian>Fireshield</Italian>
+        <Spanish>Fireshield</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_JUSTICE</Tag>
+        <English>Justice</English>
+        <French>Justice</French>
+        <German>Gerechtigkeit</German>
+        <Italian>Justice</Italian>
+        <Spanish>Justice</Spanish>    
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SANCTIFIED</Tag>
+        <English>Sanctified</English>
+        <French>Sanctified</French>
+        <German>Geheiligt</German>
+        <Italian>Sanctified</Italian>
+        <Spanish>Sanctified</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WINDWALL</Tag>
+        <English>Windwall</English>
+        <French>Windwall</French>
+        <German>Windwall</German>
+        <Italian>Windwall</Italian>
+        <Spanish>Windwall</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_WINDWALL</Tag>
+        <English>Windwall</English>
+        <French>Windwall</French>
+        <German>Windwall</German>
+        <Italian>Windwall</Italian>
+        <Spanish>Windwall</Spanish>
+    </TEXT>
+   
+</Civ4GameText>

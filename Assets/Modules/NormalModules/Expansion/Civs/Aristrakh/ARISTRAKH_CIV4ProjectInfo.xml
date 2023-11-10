@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:ARISTRAKH_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>  <!-- Deaths Embrace -->
+			<Type>PROJECT_DEATHS_EMBRACE</Type>
+			<Description>TXT_KEY_PROJECT_DEATHS_EMBRACE</Description>
+			<Civilopedia>TXT_KEY_PROJECT_DEATHS_EMBRACE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_PROJECT_DEATHS_EMBRACE_HELP</Help>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<TechPrereq>TECH_RELIGIOUS_LAW</TechPrereq>
+			<PrereqCivilization>CIVILIZATION_CALABIM</PrereqCivilization>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>500</iCost>
+			<iNukeInterception>0</iNukeInterception>
+			<iTechShare>0</iTechShare>
+			<EveryoneSpecialUnit>NONE</EveryoneSpecialUnit>
+			<EveryoneSpecialBuilding>NONE</EveryoneSpecialBuilding>
+			<bSpaceship>0</bSpaceship>
+			<bAllowsNukes>0</bAllowsNukes>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,2,16</Button>
+			<PrereqProjects/>
+			<VictoryThresholds/>
+			<VictoryMinThresholds/>
+			<iVictoryDelayPercent>0</iVictoryDelayPercent>
+			<iSuccessRate>0</iSuccessRate>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_MANA_DEATH</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<CreateSound/>
+			<MovieDefineTag/>
+			<iAIWeight>-1000</iAIWeight>
+		</ProjectInfo>		
+	</ProjectInfos>
+</Civ4ProjectInfo>

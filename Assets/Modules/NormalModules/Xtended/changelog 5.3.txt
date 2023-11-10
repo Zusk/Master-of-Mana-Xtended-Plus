@@ -1,0 +1,30 @@
+changelog 5.3
+
+- [AMURITES] Arcane Lacuna is really stopping spell casting now.
+- [AMURITES] Planeshifter has 2 movement.
+- [ARISTARKH] Should be able to build Tomb Lord.
+- [BANNOR] Footman starts with Sword (instead of Leather Armor).
+- [CLAN OF EMBER] Brute is now strength 8 (was 9), cost 100 metal (was 200 metal).
+- [CLAN OF EMBER] is no longer able to build Elder Council.
+- [CLAN OF EMBER] is no longer able to build Alchemy Lab.
+- [DOVIELLO] is no longer able to build Alchemy Lab.
+- [DURAL] Really added Archer to Dural.
+- [DURAL] Assimilate Mind is working for Dural.
+- [ILLIANS] Frostling Wolfrider is reduced to 6+2 cold (it was 7+2 cold).
+- [KHAZAD] Changed Create Battering Ram. It should work now.
+- [SHEAIM] Pyre Zombie can no longer gain xp and use gears. It has +1 Death/+2 Fire affinity (it was +1/+1) and cheap production (50 hammers).
+- [GAME] Spellresearch is adjustable on Arcane Lore.
+- [GUILD] Ranger has 8 str.
+- [MAGIC] Mind Magic's Phantasmagoria now only works on units with Illusion as their race.
+- [PROMOTION] Trigger Trap level 1 makes enemy unable to move for 2 rounds, but resistable (+40 resist) and requires level 6.
+- [PROMOTION] Trigger Trap level 2 makes enemy unable to move for 2 rounds, resistable (no modifier) and requires level 8.
+- [RACE] Removes +1 Cold damage from Frostling racial promotion. 
+- [RELIGION] Religion will spread at turn 2 on non-ancient start.
+- [RELIGION] Non-ancient start will not give you Sacred Knowledge of any religions. 
+- [RELIGION] Tablet of Bambur is now buildable by Great Prophet.
+- [RELIGION] Shifting Sand (ROK hostile miracle) is now one-off terraforming miracle (instead of global enchantment).
+- [RELIGION] AV's Diseased Corpse can no longer gain xp and use gears.
+
+
+
+

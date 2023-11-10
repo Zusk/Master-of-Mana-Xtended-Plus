@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:XGRIGORI_CIV4TechnologiesSchema.xml">
+    <TechInfos>
+        <TechInfo>
+            <Type>TECH_ADVENTURER_TALE</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>Adventurer's Tale</Description>
+            <Civilopedia>TXT_KEY_TECH_PLACEHOLDER_PEDIA</Civilopedia>
+			<Help>[ICON_BULLET]Great Bard's Tale of Legend produce 50% more empire culture.</Help>
+            <Advisor>ADVISOR_ECONOMY</Advisor>
+            <iCost>-1</iCost>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <Era>ERA_ANCIENT</Era>
+            <iAsset>32</iAsset>
+			<bDisable>1</bDisable>						
+            <iGridX>3</iGridX>
+            <iGridY>7</iGridY>
+            <Flavors>
+                <Flavor>
+                    <FlavorType>FLAVOR_GOLD</FlavorType>
+                    <iFlavor>100</iFlavor>
+                </Flavor>
+            </Flavors>
+            <OrPreReqs>
+            </OrPreReqs>
+            <AndPreReqs>
+            </AndPreReqs>			
+            <Sound>AS2D_TECH_DING</Sound>
+            <SoundMP>AS2D_TECH_DING</SoundMP>
+			<bAllowGuild>1</bAllowGuild>
+			<Button>Modules/NormalModules/Xtended/XGrigori/Buttons/AdventurerTale.dds</Button>
+		</TechInfo>
+    </TechInfos>
+</Civ4TechInfos>

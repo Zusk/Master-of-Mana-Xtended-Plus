@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:XHERO_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_ARTIFICER</Type>
+			<Description>TXT_KEY_PROMOTION_ARTIFICER</Description>
+			<Button>Modules/NormalModules/Xtended/XLuchuirp/Arts/Buttons/Artifice.dds</Button>
+		</CombatAuraClassInfo>		
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

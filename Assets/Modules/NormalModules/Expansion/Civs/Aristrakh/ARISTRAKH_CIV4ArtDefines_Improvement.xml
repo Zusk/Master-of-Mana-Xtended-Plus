@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Improvement art path information -->
+<Civ4ArtDefines xmlns="x-schema:ARISTRAKH_CIV4ArtDefinesSchema.xml">
+	<ImprovementArtInfos>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_DEFILER1</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/defiler/Defiler1.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,4,14</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_DEFILER2</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/defiler/Defiler2.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,5,14</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_DEFILER3</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>2.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/defiler/Defiler3.nif</NIF>
+			<KFM/>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,6,14</Button>
+		</ImprovementArtInfo>
+	</ImprovementArtInfos>
+</Civ4ArtDefines>

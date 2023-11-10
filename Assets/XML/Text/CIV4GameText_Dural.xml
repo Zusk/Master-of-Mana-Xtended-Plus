@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DURAL_DESC</Tag>
+        <English>Dural</English>
+        <French>Dural</French>
+        <German>Reich der Dural</German>
+        <Italian>Dural</Italian>
+        <Spanish>Dural</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DURAL_SHORT_DESC</Tag>
+        <English>Dural</English>
+        <French>Dural</French>
+        <German>Dural</German>
+        <Italian>Dural</Italian>
+        <Spanish>Dural</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DURAL_ADJECTIVE</Tag>
+        <English>Dural</English>
+        <French>Dural</French>
+        <German>Duralisch:Duralischen:Duralische</German>
+        <Italian>Dural</Italian>
+        <Spanish>Dural</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_DANNMOS</Tag>
+        <English>Dannmos</English>
+        <French>Dannmos</French>
+        <German>Dannmos</German>
+        <Italian>Dannmos</Italian>
+        <Spanish>Dannmos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_DANNMOS_PEDIA</Tag>
+        <English>Much of what is now known of the Age of Rebirth survived only in the libraries of Dural. Vast collections of literature and art, chronicling those early times. The earliest speak of a time of Ice whilst the last speak of Fire. Those records in between however speak often of Dannmos, the leader of the Dural people. Said to be the wisest of men, he shaped his nation in philosophy and geography alike, training the mind as well as the sword arm of his soldiers. That any record survived the Age of Rebirth - and the subsequent Age of Despair - at all is a testament to the vision of the Dural scholars. [NEWLINE][NEWLINE]Of the man himself, little is known. He kept council with many, but spoke for himself. The wisdom of his words rarely allowed for any disagreement though where opinions differed, he would listen intently and reconsider at length. [NEWLINE][NEWLINE]The Dural were famed as a people dedicated to their arts - it is certain that Dannmos studied the art of leadership, in which he excelled. [NEWLINE][PARAGRAPH:1]-- "Of the dawn of times", Vano Aruless, Midien Historian.</English>
+        <French>Much of what is now known of the Age of Rebirth survived only in the libraries of Dural. Vast collections of literature and art, chronicling those early times. The earliest speak of a time of Ice whilst the last speak of Fire. Those records in between however speak often of Dannmos, the leader of the Dural people. Said to be the wisest of men, he shaped his nation in philosophy and geography alike, training the mind as well as the sword arm of his soldiers. That any record survived the Age of Rebirth - and the subsequent Age of Despair - at all is a testament to the vision of the Dural scholars. [NEWLINE][NEWLINE]Of the man himself, little is known. He kept council with many, but spoke for himself. The wisdom of his words rarely allowed for any disagreement though where opinions differed, he would listen intently and reconsider at length. [NEWLINE][NEWLINE]The Dural were famed as a people dedicated to their arts - it is certain that Dannmos studied the art of leadership, in which he excelled. [NEWLINE][PARAGRAPH:1]-- "Of the dawn of times", Vano Aruless, Midien Historian.</French>
+        <German>Much of what is now known of the Age of Rebirth survived only in the libraries of Dural. Vast collections of literature and art, chronicling those early times. The earliest speak of a time of Ice whilst the last speak of Fire. Those records in between however speak often of Dannmos, the leader of the Dural people. Said to be the wisest of men, he shaped his nation in philosophy and geography alike, training the mind as well as the sword arm of his soldiers. That any record survived the Age of Rebirth - and the subsequent Age of Despair - at all is a testament to the vision of the Dural scholars. [NEWLINE][NEWLINE]Of the man himself, little is known. He kept council with many, but spoke for himself. The wisdom of his words rarely allowed for any disagreement though where opinions differed, he would listen intently and reconsider at length. [NEWLINE][NEWLINE]The Dural were famed as a people dedicated to their arts - it is certain that Dannmos studied the art of leadership, in which he excelled. [NEWLINE][PARAGRAPH:1]-- "Of the dawn of times", Vano Aruless, Midien Historian.</German>
+        <Italian>Much of what is now known of the Age of Rebirth survived only in the libraries of Dural. Vast collections of literature and art, chronicling those early times. The earliest speak of a time of Ice whilst the last speak of Fire. Those records in between however speak often of Dannmos, the leader of the Dural people. Said to be the wisest of men, he shaped his nation in philosophy and geography alike, training the mind as well as the sword arm of his soldiers. That any record survived the Age of Rebirth - and the subsequent Age of Despair - at all is a testament to the vision of the Dural scholars. [NEWLINE][NEWLINE]Of the man himself, little is known. He kept council with many, but spoke for himself. The wisdom of his words rarely allowed for any disagreement though where opinions differed, he would listen intently and reconsider at length. [NEWLINE][NEWLINE]The Dural were famed as a people dedicated to their arts - it is certain that Dannmos studied the art of leadership, in which he excelled. [NEWLINE][PARAGRAPH:1]-- "Of the dawn of times", Vano Aruless, Midien Historian.</Italian>
+        <Spanish>Much of what is now known of the Age of Rebirth survived only in the libraries of Dural. Vast collections of literature and art, chronicling those early times. The earliest speak of a time of Ice whilst the last speak of Fire. Those records in between however speak often of Dannmos, the leader of the Dural people. Said to be the wisest of men, he shaped his nation in philosophy and geography alike, training the mind as well as the sword arm of his soldiers. That any record survived the Age of Rebirth - and the subsequent Age of Despair - at all is a testament to the vision of the Dural scholars. [NEWLINE][NEWLINE]Of the man himself, little is known. He kept council with many, but spoke for himself. The wisdom of his words rarely allowed for any disagreement though where opinions differed, he would listen intently and reconsider at length. [NEWLINE][NEWLINE]The Dural were famed as a people dedicated to their arts - it is certain that Dannmos studied the art of leadership, in which he excelled. [NEWLINE][PARAGRAPH:1]-- "Of the dawn of times", Vano Aruless, Midien Historian.</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_GREATWORKS</Tag>
+        <English>Great Works</English>
+        <French>Great Works</French>
+        <German>Großartige Arbeit</German>
+        <Italian>Great Works</Italian>
+        <Spanish>Great Works</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_GREATWORKS_HELP</Tag>
+        <English>[ICON_BULLET]Adds 100 Hammers (modified by gamespeed) to the current production project of every city[NEWLINE][ICON_BULLET]These Hammers will not overflow onto the next project.</English>
+        <French>[ICON_BULLET]Adds 100 Hammers (modified by gamespeed) to the current production project of every city[NEWLINE][ICON_BULLET]These Hammers will not overflow onto the next project.</French>
+        <German>[ICON_BULLET]Fügt der aktuellen Stadtproduktion in JEDER Stadt 100 Hämmer (modifiziert um Spielgeschwindigkeit) hinzu[NEWLINE][ICON_BULLET]Überzählige Hämmer werden nicht in den nächsten Bauftrag übertragen.</German>
+        <Italian>[ICON_BULLET]Adds 100 Hammers (modified by gamespeed) to the current production project of every city[NEWLINE][ICON_BULLET]These Hammers will not overflow onto the next project.</Italian>
+        <Spanish>[ICON_BULLET]Adds 100 Hammers (modified by gamespeed) to the current production project of every city[NEWLINE][ICON_BULLET]These Hammers will not overflow onto the next project.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_GREATWORKS_PEDIA</Tag>
+        <English>When this Dural Worldspell is cast, every current project in every Dural city receives a boost of 100 hammers towards completion. These hammers are for the current project only and will not overflow to the next project. Most potent once several cities have been constructed, though a flat 100 hammers per city will make less of an impact as the game progresses so timing is important. The spell represents the Dural people's response to a calling - whether it be a call for art and wonder, a call for expansion or a call to arms.</English>
+        <French>When this Dural Worldspell is cast, every current project in every Dural city receives a boost of 100 hammers towards completion. These hammers are for the current project only and will not overflow to the next project. Most potent once several cities have been constructed, though a flat 100 hammers per city will make less of an impact as the game progresses so timing is important. The spell represents the Dural people's response to a calling - whether it be a call for art and wonder, a call for expansion or a call to arms.</French>
+        <German>When this Dural Worldspell is cast, every current project in every Dural city receives a boost of 100 hammers towards completion. These hammers are for the current project only and will not overflow to the next project. Most potent once several cities have been constructed, though a flat 100 hammers per city will make less of an impact as the game progresses so timing is important. The spell represents the Dural people's response to a calling - whether it be a call for art and wonder, a call for expansion or a call to arms.</German>
+        <Italian>When this Dural Worldspell is cast, every current project in every Dural city receives a boost of 100 hammers towards completion. These hammers are for the current project only and will not overflow to the next project. Most potent once several cities have been constructed, though a flat 100 hammers per city will make less of an impact as the game progresses so timing is important. The spell represents the Dural people's response to a calling - whether it be a call for art and wonder, a call for expansion or a call to arms.</Italian>
+        <Spanish>When this Dural Worldspell is cast, every current project in every Dural city receives a boost of 100 hammers towards completion. These hammers are for the current project only and will not overflow to the next project. Most potent once several cities have been constructed, though a flat 100 hammers per city will make less of an impact as the game progresses so timing is important. The spell represents the Dural people's response to a calling - whether it be a call for art and wonder, a call for expansion or a call to arms.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KARRLSON</Tag>
+        <English>Karrlson</English>
+        <French>Karrlson</French>
+        <German>Karrlson</German>
+        <Italian>Karrlson</Italian>
+        <Spanish>Karrlson</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KARRLSON_STRATEGY</Tag>
+        <English>A straightforward and skilled warrior of his people, Karrlson is well suited to both attack and defence. Leading armies of expansion or protecting the realm from outside aggression - it's all a matter of duty for Karrlson</English>
+        <French>A straightforward and skilled warrior of his people, Karrlson is well suited to both attack and defence. Leading armies of expansion or protecting the realm from outside aggression - it's all a matter of duty for Karrlson</French>
+        <German>A straightforward and skilled warrior of his people, Karrlson is well suited to both attack and defence. Leading armies of expansion or protecting the realm from outside aggression - it's all a matter of duty for Karrlson</German>
+        <Italian>A straightforward and skilled warrior of his people, Karrlson is well suited to both attack and defence. Leading armies of expansion or protecting the realm from outside aggression - it's all a matter of duty for Karrlson</Italian>
+        <Spanish>A straightforward and skilled warrior of his people, Karrlson is well suited to both attack and defence. Leading armies of expansion or protecting the realm from outside aggression - it's all a matter of duty for Karrlson</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KARRLSON_PEDIA</Tag>
+        <English>Occasionally, the colleges will admit members from other empires in order to benefit from cultural exchanges. The Kuriotates often send scholars to the College at Brookden, whilst Newshore College lies a short boat journey from the land of the Bannor. On one such exchange, a man of Bannor visited the college for a time and befriended the young Karrlson. Karrlson was a student of social morality, of laws and codices of all nations in the land. He spoke at length with the Bannor man to learn all he could of the Social Order in his homeland, whilst explaining how he believed the Dural way of life to be more enlightened. The older man smiled at the claim. [NEWLINE]"Boy, you're livin' in the perfect world of the intellectual. Sounds nice, but it ain't where the rest of us are." Karrlson pondered for a moment. [NEWLINE]"But if you chose to make you world as such, then it would become so. It may not be easy, but with work..." The man held up a hand to halt Karrlson's words.[NEWLINE]  "On the 'morrow I will show you the work my people do". [NEWLINE][NEWLINE]True to his word, the next day the Bannor man took Karrlson across the channel and south along the coast of the Bannor empire. Great stone buildings rose from green farmland as they passed, punctuated with hilltop mills and barely seen mines. The further south they travelled however, the fewer people could be seen on the banks. Eventually Karrlson saw smoke drifting across the water and they drew close to the burnt ruins of a settlement. [NEWLINE]"I got word last week that our soldiers stood here to allow the villagers to escape. The peasants were saved, but most of fighting men were lost. This is the work of the orcs and they care little for your 'enlightenment' or ways". Karrlson nodded. He knew of the orcs, even a little of their tribal ways, but had never seen the results of an attack such as this.[NEWLINE][NEWLINE]The Bannor man bowed his head slightly before speaking again. "The sad truth is that the orcs are far from the worst of it. The Veil is winning their war. They've called demons into the world and I don't have a damned notion of how we're going to save anyone from that."[NEWLINE]"Surely they can't have! The compact forbids such direct interference..." The Bannor man turned fiercely, angry for the first time.[NEWLINE]  "You think you've learnt well enough to understand what the gods are upto? You can live in that damned college of your's for your whole life and never understand but a little of what happens in the world. The flames of Agares will come and burn your books long before any of us can truly understand why. I have seen the demons, I fought with their kin and - Junil forgive me - I was mortally afraid."[NEWLINE][NEWLINE]The man recomposed himself. "I was much impressed by what the Dural have accomplished since the ice melted - your society is truly a wonder, but I wonder how it would fare should Bannor fail to hold the tide from you? How many of you will be able to stand against the horrors that are coming?"[NEWLINE]Karrlson fell silent as the words rang true. After a long moment, he spoke. "I will stand, for as long as I am able" he said. "Please, return me to my home, I have much training to do."</English>
+        <French>Occasionally, the colleges will admit members from other empires in order to benefit from cultural exchanges. The Kuriotates often send scholars to the College at Brookden, whilst Newshore College lies a short boat journey from the land of the Bannor. On one such exchange, a man of Bannor visited the college for a time and befriended the young Karrlson. Karrlson was a student of social morality, of laws and codices of all nations in the land. He spoke at length with the Bannor man to learn all he could of the Social Order in his homeland, whilst explaining how he believed the Dural way of life to be more enlightened. The older man smiled at the claim. [NEWLINE]"Boy, you're livin' in the perfect world of the intellectual. Sounds nice, but it ain't where the rest of us are." Karrlson pondered for a moment. [NEWLINE]"But if you chose to make you world as such, then it would become so. It may not be easy, but with work..." The man held up a hand to halt Karrlson's words.[NEWLINE]  "On the 'morrow I will show you the work my people do". [NEWLINE][NEWLINE]True to his word, the next day the Bannor man took Karrlson across the channel and south along the coast of the Bannor empire. Great stone buildings rose from green farmland as they passed, punctuated with hilltop mills and barely seen mines. The further south they travelled however, the fewer people could be seen on the banks. Eventually Karrlson saw smoke drifting across the water and they drew close to the burnt ruins of a settlement. [NEWLINE]"I got word last week that our soldiers stood here to allow the villagers to escape. The peasants were saved, but most of fighting men were lost. This is the work of the orcs and they care little for your 'enlightenment' or ways". Karrlson nodded. He knew of the orcs, even a little of their tribal ways, but had never seen the results of an attack such as this.[NEWLINE][NEWLINE]The Bannor man bowed his head slightly before speaking again. "The sad truth is that the orcs are far from the worst of it. The Veil is winning their war. They've called demons into the world and I don't have a damned notion of how we're going to save anyone from that."[NEWLINE]"Surely they can't have! The compact forbids such direct interference..." The Bannor man turned fiercely, angry for the first time.[NEWLINE]  "You think you've learnt well enough to understand what the gods are upto? You can live in that damned college of your's for your whole life and never understand but a little of what happens in the world. The flames of Agares will come and burn your books long before any of us can truly understand why. I have seen the demons, I fought with their kin and - Junil forgive me - I was mortally afraid."[NEWLINE][NEWLINE]The man recomposed himself. "I was much impressed by what the Dural have accomplished since the ice melted - your society is truly a wonder, but I wonder how it would fare should Bannor fail to hold the tide from you? How many of you will be able to stand against the horrors that are coming?"[NEWLINE]Karrlson fell silent as the words rang true. After a long moment, he spoke. "I will stand, for as long as I am able" he said. "Please, return me to my home, I have much training to do."</French>
+        <German>Occasionally, the colleges will admit members from other empires in order to benefit from cultural exchanges. The Kuriotates often send scholars to the College at Brookden, whilst Newshore College lies a short boat journey from the land of the Bannor. On one such exchange, a man of Bannor visited the college for a time and befriended the young Karrlson. Karrlson was a student of social morality, of laws and codices of all nations in the land. He spoke at length with the Bannor man to learn all he could of the Social Order in his homeland, whilst explaining how he believed the Dural way of life to be more enlightened. The older man smiled at the claim. [NEWLINE]"Boy, you're livin' in the perfect world of the intellectual. Sounds nice, but it ain't where the rest of us are." Karrlson pondered for a moment. [NEWLINE]"But if you chose to make you world as such, then it would become so. It may not be easy, but with work..." The man held up a hand to halt Karrlson's words.[NEWLINE]  "On the 'morrow I will show you the work my people do". [NEWLINE][NEWLINE]True to his word, the next day the Bannor man took Karrlson across the channel and south along the coast of the Bannor empire. Great stone buildings rose from green farmland as they passed, punctuated with hilltop mills and barely seen mines. The further south they travelled however, the fewer people could be seen on the banks. Eventually Karrlson saw smoke drifting across the water and they drew close to the burnt ruins of a settlement. [NEWLINE]"I got word last week that our soldiers stood here to allow the villagers to escape. The peasants were saved, but most of fighting men were lost. This is the work of the orcs and they care little for your 'enlightenment' or ways". Karrlson nodded. He knew of the orcs, even a little of their tribal ways, but had never seen the results of an attack such as this.[NEWLINE][NEWLINE]The Bannor man bowed his head slightly before speaking again. "The sad truth is that the orcs are far from the worst of it. The Veil is winning their war. They've called demons into the world and I don't have a damned notion of how we're going to save anyone from that."[NEWLINE]"Surely they can't have! The compact forbids such direct interference..." The Bannor man turned fiercely, angry for the first time.[NEWLINE]  "You think you've learnt well enough to understand what the gods are upto? You can live in that damned college of your's for your whole life and never understand but a little of what happens in the world. The flames of Agares will come and burn your books long before any of us can truly understand why. I have seen the demons, I fought with their kin and - Junil forgive me - I was mortally afraid."[NEWLINE][NEWLINE]The man recomposed himself. "I was much impressed by what the Dural have accomplished since the ice melted - your society is truly a wonder, but I wonder how it would fare should Bannor fail to hold the tide from you? How many of you will be able to stand against the horrors that are coming?"[NEWLINE]Karrlson fell silent as the words rang true. After a long moment, he spoke. "I will stand, for as long as I am able" he said. "Please, return me to my home, I have much training to do."</German>
+        <Italian>Occasionally, the colleges will admit members from other empires in order to benefit from cultural exchanges. The Kuriotates often send scholars to the College at Brookden, whilst Newshore College lies a short boat journey from the land of the Bannor. On one such exchange, a man of Bannor visited the college for a time and befriended the young Karrlson. Karrlson was a student of social morality, of laws and codices of all nations in the land. He spoke at length with the Bannor man to learn all he could of the Social Order in his homeland, whilst explaining how he believed the Dural way of life to be more enlightened. The older man smiled at the claim. [NEWLINE]"Boy, you're livin' in the perfect world of the intellectual. Sounds nice, but it ain't where the rest of us are." Karrlson pondered for a moment. [NEWLINE]"But if you chose to make you world as such, then it would become so. It may not be easy, but with work..." The man held up a hand to halt Karrlson's words.[NEWLINE]  "On the 'morrow I will show you the work my people do". [NEWLINE][NEWLINE]True to his word, the next day the Bannor man took Karrlson across the channel and south along the coast of the Bannor empire. Great stone buildings rose from green farmland as they passed, punctuated with hilltop mills and barely seen mines. The further south they travelled however, the fewer people could be seen on the banks. Eventually Karrlson saw smoke drifting across the water and they drew close to the burnt ruins of a settlement. [NEWLINE]"I got word last week that our soldiers stood here to allow the villagers to escape. The peasants were saved, but most of fighting men were lost. This is the work of the orcs and they care little for your 'enlightenment' or ways". Karrlson nodded. He knew of the orcs, even a little of their tribal ways, but had never seen the results of an attack such as this.[NEWLINE][NEWLINE]The Bannor man bowed his head slightly before speaking again. "The sad truth is that the orcs are far from the worst of it. The Veil is winning their war. They've called demons into the world and I don't have a damned notion of how we're going to save anyone from that."[NEWLINE]"Surely they can't have! The compact forbids such direct interference..." The Bannor man turned fiercely, angry for the first time.[NEWLINE]  "You think you've learnt well enough to understand what the gods are upto? You can live in that damned college of your's for your whole life and never understand but a little of what happens in the world. The flames of Agares will come and burn your books long before any of us can truly understand why. I have seen the demons, I fought with their kin and - Junil forgive me - I was mortally afraid."[NEWLINE][NEWLINE]The man recomposed himself. "I was much impressed by what the Dural have accomplished since the ice melted - your society is truly a wonder, but I wonder how it would fare should Bannor fail to hold the tide from you? How many of you will be able to stand against the horrors that are coming?"[NEWLINE]Karrlson fell silent as the words rang true. After a long moment, he spoke. "I will stand, for as long as I am able" he said. "Please, return me to my home, I have much training to do."</Italian>
+        <Spanish>Occasionally, the colleges will admit members from other empires in order to benefit from cultural exchanges. The Kuriotates often send scholars to the College at Brookden, whilst Newshore College lies a short boat journey from the land of the Bannor. On one such exchange, a man of Bannor visited the college for a time and befriended the young Karrlson. Karrlson was a student of social morality, of laws and codices of all nations in the land. He spoke at length with the Bannor man to learn all he could of the Social Order in his homeland, whilst explaining how he believed the Dural way of life to be more enlightened. The older man smiled at the claim. [NEWLINE]"Boy, you're livin' in the perfect world of the intellectual. Sounds nice, but it ain't where the rest of us are." Karrlson pondered for a moment. [NEWLINE]"But if you chose to make you world as such, then it would become so. It may not be easy, but with work..." The man held up a hand to halt Karrlson's words.[NEWLINE]  "On the 'morrow I will show you the work my people do". [NEWLINE][NEWLINE]True to his word, the next day the Bannor man took Karrlson across the channel and south along the coast of the Bannor empire. Great stone buildings rose from green farmland as they passed, punctuated with hilltop mills and barely seen mines. The further south they travelled however, the fewer people could be seen on the banks. Eventually Karrlson saw smoke drifting across the water and they drew close to the burnt ruins of a settlement. [NEWLINE]"I got word last week that our soldiers stood here to allow the villagers to escape. The peasants were saved, but most of fighting men were lost. This is the work of the orcs and they care little for your 'enlightenment' or ways". Karrlson nodded. He knew of the orcs, even a little of their tribal ways, but had never seen the results of an attack such as this.[NEWLINE][NEWLINE]The Bannor man bowed his head slightly before speaking again. "The sad truth is that the orcs are far from the worst of it. The Veil is winning their war. They've called demons into the world and I don't have a damned notion of how we're going to save anyone from that."[NEWLINE]"Surely they can't have! The compact forbids such direct interference..." The Bannor man turned fiercely, angry for the first time.[NEWLINE]  "You think you've learnt well enough to understand what the gods are upto? You can live in that damned college of your's for your whole life and never understand but a little of what happens in the world. The flames of Agares will come and burn your books long before any of us can truly understand why. I have seen the demons, I fought with their kin and - Junil forgive me - I was mortally afraid."[NEWLINE][NEWLINE]The man recomposed himself. "I was much impressed by what the Dural have accomplished since the ice melted - your society is truly a wonder, but I wonder how it would fare should Bannor fail to hold the tide from you? How many of you will be able to stand against the horrors that are coming?"[NEWLINE]Karrlson fell silent as the words rang true. After a long moment, he spoke. "I will stand, for as long as I am able" he said. "Please, return me to my home, I have much training to do."</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PROFESSOR</Tag>
+        <English>Professor</English>
+        <French>Professor</French>
+        <German>Professor</German>
+        <Italian>Professor</Italian>
+        <Spanish>Professor</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PROFESSOR_STRATEGY</Tag>
+        <English>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</English>
+        <French>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</French>
+        <German>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</German>
+        <Italian>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</Italian>
+        <Spanish>A Professor is able to cast the Hope and Inspiration spells, granting a noticable boost to any city he resides in. They are particularly useful in new cities, allowing quick cultural expansion without need of Obelisks or the Creative trait.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PROFESSOR_PEDIA</Tag>
+        <English>Professors are those who have studied at length and show an aptitude for sharing their knowledge. Many specialists become so deeply engrossed in their work that they forget how to communicate it to others, but a Professor is able to do this eloquently, allowing other to benefit from what he has learnt himself.</English>
+        <French>Professors are those who have studied at length and show an aptitude for sharing their knowledge. Many specialists become so deeply engrossed in their work that they forget how to communicate it to others, but a Professor is able to do this eloquently, allowing other to benefit from what he has learnt himself.</French>
+        <German>Professors are those who have studied at length and show an aptitude for sharing their knowledge. Many specialists become so deeply engrossed in their work that they forget how to communicate it to others, but a Professor is able to do this eloquently, allowing other to benefit from what he has learnt himself.</German>
+        <Italian>Professors are those who have studied at length and show an aptitude for sharing their knowledge. Many specialists become so deeply engrossed in their work that they forget how to communicate it to others, but a Professor is able to do this eloquently, allowing other to benefit from what he has learnt himself.</Italian>
+        <Spanish>Professors are those who have studied at length and show an aptitude for sharing their knowledge. Many specialists become so deeply engrossed in their work that they forget how to communicate it to others, but a Professor is able to do this eloquently, allowing other to benefit from what he has learnt himself.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PALACE_DURAL</Tag>
+        <English>Dural Palace</English>
+        <French>Dural Palace</French>
+        <German>Palast der Dural</German>
+        <Italian>Dural Palace</Italian>
+        <Spanish>Dural Palace</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE</Tag>
+        <English>College</English>
+        <French>College</French>
+        <German>Akademie</German>
+        <Italian>College</Italian>
+        <Spanish>College</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE_STRATEGY</Tag>
+        <English>The Learning Hall provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</English>
+        <French>The Learning Hall provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</French>
+        <German>The Learning Hall provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</German>
+        <Italian>The Learning Hall provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</Italian>
+        <Spanish>The Learning Hall provides a free specialist and a flat boost to Great Person Point production, without influencing the type of Great Person produced. This can be used to tailor your GPP to suit your needs.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE_PEDIA</Tag>
+        <English>Home to many of the great minds of the Dural, the Learning Halls study all aspects of society, art and warfare. Within the high walls points are raised, issues debated and problems discussed. The fruits of this intellectual labour are eventually enjoyed by all Dural citizens.</English>
+        <French>Home to many of the great minds of the Dural, the Learning Halls study all aspects of society, art and warfare. Within the high walls points are raised, issues debated and problems discussed. The fruits of this intellectual labour are eventually enjoyed by all Dural citizens.</French>
+        <German>Home to many of the great minds of the Dural, the Learning Halls study all aspects of society, art and warfare. Within the high walls points are raised, issues debated and problems discussed. The fruits of this intellectual labour are eventually enjoyed by all Dural citizens.</German>
+        <Italian>Home to many of the great minds of the Dural, the Learning Halls study all aspects of society, art and warfare. Within the high walls points are raised, issues debated and problems discussed. The fruits of this intellectual labour are eventually enjoyed by all Dural citizens.</Italian>
+        <Spanish>Home to many of the great minds of the Dural, the Learning Halls study all aspects of society, art and warfare. Within the high walls points are raised, issues debated and problems discussed. The fruits of this intellectual labour are eventually enjoyed by all Dural citizens.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_COURAGE</Tag>
+        <English>Statue of Courage</English>
+        <French>Statue of Courage</French>
+        <German>Statue der Taperkeit</German>
+        <Italian>Statue of Courage</Italian>
+        <Spanish>Statue of Courage</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_VALOR</Tag>
+        <English>Statue of Valor</English>
+        <French>Statue of Valor</French>
+        <German>Statue des Heldenmuts</German>
+        <Italian>Statue of Valor</Italian>
+        <Spanish>Statue of Valor</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_LOYALTY</Tag>
+        <English>Statue of Loyalty</English>
+        <French>Statue of Loyalty</French>
+        <German>Statue der Loyalit&#228;t</German>
+        <Italian>Statue of Loyalty</Italian>
+        <Spanish>Statue of Loyalty</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_HOPE</Tag>
+        <English>Statue of Hope</English>
+        <French>Statue of Hope</French>
+        <German>Statue der Hoffnung</German>
+        <Italian>Statue of Hope</Italian>
+        <Spanish>Statue of Hope</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_INSPIRATION</Tag>
+        <English>Statue of Inspiration</English>
+        <French>Statue of Inspiration</French>
+        <German>Statue der Inspiration</German>
+        <Italian>Statue of Inspiration</Italian>
+        <Spanish>Statue of Inspiration</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_PURITY</Tag>
+        <English>Statue of Purity</English>
+        <French>Statue of Purity</French>
+        <German>Statue der Reinheit</German>
+        <Italian>Statue of Purity</Italian>
+        <Spanish>Statue of Purity</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_OF_GLORY</Tag>
+        <English>Statue of Glory</English>
+        <French>Statue of Glory</French>
+        <German>Statue des Ruhms</German>
+        <Italian>Statue of Glory</Italian>
+        <Spanish>Statue of Glory</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_STRATEGY</Tag>
+        <English>The Statues of the Seven Virtues can only be constructed by the Dural civilization. Each is a National Wonder that grants abilities to the city or units trained there. Consider carefully where each should be built.</English>
+        <French>The Statues of the Seven Virtues can only be constructed by the Dural civilization. Each is a National Wonder that grants abilities to the city or units trained there. Consider carefully where each should be built.</French>
+        <German>The Statues of the Seven Virtues can only be constructed by the Dural civilization. Each is a National Wonder that grants abilities to the city or units trained there. Consider carefully where each should be built.</German>
+        <Italian>The Statues of the Seven Virtues can only be constructed by the Dural civilization. Each is a National Wonder that grants abilities to the city or units trained there. Consider carefully where each should be built.</Italian>
+        <Spanish>The Statues of the Seven Virtues can only be constructed by the Dural civilization. Each is a National Wonder that grants abilities to the city or units trained there. Consider carefully where each should be built.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_STATUE_PEDIA</Tag>
+        <English>The crowd stood in anticipation. The statue was veiled by a heavy sheet as they waited for the artist. He approached. As he stood before them the excitement of the crowd grew and their whispers became louder. He raised a hand as if he wished to speak and the crowd hushed immediately. Then, instead of speaking a word, he threw back the veil and uncovered his work.[NEWLINE]"A true wonder!"[NEWLINE]  "A masterpiece!"[NEWLINE]"He is a genius!"[PARAGRAPH:1]The adoration and applause of the crowd continued for some moments before the artist again raised his hand. Again, the crowd hushed. [NEWLINE][NEWLINE]"People of Rosemarsh", he intoned, "I am not the genius behind this piece." A whisper rose in the crowd again briefly, before quieting to hear his next words. [NEWLINE]"It is true - I held the hammer that carved this stone, but I am not the creator of what I carved. What I have carved is a testament to YOU. To our people. To Dural. YOU are the Inspiration of the piece and our Hope for Dural. I reflect only the Courage, Valor and Loyalty of the soldiers of our great nation in what I portray here in stone. Our nation has a Purity of purpose and a cause that will lead to Glory!"[PARAGRAPH:1][NEWLINE]Dannmos smiled as the crowd cheered. The artist was a wise fellow indeed - not only a master of his art, but seemingly humble enough to dedicate his work to the people and to the Seven Virtues. There was a calculated effort to his words however, suggesting that his speech were tailored to this audience - that too showed wisdom.[NEWLINE][NEWLINE]"Yes, a wise fellow indeed", mused Dannmos as he turned away, "We will benefit from his counsel."</English>
+        <French>The crowd stood in anticipation. The statue was veiled by a heavy sheet as they waited for the artist. He approached. As he stood before them the excitement of the crowd grew and their whispers became louder. He raised a hand as if he wished to speak and the crowd hushed immediately. Then, instead of speaking a word, he threw back the veil and uncovered his work.[NEWLINE]"A true wonder!"[NEWLINE]  "A masterpiece!"[NEWLINE]"He is a genius!"[PARAGRAPH:1]The adoration and applause of the crowd continued for some moments before the artist again raised his hand. Again, the crowd hushed. [NEWLINE][NEWLINE]"People of Rosemarsh", he intoned, "I am not the genius behind this piece." A whisper rose in the crowd again briefly, before quieting to hear his next words. [NEWLINE]"It is true - I held the hammer that carved this stone, but I am not the creator of what I carved. What I have carved is a testament to YOU. To our people. To Dural. YOU are the Inspiration of the piece and our Hope for Dural. I reflect only the Courage, Valor and Loyalty of the soldiers of our great nation in what I portray here in stone. Our nation has a Purity of purpose and a cause that will lead to Glory!"[PARAGRAPH:1][NEWLINE]Dannmos smiled as the crowd cheered. The artist was a wise fellow indeed - not only a master of his art, but seemingly humble enough to dedicate his work to the people and to the Seven Virtues. There was a calculated effort to his words however, suggesting that his speech were tailored to this audience - that too showed wisdom.[NEWLINE][NEWLINE]"Yes, a wise fellow indeed", mused Dannmos as he turned away, "We will benefit from his counsel.</French>
+        <German>The crowd stood in anticipation. The statue was veiled by a heavy sheet as they waited for the artist. He approached. As he stood before them the excitement of the crowd grew and their whispers became louder. He raised a hand as if he wished to speak and the crowd hushed immediately. Then, instead of speaking a word, he threw back the veil and uncovered his work.[NEWLINE]"A true wonder!"[NEWLINE]  "A masterpiece!"[NEWLINE]"He is a genius!"[PARAGRAPH:1]The adoration and applause of the crowd continued for some moments before the artist again raised his hand. Again, the crowd hushed. [NEWLINE][NEWLINE]"People of Rosemarsh", he intoned, "I am not the genius behind this piece." A whisper rose in the crowd again briefly, before quieting to hear his next words. [NEWLINE]"It is true - I held the hammer that carved this stone, but I am not the creator of what I carved. What I have carved is a testament to YOU. To our people. To Dural. YOU are the Inspiration of the piece and our Hope for Dural. I reflect only the Courage, Valor and Loyalty of the soldiers of our great nation in what I portray here in stone. Our nation has a Purity of purpose and a cause that will lead to Glory!"[PARAGRAPH:1][NEWLINE]Dannmos smiled as the crowd cheered. The artist was a wise fellow indeed - not only a master of his art, but seemingly humble enough to dedicate his work to the people and to the Seven Virtues. There was a calculated effort to his words however, suggesting that his speech were tailored to this audience - that too showed wisdom.[NEWLINE][NEWLINE]"Yes, a wise fellow indeed", mused Dannmos as he turned away, "We will benefit from his counsel.</German>
+        <Italian>The crowd stood in anticipation. The statue was veiled by a heavy sheet as they waited for the artist. He approached. As he stood before them the excitement of the crowd grew and their whispers became louder. He raised a hand as if he wished to speak and the crowd hushed immediately. Then, instead of speaking a word, he threw back the veil and uncovered his work.[NEWLINE]"A true wonder!"[NEWLINE]  "A masterpiece!"[NEWLINE]"He is a genius!"[PARAGRAPH:1]The adoration and applause of the crowd continued for some moments before the artist again raised his hand. Again, the crowd hushed. [NEWLINE][NEWLINE]"People of Rosemarsh", he intoned, "I am not the genius behind this piece." A whisper rose in the crowd again briefly, before quieting to hear his next words. [NEWLINE]"It is true - I held the hammer that carved this stone, but I am not the creator of what I carved. What I have carved is a testament to YOU. To our people. To Dural. YOU are the Inspiration of the piece and our Hope for Dural. I reflect only the Courage, Valor and Loyalty of the soldiers of our great nation in what I portray here in stone. Our nation has a Purity of purpose and a cause that will lead to Glory!"[PARAGRAPH:1][NEWLINE]Dannmos smiled as the crowd cheered. The artist was a wise fellow indeed - not only a master of his art, but seemingly humble enough to dedicate his work to the people and to the Seven Virtues. There was a calculated effort to his words however, suggesting that his speech were tailored to this audience - that too showed wisdom.[NEWLINE][NEWLINE]"Yes, a wise fellow indeed", mused Dannmos as he turned away, "We will benefit from his counsel.</Italian>
+        <Spanish>The crowd stood in anticipation. The statue was veiled by a heavy sheet as they waited for the artist. He approached. As he stood before them the excitement of the crowd grew and their whispers became louder. He raised a hand as if he wished to speak and the crowd hushed immediately. Then, instead of speaking a word, he threw back the veil and uncovered his work.[NEWLINE]"A true wonder!"[NEWLINE]  "A masterpiece!"[NEWLINE]"He is a genius!"[PARAGRAPH:1]The adoration and applause of the crowd continued for some moments before the artist again raised his hand. Again, the crowd hushed. [NEWLINE][NEWLINE]"People of Rosemarsh", he intoned, "I am not the genius behind this piece." A whisper rose in the crowd again briefly, before quieting to hear his next words. [NEWLINE]"It is true - I held the hammer that carved this stone, but I am not the creator of what I carved. What I have carved is a testament to YOU. To our people. To Dural. YOU are the Inspiration of the piece and our Hope for Dural. I reflect only the Courage, Valor and Loyalty of the soldiers of our great nation in what I portray here in stone. Our nation has a Purity of purpose and a cause that will lead to Glory!"[PARAGRAPH:1][NEWLINE]Dannmos smiled as the crowd cheered. The artist was a wise fellow indeed - not only a master of his art, but seemingly humble enough to dedicate his work to the people and to the Seven Virtues. There was a calculated effort to his words however, suggesting that his speech were tailored to this audience - that too showed wisdom.[NEWLINE][NEWLINE]"Yes, a wise fellow indeed", mused Dannmos as he turned away, "We will benefit from his counsel.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DURAL_PEDIA</Tag>
+        <English>The Dural civilization is characterized by its achievements. As a people, they celebrate that which they have created - be it art, literature, architecture or a fine steel blade. Their works are for the interests and greater glory of mankind, rather than slavishly working to serve as pawns in the Godswar. Of course, not all of the people are even aware of the Godswar - they're far too busy with their work to learn of such things. Unlike the Grigori, they do not seek personal truth and enlightenment. To the Dural, the truth of their lives is whatever they create. They also feel that any creation of their people belongs to all of their people - when one excels, they all do. [NEWLINE][NEWLINE]Whilst the Dural are not subservient to any of the major religions, some see value in them. Disciples are able to spread the ideas of religion and creed though few Dural would seek to preach of their beliefs and they do not build temples to worship the gods.[NEWLINE][NEWLINE]The Dural seek to further their abilities and exceed those of their predecessors, and as such are prone to specialism. Those of a similar speciality tend to group together, though there is currently no formal guild or caste system in place. Citizens of all specialities may attend a Dural College, where they are free to study their area and share ideas with other students.[NEWLINE][NEWLINE]Whilst not a naturally warlike people, the beliefs of the Dural serve them well in times of conflict. Their smiths provide fine weapons and armour, their soldiers train hard and their armies fight with a strong belief that what they defend is worthwhile.</English>
+        <French>The Dural civilization is characterized by its achievements. As a people, they celebrate that which they have created - be it art, literature, architecture or a fine steel blade. Their works are for the interests and greater glory of mankind, rather than slavishly working to serve as pawns in the Godswar. Of course, not all of the people are even aware of the Godswar - they're far too busy with their work to learn of such things. Unlike the Grigori, they do not seek personal truth and enlightenment. To the Dural, the truth of their lives is whatever they create. They also feel that any creation of their people belongs to all of their people - when one excels, they all do. [NEWLINE][NEWLINE]Whilst the Dural are not subservient to any of the major religions, some see value in them. Disciples are able to spread the ideas of religion and creed though few Dural would seek to preach of their beliefs and they do not build temples to worship the gods.[NEWLINE][NEWLINE]The Dural seek to further their abilities and exceed those of their predecessors, and as such are prone to specialism. Those of a similar speciality tend to group together, though there is currently no formal guild or caste system in place. Citizens of all specialities may attend a Dural College, where they are free to study their area and share ideas with other students.[NEWLINE][NEWLINE]Whilst not a naturally warlike people, the beliefs of the Dural serve them well in times of conflict. Their smiths provide fine weapons and armour, their soldiers train hard and their armies fight with a strong belief that what they defend is worthwhile.</French>
+        <German>The Dural civilization is characterized by its achievements. As a people, they celebrate that which they have created - be it art, literature, architecture or a fine steel blade. Their works are for the interests and greater glory of mankind, rather than slavishly working to serve as pawns in the Godswar. Of course, not all of the people are even aware of the Godswar - they're far too busy with their work to learn of such things. Unlike the Grigori, they do not seek personal truth and enlightenment. To the Dural, the truth of their lives is whatever they create. They also feel that any creation of their people belongs to all of their people - when one excels, they all do. [NEWLINE][NEWLINE]Whilst the Dural are not subservient to any of the major religions, some see value in them. Disciples are able to spread the ideas of religion and creed though few Dural would seek to preach of their beliefs and they do not build temples to worship the gods.[NEWLINE][NEWLINE]The Dural seek to further their abilities and exceed those of their predecessors, and as such are prone to specialism. Those of a similar speciality tend to group together, though there is currently no formal guild or caste system in place. Citizens of all specialities may attend a Dural College, where they are free to study their area and share ideas with other students.[NEWLINE][NEWLINE]Whilst not a naturally warlike people, the beliefs of the Dural serve them well in times of conflict. Their smiths provide fine weapons and armour, their soldiers train hard and their armies fight with a strong belief that what they defend is worthwhile.</German>
+        <Italian>The Dural civilization is characterized by its achievements. As a people, they celebrate that which they have created - be it art, literature, architecture or a fine steel blade. Their works are for the interests and greater glory of mankind, rather than slavishly working to serve as pawns in the Godswar. Of course, not all of the people are even aware of the Godswar - they're far too busy with their work to learn of such things. Unlike the Grigori, they do not seek personal truth and enlightenment. To the Dural, the truth of their lives is whatever they create. They also feel that any creation of their people belongs to all of their people - when one excels, they all do. [NEWLINE][NEWLINE]Whilst the Dural are not subservient to any of the major religions, some see value in them. Disciples are able to spread the ideas of religion and creed though few Dural would seek to preach of their beliefs and they do not build temples to worship the gods.[NEWLINE][NEWLINE]The Dural seek to further their abilities and exceed those of their predecessors, and as such are prone to specialism. Those of a similar speciality tend to group together, though there is currently no formal guild or caste system in place. Citizens of all specialities may attend a Dural College, where they are free to study their area and share ideas with other students.[NEWLINE][NEWLINE]Whilst not a naturally warlike people, the beliefs of the Dural serve them well in times of conflict. Their smiths provide fine weapons and armour, their soldiers train hard and their armies fight with a strong belief that what they defend is worthwhile.</Italian>
+        <Spanish>The Dural civilization is characterized by its achievements. As a people, they celebrate that which they have created - be it art, literature, architecture or a fine steel blade. Their works are for the interests and greater glory of mankind, rather than slavishly working to serve as pawns in the Godswar. Of course, not all of the people are even aware of the Godswar - they're far too busy with their work to learn of such things. Unlike the Grigori, they do not seek personal truth and enlightenment. To the Dural, the truth of their lives is whatever they create. They also feel that any creation of their people belongs to all of their people - when one excels, they all do. [NEWLINE][NEWLINE]Whilst the Dural are not subservient to any of the major religions, some see value in them. Disciples are able to spread the ideas of religion and creed though few Dural would seek to preach of their beliefs and they do not build temples to worship the gods.[NEWLINE][NEWLINE]The Dural seek to further their abilities and exceed those of their predecessors, and as such are prone to specialism. Those of a similar speciality tend to group together, though there is currently no formal guild or caste system in place. Citizens of all specialities may attend a Dural College, where they are free to study their area and share ideas with other students.[NEWLINE][NEWLINE]Whilst not a naturally warlike people, the beliefs of the Dural serve them well in times of conflict. Their smiths provide fine weapons and armour, their soldiers train hard and their armies fight with a strong belief that what they defend is worthwhile.</Spanish>
+    </TEXT>
+
+    <TEXT>
+        <Tag>AI_DIPLO_DECLARE_WAR_LEADER_DURAL</Tag>
+        <English>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</English>
+        <French>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</French>
+        <German>Es gibt eine Zeit der Forschung, eine Zeit der meditation, eine Zeit der Großartigen Arbeit - aber nun ist es Zeit f&#252;r einen Krieg.</German>
+        <Italian>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</Italian>
+        <Spanish>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DURAL</Tag>
+        <English>The people of Dural greet you - may we learn much from each other.</English>
+        <French>The people of Dural greet you - may we learn much from each other</French>
+        <German>Das Volk der Dural gr&#252;ßt Euch - m&#246;gen wir viel voneinander lernen.</German>
+        <Italian>The people of Dural greet you - may we learn much from each other</Italian>
+        <Spanish>The people of Dural greet you - may we learn much from each other</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DURAL</Tag>
+        <English>The path is chosen. We have nothing to discuss.</English>
+        <French>The path is chosen. We have nothing to discuss.</French>
+        <German>Der Weg ist beschlossen. Wir haben nichts zu besprechen.</German>
+        <Italian>The path is chosen. We have nothing to discuss.</Italian>
+        <Spanish>The path is chosen. We have nothing to discuss.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_PEACE_LEADER_DURAL</Tag>
+        <English>I am glad that we shall live in peace.</English>
+        <French>I am glad that we shall live in peace.</French>
+        <German>Ich bin erfreut, mit Euch in Frieden zu leben.</German>
+        <Italian>I am glad that we shall live in peace.</Italian>
+        <Spanish>I am glad that we shall live in peace.</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>AI_DIPLO_NO_PEACE_LEADER_DURAL</Tag>
+        <English>Our proud warriors yet seek greater glories - who am I to stay their hand?</English>
+        <French>Our proud warriors yet seek greater glories - who am I to stay their hand?</French>
+        <German>Unsere stolzen Krieger gieren nach weiteren Ruhmestaten - wer bin ich, als dass ich sie aufhielte?</German>
+        <Italian>Our proud warriors yet seek greater glories - who am I to stay their hand?</Italian>
+        <Spanish>Our proud warriors yet seek greater glories - who am I to stay their hand?</Spanish>
+    </TEXT>   
+     <TEXT>
+        <Tag>AI_DIPLO_OFFER_PEACE_LEADER_DURAL</Tag>
+        <English>Let us end this bloodshed and rebuild in peace.</English>
+        <French>Let us end this bloodshed and rebuild in peace.</French>
+        <German>Lasst uns dieses sinnlose Gemetzel beenden und in Frieden neu beginnen.</German>
+        <Italian>Let us end this bloodshed and rebuild in peace.</Italian>
+        <Spanish>Let us end this bloodshed and rebuild in peace.</Spanish>
+    </TEXT>
+     <TEXT>
+        <Tag>AI_DIPLO_ACCEPT_LEADER_DANNMOS  </Tag>
+        <English>I have listened and I like what I have heard.</English>
+        <French>I have listened and I like what I have heard.</French>
+        <German>Ich habe Euren Worten gelauscht, und sie haben mich erfreut.</German>
+        <Italian>I have listened and I like what I have heard.</Italian>
+        <Spanish>I have listened and I like what I have heard.</Spanish>
+    </TEXT>    
+     <TEXT>
+        <Tag>AI_DIPLO_REJECT_LEADER_DURAL</Tag>
+        <English>I do not see the wisdom in your proposal.</English>
+        <French>I do not see the wisdom in your proposal.</French>
+        <German>Ich vermisse Weisheit in Eurem Vorschlag.</German>
+        <Italian>I do not see the wisdom in your proposal.</Italian>
+        <Spanish>I do not see the wisdom in your proposal.</Spanish>
+    </TEXT>    
+     <TEXT>
+        <Tag>AI_DIPLO_THANKS_LEADER_DURAL</Tag>
+        <English>Your words are wise.</English>
+        <French>Your words are wise.</French>
+        <German>Eure Worte sind weise.</German>
+        <Italian>Your words are wise.</Italian>
+        <Spanish>Your words are wise.</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_EMPYREAN</Tag>
+        <English>Student of the Emyprean</English>
+        <French>Student of the Emyprean</French>
+        <German>Novize des Emyprions</German>
+        <Italian>Student of the Emyprean</Italian>
+        <Spanish>Student of the Emyprean</Spanish>
+    </TEXT>      
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_THE_ORDER</Tag>
+        <English>Student of the Order</English>
+        <French>Student of the Order</French>
+        <German>Novize der Ordnung</German>
+        <Italian>Student of the Order</Italian>
+        <Spanish>Student of the Order</Spanish>
+    </TEXT>   
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_THE_ASHEN_VEIL</Tag>
+        <English>Student of the Veil</English>
+        <French>Student of the Veil</French>
+        <German>Novize des Schleiers</German>
+        <Italian>Student of the Veil</Italian>
+        <Spanish>Student of the Veil</Spanish>
+    </TEXT>   
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_OCTOPUS_OVERLORDS</Tag>
+        <English>Student of the Overlords</English>
+        <French>Student of the Overlords</French>
+        <German>Novize der Tiefe</German>
+        <Italian>Student of the Overlords</Italian>
+        <Spanish>Student of the Overlords</Spanish>
+    </TEXT>   
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_FELLOWSHIP_OF_LEAVES</Tag>
+        <English>Student of the Leaves</English>
+        <French>Student of the Leaves</French>
+        <German>Novize des Laubes</German>
+        <Italian>Student of the Leaves</Italian>
+        <Spanish>Student of the Leaves</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_STUDENT_RUNES_OF_KILMORPH</Tag>
+        <English>Student of the Kilmorph</English>
+        <French>Student of the Kilmorph</French>
+        <German>Novize von Kilmorph</German>
+        <Italian>Student of the Kilmorph</Italian>
+        <Spanish>Student of the Kilmorph</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_DANNMOS</Tag>
+        <English>Why do you seek to destroy that which we have created? Are you so jealous?</English>
+        <French>Why do you seek to destroy that which we have created? Are you so jealous?</French>
+        <German>Warum sucht Ihr die Zerst&#246;rung dessen, was wir erschufen? Seid Ihr so neidisch?</German>
+        <Italian>Why do you seek to destroy that which we have created? Are you so jealous?</Italian>
+        <Spanish>Why do you seek to destroy that which we have created? Are you so jealous?</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY</Tag>
+        <English>College of Theology</English>
+        <French>College of Theology</French>
+        <German>College of Theology</German>
+        <Italian>College of Theology</Italian>
+        <Spanish>College of Theology</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY_PEDIA</Tag>
+        <English>"The study of religion leads us to truths among the mysteries and mythology. These truths allow us to grow."[PARAGRAPH:1]-- Jonas Narr, Dural Scholar</English>
+        <French>"The study of religion leads us to truths among the mysteries and mythology. These truths allow us to grow."[PARAGRAPH:1]-- Jonas Narr, Dural Scholar</French>
+        <German>"The study of religion leads us to truths among the mysteries and mythology. These truths allow us to grow."[PARAGRAPH:1]-- Jonas Narr, Dural Scholar</German>
+        <Italian>"The study of religion leads us to truths among the mysteries and mythology. These truths allow us to grow."[PARAGRAPH:1]-- Jonas Narr, Dural Scholar</Italian>
+        <Spanish>"The study of religion leads us to truths among the mysteries and mythology. These truths allow us to grow."[PARAGRAPH:1]-- Jonas Narr, Dural Scholar</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COLLEGE_OF_THEOLOGY_STRATEGY</Tag>
+        <English>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</English>
+        <French>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</French>
+        <German>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</German>
+        <Italian>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</Italian>
+        <Spanish>The College of Theology increases the rate at which Great Prophets are born slightly, as well as allowing a Sage and a Priest specialist. It is mostly useful however as a base to build several school buildings, based on the religions present in your city. These each provide +15% research rate and a unique benefit to the city, related to the nature of the religion. The effects of each are cumulative.[PARAGRAPH:1][NEWLINE]School of Junil - Reduced Maintenance and Crime[NEWLINE]School of Lugus - Free Specialist in city[NEWLINE]School of Kilmorph - Increased gold production[NEWLINE]School of Cernunnos - Extra Health in city[NEWLINE]School of Esus - Extra Raw Commerce[NEWLINE]School of the Dreamer - Improved sea-plot yields (Food/Commerce)[NEWLINE]School of the Fallen One - Reduced War Weariness (increased for enemies), Free Priest Specialist</Spanish>
+    </TEXT>     
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_JUNIL</Tag>
+        <English>School of Junil</English>
+        <French>School of Junil</French>
+        <German>School of Junil</German>
+        <Italian>School of Junil</Italian>
+        <Spanish>School of Junil</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_KILMORPH</Tag>
+        <English>School of Kilmorph</English>
+        <French>School of Kilmorph</French>
+        <German>School of Kilmorph</German>
+        <Italian>School of Kilmorph</Italian>
+        <Spanish>School of Kilmorph</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_LUGUS</Tag>
+        <English>School of Lugus</English>
+        <French>School of Lugus</French>
+        <German>School of Lugus</German>
+        <Italian>School of Lugus</Italian>
+        <Spanish>School of Lugus</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_CERNUNNOS</Tag>
+        <English>School of Cernunnos</English>
+        <French>School of Cernunnos</French>
+        <German>School of Cernunnos</German>
+        <Italian>School of Cernunnos</Italian>
+        <Spanish>School of Cernunnos</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_ESUS</Tag>
+        <English>School of Esus</English>
+        <French>School of Esus</French>
+        <German>School of Esus</German>
+        <Italian>School of Esus</Italian>
+        <Spanish>School of Esus</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_THE_DREAMER</Tag>
+        <English>School of the Dreamer</English>
+        <French>School of the Dreamer</French>
+        <German>School of the Dreamer</German>
+        <Italian>School of the Dreamer</Italian>
+        <Spanish>School of the Dreamer</Spanish>
+    </TEXT> 
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCHOOL_OF_THE_FALLEN_ONE</Tag>
+        <English>School of the Fallen One</English>
+        <French>School of the Fallen One</French>
+        <German>School of the Fallen One</German>
+        <Italian>School of the Fallen One</Italian>
+        <Spanish>School of the Fallen One</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MONUMENT_DURAL</Tag>
+        <English>Inspiring Statue</English>
+        <French>Inspiring Statue</French>
+        <German>Inspiring Statue</German>
+        <Italian>Inspiring Statue</Italian>
+        <Spanish>Inspiring Statue</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LIBRARY_DURAL</Tag>
+        <English>Hall of Tomes</English>
+        <French>Hall of Tomes</French>
+        <German>Hall of Tomes</German>
+        <Italian>Hall of Tomes</Italian>
+        <Spanish>Hall of Tomes</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MARKET_DURAL</Tag>
+        <English>Fayre</English>
+        <French>Fayre</French>
+        <German>Fayre</German>
+        <Italian>Fayre</Italian>
+        <Spanish>Fayre</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CARNIVAL_DURAL</Tag>
+        <English>Exposition</English>
+        <French>Exposition</French>
+        <German>Exposition</German>
+        <Italian>Exposition</Italian>
+        <Spanish>Exposition</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COURTHOUSE_DURAL</Tag>
+        <English>Great Hall</English>
+        <French>Great Hall</French>
+        <German>Great Hall</German>
+        <Italian>Great Hall</Italian>
+        <Spanish>Great Hall</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ELDER_COUNCIL_DURAL</Tag>
+        <English>Council</English>
+        <French>Council</French>
+        <German>Council</German>
+        <Italian>Council</Italian>
+        <Spanish>Council</Spanish>
+    </TEXT>    
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_HERBALIST_DURAL</Tag>
+        <English>Apothecary</English>
+        <French>Apothecary</French>
+        <German>Apothecary</German>
+        <Italian>Apothecary</Italian>
+        <Spanish>Apothecary</Spanish>
+    </TEXT> 
+</Civ4GameText>

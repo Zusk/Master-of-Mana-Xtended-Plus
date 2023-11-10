@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Player Color -->
+<Civ4PlayerColorInfos xmlns="x-schema:XROSTER_CIV4InterfaceSchema.xml">
+	<PlayerColorInfos>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CALABIM</Type>
+			<ColorTypePrimary>COLOR_PLAYER_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>		
+			<Type>PLAYERCOLOR_ARISTRAKH</Type>
+			<ColorTypePrimary>COLOR_PLAYER_ARISTRAKH_DARK_RED</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_ARISTRAKH_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_ARISTRAKH_DARK_RED</TextColorType>
+		</PlayerColorInfo>		
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_FAERIES</Type>
+			<ColorTypePrimary>COLOR_PLAYER_FAERIES</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_GREEN_TEXT</TextColorType>
+		</PlayerColorInfo>			
+		<PlayerColorInfo>		
+			<Type>PLAYERCOLOR_SCIONS</Type>
+			<ColorTypePrimary>COLOR_PLAYER_SCION_GOLD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_SCION_GOLD</TextColorType>
+		</PlayerColorInfo>		
+	</PlayerColorInfos>
+</Civ4PlayerColorInfos>

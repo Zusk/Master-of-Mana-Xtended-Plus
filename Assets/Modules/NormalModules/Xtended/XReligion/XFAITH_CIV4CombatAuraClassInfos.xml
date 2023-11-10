@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:XFAITH_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_ARCANE_AURA</Type>
+			<Description>TXT_KEY_COMBATAURACLASS_ARCANE_AURA</Description>
+            <Button>Art/Interface/Buttons/Promotions/Channeling1.dds</Button>	<!-- need new button -->			
+		</CombatAuraClassInfo>						
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_DIVINE_AURA</Type>
+			<Description>TXT_KEY_COMBATAURACLASS_DIVINE_AURA</Description>
+            <Button>Art/Interface/Buttons/Promotions/Divine.dds</Button>	<!-- need new button -->			
+		</CombatAuraClassInfo>								
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

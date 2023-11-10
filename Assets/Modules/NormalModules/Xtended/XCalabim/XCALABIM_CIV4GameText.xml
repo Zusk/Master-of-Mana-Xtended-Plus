@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VAMPIRE_CHILDE</Tag>
+        <English>The Childe</English>
+		<French>The Childe</French>
+		<German>The Childe</German>
+		<Italian>The Childe</Italian>
+		<Spanish>The Childe</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLACK_COURT</Tag>
+        <English>Black Court</English>
+		<French>Black Court</French>
+		<German>Black Court</German>
+		<Italian>Black Court</Italian>
+		<Spanish>Black Court</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEFILE_LIFE</Tag>
+        <English>Defile Life</English>
+		<French>Defile Life</French>
+		<German>Defile Life</German>
+		<Italian>Defile Life</Italian>
+		<Spanish>Defile Life</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEFILED</Tag>
+        <English>Defiled</English>
+		<French>Defiled</French>
+		<German>Defiled</German>
+		<Italian>Defiled</Italian>
+		<Spanish>Defiled</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PACIFY_UNDEAD</Tag>
+        <English>Pacify Undead</English>
+		<French>Pacify Undead</French>
+		<German>Pacify Undead</German>
+		<Italian>Pacify Undead</Italian>
+		<Spanish>Pacify Undead</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BLACK_LORD</Tag>
+        <English>Black Lord</English>
+		<French>Black Lord</French>
+		<German>Black Lord</German>
+		<Italian>Black Lord</Italian>
+		<Spanish>Black Lord</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEATH_EMBRACE</Tag>
+        <English>Death Embrace</English>
+		<French>Death Embrace</French>
+		<German>Death Embrace</German>
+		<Italian>Death Embrace</Italian>
+		<Spanish>Death Embrace</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DEATH_KISS</Tag>
+        <English>Death Kissed</English>
+		<French>Death Kissed</French>
+		<German>Death Kissed</German>
+		<Italian>Death Kissed</Italian>
+		<Spanish>Death Kissed</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOUL_TRAP</Tag>
+        <English>Soul Trap</English>
+		<French>Soul Trap</French>
+		<German>Soul Trap</German>
+		<Italian>Soul Trap</Italian>
+		<Spanish>Soul Trap</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOUL_HARVEST</Tag>
+        <English>Soul Harvest</English>
+		<French>Soul Harvest</French>
+		<German>Soul Harvest</German>
+		<Italian>Soul Harvest</Italian>
+		<Spanish>Soul Harvest</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RED_COURT</Tag>
+        <English>Red Court</English>
+		<French>Red Court</French>
+		<German>Red Court</German>
+		<Italian>Red Court</Italian>
+		<Spanish>Red Court</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WARRIOR_RITE</Tag>
+        <English>Warrior Rite</English>
+		<French>Warrior Rite</French>
+		<German>Warrior Rite</German>
+		<Italian>Warrior Rite</Italian>
+		<Spanish>Warrior Rite</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BATTLE_LUST</Tag>
+        <English>Battle Lust</English>
+		<French>Battle Lust</French>
+		<German>Battle Lust</German>
+		<Italian>Battle Lust</Italian>
+		<Spanish>Battle Lust</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ETHEREAL_BODY</Tag>
+        <English>Ethereal Body</English>
+		<French>Ethereal Body</French>
+		<German>Ethereal Body</German>
+		<Italian>Ethereal Body</Italian>
+		<Spanish>Ethereal Body</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CHAMPION_OF_CHAOS</Tag>
+        <English>Champion of Chaos</English>
+		<French>Champion of Chaos</French>
+		<German>Champion of Chaos</German>
+		<Italian>Champion of Chaos</Italian>
+		<Spanish>Champion of Chaos</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RED_DUKE</Tag>
+        <English>Red Duke</English>
+		<French>Red Duke</French>
+		<German>Red Duke</German>
+		<Italian>Red Duke</Italian>
+		<Spanish>Red Duke</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WHITE_COURT</Tag>
+        <English>White Court</English>
+		<French>White Court</French>
+		<German>White Court</German>
+		<Italian>White Court</Italian>
+		<Spanish>White Court</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VAMPIRE_WILLPOWER</Tag>
+        <English>Vampiric Willpower</English>
+		<French>Vampiric Willpower</French>
+		<German>Vampiric Willpower</German>
+		<Italian>Vampiric Willpower</Italian>
+		<Spanish>Vampiric Willpower</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VAMPIRE_MEDITATION</Tag>
+        <English>Vampiric Meditation</English>
+		<French>Vampiric Meditation</French>
+		<German>Vampiric Meditation</German>
+		<Italian>Vampiric Meditation</Italian>
+		<Spanish>Vampiric Meditation</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MAJESTIC_PRESENCE</Tag>
+        <English>Majestic Presence</English>
+		<French>Majestic Presence</French>
+		<German>Majestic Presence</German>
+		<Italian>Majestic Presence</Italian>
+		<Spanish>Majestic Presence</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VAMPIRE_CHAOS</Tag>
+        <English>Cloud of Confusion</English>
+		<French>Cloud of Confusion</French>
+		<German>Cloud of Confusion</German>
+		<Italian>Cloud of Confusion</Italian>
+		<Spanish>Cloud of Confusion</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WILLPOWER_MASTERY</Tag>
+        <English>Willpower Mastery</English>
+		<French>Willpower Mastery</French>
+		<German>Willpower Mastery</German>
+		<Italian>Willpower Mastery</Italian>
+		<Spanish>Willpower Mastery</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WHITE_PRINCE</Tag>
+        <English>White Prince</English>
+		<French>White Prince</French>
+		<German>White Prince</German>
+		<Italian>White Prince</Italian>
+		<Spanish>White Prince</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_PACIFY_UNDEAD</Tag>
+        <English>Pacify Undead</English>
+		<French>Pacify Undead</French>
+		<German>Pacify Undead</German>
+		<Italian>Pacify Undead</Italian>
+		<Spanish>Pacify Undead</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SUMMON_SPECTRE</Tag>
+        <English>Summon Spectre</English>
+		<French>Summon Spectre</French>
+		<German>Summon Spectre</German>
+		<Italian>Summon Spectre</Italian>
+		<Spanish>Summon Spectre</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_VAMPIRE_CHAOS</Tag>
+        <English>Mind Ripple</English>
+		<French>Mind Ripple</French>
+		<German>Mind Ripple</German>
+		<Italian>Mind Ripple</Italian>
+		<Spanish>Mind Ripple</Spanish>				
+    </TEXT>   			
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_BEND_WILL</Tag>
+        <English>Bend Will</English>
+		<French>Bend Will</French>
+		<German>Bend Will</German>
+		<Italian>Bend Will</Italian>
+		<Spanish>Bend Will</Spanish>				
+    </TEXT>   			
+</Civ4GameText>

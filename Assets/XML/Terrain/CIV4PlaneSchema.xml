@@ -1,0 +1,52 @@
+<!-- Plane Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Type" content="textOnly"/>	
+	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="FeatureType" content="textOnly"/>	
+	<ElementType name="BonusType" content="textOnly"/>		
+	<ElementType name="TerrainClassType" content="textOnly"/>
+	<ElementType name="FeatureClassType" content="textOnly"/>	
+	<ElementType name="bReplaceWaterWithPeaks" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoRiver" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bBonusSpawn" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodies" content="textOnly" dt:type="boolean"/>		
+	<ElementType name="Feature" content="eltOnly">
+		<element type="FeatureClassType" minOccurs="1" maxOccurs="1"/>	
+		<element type="FeatureType" minOccurs="1" maxOccurs="1"/>
+	</ElementType>		
+	<ElementType name="Features" content="eltOnly">
+		<element type="Feature" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+	<ElementType name="Terrain" content="eltOnly">
+		<element type="TerrainClassType" minOccurs="1" maxOccurs="1"/>	
+		<element type="TerrainType" minOccurs="1" maxOccurs="1"/>
+	</ElementType>		
+	<ElementType name="Terrains" content="eltOnly">
+		<element type="Terrain" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="BonusSpawn" content="eltOnly">
+		<element type="BonusType" minOccurs="1" maxOccurs="1"/>	
+		<element type="bBonusSpawn" minOccurs="1" maxOccurs="1"/>
+	</ElementType>			
+	<ElementType name="BonusesSpawn" content="eltOnly">
+		<element type="BonusSpawn" minOccurs="0" maxOccurs="*"/>
+	</ElementType>					
+	<ElementType name="PlaneInfo" content="eltOnly" order="many">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Terrains"/>
+		<element type="bNoRiver"/>
+		<element type="bReplaceWaterWithPeaks"/>		
+		<element type="BonusesSpawn"/>
+		<element type="bGoodies"/>				
+	</ElementType>
+	<ElementType name="PlaneInfos" content="eltOnly">
+		<element type="PlaneInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4PlaneInfos" content="eltOnly">
+		<element type="PlaneInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+</Schema>

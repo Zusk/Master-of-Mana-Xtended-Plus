@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:XHERO_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_BLACK_LORD</Type>
+			<Description>TXT_KEY_PROMOTION_BLACK_LORD</Description>
+			<Button>Modules/NormalModules/Xtended/XCalabim/Arts/Buttons/BlackLord.dds</Button>
+		</CombatAuraClassInfo>		
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

@@ -1,0 +1,130 @@
+changelog 5.2
+- [AMURITES] Cave of Ancestors gives +2 xp/mana node for arcane units built in the city.
+- [AMURITES] Arcane Lacuna gives +2 xp/mana node for all arcane units.
+- [ARISTARKH] Nexus of Knowledge is unlocked at Writing.
+- [AUSTRIN] Theme: wanderers, indeendents.
+	- [AUSTRIN] Wanderer trait now gives Mobility 1 and Sentry 1 to recon units. It also increases the chance for recon units to get good result when exploring dungeons.
+	- [AUSTRIN] Austrin Settlement: -50% maintenance, +2 trade routes.
+	- [AUSTRIN] Starts with Exploration and Cartography.
+	- [AUSTRIN] Deidra now Trader/Expansive (no longer Adaptive).
+	- [AUSTRIN] Sorah and Ecks now Defender (temporary)/Exotic/Adaptive (lost Emergent).
+	- [AUSTRIN] Austrin cities has 6 population cap, capital has 8 population cap.
+- [CALABIM] Changed Burning Blood to give Enraged after combat (20% chance) instead of each turn.
+- [DURAL] Theme: scholars, agnostics, builder.
+	- [DURAL] Added Archer to Dural.
+	- [DURAL] City screen is no longer pink.
+	- [DURAL] Dural gains Agnostic civ trait.
+	- [DURAL] Dural automatically gets all religions' first tier tech upon obtaining Priest Chapter.
+	- [DURAL] Lost Museum. College is renamed as Learning Hall and now Pagan Temple UB for Dural.
+	- [DURAL] College of Theology is unlocked at Priest Chapter.
+	- [DURAL] Various religious schools are unlocked at Priesthood, except Esus' unlocked at Cult of Esus. Their benefits are reduced.
+	- [DURAL] Students require their respective school. All students have 4 str.
+	- [DURAL] Professor requires College of Theology and Dogma, has Assimilate Mind (science after combat), +2 Mind mana affinity.
+	- [DURAL] Courthouse UB gives -20% maintenance and +2 science.
+- [ELOHIM] Corlindale's Peace is non-repeatable if Corlindale is saved by Angelic Charm (or any kind of immortality).
+- [ELOHIM] After casting Peace and survive, Corlindale will automatically pacify any hostile units in 1-tile radius.
+- [ELOHIM] Meelais now Scientific/Devout instead of Scientific/Emergent, to focus on Empyrean's scientific side.
+- [ELOHIM] Oracle of Sirona gives +10% GPP instead of +25%
+- [GRIGORI] Cassiel is now Philosophical/Organised (temporary)/Adaptive (instead Philosophical/Industrious (temporary)/Adaptive).
+- [ILLIANS] Auric is now Aggressive, instead of Defender.
+- [JOTNAR] Theme: giants, slow growth but physically more powerful.
+	- [JOTNAR] Giantkin trait makes citizen consume extra +2 food/population (total 5 food/population).
+	- [JOTNAR] Staedding makes cities have 3 radius, like Kuriotates' sprawling.
+	- [JOTNAR] Staedding gives +1 hammer per city cultural level.
+	- [JOTNAR] Great Wall requires 200 hammer and 500 stones. 
+	- [JOTNAR] House of the Ancestors requires 100 hammer and 200 lumber.
+	- [JOTNAR] Jotnar's units are upgradeable and most do not gain increase strength from tech to reflect their nature (growing older).
+	- [JOTNAR] Mother Enningas's trait is Philosophical/Agricultural (instead of Philosophical/Financial).
+- [LUCHUIRP] Mountain Ranger and Dwarven Shadow can pass through mountains.
+- [KHAZAD] Myconid, Mountain Ranger and Dwarven Shadow can pass through mountains.
+- [KHAZAD] Myconid Caverns gives +2 food and +1 food/+1 commerce for Mushroom Gardens. No longer gives Toad.
+- [MALAKIM] Varn trait is now Financial (temporary)/Faithful/Adaptive (instead Philosophical (temporary)/Faithful/Adaptive).
+- [MALAKIM] Religious Fervor creates priests and gives +2 xp/city with state religion to them.
+- [MAZATL] City screen is no longer pink.
+- [SCIONS] Removed Archer from Scions.
+- [SHEAIM] Four horsemen of Apocalypse are spawned as Devil (instead of Barbarians) and at peace with Sheaim (and Infernals).
+- [SHEAIM] Sheaim can cast ritual to summon Devils (independent barbarian units at peace with them) at Infernal Pact.
+- [SHEAIM] Fixed Queensguard sound bug.
+- [SHEAIM] Queensguard lost Magic Resistance. Sheaim has enough early game power without it now.
+- [SHEAIM] Favourite improvement is Plantation and gets +0.50 mana from Plantations.
+- [SHEAIM] Averax now Slavemaster/Sacred Warrior and focus on disciple units.
+- [SHEAIM] Gosea now Loremaster/Mastery of Fire Magic to give her more focus on arcane units/spell research.
+- [SHEAIM] Malchavic now Scientific/Magic Resistance for stronger early game (esp. against skeletons).
+- [BUILDING] Construction Yard gives +1 Engineer slot (instead of +2), cost 100 stone (instead of 300 stone).
+- [BUILDING] Public School is unlocked at Writing, requires Salon. It gives +1 science/population, +1 Sage slot.
+- [BUILDING] Archive is unlocked at Philosophy, requires Salon. It gives +50% science, +1 Sage slot.
+- [BUILDING] University is unlocked at Philosophy, requires Public School. It gives +5 science/city cultural level, +3 Sage slots.
+- [CIVIC] Harvesting gives +2 herbs from Plantations.
+- [CIVIC] Liberty allows unlimited specialists of all kind (including Priests) and no maintenance penalty.
+- [GAME] Add Hero promotion and various hostile auras to Appocalypse horsemen.
+- [GAME] Great Prophet's Divine Intervention gives 1000 Faith (instead of 1500).
+- [GAME] Great Prophet's Pilgrimage gives 2000 Faith (instead of 2500).
+- [GAME] Reduce yield from lair exploration to 1/3 of previous value.
+- [GAME] GM's discover farm resource can be used in Grass and Fertile Grass.
+- [GAME] Reduces Hell Terrain spread rate to 10% of AC per tile.
+- [GAME] Reduces early techs a little bit.
+	- Military tier 2 techs from 1000 -> 800.
+	- Military tier 3 techs from 2500 -> 2000.
+	- Ancient Chants from 600 -> 400.
+	- Arcane Knowledge from 1000 -> 600.
+- [GEAR] Poisons (the gear) gets +2 Razorweed affinity; more reason to venture to the blasted hell terrains!
+- [GEAR] Poisons tech unlocks Unstable Brew (500 herbs); a fancy way to call a bomb, I know.
+- [GEAR] Tower Shield requires Defense discipline.
+- [GUILD] Magi's Circle VII Astral Mastery gives 100 xp to summon but no longer give discounts on summons and GEs.
+- [GUILD] Paladin is now 10/+6 holy.
+- [GUILD] Eidolon is now 5/+5 unholy/+5 fire +2 Chaos affinity.
+- [IMPROVEMENT] Pasture can be built in Plains and Field of Perdition tiles.
+- [IMPROVEMENT] Plantations can be built in Grass and Broken Land tiles.
+- [MAGIC] Damage and damage limit from Tier 1 and Tier 2 spells are reduced.
+- [MAGIC] Each school has secondary effect on their damage spells to compensate for the reduced damage.
+- [MAGIC] Reduced tech cost for Sorcery, making it faster to build Mage (and access Tier 2 spells).
+- [MAGIC] Fixed AIWeight for various dispellable promotions.
+- [MAGIC] Increased AIWeight for spells, making AI civs more incline to use spells.
+- [MAGIC] Life magic's Judgement now has tripled chance for massive damage.
+- [MAGIC] Nature magic gets Create Herbs at Gift of Nature.
+- [MAGIC] All Nature magic's "Create yield" GE cost 300 mana, create 100 (+50 per Nature Mana) yield (reduced from 200 (+60) yield).
+- [MAGIC] Gift of Nature cost 600 spell research (from 150).
+- [MAGIC] Nature magic's Raise Land is moved to Water magic.
+- [MAGIC] Mind school's Aura of Trust, Majesty and Tyranny give +4 diplomacy bonus to Good/Neutral/Evil leaders (it was +3).
+- [MAGIC] Fire magic lost Harvest Manasoul and gain Elemental Augmentation (
+- [MAGIC] Chaos magic's Twisted Terrain mana cost is reduced to 75.
+- [MAGIC] Chaos magic gets Frenzy hostile GE. Enemy units gain Fury (-2 first strike, -2 defensive strike, 5% chance to get Enraged from combat).
+- [MAGIC] Chaos magic's Vyrkul can cast Wonder (just for flavour). 
+- [MAGIC] Death magic's Necromancy gives Harvest Manasoul (+1 mana after combat) to combat aura.
+- [MAGIC] Death magic's Skeleton Warrior chance to create skeleton after combat is reduced to 20%. 
+- [PROMOTION] Fixed Bard promotion.
+- [PROMOTION] Fixed Gladiator promotion.
+- [PROMOTION] Blood Blade gains +5% heal after combat per Blood Blade level.
+- [PROMOTION] Disciple of Aeron lost +10% heal after combat, gain +20% Unholy Resistance.
+- [PROMOTION] Poison Master class gains chance to get Poison Bomb each turn.
+- [PROMOTION] Poison I gives +1 poison damage (instead of +2) and 20% Crippled to enemies.
+- [PROMOTION] Poison II gives +1 poison damage and 20% Crippled to enemies (instead of +33%).
+- [PROMOTION] Poison III gives +1 poison damage and 20% Crippled to enemies (instead of giving Poison Bomb promotion).
+- [PROMOTION] Blood Mage class no longer requires Blood Ritual spell research.
+- [PROMOTION] Added Dwarf Slaying, Frostling Slaying, Goblin Slaying, Lizardman Slaying to Vengeance discipline.
+- [RELIGION] Adjust damage and damage limit of miracles to mirror arcane spells.
+- [RELIGION] Temple of the Order gives -10% maintenance and +20 xp for Disciple units.
+- [RELIGION] Crown of Brilliance is moved to Order, renamed as Divine Purge. It damages units around the caster each turn, as long as the promotion is there.
+- [RELIGION] Light of Lugus now works in any city, not only other civ's capital.
+- [RELIGION] Revelation deals random damage Illusion in 3-tile radius. Cost 300 Faith, requires Channelling 2.
+- [RELIGION] Guidance of Lugus is moved down one tech to Sunlight Brilliance.
+- [RELIGION] FOL's Call to the Herd can be used in Plains and Sordid Fields.
+- [RELIGION] FOL's Song of Autumn gives +50% length Golden Age.
+- [RELIGION] AV's Inferno spell is moved to Infernal Possession (it targets *all* enemy units on a tile, so it's very powerful).
+- [RELIGION] AV's Rain of Fire terraform is moved to Infernal Pact (halved its effect and cost).
+- [TRAIT] Add Defender, Faithful and Raiders as selectable Adaptive traits.
+- [TRAIT] Create a set of duplicate Traits for Adaptive. This will fix trait boughts erased by Adaptive.
+- [TRAIT] Faithful gets Great Prophet whenever acquires religion-starting tech. The most obvious way is through Ancient Chants.
+- [TRAIT] Imperial requires no yield to build Constructin Yard and Command Post.
+- [TRAIT] Miner requires no yield to build Mining Guild, Shaft Mine and Deep Mine.
+- [TRAIT] Organized requires no yield to build Courthouse, Harbor and Lighthouse.
+- [TRAIT] Summoner reduces summon cost by 25% (it was 33%) and gives summoned unit +30 xp (also affect Sheaim's Planar Gate summons).
+- [TRAIT] Toleran is no longer can be bought.
+
+
+[BUGS!!!]
+- When terraforming, selecting a specific tile makes the spell cost no Faith (happens in FOL's Mystical Forest).
+- Using Adaptive: pick Arcane, queue various arcane buildings for no yield cost, then pick another trait. You will still build arcane buildings for free. Or, cancel them to get lots of yield. Solution: 
+- Ogres!
+- Build city should not require food on the tile?
+- Reduce yield and gold from pillage? 

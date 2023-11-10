@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BANISH_DEMONS</Tag>
+        <English>Banish Demons</English>
+		<French>Banish Demons</French>
+		<German>Dämonenbann</German>
+		<Italian>Banish Demons</Italian>
+		<Spanish>Banish Demons</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BASIC_ABJURATION_KNOWLEDGE</Tag>
+        <English>Basic Abjuration Knowledge</English>
+		<French>Basic Abjuration Knowledge</French>
+		<German>Grundsätzliches Aurawissen</German>
+		<Italian>Basic Abjuration Knowledge</Italian>
+		<Spanish>Basic Abjuration Knowledge</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_VIRTUE_I</Tag>
+        <English>Virtue I</English>
+		<French>Virtue I</French>
+		<German>Tugend I</German>
+		<Italian>Virtue I</Italian>
+		<Spanish>Virtue I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_VIRTUE_II</Tag>
+        <English>Virtue II</English>
+		<French>Virtue II</French>
+		<German>Tugend II</German>
+		<Italian>Virtue II</Italian>
+		<Spanish>Virtue II</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_LIFEWARD</Tag>
+        <English>Lifeward</English>
+		<French>Lifeward</French>
+		<German>Lebensschutz</German>
+		<Italian>Lifeward</Italian>
+		<Spanish>Lifeward</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CLEANSING</Tag>
+        <English>Cleansing</English>
+		<French>Cleansing</French>
+		<German>Reinigung</German>
+		<Italian>Cleansing</Italian>
+		<Spanish>Cleansing</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_REGENERATION</Tag>
+        <English>Regeneration</English>
+		<French>Regeneration</French>
+		<German>Regeneration</German>
+		<Italian>Regeneration</Italian>
+		<Spanish>Regeneration</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DIVINE_ABJURATION</Tag>
+        <English>Divine Abjuration</English>
+		<French>Divine Abjuration</French>
+		<German>Göttliche Aurakenntnis</German>
+		<Italian>Divine Abjuration</Italian>
+		<Spanish>Divine Abjuration</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FIRESHIELD</Tag>
+        <English>Fireshield</English>
+		<French>Fireshield</French>
+		<German>Feuerschild</German>
+		<Italian>Fireshield</Italian>
+		<Spanish>Fireshield</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FIREBLADE</Tag>
+        <English>Fireblade</English>
+		<French>Fireblade</French>
+		<German>Feuerklinge</German>
+		<Italian>Fireblade</Italian>
+		<Spanish>Fireblade</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EARTH_LORE</Tag>
+        <English>Earth Lore</English>
+		<French>Earth Lore</French>
+		<German>Erdenüberlieferung</German>
+		<Italian>Earth Lore</Italian>
+		<Spanish>Earth Lore</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_IRON_SKIN</Tag>
+        <English>Iron Skin</English>
+		<French>Iron Skin</French>
+		<German>Eisenhaut</German>
+		<Italian>Iron Skin</Italian>
+		<Spanish>Iron Skin</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WATER_MASTERY</Tag>
+        <English>Water Mastery</English>
+		<French>Water Mastery</French>
+		<German>Wassermeisterschaft</German>
+		<Italian>Water Mastery</Italian>
+		<Spanish>Water Mastery</Spanish>
+	</TEXT>	
+	<TEXT>
+        <Tag>TXT_KEY_TECH_AIR_MASTERY</Tag>
+        <English>Air Mastery</English>
+		<French>Air Mastery</French>
+		<German>Luftmeisterschaft</German>
+		<Italian>Air Mastery</Italian>
+		<Spanish>Air Mastery</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BLUR</Tag>
+        <English>Blur</English>
+		<French>Blur</French>
+		<German>Verschwimmen</German>
+		<Italian>Blur</Italian>
+		<Spanish>Blur</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FROST_ARMOR</Tag>
+        <English>Frost Armor</English>
+		<French>Frost Armor</French>
+		<German>Frostrüstung</German>
+		<Italian>Frost Armor</Italian>
+		<Spanish>Frost Armor</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CHAOS_CHANNELS</Tag>
+        <English>Chaos Channels</English>
+		<French>Chaos Channels</French>
+		<German>Chaoskanäle</German>
+		<Italian>Chaos Channels</Italian>
+		<Spanish>Chaos Channels</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BERSERK</Tag>
+        <English>Berserk</English>
+		<French>Berserk</French>
+		<German>Berserker</German>
+		<Italian>Berserk</Italian>
+		<Spanish>Berserk</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_IMMOLATION</Tag>
+        <English>Immolation</English>
+		<French>Immolation</French>
+		<German>Entzündung</German>
+		<Italian>Immolation</Italian>
+		<Spanish>Immolation</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_UNHOLY_ADDICTION</Tag>
+        <English>Unholy Addiction</English>
+		<French>Unholy Addiction</French>
+		<German>Unheilige Hingabe</German>
+		<Italian>Unholy Addiction</Italian>
+		<Spanish>Unholy Addiction</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DRAW_STRENGTH</Tag>
+        <English>Draw Strength</English>
+		<French>Draw Strength</French>
+		<German>Stärke entziehen</German>
+		<Italian>Draw Strength</Italian>
+		<Spanish>Draw Strength</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CURSED</Tag>
+        <English>Cursed</English>
+		<French>Cursed</French>
+		<German>Verfluchung</German>
+		<Italian>Cursed</Italian>
+		<Spanish>Cursed</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BLACKFIRE</Tag>
+        <English>Blackfire</English>
+		<French>Blackfire</French>
+		<German>Schwarzfeuer</German>
+		<Italian>Blackfire</Italian>
+		<Spanish>Blackfire</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CANNIBALIZE</Tag>
+        <English>Cannibalize</English>
+		<French>Cannibalize</French>
+		<German>Ausschlachten</German>
+		<Italian>Cannibalize</Italian>
+		<Spanish>Cannibalize</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TURN_UNDEAD</Tag>
+        <English>Turn Undead</English>
+		<French>Turn Undead</French>
+		<German>Untote vertreiben</German>
+		<Italian>Turn Undead</Italian>
+		<Spanish>Turn Undead</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DESTROY_UNDEAD</Tag>
+        <English>Destroy Undead</English>
+		<French>Destroy Undead</French>
+		<German>Untote zerstören</German>
+		<Italian>Destroy Undead</Italian>
+		<Spanish>Destroy Undead</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SUNLIGHT</Tag>
+        <English>Sunlight</English>
+		<French>Sunlight</French>
+		<German>Sonnenlicht</German>
+		<Italian>Sunlight</Italian>
+		<Spanish>Sunlight</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_GREATER_SUNLIGHT</Tag>
+        <English>Greater Sunlight</English>
+		<French>Greater Sunlight</French>
+		<German>Mächtiges Sonnenlicht</German>
+		<Italian>Greater Sunlight</Italian>
+		<Spanish>Greater Sunlight</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FIREBALL</Tag>
+        <English>Fireball</English>
+		<French>Fireball</French>
+		<German>Feuerball</German>
+		<Italian>Fireball</Italian>
+		<Spanish>Fireball</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FIREBALL_GREATER</Tag>
+        <English>Greater Fireball</English>
+		<French>Greater Fireball</French>
+		<German>Mächtiger Feuerball</German>
+		<Italian>Greater Fireball</Italian>
+		<Spanish>Greater Fireball</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_METEOR</Tag>
+        <English>Meteor</English>
+		<French>Meteor</French>
+		<German>Meteor</German>
+		<Italian>Meteor</Italian>
+		<Spanish>Meteor</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_METEOR_SWARM</Tag>
+        <English>Meteor Swarm</English>
+		<French>Meteor Swarm</French>
+		<German>Meteorschwarm</German>
+		<Italian>Meteor Swarm</Italian>
+		<Spanish>Meteor Swarm</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_LIGHTNING_SPARK</Tag>
+        <English>Lightning Spark</English>
+		<French>Lightning Spark</French>
+		<German>Blitzfunken</German>
+		<Italian>Lightning Spark</Italian>
+		<Spanish>Lightning Spark</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_MAELSTROM</Tag>
+        <English>Maelstrom</English>
+		<French>Maelstrom</French>
+		<German>Mahlstrom</German>
+		<Italian>Maelstrom</Italian>
+		<Spanish>Maelstrom</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EMPOWERED_LIGHTNING</Tag>
+        <English>Empowered Lightning</English>
+		<French>Empowered Lightning</French>
+		<German>Aufgeladener Blitz</German>
+		<Italian>Empowered Lightning</Italian>
+		<Spanish>Empowered Lightning</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SLOW</Tag>
+        <English>Slow</English>
+		<French>Slow</French>
+		<German>Verlangsamen</German>
+		<Italian>Slow</Italian>
+		<Spanish>Slow</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BLIZZARD</Tag>
+        <English>Blizzard</English>
+		<French>Blizzard</French>
+		<German>Schneesturm</German>
+		<Italian>Blizzard</Italian>
+		<Spanish>Blizzard</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SNOWFALL</Tag>
+        <English>Snowfall</English>
+		<French>Snowfall</French>
+		<German>Schneefall</German>
+		<Italian>Snowfall</Italian>
+		<Spanish>Snowfall</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FLOATING_EYE</Tag>
+        <English>Floating Eye</English>
+		<French>Floating Eye</French>
+		<German>Schwebendes Auge</German>
+		<Italian>Floating Eye</Italian>
+		<Spanish>Floating Eye</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EXPLOSION</Tag>
+        <English>Explosion</English>
+		<French>Explosion</French>
+		<German>Explosion</German>
+		<Italian>Explosion</Italian>
+		<Spanish>Explosion</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CHAIN_EXPLOSION</Tag>
+        <English>Chain Explosion</English>
+		<French>Chain Explosion</French>
+		<German>Kettenexplosion</German>
+		<Italian>Chain Explosion</Italian>
+		<Spanish>Chain Explosion</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_NETHERBLADE</Tag>
+        <English>Netherblade</English>
+		<French>Netherblade</French>
+		<German>Netherklinge</German>
+		<Italian>Netherblade</Italian>
+		<Spanish>Netherblade</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_NETHERBLADE_GREATER</Tag>
+        <English>Netherblade Greater</English>
+		<French>Netherblade Greater</French>
+		<German>Mächtige Netherklinge</German>
+		<Italian>Netherblade Greater</Italian>
+		<Spanish>Netherblade Greater</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_RIFT</Tag>
+        <English>Rift</English>
+		<French>Rift</French>
+		<German>Riss</German>
+		<Italian>Rift</Italian>
+		<Spanish>Rift</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_RIFT_GREATER</Tag>
+        <English>Greater Rift</English>
+		<French>Greater Rift</French>
+		<German>Gewaltiger Riss</German>
+		<Italian>Greater Rift</Italian>
+		<Spanish>Greater Rift</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BOILING_BLOOD</Tag>
+        <English>Boiling Blood</English>
+		<French>Boiling Blood</French>
+		<German>Kochendes Blut</German>
+		<Italian>Boiling Blood</Italian>
+		<Spanish>Boiling Blood</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BANISH_ANGELS</Tag>
+        <English>Banish Angels</English>
+		<French>Banish Angels</French>
+		<German>Engelsbann</German>
+		<Italian>Banish Angels</Italian>
+		<Spanish>Banish Angels</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CURSE</Tag>
+        <English>Curse</English>
+		<French>Curse</French>
+		<German>Fluch</German>
+		<Italian>Curse</Italian>
+		<Spanish>Curse</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_CURSE</Tag>
+        <English>Dark Curse</English>
+		<French>Dark Curse</French>
+		<German>Dunkler Fluch</German>
+		<Italian>Dark Curse</Italian>
+		<Spanish>Dark Curse</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CHARM</Tag>
+        <English>Charm</English>
+		<French>Charm</French>
+		<German>Betören</German>
+		<Italian>Charm</Italian>
+		<Spanish>Charm</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DOMINATION</Tag>
+        <English>Domination</English>
+		<French>Domination</French>
+		<German>Beherrschung</German>
+		<Italian>Domination</Italian>
+		<Spanish>Domination</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTAL_ASSAULT1</Tag>
+        <English>Elemental Assault I</English>
+		<French>Elemental Assault I</French>
+		<German>Elementarer Angriff I</German>
+		<Italian>Elemental Assault I</Italian>
+		<Spanish>Elemental Assault I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTAL_ASSAULT2</Tag>
+        <English>Elemental Assault II</English>
+		<French>Elemental Assault II</French>
+		<German>Elementarer Angriff II</German>
+		<Italian>Elemental Assault II</Italian>
+		<Spanish>Elemental Assault II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WILLPOWER1</Tag>
+        <English>Willpower I</English>
+		<French>Willpower I</French>
+		<German>Willenskraft I</German>
+		<Italian>Willpower I</Italian>
+		<Spanish>Willpower I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WILLPOWER2</Tag>
+        <English>Willpower II</English>
+		<French>Willpower II</French>
+		<German>Willenskraft II</German>
+		<Italian>Willpower II</Italian>
+		<Spanish>Willpower II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_RESSURECTION</Tag>
+        <English>Ressurection</English>
+		<French>Ressurection</French>
+		<German>Auferstehung</German>
+		<Italian>Ressurection</Italian>
+		<Spanish>Ressurection</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_LICHDOM</Tag>
+        <English>Lichdom</English>
+		<French>Lichdom</French>
+		<German>Lichtum</German>
+		<Italian>Lichdom</Italian>
+		<Spanish>Lichdom</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EVOCATION_MASTERY</Tag>
+        <English>Evocation Mastery I</English>
+		<French>Evocation Mastery I</French>
+		<German>Austreibungsmeisterschaft I</German>
+		<Italian>Evocation Mastery I</Italian>
+		<Spanish>Evocation Mastery I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EVOCATION_MASTERY2</Tag>
+        <English>Evocation Mastery II</English>
+		<French>Evocation Mastery II</French>
+		<German>Austreibungsmeisterschaft I</German>
+		<Italian>Evocation Mastery II</Italian>
+		<Spanish>Evocation Mastery II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_HARMONY</Tag>
+        <English>Harmony I</English>
+		<French>Harmony I</French>
+		<German>Eintracht I</German>
+		<Italian>Harmony I</Italian>
+		<Spanish>Harmony I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_HARMONY2</Tag>
+        <English>Harmony II</English>
+		<French>Harmony II</French>
+		<German>Eintracht II</German>
+		<Italian>Harmony II</Italian>
+		<Spanish>Harmony II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FERTILITY</Tag>
+        <English>Fertility</English>
+		<French>Fertility</French>
+		<German>Fruchtbarkeit</German>
+		<Italian>Fertility</Italian>
+		<Spanish>Fertility</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_VIVID_REALM</Tag>
+        <English>Vivid Realm</English>
+		<French>Vivid Realm</French>
+		<German>Lebendiges Reich</German>
+		<Italian>Vivid Realm</Italian>
+		<Spanish>Vivid Realm</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ENCHANTED_ROADS</Tag>
+        <English>Enchanted Roads</English>
+		<French>Enchanted Roads</French>
+		<German>Verzauberte Straßen</German>
+		<Italian>Enchanted Roads</Italian>
+		<Spanish>Enchanted Roads</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_JUSTICE</Tag>
+        <English>Justice</English>
+		<French>Justice</French>
+		<German>Gerechtigkeit</German>
+		<Italian>Justice</Italian>
+		<Spanish>Justice</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_LAW_AND_ORDER</Tag>
+        <English>Law and Order</English>
+		<French>Law and Order</French>
+		<German>Gesetz und Ordnung</German>
+		<Italian>Law and Order</Italian>
+		<Spanish>Law and Order</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DIVINE_INTERVENTION</Tag>
+        <English>Prayer</English>
+		<French>Prayer</French>
+		<German>Göttliche Intervention</German>
+		<Italian>Prayer</Italian>
+		<Spanish>Prayer</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_HOPE</Tag>
+        <English>Hope</English>
+		<French>Hope</French>
+		<German>Hoffnung</German>
+		<Italian>Hope</Italian>
+		<Spanish>Hope</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TAMED_WILDERNESS</Tag>
+        <English>Tamed Wilderness</English>
+		<French>Tamed Wilderness</French>
+		<German>Gezähmte Wildnis</German>
+		<Italian>Tamed Wilderness</Italian>
+		<Spanish>Tamed Wilderness</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TAMED_WILDERNESS2</Tag>
+        <English>Tamed Wilderness II</English>
+		<French>Tamed Wilderness II</French>
+		<German>Gezähmte Wildnis II</German>
+		<Italian>Tamed Wilderness II</Italian>
+		<Spanish>Tamed Wilderness II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTAL_CONTROL</Tag>
+        <English>Control of the Elements</English>
+		<French>Control of the Elements</French>
+		<German>Kontrolle über die Elemente</German>
+		<Italian>Control of the Elements</Italian>
+		<Spanish>Control of the Elements</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTAL_CONTROL2</Tag>
+        <English>Control of the Elements II</English>
+		<French>Control of the Elements II</French>
+		<German>Kontrolle über die Elemente II</German>
+		<Italian>Control of the Elements II</Italian>
+		<Spanish>Control of the Elements II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WALL_OF_FIRE</Tag>
+        <English>Wall of Fire</English>
+		<French>Wall of Fire</French>
+		<German>Feuerwand</German>
+		<Italian>Wall of Fire</Italian>
+		<Spanish>Wall of Fire</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ACCELERATE</Tag>
+        <English>Accelerate</English>
+		<French>Accelerate</French>
+		<German>Beschleunigen</German>
+		<Italian>Accelerate</Italian>
+		<Spanish>Accelerate</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_RICHES_OF_THE_SEA</Tag>
+        <English>Riches of the Sea</English>
+		<French>Riches of the Sea</French>
+		<German>Reichtümer der See</German>
+		<Italian>Riches of the Sea</Italian>
+		<Spanish>Riches of the Sea</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CONTROL_OF_THE_MIND</Tag>
+        <English>Control of the Mind</English>
+		<French>Control of the Mind</French>
+		<German>Gedankenkontrolle</German>
+		<Italian>Control of the Mind</Italian>
+		<Spanish>Control of the Mind</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CONTROL_OF_THE_MIND2</Tag>
+        <English>Control of the Mind II</English>
+		<French>Control of the Mind II</French>
+		<German>Gedankenkontrolle II</German>
+		<Italian>Control of the Mind II</Italian>
+		<Spanish>Control of the Mind II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CONTROL_OF_THE_MIND3</Tag>
+        <English>Control of the Mind III</English>
+		<French>Control of the Mind III</French>
+		<German>Gedankenkontrolle III</German>
+		<Italian>Control of the Mind III</Italian>
+		<Spanish>Control of the Mind III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_CHAOS_RIFT</Tag>
+        <English>Chaos Rift</English>
+		<French>Chaos Rift</French>
+		<German>Riss des Chaos</German>
+		<Italian>Chaos Rift</Italian>
+		<Spanish>Chaos Rift</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_DREAMS</Tag>
+        <English>Dark Dreams</English>
+		<French>Dark Dreams</French>
+		<German>Dunkle Träume</German>
+		<Italian>Dark Dreams</Italian>
+		<Spanish>Dark Dreams</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_DREAMS2</Tag>
+        <English>Dark Dreams II</English>
+		<French>Dark Dreams II</French>
+		<German>Dunkle Träume II</German>
+		<Italian>Dark Dreams II</Italian>
+		<Spanish>Dark Dreams II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_DREAMS3</Tag>
+        <English>Dark Dreams III</English>
+		<French>Dark Dreams III</French>
+		<German>Dunkle Träume III</German>
+		<Italian>Dark Dreams III</Italian>
+		<Spanish>Dark Dreams III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FORBIDDEN_EXPERIMENTS</Tag>
+        <English>Forbidden Experiments</English>
+		<French>Forbidden Experiments</French>
+		<German>Verbotene Experimente</German>
+		<Italian>Forbidden Experiments</Italian>
+		<Spanish>Forbidden Experiments</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EMPOWERED_ENCHANTMENTS</Tag>
+        <English>Empowered Enchantments</English>
+		<French>Empowered Enchantments</French>
+		<German>Verstärkte Verzauberungen</German>
+		<Italian>Empowered Enchantments</Italian>
+		<Spanish>Empowered Enchantments</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EMPOWERED_ENCHANTMENTS2</Tag>
+        <English>Empowered Enchantments II</English>
+		<French>Empowered Enchantments II</French>
+		<German>Verstärkte Verzauberungen II</German>
+		<Italian>Empowered Enchantments II</Italian>
+		<Spanish>Empowered Enchantments II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ANGELS</Tag>
+        <English>Angels</English>
+		<French>Angels</French>
+		<German>Engel</German>
+		<Italian>Angels</Italian>
+		<Spanish>Angels</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ANGELS2</Tag>
+        <English>Angels II</English>
+		<French>Angels II</French>
+		<German>Engel II</German>
+		<Italian>Angels II</Italian>
+		<Spanish>Angels II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ANGELS3</Tag>
+        <English>Angels III</English>
+		<French>Angels III</French>
+		<German>Engel III</German>
+		<Italian>Angels III</Italian>
+		<Spanish>Angels III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_GUARDIAN_ANGEL</Tag>
+        <English>Guardian Angel</English>
+		<French>Guardian Angel</French>
+		<German>Schutzengel</German>
+		<Italian>Guardian Angel</Italian>
+		<Spanish>Guardian Angel</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TIGER</Tag>
+        <English>Tiger</English>
+		<French>Tiger</French>
+		<German>Tiger</German>
+		<Italian>Tiger</Italian>
+		<Spanish>Tiger</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SAND_LION</Tag>
+        <English>Sandlion</English>
+		<French>Sandlion</French>
+		<German>Sandlöwe</German>
+		<Italian>Sandlion</Italian>
+		<Spanish>Sandlion</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_AUREALIS</Tag>
+        <English>Aurealis</English>
+		<French>Aurealis</French>
+		<German>Aurealis</German>
+		<Italian>Aurealis</Italian>
+		<Spanish>Aurealis</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTALS</Tag>
+        <English>Elementals I</English>
+		<French>Elementals I</French>
+		<German>Elementare I</German>
+		<Italian>Elementals I</Italian>
+		<Spanish>Elementals I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTALS2</Tag>
+        <English>Elementals II</English>
+		<French>Elementals II</French>
+		<German>Elementare II</German>
+		<Italian>Elementals II</Italian>
+		<Spanish>Elementals II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ELEMENTALS3</Tag>
+        <English>Elementals III</English>
+		<French>Elementals III</French>
+		<German>Elementare III</German>
+		<Italian>Elementals III</Italian>
+		<Spanish>Elementals III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_AIR_ELEMENTAL</Tag>
+        <English>Air Elemental</English>
+		<French>Air Elemental</French>
+		<German>Lufteementar</German>
+		<Italian>Air Elemental</Italian>
+		<Spanish>Air Elemental</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WATER_ELEMENTAL</Tag>
+        <English>Water Elemental</English>
+		<French>Water Elemental</French>
+		<German>Wasserelementar</German>
+		<Italian>Water Elemental</Italian>
+		<Spanish>Water Elemental</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_CREATURES</Tag>
+        <English>Dark Creatures I</English>
+		<French>Dark Creatures I</French>
+		<German>Dunkle Kreaturen I</German>
+		<Italian>Dark Creatures I</Italian>
+		<Spanish>Dark Creatures I</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_CREATURES2</Tag>
+        <English>Dark Creatures II</English>
+		<French>Dark Creatures II</French>
+		<German>Dunkle Kreaturen II</German>
+		<Italian>Dark Creatures II</Italian>
+		<Spanish>Dark Creatures II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DARK_CREATURES3</Tag>
+        <English>Dark Creatures III</English>
+		<French>Dark Creatures III</French>
+		<German>Dunkle Kreaturen III</German>
+		<Italian>Dark Creatures III</Italian>
+		<Spanish>Dark Creatures III</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_MISTFORM</Tag>
+        <English>Mistform</English>
+		<French>Mistform</French>
+		<German>Nebelform</German>
+		<Italian>Mistform</Italian>
+		<Spanish>Mistform</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SKELETONS</Tag>
+        <English>Skeletons</English>
+		<French>Skeletons</French>
+		<German>Skelette</German>
+		<Italian>Skeletons</Italian>
+		<Spanish>Skeletons</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SPECTRE</Tag>
+        <English>Spectre</English>
+		<French>Spectre</French>
+		<German>Geist</German>
+		<Italian>Spectre</Italian>
+		<Spanish>Spectre</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_WRAITH</Tag>
+        <English>Wraith</English>
+		<French>Wraith</French>
+		<German>Gespenst</German>
+		<Italian>Wraith</Italian>
+		<Spanish>Wraith</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_GREATER_SUMMONING</Tag>
+        <English>Greater Summoning</English>
+		<French>Greater Summoning</French>
+		<German>Größere Beschwörung</German>
+		<Italian>Greater Summoning</Italian>
+		<Spanish>Greater Summoning</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SANCTIFY</Tag>
+        <English>Sanctify</English>
+		<French>Sanctify</French>
+		<German>Weihen</German>
+		<Italian>Sanctify</Italian>
+		<Spanish>Sanctify</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_GENESIS</Tag>
+        <English>Genesis</English>
+		<French>Genesis</French>
+		<German>Genesis</German>
+		<Italian>Genesis</Italian>
+		<Spanish>Genesis</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_SPAWN_RIVER</Tag>
+        <English>Create River</English>
+		<French>Create River</French>
+		<German>Fluß erschaffen</German>
+		<Italian>Create River</Italian>
+		<Spanish>Create River</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TEMPERATURE</Tag>
+        <English>Temperature</English>
+		<French>Temperature</French>
+		<German>Temperatur</German>
+		<Italian>Temperature</Italian>
+		<Spanish>Temperature</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_RAIN</Tag>
+        <English>Rain</English>
+		<French>Rain</French>
+		<German>Regen</German>
+		<Italian>Rain</Italian>
+		<Spanish>Rain</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ENLARGED_TRANSMUTATION</Tag>
+        <English>Enlarged Transmutation</English>
+		<French>Enlarged Transmutation</French>
+		<German>Vergrößerte Verwandlung</German>
+		<Italian>Enlarged Transmutation</Italian>
+		<Spanish>Enlarged Transmutation</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DROWN</Tag>
+        <English>Drown Land</English>
+		<French>Drown Land</French>
+		<German>Land überfluten</German>
+		<Italian>Drown Land</Italian>
+		<Spanish>Drown Land</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_GRAVITY</Tag>
+        <English>Gravity</English>
+		<French>Gravity</French>
+		<German>Schwerkraft</German>
+		<Italian>Gravity</Italian>
+		<Spanish>Gravity</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ENCHANTED_FORESTS</Tag>
+        <English>Enchanted Forests</English>
+		<French>Enchanted Forests</French>
+		<German>Verzauberte Wälder</German>
+		<Italian>Enchanted Forests</Italian>
+		<Spanish>Enchanted Forests</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EROSION</Tag>
+        <English>Erosion</English>
+		<French>Erosion</French>
+		<German>Erosion</German>
+		<Italian>Erosion</Italian>
+		<Spanish>Erosion</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_MOTHER_EARTH</Tag>
+        <English>Mother Earth</English>
+		<French>Mother Earth</French>
+		<German>Geheimnisse von Mutter Erde</German>
+		<Italian>Mother Earth</Italian>
+		<Spanish>Mother Earth</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_ENLARGED_TRANSMUTATION2</Tag>
+        <English>Enlarged Transmutation II</English>
+		<French>Enlarged Transmutation II</French>
+		<German>Vergrößerte Verwandlung II</German>
+		<Italian>Enlarged Transmutation II</Italian>
+		<Spanish>Enlarged Transmutation II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_BLIGHT</Tag>
+        <English>Blight</English>
+		<French>Blight</French>
+		<German>Fäule</German>
+		<Italian>Blight</Italian>
+		<Spanish>Blight</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DESERTIFICATION</Tag>
+        <English>Desertification</English>
+		<French>Desertification</French>
+		<German>Wüsten erschaffen</German>
+		<Italian>Desertification</Italian>
+		<Spanish>Desertification</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_DAMNED_LAND</Tag>
+        <English>Land of the Damned</English>
+		<French>Land of the Damned</French>
+		<German>Land der Verdammten</German>
+		<Italian>Land of the Damned</Italian>
+		<Spanish>Land of the Damned</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_FIRESTORM</Tag>
+        <English>Firestorm</English>
+		<French>Firestorm</French>
+		<German>Feuersturm</German>
+		<Italian>Firestorm</Italian>
+		<Spanish>Firestorm</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_EVOKE_VOLCANO</Tag>
+        <English>Evoke Volcano</English>
+		<French>Evoke Volcano</French>
+		<German>Vulkan erwecken</German>
+		<Italian>Evoke Volcano</Italian>
+		<Spanish>Evoke Volcano</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_HOSTILE_TERRAFORMING1</Tag>
+        <English>Hostile Terraforming</English>
+		<French>Hostile Terraforming</French>
+		<German>Feindselige Terraformung</German>
+		<Italian>Hostile Terraforming</Italian>
+		<Spanish>Hostile Terraforming</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_HOSTILE_TERRAFORMING2</Tag>
+        <English>Hostile Terraforming II</English>
+		<French>Hostile Terraforming II</French>
+		<German>Feindselige Terraformung II</German>
+		<Italian>Hostile Terraforming II</Italian>
+		<Spanish>Hostile Terraforming II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TRANSMUTATION_MASTERY</Tag>
+        <English>Transmutation Mastery</English>
+		<French>Transmutation Mastery</French>
+		<German>Verwandlungsmeisterschaft</German>
+		<Italian>Transmutation Mastery</Italian>
+		<Spanish>Transmutation Mastery</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_TRANSMUTATION_MASTERY2</Tag>
+        <English>Transmutation Mastery II</English>
+		<French>Transmutation Mastery II</French>
+		<German>Verwandlungsmeisterschaft II</German>
+		<Italian>Transmutation Mastery II</Italian>
+		<Spanish>Transmutation Mastery II</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_MANA_STORING2</Tag>
+        <English>Improved Mana Storing</English>
+		<French>Improved Mana Storing</French>
+		<German>Verbesserte Manaspeicherung</German>
+		<Italian>Improved Mana Storing</Italian>
+		<Spanish>Improved Mana Storing</Spanish>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TECH_MANA_STORING4</Tag>
+        <English>Improved Mana Storing</English>
+		<French>Improved Mana Storing</French>
+		<German>Verbesserte Manaspeicherung</German>
+		<Italian>Improved Mana Storing</Italian>
+		<Spanish>Improved Mana Storing</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLITZ_TEXT</Tag>
+		<English>[ICON_BULLET]Can Attack Multiple Times per Turn, but earn only 1/3 experience</English>
+		<French>[ICON_BULLET]Peut attaquer plusieurs fois par tour</French>
+		<German>[ICON_BULLET]Kann mehrmals pro Runde angreifen</German>
+		<Italian>[ICON_BULLET]Permette di attaccare pi&#249; volte durante lo stesso turno</Italian>
+		<Spanish>[ICON_BULLET]Puede atacar varias veces por turno</Spanish>
+	</TEXT>
+</Civ4GameText>

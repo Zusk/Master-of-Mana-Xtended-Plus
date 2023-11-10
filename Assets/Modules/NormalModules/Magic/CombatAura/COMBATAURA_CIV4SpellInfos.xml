@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:COMBATAURA_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_CHANNEL_COMBAT_AURA</Type>
+            <Description>TXT_KEY_SPELL_CHANNEL_COMBAT_AURA</Description>
+			<PromotionPrereq1>PROMOTION_SUMMON</PromotionPrereq1>
+            <bHasCasted>1</bHasCasted>
+			<bAllowAI>1</bAllowAI>
+			<iManaCost>10</iManaCost>
+			<AddPromotionType1>PROMOTION_CHANNEL_COMBAT_AURA</AddPromotionType1>
+            <Effect>EFFECT_SCORCH</Effect>
+            <Sound>EFFECT_SPELL1</Sound>
+            <Button>Art/Interface/Buttons/Promotions/channelaura.dds</Button>
+			<bNoInterruptUnitCycling>1</bNoInterruptUnitCycling>
+			<bBuffCasterOnly>1</bBuffCasterOnly>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

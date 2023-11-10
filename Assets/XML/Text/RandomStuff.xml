@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_AGRICULTURAL_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]New Cities start with 2 Population</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]New Cities start with 2 Population</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]New Cities start with 2 Population</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]New Cities start with 2 Population</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]New Cities start with 2 Population</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TRADER</Tag>
+        <English>Trader</English>
+        <French>Trader</French>
+        <German>Trader</German>
+        <Italian>Trader</Italian>
+        <Spanish>Comerciante</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TRADER_SHORT</Tag>
+        <English>Tra</English>
+        <French>Tra</French>
+        <German>Tra</German>
+        <Italian>Tra</Italian>
+        <Spanish>Com</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_MERCENARY</Tag>
+        <English>Mercenary</English>
+        <French>Mercenary</French>
+        <German>Mercenary</German>
+        <Italian>Mercenary</Italian>
+        <Spanish>
+			<Text>Mercenario:Mercenaria</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_MERCENARY_SHORT</Tag>
+        <English>Mer</English>
+        <French>Mer</French>
+        <German>Mer</German>
+        <Italian>Mer</Italian>
+        <Spanish>Mer</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SCIENTIFIC</Tag>
+        <English>Scientific</English>
+        <French>Scientific</French>
+        <German>Scientific</German>
+        <Italian>Scientific</Italian>
+        <Spanish>
+			<Text>Científico:Científica</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SCIENTIFIC_SHORT</Tag>
+        <English>Sci</English>
+        <French>Sci</French>
+        <German>Sci</German>
+        <Italian>Sci</Italian>
+        <Spanish>Ci</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SUNDERED_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Automatically converts to [COLOR_RED]Ashen Veil[COLOR_REVERT] when any player founds it[NEWLINE][SPACE][SPACE][ICON_BULLET][COLOR_RED]Ashen Veil[COLOR_REVERT] automatically spreads to half the owned cities when converted to it[NEWLINE][SPACE][SPACE][ICON_BULLET]Newly built or acquired cities automatically get [COLOR_RED]Ashen Veil[COLOR_REVERT] if it's State Religion</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Automatically converts to [COLOR_RED]Ashen Veil[COLOR_REVERT] when any player founds it[NEWLINE][SPACE][SPACE][ICON_BULLET][COLOR_RED]Ashen Veil[COLOR_REVERT] automatically spreads to half the owned cities when converted to it[NEWLINE][SPACE][SPACE][ICON_BULLET]Newly built or acquired cities automatically get [COLOR_RED]Ashen Veil[COLOR_REVERT] if it's State Religion</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Automatically converts to [COLOR_RED]Ashen Veil[COLOR_REVERT] when any player founds it[NEWLINE][SPACE][SPACE][ICON_BULLET][COLOR_RED]Ashen Veil[COLOR_REVERT] automatically spreads to half the owned cities when converted to it[NEWLINE][SPACE][SPACE][ICON_BULLET]Newly built or acquired cities automatically get [COLOR_RED]Ashen Veil[COLOR_REVERT] if it's State Religion</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Automatically converts to [COLOR_RED]Ashen Veil[COLOR_REVERT] when any player founds it[NEWLINE][SPACE][SPACE][ICON_BULLET][COLOR_RED]Ashen Veil[COLOR_REVERT] automatically spreads to half the owned cities when converted to it[NEWLINE][SPACE][SPACE][ICON_BULLET]Newly built or acquired cities automatically get [COLOR_RED]Ashen Veil[COLOR_REVERT] if it's State Religion</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Automatically converts to [COLOR_RED]Ashen Veil[COLOR_REVERT] when any player founds it[NEWLINE][SPACE][SPACE][ICON_BULLET][COLOR_RED]Ashen Veil[COLOR_REVERT] automatically spreads to half the owned cities when converted to it[NEWLINE][SPACE][SPACE][ICON_BULLET]Newly built or acquired cities automatically get [COLOR_RED]Ashen Veil[COLOR_REVERT] if it's State Religion</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_GOOD</Tag>
+        <English>%D1: "We share a good history."</English>
+        <French>%D1: "We share a good history."</French>
+        <German>%D1: "We share a good history."</German>
+        <Italian>%D1: "We share a good history."</Italian>
+        <Spanish>%D1: "Compartimos una buena historia."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_LEADER_RELATION_BAD</Tag>
+        <English>%D1: "We share a troubled past."</English>
+        <French>%D1: "We share a troubled past."</French>
+        <German>%D1: "We share a troubled past."</German>
+        <Italian>%D1: "We share a troubled past."</Italian>
+        <Spanish>%D1: "Compartimos un pasado turbulento."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_HATED_CIVIC</Tag>
+        <English>%D1: "Your government is despicable."</English>
+        <French>%D1: "Your government is despicable."</French>
+        <German>%D1: "Your government is despicable."</German>
+        <Italian>%D1: "Your government is despicable."</Italian>
+        <Spanish>%D1: "Tu Gobierno es despreciable."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HATED_CIVIC</Tag>
+        <English>Hated Civic:</English>
+        <French>Hated Civic:</French>
+        <German>Hated Civic:</German>
+        <Italian>Hated Civic:</Italian>
+        <Spanish>Principio Odiado:</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_TRADE_YIELD_MODIFIERS</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]%D1%%%F2_yield from [ICON_TRADE]</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]%D1%%%F2_yield from [ICON_TRADE]</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]%D1%%%F2_yield from [ICON_TRADE]</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]%D1%%%F2_yield from [ICON_TRADE]</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]%D1%%%F2_yield from [ICON_TRADE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WANDERER</Tag>
+        <English>Wanderer</English>
+        <French>Wanderer</French>
+        <German>Wanderer</German>
+        <Italian>Wanderer</Italian>
+        <Spanish>Tratamundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WANDERER_SHORT</Tag>
+        <English>Wan</English>
+        <French>Wan</French>
+        <German>Wan</German>
+        <Italian>Wan</Italian>
+        <Spanish>Trat</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_ZEALOUS</Tag>
+        <English>Zealous</English>
+        <French>Zealous</French>
+        <German>Zealous</German>
+        <Italian>Zealous</Italian>
+        <Spanish>
+			<Text>Celoso:Celosa</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_ENABLE_CIVIC</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Remove technology requirement of [LINK=literal]%s1[\LINK][SPACE]</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Remove technology requirement of [LINK=literal]%s1[\LINK][SPACE]</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Remove technology requirement of [LINK=literal]%s1[\LINK][SPACE]</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Remove technology requirement of [LINK=literal]%s1[\LINK][SPACE]</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Remove technology requirement of [LINK=literal]%s1[\LINK][SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_EMPEROR_CULT</Tag>
+        <English>Emperor's Cult</English>
+        <French>Emperor's Cult</French>
+        <German>Emperor's Cult</German>
+        <Italian>Emperor's Cult</Italian>
+        <Spanish>Culto del Emperador</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_EMPEROR_CULT_SHORT</Tag>
+        <English>Emp</English>
+        <French>Emp</French>
+        <German>Emp</German>
+        <Italian>Emp</Italian>
+        <Spanish>Emp</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LEGACY_OF_KYLORIN</Tag>
+        <English>Legacy of Kylorin</English>
+        <French>Legacy of Kylorin</French>
+        <German>Legacy of Kylorin</German>
+        <Italian>Legacy of Kylorin</Italian>
+        <Spanish>Legacy of Kylorin</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_LEGACY_OF_KYLORIN</Tag>
+        <English>Legacy of Kylorin</English>
+        <French>Legacy of Kylorin</French>
+        <German>Legacy of Kylorin</German>
+        <Italian>Legacy of Kylorin</Italian>
+        <Spanish>Legacy of Kylorin</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_LEGACY_OF_KYLORIN_SHORT</Tag>
+        <English>Leg</English>
+        <French>Leg</French>
+        <German>Leg</German>
+        <Italian>Leg</Italian>
+        <Spanish>Leg</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_PEACEKEEPERS</Tag>
+        <English>Peacekeepers</English>
+        <French>Peacekeepers</French>
+        <German>Peacekeepers</German>
+        <Italian>Peacekeepers</Italian>
+        <Spanish>Peacekeepers</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_PEACEKEEPERS_SHORT</Tag>
+        <English>PeK</English>
+        <French>PeK</French>
+        <German>PeK</German>
+        <Italian>PeK</Italian>
+        <Spanish>PeK</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_INITIAL_CITY_CAP_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Can be increased)</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Can be increased)</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Can be increased)</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Can be increased)</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Limite de Poblacion de las ciudades: %d1 (Puede ser aumentado)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_MAX_CITY_CAP_HELP</Tag>
+        <English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Cannot be increased)</English>
+        <French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Cannot be increased)</French>
+        <German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Cannot be increased)</German>
+        <Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Population limit of cities: %d1 (Cannot be increased)</Italian>
+        <Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Limite de Poblacion de las ciudades: %d1 (No puede ser aumentado)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BAR_CITY_CAP</Tag>
+        <English>Population Limit: %d1</English>
+        <French>Population Limit: %d1</French>
+        <German>Population Limit: %d1</German>
+        <Italian>Population Limit: %d1</Italian>
+        <Spanish>Limite de Poblacion: %d1</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ALL_CITY_CAP_MODIFIER</Tag>
+        <English>[ICON_BULLET]Increase Population Cap of all cities by %D1</English>
+        <French>[ICON_BULLET]Increase Population Cap of all cities by %D1</French>
+        <German>[ICON_BULLET]Increase Population Cap of all cities by %D1</German>
+        <Italian>[ICON_BULLET]Increase Population Cap of all cities by %D1</Italian>
+        <Spanish>[ICON_BULLET]Aumenta el Limite de Poblacion de todas las ciudades en %D1</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_THIS_CITY_CAP_MODIFIER</Tag>
+        <English>[ICON_BULLET]Increase Population Cap of this city by %D1</English>
+        <French>[ICON_BULLET]Increase Population Cap of this city by %D1</French>
+        <German>[ICON_BULLET]Increase Population Cap of this city by %D1</German>
+        <Italian>[ICON_BULLET]Increase Population Cap of this city by %D1</Italian>
+        <Spanish>[ICON_BULLET]Aumenta el Limite de Poblacion de esta ciudad en %D1</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_AESTHETICS</Tag>
+        <English>Aesthetics</English>
+        <French>Aesthetics</French>
+        <German>Aesthetics</German>
+        <Italian>Aesthetics</Italian>
+        <Spanish>Aesthetics</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_LITERATURE</Tag>
+        <English>Literature</English>
+        <French>Literature</French>
+        <German>Literature</German>
+        <Italian>Literature</Italian>
+        <Spanish>Literature</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_MUSIC</Tag>
+        <English>Music</English>
+        <French>Music</French>
+        <German>Music</German>
+        <Italian>Music</Italian>
+        <Spanish>Music</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_PERSPECTIVE</Tag>
+        <English>Perspective</English>
+        <French>Perspective</French>
+        <German>Perspective</German>
+        <Italian>Perspective</Italian>
+        <Spanish>Perspective</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_PATRONAGE</Tag>
+        <English>Patronage</English>
+        <French>Patronage</French>
+        <German>Patronage</German>
+        <Italian>Patronage</Italian>
+        <Spanish>Patronage</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_SADDLE</Tag>
+        <English>Saddle</English>
+        <French>Saddle</French>
+        <German>Saddle</German>
+        <Italian>Saddle</Italian>
+        <Spanish>Saddle</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_MOUNT_BREEDING</Tag>
+        <English>Mount Breeding</English>
+        <French>Mount Breeding</French>
+        <German>Mount Breeding</German>
+        <Italian>Mount Breeding</Italian>
+        <Spanish>Mount Breeding</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_BLASTING_MOUNTS</Tag>
+        <English>Blasting Mounts</English>
+        <French>Blasting Mounts</French>
+        <German>Blasting Mounts</German>
+        <Italian>Blasting Mounts</Italian>
+        <Spanish>Blasting Mounts</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_STALKING</Tag>
+        <English>Stalking</English>
+        <French>Stalking</French>
+        <German>Stalking</German>
+        <Italian>Stalking</Italian>
+        <Spanish>Stalking</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_DUSKWORKING</Tag>
+        <English>Duskworking</English>
+        <French>Duskworking</French>
+        <German>Duskworking</German>
+        <Italian>Duskworking</Italian>
+        <Spanish>Duskworking</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_DUSKBOWS</Tag>
+        <English>Duskbows</English>
+        <French>Duskbows</French>
+        <German>Duskbows</German>
+        <Italian>Duskbows</Italian>
+        <Spanish>Duskbows</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_SPOKED_WHEEL</Tag>
+        <English>Spoked Wheel</English>
+        <French>Spoked Wheel</French>
+        <German>Spoked Wheel</German>
+        <Italian>Spoked Wheel</Italian>
+        <Spanish>Spoked Wheel</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_CHARIOTRY_TACTICS</Tag>
+        <English>Chariotry Tactics</English>
+        <French>Chariotry Tactics</French>
+        <German>Chariotry Tactics</German>
+        <Italian>Chariotry Tactics</Italian>
+        <Spanish>Chariotry Tactics</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_ANATOMY</Tag>
+        <English>Anatomy</English>
+        <French>Anatomy</French>
+        <German>Anatomy</German>
+        <Italian>Anatomy</Italian>
+        <Spanish>Anatomy</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_EARLY_ARCHITECTURE</Tag>
+        <English>Early Architecture</English>
+        <French>Early Architecture</French>
+        <German>Early Architecture</German>
+        <Italian>Early Architecture</Italian>
+        <Spanish>Early Architecture</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_PATRIAN_ARCHITECTURE</Tag>
+        <English>Patrian Architecture</English>
+        <French>Patrian Architecture</French>
+        <German>Patrian Architecture</German>
+        <Italian>Patrian Architecture</Italian>
+        <Spanish>Patrian Architecture</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_MILITARY_TRADITION</Tag>
+        <English>Military Tradition</English>
+        <French>Military Tradition</French>
+        <German>Military Tradition</German>
+        <Italian>Military Tradition</Italian>
+        <Spanish>Military Tradition</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_DEMOCRACY</Tag>
+        <English>Democracy</English>
+        <French>Democracy</French>
+        <German>Democracy</German>
+        <Italian>Democracy</Italian>
+        <Spanish>Democracy</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_ARISTOCRACY</Tag>
+        <English>Aristocracy</English>
+        <French>Aristocracy</French>
+        <German>Aristocracy</German>
+        <Italian>Aristocracy</Italian>
+        <Spanish>Aristocracy</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_SIEGE_WARFARE</Tag>
+        <English>Siege Warfare</English>
+        <French>Siege Warfare</French>
+        <German>Siege Warfare</German>
+        <Italian>Siege Warfare</Italian>
+        <Spanish>Siege Warfare</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_INVENTION</Tag>
+        <English>Invention</English>
+        <French>Invention</French>
+        <German>Invention</German>
+        <Italian>Invention</Italian>
+        <Spanish>Invention</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_TAIGA</Tag>
+        <English>Taiga</English>
+        <French>Taiga</French>
+        <German>Taiga</German>
+        <Italian>Taiga</Italian>
+        <Spanish>Taiga</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GARDEN</Tag>
+        <English>Garden</English>
+        <French>Garden</French>
+        <German>Garden</German>
+        <Italian>Garden</Italian>
+        <Spanish>Garden</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GARDEN_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GARDEN_STRATEGY</Tag>
+        <English>Elohim Gardens provide health and culture to your city.</English>
+        <French>Elohim Gardens provide health and culture to your city.</French>
+        <German>Elohim Gardens provide health and culture to your city.</German>
+        <Italian>Elohim Gardens provide health and culture to your city.</Italian>
+        <Spanish>Elohim Gardens provide health and culture to your city.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DESCRIPTION_NATURAL_MEDICINE</Tag>
+        <English>Natural Medicine</English>
+        <French>Natural Medicine</French>
+        <German>Natural Medicine</German>
+        <Italian>Natural Medicine</Italian>
+        <Spanish>Natural Medicine</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_BLOCKED_FOR</Tag>
+        <English>[ICON_BULLET]Blocked for:[SPACE]</English>
+        <French>[ICON_BULLET]Blocked for:[SPACE]</French>
+        <German>[ICON_BULLET]Blocked for:[SPACE]</German>
+        <Italian>[ICON_BULLET]Blocked for:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Blocked for:[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PLOT_IMP_UPGRADE_BLOCKED</Tag>
+        <English>[SPACE](Can't upgrade to %s1_ImpName)</English>
+        <French>[SPACE](Can't upgrade to %s1_ImpName)</French>
+        <German>[SPACE](Can't upgrade to %s1_ImpName)</German>
+        <Italian>[SPACE](Can't upgrade to %s1_ImpName)</Italian>
+        <Spanish>[SPACE](Can't upgrade to %s1_ImpName)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CHANCE_SPREAD</Tag>
+        <English>[ICON_BULLET]1 in %d1 chance of spreading[SPACE]</English>
+        <French>[ICON_BULLET]1 in %d1 chance of spreading[SPACE]</French>
+        <German>[ICON_BULLET]1 in %d1 chance of spreading[SPACE]</German>
+        <Italian>[ICON_BULLET]1 in %d1 chance of spreading[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]1 en %d1 posibilidad de propagar[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PATROL1</Tag>
+        <English>Patrol I</English>
+        <French>Patrol I</French>
+        <German>Patrol I</German>
+        <Italian>Patrol I</Italian>
+        <Spanish>Patrol I</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PATROL2</Tag>
+        <English>Patrol II</English>
+        <French>Patrol II</French>
+        <German>Patrol II</German>
+        <Italian>Patrol II</Italian>
+        <Spanish>Patrol II</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VIGILANT</Tag>
+        <English>Vigilant</English>
+        <French>Vigilant</French>
+        <German>Vigilant</German>
+        <Italian>Vigilant</Italian>
+        <Spanish>Vigilant</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VIGILANT_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_VIGILANT</Tag>
+        <English>Vigilant</English>
+        <French>Vigilant</French>
+        <German>Vigilant</German>
+        <Italian>Vigilant</Italian>
+        <Spanish>Vigilant</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WANDERER</Tag>
+        <English>Wanderer</English>
+        <French>Wanderer</French>
+        <German>Wanderer</German>
+        <Italian>Wanderer</Italian>
+        <Spanish>Wanderer</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COUNCIL_TREE</Tag>
+        <English>Council Tree</English>
+        <French>Council Tree</French>
+        <German>Council Tree</German>
+        <Italian>Council Tree</Italian>
+        <Spanish>Council Tree</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COUNCIL_TREE_PEDIA</Tag>
+        <English>When Mvadung of the Veve, Vungu of the Rada, Gwu of the Wuyo, Hasher of the Mdiri and Nga of the Zimge were reunited in Bwoheshegu, they began talking about what to do next. They talked hours about how to organize their federation, how to name it, how to name themselves and many other subjects. Many of their followers were listening quietly: they had never seen such a party... well, such a gathering. But the five leaders felt uneasy. They had been standing for hours. Gwu proposed to find a place where to gather. They searched but there was no place where to sit and gather that was right. There Banung came. She walked straight to the biggest, tallest tree of the city. She spoke to it; it opened itself, unveiling so much space that the current population could live there.</English>
+        <French>When Mvadung of the Veve, Vungu of the Rada, Gwu of the Wuyo, Hasher of the Mdiri and Nga of the Zimge were reunited in Bwoheshegu, they began talking about what to do next. They talked hours about how to organize their federation, how to name it, how to name themselves and many other subjects. Many of their followers were listening quietly: they had never seen such a party... well, such a gathering. But the five leaders felt uneasy. They had been standing for hours. Gwu proposed to find a place where to gather. They searched but there was no place where to sit and gather that was right. There Banung came. She walked straight to the biggest, tallest tree of the city. She spoke to it; it opened itself, unveiling so much space that the current population could live there.</French>
+        <German>When Mvadung of the Veve, Vungu of the Rada, Gwu of the Wuyo, Hasher of the Mdiri and Nga of the Zimge were reunited in Bwoheshegu, they began talking about what to do next. They talked hours about how to organize their federation, how to name it, how to name themselves and many other subjects. Many of their followers were listening quietly: they had never seen such a party... well, such a gathering. But the five leaders felt uneasy. They had been standing for hours. Gwu proposed to find a place where to gather. They searched but there was no place where to sit and gather that was right. There Banung came. She walked straight to the biggest, tallest tree of the city. She spoke to it; it opened itself, unveiling so much space that the current population could live there.</German>
+        <Italian>When Mvadung of the Veve, Vungu of the Rada, Gwu of the Wuyo, Hasher of the Mdiri and Nga of the Zimge were reunited in Bwoheshegu, they began talking about what to do next. They talked hours about how to organize their federation, how to name it, how to name themselves and many other subjects. Many of their followers were listening quietly: they had never seen such a party... well, such a gathering. But the five leaders felt uneasy. They had been standing for hours. Gwu proposed to find a place where to gather. They searched but there was no place where to sit and gather that was right. There Banung came. She walked straight to the biggest, tallest tree of the city. She spoke to it; it opened itself, unveiling so much space that the current population could live there.</Italian>
+        <Spanish>When Mvadung of the Veve, Vungu of the Rada, Gwu of the Wuyo, Hasher of the Mdiri and Nga of the Zimge were reunited in Bwoheshegu, they began talking about what to do next. They talked hours about how to organize their federation, how to name it, how to name themselves and many other subjects. Many of their followers were listening quietly: they had never seen such a party... well, such a gathering. But the five leaders felt uneasy. They had been standing for hours. Gwu proposed to find a place where to gather. They searched but there was no place where to sit and gather that was right. There Banung came. She walked straight to the biggest, tallest tree of the city. She spoke to it; it opened itself, unveiling so much space that the current population could live there.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COUNCIL_TREE_STRATEGY</Tag>
+        <English>The Council Tree is certainly one of the most important buildings of the Ngomele, both in lore and in gameplay.</English>
+        <French>The Council Tree is certainly one of the most important buildings of the Ngomele, both in lore and in gameplay.</French>
+        <German>The Council Tree is certainly one of the most important buildings of the Ngomele, both in lore and in gameplay.</German>
+        <Italian>The Council Tree is certainly one of the most important buildings of the Ngomele, both in lore and in gameplay.</Italian>
+        <Spanish>The Council Tree is certainly one of the most important buildings of the Ngomele, both in lore and in gameplay.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_COUNCIL_TREE_HELP</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_IVORY_WEAPONS</Tag>
+        <English>Ivory Weapons</English>
+        <French>Ivory Weapons</French>
+        <German>Ivory Weapons</German>
+        <Italian>Ivory Weapons</Italian>
+        <Spanish>Ivory Weapons</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BONE_WEAPONS</Tag>
+        <English>Bone Weapons</English>
+        <French>Bone Weapons</French>
+        <German>Bone Weapons</German>
+        <Italian>Bone Weapons</Italian>
+        <Spanish>Bone Weapons</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_VERLAIN</Tag>
+        <English>Verlain</English>
+        <French>Verlain</French>
+        <German>Verlain</German>
+        <Italian>Verlain</Italian>
+        <Spanish>Verlain</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_VERLAIN_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_VERLAIN</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ANGAAD</Tag>
+        <English>Angaad</English>
+        <French>
+			<Text>Angaad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Angaad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Angaad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Angaad</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ANGAAD_PEDIA</Tag>
+        <English>Angaad stood stock-still while her attendants fussed with pins in her headdress. Her hands were clenched into fists at her sides, and her brow was smashed into a grimace.
+
+"Is something wrong, my lady?" asked Brennen innocently. She glowered at him, and his blank faced cracked. He grinned, then suddenly looked serious again. "Consider, my lady - we need the full support of Tethira and her allies in supplying troops for the spring campaign. You know it's worth your time, or you wouldn't be here for the ceremony."
+
+Angaad sighed and unclasped her hands. "Yes, my love. You are right, as always. I just feel like such a fool in . . . this." She waved a hand at her reflection mirror in front of her; she was wearing the ceremonial ‘armor' crafted for her at great expense by artisans of the Order. It was impressive, but it left rather more of her flesh exposed than she liked. Brennen grinned again. "You look rather fetching. It's certainly more flattering than your usual attire: mud, sweat, blood, and steel."
+
+The Matriarch of the Bannor cocked a rebuking eyebrow at her consort. "Are you suggesting that I tart my way into Tethira's good graces?"
+
+"Not hers, but perhaps her brother's," replied Brennen with a smirk.
+
+"Raise your arms, my lady," murmured one of her attendants. Angaad did so, looking thoughtfully into the distance.
+
+"Therein lies the problem, Brennen," she mused, as the ladies-in-waiting fastened a silver chain around her midsection. "I want to wear mud, blood, sweat, and steel. I only endure these ridiculous frills so that I can go back through that Gate and lead our people to victory at Galveholme."
+
+"No-one would deny that the Galveholme campaign is your rightful place, my lady, as was the Dark Pass campaign two years ago. All know that you were born to lead us in these wars, and that the wars are just," said Brennen.
+
+Angaad smiled, despite herself. Brennen's love for her was exceeded only by his faith in her skills as a leader. "And what will happen when Galveholme falls? What will happen when the threat of Sheaim is finally expunged?"
+
+"Then we will have peace, my lady. Peace to work the fields and live in quiet, as we were intended to. Peace to raise children - our children - without the horror of death always hanging over them."
+
+Angaad looked down at her hands. Scars crisscrossed her knuckles. A long, ragged brown mark ran almost the length of her left forearm - a memento given her by a Sheaim assassin who had nearly succeeded in his attempt. Her hands and arms were hard and well-defined, and her left bicep, strengthened through years of wielding a shield, flexed and strained against her decorative armlet. She let out a long, slow breath. "And in peace, Brennen, what becomes of the one who was born for war?"</English>
+        <French>Angaad stood stock-still while her attendants fussed with pins in her headdress. Her hands were clenched into fists at her sides, and her brow was smashed into a grimace.
+
+"Is something wrong, my lady?" asked Brennen innocently. She glowered at him, and his blank faced cracked. He grinned, then suddenly looked serious again. "Consider, my lady - we need the full support of Tethira and her allies in supplying troops for the spring campaign. You know it's worth your time, or you wouldn't be here for the ceremony."
+
+Angaad sighed and unclasped her hands. "Yes, my love. You are right, as always. I just feel like such a fool in . . . this." She waved a hand at her reflection mirror in front of her; she was wearing the ceremonial ‘armor' crafted for her at great expense by artisans of the Order. It was impressive, but it left rather more of her flesh exposed than she liked. Brennen grinned again. "You look rather fetching. It's certainly more flattering than your usual attire: mud, sweat, blood, and steel."
+
+The Matriarch of the Bannor cocked a rebuking eyebrow at her consort. "Are you suggesting that I tart my way into Tethira's good graces?"
+
+"Not hers, but perhaps her brother's," replied Brennen with a smirk.
+
+"Raise your arms, my lady," murmured one of her attendants. Angaad did so, looking thoughtfully into the distance.
+
+"Therein lies the problem, Brennen," she mused, as the ladies-in-waiting fastened a silver chain around her midsection. "I want to wear mud, blood, sweat, and steel. I only endure these ridiculous frills so that I can go back through that Gate and lead our people to victory at Galveholme."
+
+"No-one would deny that the Galveholme campaign is your rightful place, my lady, as was the Dark Pass campaign two years ago. All know that you were born to lead us in these wars, and that the wars are just," said Brennen.
+
+Angaad smiled, despite herself. Brennen's love for her was exceeded only by his faith in her skills as a leader. "And what will happen when Galveholme falls? What will happen when the threat of Sheaim is finally expunged?"
+
+"Then we will have peace, my lady. Peace to work the fields and live in quiet, as we were intended to. Peace to raise children - our children - without the horror of death always hanging over them."
+
+Angaad looked down at her hands. Scars crisscrossed her knuckles. A long, ragged brown mark ran almost the length of her left forearm - a memento given her by a Sheaim assassin who had nearly succeeded in his attempt. Her hands and arms were hard and well-defined, and her left bicep, strengthened through years of wielding a shield, flexed and strained against her decorative armlet. She let out a long, slow breath. "And in peace, Brennen, what becomes of the one who was born for war?"</French>
+        <German>Angaad stood stock-still while her attendants fussed with pins in her headdress. Her hands were clenched into fists at her sides, and her brow was smashed into a grimace.
+
+"Is something wrong, my lady?" asked Brennen innocently. She glowered at him, and his blank faced cracked. He grinned, then suddenly looked serious again. "Consider, my lady - we need the full support of Tethira and her allies in supplying troops for the spring campaign. You know it's worth your time, or you wouldn't be here for the ceremony."
+
+Angaad sighed and unclasped her hands. "Yes, my love. You are right, as always. I just feel like such a fool in . . . this." She waved a hand at her reflection mirror in front of her; she was wearing the ceremonial ‘armor' crafted for her at great expense by artisans of the Order. It was impressive, but it left rather more of her flesh exposed than she liked. Brennen grinned again. "You look rather fetching. It's certainly more flattering than your usual attire: mud, sweat, blood, and steel."
+
+The Matriarch of the Bannor cocked a rebuking eyebrow at her consort. "Are you suggesting that I tart my way into Tethira's good graces?"
+
+"Not hers, but perhaps her brother's," replied Brennen with a smirk.
+
+"Raise your arms, my lady," murmured one of her attendants. Angaad did so, looking thoughtfully into the distance.
+
+"Therein lies the problem, Brennen," she mused, as the ladies-in-waiting fastened a silver chain around her midsection. "I want to wear mud, blood, sweat, and steel. I only endure these ridiculous frills so that I can go back through that Gate and lead our people to victory at Galveholme."
+
+"No-one would deny that the Galveholme campaign is your rightful place, my lady, as was the Dark Pass campaign two years ago. All know that you were born to lead us in these wars, and that the wars are just," said Brennen.
+
+Angaad smiled, despite herself. Brennen's love for her was exceeded only by his faith in her skills as a leader. "And what will happen when Galveholme falls? What will happen when the threat of Sheaim is finally expunged?"
+
+"Then we will have peace, my lady. Peace to work the fields and live in quiet, as we were intended to. Peace to raise children - our children - without the horror of death always hanging over them."
+
+Angaad looked down at her hands. Scars crisscrossed her knuckles. A long, ragged brown mark ran almost the length of her left forearm - a memento given her by a Sheaim assassin who had nearly succeeded in his attempt. Her hands and arms were hard and well-defined, and her left bicep, strengthened through years of wielding a shield, flexed and strained against her decorative armlet. She let out a long, slow breath. "And in peace, Brennen, what becomes of the one who was born for war?"</German>
+        <Italian>Angaad stood stock-still while her attendants fussed with pins in her headdress. Her hands were clenched into fists at her sides, and her brow was smashed into a grimace.
+
+"Is something wrong, my lady?" asked Brennen innocently. She glowered at him, and his blank faced cracked. He grinned, then suddenly looked serious again. "Consider, my lady - we need the full support of Tethira and her allies in supplying troops for the spring campaign. You know it's worth your time, or you wouldn't be here for the ceremony."
+
+Angaad sighed and unclasped her hands. "Yes, my love. You are right, as always. I just feel like such a fool in . . . this." She waved a hand at her reflection mirror in front of her; she was wearing the ceremonial ‘armor' crafted for her at great expense by artisans of the Order. It was impressive, but it left rather more of her flesh exposed than she liked. Brennen grinned again. "You look rather fetching. It's certainly more flattering than your usual attire: mud, sweat, blood, and steel."
+
+The Matriarch of the Bannor cocked a rebuking eyebrow at her consort. "Are you suggesting that I tart my way into Tethira's good graces?"
+
+"Not hers, but perhaps her brother's," replied Brennen with a smirk.
+
+"Raise your arms, my lady," murmured one of her attendants. Angaad did so, looking thoughtfully into the distance.
+
+"Therein lies the problem, Brennen," she mused, as the ladies-in-waiting fastened a silver chain around her midsection. "I want to wear mud, blood, sweat, and steel. I only endure these ridiculous frills so that I can go back through that Gate and lead our people to victory at Galveholme."
+
+"No-one would deny that the Galveholme campaign is your rightful place, my lady, as was the Dark Pass campaign two years ago. All know that you were born to lead us in these wars, and that the wars are just," said Brennen.
+
+Angaad smiled, despite herself. Brennen's love for her was exceeded only by his faith in her skills as a leader. "And what will happen when Galveholme falls? What will happen when the threat of Sheaim is finally expunged?"
+
+"Then we will have peace, my lady. Peace to work the fields and live in quiet, as we were intended to. Peace to raise children - our children - without the horror of death always hanging over them."
+
+Angaad looked down at her hands. Scars crisscrossed her knuckles. A long, ragged brown mark ran almost the length of her left forearm - a memento given her by a Sheaim assassin who had nearly succeeded in his attempt. Her hands and arms were hard and well-defined, and her left bicep, strengthened through years of wielding a shield, flexed and strained against her decorative armlet. She let out a long, slow breath. "And in peace, Brennen, what becomes of the one who was born for war?"</Italian>
+        <Spanish>Angaad quedó inmóvil, mientras sus acompañantes toqueteaban con alfileres en su tocado. Tenía las manos apretadas  a los costados, y su frente se rompio en una mueca.
+
+"¿Pasa algo malo, mi señora?" preguntó  Brennen inocentemente. Ella frunció el ceño, y su blanca frente agrietada. Él sonrió, y de repente se puso serio de nuevo. "Consideremos, mi señora - que necesitamos todo el apoyo de Tethira y sus aliados en el suministro de tropas para la campaña de primavera. Sabes que es digno de su tiempo, o no estaríamos aquí para la ceremonia."
+
+Angaad suspiró y separó las manos. "Sí, mi amor. Tienes razón, como siempre. Me siento como una idiota en... Esto." Ella hizo un gesto con la mano hacia el espejo que tenia frente a ella. Llevaba la armadura ceremonial. " Esta habia sido diseñada para ella con un gran costo por los artesanos de la Orden. Era impresionante, pero dejaba algo de su carne expuesta y esto no le agradaba. Brennen volvió a sonreír. "Te ves más atractiva. Ciertamente es más halagador que su atuendo habitual: de barro, sudor, sangre y acero".
+
+La matriarca de los Bannor arqueó una ceja reprendiendo a su consorte. "¿Estás sugiriendo que bereria ser quien no soy para agradar a Tethira?"
+
+"No a ella, pero tal vez si a su hermano", respondió Brennen con una sonrisa.
+
+"Levantad los brazos, mi señora", murmuró uno de sus asistentes. Angaad lo hizo, mirando pensativa en la distancia.
+
+"Ahí reside el problema, Brennen", dijo, mientras las damas de honor sujetaban una cadena de plata alrededor de su cintura. "Quiero usar el barro, sangre, sudor, y el acero. Yo sólo soporto estos lujos ridículos para poder volver a través de esa puerta y llevar a nuestro pueblo a la victoria en Galveholme".
+
+"Nadie puede negar que la campaña Galveholme es el lugar que le corresponde, mi señora, como fue la campaña del Paso Oscuro hace dos años. Todos saben que usted nació para guiarnos en estas guerras, y que las guerras son justas", dijo Brennen.
+
+Angaad sonrió, a pesar de sí misma. El amor que Brennen sentia por ella era sólo superado por su fe en sus habilidades como líder. "¿Y qué pasará cuando Galveholme caiga? ¿Qué sucederá cuando la amenaza Sheaim finalmente desaparezca?
+
+"Entonces tendremos paz, mi señora. Paz para trabajar en los campos y vivir con tranquilidad, ya que estamos destinados a ello. Paz para criar a sus hijos - a nuestros hijos -, sin el horror de la muerte siempre cirniendose sobre ellos".
+
+Angaad se miró las manos. Cicatrices cruzaban los nudillos. Una larga y desigual marca marron recorria casi totalmente la longitud de su antebrazo izquierdo - un recuerdo que de un asesino Sheaim que casi había logrado su objetivo. Sus manos y brazos eran duros y bien definidos, y su bíceps izquierdo, fortalecido a través de años de ejercitar con un escudo, resaltaba contra su brazalete decorativo. Ella dejó escapar un suspiro largo y lento. "Y en la paz, Brennen, ¿qué pasa con el que ha nacido para la guerra?"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_ANGAAD</Tag>
+        <English>Who would have guessed that Sabathiel's great sacrifice would end this way? Farewell, Erebus. We would have saved you. Pray instead that another morning star will arise. Even now, I cannot believe that the dark powers will truly triumph.</English>
+        <French>Who would have guessed that Sabathiel's great sacrifice would end this way? Farewell, Erebus. We would have saved you. Pray instead that another morning star will arise. Even now, I cannot believe that the dark powers will truly triumph.</French>
+        <German>Who would have guessed that Sabathiel's great sacrifice would end this way? Farewell, Erebus. We would have saved you. Pray instead that another morning star will arise. Even now, I cannot believe that the dark powers will truly triumph.</German>
+        <Italian>Who would have guessed that Sabathiel's great sacrifice would end this way? Farewell, Erebus. We would have saved you. Pray instead that another morning star will arise. Even now, I cannot believe that the dark powers will truly triumph.</Italian>
+        <Spanish>¿Quién hubiera adivinado que  gran sacrificio de Sabathiel acabaria de esta manera? Adiós, Erebus. Nosotros te habriamos salvado. Ora para que otra estrella de la mañana aparezca. Incluso ahora, no puedo creer que los poderes oscuros realmente triunfen.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KRO_MEAR</Tag>
+        <English>Kro'Mear</English>
+        <French>
+			<Text>Kro'Mear</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Kro'Mear</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Kro'Mear</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Kro'Mear</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KRO_MEAR_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_KRO_MEAR</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HEHNKU</Tag>
+        <English>Hehnku</English>
+        <French>Hehnku</French>
+        <German>Hehnku</German>
+        <Italian>Hehnku</Italian>
+        <Spanish>Hehnku</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HEHNKU_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_HEHNKU</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SIRVAGHA</Tag>
+        <English>Sirvagha</English>
+        <French>Sirvagha</French>
+        <German>Sirvagha</German>
+        <Italian>Sirvagha</Italian>
+        <Spanish>Sirvagha</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SIRVAGHA_PEDIA</Tag>
+        <English>They were two of his most expert scouts - men who'd ridden and crept, tracked and hunted their whole lives. Esprel, the elder, couldn't have been a summer less than forty. It was that knowledge, rolling like an echo in the back of his head, that disturbed Cassiel. Something in the wideness of their eyes and in the violence of their gestures would have been more appropriate coming from beardless youths.
+"At midnight and a bit, the moon came out from behind the clouds, and all up from the beastmen's camp in the south woods came a howling and wailing such as I've never heard," the first man was saying.
+"And," interjected the other, "it seemed to put the fear into the Amurites too, for we could hear screams and crying from within the city, and such a commotion on the walls as you'd have thought the enemy already inside."
+"Well, it went dark again for near an hour. Then the moon came out, suddenly - almost to surprise you - and the Doviello set up their howling again, but they'd come out in the darkness almost to the gate, with ladders, and before you could draw a bow they had the ladders against the wall and were rushing up like a flood. The defenders were down in a minute."
+Cassiel frowned and sat back in his chair, considering. Cevedes was a fortnight's ride from his farthest outpost. But it was still too close to these animals.
+The other scout cleared his throat. "For a moment we thought the Amurites would push the ladders back. Na, sir, they did - but a great wolfman at the top of the ladder leapt forward onto the wall, screaming and mad for blood. He had a sword with him, but he forgot drawing it, I think, in the bloodlust. Some of the archers shot him with their burning arrows but he ran on them and tore ‘em in pieces with his bare hands, and his armor and hood all aflame. They broke and ran, then." There was fear in the scout's voice - fear and awe.
+"Do not dread these barbarians," said Cassiel seriously. "Rage and bloodlust may produce such champions, but we have many of our own: men and women of honor and courage, not beasts."
+"Champion, sir? We saw him afterward in the city, among the beastmen. No champion he - he was their commander."</English>
+        <French>They were two of his most expert scouts - men who'd ridden and crept, tracked and hunted their whole lives. Esprel, the elder, couldn't have been a summer less than forty. It was that knowledge, rolling like an echo in the back of his head, that disturbed Cassiel. Something in the wideness of their eyes and in the violence of their gestures would have been more appropriate coming from beardless youths.
+"At midnight and a bit, the moon came out from behind the clouds, and all up from the beastmen's camp in the south woods came a howling and wailing such as I've never heard," the first man was saying.
+"And," interjected the other, "it seemed to put the fear into the Amurites too, for we could hear screams and crying from within the city, and such a commotion on the walls as you'd have thought the enemy already inside."
+"Well, it went dark again for near an hour. Then the moon came out, suddenly - almost to surprise you - and the Doviello set up their howling again, but they'd come out in the darkness almost to the gate, with ladders, and before you could draw a bow they had the ladders against the wall and were rushing up like a flood. The defenders were down in a minute."
+Cassiel frowned and sat back in his chair, considering. Cevedes was a fortnight's ride from his farthest outpost. But it was still too close to these animals.
+The other scout cleared his throat. "For a moment we thought the Amurites would push the ladders back. Na, sir, they did - but a great wolfman at the top of the ladder leapt forward onto the wall, screaming and mad for blood. He had a sword with him, but he forgot drawing it, I think, in the bloodlust. Some of the archers shot him with their burning arrows but he ran on them and tore ‘em in pieces with his bare hands, and his armor and hood all aflame. They broke and ran, then." There was fear in the scout's voice - fear and awe.
+"Do not dread these barbarians," said Cassiel seriously. "Rage and bloodlust may produce such champions, but we have many of our own: men and women of honor and courage, not beasts."
+"Champion, sir? We saw him afterward in the city, among the beastmen. No champion he - he was their commander."</French>
+        <German>They were two of his most expert scouts - men who'd ridden and crept, tracked and hunted their whole lives. Esprel, the elder, couldn't have been a summer less than forty. It was that knowledge, rolling like an echo in the back of his head, that disturbed Cassiel. Something in the wideness of their eyes and in the violence of their gestures would have been more appropriate coming from beardless youths.
+"At midnight and a bit, the moon came out from behind the clouds, and all up from the beastmen's camp in the south woods came a howling and wailing such as I've never heard," the first man was saying.
+"And," interjected the other, "it seemed to put the fear into the Amurites too, for we could hear screams and crying from within the city, and such a commotion on the walls as you'd have thought the enemy already inside."
+"Well, it went dark again for near an hour. Then the moon came out, suddenly - almost to surprise you - and the Doviello set up their howling again, but they'd come out in the darkness almost to the gate, with ladders, and before you could draw a bow they had the ladders against the wall and were rushing up like a flood. The defenders were down in a minute."
+Cassiel frowned and sat back in his chair, considering. Cevedes was a fortnight's ride from his farthest outpost. But it was still too close to these animals.
+The other scout cleared his throat. "For a moment we thought the Amurites would push the ladders back. Na, sir, they did - but a great wolfman at the top of the ladder leapt forward onto the wall, screaming and mad for blood. He had a sword with him, but he forgot drawing it, I think, in the bloodlust. Some of the archers shot him with their burning arrows but he ran on them and tore ‘em in pieces with his bare hands, and his armor and hood all aflame. They broke and ran, then." There was fear in the scout's voice - fear and awe.
+"Do not dread these barbarians," said Cassiel seriously. "Rage and bloodlust may produce such champions, but we have many of our own: men and women of honor and courage, not beasts."
+"Champion, sir? We saw him afterward in the city, among the beastmen. No champion he - he was their commander."</German>
+        <Italian>They were two of his most expert scouts - men who'd ridden and crept, tracked and hunted their whole lives. Esprel, the elder, couldn't have been a summer less than forty. It was that knowledge, rolling like an echo in the back of his head, that disturbed Cassiel. Something in the wideness of their eyes and in the violence of their gestures would have been more appropriate coming from beardless youths.
+"At midnight and a bit, the moon came out from behind the clouds, and all up from the beastmen's camp in the south woods came a howling and wailing such as I've never heard," the first man was saying.
+"And," interjected the other, "it seemed to put the fear into the Amurites too, for we could hear screams and crying from within the city, and such a commotion on the walls as you'd have thought the enemy already inside."
+"Well, it went dark again for near an hour. Then the moon came out, suddenly - almost to surprise you - and the Doviello set up their howling again, but they'd come out in the darkness almost to the gate, with ladders, and before you could draw a bow they had the ladders against the wall and were rushing up like a flood. The defenders were down in a minute."
+Cassiel frowned and sat back in his chair, considering. Cevedes was a fortnight's ride from his farthest outpost. But it was still too close to these animals.
+The other scout cleared his throat. "For a moment we thought the Amurites would push the ladders back. Na, sir, they did - but a great wolfman at the top of the ladder leapt forward onto the wall, screaming and mad for blood. He had a sword with him, but he forgot drawing it, I think, in the bloodlust. Some of the archers shot him with their burning arrows but he ran on them and tore ‘em in pieces with his bare hands, and his armor and hood all aflame. They broke and ran, then." There was fear in the scout's voice - fear and awe.
+"Do not dread these barbarians," said Cassiel seriously. "Rage and bloodlust may produce such champions, but we have many of our own: men and women of honor and courage, not beasts."
+"Champion, sir? We saw him afterward in the city, among the beastmen. No champion he - he was their commander."</Italian>
+        <Spanish>They were two of his most expert scouts - men who'd ridden and crept, tracked and hunted their whole lives. Esprel, the elder, couldn't have been a summer less than forty. It was that knowledge, rolling like an echo in the back of his head, that disturbed Cassiel. Something in the wideness of their eyes and in the violence of their gestures would have been more appropriate coming from beardless youths.
+"At midnight and a bit, the moon came out from behind the clouds, and all up from the beastmen's camp in the south woods came a howling and wailing such as I've never heard," the first man was saying.
+"And," interjected the other, "it seemed to put the fear into the Amurites too, for we could hear screams and crying from within the city, and such a commotion on the walls as you'd have thought the enemy already inside."
+"Well, it went dark again for near an hour. Then the moon came out, suddenly - almost to surprise you - and the Doviello set up their howling again, but they'd come out in the darkness almost to the gate, with ladders, and before you could draw a bow they had the ladders against the wall and were rushing up like a flood. The defenders were down in a minute."
+Cassiel frowned and sat back in his chair, considering. Cevedes was a fortnight's ride from his farthest outpost. But it was still too close to these animals.
+The other scout cleared his throat. "For a moment we thought the Amurites would push the ladders back. Na, sir, they did - but a great wolfman at the top of the ladder leapt forward onto the wall, screaming and mad for blood. He had a sword with him, but he forgot drawing it, I think, in the bloodlust. Some of the archers shot him with their burning arrows but he ran on them and tore ‘em in pieces with his bare hands, and his armor and hood all aflame. They broke and ran, then." There was fear in the scout's voice - fear and awe.
+"Do not dread these barbarians," said Cassiel seriously. "Rage and bloodlust may produce such champions, but we have many of our own: men and women of honor and courage, not beasts."
+"Champion, sir? We saw him afterward in the city, among the beastmen. No champion he - he was their commander."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_SIRVAGHA</Tag>
+        <English>We were strong enough for the wilderness, but not for your filthy cities. When your civilizations crumble, and you return to the wild, you'll find us waiting. Waiting and hungry.</English>
+        <French>We were strong enough for the wilderness, but not for your filthy cities. When your civilizations crumble, and you return to the wild, you'll find us waiting. Waiting and hungry.</French>
+        <German>We were strong enough for the wilderness, but not for your filthy cities. When your civilizations crumble, and you return to the wild, you'll find us waiting. Waiting and hungry.</German>
+        <Italian>We were strong enough for the wilderness, but not for your filthy cities. When your civilizations crumble, and you return to the wild, you'll find us waiting. Waiting and hungry.</Italian>
+        <Spanish>We were strong enough for the wilderness, but not for your filthy cities. When your civilizations crumble, and you return to the wild, you'll find us waiting. Waiting and hungry.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MEELAIS</Tag>
+        <English>Meelais</English>
+        <French>Meelais</French>
+        <German>Meelais</German>
+        <Italian>Meelais</Italian>
+        <Spanish>Meelais</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MEELAIS_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ZODALORE</Tag>
+        <English>Zodalore</English>
+        <French>
+			<Text>Zodalore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Zodalore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Zodalore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Zodalore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ZODALORE_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OUTHE</Tag>
+        <English>Outhe</English>
+        <French>
+			<Text>Outhe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Outhe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Outhe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Outhe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OUTHE_PEDIA</Tag>
+        <English>She had her own private room at The Library. A few weeks of drinking in Junon taverns had earned Maveith that information; the key to all he had to do.
+
+Junon locals were inordinately proud of their temple to knowledge, and if you asked one of them the way to the library, they'd give you a long, speculative look and say, "Did you want one of the record-houses about town, or do you mean . . ."-and here they would insert a dramatic pause and intone the words, a little more deeply, with reverence worthy of a monk-"The Library?" Not that they didn't have reason to be proud; the marble pillars and smooth stone walls would have been fit enough for ten palaces back in the Doveillo lands.
+
+But at last Maveith had succeeded in his task. Three weeks of learning every nook and cranny of The Library disguised as a visiting scholar from Corel, a month of slow, deliberate work seducing the lonely Second Under–Scribe of the archives room and copying her key, and four weeks reconnoitering The Library under cover of darkness had finally come to an end.
+
+Climbing up onto the balcony from below had been tricky work, and the difficulty of keeping a grip on the slick stone ledge had made even cracking the simple window lock hard. Now it was all finished. The Doveillo assassin carefully secured the window behind him and began to survey the room in preparation for the final work. He had been provided with a powerful contact poison; some dreadful thing purchased in secret dealings from the black elves. A bit of it carefully smeared on the arms of her chair and the handles of her desk drawers would do the trick.
+
+There was a sudden sound of footsteps and voices in the corridor and the glimmer of light from under the door. Wolves take her, she was working at four in the morning! Maveith stuffed the unopened vial back into his shirt and leaped into a dark corner behind a curtain, knocking over a pile of leather–bound tomes in passing. He stilled the motion of the curtain just as the door opened and light poured into the room, illuminating the study in flickering radiance. From his hiding place Maveith could see a burly, black-bearded man holding a lantern and a wiry woman whose skin was a mass of wrinkes.
+
+"Am I going mad, Ecker? Which of us is the admiral and which the frail old lady?" demanded the Prime Minister, poking the bearded man in the chest with a long, bony finger. "I expect these simpering excuses about swamp ghosts and haunted lands from the whining Lanun that work down at the docks, not from you."
+
+"But Minister," protested Ecker, setting the lantern on the desk and mopping his brow with a corner of his cloak, "I only speak of established dangers. Should we not take them into consideration?"
+
+Prime Minister Outhe waved her hands dismissively. For a moment, she did not speak, but fumbled in her cloak with something that Maveith could not see. He tensed, silently drawing his long knife from its sheath and preparing to fight for his life. But the old woman's face was suddenly lit with a dull red glow, and she exhaled a trickle of smoke. Maveith realized she had just lit up a long, thin pipe, such as he had seen others smoking on the streets of Junon.
+
+She puffed in silence for a moment, while Ecker waited patiently for her to speak. Then she withdrew the pipe from her mouth and gestured with it out the open window. "Everything we've accomplished here has come from our stores of knowledge. Why do we hold the Doviello at bay in Mortensholm Gap? Because of the dedication of our men at Fort Triumph, and because of our superior knowledge of the bowyer's craft. Why do our people rest easy while the Grey Fever lays waste to Kabhalg and Hyol? Because our mastery of natural philosophy makes our infirmaries and our physicians the envy of Erebus, and our knowledge of hygiene turns the fever from our borders. What is the pride of our nation, the defense of our land, and the path to a future free from oppression and fear? It is knowledge, Ecker. Only knowledge. Do not speak to me about established dangers; I know them all too well. I want to you tell me about the knowledge that we could gain in those islands-knowledge that will secure the future for this people, living in the shadow of the second Godswar."
+
+While she had been speaking, the aged Prime Minister had been pacing back and forth, nearer and nearer to the edge of the curtain where Maveith was hiding. She stopped suddenly, gazing at the ground near her desk. With at thrill, the assassin realized that she was looking at the books he had knocked askew in his rush to hide.
+
+"Ecker," said Outhe slowly, reaching into her cloak, "call the guards."
+
+It was now or never-Maveith leapt from his hiding place, long knife raised for the kill. There was a brilliant flash of light, and a clap of thunder rolled through the room. Something hit him in the chest, so hard that it knocked him back against the bookshelf. He staggered forward, but the knife dropped from his suddenly feeble hand. He fell to one knee and saw that blood was spurting from a blackened hole in his chest. His eyes rolled up, and he saw the old woman gazing impassively down at him. In her left hand she held the pipe, and in the right she gripped a strange device of wood and metalwork pointed at him. Smoke was rising from the hollow end of it.
+
+"And as you can see, Ecker," he heard her say, as though from a thousand miles away, "sometimes knowledge of the world saves an old woman from a vigorous young killer." Then it all went dark.</English>
+        <French>She had her own private room at The Library. A few weeks of drinking in Junon taverns had earned Maveith that information; the key to all he had to do.
+
+Junon locals were inordinately proud of their temple to knowledge, and if you asked one of them the way to the library, they'd give you a long, speculative look and say, "Did you want one of the record-houses about town, or do you mean . . ."-and here they would insert a dramatic pause and intone the words, a little more deeply, with reverence worthy of a monk-"The Library?" Not that they didn't have reason to be proud; the marble pillars and smooth stone walls would have been fit enough for ten palaces back in the Doveillo lands.
+
+But at last Maveith had succeeded in his task. Three weeks of learning every nook and cranny of The Library disguised as a visiting scholar from Corel, a month of slow, deliberate work seducing the lonely Second Under–Scribe of the archives room and copying her key, and four weeks reconnoitering The Library under cover of darkness had finally come to an end.
+
+Climbing up onto the balcony from below had been tricky work, and the difficulty of keeping a grip on the slick stone ledge had made even cracking the simple window lock hard. Now it was all finished. The Doveillo assassin carefully secured the window behind him and began to survey the room in preparation for the final work. He had been provided with a powerful contact poison; some dreadful thing purchased in secret dealings from the black elves. A bit of it carefully smeared on the arms of her chair and the handles of her desk drawers would do the trick.
+
+There was a sudden sound of footsteps and voices in the corridor and the glimmer of light from under the door. Wolves take her, she was working at four in the morning! Maveith stuffed the unopened vial back into his shirt and leaped into a dark corner behind a curtain, knocking over a pile of leather–bound tomes in passing. He stilled the motion of the curtain just as the door opened and light poured into the room, illuminating the study in flickering radiance. From his hiding place Maveith could see a burly, black-bearded man holding a lantern and a wiry woman whose skin was a mass of wrinkes.
+
+"Am I going mad, Ecker? Which of us is the admiral and which the frail old lady?" demanded the Prime Minister, poking the bearded man in the chest with a long, bony finger. "I expect these simpering excuses about swamp ghosts and haunted lands from the whining Lanun that work down at the docks, not from you."
+
+"But Minister," protested Ecker, setting the lantern on the desk and mopping his brow with a corner of his cloak, "I only speak of established dangers. Should we not take them into consideration?"
+
+Prime Minister Outhe waved her hands dismissively. For a moment, she did not speak, but fumbled in her cloak with something that Maveith could not see. He tensed, silently drawing his long knife from its sheath and preparing to fight for his life. But the old woman's face was suddenly lit with a dull red glow, and she exhaled a trickle of smoke. Maveith realized she had just lit up a long, thin pipe, such as he had seen others smoking on the streets of Junon.
+
+She puffed in silence for a moment, while Ecker waited patiently for her to speak. Then she withdrew the pipe from her mouth and gestured with it out the open window. "Everything we've accomplished here has come from our stores of knowledge. Why do we hold the Doviello at bay in Mortensholm Gap? Because of the dedication of our men at Fort Triumph, and because of our superior knowledge of the bowyer's craft. Why do our people rest easy while the Grey Fever lays waste to Kabhalg and Hyol? Because our mastery of natural philosophy makes our infirmaries and our physicians the envy of Erebus, and our knowledge of hygiene turns the fever from our borders. What is the pride of our nation, the defense of our land, and the path to a future free from oppression and fear? It is knowledge, Ecker. Only knowledge. Do not speak to me about established dangers; I know them all too well. I want to you tell me about the knowledge that we could gain in those islands-knowledge that will secure the future for this people, living in the shadow of the second Godswar."
+
+While she had been speaking, the aged Prime Minister had been pacing back and forth, nearer and nearer to the edge of the curtain where Maveith was hiding. She stopped suddenly, gazing at the ground near her desk. With at thrill, the assassin realized that she was looking at the books he had knocked askew in his rush to hide.
+
+"Ecker," said Outhe slowly, reaching into her cloak, "call the guards."
+
+It was now or never-Maveith leapt from his hiding place, long knife raised for the kill. There was a brilliant flash of light, and a clap of thunder rolled through the room. Something hit him in the chest, so hard that it knocked him back against the bookshelf. He staggered forward, but the knife dropped from his suddenly feeble hand. He fell to one knee and saw that blood was spurting from a blackened hole in his chest. His eyes rolled up, and he saw the old woman gazing impassively down at him. In her left hand she held the pipe, and in the right she gripped a strange device of wood and metalwork pointed at him. Smoke was rising from the hollow end of it.
+
+"And as you can see, Ecker," he heard her say, as though from a thousand miles away, "sometimes knowledge of the world saves an old woman from a vigorous young killer." Then it all went dark.</French>
+        <German>She had her own private room at The Library. A few weeks of drinking in Junon taverns had earned Maveith that information; the key to all he had to do.
+
+Junon locals were inordinately proud of their temple to knowledge, and if you asked one of them the way to the library, they'd give you a long, speculative look and say, "Did you want one of the record-houses about town, or do you mean . . ."-and here they would insert a dramatic pause and intone the words, a little more deeply, with reverence worthy of a monk-"The Library?" Not that they didn't have reason to be proud; the marble pillars and smooth stone walls would have been fit enough for ten palaces back in the Doveillo lands.
+
+But at last Maveith had succeeded in his task. Three weeks of learning every nook and cranny of The Library disguised as a visiting scholar from Corel, a month of slow, deliberate work seducing the lonely Second Under–Scribe of the archives room and copying her key, and four weeks reconnoitering The Library under cover of darkness had finally come to an end.
+
+Climbing up onto the balcony from below had been tricky work, and the difficulty of keeping a grip on the slick stone ledge had made even cracking the simple window lock hard. Now it was all finished. The Doveillo assassin carefully secured the window behind him and began to survey the room in preparation for the final work. He had been provided with a powerful contact poison; some dreadful thing purchased in secret dealings from the black elves. A bit of it carefully smeared on the arms of her chair and the handles of her desk drawers would do the trick.
+
+There was a sudden sound of footsteps and voices in the corridor and the glimmer of light from under the door. Wolves take her, she was working at four in the morning! Maveith stuffed the unopened vial back into his shirt and leaped into a dark corner behind a curtain, knocking over a pile of leather–bound tomes in passing. He stilled the motion of the curtain just as the door opened and light poured into the room, illuminating the study in flickering radiance. From his hiding place Maveith could see a burly, black-bearded man holding a lantern and a wiry woman whose skin was a mass of wrinkes.
+
+"Am I going mad, Ecker? Which of us is the admiral and which the frail old lady?" demanded the Prime Minister, poking the bearded man in the chest with a long, bony finger. "I expect these simpering excuses about swamp ghosts and haunted lands from the whining Lanun that work down at the docks, not from you."
+
+"But Minister," protested Ecker, setting the lantern on the desk and mopping his brow with a corner of his cloak, "I only speak of established dangers. Should we not take them into consideration?"
+
+Prime Minister Outhe waved her hands dismissively. For a moment, she did not speak, but fumbled in her cloak with something that Maveith could not see. He tensed, silently drawing his long knife from its sheath and preparing to fight for his life. But the old woman's face was suddenly lit with a dull red glow, and she exhaled a trickle of smoke. Maveith realized she had just lit up a long, thin pipe, such as he had seen others smoking on the streets of Junon.
+
+She puffed in silence for a moment, while Ecker waited patiently for her to speak. Then she withdrew the pipe from her mouth and gestured with it out the open window. "Everything we've accomplished here has come from our stores of knowledge. Why do we hold the Doviello at bay in Mortensholm Gap? Because of the dedication of our men at Fort Triumph, and because of our superior knowledge of the bowyer's craft. Why do our people rest easy while the Grey Fever lays waste to Kabhalg and Hyol? Because our mastery of natural philosophy makes our infirmaries and our physicians the envy of Erebus, and our knowledge of hygiene turns the fever from our borders. What is the pride of our nation, the defense of our land, and the path to a future free from oppression and fear? It is knowledge, Ecker. Only knowledge. Do not speak to me about established dangers; I know them all too well. I want to you tell me about the knowledge that we could gain in those islands-knowledge that will secure the future for this people, living in the shadow of the second Godswar."
+
+While she had been speaking, the aged Prime Minister had been pacing back and forth, nearer and nearer to the edge of the curtain where Maveith was hiding. She stopped suddenly, gazing at the ground near her desk. With at thrill, the assassin realized that she was looking at the books he had knocked askew in his rush to hide.
+
+"Ecker," said Outhe slowly, reaching into her cloak, "call the guards."
+
+It was now or never-Maveith leapt from his hiding place, long knife raised for the kill. There was a brilliant flash of light, and a clap of thunder rolled through the room. Something hit him in the chest, so hard that it knocked him back against the bookshelf. He staggered forward, but the knife dropped from his suddenly feeble hand. He fell to one knee and saw that blood was spurting from a blackened hole in his chest. His eyes rolled up, and he saw the old woman gazing impassively down at him. In her left hand she held the pipe, and in the right she gripped a strange device of wood and metalwork pointed at him. Smoke was rising from the hollow end of it.
+
+"And as you can see, Ecker," he heard her say, as though from a thousand miles away, "sometimes knowledge of the world saves an old woman from a vigorous young killer." Then it all went dark.</German>
+        <Italian>She had her own private room at The Library. A few weeks of drinking in Junon taverns had earned Maveith that information; the key to all he had to do.
+
+Junon locals were inordinately proud of their temple to knowledge, and if you asked one of them the way to the library, they'd give you a long, speculative look and say, "Did you want one of the record-houses about town, or do you mean . . ."-and here they would insert a dramatic pause and intone the words, a little more deeply, with reverence worthy of a monk-"The Library?" Not that they didn't have reason to be proud; the marble pillars and smooth stone walls would have been fit enough for ten palaces back in the Doveillo lands.
+
+But at last Maveith had succeeded in his task. Three weeks of learning every nook and cranny of The Library disguised as a visiting scholar from Corel, a month of slow, deliberate work seducing the lonely Second Under–Scribe of the archives room and copying her key, and four weeks reconnoitering The Library under cover of darkness had finally come to an end.
+
+Climbing up onto the balcony from below had been tricky work, and the difficulty of keeping a grip on the slick stone ledge had made even cracking the simple window lock hard. Now it was all finished. The Doveillo assassin carefully secured the window behind him and began to survey the room in preparation for the final work. He had been provided with a powerful contact poison; some dreadful thing purchased in secret dealings from the black elves. A bit of it carefully smeared on the arms of her chair and the handles of her desk drawers would do the trick.
+
+There was a sudden sound of footsteps and voices in the corridor and the glimmer of light from under the door. Wolves take her, she was working at four in the morning! Maveith stuffed the unopened vial back into his shirt and leaped into a dark corner behind a curtain, knocking over a pile of leather–bound tomes in passing. He stilled the motion of the curtain just as the door opened and light poured into the room, illuminating the study in flickering radiance. From his hiding place Maveith could see a burly, black-bearded man holding a lantern and a wiry woman whose skin was a mass of wrinkes.
+
+"Am I going mad, Ecker? Which of us is the admiral and which the frail old lady?" demanded the Prime Minister, poking the bearded man in the chest with a long, bony finger. "I expect these simpering excuses about swamp ghosts and haunted lands from the whining Lanun that work down at the docks, not from you."
+
+"But Minister," protested Ecker, setting the lantern on the desk and mopping his brow with a corner of his cloak, "I only speak of established dangers. Should we not take them into consideration?"
+
+Prime Minister Outhe waved her hands dismissively. For a moment, she did not speak, but fumbled in her cloak with something that Maveith could not see. He tensed, silently drawing his long knife from its sheath and preparing to fight for his life. But the old woman's face was suddenly lit with a dull red glow, and she exhaled a trickle of smoke. Maveith realized she had just lit up a long, thin pipe, such as he had seen others smoking on the streets of Junon.
+
+She puffed in silence for a moment, while Ecker waited patiently for her to speak. Then she withdrew the pipe from her mouth and gestured with it out the open window. "Everything we've accomplished here has come from our stores of knowledge. Why do we hold the Doviello at bay in Mortensholm Gap? Because of the dedication of our men at Fort Triumph, and because of our superior knowledge of the bowyer's craft. Why do our people rest easy while the Grey Fever lays waste to Kabhalg and Hyol? Because our mastery of natural philosophy makes our infirmaries and our physicians the envy of Erebus, and our knowledge of hygiene turns the fever from our borders. What is the pride of our nation, the defense of our land, and the path to a future free from oppression and fear? It is knowledge, Ecker. Only knowledge. Do not speak to me about established dangers; I know them all too well. I want to you tell me about the knowledge that we could gain in those islands-knowledge that will secure the future for this people, living in the shadow of the second Godswar."
+
+While she had been speaking, the aged Prime Minister had been pacing back and forth, nearer and nearer to the edge of the curtain where Maveith was hiding. She stopped suddenly, gazing at the ground near her desk. With at thrill, the assassin realized that she was looking at the books he had knocked askew in his rush to hide.
+
+"Ecker," said Outhe slowly, reaching into her cloak, "call the guards."
+
+It was now or never-Maveith leapt from his hiding place, long knife raised for the kill. There was a brilliant flash of light, and a clap of thunder rolled through the room. Something hit him in the chest, so hard that it knocked him back against the bookshelf. He staggered forward, but the knife dropped from his suddenly feeble hand. He fell to one knee and saw that blood was spurting from a blackened hole in his chest. His eyes rolled up, and he saw the old woman gazing impassively down at him. In her left hand she held the pipe, and in the right she gripped a strange device of wood and metalwork pointed at him. Smoke was rising from the hollow end of it.
+
+"And as you can see, Ecker," he heard her say, as though from a thousand miles away, "sometimes knowledge of the world saves an old woman from a vigorous young killer." Then it all went dark.</Italian>
+        <Spanish>She had her own private room at The Library. A few weeks of drinking in Junon taverns had earned Maveith that information; the key to all he had to do.
+
+Junon locals were inordinately proud of their temple to knowledge, and if you asked one of them the way to the library, they'd give you a long, speculative look and say, "Did you want one of the record-houses about town, or do you mean . . ."-and here they would insert a dramatic pause and intone the words, a little more deeply, with reverence worthy of a monk-"The Library?" Not that they didn't have reason to be proud; the marble pillars and smooth stone walls would have been fit enough for ten palaces back in the Doveillo lands.
+
+But at last Maveith had succeeded in his task. Three weeks of learning every nook and cranny of The Library disguised as a visiting scholar from Corel, a month of slow, deliberate work seducing the lonely Second Under–Scribe of the archives room and copying her key, and four weeks reconnoitering The Library under cover of darkness had finally come to an end.
+
+Climbing up onto the balcony from below had been tricky work, and the difficulty of keeping a grip on the slick stone ledge had made even cracking the simple window lock hard. Now it was all finished. The Doveillo assassin carefully secured the window behind him and began to survey the room in preparation for the final work. He had been provided with a powerful contact poison; some dreadful thing purchased in secret dealings from the black elves. A bit of it carefully smeared on the arms of her chair and the handles of her desk drawers would do the trick.
+
+There was a sudden sound of footsteps and voices in the corridor and the glimmer of light from under the door. Wolves take her, she was working at four in the morning! Maveith stuffed the unopened vial back into his shirt and leaped into a dark corner behind a curtain, knocking over a pile of leather–bound tomes in passing. He stilled the motion of the curtain just as the door opened and light poured into the room, illuminating the study in flickering radiance. From his hiding place Maveith could see a burly, black-bearded man holding a lantern and a wiry woman whose skin was a mass of wrinkes.
+
+"Am I going mad, Ecker? Which of us is the admiral and which the frail old lady?" demanded the Prime Minister, poking the bearded man in the chest with a long, bony finger. "I expect these simpering excuses about swamp ghosts and haunted lands from the whining Lanun that work down at the docks, not from you."
+
+"But Minister," protested Ecker, setting the lantern on the desk and mopping his brow with a corner of his cloak, "I only speak of established dangers. Should we not take them into consideration?"
+
+Prime Minister Outhe waved her hands dismissively. For a moment, she did not speak, but fumbled in her cloak with something that Maveith could not see. He tensed, silently drawing his long knife from its sheath and preparing to fight for his life. But the old woman's face was suddenly lit with a dull red glow, and she exhaled a trickle of smoke. Maveith realized she had just lit up a long, thin pipe, such as he had seen others smoking on the streets of Junon.
+
+She puffed in silence for a moment, while Ecker waited patiently for her to speak. Then she withdrew the pipe from her mouth and gestured with it out the open window. "Everything we've accomplished here has come from our stores of knowledge. Why do we hold the Doviello at bay in Mortensholm Gap? Because of the dedication of our men at Fort Triumph, and because of our superior knowledge of the bowyer's craft. Why do our people rest easy while the Grey Fever lays waste to Kabhalg and Hyol? Because our mastery of natural philosophy makes our infirmaries and our physicians the envy of Erebus, and our knowledge of hygiene turns the fever from our borders. What is the pride of our nation, the defense of our land, and the path to a future free from oppression and fear? It is knowledge, Ecker. Only knowledge. Do not speak to me about established dangers; I know them all too well. I want to you tell me about the knowledge that we could gain in those islands-knowledge that will secure the future for this people, living in the shadow of the second Godswar."
+
+While she had been speaking, the aged Prime Minister had been pacing back and forth, nearer and nearer to the edge of the curtain where Maveith was hiding. She stopped suddenly, gazing at the ground near her desk. With at thrill, the assassin realized that she was looking at the books he had knocked askew in his rush to hide.
+
+"Ecker," said Outhe slowly, reaching into her cloak, "call the guards."
+
+It was now or never-Maveith leapt from his hiding place, long knife raised for the kill. There was a brilliant flash of light, and a clap of thunder rolled through the room. Something hit him in the chest, so hard that it knocked him back against the bookshelf. He staggered forward, but the knife dropped from his suddenly feeble hand. He fell to one knee and saw that blood was spurting from a blackened hole in his chest. His eyes rolled up, and he saw the old woman gazing impassively down at him. In her left hand she held the pipe, and in the right she gripped a strange device of wood and metalwork pointed at him. Smoke was rising from the hollow end of it.
+
+"And as you can see, Ecker," he heard her say, as though from a thousand miles away, "sometimes knowledge of the world saves an old woman from a vigorous young killer." Then it all went dark.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_OUTHE</Tag>
+        <English>We placed our trust in knowledge rather than the unfaithful gods, but it seems that knowledge, too, has vanished away. The Grigori go quietly into the long darkness that awaits us – and, without the light of our sciences, awaits you.</English>
+        <French>We placed our trust in knowledge rather than the unfaithful gods, but it seems that knowledge, too, has vanished away. The Grigori go quietly into the long darkness that awaits us – and, without the light of our sciences, awaits you.</French>
+        <German>We placed our trust in knowledge rather than the unfaithful gods, but it seems that knowledge, too, has vanished away. The Grigori go quietly into the long darkness that awaits us – and, without the light of our sciences, awaits you.</German>
+        <Italian>We placed our trust in knowledge rather than the unfaithful gods, but it seems that knowledge, too, has vanished away. The Grigori go quietly into the long darkness that awaits us – and, without the light of our sciences, awaits you.</Italian>
+        <Spanish>We placed our trust in knowledge rather than the unfaithful gods, but it seems that knowledge, too, has vanished away. The Grigori go quietly into the long darkness that awaits us – and, without the light of our sciences, awaits you.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ILITHIRIDAN</Tag>
+        <English>Ilithiridan</English>
+        <French>Ilithiridan</French>
+        <German>Ilithiridan</German>
+        <Italian>Ilithiridan</Italian>
+        <Spanish>Ilithiridan</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_ILITHIRIDAN_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_UKASTA</Tag>
+        <English>Ukasta</English>
+        <French>
+			<Text>Ukasta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Ukasta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Ukasta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Ukasta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_UKASTA_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_CITH_MOR</Tag>
+        <English>Cith Mor</English>
+        <French>Cith Mor</French>
+        <German>Cith Mor</German>
+        <Italian>Cith Mor</Italian>
+        <Spanish>Cith Mor</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_CITH_MOR_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_PALGADEE</Tag>
+        <English>Palgadee</English>
+        <French>
+			<Text>Palgadee</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Palgadee</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Palgadee</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Palgadee</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_PALGADEE_PEDIA</Tag>
+        <English>It sounded like a simple job, but that was just because you couldn't see the tricky side. Smuggling holy texts to dissidents in a foreign land should have been a simple job too. Palgadee was always keen to spread the word, and the opportunity to earn a little money on the side was even better. Shame one of the metal-heads had invented a device to audit the trail of their currency. The tech-priests picked her up shortly afterwards.
+
+The high priest, a brute of a thing (Palgadee hesitated to call him a man), offered her a choice. She could work in the salt mines or she perform a small favour for him. Just like the metal-heads to offer a choice of no choice at all.
+
+She was instructed to sell a golden hair to a young Grigori named Menec and tell him it came from the Tomb of Sucellus. It sounded like blasphemy, and she briefly thought about reconsidering, but she was keen to learn why two nations who had abandoned the gods were trying to pass off a fake relic for a real one.
+
+Menec wasn't too difficult to fool. He could be a little hot-headed, but she found that if she broached the subject of his adventures, he quickly got caught up spinning his own glory. After that it was easy, an appreciative nod here, a flattering smile there... and just before dawn she slipped out of the bed and took a few Mechanos coins from his pouch. She made sure they got back to the metal-heads; their tracking devices would clearly show that she got them from Menec and they'd presume her mission had been a success.
+
+Later on, she heard that Menec had chartered a ship from the Ljosalfar to Mechania. Maybe, he really had recovered a relic from the Tomb of Sucellus. If so, Palgadee knew that a holy relic now lay in the hands of heathens and would have to be liberated.
+
+Now that sounded like a simple job.</English>
+        <French>It sounded like a simple job, but that was just because you couldn't see the tricky side. Smuggling holy texts to dissidents in a foreign land should have been a simple job too. Palgadee was always keen to spread the word, and the opportunity to earn a little money on the side was even better. Shame one of the metal-heads had invented a device to audit the trail of their currency. The tech-priests picked her up shortly afterwards.
+
+The high priest, a brute of a thing (Palgadee hesitated to call him a man), offered her a choice. She could work in the salt mines or she perform a small favour for him. Just like the metal-heads to offer a choice of no choice at all.
+
+She was instructed to sell a golden hair to a young Grigori named Menec and tell him it came from the Tomb of Sucellus. It sounded like blasphemy, and she briefly thought about reconsidering, but she was keen to learn why two nations who had abandoned the gods were trying to pass off a fake relic for a real one.
+
+Menec wasn't too difficult to fool. He could be a little hot-headed, but she found that if she broached the subject of his adventures, he quickly got caught up spinning his own glory. After that it was easy, an appreciative nod here, a flattering smile there... and just before dawn she slipped out of the bed and took a few Mechanos coins from his pouch. She made sure they got back to the metal-heads; their tracking devices would clearly show that she got them from Menec and they'd presume her mission had been a success.
+
+Later on, she heard that Menec had chartered a ship from the Ljosalfar to Mechania. Maybe, he really had recovered a relic from the Tomb of Sucellus. If so, Palgadee knew that a holy relic now lay in the hands of heathens and would have to be liberated.
+
+Now that sounded like a simple job.</French>
+        <German>It sounded like a simple job, but that was just because you couldn't see the tricky side. Smuggling holy texts to dissidents in a foreign land should have been a simple job too. Palgadee was always keen to spread the word, and the opportunity to earn a little money on the side was even better. Shame one of the metal-heads had invented a device to audit the trail of their currency. The tech-priests picked her up shortly afterwards.
+
+The high priest, a brute of a thing (Palgadee hesitated to call him a man), offered her a choice. She could work in the salt mines or she perform a small favour for him. Just like the metal-heads to offer a choice of no choice at all.
+
+She was instructed to sell a golden hair to a young Grigori named Menec and tell him it came from the Tomb of Sucellus. It sounded like blasphemy, and she briefly thought about reconsidering, but she was keen to learn why two nations who had abandoned the gods were trying to pass off a fake relic for a real one.
+
+Menec wasn't too difficult to fool. He could be a little hot-headed, but she found that if she broached the subject of his adventures, he quickly got caught up spinning his own glory. After that it was easy, an appreciative nod here, a flattering smile there... and just before dawn she slipped out of the bed and took a few Mechanos coins from his pouch. She made sure they got back to the metal-heads; their tracking devices would clearly show that she got them from Menec and they'd presume her mission had been a success.
+
+Later on, she heard that Menec had chartered a ship from the Ljosalfar to Mechania. Maybe, he really had recovered a relic from the Tomb of Sucellus. If so, Palgadee knew that a holy relic now lay in the hands of heathens and would have to be liberated.
+
+Now that sounded like a simple job.</German>
+        <Italian>It sounded like a simple job, but that was just because you couldn't see the tricky side. Smuggling holy texts to dissidents in a foreign land should have been a simple job too. Palgadee was always keen to spread the word, and the opportunity to earn a little money on the side was even better. Shame one of the metal-heads had invented a device to audit the trail of their currency. The tech-priests picked her up shortly afterwards.
+
+The high priest, a brute of a thing (Palgadee hesitated to call him a man), offered her a choice. She could work in the salt mines or she perform a small favour for him. Just like the metal-heads to offer a choice of no choice at all.
+
+She was instructed to sell a golden hair to a young Grigori named Menec and tell him it came from the Tomb of Sucellus. It sounded like blasphemy, and she briefly thought about reconsidering, but she was keen to learn why two nations who had abandoned the gods were trying to pass off a fake relic for a real one.
+
+Menec wasn't too difficult to fool. He could be a little hot-headed, but she found that if she broached the subject of his adventures, he quickly got caught up spinning his own glory. After that it was easy, an appreciative nod here, a flattering smile there... and just before dawn she slipped out of the bed and took a few Mechanos coins from his pouch. She made sure they got back to the metal-heads; their tracking devices would clearly show that she got them from Menec and they'd presume her mission had been a success.
+
+Later on, she heard that Menec had chartered a ship from the Ljosalfar to Mechania. Maybe, he really had recovered a relic from the Tomb of Sucellus. If so, Palgadee knew that a holy relic now lay in the hands of heathens and would have to be liberated.
+
+Now that sounded like a simple job.</Italian>
+        <Spanish>It sounded like a simple job, but that was just because you couldn't see the tricky side. Smuggling holy texts to dissidents in a foreign land should have been a simple job too. Palgadee was always keen to spread the word, and the opportunity to earn a little money on the side was even better. Shame one of the metal-heads had invented a device to audit the trail of their currency. The tech-priests picked her up shortly afterwards.
+
+The high priest, a brute of a thing (Palgadee hesitated to call him a man), offered her a choice. She could work in the salt mines or she perform a small favour for him. Just like the metal-heads to offer a choice of no choice at all.
+
+She was instructed to sell a golden hair to a young Grigori named Menec and tell him it came from the Tomb of Sucellus. It sounded like blasphemy, and she briefly thought about reconsidering, but she was keen to learn why two nations who had abandoned the gods were trying to pass off a fake relic for a real one.
+
+Menec wasn't too difficult to fool. He could be a little hot-headed, but she found that if she broached the subject of his adventures, he quickly got caught up spinning his own glory. After that it was easy, an appreciative nod here, a flattering smile there... and just before dawn she slipped out of the bed and took a few Mechanos coins from his pouch. She made sure they got back to the metal-heads; their tracking devices would clearly show that she got them from Menec and they'd presume her mission had been a success.
+
+Later on, she heard that Menec had chartered a ship from the Ljosalfar to Mechania. Maybe, he really had recovered a relic from the Tomb of Sucellus. If so, Palgadee knew that a holy relic now lay in the hands of heathens and would have to be liberated.
+
+Now that sounded like a simple job.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_JURLA</Tag>
+        <English>Jurla</English>
+        <French>Jurla</French>
+        <German>Jurla</German>
+        <Italian>Jurla</Italian>
+        <Spanish>Jurla</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_JURLA_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KISH_RIKA</Tag>
+        <English>Kish'Rika</English>
+        <French>Kish'Rika</French>
+        <German>Kish'Rika</German>
+        <Italian>Kish'Rika</Italian>
+        <Spanish>Kish'Rika</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_KISH_RIKA_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SARALET</Tag>
+        <English>Saralet</English>
+        <French>
+			<Text>Saralet</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Saralet</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Saralet</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Saralet</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_SARALET_PEDIA</Tag>
+        <English>A strand of black hair had escaped from her hood, apparently hoping for a glimpse of the sun. She brushed it back with one white hand. Her skin was nearly as white as her cloak - pale and exotic. It had, from time to time, excited raging jealousy in the Malakim court ladies, whose own skin, even with the most diligent application of lotions, oils, and pearl-powders, remained obdurately bronze. But no matter how long Queen Saralet rode with her retinue in the stabbing light of the desert, she never darkened one iota. Some ancient magic mixed in her blood kept her ever sparkling like a snowflake amidst the dunes.
+Zaphra, her chief attendant, watched her standing with a group of magi from the Academy, listening intently as they explained the mysterious operation of the mana crystals they had recently attuned to her specifications. Adepts stood or sat in various places around the colonnaded structure, and others flitted back and forth with crystals, dowsing rods, arcanist's sextants, and other tools that Zaphra had learned to use during her days in the Guild. But she was an adept no longer - instead, she waited for Queen Saralet; waited and watched. The white marble columns of the mana node were already thickly overgrown with ivy and flowering vines, and knee-high green grass waved in the breeze on every side of the node, until it gradually faded into scraggly desert scrub a half a league away. The magi had bound the node, by Saralet's command, into something that had made vitality bubble up out of the hostile desert foothills.
+Saralet turned away from the magi and began carefully descending the stairs to where her retinue was waiting. Zaphra stepped forward to meet her, extending her arm to give her Queen something to grasp as she made her way down the stone steps, incongruently slippery with thick mosses.
+They stepped up into the Queen's chariot and began lurching away down the long road to Golden Leane. After a few moments of quiet, Saralet pulled her hood back and gave Zaphra a curious smile.
+"You asked me why I did not order it bound to the Sun, as we did with the others. Do you see now?"
+Zaphra frowned in answer. Saralet looked out to the horizon and pointed. Zaphra could see the blaze of the Mirror of Heaven, baking the homeland of the Malakim to desert as it had been doing for a hundred years.
+"I have seen it, Zaphra. Seen it in visions and walked through it in my dreams. One day, these deserts will burst with life. This mana is only the first step; only the seed. One day, we will speak the words of the great spell, and life will wash over these barren valleys like a wave. In my dreams, I have sat on the riverbank in the shade of a tree as tall as the walls of Golden Leane, and I have washed my feet in the water and watched the light of the Mirror a league away."
+Zaphra felt that an answer was expected, but she could think of nothing to say. Finally, she ventured, "But my Queen, there is no river within a league of the Mirror."
+Saralet smiled and turned up her face as though welcoming the first prophesied drops of rain. "There will be."</English>
+        <French>A strand of black hair had escaped from her hood, apparently hoping for a glimpse of the sun. She brushed it back with one white hand. Her skin was nearly as white as her cloak - pale and exotic. It had, from time to time, excited raging jealousy in the Malakim court ladies, whose own skin, even with the most diligent application of lotions, oils, and pearl-powders, remained obdurately bronze. But no matter how long Queen Saralet rode with her retinue in the stabbing light of the desert, she never darkened one iota. Some ancient magic mixed in her blood kept her ever sparkling like a snowflake amidst the dunes.
+Zaphra, her chief attendant, watched her standing with a group of magi from the Academy, listening intently as they explained the mysterious operation of the mana crystals they had recently attuned to her specifications. Adepts stood or sat in various places around the colonnaded structure, and others flitted back and forth with crystals, dowsing rods, arcanist's sextants, and other tools that Zaphra had learned to use during her days in the Guild. But she was an adept no longer - instead, she waited for Queen Saralet; waited and watched. The white marble columns of the mana node were already thickly overgrown with ivy and flowering vines, and knee-high green grass waved in the breeze on every side of the node, until it gradually faded into scraggly desert scrub a half a league away. The magi had bound the node, by Saralet's command, into something that had made vitality bubble up out of the hostile desert foothills.
+Saralet turned away from the magi and began carefully descending the stairs to where her retinue was waiting. Zaphra stepped forward to meet her, extending her arm to give her Queen something to grasp as she made her way down the stone steps, incongruently slippery with thick mosses.
+They stepped up into the Queen's chariot and began lurching away down the long road to Golden Leane. After a few moments of quiet, Saralet pulled her hood back and gave Zaphra a curious smile.
+"You asked me why I did not order it bound to the Sun, as we did with the others. Do you see now?"
+Zaphra frowned in answer. Saralet looked out to the horizon and pointed. Zaphra could see the blaze of the Mirror of Heaven, baking the homeland of the Malakim to desert as it had been doing for a hundred years.
+"I have seen it, Zaphra. Seen it in visions and walked through it in my dreams. One day, these deserts will burst with life. This mana is only the first step; only the seed. One day, we will speak the words of the great spell, and life will wash over these barren valleys like a wave. In my dreams, I have sat on the riverbank in the shade of a tree as tall as the walls of Golden Leane, and I have washed my feet in the water and watched the light of the Mirror a league away."
+Zaphra felt that an answer was expected, but she could think of nothing to say. Finally, she ventured, "But my Queen, there is no river within a league of the Mirror."
+Saralet smiled and turned up her face as though welcoming the first prophesied drops of rain. "There will be."</French>
+        <German>A strand of black hair had escaped from her hood, apparently hoping for a glimpse of the sun. She brushed it back with one white hand. Her skin was nearly as white as her cloak - pale and exotic. It had, from time to time, excited raging jealousy in the Malakim court ladies, whose own skin, even with the most diligent application of lotions, oils, and pearl-powders, remained obdurately bronze. But no matter how long Queen Saralet rode with her retinue in the stabbing light of the desert, she never darkened one iota. Some ancient magic mixed in her blood kept her ever sparkling like a snowflake amidst the dunes.
+Zaphra, her chief attendant, watched her standing with a group of magi from the Academy, listening intently as they explained the mysterious operation of the mana crystals they had recently attuned to her specifications. Adepts stood or sat in various places around the colonnaded structure, and others flitted back and forth with crystals, dowsing rods, arcanist's sextants, and other tools that Zaphra had learned to use during her days in the Guild. But she was an adept no longer - instead, she waited for Queen Saralet; waited and watched. The white marble columns of the mana node were already thickly overgrown with ivy and flowering vines, and knee-high green grass waved in the breeze on every side of the node, until it gradually faded into scraggly desert scrub a half a league away. The magi had bound the node, by Saralet's command, into something that had made vitality bubble up out of the hostile desert foothills.
+Saralet turned away from the magi and began carefully descending the stairs to where her retinue was waiting. Zaphra stepped forward to meet her, extending her arm to give her Queen something to grasp as she made her way down the stone steps, incongruently slippery with thick mosses.
+They stepped up into the Queen's chariot and began lurching away down the long road to Golden Leane. After a few moments of quiet, Saralet pulled her hood back and gave Zaphra a curious smile.
+"You asked me why I did not order it bound to the Sun, as we did with the others. Do you see now?"
+Zaphra frowned in answer. Saralet looked out to the horizon and pointed. Zaphra could see the blaze of the Mirror of Heaven, baking the homeland of the Malakim to desert as it had been doing for a hundred years.
+"I have seen it, Zaphra. Seen it in visions and walked through it in my dreams. One day, these deserts will burst with life. This mana is only the first step; only the seed. One day, we will speak the words of the great spell, and life will wash over these barren valleys like a wave. In my dreams, I have sat on the riverbank in the shade of a tree as tall as the walls of Golden Leane, and I have washed my feet in the water and watched the light of the Mirror a league away."
+Zaphra felt that an answer was expected, but she could think of nothing to say. Finally, she ventured, "But my Queen, there is no river within a league of the Mirror."
+Saralet smiled and turned up her face as though welcoming the first prophesied drops of rain. "There will be."</German>
+        <Italian>A strand of black hair had escaped from her hood, apparently hoping for a glimpse of the sun. She brushed it back with one white hand. Her skin was nearly as white as her cloak - pale and exotic. It had, from time to time, excited raging jealousy in the Malakim court ladies, whose own skin, even with the most diligent application of lotions, oils, and pearl-powders, remained obdurately bronze. But no matter how long Queen Saralet rode with her retinue in the stabbing light of the desert, she never darkened one iota. Some ancient magic mixed in her blood kept her ever sparkling like a snowflake amidst the dunes.
+Zaphra, her chief attendant, watched her standing with a group of magi from the Academy, listening intently as they explained the mysterious operation of the mana crystals they had recently attuned to her specifications. Adepts stood or sat in various places around the colonnaded structure, and others flitted back and forth with crystals, dowsing rods, arcanist's sextants, and other tools that Zaphra had learned to use during her days in the Guild. But she was an adept no longer - instead, she waited for Queen Saralet; waited and watched. The white marble columns of the mana node were already thickly overgrown with ivy and flowering vines, and knee-high green grass waved in the breeze on every side of the node, until it gradually faded into scraggly desert scrub a half a league away. The magi had bound the node, by Saralet's command, into something that had made vitality bubble up out of the hostile desert foothills.
+Saralet turned away from the magi and began carefully descending the stairs to where her retinue was waiting. Zaphra stepped forward to meet her, extending her arm to give her Queen something to grasp as she made her way down the stone steps, incongruently slippery with thick mosses.
+They stepped up into the Queen's chariot and began lurching away down the long road to Golden Leane. After a few moments of quiet, Saralet pulled her hood back and gave Zaphra a curious smile.
+"You asked me why I did not order it bound to the Sun, as we did with the others. Do you see now?"
+Zaphra frowned in answer. Saralet looked out to the horizon and pointed. Zaphra could see the blaze of the Mirror of Heaven, baking the homeland of the Malakim to desert as it had been doing for a hundred years.
+"I have seen it, Zaphra. Seen it in visions and walked through it in my dreams. One day, these deserts will burst with life. This mana is only the first step; only the seed. One day, we will speak the words of the great spell, and life will wash over these barren valleys like a wave. In my dreams, I have sat on the riverbank in the shade of a tree as tall as the walls of Golden Leane, and I have washed my feet in the water and watched the light of the Mirror a league away."
+Zaphra felt that an answer was expected, but she could think of nothing to say. Finally, she ventured, "But my Queen, there is no river within a league of the Mirror."
+Saralet smiled and turned up her face as though welcoming the first prophesied drops of rain. "There will be."</Italian>
+        <Spanish>A strand of black hair had escaped from her hood, apparently hoping for a glimpse of the sun. She brushed it back with one white hand. Her skin was nearly as white as her cloak - pale and exotic. It had, from time to time, excited raging jealousy in the Malakim court ladies, whose own skin, even with the most diligent application of lotions, oils, and pearl-powders, remained obdurately bronze. But no matter how long Queen Saralet rode with her retinue in the stabbing light of the desert, she never darkened one iota. Some ancient magic mixed in her blood kept her ever sparkling like a snowflake amidst the dunes.
+Zaphra, her chief attendant, watched her standing with a group of magi from the Academy, listening intently as they explained the mysterious operation of the mana crystals they had recently attuned to her specifications. Adepts stood or sat in various places around the colonnaded structure, and others flitted back and forth with crystals, dowsing rods, arcanist's sextants, and other tools that Zaphra had learned to use during her days in the Guild. But she was an adept no longer - instead, she waited for Queen Saralet; waited and watched. The white marble columns of the mana node were already thickly overgrown with ivy and flowering vines, and knee-high green grass waved in the breeze on every side of the node, until it gradually faded into scraggly desert scrub a half a league away. The magi had bound the node, by Saralet's command, into something that had made vitality bubble up out of the hostile desert foothills.
+Saralet turned away from the magi and began carefully descending the stairs to where her retinue was waiting. Zaphra stepped forward to meet her, extending her arm to give her Queen something to grasp as she made her way down the stone steps, incongruently slippery with thick mosses.
+They stepped up into the Queen's chariot and began lurching away down the long road to Golden Leane. After a few moments of quiet, Saralet pulled her hood back and gave Zaphra a curious smile.
+"You asked me why I did not order it bound to the Sun, as we did with the others. Do you see now?"
+Zaphra frowned in answer. Saralet looked out to the horizon and pointed. Zaphra could see the blaze of the Mirror of Heaven, baking the homeland of the Malakim to desert as it had been doing for a hundred years.
+"I have seen it, Zaphra. Seen it in visions and walked through it in my dreams. One day, these deserts will burst with life. This mana is only the first step; only the seed. One day, we will speak the words of the great spell, and life will wash over these barren valleys like a wave. In my dreams, I have sat on the riverbank in the shade of a tree as tall as the walls of Golden Leane, and I have washed my feet in the water and watched the light of the Mirror a league away."
+Zaphra felt that an answer was expected, but she could think of nothing to say. Finally, she ventured, "But my Queen, there is no river within a league of the Mirror."
+Saralet smiled and turned up her face as though welcoming the first prophesied drops of rain. "There will be."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_DEFEATED_SARALET</Tag>
+        <English>A good and peace-loving people have been utterly undone. We would have left the world a better place, if we had been able. Instead, it is darker and more barren, for even the sun covers its face at our passing. Mourn for us, and pray that you may escape our fate.</English>
+        <French>A good and peace-loving people have been utterly undone. We would have left the world a better place, if we had been able. Instead, it is darker and more barren, for even the sun covers its face at our passing. Mourn for us, and pray that you may escape our fate.</French>
+        <German>A good and peace-loving people have been utterly undone. We would have left the world a better place, if we had been able. Instead, it is darker and more barren, for even the sun covers its face at our passing. Mourn for us, and pray that you may escape our fate.</German>
+        <Italian>A good and peace-loving people have been utterly undone. We would have left the world a better place, if we had been able. Instead, it is darker and more barren, for even the sun covers its face at our passing. Mourn for us, and pray that you may escape our fate.</Italian>
+        <Spanish>A good and peace-loving people have been utterly undone. We would have left the world a better place, if we had been able. Instead, it is darker and more barren, for even the sun covers its face at our passing. Mourn for us, and pray that you may escape our fate.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OS_WARQA</Tag>
+        <English>Os-Warqa</English>
+        <French>
+			<Text>Os-Warqa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</French>
+        <German>
+			<Text>Os-Warqa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</German>
+        <Italian>
+			<Text>Os-Warqa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Italian>
+        <Spanish>
+			<Text>Os-Warqa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>		
+		</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OS_WARQA_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FUTIRO</Tag>
+        <English>Futiro</English>
+        <French>Futiro</French>
+        <German>Futiro</German>
+        <Italian>Futiro</Italian>
+        <Spanish>Futiro</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_FUTIRO_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HATHEIM</Tag>
+        <English>Hatheim</English>
+        <French>Hatheim</French>
+        <German>Hatheim</German>
+        <Italian>Hatheim</Italian>
+        <Spanish>Hatheim</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_HATHEIM_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LEASIEIGH</Tag>
+        <English>Leasieigh</English>
+        <French>Leasieigh</French>
+        <German>Leasieigh</German>
+        <Italian>Leasieigh</Italian>
+        <Spanish>Leasieigh</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_LEASIEIGH_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_NELL</Tag>
+        <English>Swift Nell</English>
+        <French>Swift Nell</French>
+        <German>Swift Nell</German>
+        <Italian>Swift Nell</Italian>
+        <Spanish>Swift Nell</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_NELL_PEDIA</Tag>
+        <English></English>
+        <French></French>
+        <German></German>
+        <Italian></Italian>
+        <Spanish></Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_EMPEROR_CULT</Tag>
+        <English>Emperor's Cult</English>
+        <French>Emperor's Cult</French>
+        <German>Emperor's Cult</German>
+        <Italian>Emperor's Cult</Italian>
+        <Spanish>Emperor's Cult</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_EMPEROR_CULT_SHORT</Tag>
+        <English>Emp</English>
+        <French>Emp</French>
+        <German>Emp</German>
+        <Italian>Emp</Italian>
+        <Spanish>Emp</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_MENEC_PEDIA</Tag>
+        <English>"Hamish! Dougal! I'll get yer tea in a jiffy! Now, Menec, wha' seems to be the matter wi' ye. Ye've ben nursing that dram for more'n a wee while an if'n ye don't min' me sayin' ye nae find yer answers at the bottom of a bottle."
+
+"Oh, it's you, Velvo. I'm sorry, I don't know if I'm in the mood for talking."
+
+"That disnae sound like ye, laddie. We all found yer tales of yer times in the Illian lands mos' entertainin', did'n we lads?"
+
+"Well I'm glad someone did. Those damned metal-heads didn't."
+
+"Ha' ye no other yarns fer us? I heard tell ye foun' the Tomb of Suc'llus, would ye nae care to tell us about that. T'would warm our hearts fer the flames is a little lackin' beref' of a tale or two, an' I may be able to stretch to a bed fer the night, if yer tell us a guid one."
+
+"Agreed. I imagine you are aware of the civil war in the Elven kingdoms."
+
+"Aye, there's many a ‘fugee as foun' their way to the Bent Nail. I dinnae care fer them meself, e'en the best of ‘ems a wee bit tricksy fer my liking. But Kelsie takes pity on em, so she does."
+
+"Well, the Tomb of Sucellus is found in the heart of elven battlefields, so I was going to have to sneak through a war-zone, not that I haven't done that before of course, but nevertheless... the Lljosfar.."
+
+"Are they the ones that'll shoot you from five hundred paces, or are they the one's that'll tricks ye ter thinkin' yers an eagle an' points yer towards the neares' bluff?"
+
+"They're the ones that would shoot you... or maybe they would have if they had the weapons to spare. The war was going badly for them and they were running pretty low on supplies, so they were willing to parlay. Now, as you know, I've picked up a few contacts in my time, so it wasn't hard to come to a deal and cross their lands safely."
+
+"So di' you nae ha' trouble wi' them other wee folk of the forest?"
+
+"I'm coming to that. I've spent a long time in the wilds a lot and I like to think that I'm a pretty good outdoorsman, but those Winter Elves can you surround you seven ways from sixpence on their own turf. I was in Winter Elf lands, and although there we're plenty of patrols looking for Summer Elves that weren't going to lose any sleep if they shot me by mistake."
+
+"Ye ought to be watching yerself, I hear them's grey-hairs are the worst. More cunning than the king of lies hisself."
+
+"The trees and plants in that part of the wood were all the ones that make the forest a wild and unwelcoming place. Firs as tall as giants, nettles the size of dinner plates, thorn and briars that catch you cloak and scratch your skin. Tree roots to tangle your legs and mud patches filled with leeches that'd suck your blood dry before you knew it. And to top it off, the mists had settled in and you could barely see from hear to the tavern door."
+
+"Aye, tis a dreicht day that nae guid for any but them's wi' evil in their hearts."
+
+"And evil is what I found. Foolishly, I stumbled head-first into a Winter Elf camp and had to run for my life. Now, if it'd been a clear day I would have been a goner for sure, but with the mists I was able to weave and bob. Their arrows thudded into the trees around me. I skidded this way, ducked that, and that's how I tripped over a tree root and slipped down a mud bank, losing my backpack to the river as I did so. I struck my head upon a branch, scratched my arms upon thick briars, but I was been lucky. My fall had bought me time. I knew I didn't have long, so I took the rabbit I had caught for my dinner from my belt and wrapped my cloak around it, then I flung it into the river, clinging closely to the mud bank as the war party closed in upon me.
+
+"I had seen that river on a map when I was with the Lljosfar and knew that things lived in that brook. Odd, unwholesome things made of mist and malice, with no purpose in this world save destruction. They fell upon my cloak in feeding frenzy, desperate to eat the fresh meat inside. It was torn to shreds in moments and blood spread over the water. My hunters, seeing the bloodshed and my torn cloak and backpack presumed I had fallen into the cursed waters. They were fearful of the monsters that could be found within and dared not search for my body. I held my breath tightly as they slipped away.
+
+"Tis lucky ye had tha' coney. Bu' ye're teasin' us Menec, di' ye reach the tomb of Suc'llus or nae?"
+
+"I did. It wasn't what I was expecting. Have you ever been to the Sidar downs?"
+
+"Nae, I ha'n't. But I heard tell tis a wild and barren place wi' the barraes for the lairds of ancient times."
+
+"Well I've been to the Sidar lands and.... No, I don't want to tell that story, just now. The tomb of Sucellus isn't really a tomb, just a big mound in the centre of the grove, like the barrows found on the Sidar downs, but twice as large."
+
+"So, how di' ye ken ye wuz at the right place?"
+
+"The forest I passed through to reach the tomb was an ugly and evil place, but this grove was different. This was like how a forest would look if it was drawn by a child. There were ferns and grasses, ripe berries and fruits hung from the branches of nearby trees, even though it was the height of winter. The mists had melted away and bright sunshine illuminated the mound at the centre of the grove. I was distracted for a moment as a salmon leapt from a pond in one corner. The water was as clear as the glass I drink from now.
+
+"No words can adequately describe the beauty of that place. Squirrels scampered amongst the tress. The grass swayed hypnotically in the wind. Butterflies flitted amongst the verdant foliage. Birds sang - no - birds worshipped. I... I'm not proud of what I did next. I... I was overwhelmed. I was hungry. I'd lost my pack and my last meal two days ago. I guess you could say I was desperate."
+
+"Ach, Menec. Wha' did ye do tha' was so shameful?"
+
+"I prayed! I closed my eyes and I prayed! And not just one of those half-hearted prayers that I used when I snuck through the Bannor lands that time, but a genuine, honest, divine, this-is-between-the-Gods-and-me prayer. You can gasp all you like, but you weren't there. And when I opened my eyes, there was a cuckoo's egg in my lap.
+
+"Amazed, I broke the egg open and gulped the raw yolk inside, gratefully repeating my thanks to whatever powers had heard my plea. And when I had drank my fill I cast the eggshell aside, but my eye was caught by a strip of gold shining in the sunshine. There it was - the golden hair of Sucellus. It gleamed and shone with unearthly allure. Flowers burst forth from the ground around it, a smorgasbord of colours, more splendid than the tassels on Perpentech's jacket. And I should know, I got to wear it once. I cannot imagine why a dead god thought me worthy of bearing such a holy relic. Every night I secretly wonder if I am a pawn in some larger game. I can only hope if I am no ill will come of it.
+
+"Get awae wi' ye, Menec. Ye worrae too much. Ye tell a guid tale, though, an' ye've earnt yesself bed fer the night, bu' it seems to me, tis a little too lavish fer me ter be believin yer, if'n ye don' min'. Now finish up yer drink an' I'll hae Kelsie make up yer bed and we'll fix yer wi' a couple of real eggs fer brekkie tomorrae."</English>
+        <French>"Hamish! Dougal! I'll get yer tea in a jiffy! Now, Menec, wha' seems to be the matter wi' ye. Ye've ben nursing that dram for more'n a wee while an if'n ye don't min' me sayin' ye nae find yer answers at the bottom of a bottle."
+
+"Oh, it's you, Velvo. I'm sorry, I don't know if I'm in the mood for talking."
+
+"That disnae sound like ye, laddie. We all found yer tales of yer times in the Illian lands mos' entertainin', did'n we lads?"
+
+"Well I'm glad someone did. Those damned metal-heads didn't."
+
+"Ha' ye no other yarns fer us? I heard tell ye foun' the Tomb of Suc'llus, would ye nae care to tell us about that. T'would warm our hearts fer the flames is a little lackin' beref' of a tale or two, an' I may be able to stretch to a bed fer the night, if yer tell us a guid one."
+
+"Agreed. I imagine you are aware of the civil war in the Elven kingdoms."
+
+"Aye, there's many a ‘fugee as foun' their way to the Bent Nail. I dinnae care fer them meself, e'en the best of ‘ems a wee bit tricksy fer my liking. But Kelsie takes pity on em, so she does."
+
+"Well, the Tomb of Sucellus is found in the heart of elven battlefields, so I was going to have to sneak through a war-zone, not that I haven't done that before of course, but nevertheless... the Lljosfar.."
+
+"Are they the ones that'll shoot you from five hundred paces, or are they the one's that'll tricks ye ter thinkin' yers an eagle an' points yer towards the neares' bluff?"
+
+"They're the ones that would shoot you... or maybe they would have if they had the weapons to spare. The war was going badly for them and they were running pretty low on supplies, so they were willing to parlay. Now, as you know, I've picked up a few contacts in my time, so it wasn't hard to come to a deal and cross their lands safely."
+
+"So di' you nae ha' trouble wi' them other wee folk of the forest?"
+
+"I'm coming to that. I've spent a long time in the wilds a lot and I like to think that I'm a pretty good outdoorsman, but those Winter Elves can you surround you seven ways from sixpence on their own turf. I was in Winter Elf lands, and although there we're plenty of patrols looking for Summer Elves that weren't going to lose any sleep if they shot me by mistake."
+
+"Ye ought to be watching yerself, I hear them's grey-hairs are the worst. More cunning than the king of lies hisself."
+
+"The trees and plants in that part of the wood were all the ones that make the forest a wild and unwelcoming place. Firs as tall as giants, nettles the size of dinner plates, thorn and briars that catch you cloak and scratch your skin. Tree roots to tangle your legs and mud patches filled with leeches that'd suck your blood dry before you knew it. And to top it off, the mists had settled in and you could barely see from hear to the tavern door."
+
+"Aye, tis a dreicht day that nae guid for any but them's wi' evil in their hearts."
+
+"And evil is what I found. Foolishly, I stumbled head-first into a Winter Elf camp and had to run for my life. Now, if it'd been a clear day I would have been a goner for sure, but with the mists I was able to weave and bob. Their arrows thudded into the trees around me. I skidded this way, ducked that, and that's how I tripped over a tree root and slipped down a mud bank, losing my backpack to the river as I did so. I struck my head upon a branch, scratched my arms upon thick briars, but I was been lucky. My fall had bought me time. I knew I didn't have long, so I took the rabbit I had caught for my dinner from my belt and wrapped my cloak around it, then I flung it into the river, clinging closely to the mud bank as the war party closed in upon me.
+
+"I had seen that river on a map when I was with the Lljosfar and knew that things lived in that brook. Odd, unwholesome things made of mist and malice, with no purpose in this world save destruction. They fell upon my cloak in feeding frenzy, desperate to eat the fresh meat inside. It was torn to shreds in moments and blood spread over the water. My hunters, seeing the bloodshed and my torn cloak and backpack presumed I had fallen into the cursed waters. They were fearful of the monsters that could be found within and dared not search for my body. I held my breath tightly as they slipped away.
+
+"Tis lucky ye had tha' coney. Bu' ye're teasin' us Menec, di' ye reach the tomb of Suc'llus or nae?"
+
+"I did. It wasn't what I was expecting. Have you ever been to the Sidar downs?"
+
+"Nae, I ha'n't. But I heard tell tis a wild and barren place wi' the barraes for the lairds of ancient times."
+
+"Well I've been to the Sidar lands and.... No, I don't want to tell that story, just now. The tomb of Sucellus isn't really a tomb, just a big mound in the centre of the grove, like the barrows found on the Sidar downs, but twice as large."
+
+"So, how di' ye ken ye wuz at the right place?"
+
+"The forest I passed through to reach the tomb was an ugly and evil place, but this grove was different. This was like how a forest would look if it was drawn by a child. There were ferns and grasses, ripe berries and fruits hung from the branches of nearby trees, even though it was the height of winter. The mists had melted away and bright sunshine illuminated the mound at the centre of the grove. I was distracted for a moment as a salmon leapt from a pond in one corner. The water was as clear as the glass I drink from now.
+
+"No words can adequately describe the beauty of that place. Squirrels scampered amongst the tress. The grass swayed hypnotically in the wind. Butterflies flitted amongst the verdant foliage. Birds sang - no - birds worshipped. I... I'm not proud of what I did next. I... I was overwhelmed. I was hungry. I'd lost my pack and my last meal two days ago. I guess you could say I was desperate."
+
+"Ach, Menec. Wha' did ye do tha' was so shameful?"
+
+"I prayed! I closed my eyes and I prayed! And not just one of those half-hearted prayers that I used when I snuck through the Bannor lands that time, but a genuine, honest, divine, this-is-between-the-Gods-and-me prayer. You can gasp all you like, but you weren't there. And when I opened my eyes, there was a cuckoo's egg in my lap.
+
+"Amazed, I broke the egg open and gulped the raw yolk inside, gratefully repeating my thanks to whatever powers had heard my plea. And when I had drank my fill I cast the eggshell aside, but my eye was caught by a strip of gold shining in the sunshine. There it was - the golden hair of Sucellus. It gleamed and shone with unearthly allure. Flowers burst forth from the ground around it, a smorgasbord of colours, more splendid than the tassels on Perpentech's jacket. And I should know, I got to wear it once. I cannot imagine why a dead god thought me worthy of bearing such a holy relic. Every night I secretly wonder if I am a pawn in some larger game. I can only hope if I am no ill will come of it.
+
+"Get awae wi' ye, Menec. Ye worrae too much. Ye tell a guid tale, though, an' ye've earnt yesself bed fer the night, bu' it seems to me, tis a little too lavish fer me ter be believin yer, if'n ye don' min'. Now finish up yer drink an' I'll hae Kelsie make up yer bed and we'll fix yer wi' a couple of real eggs fer brekkie tomorrae."</French>
+        <German>"Hamish! Dougal! I'll get yer tea in a jiffy! Now, Menec, wha' seems to be the matter wi' ye. Ye've ben nursing that dram for more'n a wee while an if'n ye don't min' me sayin' ye nae find yer answers at the bottom of a bottle."
+
+"Oh, it's you, Velvo. I'm sorry, I don't know if I'm in the mood for talking."
+
+"That disnae sound like ye, laddie. We all found yer tales of yer times in the Illian lands mos' entertainin', did'n we lads?"
+
+"Well I'm glad someone did. Those damned metal-heads didn't."
+
+"Ha' ye no other yarns fer us? I heard tell ye foun' the Tomb of Suc'llus, would ye nae care to tell us about that. T'would warm our hearts fer the flames is a little lackin' beref' of a tale or two, an' I may be able to stretch to a bed fer the night, if yer tell us a guid one."
+
+"Agreed. I imagine you are aware of the civil war in the Elven kingdoms."
+
+"Aye, there's many a ‘fugee as foun' their way to the Bent Nail. I dinnae care fer them meself, e'en the best of ‘ems a wee bit tricksy fer my liking. But Kelsie takes pity on em, so she does."
+
+"Well, the Tomb of Sucellus is found in the heart of elven battlefields, so I was going to have to sneak through a war-zone, not that I haven't done that before of course, but nevertheless... the Lljosfar.."
+
+"Are they the ones that'll shoot you from five hundred paces, or are they the one's that'll tricks ye ter thinkin' yers an eagle an' points yer towards the neares' bluff?"
+
+"They're the ones that would shoot you... or maybe they would have if they had the weapons to spare. The war was going badly for them and they were running pretty low on supplies, so they were willing to parlay. Now, as you know, I've picked up a few contacts in my time, so it wasn't hard to come to a deal and cross their lands safely."
+
+"So di' you nae ha' trouble wi' them other wee folk of the forest?"
+
+"I'm coming to that. I've spent a long time in the wilds a lot and I like to think that I'm a pretty good outdoorsman, but those Winter Elves can you surround you seven ways from sixpence on their own turf. I was in Winter Elf lands, and although there we're plenty of patrols looking for Summer Elves that weren't going to lose any sleep if they shot me by mistake."
+
+"Ye ought to be watching yerself, I hear them's grey-hairs are the worst. More cunning than the king of lies hisself."
+
+"The trees and plants in that part of the wood were all the ones that make the forest a wild and unwelcoming place. Firs as tall as giants, nettles the size of dinner plates, thorn and briars that catch you cloak and scratch your skin. Tree roots to tangle your legs and mud patches filled with leeches that'd suck your blood dry before you knew it. And to top it off, the mists had settled in and you could barely see from hear to the tavern door."
+
+"Aye, tis a dreicht day that nae guid for any but them's wi' evil in their hearts."
+
+"And evil is what I found. Foolishly, I stumbled head-first into a Winter Elf camp and had to run for my life. Now, if it'd been a clear day I would have been a goner for sure, but with the mists I was able to weave and bob. Their arrows thudded into the trees around me. I skidded this way, ducked that, and that's how I tripped over a tree root and slipped down a mud bank, losing my backpack to the river as I did so. I struck my head upon a branch, scratched my arms upon thick briars, but I was been lucky. My fall had bought me time. I knew I didn't have long, so I took the rabbit I had caught for my dinner from my belt and wrapped my cloak around it, then I flung it into the river, clinging closely to the mud bank as the war party closed in upon me.
+
+"I had seen that river on a map when I was with the Lljosfar and knew that things lived in that brook. Odd, unwholesome things made of mist and malice, with no purpose in this world save destruction. They fell upon my cloak in feeding frenzy, desperate to eat the fresh meat inside. It was torn to shreds in moments and blood spread over the water. My hunters, seeing the bloodshed and my torn cloak and backpack presumed I had fallen into the cursed waters. They were fearful of the monsters that could be found within and dared not search for my body. I held my breath tightly as they slipped away.
+
+"Tis lucky ye had tha' coney. Bu' ye're teasin' us Menec, di' ye reach the tomb of Suc'llus or nae?"
+
+"I did. It wasn't what I was expecting. Have you ever been to the Sidar downs?"
+
+"Nae, I ha'n't. But I heard tell tis a wild and barren place wi' the barraes for the lairds of ancient times."
+
+"Well I've been to the Sidar lands and.... No, I don't want to tell that story, just now. The tomb of Sucellus isn't really a tomb, just a big mound in the centre of the grove, like the barrows found on the Sidar downs, but twice as large."
+
+"So, how di' ye ken ye wuz at the right place?"
+
+"The forest I passed through to reach the tomb was an ugly and evil place, but this grove was different. This was like how a forest would look if it was drawn by a child. There were ferns and grasses, ripe berries and fruits hung from the branches of nearby trees, even though it was the height of winter. The mists had melted away and bright sunshine illuminated the mound at the centre of the grove. I was distracted for a moment as a salmon leapt from a pond in one corner. The water was as clear as the glass I drink from now.
+
+"No words can adequately describe the beauty of that place. Squirrels scampered amongst the tress. The grass swayed hypnotically in the wind. Butterflies flitted amongst the verdant foliage. Birds sang - no - birds worshipped. I... I'm not proud of what I did next. I... I was overwhelmed. I was hungry. I'd lost my pack and my last meal two days ago. I guess you could say I was desperate."
+
+"Ach, Menec. Wha' did ye do tha' was so shameful?"
+
+"I prayed! I closed my eyes and I prayed! And not just one of those half-hearted prayers that I used when I snuck through the Bannor lands that time, but a genuine, honest, divine, this-is-between-the-Gods-and-me prayer. You can gasp all you like, but you weren't there. And when I opened my eyes, there was a cuckoo's egg in my lap.
+
+"Amazed, I broke the egg open and gulped the raw yolk inside, gratefully repeating my thanks to whatever powers had heard my plea. And when I had drank my fill I cast the eggshell aside, but my eye was caught by a strip of gold shining in the sunshine. There it was - the golden hair of Sucellus. It gleamed and shone with unearthly allure. Flowers burst forth from the ground around it, a smorgasbord of colours, more splendid than the tassels on Perpentech's jacket. And I should know, I got to wear it once. I cannot imagine why a dead god thought me worthy of bearing such a holy relic. Every night I secretly wonder if I am a pawn in some larger game. I can only hope if I am no ill will come of it.
+
+"Get awae wi' ye, Menec. Ye worrae too much. Ye tell a guid tale, though, an' ye've earnt yesself bed fer the night, bu' it seems to me, tis a little too lavish fer me ter be believin yer, if'n ye don' min'. Now finish up yer drink an' I'll hae Kelsie make up yer bed and we'll fix yer wi' a couple of real eggs fer brekkie tomorrae."</German>
+        <Italian>"Hamish! Dougal! I'll get yer tea in a jiffy! Now, Menec, wha' seems to be the matter wi' ye. Ye've ben nursing that dram for more'n a wee while an if'n ye don't min' me sayin' ye nae find yer answers at the bottom of a bottle."
+
+"Oh, it's you, Velvo. I'm sorry, I don't know if I'm in the mood for talking."
+
+"That disnae sound like ye, laddie. We all found yer tales of yer times in the Illian lands mos' entertainin', did'n we lads?"
+
+"Well I'm glad someone did. Those damned metal-heads didn't."
+
+"Ha' ye no other yarns fer us? I heard tell ye foun' the Tomb of Suc'llus, would ye nae care to tell us about that. T'would warm our hearts fer the flames is a little lackin' beref' of a tale or two, an' I may be able to stretch to a bed fer the night, if yer tell us a guid one."
+
+"Agreed. I imagine you are aware of the civil war in the Elven kingdoms."
+
+"Aye, there's many a ‘fugee as foun' their way to the Bent Nail. I dinnae care fer them meself, e'en the best of ‘ems a wee bit tricksy fer my liking. But Kelsie takes pity on em, so she does."
+
+"Well, the Tomb of Sucellus is found in the heart of elven battlefields, so I was going to have to sneak through a war-zone, not that I haven't done that before of course, but nevertheless... the Lljosfar.."
+
+"Are they the ones that'll shoot you from five hundred paces, or are they the one's that'll tricks ye ter thinkin' yers an eagle an' points yer towards the neares' bluff?"
+
+"They're the ones that would shoot you... or maybe they would have if they had the weapons to spare. The war was going badly for them and they were running pretty low on supplies, so they were willing to parlay. Now, as you know, I've picked up a few contacts in my time, so it wasn't hard to come to a deal and cross their lands safely."
+
+"So di' you nae ha' trouble wi' them other wee folk of the forest?"
+
+"I'm coming to that. I've spent a long time in the wilds a lot and I like to think that I'm a pretty good outdoorsman, but those Winter Elves can you surround you seven ways from sixpence on their own turf. I was in Winter Elf lands, and although there we're plenty of patrols looking for Summer Elves that weren't going to lose any sleep if they shot me by mistake."
+
+"Ye ought to be watching yerself, I hear them's grey-hairs are the worst. More cunning than the king of lies hisself."
+
+"The trees and plants in that part of the wood were all the ones that make the forest a wild and unwelcoming place. Firs as tall as giants, nettles the size of dinner plates, thorn and briars that catch you cloak and scratch your skin. Tree roots to tangle your legs and mud patches filled with leeches that'd suck your blood dry before you knew it. And to top it off, the mists had settled in and you could barely see from hear to the tavern door."
+
+"Aye, tis a dreicht day that nae guid for any but them's wi' evil in their hearts."
+
+"And evil is what I found. Foolishly, I stumbled head-first into a Winter Elf camp and had to run for my life. Now, if it'd been a clear day I would have been a goner for sure, but with the mists I was able to weave and bob. Their arrows thudded into the trees around me. I skidded this way, ducked that, and that's how I tripped over a tree root and slipped down a mud bank, losing my backpack to the river as I did so. I struck my head upon a branch, scratched my arms upon thick briars, but I was been lucky. My fall had bought me time. I knew I didn't have long, so I took the rabbit I had caught for my dinner from my belt and wrapped my cloak around it, then I flung it into the river, clinging closely to the mud bank as the war party closed in upon me.
+
+"I had seen that river on a map when I was with the Lljosfar and knew that things lived in that brook. Odd, unwholesome things made of mist and malice, with no purpose in this world save destruction. They fell upon my cloak in feeding frenzy, desperate to eat the fresh meat inside. It was torn to shreds in moments and blood spread over the water. My hunters, seeing the bloodshed and my torn cloak and backpack presumed I had fallen into the cursed waters. They were fearful of the monsters that could be found within and dared not search for my body. I held my breath tightly as they slipped away.
+
+"Tis lucky ye had tha' coney. Bu' ye're teasin' us Menec, di' ye reach the tomb of Suc'llus or nae?"
+
+"I did. It wasn't what I was expecting. Have you ever been to the Sidar downs?"
+
+"Nae, I ha'n't. But I heard tell tis a wild and barren place wi' the barraes for the lairds of ancient times."
+
+"Well I've been to the Sidar lands and.... No, I don't want to tell that story, just now. The tomb of Sucellus isn't really a tomb, just a big mound in the centre of the grove, like the barrows found on the Sidar downs, but twice as large."
+
+"So, how di' ye ken ye wuz at the right place?"
+
+"The forest I passed through to reach the tomb was an ugly and evil place, but this grove was different. This was like how a forest would look if it was drawn by a child. There were ferns and grasses, ripe berries and fruits hung from the branches of nearby trees, even though it was the height of winter. The mists had melted away and bright sunshine illuminated the mound at the centre of the grove. I was distracted for a moment as a salmon leapt from a pond in one corner. The water was as clear as the glass I drink from now.
+
+"No words can adequately describe the beauty of that place. Squirrels scampered amongst the tress. The grass swayed hypnotically in the wind. Butterflies flitted amongst the verdant foliage. Birds sang - no - birds worshipped. I... I'm not proud of what I did next. I... I was overwhelmed. I was hungry. I'd lost my pack and my last meal two days ago. I guess you could say I was desperate."
+
+"Ach, Menec. Wha' did ye do tha' was so shameful?"
+
+"I prayed! I closed my eyes and I prayed! And not just one of those half-hearted prayers that I used when I snuck through the Bannor lands that time, but a genuine, honest, divine, this-is-between-the-Gods-and-me prayer. You can gasp all you like, but you weren't there. And when I opened my eyes, there was a cuckoo's egg in my lap.
+
+"Amazed, I broke the egg open and gulped the raw yolk inside, gratefully repeating my thanks to whatever powers had heard my plea. And when I had drank my fill I cast the eggshell aside, but my eye was caught by a strip of gold shining in the sunshine. There it was - the golden hair of Sucellus. It gleamed and shone with unearthly allure. Flowers burst forth from the ground around it, a smorgasbord of colours, more splendid than the tassels on Perpentech's jacket. And I should know, I got to wear it once. I cannot imagine why a dead god thought me worthy of bearing such a holy relic. Every night I secretly wonder if I am a pawn in some larger game. I can only hope if I am no ill will come of it.
+
+"Get awae wi' ye, Menec. Ye worrae too much. Ye tell a guid tale, though, an' ye've earnt yesself bed fer the night, bu' it seems to me, tis a little too lavish fer me ter be believin yer, if'n ye don' min'. Now finish up yer drink an' I'll hae Kelsie make up yer bed and we'll fix yer wi' a couple of real eggs fer brekkie tomorrae."</Italian>
+        <Spanish>"Hamish! Dougal! I'll get yer tea in a jiffy! Now, Menec, wha' seems to be the matter wi' ye. Ye've ben nursing that dram for more'n a wee while an if'n ye don't min' me sayin' ye nae find yer answers at the bottom of a bottle."
+
+"Oh, it's you, Velvo. I'm sorry, I don't know if I'm in the mood for talking."
+
+"That disnae sound like ye, laddie. We all found yer tales of yer times in the Illian lands mos' entertainin', did'n we lads?"
+
+"Well I'm glad someone did. Those damned metal-heads didn't."
+
+"Ha' ye no other yarns fer us? I heard tell ye foun' the Tomb of Suc'llus, would ye nae care to tell us about that. T'would warm our hearts fer the flames is a little lackin' beref' of a tale or two, an' I may be able to stretch to a bed fer the night, if yer tell us a guid one."
+
+"Agreed. I imagine you are aware of the civil war in the Elven kingdoms."
+
+"Aye, there's many a ‘fugee as foun' their way to the Bent Nail. I dinnae care fer them meself, e'en the best of ‘ems a wee bit tricksy fer my liking. But Kelsie takes pity on em, so she does."
+
+"Well, the Tomb of Sucellus is found in the heart of elven battlefields, so I was going to have to sneak through a war-zone, not that I haven't done that before of course, but nevertheless... the Lljosfar.."
+
+"Are they the ones that'll shoot you from five hundred paces, or are they the one's that'll tricks ye ter thinkin' yers an eagle an' points yer towards the neares' bluff?"
+
+"They're the ones that would shoot you... or maybe they would have if they had the weapons to spare. The war was going badly for them and they were running pretty low on supplies, so they were willing to parlay. Now, as you know, I've picked up a few contacts in my time, so it wasn't hard to come to a deal and cross their lands safely."
+
+"So di' you nae ha' trouble wi' them other wee folk of the forest?"
+
+"I'm coming to that. I've spent a long time in the wilds a lot and I like to think that I'm a pretty good outdoorsman, but those Winter Elves can you surround you seven ways from sixpence on their own turf. I was in Winter Elf lands, and although there we're plenty of patrols looking for Summer Elves that weren't going to lose any sleep if they shot me by mistake."
+
+"Ye ought to be watching yerself, I hear them's grey-hairs are the worst. More cunning than the king of lies hisself."
+
+"The trees and plants in that part of the wood were all the ones that make the forest a wild and unwelcoming place. Firs as tall as giants, nettles the size of dinner plates, thorn and briars that catch you cloak and scratch your skin. Tree roots to tangle your legs and mud patches filled with leeches that'd suck your blood dry before you knew it. And to top it off, the mists had settled in and you could barely see from hear to the tavern door."
+
+"Aye, tis a dreicht day that nae guid for any but them's wi' evil in their hearts."
+
+"And evil is what I found. Foolishly, I stumbled head-first into a Winter Elf camp and had to run for my life. Now, if it'd been a clear day I would have been a goner for sure, but with the mists I was able to weave and bob. Their arrows thudded into the trees around me. I skidded this way, ducked that, and that's how I tripped over a tree root and slipped down a mud bank, losing my backpack to the river as I did so. I struck my head upon a branch, scratched my arms upon thick briars, but I was been lucky. My fall had bought me time. I knew I didn't have long, so I took the rabbit I had caught for my dinner from my belt and wrapped my cloak around it, then I flung it into the river, clinging closely to the mud bank as the war party closed in upon me.
+
+"I had seen that river on a map when I was with the Lljosfar and knew that things lived in that brook. Odd, unwholesome things made of mist and malice, with no purpose in this world save destruction. They fell upon my cloak in feeding frenzy, desperate to eat the fresh meat inside. It was torn to shreds in moments and blood spread over the water. My hunters, seeing the bloodshed and my torn cloak and backpack presumed I had fallen into the cursed waters. They were fearful of the monsters that could be found within and dared not search for my body. I held my breath tightly as they slipped away.
+
+"Tis lucky ye had tha' coney. Bu' ye're teasin' us Menec, di' ye reach the tomb of Suc'llus or nae?"
+
+"I did. It wasn't what I was expecting. Have you ever been to the Sidar downs?"
+
+"Nae, I ha'n't. But I heard tell tis a wild and barren place wi' the barraes for the lairds of ancient times."
+
+"Well I've been to the Sidar lands and.... No, I don't want to tell that story, just now. The tomb of Sucellus isn't really a tomb, just a big mound in the centre of the grove, like the barrows found on the Sidar downs, but twice as large."
+
+"So, how di' ye ken ye wuz at the right place?"
+
+"The forest I passed through to reach the tomb was an ugly and evil place, but this grove was different. This was like how a forest would look if it was drawn by a child. There were ferns and grasses, ripe berries and fruits hung from the branches of nearby trees, even though it was the height of winter. The mists had melted away and bright sunshine illuminated the mound at the centre of the grove. I was distracted for a moment as a salmon leapt from a pond in one corner. The water was as clear as the glass I drink from now.
+
+"No words can adequately describe the beauty of that place. Squirrels scampered amongst the tress. The grass swayed hypnotically in the wind. Butterflies flitted amongst the verdant foliage. Birds sang - no - birds worshipped. I... I'm not proud of what I did next. I... I was overwhelmed. I was hungry. I'd lost my pack and my last meal two days ago. I guess you could say I was desperate."
+
+"Ach, Menec. Wha' did ye do tha' was so shameful?"
+
+"I prayed! I closed my eyes and I prayed! And not just one of those half-hearted prayers that I used when I snuck through the Bannor lands that time, but a genuine, honest, divine, this-is-between-the-Gods-and-me prayer. You can gasp all you like, but you weren't there. And when I opened my eyes, there was a cuckoo's egg in my lap.
+
+"Amazed, I broke the egg open and gulped the raw yolk inside, gratefully repeating my thanks to whatever powers had heard my plea. And when I had drank my fill I cast the eggshell aside, but my eye was caught by a strip of gold shining in the sunshine. There it was - the golden hair of Sucellus. It gleamed and shone with unearthly allure. Flowers burst forth from the ground around it, a smorgasbord of colours, more splendid than the tassels on Perpentech's jacket. And I should know, I got to wear it once. I cannot imagine why a dead god thought me worthy of bearing such a holy relic. Every night I secretly wonder if I am a pawn in some larger game. I can only hope if I am no ill will come of it.
+
+"Get awae wi' ye, Menec. Ye worrae too much. Ye tell a guid tale, though, an' ye've earnt yesself bed fer the night, bu' it seems to me, tis a little too lavish fer me ter be believin yer, if'n ye don' min'. Now finish up yer drink an' I'll hae Kelsie make up yer bed and we'll fix yer wi' a couple of real eggs fer brekkie tomorrae."</Spanish>
+    </TEXT>	
+</Civ4GameText>

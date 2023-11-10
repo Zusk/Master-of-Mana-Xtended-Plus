@@ -1,0 +1,104 @@
+changelog 5.5
+
+- [AOS SI] Troll is renamed to Grinch (to avoid confusion with Jotnar's Trolls). It no longer requires Eternal Court. It is a Winter Court unit. Requires Commune with Nature.
+- [AOS SI] Tree Spirit no longer requires Eternal Court. It is a Summer Court unit. Requires Commune with Nature.
+- [AOS SI] Added explanation on Summer, Winter and Eternal Restoration projects in their pedia entry.
+- [ARISTARKH] Rework on their buildings:
+=== Buildings in Barter tech tree give gold.
+=== Buildings in Festivals tech tree give culture and small amount of happiness.
+=== Buildings in Education tech tree give science.
+=== Buildings in Ranger's Guild fasten soul consumption and give production.
+=== Buildings in Cult of Esus give various benefits, mostly good amount of happiness.
+- [ARISTARKH] Vampire Palace requires Warfare, gives +5 happiness.
+- [ARISTARKH] Necropolis requires Code of Laws, gives +2 global happiness.
+- [ARISTARKH] Withering Hex gives +3 spell research, +1 mana from Air/Fire/Ice/Death/Chaos mana.
+- [ARISTARKH] Sacrifial Pit requires Writing and Nexus of Knowledge. Gives +2 science, +1 science per Death mana, +20% science.
+- [ARISTARKH] Order of Spectral Sage requires Philosophy and Sacrificial Pit. Gives +5 science per cultural lavel, +1 global happiness.
+- [ARISTARKH] Excavated Library (Library UB) requires Necrosage (Elder Council UB). Gives +30% science.
+- [ARISTARKH] Baneful Omen (Courthouse UB) requires Necrosage (Elder Council UB).
+- [ARISTARKH] Decaying Soil costs 60 hammers.
+- [ARISTARKH] Haunted Road costs 150 hammers.
+- [ARISTARKH] Noxious Field gives +1 happiness from Death Mana.
+- [ARISTARKH] Bone Cage gives +1 happiness, +1 culture, +20% culture.
+- [ARISTARKH] Haunted Tower requires Entertainment, gives +1 happiness, +2 culture, +20% culture.
+- [ARISTARKH] Pernicious Dirge requires Drama, gives +1 happiness, +5 culture, +50% culture.
+- [ARISTARKH] Mortuary Enclosure requires Cult of Esus (Esus I), +2 happiness.
+- [ARISTARKH] Mausoleum requires Eyes of Shadow (Esus II), +2 happiness, +1 culture/Death mana.
+- [ARISTARKH] Forlorn Fault requires Tongue of Lies (Esus IV), +5 gold.
+- [ARISTARKH] Necra Sanctuary requires Heart of Darkness (Esus V), +3 happiness, +1 global happiness.
+- [ARISTARKH] Vile Requiem requires Prayer of Defilement (Esus VI), +1 mana/Death mana. Gives Cannibalise to unit built in this city.
+- [ARISTARKH] Mark of Night requires Master of Night (Esus VII), gives +2 global happiness, +100% culture. Gives Hidden to units visiting this city.
+- [ARISTRAKH] Gains Mausoleum (Grand Lodge UB) which gives Srong to unit produced in city (RG I).
+- [ARISTARKH] Unholy Glyphs requires Domesticate Animals (RG II), does not require Tainted Well.
+- [ARISTARKH] Catacomb requires Harvesting (RG III).
+- [ARISTARKH] Cabal Shrine requires Survival (RG IV).
+- [ARISTARKH] Grave Pact requires Nature Pact (RG V).
+- [ARISTARKH] Dracolich requires War Beast Mastery (RG VII), 10/+3 Unholy, +3 Death mana affinity.
+- [ARISTARKH] Vampire Count can be upgraded to Vampire Lord or Brujah.
+- [ARISTARKH] Can build Leaden Tower wonder (Gemsmithing) that increases yields from Defilers.
+- [ARISTARKH] Can no longer build Archives, Gemsmith, Jewelry, Masquerade, Feast of Plenty and Royal Banquet.
+- [ARISTARKH] Can not build animal cages but can sacrifice animals for Soul.
+- [ARISTRAKH] Gains 10 soul per population (twice with Herald of Death trait) when acquiring cities (as in vanilla MOM).
+- [ARISTRAKH] Gains additional souls when razing cities (newly added).
+- [ARISTRAKH] Increases Soul gained from combat a bit.
+- [AUSTRIN] Fixed Mounted Harmatt pink icon.
+- [AUSTRIN] Exploration Guild building gives +5 xp to Recon and Naval units (it was +2 xp).
+- [BALSERAPHS] Added Frostling Cage as their UB.
+- [BALSERAPHS] Changed their favourite improvement to Cottage (since Cottage line gives Culture now).
+- [BALSERAPHS] Courtesan gains "Immune to First Strike", "Immune to Defensive Strike" and no malus on city attack.
+- [BALSERAPHS] Courtesan no longer "shapeshift" to other unit after killing them.
+- [ELOHIM] Devout's Seal spell gives 100 xp, instead of 100 xp multiply with number of improvement sealed.
+- [ILLIANS] Mulyalfar Elf Druids do not require Grove. Requires Malevolent Designs (so Illians can get both Druids and Eidolons).
+- [ILLIANS] The White Hand is available if you have less than three Priests/High Priests of Winter, and will create up to three Priests of Winter for you.
+- [ILLIANS] The Deepening is available if you have three Priests/High Priests of Winter.
+- [JOTNAR] Elder Trolls and Woodfather do not require Grove. Requires Commune with Nature.
+- [KHAZAD] Battering Ram require Melee+Dwarf+Khazad and cost 200 gold.
+- [MAZATL] Added a tool tip help for their world spell condition (requires 12 Wyvern Guardians).
+- [BONUS] Added Timber resource (available on Tundra/Grassland forests). Art by GeneralMatt.
+- [BONUS] Changed Mithril's art and icons. Art by Mallin.
+- [CLASS] Fixed Blood Mage's Blood Healing spell.
+- [CLASS] Beast King now gives +str, +healing, +first strike to animal units.
+- [EQUIPMENT] Flying Carpet is changed to Mount category so Malakim Carpet Riders (and other units) can use other accessory.
+- [EVENT] Fixed Nietz Bandit Lord event option 3 (when you recruit him). 
+- [EVENT] Finding a Witch event gives you either +1 permanent happiness (if you kill the Witch) or 1 Adept with Blood Mage class (if you spare the Witch).
+- [EVENT] Harpy Bard event gives you either +1 permanent happiness (if you kill the harpy) or 1 Great Artist with 15 turns of revolt (if you let it).
+- [GAME] Increased map size a little bit.
+- [GAME] Hill Giants lost Bombard and gain Collateral Damage.
+- [GAME] Ars Moriendi now has Hero promotion and hostile combat aura.
+- [GAME] Mary is immune to Diseased, Plagued and Withered.
+- [GAME] Reduced Blood of Dragon's drop rate.
+- [GAME] Changes the spawn rates for various barbarian lairs to increase diversity.
+- [GAME] Not really a bug, just information: capturing slave/animal/domination only works when you have unit supply left.
+- [GUILD] Good leaders are blocked from Way of the Wicked and Malevolent Designs (Neutral can still research them).
+- [GUILD] Good leaders can choose between Righteousness or Commune with Nature.
+- [GUILD] Good leaders are blocked from Slaver's Guild.
+- [GUILD] Evil leaders are blocked from Way of the Wise and Righteousness (Neutral can still research them).
+- [GUILD] Evil leaders can choose between Malevolent Designs or Commune with Nature.
+- [GUILD] Evil leaders are blocked from Healer's Circle.
+- [GUILD] Aristrakh is blocked from Commune with Nature.
+- [GUILD] Neutral leaders can choose between Way of the Wise and Way of the Wicked.
+- [GUILD] Neutral leaders can choose between Righteousness, Commune with Nature or Malevolent Designs.
+- [GUILD] All Druids and their UUs now require Commune with Nature in Priest's Guild, instead of Ranger's Guild tech.
+- [GUILD] Merchant's Guild's Explorer's Hall gives +10xp for units created in the city.
+- [GUILD] Slaver's Forbidden Enclave makes Quarries produce +2 stone. 
+- [GUILD] Fixed Slaver's Fireseer's combat aura.
+- [GUILD] Esus' Unseen Blade gain "no bad goodies" when exploring huts.
+- [GUILD] Esus' Cloak of Shadow is pushed back at Prayer of Defilement. It negates city defense, thus very strong.
+- [GUILD] Esus' Gibbon Goetia is arcane unit with 0 attack/10 defense. 
+- [GUILD] Gibbon Goetia can change into other, stronger, unit in one tile radius. Warning: changing form removes Gibbon's existing promotions and equiments. It is also permanent (well, until you change again). It also makes Gibbon unable to go through rival territory!
+- [IMPROVEMENT] Fixed missing cottage line graphics for Grigori (and maybe other civs).
+- [IMPROVEMENT] Hamlet gives +1 culture for controlling city. Can be built in Swamp.
+- [IMPROVEMENT] Village gives +2 culture for controlling city. Unhealth goes down from 1.5 to 1.00.
+- [IMPROVEMENT] Town gives +3 culture for controlling city.
+- [IMPROVEMENT] Enclave gives +5 culture for controlling city.
+- [IMPROVEMENT] Fort is buildable in Wasteland, Sordid Plains and Dark Moors.
+- [MAGIC] Fixed pink button for Chaos Magic's Bloodthirsty promotion.
+- [PROMOTION] Buff promotions in Archery discipline.
+- [PROMOTION] Open more existing promotions for Animal and Beast.
+- [PROMOTOIN] Animals and Beasts can acquire Mobility 2 after getting Mobility 1.
+- [PROMOTION] Renamed "Divine" into "Concentration", gives +1 combat aura range to Disciple units.
+- [PROMOTION] Renamed "Divine Potency" into "Spiritualism", gives +1 combat aura range +4 target to Disciple units.
+- [PROMOTION] Potency gives 30% chance to gain xp, +10 spell damage, +30% spell target. 
+- [PROMOTION] Mages can learn "Spell Strike I-III" promotions (reduce enemy magic resistance, increase spell damage).
+- [PROMOTION] Illusionist promotion gives 25% chance to get Hidden per turn.
+- [RELIGION] Arete Civic gives +2 commerce/+2 stone to Quarries.

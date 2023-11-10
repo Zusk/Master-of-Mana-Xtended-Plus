@@ -1,0 +1,194 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="bTypeDependency" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bForceOverwrite" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="bDisabled" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bVictory" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bVictoryFailed" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="iPrereqAC" content="textOnly" dt:type="int"/>					
+	<ElementType name="Step" content="textOnly"/>							
+	<ElementType name="AdventureCounter" content="textOnly" dt:type="int"/>						
+	<ElementType name="AdventureStep" content="eltOnly">
+		<element type="Step" minOccurs="0" maxOccurs="*"/>
+		<element type="AdventureCounter" minOccurs="0" maxOccurs="*"/>		
+	</ElementType>		
+	<ElementType name="AdventureCounters" content="eltOnly">
+		<element type="AdventureStep" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="PyIsFinished" content="textOnly"/>							
+	<ElementType name="bEnabled" content="textOnly" dt:type="boolean"/>				
+	<ElementType name="LeaderType" content="textOnly"/>								
+	<ElementType name="PrereqLeader" content="eltOnly">
+		<element type="LeaderType"/>
+		<element type="bEnabled"/>
+	</ElementType>
+	<ElementType name="PrereqLeaders" content="eltOnly">
+		<element type="PrereqLeader" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="CivilizationType" content="textOnly"/>									
+	<ElementType name="PrereqCiv" content="eltOnly">
+		<element type="CivilizationType"/>
+		<element type="bEnabled"/>
+	</ElementType>
+	<ElementType name="PrereqCivsMet" content="eltOnly">
+		<element type="PrereqCiv" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="PrereqCivs" content="eltOnly">
+		<element type="PrereqCiv" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ReligionType" content="textOnly"/>										
+	<ElementType name="PrereqReligionFounded" content="eltOnly">
+		<element type="ReligionType"/>
+		<element type="bEnabled"/>
+	</ElementType>	
+	<ElementType name="PrereqReligionsFounded" content="eltOnly">
+		<element type="PrereqReligionFounded" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="AdventureInfo" content="eltOnly" order="many">
+		<element type="Type" minOccurs="0"/>
+		<element type="Description" minOccurs="0"/>
+		<element type="Help" minOccurs="0"/>		
+		<element type="bTypeDependency" minOccurs="0"/>								
+		<element type="bForceOverwrite" minOccurs="0"/>	
+		<element type="bDisabled" minOccurs="0"/>		
+		<element type="bVictory" minOccurs="0"/>
+		<element type="bVictoryFailed" minOccurs="0"/>		
+		<element type="iPrereqAC" minOccurs="0"/>				
+		<element type="AdventureCounters" minOccurs="0"/>			
+		<element type="PyIsFinished" minOccurs="0"/>
+		<element type="PrereqLeaders" minOccurs="0"/>
+		<element type="PrereqCivs" minOccurs="0"/>	
+		<element type="PrereqCivsMet" minOccurs="0"/>			
+		<element type="PrereqReligionsFounded" minOccurs="0"/>					
+	</ElementType>
+	<ElementType name="AdventureInfos" content="eltOnly">
+		<element type="AdventureInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4AdventureInfos" content="eltOnly">
+		<element type="AdventureInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+	<ElementType name="bCastAnySpell" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bCivicDuration" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bCivsDestroyed" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bConvertAllCivs" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bDeclareWar" content="textOnly" dt:type="boolean"/>								
+	<ElementType name="bDeclareWarAtFriendly" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bDestroyCivilization" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bDiscoverWholeMap" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bGlobalEnchantment" content="textOnly" dt:type="boolean"/>							
+	<ElementType name="bGovannonsLegacy" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bImprovementPillaged" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bKillHeroNetherblade" content="textOnly" dt:type="boolean"/>		
+	<ElementType name="bLanunCaptureShip" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bLeadOvercouncil" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bLeadUndercouncil" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bMazatlAmbushDeepJungle" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bMimicPromotion" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bNeverAdoptCivic" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bNeverLooseCity" content="textOnly" dt:type="boolean"/>							
+	<ElementType name="bNoBarBarian" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bPaxPatria" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bPlunderGold" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bRemoveReligionFromAllCities" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bSheaimSummonDemon" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bSpell" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bSpreadFeature" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bSpreadReligion" content="textOnly" dt:type="boolean"/>						
+	<ElementType name="bTroophyFromAnimal" content="textOnly" dt:type="boolean"/>								
+	<ElementType name="bUnitCreated" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bUnitKill" content="textOnly" dt:type="boolean"/>					
+	<ElementType name="bUnitPromoted" content="textOnly" dt:type="boolean"/>	
+	<ElementType name="bWorldUnitDefeated" content="textOnly" dt:type="boolean"/>							
+	<ElementType name="bCreateWorldWonder" content="textOnly" dt:type="boolean"/>									
+	<ElementType name="iACabove" content="textOnly" dt:type="int"/>									
+	<ElementType name="iACbelow" content="textOnly" dt:type="int"/>	
+	<ElementType name="iCapitalPopulation" content="textOnly" dt:type="int"/>									
+	<ElementType name="iGoldTreasury" content="textOnly" dt:type="int"/>							
+	<ElementType name="iNumBonusOwned" content="textOnly" dt:type="int"/>								
+	<ElementType name="iNumBuildingOwned" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumUnitsOwned" content="textOnly" dt:type="int"/>									
+	<ElementType name="iPurityCounter" content="textOnly" dt:type="int"/>								
+	<ElementType name="iUnitCount" content="textOnly" dt:type="int"/>								
+	<ElementType name="iUnitLevel" content="textOnly" dt:type="int"/>							
+	<ElementType name="BonusType" content="textOnly"/>										
+	<ElementType name="BuildingType" content="textOnly"/>								
+	<ElementType name="CivicType" content="textOnly"/>							
+<!--	<ElementType name="CivilizationType" content="textOnly"/>	already defined earlier -->						
+	<ElementType name="FeatureType" content="textOnly"/>
+	<ElementType name="ProjectType" content="textOnly"/>								
+	<ElementType name="PromotionType" content="textOnly"/>							
+<!--	<ElementType name="ReligionType" content="textOnly"/>		already defined earlier -->							
+	<ElementType name="RazeHolyCity" content="textOnly"/>							
+	<ElementType name="SpellType" content="textOnly"/>									
+	<ElementType name="UnitType" content="textOnly"/>	
+	<ElementType name="AdventureStepInfo" content="eltOnly" order="many">	
+		<element type="Type"/>		
+		<element type="bCastAnySpell"/>
+		<element type="bCivicDuration"/>		
+		<element type="bCivsDestroyed"/>
+		<element type="bConvertAllCivs"/>				
+		<element type="bDeclareWar"/>				
+		<element type="bDeclareWarAtFriendly"/>		
+		<element type="bDestroyCivilization"/>
+		<element type="bDiscoverWholeMap"/>		
+		<element type="bGlobalEnchantment"/>				
+		<element type="bGovannonsLegacy"/>		
+		<element type="bImprovementPillaged"/>
+		<element type="bKillHeroNetherblade"/>				
+		<element type="bLanunCaptureShip"/>		
+		<element type="bLeadOvercouncil"/>
+		<element type="bLeadUndercouncil"/>				
+		<element type="bMazatlAmbushDeepJungle"/>
+		<element type="bMimicPromotion"/>		
+		<element type="bNeverAdoptCivic"/>		
+		<element type="bNeverLooseCity"/>		
+		<element type="bNoBarBarian"/>					
+		<element type="bPaxPatria"/>		
+		<element type="bPlunderGold"/>				
+		<element type="bRemoveReligionFromAllCities"/>		
+		<element type="bSheaimSummonDemon"/>
+		<element type="bSpell"/>		
+		<element type="bSpreadFeature"/>				
+		<element type="bSpreadReligion"/>		
+		<element type="bTroophyFromAnimal"/>		
+		<element type="bUnitCreated"/>
+		<element type="bUnitKill"/>
+		<element type="bUnitPromoted"/>
+		<element type="bWorldUnitDefeated"/>
+		<element type="bCreateWorldWonder"/>				
+		<element type="iACabove"/>		
+		<element type="iACbelow"/>
+		<element type="iCapitalPopulation"/>
+		<element type="iGoldTreasury"/>	
+		<element type="iNumBonusOwned"/>				
+		<element type="iNumBuildingOwned"/>	
+		<element type="iNumUnitsOwned"/>				
+		<element type="iPurityCounter"/>		
+		<element type="iUnitCount"/>							
+		<element type="iUnitLevel"/>
+		<element type="BonusType"/>				
+		<element type="BuildingType"/>				
+		<element type="CivicType"/>
+		<element type="CivilizationType"/>
+		<element type="FeatureType"/>
+		<element type="ProjectType"/>		
+		<element type="PromotionType"/>
+		<element type="ReligionType"/>		
+		<element type="RazeHolyCity"/>
+		<element type="SpellType"/>		
+		<element type="UnitType"/>		
+	</ElementType>
+	<ElementType name="AdventureStepInfos" content="eltOnly">
+		<element type="AdventureStepInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4AdventureStepInfos" content="eltOnly">
+		<element type="AdventureStepInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>		
+</Schema>

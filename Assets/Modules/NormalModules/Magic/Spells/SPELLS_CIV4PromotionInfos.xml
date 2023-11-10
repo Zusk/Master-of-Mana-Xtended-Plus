@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4PromotionInfos xmlns="x-schema:SPELLS_CIV4UnitSchema.xml">
+    <PromotionInfos>
+        <PromotionInfo>
+            <Type>PROMOTION_SPELLTARGETS1</Type>
+            <Description>TXT_KEY_PROMOTION_SPELLTARGETS1</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			 <UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+			<iSpellTargetIncrease>15</iSpellTargetIncrease>
+            <Button>Art/Interface/Buttons/Promotions/targets1.dds</Button>
+        	<iPowerModifier>10</iPowerModifier>
+            <PromotionNextLevel>PROMOTION_SPELLTARGETS2</PromotionNextLevel>	
+		</PromotionInfo>	
+		<PromotionInfo>
+            <Type>PROMOTION_SPELLTARGETS2</Type>
+            <Description>TXT_KEY_PROMOTION_SPELLTARGETS2</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			 <UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+			<iSpellTargetIncrease>15</iSpellTargetIncrease>
+            <Button>Art/Interface/Buttons/Promotions/targets2.dds</Button>
+        	<iPowerModifier>10</iPowerModifier>
+            <PromotionNextLevel>PROMOTION_SPELLTARGETS3</PromotionNextLevel>
+			<PromotionPrereq>PROMOTION_SPELLTARGETS1</PromotionPrereq>			
+		</PromotionInfo>
+		<PromotionInfo>
+            <Type>PROMOTION_SPELLTARGETS3</Type>
+            <Description>TXT_KEY_PROMOTION_SPELLTARGETS3</Description>
+            <Sound>AS2D_IF_LEVELUP</Sound>
+			 <UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ADEPT</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+			<iSpellTargetIncrease>15</iSpellTargetIncrease>
+            <Button>Art/Interface/Buttons/Promotions/targets3.dds</Button>
+			<PromotionPrereq>PROMOTION_SPELLTARGETS2</PromotionPrereq>
+        	<iPowerModifier>10</iPowerModifier>
+		</PromotionInfo>
+    </PromotionInfos>
+</Civ4PromotionInfos>

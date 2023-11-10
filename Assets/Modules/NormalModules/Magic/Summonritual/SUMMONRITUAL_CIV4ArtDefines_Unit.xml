@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Civ4ArtDefines xmlns="x-schema:SUMMONRITUAL_CIV4ArtDefinesSchema.xml">
+	<UnitArtInfos>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SKELETON_RITUAL</Type>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas3.dds,6,9</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Summons/Skeleton2/swordsman6.nif</NIF>
+			<KFM>Art/Units/Swordsman/Swordsman.kfm</KFM>
+            <SHADERNIF>Art/Units/Summons/Skeleton2/swordsman6_fx.nif</SHADERNIF>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_SKELETON_SELECT</SelectionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ANGEL_SUMMON</Type>
+            <Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,2,4</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Summons/Angel/guardianangel.nif</NIF>
+			<KFM>Art/Units/AncientSpy/AncientSpy.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_MONK_SELECT</SelectionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_CRUSADER_SUMMON</Type>
+            <Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,5,4</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/summons/eternalcrusader/eternalcrusader3.nif</NIF>
+            <KFM>Art/Units/Unique_Sumeria_Vulture/Unique_Sumerian_Vulture blood.kfm</KFM>			
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_RELIGION_ORDER_TRAIN</SelectionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_HOLY_AVENGER</Type>
+            <Button>Art/Interface/Buttons/Units/Holyavenger.dds</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/summons/holyavenger/holyavenger2.nif</NIF>
+            <KFM>Art/Units/Charlemagne_HeavySwordsman/HeavySwordsman blood.kfm</KFM>			
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_HUMAN_PROTECTOR_SELECT</SelectionSound>
+        </UnitArtInfo>	
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_VYRKUL</Type>
+            <Button>Art/Interface/Buttons/Units/Vyrkul.dds</Button>
+            <fScale>0.8</fScale>
+            <fInterfaceScale>0.3</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+            <NIF>Art/Units/Summons/Vyrkul/Vyrkul.nif</NIF>
+            <KFM>Art/Units/Warrior/warrior blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+			<SelectionSound>AS3D_UN_DRAGON_BREATH_IN</SelectionSound>
+            <ActionSound>AS3D_UN_DRAGON_ROAR</ActionSound>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_PHANTOM_WARRIOR</Type>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,5,15</Button>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <bActAsLand>0</bActAsLand>
+            <bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/phantom units/phantom warrior.nif</NIF>
+            <KFM>Art/Units/Charlemagne_LightSpearman/LightSpearman blood.kfm</KFM>
+            <ShadowDef>
+                <ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+                <ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+                <fShadowScale>1</fShadowScale>
+            </ShadowDef>
+                <fBattleDistance>0.35</fBattleDistance>
+                <fRangedDeathTime>0.31</fRangedDeathTime>
+                <bActAsRanged>0</bActAsRanged>
+                <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_SPECTRE_SELECT</SelectionSound>
+        </UnitArtInfo>		
+	</UnitArtInfos>
+</Civ4ArtDefines>

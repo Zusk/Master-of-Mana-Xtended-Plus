@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Build Infos -->
+<Civ4BuildInfos xmlns="x-schema:XMALAKIM_CIV4UnitSchema.xml">
+	<BuildInfos>
+		<BuildInfo>
+			<Type>BUILD_CAMP_MALAKIM</Type>
+			<Description>Build Arid Camp</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>300</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<bApplyImprovementCost>1</bApplyImprovementCost>
+			<ImprovementType>IMPROVEMENT_CAMP_MALAKIM</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_H</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/camp.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_QUARRY_SCIONS</Type>
+			<Description>Build Patrian Quarry</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>300</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<bApplyImprovementCost>1</bApplyImprovementCost>
+			<ImprovementType>IMPROVEMENT_QUARRY_SCIONS</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_H</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/Quarry.dds</Button>
+		</BuildInfo>
+	</BuildInfos>
+</Civ4BuildInfos>

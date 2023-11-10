@@ -1,0 +1,238 @@
+New version with Unit Roster for all civs! This version is compatible with [url=http://www.masterofmana.com/phpBB3/viewtopic.php?p=33117#p33117.]Master of Mana 2.11[/url]. 
+
+[color=#0000FF][b]Download [url=http://www.mediafire.com/download/fq9hfyqcxlyz83r/Xtended%202.11-2.zip]here[/url].[/b][/color]
+
+Installation:
+[list=1][*]Install (or make a copy of) MoM 2.11.
+[*]Unzip Xtended for 2.11-2.
+[*]Move the Assets folder to MoM.
+[*]Choose YES to replace files.[/list]
+
+
+[size=150][b]Changelog (03 February 2014):[/b][/size]
+
+[color=#0000FF][b]Amurites[/b][/color]
+"Masters of the arcane, second to none."
+
+[list][*]Swordmage (melee, starting unit, immune to first strike)
+[*]Battlemage (melee, starts with Arcane Arts promotion)
+[*]Firebow (archer with +2 fire and can cast Fireball)
+[*]Chanter (recon, can Escape to Capital)
+[*]Witches (flying mounted unit, +2 lightning)
+[*]Planeshifter (recon, can Escape, paradrop range: 4)
+[*]Annuller (melee, immune to magic, resist elements)
+[*]Wizard (mage UU, starts with Arcane Focus [-33% mana cost])
+[/list]
+
+[color=#0000FF][b]Balseraphs[/b][/color]
+"Which one is more deadly, a joke went too far, or a knife deep in your gut?."
+
+[list][*]Freak (melee, starting unit, starts with Mutated)
+[*]Mimic (melee, steal promotion)
+[*]Clown (archer, cheap but rather weak)
+[*]Harlequin (recon, can Taunt enemies)
+[*]Baboon chariot (mounted, collateral dmg)
+[*]Courtesan (recon, spy, shape change)
+[*]Taskmaster (recon, attack weakest, 25% create slave after combat)
+[/list]
+
+[color=#0000FF][b]Calabim[/b][/color]
+"We shall feast upon your blood!"
+
+[list][*]Moroi (melee, starting unit, cast Burning Blood)
+[*]Brujah (melee, vampire, +4 unholy, collateral dmg)
+[*]Vampire Lord (melee, vampire, flying, immortal)
+[*]Bloodwitch (disciple, +2 unholy/+2 fire, great synergy with the Black Court)
+[*]Bloodpet (melee, cheap, weak, not scale with tech, Vampire-fodder, upgrade to Moroi)
+[*]Chariot (mounted)
+[/list]
+
+[color=#0000FF][b]Clan of Embers[/b][/color]
+"Your cities will burn to ashes!"
+
+[list][*]Orc Longbowman (archer, starting unit)
+[*]Orc Brute (melee)
+[*]Goblin scout (recon, weak, cheap, upgrade to Goblin Wolf Rider)
+[list][*]Goblin Wolf Rider (mounted, +1 poison)[/list]
+[*]Goblin Spider Rider (mounted, +4 poison, Crippling Bite)
+[*]Lizardman (recon, +2 poison, +att/def in swamp and marshes)
+[*]Stoneskin Ogre (melee, start with Stoneskin [+50% def], can Regrow Skin)
+[/list]
+
+[color=#0000FF][b]Grigori[/b][/color]
+"Life is just a series of adventures."
+
+[list][*]No hero
+[*]Militia (melee, cheap, starting unit, 1% chance to get "Hero" from combat)
+[*]Dragon Slayer (melee, +25% vs melee, start with Bravery, Dragon Slayer)
+[*]Treasure Hunter (recon, +25% vs recon, +2 poison)
+[*]Grigori Medic (melee, explore rival territory, +4 poison, start with Medic 1-3)
+[*]Adventurer (melee, start with random race/origin, can be upgraded to various units according to race/origin)
+[/list]
+
+[color=#0000FF][b]Hippus[/b][/color]
+"Master a horse, and you will master the whole world."
+
+[list][*]Spearman (melee, starting unit, +25% vs mounted)
+[*]Blade Dancer (melee, dual wield swords, City Raider)
+[*]Scout (mounted, cheap, weak)
+[*]Son of Tali (mounted, 50% chance withdraw)
+[*]Horse Archer (archer, 2 move, +25% vs mounted/archer/melee)
+[*]Mounted Adept/Mage/Archmage (arcane units, 2 move)
+[/list]
+
+[color=#0000FF][b]Illians[/b][/color]
+"The beauty of Eternal Winter."
+
+[list][*]Javelin Thrower (archer, starting unit)
+[*]Axeman (melee, start with Bravery)
+[*]Winter Blade (recon, attack weakest, hidden in snow)
+[*]Frostling Wolf Rider (mounted, +att/def in snow, +40% vs archer, resist cold, vulnerable to fire)
+[*]Frostmaiden (disciple, +att/def in snow, start with Medic)
+[*]Frost Drake (beast, flying, immune to cold, vulnerable to fire)
+[*]Snow Giant (melee, +att/def in tundra/snow, immune to cold, vulnerable to fire, affinity to Water node)
+[/list]
+
+[color=#0000FF][b]Infernal[/b][/color]
+"Champion of the World's End."
+
+[list][*]Ravager (melee, starting unit, +3 unholy)
+[*]Balor (melee, collateral, resist fire, stigmata)
+[*]Obsidian Demon (archer, +3 unholy)
+[*]Soul Hunter (recon, flying, attack weakest, 20% chance to create Manes)
+[*]Hellhound (beast, mana chaos affinity)
+[*]Abyss Knight (mounted, flying, start with Armor/Weapon)
+[*]Cacofiend (melee, start with Divine Rivalry, march, fear)
+[/list]
+
+[color=#0000FF][b]Khazad[/b][/color]
+"True happiness flows from a Vault abundant with gold and riches."
+
+[list][*]Fighter (melee, starting unit)
+[*]Breaker (melee, +20% vs melee/archer)
+[*]Crossbowman (archer, start with Ranged Combat 1)
+[*]Boar Rider (mounted, req Pig, cheap, relatively weak)
+[*]Hornguard (mounted, collateral, start with Fear)
+[*]Berserker (melee, start with Waraxe)
+[*]Myconid (recon, +att/def in Mushroom forests)
+[/list]
+
+[color=#0000FF][b]Illians[/b][/color]
+"Submit to the Boy-King's Decree!"
+
+[list][*]Homeguard (melee, starting unit, start with Homeland 1-3)
+[*]Dragonsworn (melee, start with Bravery, Loyalty, Mace)
+[*]Musteval (recon, Ratkind, start with Trap Making)
+[*]Skaven (recon, Ratkind, attack weakest, no city attack penalty)
+[*]Centaur (mounted, +20% vs melee/archer, start with Familiar Ground 1)
+[*]Centaur Archer (archer, move 2, start with Drill 1)
+[*]Centaur Charger (mounted, start with Heavy Lance)
+[/list]
+
+[color=#0000FF][b]Illians[/b][/color]
+"Ocean is as fickle as any wenches."
+
+[list][*]Thug (melee, starting unit, start with Club)
+[*]Bucaneer (archer, +25% vs melee/archer, ignore building defense)
+[*]Boarding Party (melee, +25% vs naval, start with Boarding, Sword)
+[*]Wench (recon, can Charm enemies)
+[*]War Tortoise (mounted, start with Water Walking)
+[*]Sea Hag (disciple, start with Water Walking, resist cold, vulnerable to fire, can Raise Drown, Tsunami)
+[/list]
+
+[color=#0000FF][b]Illians[/b][/color]
+"Kneel before the Summer Throne!"
+
+[list][*]Sentinel (archer, +20% vs melee, start with City Garrison 1)
+[*]Griffin Knight (mounted, start with Flying)
+[*]Flurry (archer, start with Woodsman 1, Composite Longbow, attack weakest)
+[*]Sentry (recon, weak, cheap, start with Sentry)
+[*]Fyrdwell (archer, move 2, req Deer)
+[*]Ranger (recon, start with Woodsman 1, Familiar Ground 1, Leather armor)
+[/list]
+
+[color=#0000FF][b]Luchuirp[/b][/color]
+"We found perfection in our Golems."
+
+[list][*]Wood Golem (golem, vulnerable to fire)
+[*]Iron Golem (golem, start with City Raider 1)
+[*]Clockwork Golem (golem, move 2, immune to first strikes)
+[*]Marble Golem (golem, collateral)
+[*]Nullstone Golem (golem, magic immune, regenerate)
+[*]Gargoyle (golem, start with Defensive, Sentry, move 2)
+[*]Dwarven Slinger (archer, starting unit, +10% hill defense)
+[*]Artificer (melee, combat aura boost golem)
+[/list]
+
+*golem: no unit combat, can not level up, strength do not scale with techs, stronger base str, affected by Artificer's aura
+
+[color=#0000FF][b]Malakim[/b][/color]
+"Everywhere is our land, but the desert is our home."
+
+[list][*]Lightbringer (disciple, starting unit, start with Medic, Sentry, spread Empyrean)*
+[*]Dervish (melee)
+[*]Camel Archer (archer, move 2, immune to first strike, start with Strike and Run)
+[*]Lancer (mounted, immune to first strike, start with Drill 1)
+[*]Carpet Rider (mounted, flying, +2 lightning/+2 fire)
+[*]Immortal (melee, start with Immortality)
+[/list]
+
+[color=#0000FF][b]Mercurians[/b][/color]
+"It's either you are with us, or against us!"
+
+[list][*]Templar (melee, start with Undead Slaying, Demon Slaying, +2 holy)
+[*]Oracle (recon, combat aura increase holy damage)
+[*]Cavalry (mounted, cheap, weak)
+[*]Angel (melee, angel, starting unit, can not be built, upgrade to higher angels)
+[*]Angel of Death (recon, angel, explore rival territories, start with Vile Touch, invisible, flying, +4 holy)
+[*]Ophanim (mounted, angel, flying, +3 holy)
+[*]Valkyrie (melee, angel, start with Immortality, +4 holy, 20% chance to create Hero of Valor unit)
+[*]Seraph (melee, angel, collateral, flying, resist fire, immortal, +5 holy/+2 fire)
+[*]Herald (recon, flying, start with Herald Staff, +4 holy)
+[*]Repentant Angel (recon, +1 holy/+1 poison) 
+[/list]
+
+[color=#0000FF][b]Sheaim[/b][/color]
+"True hope lies in the deepest desperation."
+
+[list][*]Queenguard (melee, starting unit, resist element, resist magic)
+[*]Emyrs (melee, start with Necromancer Vest/Skull Dagger)
+[*]Thrall (recon, weak, cheap, 20% chance to turn into Soulbound Demon)
+[list][*]Soulbound Demon (start with March, +2 unholy)[/list]
+[*]Manticore (beast, +25% vs mounted, start with Cannibalize, flying, +2 poison, available in early game, but do not scale with techs)
+[*]Pyre Zombie (melee, req AV, cheap, collateral, do not scale with tech)
+[*]Neophyte/Warlock/Eater of Dream (arcane units UU, have chance to create skeleton after combat)
+[/list]
+
+[color=#0000FF][b]Sidar[/b][/color]
+"We walk among the shadows."
+
+[list][*]Mistborn (melee, starting unit, start with Undead Slaying)
+[*]Cloud Walker (melee, start with Fear, Bravery, elemental resist)
+[*]Granite Guard (archer, start with Defender, Defensive)
+[*]Divided Soul (recon, can Sever Soul, +1 unholy/+1 poison)
+[*]Ghost (recon, immune to first strike, ignore building def, attack weakest enemy, can Hide, +5 unholy/+5 poison)
+[*]Achlys (disciple, invisible, start with Vile Touch, cursing combat aura)
+[/list]
+
+[color=#0000FF][b]Svartalfar[/b][/color]
+"Let me seduce you to death."
+
+[list][*]Warrior (melee, cheap, weak, starting unit)
+[*]Huntress (recon, +1 poison)
+[*]Beastmaster (recon, start with Beast Slayer, leather armor, +1 poison)
+[*]Sniper (archer, start with Crossbow)
+[*]Nyxkin (mounted, start with Fear)
+[*]Assassin (recon, start with Hidden Nationality, attack weakest enemy, +4 poison)
+[/list]
+
+Old changelog:
+[spoiler][b]Changelog (01 January 2014):[/b]
+[list=1][*][b]Spellresearch[/b]: ICE school is changed into WATER. The Water branch from Nature school is moved to the new Water school.
+[*][b]Spellresearch[/b]: more spells and rituals for various schools, mostly Air, Fire and Mind.
+[*][b]Victory[/b]: Altar of Luonnatar is added as a Victory Condition.
+[*][b]Guilds[/b]: Add Magi Circle from Xtended.
+[*][b]Guilds[/b]: Tweaks for Guild of Thieves and Priest Guild.
+[*]Various civs unique mechanics from Xtended (this will be updated when Sephi has converted other civs to the new rooster mechanic).
+[*]Various promotions from Xtended.
+[*]Various wands, robes and weapons from Xtended.[/list][/spoiler]

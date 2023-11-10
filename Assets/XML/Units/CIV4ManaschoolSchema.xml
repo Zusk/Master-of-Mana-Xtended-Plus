@@ -1,0 +1,59 @@
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>	
+	<ElementType name="BonusSummonStrength" content="textOnly"/>
+	<ElementType name="BonusReducedTerraformCost" content="textOnly"/>
+	<ElementType name="BonusIncreasedSpellResearch" content="textOnly"/>
+	<ElementType name="BonusReducedGlobalEnchantment" content="textOnly"/>
+	<ElementType name="BonusIncreasedTerraformEffect" content="textOnly"/>
+	<ElementType name="BonusIncreasedMana" content="textOnly"/>	
+	<ElementType name="BonusType" content="textOnly"/>	
+	<ElementType name="Button" content="textOnly"/>		
+	<ElementType name="Picture" content="textOnly"/>			
+	<ElementType name="Linked" content="textOnly" dt:type="boolean"/>		
+	<ElementType name="Bonus" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="Linked"/>		
+	</ElementType>		
+	<ElementType name="BonusLinked" content="eltOnly">
+		<element type="Bonus"/>
+	</ElementType>	
+	<ElementType name="Alignment" content="textOnly"/>		
+	<ElementType name="iMod" content="textOnly" dt:type="int"/>				
+	<ElementType name="SpellResearchAlignmentMod" content="eltOnly">
+		<element type="Alignment"/>
+		<element type="iMod"/>
+	</ElementType>			
+	<ElementType name="SpellResearchAlignmentMods" content="eltOnly">
+		<element type="SpellResearchAlignmentMod"/>
+	</ElementType>		
+	<ElementType name="TechType" content="textOnly"/>	
+	<ElementType name="iLevel" content="textOnly" dt:type="int"/>			
+	<ElementType name="TechLevel" content="eltOnly">
+		<element type="TechType"/>
+		<element type="iLevel"/>
+	</ElementType>			
+	<ElementType name="TechLevels" content="eltOnly">
+		<element type="TechLevel"/>
+	</ElementType>		
+	<ElementType name="ManaschoolInfo" content="eltOnly" order="many">
+		<element type="Description" minOccurs="0"/>	
+		<element type="BonusSummonStrength"/>
+		<element type="BonusReducedTerraformCost"/>		
+		<element type="BonusIncreasedSpellResearch"/>		
+		<element type="BonusReducedGlobalEnchantment"/>		
+		<element type="BonusIncreasedTerraformEffect"/>		
+		<element type="BonusIncreasedMana"/>						
+		<element type="BonusLinked"/>		
+		<element type="SpellResearchAlignmentMods"/>
+		<element type="TechLevels"/>		
+		<element type="Button"/>	
+		<element type="Picture"/>			
+	</ElementType>
+	<ElementType name="ManaschoolInfos" content="eltOnly">
+		<element type="ManaschoolInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+	<ElementType name="Civ4ManaschoolInfos" content="eltOnly">
+		<element type="ManaschoolInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>	
+</Schema>

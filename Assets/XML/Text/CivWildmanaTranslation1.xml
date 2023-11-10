@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Translations for various menu options
+-->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_TITLE</Tag>
+		<English>Strategy Overlay</English>
+		<French>Strategy Overlay</French>
+		<German>Strategie-Overlay</German>
+		<Italian>Livello Strategico</Italian>
+		<Spanish>Strategy Overlay</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_DOTMAPPER</Tag>
+		<English>Dot Mapper</English>
+		<French>Dot Mapper</French>
+		<German>Punkt-Werkzeug</German>
+		<Italian>Mappa di posizionamento</Italian>
+		<Spanish>Dot Mapper</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_PLACECITY</Tag>
+		<English>Place City</English>
+		<French>Place City</French>
+		<German>Stadt platzieren</German>
+		<Italian>Posiziona città</Italian>
+		<Spanish>Place City</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_REMOVECITY</Tag>
+		<English>Remove City</English>
+		<French>Remove City</French>
+		<German>Stadt entfernen</German>
+		<Italian>Rimuovi Città</Italian>
+		<Spanish>Remove City</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_COLORSELECT</Tag>
+		<English>Color Selection</English>
+		<French>Color Selection</French>
+		<German>Farbauswahl</German>
+		<Italian>Seleziona colore</Italian>
+		<Spanish>Color Selection</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_SIGNS</Tag>
+		<English>Signs</English>
+		<French>Signs</French>
+		<German>Markierungen</German>
+		<Italian>Etichette</Italian>
+		<Spanish>Signs</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_ADDSIGN_TITLE</Tag>
+		<English>Add Overlay Sign</English>
+		<French>Add Overlay Sign</French>
+		<German>Overlay-Markierung hinzufügen</German>
+		<Italian>Aggiungi livello etichette</Italian>
+		<Spanish>Add Overlay Sign</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_ADDSIGN_BODY</Tag>
+		<English>Caption for the sign</English>
+		<French>Caption for the sign</French>
+		<German>Text der Markierung</German>
+		<Italian>Testo dell'etichetta</Italian>
+		<Spanish>Caption for the sign</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_ADDSIGN</Tag>
+		<English>Add Sign</English>
+		<French>Add Sign</French>
+		<German>Markierung hinzufügen</German>
+		<Italian>Aggiungi etichetta</Italian>
+		<Spanish>Add Sign</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_REMOVESIGN</Tag>
+		<English>Remove Sign</English>
+		<French>Remove Sign</French>
+		<German>Markierung entfernen</German>
+		<Italian>Rimuovi etichetta</Italian>
+		<Spanish>Remove Sign</Spanish>
+	</TEXT>
+	<TEXT>
+	    <Tag>TXT_KEY_STRATOVERLAY_ADDSIGN_EDITBOX_HELP</Tag>
+	    <English>Enter the text to be displayed on the sign</English>
+	    <French>Enter the text to be displayed on the sign</French>
+	    <German>Eingabe des Textes, der auf der Markierung erscheinen soll</German>
+	    <Italian>Digita il testo che deve essere visualizzato sull'etichetta</Italian>
+	    <Spanish>Enter the text to be displayed on the sign</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TRAIN_CAP</Tag>
+        <English>[ICON_BULLET]Increases Training Cap in the City:[SPACE]</English>
+        <French>[ICON_BULLET]Increases Training Cap in the City:[SPACE]</French>
+        <German>[ICON_BULLET]Erhöht Training Limit in der Stadt:[SPACE]</German>
+        <Italian>[ICON_BULLET]Increases Training Cap in the City:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Increases Training Cap in the City:[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TRAIN_CAP_GLOBAL</Tag>
+        <English>[ICON_BULLET]Increases Training Cap in all Cities:[SPACE]</English>
+        <French>[ICON_BULLET]Increases Training Cap in all Cities:[SPACE]</French>
+        <German>[ICON_BULLET]Erhöht Training Limit in allen Städten:[SPACE]</German>
+        <Italian>[ICON_BULLET]Increases Training Cap in all Cities:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Increases Training Cap in all Cities:[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TRAIN_RATE</Tag>
+        <English>[ICON_BULLET]Increases Training Rate in the City:[SPACE]</English>
+        <French>[ICON_BULLET]Increases Training Rate in the City:[SPACE]</French>
+        <German>[ICON_BULLET]Erhöht Training Rate in der Stadt:[SPACE]</German>
+        <Italian>[ICON_BULLET]Increases Training Rate in the City:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Increases Training Rate in the City:[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TRAIN_RATE_GLOBAL</Tag>
+        <English>[ICON_BULLET]Increases Training Rate in all Cities:[SPACE]</English>
+        <French>[ICON_BULLET]Increases Training Rate in all Cities:[SPACE]</French>
+        <German>[ICON_BULLET]Erhöht Training Rate in allen Städten:[SPACE]</German>
+        <Italian>[ICON_BULLET]Increases Training Rate in all Cities:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Increases Training Rate in all Cities:[SPACE]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ARCHIVES</Tag>
+        <English>Archives</English>
+        <French>Archives</French>
+        <German>Archiv</German>
+        <Italian>Archives</Italian>
+        <Spanish>Archivos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MONASTERY</Tag>
+        <English>Monastery</English>
+        <French>Monastery</French>
+        <German>Kloster</German>
+        <Italian>Monastery</Italian>
+        <Spanish>Monastery</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MINSTER</Tag>
+        <English>Minster</English>
+        <French>Minster</French>
+        <German>M&#252;nster</German>
+        <Italian>Minster</Italian>
+        <Spanish>Minster</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ABBEY</Tag>
+        <English>Abbey</English>
+        <French>Abbey</French>
+        <German>Abtei</German>
+        <Italian>Abbey</Italian>
+        <Spanish>Abbey</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_REQUIRES_GAMEOPTION</Tag>
+        <English>[ICON_BULLET]Requires Gameoption[SPACE]</English>
+		<French>[ICON_BULLET]Requires Gameoption[SPACE]</French>
+		<German>[ICON_BULLET]benötigt Gameoption[SPACE]</German>
+		<Italian>[ICON_BULLET]Requires Gameoption[SPACE]</Italian>
+		<Spanish>[ICON_BULLET]Requiere Gameoption[SPACE]</Spanish>
+    </TEXT>
+</Civ4GameText>

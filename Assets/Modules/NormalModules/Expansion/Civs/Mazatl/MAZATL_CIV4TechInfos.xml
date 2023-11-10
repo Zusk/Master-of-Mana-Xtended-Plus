@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Tech Infos -->
+<Civ4TechInfos xmlns="x-schema:MAZATL_CIV4TechnologiesSchema.xml">
+	<TechInfos>
+		<TechInfo>		<!-- Swampdwelling -->
+			<Type>TECH_SWAMPDWELLING</Type>
+			<Description>TXT_KEY_TECH_SWAMPDWELLING</Description>
+			<Civilopedia>TXT_KEY_TECH_SWAMPDWELLING_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<Era>ERA_ANCIENT</Era>
+			<bDisable>1</bDisable>
+			<iGridX>1</iGridX>
+			<iGridY>16</iGridY>
+			<Quote>TXT_KEY_TECH_SWAMPDWELLING_QUOTE</Quote>
+			<Sound>AS2D_TECH_DING</Sound>
+			<SoundMP>AS2D_TECH_DING</SoundMP>
+			<Button>Art/Interface/Buttons/Swamp/Swamp.dds</Button>
+		</TechInfo>	
+	</TechInfos>
+</Civ4TechInfos>

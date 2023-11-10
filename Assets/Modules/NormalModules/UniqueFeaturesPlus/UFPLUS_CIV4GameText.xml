@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_BRADELINES_WELL_CANT_BE_SEALED</Tag>
+        <English>Souls bound for Hell leave through this portal. Bradeline's Well can never be sealed.</English>
+        <French>Souls bound for Hell leave through this portal. Bradeline's Well can never be sealed.</French>
+        <German>Souls bound for Hell leave through this portal. Bradeline's Well can never be sealed.</German>
+        <Italian>Souls bound for Hell leave through this portal. Bradeline's Well can never be sealed.</Italian>
+        <Spanish>Souls bound for Hell leave through this portal. Bradeline's Well can never be sealed.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_AIFON_ISLE_EXPLORED</Tag>
+        <English>Aifon Isle (explored)</English>
+        <French>Aifon Isle (explored)</French>
+        <German>Aifon Isle (explored)</German>
+        <Italian>Aifon Isle (explored)</Italian>
+        <Spanish>Aifon Isle (explored)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BRADELINES_WELL_EXPLORED</Tag>
+        <English>Bradeline's Well (explored)</English>
+        <French>Bradeline's Well (explored)</French>
+        <German>Bradeline's Well (explored)</German>
+        <Italian>Bradeline's Well (explored)</Italian>
+        <Spanish>Bradeline's Well (explored)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BROKEN_SEPULCHER_EXPLORED</Tag>
+        <English>Broken Sepulcher (explored)</English>
+        <French>Broken Sepulcher (explored)</French>
+        <German>Broken Sepulcher (explored)</German>
+        <Italian>Broken Sepulcher (explored)</Italian>
+        <Spanish>Broken Sepulcher (explored)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PYRE_OF_THE_SERAPHIC_EXPLORED</Tag>
+        <English>Pyre of the Seraphic (explored)</English>
+        <French>Pyre of the Seraphic (explored)</French>
+        <German>Pyre of the Seraphic (explored)</German>
+        <Italian>Pyre of the Seraphic (explored)</Italian>
+        <Spanish>Pyre of the Seraphic (explored)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_MOUNT_KALSHEKK</Tag>
+        <English>Mount Kalshekk</English>
+        <French>Mount Kalshekk</French>
+        <German>Mount Kalshekk</German>
+        <Italian>Mount Kalshekk</Italian>
+        <Spanish>Mount Kalshekk</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_MOUNT_KALSHEKK_PEDIA</Tag>
+        <English>Dormant throughout the Age of Ice though sheltering the lizardmen that would become the Tlacatl tribe in its warm heart, Mount Kalshekk has reawoken in the Age of Rebirth. It is a sacred site to the Tlacatl, though followers of Kilmorph also feel their goddess's presence in the tunnels beneath the volcano.</English>
+        <French>Dormant throughout the Age of Ice though sheltering the lizardmen that would become the Tlacatl tribe in its warm heart, Mount Kalshekk has reawoken in the Age of Rebirth. It is a sacred site to the Tlacatl, though followers of Kilmorph also feel their goddess's presence in the tunnels beneath the volcano.</French>
+        <German>Inaktiv während des Zeitalters des Eises schützte er doch die Echsenmenschen der Mazatl mit seinem warmen Herz. Im Zeitalter der Wiedergeburt jedoch ist er wieder erwacht, nun eine heilige Stätte für die Mazatl, auch wenn Jünger der Kilmorph die Präsenz ihrer Gottheit in den Tunneln unter dem Volkan spüren.</German>
+        <Italian>Dormant throughout the Age of Ice though sheltering the lizardmen that would become the Tlacatl tribe in its warm heart, Mount Kalshekk has reawoken in the Age of Rebirth. It is a sacred site to the Tlacatl, though followers of Kilmorph also feel their goddess's presence in the tunnels beneath the volcano.</Italian>
+        <Spanish>Dormant throughout the Age of Ice though sheltering the lizardmen that would become the Tlacatl tribe in its warm heart, Mount Kalshekk has reawoken in the Age of Rebirth. It is a sacred site to the Tlacatl, though followers of Kilmorph also feel their goddess's presence in the tunnels beneath the volcano.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_TOWER_OF_EYES</Tag>
+        <English>Tower of Eyes</English>
+        <French>Tower of Eyes</French>
+        <German>Turm der Augen</German>
+        <Italian>Tower of Eyes</Italian>
+        <Spanish>Tower of Eyes</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_TOWER_OF_EYES_EXPLORED</Tag>
+        <English>Tower of Eyes (explored)</English>
+        <French>Tower of Eyes (explored)</French>
+        <German>Turm der Augen (erkundet)</German>
+        <Italian>Tower of Eyes (explored)</Italian>
+        <Spanish>Tower of Eyes (explored)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_TOWER_OF_EYES_PEDIA</Tag>
+        <English>Unwilling to kill the man he had corrupted, Kylorin locked Perpentach in the Tower of Eyes, a dungeon deep in the wastelands guarded by mindless golems. There he would have spent the rest of his mad days had it not been for a circus caravan that wandered close enough...</English>
+        <French>Unwilling to kill the man he had corrupted, Kylorin locked Perpentach in the Tower of Eyes, a dungeon deep in the wastelands guarded by mindless golems. There he would have spent the rest of his mad days had it not been for a circus caravan that wandered close enough...</French>
+        <German>Unwilling to kill the man he had corrupted, Kylorin locked Perpentach in the Tower of Eyes, a dungeon deep in the wastelands guarded by mindless golems. There he would have spent the rest of his mad days had it not been for a circus caravan that wandered close enough...</German>
+        <Italian>Unwilling to kill the man he had corrupted, Kylorin locked Perpentach in the Tower of Eyes, a dungeon deep in the wastelands guarded by mindless golems. There he would have spent the rest of his mad days had it not been for a circus caravan that wandered close enough...</Italian>
+        <Spanish>Unwilling to kill the man he had corrupted, Kylorin locked Perpentach in the Tower of Eyes, a dungeon deep in the wastelands guarded by mindless golems. There he would have spent the rest of his mad days had it not been for a circus caravan that wandered close enough...</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_AIFON_ISLE_SEALED</Tag>
+        <English>Aifon Isle (sealed)</English>
+        <French>Aifon Isle (sealed)</French>
+        <German>Aifon Isle (sealed)</German>
+        <Italian>Aifon Isle (sealed)</Italian>
+        <Spanish>Aifon Isle (sealed)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BROKEN_SEPULCHER_SEALED</Tag>
+        <English>Broken Sepulcher (sealed)</English>
+        <French>Broken Sepulcher (sealed)</French>
+        <German>Broken Sepulcher (sealed)</German>
+        <Italian>Broken Sepulcher (sealed)</Italian>
+        <Spanish>Broken Sepulcher (sealed)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PYRE_OF_THE_SERAPHIC_SEALED</Tag>
+        <English>Pyre of the Seraphic (sealed)</English>
+        <French>Pyre of the Seraphic (sealed)</French>
+        <German>Pyre of the Seraphic (sealed)</German>
+        <Italian>Pyre of the Seraphic (sealed)</Italian>
+        <Spanish>Pyre of the Seraphic (sealed)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_TOWER_OF_EYES_SEALED</Tag>
+        <English>Tower of Eyes (sealed)</English>
+        <French>Tower of Eyes (sealed)</French>
+        <German>Turm der Augen (sealed)</German>
+        <Italian>Tower of Eyes (sealed)</Italian>
+        <Spanish>Tower of Eyes (sealed)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SANCTIFY_UNIQUE_FEATURE</Tag>
+        <English>Sanctify</English>
+        <French>Sanctify</French>
+        <German>Sanctify</German>
+        <Italian>Sanctify</Italian>
+        <Spanish>Sanctify</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SANCTIFY_UNIQUE_FEATURE_HELP</Tag>
+        <English>Removes bad mana and prevents exploration (permanent)</English>
+        <French>Removes bad mana and prevents exploration (permanent)</French>
+        <German>Removes bad mana and prevents exploration (permanent)</German>
+        <Italian>Removes bad mana and prevents exploration (permanent)</Italian>
+        <Spanish>Removes bad mana and prevents exploration (permanent)</Spanish>
+    </TEXT>
+</Civ4GameText>

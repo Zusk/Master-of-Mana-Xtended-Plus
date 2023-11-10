@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:XFAERIES_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+            <Type>CIVIC_WINTER_COURT</Type>
+            <Description>Winter Court</Description>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Help>Converts all your units to Winter Court units, and your terrain to Snow</Help>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,1</Button>
+            <iNumCitiesMaintenanceModifier>0</iNumCitiesMaintenanceModifier>
+            <bStateReligion>1</bStateReligion>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-75</iYield>
+			</TradeYieldModifiers>
+            <ImprovementYieldChanges>
+                <ImprovementYieldChange>
+                    <ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+                    <ImprovementYields>
+                        <iYield>0</iYield>
+                        <iYield>2</iYield>
+                        <iYield>3</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                    </ImprovementYields>
+                </ImprovementYieldChange>
+            </ImprovementYieldChanges>
+            <PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+            <PrereqReligion>NONE</PrereqReligion>
+        </CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

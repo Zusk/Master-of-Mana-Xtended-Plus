@@ -1,0 +1,52 @@
+- [AOS SI] Larincsidhe starts with 10 str (instead of 0 str +10 lightning).
+- [AOS SI] Reduced Sun Faerie strength to 5 +1 Fire +1 Fire affinity (it was 5 +3 Fire +2 Fire affinity). Still receives +str from techs. 
+- [AOS SI] Reduced Moon Faerie strength to 5 +1 Cold +1 Water affinity (it was 5 +3 Cold +2 Water affinity). Still receives +str from techs. 
+- [ARISTRAKH] Catacomb is buildable in all cities.
+- [ARISTRAKH] Cabal Shrine requires Circle of Blood or Circle of Despair.
+- [ARISTRAKH] Aristrakh only gain souls from living units.
+- [AUSTRIN] Wisp (Ranger UU) str is 8 +1 poison, little bit stronger than other Ranger UUs.
+- [AUSTRIN] Summer and Winter palaces give +2 population limit.
+- [BANNOR] Nerfed Chapel (Pagan Temple UB)'s yield to +3 culture/+3 faith (it was +2 culture/+5 faith).
+- [BANNOR] Fixed Bannor Guardsman trait (increasing improvement growth rate by 50%, instead of reducing it).
+- [CLAN OF EMBERS] Stoneskin Ogre's Stoneskin blocks Bleeding.
+- [ILLIANS] The Draw gives all White Hand units +2 Cold, required for Ascension. Increased cost to 3000 faith/20 faith upkeep.
+- [LJOSALFAR] Sentinel loses Defensive, gains Woodland 1.
+- [LJOSALFAR] AI has greater weight for religion.
+- [LUCHUIRP] Dwarven Slinger loses Defensive, gains City Defender 1.
+- [LUCHUIRP] Wood Golem gets +20% bonus production from Timber.
+- [LUCHUIRP] Marble Golem no longer bombard but stronger in collateral damage.
+- [MALAKIM] Malakim starts with a Settler, a Worker, a Lightbringer and two Dervishes to help AI.
+- [SCION] Ghostwalker (Ranger UU) is reduced to 8 str, like other Ranger UUs.
+- [BARBARIAN] Changed Goblin Archer's strength from 5+3 poison to 6+2 poison.
+- [UNIT] Catapult gains +1 affinity from Timber and Stone.
+- [UNIT] Trebuchet gains +1 affinity from Timber and Stone.
+- [UNIT] Cannon and Dwarven Cannon gain +1 affinity from Iron, Mithril and Gunpowder.
+- [UNIT] Siege engines can gain promotions.
+- [UNIT] AI will build fewer siege engine than before.
+- [BUILDING] All Pagan Temples and UBs cost 150 hammers.
+- [CLASS] Berserker's innate ability is +25% vs unit with Gaping Wound.
+- [CLASS] Berserker can enter Combat Frenzy at will (gaining +30% att, -15% def, 10% chance to gain Enraged from combat, 50% expire chance).
+- [CLASS] Blade of Fury gives +1 move, +1 first strike. It is at Vengeance now.
+- [CLASS] Commander class now requires Offense discipline.
+- [CLASS] Featherfang loses "target weakest unit" and gains "50% to pass Gaping Wound to enemy" and "+25% vs unit with Gaping Wound".
+- [CLASS] Gladiator is renamed to Bannerman. It gives the ability to call for Reckless Charge (+20% str, +1 move, -2 first strike, becomes Fatigued). 
+- [CLASS] Sharpshooter gains "target weakest unit".
+- [CLASS] Starbolt Archer is renamed to Duskwood Archer, gains +1 Timber affinity.
+- [CLASS] Vindicator is renamed to Marshal. It has +30% city attack and defense, and double defensive bonus.
+- [CLASS] Weaponmaster inflicts Gaping Wound (50% chance) instead of Poison Weakness
+- [EQUIPMENT] Added new equipment property: Bleeder (25% pass Gaping Wound to enemy).
+- [EQUIPMENT] Added new equipment property: Gaping Wound (10% physical damage, can kill, removed when unit is healed).
+- [EQUIPMENT] Removed Beserk equipment property.
+- [EQUIPMENT] Axe, Waraxe, Heroic Broadsword and Mithril Claymore have Bleeder property (making them excellent for Berserkers).
+- [EVENT] Added more options using various mana types.
+- [GUILD] Javelin requires Ranger's Guild IV and gives 30% attack. Requires 350 woods.
+- [GUILD] Ranger's Guild various animal pens give +1 happiness +1 culture (previously +1 happiness +3 culture). This is on par with Balseraphs' slave cages.
+- [GUILD] Deer, Fur and Ivory require Ranger's Guild III (like Silk).
+- [GUILD] Guardian Golem str is 15 (from 12).
+- [GUILD] Slaver's Guild I and V no longer give +1 global unhappiness.
+- [GUILD] Overseer requires Slaver's Guild IV (moved down from Guild V). Its strength is reduced to 9 (from 10). Starts with Manhunt I-II.
+- [GUILD] Slaver's Guild V increases yield from quarries (+1 hammer/+2 stones) and plantations (+1 commerce/+2 food).
+- [GUILD] Shadow requires Tongue of Lies (Esus IV). Its strength is reduced to 6 +1 Cold/+1 Poison/+1 Unholy. It gains +affinity from Razorweed. Cost 100 hammer/300 leather.
+- [RELIGION] Added Sacrifice spell in cities with Demon's Altar. Sacrificing living unit will give you (10 + (caster's level * caster level))
+- [RESOURCE] Eternal Fruit is harvestable with Plantations.
+- [TRAIT] Berserker trait now gives Bloodthirsty (+20% att, -10% def).

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Effect Infos -->
+<Civ4EffectInfos xmlns="x-schema:XDANALIN_CIV4MiscSchema.xml">
+	<EffectInfos>	
+		<EffectInfo>
+			<Type>EFFECT_ICE_DART_THROW</Type>
+			<Description>Water Mage Ice Attack</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Modules/NormalModules/Xtended/XDanalin/Children/Ice_Dart.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>400.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+	</EffectInfos>
+</Civ4EffectInfos>

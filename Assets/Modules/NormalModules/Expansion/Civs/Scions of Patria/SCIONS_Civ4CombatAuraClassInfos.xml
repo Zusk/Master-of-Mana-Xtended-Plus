@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Civ4CombatAuraClassInfos xmlns="x-schema:SCIONS_CIV4CombatAuraSchema.xml">
+	<CombatAuraClassInfos>
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_KORRINA</Type>
+			<Description>TXT_KEY_COMBATAURACLASS_KORRINA</Description>
+            <Button>Art/Interface/Buttons/Promotions/combat1.dds</Button> 
+		</CombatAuraClassInfo>	
+		<CombatAuraClassInfo>
+			<Type>COMBATAURACLASS_WEIRD</Type>
+			<Description>TXT_KEY_COMBATAURACLASS_WEIRD</Description>
+            <Button>Art/Interface/Buttons/Promotions/blindingflash2.dds</Button> 
+		</CombatAuraClassInfo>						
+	</CombatAuraClassInfos>		
+</Civ4CombatAuraClassInfos>

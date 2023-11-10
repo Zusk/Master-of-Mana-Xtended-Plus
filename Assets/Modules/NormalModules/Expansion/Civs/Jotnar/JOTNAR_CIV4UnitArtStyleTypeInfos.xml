@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4UnitArtStyleTypeInfos xmlns="x-schema:JOTNAR_CIV4CivilizationsSchema.xml">
+	<UnitArtStyleTypeInfos>
+		<UnitArtStyleTypeInfo>
+			<Type>UNIT_ARTSTYLE_JOTNAR</Type>
+			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_JOT_BERSERKER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_JOT_BERSERKER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_JOT_BERSERKER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_JOT_BERSERKER</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_JOT_WORKER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_JOT_WORKER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_JOT_WORKER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_JOT_WORKER</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_JOT_SETTLER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_JOT_SETTLER</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_JOT_SETTLER</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_JOT_SETTLER</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_PHALANX</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_JOT_PHALANX</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_JOT_PHALANX</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_JOT_PHALANX</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_SLAVE</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_JOT_SLAVE</EarlyArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_JOT_SLAVE</LateArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_JOT_SLAVE</MiddleArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+			</StyleUnits>
+		</UnitArtStyleTypeInfo>
+	</UnitArtStyleTypeInfos>
+</Civ4UnitArtStyleTypeInfos>

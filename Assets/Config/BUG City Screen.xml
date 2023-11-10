@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+	BUG City Screen
+	by EmperorFool, Dresden, Chinese American, Ruff_Hi, TheLopez, Sevo
+	
+	Collects all of the various main interface mods.
+	
+	Copyright (c) 2008 The BUG Mod.
+-->
+<mod id="CityScreen" 
+	 name="BUG City Screen" 
+	 author="EmperorFool, Chinese American, TheLopez, Ruff_Hi, Sevo" 
+	 version="3.0" 
+	 date="07/11/2008"
+	 url="http://forums.civfanatics.com/forumdisplay.php?f=268">
+	 
+	<options id="CityScreen" file="BUG City Screen.ini">
+		<section id="City Screen">
+			<!-- Raw Yields by EmperorFool (inspired by Raw Commerce by Sevo) -->
+			<option id="RawYields" key="Raw Yields" 
+					type="boolean" default="True" 
+					get="isShowRawYields" dirtyBit="CityScreen"/>
+			<list   id="RawYields_View" key="Raw Yields View" 
+					type="int" default="0" listType="string" 
+					values="Trade Routes|Food|Production|Commerce" 
+					get="getRawYieldsDefaultView" dirtyBit="CityScreen">
+				<choice id="TradeRoutes" get="isRawYieldsDefaultView_TradeRoutes"/>
+				<choice id="Food" get="isRawYieldsDefaultView_Food"/>
+				<choice id="Production" get="isRawYieldsDefaultView_Production"/>
+				<choice id="Commerce" get="isRawYieldsDefaultView_Commerce"/>
+			</list>
+			
+			<!-- FoodAssist by EmperorFool -->
+			<option id="FoodAssist" key="FoodAssist" 
+					type="boolean" default="True" 
+					get="isShowFoodAssist" dirtyBit="CityScreen"/>
+			
+			<!-- WhipAssist by EmperorFool, Dresden -->
+			<option id="WhipAssist" key="WhipAssist" 
+					type="boolean" default="True" 
+					get="isShowWhipAssist" dirtyBit="CityScreen"/>
+			<option id="WhipAssistOverflowCountCurrentProduction" key="WhipAssist Overflow Count Current Production" 
+					type="boolean" default="True" 
+					get="isWhipAssistOverflowCountCurrentProduction" dirtyBit="CityScreen"/>
+			
+			<!-- Culture Turns by Chinese American -->
+			<option id="CultureTurns" key="Culture Turns" 
+					type="boolean" default="True" 
+					get="isShowCultureTurns" dirtyBit="CityScreen"/>
+			
+			<!-- Great Person Info by Chinese American, EmperorFool -->
+			<option id="GreatPersonTurns" key="Great Person Turns" 
+					type="boolean" default="True" 
+					get="isShowGreatPersonTurns" dirtyBit="CityScreen"/>
+			<option id="GreatPersonInfo" key="Great Person Info" 
+					type="boolean" default="True" 
+					get="isShowCityGreatPersonInfo" dirtyBit="CityScreen"/>
+			
+			<!-- Anger Counter by Ruff_Hi -->
+			<option id="Anger_Counter" key="Anger Counter" 
+					type="boolean" default="True" 
+					get="isShowAngerCounter" dirtyBit="CityScreen"/>
+			
+			<!-- Specialist Stacker by TheLopez -->
+			<!-- Specialist Chevrons by Ruff_Hi -->
+			<list   id="Specialists" key="City Specialists" 
+					type="int" default="2" listType="string" 
+					values="Default|Stacker|Chevron" 
+					get="getCitySpecialist" dirtyBit="CityScreen">
+				<choice id="Default" get="isCitySpecialist_Default"/>
+				<choice id="Stacker" get="isCitySpecialist_Stacker"/>
+				<choice id="Chevron" get="isCitySpecialist_Chevron"/>
+			</list>
+			
+			<!-- Flavour City Screens by Sephi -->
+			<option id="Disable_Flavor" key="Disable Flavor Screenbackground" 
+					type="boolean" default="False" 
+					get="isDisableFlavor" dirtyBit="CityScreen"/>
+			
+		</section>
+	</options>
+</mod>

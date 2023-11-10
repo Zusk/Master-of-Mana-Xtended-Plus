@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:SCIONS_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_RISEN_EMPEROR</Type>
+			<Button>,Art/interface/LeaderHeads/Scions/Risen_Emperor button.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Scions/Risen_Emperor.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_ALEXI</Type>
+			<Button>,Art/interface/LeaderHeads/Scions/Korinna button.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Scions/Korinna.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_OPHELIA</Type>
+			<Button>Art/interface/LeaderHeads/Scions/OpheliaButton.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Scions/Ophelia.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_XIVAN</Type>
+			<Button>Art/interface/LeaderHeads/Scions/Icebutton.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Scions/IceciroLH.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>		
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

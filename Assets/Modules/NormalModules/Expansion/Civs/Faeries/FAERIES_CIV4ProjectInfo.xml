@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Soren Johnson (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Project -->
+<Civ4ProjectInfo xmlns="x-schema:FAERIES_CIV4GameInfoSchema.xml">
+	<ProjectInfos>
+		<ProjectInfo>
+			<Type>PROJECT_RETURN_TO_GLORY</Type>
+			<Description>Return to Glory</Description>
+			<Civilopedia>Restores Larincsidhe's original power as one of the archangel's of Erebus. Creates the Larincsidhe unit. Cannot be built until all four Fae Lords have been appointed.</Civilopedia>
+			<TechPrereq>NONE</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>1200</iCost>
+			<Button>, ,Art/Interface/Buttons/Units/Units_Atlas1.dds,4,9</Button>
+			<PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+			<iAIWeight>1000</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_ETERNAL_RESTORATION</Type>
+			<Description>Eternal Restoration</Description>
+			<Civilopedia>Fully restores the Fae, allowing access to the Eternal Court</Civilopedia>
+			<Help>[ICON_BULLET]Requires Summer Restoration[NEWLINE][ICON_BULLET]Requires Winter Restoration</Help>
+			<TechPrereq>NONE</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>800</iCost>
+			<Button>Art/Interface/Buttons/Promotions/SoftSpoken.dds</Button>
+			<PrereqProjects>
+				<PrereqProject>
+					<ProjectType>PROJECT_SUMMER_RESTORATION</ProjectType>
+					<iNeeded>1</iNeeded>
+				</PrereqProject>
+				<PrereqProject>
+					<ProjectType>PROJECT_WINTER_RESTORATION</ProjectType>
+					<iNeeded>1</iNeeded>
+				</PrereqProject>
+			</PrereqProjects>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_SUMMER_RESTORATION</Type>
+			<Description>Summer Restoration</Description>
+			<Civilopedia>Restores the Summer power of the Fae.</Civilopedia>
+			<TechPrereq>NONE</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>700</iCost>
+			<Button>Art/Interface/Buttons/TechTree/Hiddenpaths.dds</Button>
+			<PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+		</ProjectInfo>
+		<ProjectInfo>
+			<Type>PROJECT_WINTER_RESTORATION</Type>
+			<Description>Winter Restoration</Description>
+			<Civilopedia>Restores the Winter power of the Fae.</Civilopedia>
+			<TechPrereq>NONE</TechPrereq>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>700</iCost>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,1</Button>
+			<PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+		</ProjectInfo>
+	</ProjectInfos>
+</Civ4ProjectInfo>

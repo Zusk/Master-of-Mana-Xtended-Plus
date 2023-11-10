@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Civ4EquipmentCategoryInfos xmlns="x-schema:XWANDS_CIV4EquipmentCategorySchema.xml">
+	<EquipmentCategoryInfos>
+		<EquipmentCategoryInfo>
+			<Type>EQUIPMENTCATEGORY_MISC</Type>
+			<Description>[COLOR_GREEN]Accessories[COLOR_REVERT]</Description>
+			<iMinLevel>3</iMinLevel>			
+		</EquipmentCategoryInfo>											
+		<EquipmentCategoryInfo>
+			<Type>EQUIPMENTCATEGORY_MISC2</Type>
+			<Description>[COLOR_GREEN]Misc[COLOR_REVERT]</Description>
+			<iMinLevel>3</iMinLevel>			
+		</EquipmentCategoryInfo>											
+		<EquipmentCategoryInfo>
+			<Type>EQUIPMENTCATEGORY_POTION</Type>
+			<Description>TXT_KEY_EQUIPMENTCATEGORY_POTION</Description>
+			<iMinLevel>1</iMinLevel>			
+		</EquipmentCategoryInfo>	
+	</EquipmentCategoryInfos>			
+</Civ4EquipmentCategoryInfos>

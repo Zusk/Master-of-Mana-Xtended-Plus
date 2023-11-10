@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_WILDMANA_GUIDE_OMNIPOTENCE</Tag>
+        <English>Omnipotence Victory</English>
+        <French>Omnipotence Victory</French>
+        <German>Omnipotence Victory</German>
+        <Italian>Omnipotence Victory</Italian>
+        <Spanish>Omnipotence Victory</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WILDMANA_GUIDE_OMNIPOTENCE_PEDIA</Tag>
+        <English>Written by Saathei
+[H1]Guide to Omnipotence Victory[\H1]		
+Now that the victory option is in (which I am insanely, ridiculously excited about) here's some tips to help you do it. In my games when I do this, I usually get within 2- 3 promotions of Omnipotence (which is why I asked for the victory condition, haha).
+
+[H2]1. Make your maps at least Standard size, with Deadly Wild Mana and More Mana options enabled.[\H2]
+Deadly Wild Mana is necessary because you need to have mana guardians with spellbooks to take. The map size and More Mana are important because you want to make sure that there are enough spellbooks to go get.
+
+[H2]2. Know your civ.[\H2]
+Be aware of your leader's strengths and limitations and use that to your advantage. For instance, don't pick the Khazad, because they can only have Adepts and thus can't achieve this victory type. Nojah the Illusionist (Balseraph) is problematic because all his arcane units are illusions and thus cannot take spellbooks at all. Conversely, the Amurites have the Cave of Ancestors UB that gives extra XP to arcane units when they are built; the Amurite leaders also all have a Mastery of some magic type, which means free spells. Emergent leaders can sometimes produce units with the Inspired promotion, which grants +2XP in combat. Arcane leaders give the Potency promo, which increases the rate at which your mages gain XP. Charismatic leaders are especially desirable for this victory type, as their units need 25% less XP for every promotion.
+
+[H2]3.Do not take ANY promotions for the unit![\H2]
+No, really. When you make him, don't take any spells. At all. Don't spend XP on promotions until the very very end when you have no other options. ESPECIALLY do not take spells from Metamagic, Force, or Creation, as these do not lead to any Mastery promotions. The exception is "Master of..." promotions - buy these as soon as you can. You can't get the "Master of" promotions from spellbooks, only through XP purchase. Each of them grant special abilities like withdrawal chance, strength, movement range, etc. so taking them as soon as they are available will make it easier for your mage to survive. OK, and along that line, strength promos can also be handy. See item #6.
+
+[H2]4. Kill Wildmana guardians and take their books. [\H2]
+And I mean, globetrot. Go into your allies' lands and nick their spellbooks before they can kill the guardians. This is how you will get the majority of your XP and spells. Note that spellbooks have the chance to give you ANY spells from a sphere, whether your unit has the proper channeling level or not. It is possible to have Entropy III and not Entropy I or II, and you only need Entropy III (and not I or II) for the Master of Chaos and Entropy promotion. Thus, you might be able to get the Master promotions quicker than you might think. (note: you get the most free spells out of Spellbooks if you wait to read them until you have the Arcane Lore technology)
+
+[H2]5. Even if you are a Master of #spell school#, STILL kill the guardians and take their books. [\H2]
+You might not get any new spells, but each book gives you a chunk of XP that would be a lot harder to get otherwise.
+
+[H2]6. For the love of Sucellus, keep this guy alive.[\H2]
+Seriously, nothing's more disheartening than loading up on spells and then dying to a well-placed assassin. You'll need a strong unit traveling with this guy to help kill the mana guardians, so why not give him the Guardsman promotion while you're at it? And take every chance you can to buff up your mage. Even though this endeavor takes psychotic amounts of XP, it can be worth it to give the mage strength promotions to help him stay alive better (and remember, this pumps up your summoned creatures too, so it's not entirely a waste). Give him Orthus's Axe, Scorched Staff, or whatever other items that will boost you mage's strength.
+
+[H1]What to do to get over the final XP hump[\H1]
+So, you will merrily slaughter all the guardians on the map, but you will probably find yourself a bit short of the XP needed to get all the way to Omnipotence. What to do? Here are some ideas, many of which are stackable.
+[H2]1. Join up with a Great Commander, cast Valor, and go kill barbarians.[\H2] 
+Great commanders give you extra strength and +1 XP per combat, and Valor also gives you +1 XP per combat. You should already have Master of Law and Sun which also gives you +1 XP per combat. So, even though you wouldn't ordinarily be getting XP from fighting barbs, you'll get an automatic boost because of these promotions.
+
+[H2]2. Explore lairs.[\H2] 
+It's not super efficient, but every lair will give you 1 XP. And now that you can Discover New Adventure Opportunity, you have an infinite supply of them if you also have an infinite supply of patience. 
+
+[H2]3. If you're Calabim, chow down.[\H2] 
+This is kind of a given, but in case you didn't know, you can Gift Vampirism to your Archmage, and then he can eat the citizens of your cities to get massive XP boosts.
+
+[H2]4. If you're Amurite, cast Arcane Lacuna.[\H2] 
+It stops everyone from spellcasting, yeah, but it also gives your casters XP based on the number of mana nodes you have.
+
+That's all I can think of for now - feel free to add any other tips you can think of! 		
+		</English>
+        <French>
+		</French>
+        <German>
+		</German>
+        <Italian>
+		</Italian>
+        <Spanish>
+		</Spanish>
+    </TEXT>
+</Civ4GameText>

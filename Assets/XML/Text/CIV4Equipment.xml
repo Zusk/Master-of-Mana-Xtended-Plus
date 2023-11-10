@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_BLESSING</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Blessing, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Blessing, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Blessing, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Blessing, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Blessing, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_ARMOR</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Armor, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Armor, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Armor, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Armor, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Armor, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_MOUNT</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Mount, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Mount, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Mount, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Mount, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Mount, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_KIT</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Kit, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Kit, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Kit, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Kit, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Kit, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_TRAP</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Trap, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Trap, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Trap, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Trap, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Trap, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_EQUIPMENT_IS_WEAPON</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Weapon, Item Level: %d1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Weapon, Item Level: %d1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Weapon, Item Level: %d1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Weapon, Item Level: %d1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Item Slot: Weapon, Item Level: %d1[COLOR_REVERT]</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_GEAR</Tag>
+		<English>Gear</English>
+		<French>Gear</French>
+		<German>Gear</German>
+		<Italian>Gear</Italian>
+		<Spanish>Gear</Spanish>				
+    </TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_EQUIPMENT</Tag>
+		<English>Equipment</English>
+		<French>Equipment</French>
+		<German>Equipment</German>
+		<Italian>Equipment</Italian>
+		<Spanish>Equipment</Spanish>				
+    </TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_EQUIPMENT_HELP</Tag>
+		<English>Equipment can be bought at an Adventurers Guild</English>
+		<French>Equipment can be bought at an Adventurers Guild</French>
+		<German>Equipment can be bought at an Adventurers Guild</German>
+		<Italian>Equipment can be bought at an Adventurers Guild</Italian>
+		<Spanish>Equipment can be bought at an Adventurers Guild</Spanish>				
+    </TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GOLD_COST</Tag>
+		<English>[ICON_BULLET][COLOR_GREEN]Purchased for %d1 [ICON_GOLD][COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_GREEN]Purchased for %d1 [ICON_GOLD][COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_GREEN]Gekauft f&#252;r %d1 [ICON_GOLD][COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_GREEN]Purchased for %d1 [ICON_GOLD][COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_GREEN]Purchased for %d1 [ICON_GOLD][COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MISC_PREREQ_ITEM</Tag>
+		<English>[ICON_BULLET]Requires:[SPACE]</English>
+		<French>[ICON_BULLET]Requires:[SPACE]</French>
+		<German>[ICON_BULLET]Erfordert:[SPACE]</German>
+		<Italian>[ICON_BULLET]Requires:[SPACE]</Italian>
+		<Spanish>[ICON_BULLET]Requires:[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PREREQ_CITY</Tag>
+		<English>[SPACE]in city</English>
+		<French>[SPACE]in city</French>
+		<German>[SPACE]in der Stadt</German>
+		<Italian>[SPACE]in city</Italian>
+		<Spanish>[SPACE]in city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_ORDER</Tag>
+		<English>Armor blessed by Junil</English>
+		<French>Armor blessed by Junil</French>
+		<German>Armor blessed by Junil</German>
+		<Italian>Armor blessed by Junil</Italian>
+		<Spanish>Armor blessed by Junil</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_EMPYREAN</Tag>
+		<English>Armor blessed by Lugus</English>
+		<French>Armor blessed by Lugus</French>
+		<German>Armor blessed by Lugus</German>
+		<Italian>Armor blessed by Lugus</Italian>
+		<Spanish>Armor blessed by Lugus</Spanish>				
+    </TEXT>			
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_KILMORPH</Tag>
+		<English>Armor blessed by Kilmorph</English>
+		<French>Armor blessed by Kilmorph</French>
+		<German>Armor blessed by Kilmorph</German>
+		<Italian>Armor blessed by Kilmorph</Italian>
+		<Spanish>Armor blessed by Kilmorph</Spanish>				
+    </TEXT>			
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_LEAVES</Tag>
+		<English>Hide Armor</English>
+		<French>Hide Armor</French>
+		<German>Hide Armor</German>
+		<Italian>Hide Armor</Italian>
+		<Spanish>Hide Armor</Spanish>				
+    </TEXT>			
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_OCTOPUS</Tag>
+		<English>Armor blessed by the Overlords</English>
+		<French>Armor blessed by the Overlords</French>
+		<German>Armor blessed by the Overlords</German>
+		<Italian>Armor blessed by the Overlords</Italian>
+		<Spanish>Armor blessed by the Overlords</Spanish>				
+    </TEXT>			
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GRIGORI_ARMOR_AND_WEAPON</Tag>
+		<English>Heroic Armor and Weapon</English>
+		<French>Heroic Armor and Weapon</French>
+		<German>Heroic Armor and Weapon</German>
+		<Italian>Heroic Armor and Weapon</Italian>
+		<Spanish>Heroic Armor and Weapon</Spanish>				
+    </TEXT>				
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SPELLBOOK1</Tag>
+		<English>Tome of Spells I</English>
+		<French>Tome of Spells I</French>
+		<German>Tome of Spells I</German>
+		<Italian>Tome of Spells I</Italian>
+		<Spanish>Tome of Spells I</Spanish>				
+    </TEXT>						
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SPELLBOOK2</Tag>
+		<English>Tome of Spells II</English>
+		<French>Tome of Spells II</French>
+		<German>Tome of Spells II</German>
+		<Italian>Tome of Spells II</Italian>
+		<Spanish>Tome of Spells II</Spanish>				
+    </TEXT>						
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SPELLBOOK3</Tag>
+		<English>Tome of Spells III</English>
+		<French>Tome of Spells III</French>
+		<German>Tome of Spells III</German>
+		<Italian>Tome of Spells III</Italian>
+		<Spanish>Tome of Spells III</Spanish>				
+    </TEXT>							
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SPELLBOOK_BEGINNER</Tag>
+		<English>Spellcasting Guide for Beginners</English>
+		<French>Spellcasting Guide for Beginners</French>
+		<German>Spellcasting Guide for Beginners</German>
+		<Italian>Spellcasting Guide for Beginners</Italian>
+		<Spanish>Spellcasting Guide for Beginners</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_THE_SPELLBOOK</Tag>
+		<English>Read the Spellbook</English>
+		<French>Read the Spellbook</French>
+		<German>Read the Spellbook</German>
+		<Italian>Read the Spellbook</Italian>
+		<Spanish>Read the Spellbook</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_THE_SPELLBOOK_BEGINNER_HELP</Tag>
+		<English>[ICON_BULLET]Gain some experience by studying arcane knowledge</English>
+		<French>[ICON_BULLET]Gain some experience by studying arcane knowledge</French>
+		<German>[ICON_BULLET]Gain some experience by studying arcane knowledge</German>
+		<Italian>[ICON_BULLET]Gain some experience by studying arcane knowledge</Italian>
+		<Spanish>[ICON_BULLET]Gain some experience by studying arcane knowledge</Spanish>				
+    </TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BARBED_WEAPONS_MELEE</Tag>
+		<English>Barbed Weapons</English>
+		<French>Barbed Weapons</French>
+		<German>Stachelwaffen</German>
+		<Italian>Barbed Weapons</Italian>
+		<Spanish>Armas Punzantes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BATTLE_MOUNTS_MOUNTED</Tag>
+		<English>Battle Mounts</English>
+		<French>Battle Mounts</French>
+		<German>Schlachtr&#246;sser</German>
+		<Italian>Battle Mounts</Italian>
+		<Spanish>Monturas de Batalla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_MELEE</Tag>
+		<English>Blessed Armor (Melee)</English>
+		<French>Blessed Armor (Melee)</French>
+		<German>Geweihte R&#252;stung (Nahkampf)</German>
+		<Italian>Blessed Armor (Melee)</Italian>
+		<Spanish>Armadura Bendita (Melee)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PURITY_SEAL_MELEE</Tag>
+		<English>Seals of Purity</English>
+		<French>Seals of Purity</French>
+		<German>Seals of Purity</German>
+		<Italian>Seals of Purity</Italian>
+		<Spanish>Sellos de Pureza</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SWORD_OF_AGARES_MELEE</Tag>
+		<English>Sword of Klarkash</English>
+		<French>Sword of Klarkash</French>
+		<German>Sword of Klarkash</German>
+		<Italian>Sword of Klarkash</Italian>
+		<Spanish>Espada de Klarkash</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FUMES_OF_THE_PIT</Tag>
+		<English>Fumes of the Pit</English>
+		<French>Fumes of the Pit</French>
+		<German>Fumes of the Pit</German>
+		<Italian>Fumes of the Pit</Italian>
+		<Spanish>Humos del Abismo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_BLESSED_ARMOR_MOUNTED</Tag>
+		<English>Blessed Armor (Mounted)</English>
+		<French>Blessed Armor (Mounted)</French>
+		<German>Geweihte R&#252;stung (beritten)</German>
+		<Italian>Blessed Armor (Mounted)</Italian>
+		<Spanish>Armadura Bendita (Caballeria)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CALTROPS_RECON</Tag>
+		<English>Caltrops</English>
+		<French>Caltrops</French>
+		<German>Kr&#228;henf&#252;ße</German>
+		<Italian>Caltrops</Italian>
+		<Spanish>Cebos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CATAPHRACT_ARMOR_MOUNTED</Tag>
+		<English>Cataphract Armor</English>
+		<French>Cataphract Armor</French>
+		<German>Kataphrakt R&#252;stung</German>
+		<Italian>Cataphract Armor</Italian>
+		<Spanish>Armadura de Catafracto</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CLIMBING_KIT_RECON</Tag>
+		<English>Climbing Kit</English>
+		<French>Climbing Kit</French>
+		<German>Kletterausr&#252;stung</German>
+		<Italian>Climbing Kit</Italian>
+		<Spanish>Kit de Escalada</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COMPOSITE_BOWS_ARCHER</Tag>
+		<English>Composite Bows</English>
+		<French>Composite Bows</French>
+		<German>Composite Bogen</German>
+		<Italian>Composite Bows</Italian>
+		<Spanish>Arcos Compuestos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_COMPOUND_BOWS_ARCHER</Tag>
+		<English>Compound Bows</English>
+		<French>Compound Bows</French>
+		<German>Compoundbogen</German>
+		<Italian>Compound Bows</Italian>
+		<Spanish>Arcos Compuestos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CURSED_LANCES_MOUNTED</Tag>
+		<English>Cursed Lances</English>
+		<French>Cursed Lances</French>
+		<German>Verfluchte Lanzen</German>
+		<Italian>Cursed Lances</Italian>
+		<Spanish>Lanzas Malditas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CURSED_WEAPONS_MELEE</Tag>
+		<English>Cursed Weapons</English>
+		<French>Cursed Weapons</French>
+		<German>Verfluchte Waffen</German>
+		<Italian>Cursed Weapons</Italian>
+		<Spanish>Armas Malditas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEADLY_TRAPS_RECON</Tag>
+		<English>Deadly Traps</English>
+		<French>Deadly Traps</French>
+		<German>T&#246;dliche Fallen</German>
+		<Italian>Deadly Traps</Italian>
+		<Spanish>Trampas Mortales</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DESERT_GEAR_RECON</Tag>
+		<English>Desert Gear</English>
+		<French>Desert Gear</French>
+		<German>W&#252;stenausr&#252;stung</German>
+		<Italian>Desert Gear</Italian>
+		<Spanish>Equipo para el Desierto</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXCELLENT_KIT_RECON</Tag>
+		<English>Excellent Kit</English>
+		<French>Excellent Kit</French>
+		<German>Exzellente Ausr&#252;stung</German>
+		<Italian>Excellent Kit</Italian>
+		<Spanish>Kit Excelente</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXCELLENT_TACK_MOUNTED</Tag>
+		<English>Excellent Tack</English>
+		<French>Excellent Tack</French>
+		<German>Exzellentes Zaumzeug</German>
+		<Italian>Excellent Tack</Italian>
+		<Spanish>Arreos Excelentes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FAST_HORSES_MOUNTED</Tag>
+		<English>Fast Horses</English>
+		<French>Fast Horses</French>
+		<German>Schnelle Pferde</German>
+		<Italian>Fast Horses</Italian>
+		<Spanish>Caballos Rapidos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FINE_BOWS_ARCHER</Tag>
+		<English>Fine Bows</English>
+		<French>Fine Bows</French>
+		<German>Ausgezeichnete B&#246;gen</German>
+		<Italian>Fine Bows</Italian>
+		<Spanish>Arcos de Alta Calidad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FINE_EQUIPMENT_MELEE</Tag>
+		<English>High Quality Weapons</English>
+		<French>High Quality Weapons</French>
+		<German>Hochwertige Waffen</German>
+		<Italian>High Quality Weapons</Italian>
+		<Spanish>Armas de Alta Calidad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FINE_KIT_RECON</Tag>
+		<English>Fine Kit</English>
+		<French>Fine Kit</French>
+		<German>Ausgezeichnete Ausr&#252;stung</German>
+		<Italian>Fine Kit</Italian>
+		<Spanish>Kit de Alta Calidad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HIGH_QUALITY_BRONZE_ARCHER</Tag>
+		<English>High Quality Bronze (Archer)</English>
+		<French>High Quality Bronze (Archer)</French>
+		<German>Hochwertige Bronze (Bogensch&#252;tzen)</German>
+		<Italian>High Quality Bronze (Archer)</Italian>
+		<Spanish>Bronce de Alta Calidad (Arqueros)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HIGH_QUALITY_BRONZE_MELEE</Tag>
+		<English>High Quality Bronze (Melee)</English>
+		<French>High Quality Bronze (Melee)</French>
+		<German>Hochwertige Bronze (Nahkampf)</German>
+		<Italian>High Quality Bronze (Melee)</Italian>
+		<Spanish>Bronce de Alta Calidad (Melee)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HIGH_QUALITY_MITHRIL_MELEE</Tag>
+		<English>Masterwork Weaponry</English>
+		<French>Masterwork Weaponry</French>
+		<German>Meisterhafte Waffen</German>
+		<Italian>Masterwork Weaponry</Italian>
+		<Spanish>Armamento de Calidad Excepcional</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HIGH_QUALITY_STEEL_ARCHER</Tag>
+		<English>High Quality Steel (Archer)</English>
+		<French>High Quality Steel (Archer)</French>
+		<German>Hochwertiger Stahl (Bogensch&#252;tzen)</German>
+		<Italian>High Quality Steel (Archer)</Italian>
+		<Spanish>Acero de Alta Calidad (Arqueros)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ICE_GEAR_RECON</Tag>
+		<English>Ice Gear</English>
+		<French>Ice Gear</French>
+		<German>Ausr&#252;stung f&#252;rs Eis</German>
+		<Italian>Ice Gear</Italian>
+		<Spanish>Equipo Artico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_CLAN_WARPAINT_RECON</Tag>
+		<English>Clan Warpaint</English>
+		<French>Clan Warpaint</French>
+		<German>Kriegsbemalung des Stammes</German>
+		<Italian>Clan Warpaint</Italian>
+		<Spanish>Pinturas de Guerra de Clan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MANTRAPS_RECON</Tag>
+		<English>Mantraps</English>
+		<French>Mantraps</French>
+		<German>Fußangeln</German>
+		<Italian>Mantraps</Italian>
+		<Spanish>Trampas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARCH_WINE_RECON</Tag>
+		<English>March Wine</English>
+		<French>March Wine</French>
+		<German>Wein des Marschierens (M&#228;rzen)</German>
+		<Italian>March Wine</Italian>
+		<Spanish>Vino de Marcha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MAZLI_OILED_GEAR_RECON</Tag>
+		<English>Mazli Oiled Gear</English>
+		<French>Mazli Oiled Gear</French>
+		<German>Mazlis ge&#246;lte Ausr&#252;stung</German>
+		<Italian>Mazli Oiled Gear</Italian>
+		<Spanish>Equipo Aceitado Mazli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NIGHT_GEAR_RECON</Tag>
+		<English>Night Gear</English>
+		<French>Night Gear</French>
+		<German>Ausr&#252;stung der Nacht</German>
+		<Italian>Night Gear</Italian>
+		<Spanish>Equipo Nocturno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PIKES_MELEE</Tag>
+		<English>Pikes</English>
+		<French>Pikes</French>
+		<German>Piken</German>
+		<Italian>Pikes</Italian>
+		<Spanish>Picas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PLATE_MELEE</Tag>
+		<English>Plate</English>
+		<French>Plate</French>
+		<German>Plattenpanzer</German>
+		<Italian>Plate</Italian>
+		<Spanish>Armadura de Placas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_ELITE_FORMATION_MELEE</Tag>
+		<English>Elite Formation</English>
+		<French>Elite Formation</French>
+		<German>Elite-Formation</German>
+		<Italian>Elite Formation</Italian>
+		<Spanish>Formacion de Elite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_POISON_TRAPS_RECON</Tag>
+		<English>Poisonous Traps</English>
+		<French>Poisonous Traps</French>
+		<German>Vergiftete Fallen</German>
+		<Italian>Poisonous Traps</Italian>
+		<Spanish>Trampas Envenenadas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SHADOW_GEAR_RECON</Tag>
+		<English>Shadow Gear</English>
+		<French>Shadow Gear</French>
+		<German>Ausr&#252;stung der Schatten</German>
+		<Italian>Shadow Gear</Italian>
+		<Spanish>Equipo para las Sombras</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SLAB_PLATE_MELEE</Tag>
+		<English>Heavy Plate</English>
+		<French>Heavy Plate</French>
+		<German>Schwere Platte</German>
+		<Italian>Heavy Plate</Italian>
+		<Spanish>Armadura Pesada de Placas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SNOW_GEAR_RECON</Tag>
+		<English>Snow Gear</English>
+		<French>Snow Gear</French>
+		<German>Schnee-Ausr&#252;stung</German>
+		<Italian>Snow Gear</Italian>
+		<Spanish>Equipo para la Nieve</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUPERIOR_HORSES_MOUNTED</Tag>
+		<English>Superior Horses</English>
+		<French>Superior Horses</French>
+		<German>&#252;berlegene Pferde</German>
+		<Italian>Superior Horses</Italian>
+		<Spanish>Caballos Superiores</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUPERIOR_KIT_RECON</Tag>
+		<English>Superior Kit</English>
+		<French>Superior Kit</French>
+		<German>&#252;berlegene Ausr&#252;stung</German>
+		<Italian>Superior Kit</Italian>
+		<Spanish>Kit Superior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NIGHTSHADE_RECON</Tag>
+		<English>Nightshade</English>
+		<French>Nightshade</French>
+		<German>Nachtschatten</German>
+		<Italian>Nightshade</Italian>
+		<Spanish>Belladona</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WOODS_GEAR_RECON</Tag>
+		<English>Woods Gear</English>
+		<French>Woods Gear</French>
+		<German>Wald-Ausr&#252;stung</German>
+		<Italian>Woods Gear</Italian>
+		<Spanish>Equipo para los bosques</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_FLYING_CARPET</Tag>
+		<English>Flying Carpet</English>
+		<French>lying Carpet</French>
+		<German>Fliegender Teppich</German>
+		<Italian>lying Carpet</Italian>
+		<Spanish>lying Carpet</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_CRYSTAL_BLADE</Tag>
+		<English>Crystal Blade</English>
+		<French>Crystal Blade</French>
+		<German>Kristallschwert</German>
+		<Italian>Crystal Blade</Italian>
+		<Spanish>Crystal Blade</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SEAL_OF_FURY</Tag>
+		<English>Seal of Fury</English>
+		<French>Seal of Fury</French>
+		<German>Seal of Fury</German>
+		<Italian>Seal of Fury</Italian>
+		<Spanish>Seal of Fury</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SEAL_OF_DEFIANCE</Tag>
+		<English>Seal of Defiance</English>
+		<French>Seal of Defiance</French>
+		<German>Seal of Defiance</German>
+		<Italian>Seal of Defiance</Italian>
+		<Spanish>Seal of Defiance</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_LAMBENT_SEAL</Tag>
+		<English>Lambent Seal</English>
+		<French>Lambent Seal</French>
+		<German>Lambent Seal</German>
+		<Italian>Lambent Seal</Italian>
+		<Spanish>Lambent Seal</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SATORI_SEAL</Tag>
+		<English>Satori Seal</English>
+		<French>Satori Seal</French>
+		<German>Satori Seal</German>
+		<Italian>Satori Seal</Italian>
+		<Spanish>Satori Seal</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_FLAMING_SWORD</Tag>
+		<English>Flaming Sword</English>
+		<French>Flaming Sword</French>
+		<German>Flaming Sword</German>
+		<Italian>Flaming Sword</Italian>
+		<Spanish>Flaming Sword</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_RADIANT_CROWN</Tag>
+		<English>Radiant Crown</English>
+		<French>Radiant Crown</French>
+		<German>Radiant Crown</German>
+		<Italian>Radiant Crown</Italian>
+		<Spanish>Radiant Crown</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_EQUIP_THE_RADIANT_CROWN</Tag>
+		<English>Equip the Radiant Crown</English>
+		<French>Equip the Radiant Crown</French>
+		<German>Equip the Radiant Crown</German>
+		<Italian>Equip the Radiant Crown</Italian>
+		<Spanish>Equip the Radiant Crown</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_EQUIP_THE_RADIANT_CROWN_HELP</Tag>
+		<English>Gain the Blinding Light Ability</English>
+		<French>Gain the Blinding Light Ability</French>
+		<German>Gain the Blinding Light Ability</German>
+		<Italian>Gain the Blinding Light Ability</Italian>
+		<Spanish>Gain the Blinding Light Ability</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_BLAZING_ARMOR</Tag>
+		<English>Blazing Armor</English>
+		<French>Blazing Armor</French>
+		<German>Blazing Armor</German>
+		<Italian>Blazing Armor</Italian>
+		<Spanish>Blazing Armor</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_POSSESSED_SWORD</Tag>
+		<English>Possessed Sword</English>
+		<French>Possessed Sword</French>
+		<German>Possessed Sword</German>
+		<Italian>Possessed Sword</Italian>
+		<Spanish>Possessed Sword</Spanish>
+	</TEXT>		
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_BLOOD_VIAL</Tag>
+		<English>Blood Vial</English>
+		<French>Blood Vial</French>
+		<German>Blood Vial</German>
+		<Italian>Blood Vial</Italian>
+		<Spanish>Blood Vial</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_PURE_BLOOD</Tag>
+		<English>Pure Blood</English>
+		<French>Pure Blood</French>
+		<German>Pure Blood</German>
+		<Italian>Pure Blood</Italian>
+		<Spanish>Pure Blood</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SUMMONING_ROD</Tag>
+		<English>Summoning Rod</English>
+		<French>Summoning Rod</French>
+		<German>Summoning Rod</German>
+		<Italian>Summoning Rod</Italian>
+		<Spanish>Summoning Rod</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_ENDLESS_CORPSE_SUPPLY</Tag>
+		<English>Endless Corpse Supply</English>
+		<French>Endless Corpse Supply</French>
+		<German>Endless Corpse Supply</German>
+		<Italian>Endless Corpse Supply</Italian>
+		<Spanish>Endless Corpse Supply</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_PROPHECY_PAMPHLET</Tag>
+		<English>Prophecy of Ragnarok Pamphlet</English>
+		<French>Prophecy of Ragnarok Pamphlet</French>
+		<German>Prophecy of Ragnarok Pamphlet</German>
+		<Italian>Prophecy of Ragnarok Pamphlet</Italian>
+		<Spanish>Prophecy of Ragnarok Pamphlet</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_POLEMIC_GLORY_OR_DEATH</Tag>
+		<English>Polemic Glory or Death</English>
+		<French>Polemic Glory or Death</French>
+		<German>Polemic Glory or Death</German>
+		<Italian>Polemic Glory or Death</Italian>
+		<Spanish>Polemic Glory or Death</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_POLEMIC_GLORY_OR_DEATH</Tag>
+		<English>Proclaim the Polemic</English>
+		<French>Proclaim the Polemic</French>
+		<German>Proclaim the Polemic</German>
+		<Italian>Proclaim the Polemic</Italian>
+		<Spanish>Proclaim the Polemic</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_POLEMIC_GLORY_OR_DEATH_HELP</Tag>
+		<English>[ICON BULLET]No Mercy</English>
+		<French>[ICON BULLET]No Mercy</French>
+		<German>[ICON BULLET]No Mercy</German>
+		<Italian>[ICON BULLET]No Mercy</Italian>
+		<Spanish>[ICON BULLET]No Mercy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_BANNER_MARCH_TO_VICTORY</Tag>
+		<English>Banner March to Victory</English>
+		<French>Banner March to Victory</French>
+		<German>Banner March to Victory</German>
+		<Italian>Banner March to Victory</Italian>
+		<Spanish>Banner March to Victory</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_EQUIP_BANNER_MARCH_TO_VICTORY</Tag>
+		<English>Equip the Banner</English>
+		<French>Equip the Banner</French>
+		<German>Equip the Banner</German>
+		<Italian>Equip the Banner</Italian>
+		<Spanish>Equip the Banner</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_EQUIP_BANNER_MARCH_TO_VICTORY_HELP</Tag>
+		<English>No Respite</English>
+		<French>No Respite</French>
+		<German>No Respite</German>
+		<Italian>No Respite</Italian>
+		<Spanish>No Respite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_POLEMIC_TO_THE_LAST_MAN_WOMAN_AND_CHILD</Tag>
+		<English>Polemic To the last Man, Woman and Child</English>
+		<French>Polemic To the last Man, Woman and Child</French>
+		<German>Polemic To the last Man, Woman and Child</German>
+		<Italian>Polemic To the last Man, Woman and Child</Italian>
+		<Spanish>Polemic To the last Man, Woman and Child</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_POLEMIC_TO_THE_LAST_MAN_WOMAN_AND_CHILD</Tag>
+		<English>Proclaim the Polemic</English>
+		<French>Proclaim the Polemic</French>
+		<German>Proclaim the Polemic</German>
+		<Italian>Proclaim the Polemic</Italian>
+		<Spanish>Proclaim the Polemic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_READ_POLEMIC_TO_THE_LAST_MAN_WOMAN_AND_CHILD_HELP</Tag>
+		<English>[ICON BULLET]Never Surrender</English>
+		<French>[ICON BULLET]Never Surrender</French>
+		<German>[ICON BULLET]Never Surrender</German>
+		<Italian>[ICON BULLET]Never Surrender</Italian>
+		<Spanish>[ICON BULLET]Never Surrender</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MASTER_CRAFTED_ELVEN_ARMOR</Tag>
+		<English>Master Crafted Elven Armor</English>
+		<French>Master Crafted Elven Armor</French>
+		<German>Master Crafted Elven Armor</German>
+		<Italian>Master Crafted Elven Armor</Italian>
+		<Spanish>Master Crafted Elven Armor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ELVEN_ARMOR_HASTE_IN_WOOD</Tag>
+		<English>Wood Walk</English>
+		<French>Wood Walk</French>
+		<German>Wood Walk</German>
+		<Italian>Wood Walk</Italian>
+		<Spanish>Wood Walk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ELVEN_ARMOR_HASTE_IN_WOOD_HELP</Tag>
+		<English>Hastes this Unit</English>
+		<French>Hastes this Unit</French>
+		<German>Hastes this Unit</German>
+		<Italian>Hastes this Unit</Italian>
+		<Spanish>Hastes this Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MASTER_CRAFTED_ELVEN_WEAPON</Tag>
+		<English>Master Crafted Elven Weapon</English>
+		<French>Master Crafted Elven Weapon</French>
+		<German>Master Crafted Elven Weapon</German>
+		<Italian>Master Crafted Elven Weapon</Italian>
+		<Spanish>Master Crafted Elven Weapon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_ELVEN_CLOAK</Tag>
+		<English>Elven Cloak</English>
+		<French>Elven Cloak</French>
+		<German>Elven Cloak</German>
+		<Italian>Elven Cloak</Italian>
+		<Spanish>Elven Cloak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ELVEN_CLOAK</Tag>
+		<English>Camouflage</English>
+		<French>Camouflage</French>
+		<German>Camouflage</German>
+		<Italian>Camouflage</Italian>
+		<Spanish>Camouflage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ELVEN_CLOAK_HELP</Tag>
+		<English>Camouflages this Unit</English>
+		<French>Camouflages this Unit</French>
+		<German>Camouflages this Unit</German>
+		<Italian>Camouflages this Unit</Italian>
+		<Spanish>Camouflages this Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_HEAD_HUNTING_CONTRACT</Tag>
+		<English>Headhunting Contract</English>
+		<French>Headhunting Contract</French>
+		<German>Headhunting Contract</German>
+		<Italian>Headhunting Contract</Italian>
+		<Spanish>Headhunting Contract</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_LIGHT_ELVEN_ARMOR</Tag>
+		<English>Light Elven Armor</English>
+		<French>Light Elven Armor</French>
+		<German>Light Elven Armor</German>
+		<Italian>Light Elven Armor</Italian>
+		<Spanish>Light Elven Armor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_LIGHT_ELVEN_ARMOR</Tag>
+		<English>Stalking</English>
+		<French>Stalking</French>
+		<German>Stalking</German>
+		<Italian>Stalking</Italian>
+		<Spanish>Stalking</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_LIGHT_ELVEN_ARMOR_HELP</Tag>
+		<English>Find your Prey</English>
+		<French>Find your Prey</French>
+		<German>Find your Prey</German>
+		<Italian>Find your Prey</Italian>
+		<Spanish>Find your Prey</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_PARROT</Tag>
+		<English>Parrot</English>
+		<French>Parrot</French>
+		<German>Parrot</German>
+		<Italian>Parrot</Italian>
+		<Spanish>Parrot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_LET_THE_PARROT_TALK</Tag>
+		<English>Let the Parrot talk</English>
+		<French>Let the Parrot talk</French>
+		<German>Let the Parrot talk</German>
+		<Italian>Let the Parrot talk</Italian>
+		<Spanish>Let the Parrot talk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_LET_THE_PARROT_TALK_HELP</Tag>
+		<English>He is ill mannered</English>
+		<French>He is ill mannered</French>
+		<German>He is ill mannered</German>
+		<Italian>He is ill mannered</Italian>
+		<Spanish>He is ill mannered</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_RUM</Tag>
+		<English>A Bottle of Rum</English>
+		<French>A Bottle of Rum</French>
+		<German>A Bottle of Rum</German>
+		<Italian>A Bottle of Rum</Italian>
+		<Spanish>A Bottle of Rum</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRINK_RUM</Tag>
+		<English>Drink the whole Bottle of Rum</English>
+		<French>Drink the whole Bottle of Rum</French>
+		<German>Drink the whole Bottle of Rum</German>
+		<Italian>Drink the whole Bottle of Rum</Italian>
+		<Spanish>Drink the whole Bottle of Rum</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRINK_RUM_HELP</Tag>
+		<English>woahhh</English>
+		<French>woahhh</French>
+		<German>woahhh</German>
+		<Italian>woahhh</Italian>
+		<Spanish>woahhh</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GIVE_RUM_TO_PARROT</Tag>
+		<English>Give the Rum to the Parrot</English>
+		<French>Give the Rum to the Parrot</French>
+		<German>Give the Rum to the Parrot</German>
+		<Italian>Give the Rum to the Parrot</Italian>
+		<Spanish>Give the Rum to the Parrot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GIVE_RUM_TO_PARROT_HELP</Tag>
+		<English>Where did he learn these words?</English>
+		<French>Where did he learn these words?</French>
+		<German>Where did he learn these words?</German>
+		<Italian>Where did he learn these words?</Italian>
+		<Spanish>Where did he learn these words?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_WENCHES</Tag>
+		<English>Wenches</English>
+		<French>Wenches</French>
+		<German>Wenches</German>
+		<Italian>Wenches</Italian>
+		<Spanish>Wenches</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_WENCHES</Tag>
+		<English>Let the Crew have some fun</English>
+		<French>Let the Crew have some fun</French>
+		<German>Let the Crew have some fun</German>
+		<Italian>Let the Crew have some fun</Italian>
+		<Spanish>Let the Crew have some fun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_LETTER_OF_MARQUE</Tag>
+		<English>Letter of Marque</English>
+		<French>Letter of Marque</French>
+		<German>Letter of Marque</German>
+		<Italian>Letter of Marque</Italian>
+		<Spanish>Letter of Marque</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RAISE_FALSE_FLAG</Tag>
+		<English>Sail under a false Flag</English>
+		<French>Sail under a false Flag</French>
+		<German>Sail under a false Flag</German>
+		<Italian>Sail under a false Flag</Italian>
+		<Spanish>Sail under a false Flag</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RAISE_FALSE_FLAG_HELP</Tag>
+		<English>Arrrrrr</English>
+		<French>Arrrrrr</French>
+		<German>Arrrrrr</German>
+		<Italian>Arrrrrr</Italian>
+		<Spanish>Arrrrrr</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_FALSE_FLAG</Tag>
+		<English>False Flag</English>
+		<French>False Flag</French>
+		<German>False Flag</German>
+		<Italian>False Flag</Italian>
+		<Spanish>False Flag</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_LOWER_FALSE_FLAG</Tag>
+		<English>Lowers the False Flag</English>
+		<French>Lowers the False Flag</French>
+		<German>Lowers the False Flag</German>
+		<Italian>Lowers the False Flag</Italian>
+		<Spanish>Lowers the False Flag</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RAISE_LOWER_FLAG_HELP</Tag>
+		<English>[ICON BULLET]No more Looting</English>
+		<French>[ICON BULLET]No more Looting</French>
+		<German>[ICON BULLET]No more Looting</German>
+		<Italian>[ICON BULLET]No more Looting</Italian>
+		<Spanish>[ICON BULLET]No more Looting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_SCROLL_OF_TOWNPORTAL</Tag>
+		<English>Scroll of Townportal</English>
+		<French>Scroll of Townportal</French>
+		<German>Scroll of Townportal</German>
+		<Italian>Scroll of Townportal</Italian>
+		<Spanish>Scroll of Townportal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SCROLL_OF_TOWNPORTAL</Tag>
+		<English>Use the scroll of townportal</English>
+		<French>Use the scroll of townportal</French>
+		<German>Use the scroll of townportal</German>
+		<Italian>Use the scroll of townportal</Italian>
+		<Spanish>Use the scroll of townportal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SCROLL_OF_TOWNPORTAL_HELP</Tag>
+		<English>[ICON BULLET]Opens a Portal to your Palace</English>
+		<French>[ICON BULLET]Opens a Portal to your Palace</French>
+		<German>[ICON BULLET]Opens a Portal to your Palace</German>
+		<Italian>[ICON BULLET]Opens a Portal to your Palace</Italian>
+		<Spanish>[ICON BULLET]Opens a Portal to your Palace</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MAGIC_LAMP</Tag>
+		<English>Magic Lamp</English>
+		<French>Magic Lamp</French>
+		<German>Magic Lamp</German>
+		<Italian>Magic Lamp</Italian>
+		<Spanish>Magic Lamp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RUB_THE_LAMP</Tag>
+		<English>Rub the Lamp</English>
+		<French>Rub the Lamp</French>
+		<German>Rub the Lamp</German>
+		<Italian>Rub the Lamp</Italian>
+		<Spanish>Rub the Lamp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RUB_THE_LAMP_HELP</Tag>
+		<English>Summons the Djinn inside the lamp</English>
+		<French>Summons the Djinn inside the lamp</French>
+		<German>Summons the Djinn inside the lamp</German>
+		<Italian>Summons the Djinn inside the lamp</Italian>
+		<Spanish>Summons the Djinn inside the lamp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_DEMONIC_INFUSION</Tag>
+		<English>Demonic Infusion</English>
+		<French>Demonic Infusion</French>
+		<German>Demonic Infusion</German>
+		<Italian>Demonic Infusion</Italian>
+		<Spanish>Demonic Infusion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MASTER_CRAFTED_GOLEM_COMPONENTS</Tag>
+		<English>Master Crafted Golem Components</English>
+		<French>Master Crafted Golem Components</French>
+		<German>Master Crafted Golem Components</German>
+		<Italian>Master Crafted Golem Components</Italian>
+		<Spanish>Master Crafted Golem Components</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_ENCHANTED_OIL</Tag>
+		<English>Enchanted Oil</English>
+		<French>Enchanted Oil</French>
+		<German>Enchanted Oil</German>
+		<Italian>Enchanted Oil</Italian>
+		<Spanish>Enchanted Oil</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_TOME_OF_RITUALS</Tag>
+		<English>Tome of Rituals</English>
+		<French>Tome of Rituals</French>
+		<German>Tome of Rituals</German>
+		<Italian>Tome of Rituals</Italian>
+		<Spanish>Tome of Rituals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_DEMONIC_ARMOR</Tag>
+		<English>Demonic Armor</English>
+		<French>Demonic Armor</French>
+		<German>Demonic Armor</German>
+		<Italian>Demonic Armor</Italian>
+		<Spanish>Demonic Armor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_DEMONIC_HIDE</Tag>
+		<English>Demonic Hide</English>
+		<French>Demonic Hide</French>
+		<German>Demonic Hide</German>
+		<Italian>Demonic Hide</Italian>
+		<Spanish>Demonic Hide</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_STALK_THE_WASTELANDS</Tag>
+		<English>Stalk the Wastelands</English>
+		<French>Stalk the Wastelands</French>
+		<German>Stalk the Wastelands</German>
+		<Italian>Stalk the Wastelands</Italian>
+		<Spanish>Stalk the Wastelands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_STALK_THE_WASTELANDS_HELP</Tag>
+		<English>There is no hideout</English>
+		<French>There is no hideout</French>
+		<German>There is no hideout</German>
+		<Italian>There is no hideout</Italian>
+		<Spanish>There is no hideout</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MERCENARY_CONTRACT</Tag>
+		<English>Mercenary Contract</English>
+		<French>Mercenary Contract</French>
+		<German>Mercenary Contract</German>
+		<Italian>Mercenary Contract</Italian>
+		<Spanish>Mercenary Contract</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FIGHT_FOR_AN_OTHER_LORD</Tag>
+		<English>Fight for another Lord</English>
+		<French>Fight for another Lord</French>
+		<German>Fight for another Lord</German>
+		<Italian>Fight for another Lord</Italian>
+		<Spanish>Fight for another Lord</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_FIGHT_FOR_AN_OTHER_LORD_HELP</Tag>
+		<English>This unit no longer fights for you</English>
+		<French>This unit no longer fights for you</French>
+		<German>This unit no longer fights for you</German>
+		<Italian>This unit no longer fights for you</Italian>
+		<Spanish>This unit no longer fights for you</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_MERCENARY</Tag>
+		<English>Mercenary</English>
+		<French>Mercenary</French>
+		<German>Mercenary</German>
+		<Italian>Mercenary</Italian>
+		<Spanish>Mercenary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_WAR_LANCES</Tag>
+		<English>War Lances</English>
+		<French>War Lances</French>
+		<German>War Lances</German>
+		<Italian>War Lances</Italian>
+		<Spanish>War Lances</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_CATAPHRACT_HORSE_ARMOR</Tag>
+		<English>Chataphract Horse Armor</English>
+		<French>Chataphract Horse Armor</French>
+		<German>Chataphract Horse Armor</German>
+		<Italian>Chataphract Horse Armor</Italian>
+		<Spanish>Chataphract Horse Armor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_WOLF_COMPANION</Tag>
+		<English>Wolf Companion</English>
+		<French>Wolf Companion</French>
+		<German>Wolf Companion</German>
+		<Italian>Wolf Companion</Italian>
+		<Spanish>Wolf Companion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_CONTROLLED_RAGE</Tag>
+		<English>Controlled Rage</English>
+		<French>Controlled Rage</French>
+		<German>Controlled Rage</German>
+		<Italian>Controlled Rage</Italian>
+		<Spanish>Controlled Rage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CONTROLLED_RAGE</Tag>
+		<English>Rage</English>
+		<French>Rage</French>
+		<German>Rage</German>
+		<Italian>Rage</Italian>
+		<Spanish>Rage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CONTROLLED_RAGE_HELP</Tag>
+		<English>[ICON_BULLET]Drives the unit in a controlled rage</English>
+		<French>[ICON_BULLET]Drives the unit in a controlled rage</French>
+		<German>[ICON_BULLET]Drives the unit in a controlled rage</German>
+		<Italian>[ICON_BULLET]Drives the unit in a controlled rage</Italian>
+		<Spanish>[ICON_BULLET]Drives the unit in a controlled rage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_ANIMAL_TOTEM</Tag>
+		<English>Animal Totem</English>
+		<French>Animal Totem</French>
+		<German>Animal Totem</German>
+		<Italian>Animal Totem</Italian>
+		<Spanish>Animal Totem</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_ANIMAL_SPIRIT_GUIDE</Tag>
+		<English>Animal Spirit Guide</English>
+		<French>Animal Spirit Guide</French>
+		<German>Animal Spirit Guide</German>
+		<Italian>Animal Spirit Guide</Italian>
+		<Spanish>Animal Spirit Guide</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ANIMAL_SPIRIT_GUIDE</Tag>
+		<English>Animal Spirit Guide</English>
+		<French>Animal Spirit Guide</French>
+		<German>Animal Spirit Guide</German>
+		<Italian>Animal Spirit Guide</Italian>
+		<Spanish>Animal Spirit Guide</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ANIMAL_SPIRIT_GUIDE_HELP</Tag>
+		<English>Let an animal spirit guide you</English>
+		<French>Let an animal spirit guide you</French>
+		<German>Let an animal spirit guide you</German>
+		<Italian>Let an animal spirit guide you</Italian>
+		<Spanish>Let an animal spirit guide you</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GEAR_WAR_RUNES</Tag>
+		<English>War Runes</English>
+		<French>War Runes</French>
+		<German>War Runes</German>
+		<Italian>War Runes</Italian>
+		<Spanish>War Runes</Spanish>
+	</TEXT>	
+</Civ4GameText>

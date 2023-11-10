@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:DURAL_CIV4UnitSpellSchema.xml">
+	<SpellInfos>
+		<SpellInfo>			<!-- Great Works -->
+			<Type>SPELL_GREAT_WORKS</Type>
+			<Description>TXT_KEY_SPELL_GREATWORKS</Description>
+			<Civilopedia>TXT_KEY_SPELL_GREATWORKS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_SPELL_GREATWORKS_STRATEGY</Strategy>
+			<Help>TXT_KEY_SPELL_GREATWORKS_HELP</Help>
+			<CivilizationPrereq>CIVILIZATION_DURAL</CivilizationPrereq>
+			<bAllowAI>1</bAllowAI>
+			<bGlobal>1</bGlobal>
+			<iAIWeight>300</iAIWeight>
+			<bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+			<PyResult>__import__('Expansion').spellGreatWorks(pCaster)</PyResult>
+			<PyRequirement>__import__('Expansion').reqGreatWorks(pCaster)</PyRequirement>
+			<Effect>EFFECT_SPELL1</Effect>
+			<Sound>AS2D_BUILD_FORGE</Sound>
+			<Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,3,11</Button>
+			<bNoInterruptUnitCycling>1</bNoInterruptUnitCycling>												
+		</SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

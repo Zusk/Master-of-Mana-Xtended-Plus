@@ -1,0 +1,100 @@
+- [AOS SI] Larincsidhe starts with 10 str (instead of 0 str +10 lightning).
+- [AOS SI] Wild Fae starts with 6 str +1 Nature affinity. Still receives +str from techs.
+- [AOS SI] Reduced Sun Faerie strength to 5 +1 Fire +1 Fire affinity (it was 5 +3 Fire +2 Fire affinity). Still receives +str from techs. 
+- [AOS SI] Reduced Moon Faerie strength to 5 +1 Cold +1 Water affinity (it was 5 +3 Cold +2 Water affinity). Still receives +str from techs. 
+- [ARISTRAKH] Catacomb is buildable in all cities.
+- [ARISTRAKH] Cabal Shrine requires Circle of Blood or Circle of Despair.
+- [ARISTRAKH] Aristrakh only gain souls from living units.
+- [AUSTRIN] Wisp (Ranger UU) str is 8 +1 poison, little bit stronger than other Ranger UUs.
+- [AUSTRIN] Gains Druid UU, the Skyrover.
+- [AUSTRIN] Fixed Austrin Druid's Summon Pegasus bug.
+- [AUSTRIN] Merged some of Linvega's changes:
+	- [AUSTRIN] Starts with Nomads tech (trade routes in almost all terrains, except hell terrains). 
+		- [AUSTRIN] Workers can not build road in such terrains.
+	- [AUSTRIN] Whenever Austrin unit destroy a lair, it builds a Fortified Outpost which gives +1 hammer/+1 commerce/+1 stone. Austrin gains extra +2 hammer/+2 commerce/+1 stone from this Outpost.
+	- [AUSTRIN] Buildings change log:
+		- [AUSTRIN] Summer and Winter palaces give +2 population limit.
+		- [AUSTRIN] Gains Citizens District (Noble District UB): +2 culture, +2 hammer, +1 culture from Dye, Cotton, Marble, Ale.
+		- [AUSTRIN] Gains Philosophers District (Sage District UB): +2 science, +1 science/population, +1 science from Incense, Reagent, Wine.
+		- [AUSTRIN] Gains Traders District (Merchant District UB): +2 gold, +1 gold/population, +2 trade route, +50% trade route income.
+		- [AUSTRIN] Gains Exotic Market (Market UB): gets +2 commerce for access to various resources, +1 commerce for each.
+		- [AUSTRIN] Gains Venison Market (Hunting Ground UB): gets +1 gold from Deer.
+		- [AUSTRIN] Gains Austrin Aerial Stable (Aerial Stable UB): unlocked at Ranger's Guild V (instead of VII).
+		- [AUSTRIN] Food Caravan sells -6 food (instead of -10 food).
+	- [AUSTRIN] Leaders change log:
+		- [AUSTRIN] Deidra is Loremaster/Adaptive/Defensive (temporary).
+		- [AUSTRIN] Sorah and Ecks are Trader/Nomads (able to do Prepare Expedition and Swap Cities).
+		- [AUSTRIN] Sorah and Ecks gain (and give) +2 attitude toward males and females. This will make it easier for them to establish Open Border.
+- [BANNOR] Nerfed Chapel (Pagan Temple UB)'s yield to +3 culture/+3 faith (it was +2 culture/+5 faith).
+- [BANNOR] Fixed Bannor Guardsman trait (increasing improvement growth rate by 50%, instead of reducing it).
+- [CLAN OF EMBERS] Stoneskin Ogre's Stoneskin blocks Bleeding.
+- [ILLIANS] The Draw gives all White Hand units +2 Cold, required for Ascension. Increased cost to 3000 faith/20 faith upkeep.
+- [LANUN] Lanun naval unit can cast "Assemble Shore Party", summoning three non-permanent Thugs (1 turn duration).
+- [KHAZAD] Breaker (tier 3 melee) requires Warfare and Apprenticeship (Artisans II); moved from Metal Casting (Artisans IV).
+- [LJOSALFAR] Sentinel loses Defensive, gains Woodland 1.
+- [LJOSALFAR] AI has greater weight for religion.
+- [LUCHUIRP] Dwarven Slinger loses Defensive, gains City Defender 1.
+- [LUCHUIRP] Wood Golem gets +20% bonus production from Timber.
+- [LUCHUIRP] Marble Golem no longer bombard but stronger in collateral damage.
+- [MALAKIM] Malakim starts with a Settler, a Worker, a Lightbringer and two Dervishes to help AI.
+- [MALAKIM] Lost Nomad tech (which gives them ability to connect trade routes in various tiles).
+- [MALAKIM] Nomad promotion is renamed to Desert Warrior, gives +20% att/def on desert tiles.
+- [MALAKIM] Dervish will gain "Followers of ..." according to the state religion, when built in a city with state religion.
+- [MALAKIM] Kane is Imperialist/Trader now.
+- [SCION] Ghostwalker (Ranger UU) is reduced to 8 str, like other Ranger UUs.
+- [BARBARIAN] Changed Goblin Archer's strength from 5+3 poison to 6+2 poison.
+- [BUILDING] All Pagan Temples and UBs cost 150 hammers.
+- [BUILDING] Tavern gives +2 gold, +1 gold for access to Tea, Wine and Ale, and +1 for each resource.
+- [BUILDING] Grigori Tavern gives +1 Adventure GPP.
+- [CLASS] Berserker's innate ability is +50% vs unit with Gaping Wound.
+- [CLASS] Berserker can enter Combat Frenzy at will (gaining +30% att, -15% def, 10% chance to gain Enraged from combat, 50% expire chance).
+- [CLASS] Blade of Fury gives +1 move, +1 first strike, requires Vengeance discipline.
+- [CLASS] Commander class now requires Offense discipline.
+- [CLASS] Featherfang loses "target weakest unit" and gains "50% to pass Gaping Wound to enemy" and "+25% vs unit with Gaping Wound".
+- [CLASS] Gladiator is renamed to Bannerman. It gives the ability to call for Reckless Charge (+20% str, +1 move, -2 first strike, becomes Fatigued). 
+- [CLASS] Sharpshooter gains "target weakest unit".
+- [CLASS] Starbolt Archer is renamed to Duskwood Archer, gains +1 Timber affinity.
+- [CLASS] Vindicator is renamed to Marshal. It has +30% city attack and defense, and double defensive bonus.
+- [CLASS] Weaponmaster has access to all types of armor and weapon, +1 poison damage and "+100% chance to pass Weakness (-20% str, poison vulnerability) to enemy".
+- [EQUIPMENT] Added new equipment property: Bleeder (50% pass Gaping Wound to enemy).
+- [EQUIPMENT] Added new effect: Gaping Wound (10% physical damage, can kill, removed when unit is healed).
+- [EQUIPMENT] Removed Berserk equipment property.
+- [EQUIPMENT] Axe, Waraxe, Heroic Broadsword and Mithril Claymore have Bleeder property (making them excellent for Berserkers).
+- [EVENT] Added more options using various mana types.
+- [GUILD] Javelin requires Ranger's Guild IV and gives 30% attack. Requires 350 woods.
+- [GUILD] Ranger's Guild various animal pens give +1 happiness +1 culture (previously +1 happiness +3 culture). This is on par with Balseraphs' slave cages.
+- [GUILD] Ivory requires Ranger's Guild III (the same level with Silk).
+- [GUILD] Cordwain Shop requires RG III (instead of IV).
+- [GUILD] Huntsman's Cabin gives +1 health and +1 gold for access to Bison, Deer, Fur (and 0.50 for each).
+- [GUILD] Mage Guild's Wizard Tower is now a national wonder, gives the ability to adjust Spell Research and Mana sliders.
+- [GUILD] Guardian Golem str is 15 (from 12).
+- [GUILD] Slaver's Guild I and V no longer give +1 global unhappiness.
+- [GUILD] Slaver's Compound gives -1 happiness and +2 hammer per city culture level.
+- [GUILD] Overseer requires Slaver's Guild IV (moved down from Guild V). Its strength is reduced to 9 (from 10). Starts with Manhunt I-II.
+- [GUILD] Slaver's Guild V increases yield from quarries (+1 hammer/+2 stones).
+- [GUILD] Obsidian Castle is moved to Slaver's Guild V (from VII). It gives -20% to hurry, +1 unhappiness to all cities.
+- [GUILD] Shadow requires Tongue of Lies (Esus IV). Its strength is reduced to 6 +1 Cold/+1 Poison/+1 Unholy. It gains +affinity from Razorweed. Cost 100 hammer/300 leather. 
+- [HEALING] Reduce the effect of early healing potions a bit:
+--- Healer's Circle Healing Salve now heals 25% health (instead of 100% health), costs 100 herbs.
+--- Healer's Circle got a new potion: Potion of Vitality (heals 100%, costs 300 herbs).
+--- Esus's Health Tonic now heals 25% health, requires Esus II, no delay.
+--- Witch's Brew heals 50% health (instead of 100%) and mutates the drinker. It costs 200 herbs. 
+- [RELIGION] Added Sacrifice spell in cities with Demon's Altar. Sacrificing living unit will give you (10 + (caster's level * caster level)).
+- [RELIGION] "Follower of ..." promotions give +1 strength of various element: 
+	=== Junil = +1 holy
+	=== Lugus = +1 fire
+	=== Kilmorph = +1 physical
+	=== Cernunnos = +1 poison
+	=== OO = +1 cold
+	=== Agares = +1 unholy
+- [RELIGION] Lower disciple units base strength so that their final strength with Follower of ... are still the same.
+- [RESOURCE] Eternal Fruit is harvestable with Plantations.
+- [TRAIT] Berserker trait now gives Bloodthirsty (+20% att, -10% def).
+- [TRAIT] Trader trait now gives Cartography to leaders.
+- [UNIQUE FEATURE] Fixed bug that prevents Mount Kalshekk from being placed. 
+- [UNIT] Catapult gains +1 affinity from Timber and Stone.
+- [UNIT] Trebuchet gains +1 affinity from Timber and Stone.
+- [UNIT] Cannon and Dwarven Cannon gain +1 affinity from Iron, Mithril and Gunpowder.
+- [UNIT] Siege engines can gain promotions.
+- [UNIT] AI will build fewer siege engine than before.
+- [UNIT] Paladins, Druids and Eidolons will leave you if disagree with your alignment.

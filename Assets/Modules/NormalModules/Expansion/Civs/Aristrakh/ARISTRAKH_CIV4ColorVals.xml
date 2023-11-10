@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Civ4ColorVals xmlns="x-schema:ARISTRAKH_CIV4InterfaceSchema.xml">
+	<ColorVals>
+		<ColorVal>
+			<Type>COLOR_PLAYER_ARISTRAKH_DARK_RED</Type>
+			<fRed>0.63</fRed>
+			<fGreen>0.00</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_ARISTRAKH_BLACK</Type>
+			<fRed>0.12</fRed>
+			<fGreen>0.12</fGreen>
+			<fBlue>0.12</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+	</ColorVals>
+</Civ4ColorVals>

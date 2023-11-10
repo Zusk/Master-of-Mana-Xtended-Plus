@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:MAZATL_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+		<UnitClassInfo>		<!-- PRIEST_OF_KALSHEKK -->
+			<Type>UNITCLASS_PRIEST_OF_KALSHEKK</Type>
+			<Description>TXT_KEY_UNIT_PRIEST_OF_KALSHEKK</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_LIZARD_PRIEST_OF_KALSHEKK</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- PRIEST_OF_OMORR -->
+			<Type>UNITCLASS_PRIEST_OF_OMORR</Type>
+			<Description>TXT_KEY_UNIT_PRIEST_OF_OMORR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_LIZARD_PRIEST_OF_OMORR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- COATLANN -->
+			<Type>UNITCLASS_COATLANN</Type>
+			<Description>TXT_KEY_UNIT_COATLANN</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_COATLANN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- DRAGON_GUARDIAN -->
+			<Type>UNITCLASS_DRAGON_GUARDIAN</Type>
+			<Description>TXT_KEY_UNIT_DRAGON_GUARDIAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>12</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DRAGON_GUARDIAN</DefaultUnit>
+		</UnitClassInfo>		
+	</UnitClassInfos>
+</Civ4UnitClassInfos>

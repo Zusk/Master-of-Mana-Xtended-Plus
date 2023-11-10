@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Infos -->
+<Civ4BuildingInfos xmlns="x-schema:AUSTRIN_CIV4BuildingsSchema.xml">
+	<BuildingInfos>
+		<BuildingInfo>		<!-- Austrin Settlement -->
+			<BuildingClass>BUILDINGCLASS_CIV_BUILDING1</BuildingClass>
+			<Type>BUILDING_AUSTRIN_SETTLEMENT</Type>
+			<Description>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_HUNTING_LODGE</ArtDefineTag>
+			<fVisibilityPriority>1</fVisibilityPriority>
+			<MovieDefineTag></MovieDefineTag>
+			<iCost>-1</iCost>
+			<bGovernmentCenter>1</bGovernmentCenter>
+			<bNeverCapture>1</bNeverCapture>
+			<iConquestProb>0</iConquestProb>
+			<iAsset>8</iAsset>
+		</BuildingInfo>
+		<BuildingInfo>		<!-- The Joining -->
+			<BuildingClass>BUILDINGCLASS_JOINING</BuildingClass>
+			<Type>BUILDING_JOINING</Type>
+			<Description>The Joining</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GREAT_PALACE</ArtDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_FORBIDDEN_PALACE</MovieDefineTag>
+			<bGovernmentCenter>0</bGovernmentCenter>
+			<bNeverCapture>1</bNeverCapture>
+			<bNukeImmune>1</bNukeImmune>
+			<iCost>150</iCost>
+			<iHurryCostModifier>50</iHurryCostModifier>
+			<iConquestProb>0</iConquestProb>
+			<iCitiesPrereq>2</iCitiesPrereq>
+			<iAsset>8</iAsset>
+			<fVisibilityPriority>15000</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+			<PrereqTrait>TRAIT_EXOTIC</PrereqTrait>
+		</BuildingInfo>
+	</BuildingInfos>
+</Civ4BuildingInfos>

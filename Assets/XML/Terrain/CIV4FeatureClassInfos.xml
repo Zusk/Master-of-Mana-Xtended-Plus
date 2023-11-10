@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Civ4FeatureClassInfos xmlns="x-schema:CIV4TerrainSchema.xml">
+	<FeatureClassInfos>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_FOREST</Type>
+            <Description>Forest</Description>			
+			<DefaultFeature>FEATURE_FOREST</DefaultFeature>
+		</FeatureClassInfo>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_FLOOD_PLAINS</Type>
+            <Description>Flood Plains</Description>			
+			<DefaultFeature>FEATURE_FLOOD_PLAINS</DefaultFeature>
+		</FeatureClassInfo>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_ICE</Type>
+            <Description>Ice</Description>			
+			<DefaultFeature>FEATURE_ICE</DefaultFeature>
+		</FeatureClassInfo>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_JUNGLE</Type>
+            <Description>Jungle</Description>			
+			<DefaultFeature>FEATURE_JUNGLE</DefaultFeature>
+		</FeatureClassInfo>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_OASIS</Type>
+            <Description>Oasis</Description>			
+			<DefaultFeature>FEATURE_OASIS</DefaultFeature>
+		</FeatureClassInfo>
+		<FeatureClassInfo>
+			<Type>FEATURECLASS_SCRUB</Type>
+            <Description>Scrub</Description>			
+			<DefaultFeature>FEATURE_SCRUB</DefaultFeature>
+		</FeatureClassInfo>		
+	</FeatureClassInfos>			
+</Civ4FeatureClassInfos>

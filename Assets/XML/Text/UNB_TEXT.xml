@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UNBLEMISHED_DESC</Tag>
+		<English>The Unblemished</English>
+		<French>The Unblemished</French>
+		<German>The Unblemished</German>
+		<Italian>The Unblemished</Italian>
+		<Spanish>The Unblemished</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UNBLEMISHED_SHORT_DESC</Tag>
+		<English>The Unblemished</English>
+		<French>The Unblemished</French>
+		<German>The Unblemished</German>
+		<Italian>The Unblemished</Italian>
+		<Spanish>The Unblemished</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UNBLEMISHED_ADJECTIVE</Tag>
+		<English>Unblemished</English>
+		<French>Unblemished</French>
+		<German>Unblemished</German>
+		<Italian>Unblemished</Italian>
+		<Spanish>Unblemished</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UNBLEMISHED_PEDIA</Tag>
+		<English>The Unblemished are descended from the Age of Magic church of Sucellus. Over the centuries the Unblemished's worship of Sucellus has become all-pervasive, but rarely explicit. The Age of Ice and the death of their god left scars on the Unblemished. They were long a hidden people, watching and guarding the great ice shards that marked their god's defeat.[PARAGRAPH:1]They did not lose hope, but to speak of Sucellus or to engage in his rites was too painful. Yet as best they could the Unblemished maintained his precept. They nursed small sheltered gardens, shared their scant seed with the birds, and husbanded the starving wildlife of the frozen forests.  Their work came to little and despite great efforts, notably new and powerful enchantments, they steadily diminished. But they persevered. And they never forgot Sucellus.[PARAGRAPH:1]Too exhausted to stage grand ceremonies they worked the Rites of Sucellus into their everyday lives. Small religious competitions and tests, awards, and organized sports and games--all dedicated to Sucellus--became inextricably linked to their way of life... as meager as it had become. They silently held to hope, learning to heal and maintain what little they had rather than find their joy in Nature's infinite variations. And in time the long struggle with the deathly cold, the hostile tribes, and the death of their deity became worthy for its own sake. Perseverance against insurmountable odds had become a way of life, and the Unblemished exulted in it.[PARAGRAPH:1][PARAGRAPH:1]The Unblemished are the persevering faithful. They not only refused to give up on their god, but they followed his change of precept. Perhaps even anticipated it. With Sucellus' resurrection at the beginning of the Age of Rebirth the Unblemished believe they have received their reward. Blessed by both the new God of Life and a rejoicing Nantosuelta, the Unblemished are ready to take back Erebus from the forces of evil.  They will make the next age the final one, the Age of Glory.[PARAGRAPH:1]The Unblemished are an energetic culture, not so much aggressive militarily as they are extremely ambitious. Most consider themselves part of a chosen people destined lead Erebus. But only when they deserve it: The Unblemished know they, like the world, are faulty. Victory and peace will come only with hard work and by striving always for perfection.</English>
+		<French>The Unblemished are descended from the Age of Magic church of Sucellus. Over the centuries the Unblemished's worship of Sucellus has become all-pervasive, but rarely explicit. The Age of Ice and the death of their god left scars on the Unblemished. They were long a hidden people, watching and guarding the great ice shards that marked their god's defeat.[PARAGRAPH:1]They did not lose hope, but to speak of Sucellus or to engage in his rites was too painful. Yet as best they could the Unblemished maintained his precept. They nursed small sheltered gardens, shared their scant seed with the birds, and husbanded the starving wildlife of the frozen forests.  Their work came to little and despite great efforts, notably new and powerful enchantments, they steadily diminished. But they persevered. And they never forgot Sucellus.[PARAGRAPH:1]Too exhausted to stage grand ceremonies they worked the Rites of Sucellus into their everyday lives. Small religious competitions and tests, awards, and organized sports and games--all dedicated to Sucellus--became inextricably linked to their way of life... as meager as it had become. They silently held to hope, learning to heal and maintain what little they had rather than find their joy in Nature's infinite variations. And in time the long struggle with the deathly cold, the hostile tribes, and the death of their deity became worthy for its own sake. Perseverance against insurmountable odds had become a way of life, and the Unblemished exulted in it.[PARAGRAPH:1][PARAGRAPH:1]The Unblemished are the persevering faithful. They not only refused to give up on their god, but they followed his change of precept. Perhaps even anticipated it. With Sucellus' resurrection at the beginning of the Age of Rebirth the Unblemished believe they have received their reward. Blessed by both the new God of Life and a rejoicing Nantosuelta, the Unblemished are ready to take back Erebus from the forces of evil.  They will make the next age the final one, the Age of Glory.[PARAGRAPH:1]The Unblemished are an energetic culture, not so much aggressive militarily as they are extremely ambitious. Most consider themselves part of a chosen people destined lead Erebus. But only when they deserve it: The Unblemished know they, like the world, are faulty. Victory and peace will come only with hard work and by striving always for perfection.</French>
+		<German>The Unblemished are descended from the Age of Magic church of Sucellus. Over the centuries the Unblemished's worship of Sucellus has become all-pervasive, but rarely explicit. The Age of Ice and the death of their god left scars on the Unblemished. They were long a hidden people, watching and guarding the great ice shards that marked their god's defeat.[PARAGRAPH:1]They did not lose hope, but to speak of Sucellus or to engage in his rites was too painful. Yet as best they could the Unblemished maintained his precept. They nursed small sheltered gardens, shared their scant seed with the birds, and husbanded the starving wildlife of the frozen forests.  Their work came to little and despite great efforts, notably new and powerful enchantments, they steadily diminished. But they persevered. And they never forgot Sucellus.[PARAGRAPH:1]Too exhausted to stage grand ceremonies they worked the Rites of Sucellus into their everyday lives. Small religious competitions and tests, awards, and organized sports and games--all dedicated to Sucellus--became inextricably linked to their way of life... as meager as it had become. They silently held to hope, learning to heal and maintain what little they had rather than find their joy in Nature's infinite variations. And in time the long struggle with the deathly cold, the hostile tribes, and the death of their deity became worthy for its own sake. Perseverance against insurmountable odds had become a way of life, and the Unblemished exulted in it.[PARAGRAPH:1][PARAGRAPH:1]The Unblemished are the persevering faithful. They not only refused to give up on their god, but they followed his change of precept. Perhaps even anticipated it. With Sucellus' resurrection at the beginning of the Age of Rebirth the Unblemished believe they have received their reward. Blessed by both the new God of Life and a rejoicing Nantosuelta, the Unblemished are ready to take back Erebus from the forces of evil.  They will make the next age the final one, the Age of Glory.[PARAGRAPH:1]The Unblemished are an energetic culture, not so much aggressive militarily as they are extremely ambitious. Most consider themselves part of a chosen people destined lead Erebus. But only when they deserve it: The Unblemished know they, like the world, are faulty. Victory and peace will come only with hard work and by striving always for perfection.</German>
+		<Italian>The Unblemished are descended from the Age of Magic church of Sucellus. Over the centuries the Unblemished's worship of Sucellus has become all-pervasive, but rarely explicit. The Age of Ice and the death of their god left scars on the Unblemished. They were long a hidden people, watching and guarding the great ice shards that marked their god's defeat.[PARAGRAPH:1]They did not lose hope, but to speak of Sucellus or to engage in his rites was too painful. Yet as best they could the Unblemished maintained his precept. They nursed small sheltered gardens, shared their scant seed with the birds, and husbanded the starving wildlife of the frozen forests.  Their work came to little and despite great efforts, notably new and powerful enchantments, they steadily diminished. But they persevered. And they never forgot Sucellus.[PARAGRAPH:1]Too exhausted to stage grand ceremonies they worked the Rites of Sucellus into their everyday lives. Small religious competitions and tests, awards, and organized sports and games--all dedicated to Sucellus--became inextricably linked to their way of life... as meager as it had become. They silently held to hope, learning to heal and maintain what little they had rather than find their joy in Nature's infinite variations. And in time the long struggle with the deathly cold, the hostile tribes, and the death of their deity became worthy for its own sake. Perseverance against insurmountable odds had become a way of life, and the Unblemished exulted in it.[PARAGRAPH:1][PARAGRAPH:1]The Unblemished are the persevering faithful. They not only refused to give up on their god, but they followed his change of precept. Perhaps even anticipated it. With Sucellus' resurrection at the beginning of the Age of Rebirth the Unblemished believe they have received their reward. Blessed by both the new God of Life and a rejoicing Nantosuelta, the Unblemished are ready to take back Erebus from the forces of evil.  They will make the next age the final one, the Age of Glory.[PARAGRAPH:1]The Unblemished are an energetic culture, not so much aggressive militarily as they are extremely ambitious. Most consider themselves part of a chosen people destined lead Erebus. But only when they deserve it: The Unblemished know they, like the world, are faulty. Victory and peace will come only with hard work and by striving always for perfection.</Italian>
+		<Spanish>The Unblemished are descended from the Age of Magic church of Sucellus. Over the centuries the Unblemished's worship of Sucellus has become all-pervasive, but rarely explicit. The Age of Ice and the death of their god left scars on the Unblemished. They were long a hidden people, watching and guarding the great ice shards that marked their god's defeat.[PARAGRAPH:1]They did not lose hope, but to speak of Sucellus or to engage in his rites was too painful. Yet as best they could the Unblemished maintained his precept. They nursed small sheltered gardens, shared their scant seed with the birds, and husbanded the starving wildlife of the frozen forests.  Their work came to little and despite great efforts, notably new and powerful enchantments, they steadily diminished. But they persevered. And they never forgot Sucellus.[PARAGRAPH:1]Too exhausted to stage grand ceremonies they worked the Rites of Sucellus into their everyday lives. Small religious competitions and tests, awards, and organized sports and games--all dedicated to Sucellus--became inextricably linked to their way of life... as meager as it had become. They silently held to hope, learning to heal and maintain what little they had rather than find their joy in Nature's infinite variations. And in time the long struggle with the deathly cold, the hostile tribes, and the death of their deity became worthy for its own sake. Perseverance against insurmountable odds had become a way of life, and the Unblemished exulted in it.[PARAGRAPH:1][PARAGRAPH:1]The Unblemished are the persevering faithful. They not only refused to give up on their god, but they followed his change of precept. Perhaps even anticipated it. With Sucellus' resurrection at the beginning of the Age of Rebirth the Unblemished believe they have received their reward. Blessed by both the new God of Life and a rejoicing Nantosuelta, the Unblemished are ready to take back Erebus from the forces of evil.  They will make the next age the final one, the Age of Glory.[PARAGRAPH:1]The Unblemished are an energetic culture, not so much aggressive militarily as they are extremely ambitious. Most consider themselves part of a chosen people destined lead Erebus. But only when they deserve it: The Unblemished know they, like the world, are faulty. Victory and peace will come only with hard work and by striving always for perfection.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DRIMHELA</Tag>
+		<English>Apothearch Drimhela</English>
+		<French>Apothearch Drimhela</French>
+		<German>Apothearch Drimhela</German>
+		<Italian>Apothearch Drimhela</Italian>
+		<Spanish>Apothearch Drimhela</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DRIMHELA_PEDIA</Tag>
+		<English>Paramount Enchantress and High-Priestess of Nantosuelta.  The Unblemished have multiple informal ranks acknowledging a person's achievement, and Drimhela is the second youngest "Apothearch" in Unblemished history.  One of the greatest living Enchantresses, she looks even younger.  Affecting a demure air in public, her razor-like gaze is the only hint of the unmatched ambition concealed by that soft manner.  Drimhela is a leader of the Bridgit Sect, who seek a way to elevate the archangel to godhood.  She has not sought to make the Sect's goals part of the main Rites, but she does expect every Unblemished mage to share her skill with Fire magic.[PARAGRAPH:1]Drimhela favors the Inward Strategy, focusing Unblemished efforts within their own lands and building as strong a civilization as possible.</English>
+		<French>WIP</French>
+		<German>WIP</German>
+		<Italian>WIP</Italian>
+		<Spanish>WIP</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_OBBAERN</Tag>
+		<English>Paragon Obbaern</English>
+		<French>Paragon Obbaern</French>
+		<German>Paragon Obbaern</German>
+		<Italian>Paragon Obbaern</Italian>
+		<Spanish>Paragon Obbaern</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_OBBAERN_PEDIA</Tag>
+		<English>Warrior, mage, priestess, next to Apothearch Drimhela Obbaern is probably the most powerful Unblemished.  A skilled if not renowned enchantress, she is truly pious in the worship of Sucellus and Nantosuelta.  The youngest Apothearch in history, she early abandoned temple and ruling to serve in the army, quickly rising to Paragon.  Paragon Coldine himself has called her the Unblemished's most gifted strategist.  Now at Drimhela's personal request Obbaern has forsaken field command and accepted a civil position in the capital, where she is quickly becoming the most influential Minister.  Much to Drimhela's dismay, it is rumored, as the Paramount and High-Priestess may have pulled Obbaern from the military in an attempt to check the Paragon's ascendancy.[PARAGRAPH:1]Obbaern favors the Outward Strategy, believing that only in fully engaging with the rest of Erebus may the Unblemished reach their full potential.</English>
+		<French>WIP</French>
+		<German>WIP</German>
+		<Italian>WIP</Italian>
+		<Spanish>WIP</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALACE_UNBLEMISHED</Tag>
+		<English>Unblemished Palace</English>
+		<French>Unblemished Palace</French>
+		<German>Unblemished Palace</German>
+		<Italian>Unblemished Palace</Italian>
+		<Spanish>Unblemished Palace</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GEWINNFELD_PEDIA</Tag>
+		<English>The "fighting field" of the Unblemished is a public space for sports and games.  A great deal of training - especially martial - also takes here, as the Unblemished often blur the line between training, testing, and playing.</English>
+		<French>The "fighting field" of the Unblemished is a public space for sports and games.  A great deal of training - especially martial - also takes here, as the Unblemished often blur the line between training, testing, and playing.</French>
+		<German>The "fighting field" of the Unblemished is a public space for sports and games.  A great deal of training - especially martial - also takes here, as the Unblemished often blur the line between training, testing, and playing.</German>
+		<Italian>The "fighting field" of the Unblemished is a public space for sports and games.  A great deal of training - especially martial - also takes here, as the Unblemished often blur the line between training, testing, and playing.</Italian>
+		<Spanish>The "fighting field" of the Unblemished is a public space for sports and games.  A great deal of training - especially martial - also takes here, as the Unblemished often blur the line between training, testing, and playing.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXEMPLAR</Tag>
+		<English>Exemplar</English>
+		<French>Exemplar</French>
+		<German>Exemplar</German>
+		<Italian>Exemplar</Italian>
+		<Spanish>Exemplar</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EPITOME</Tag>
+		<English>Epitome</English>
+		<French>Epitome</French>
+		<German>Epitome</German>
+		<Italian>Epitome</Italian>
+		<Spanish>Epitome</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEARS1</Tag>
+		<English>Glass Furnace</English>
+		<French>Glass Furnace</French>
+		<German>Glass Furnace</German>
+		<Italian>Glass Furnace</Italian>
+		<Spanish>Glass Furnace</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEARS2</Tag>
+		<English>Crystal Forge</English>
+		<French>Crystal Forge</French>
+		<German>Crystal Forge</German>
+		<Italian>Crystal Forge</Italian>
+		<Spanish>Crystal Forge</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FIRE_MAGIC_MASTERY</Tag>
+		<English>Fire Mastery</English>
+		<French>Fire Mastery</French>
+		<German>Fire Mastery</German>
+		<Italian>Fire Mastery</Italian>
+		<Spanish>Fire Mastery</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FIRE_MAGIC_MASTERY_SHORT</Tag>
+		<English>Fir</English>
+		<French>Fir</French>
+		<German>Fir</German>
+		<Italian>Fir</Italian>
+		<Spanish>Fir</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEARS1_PEDIA</Tag>
+		<English>A source of cheap and plentiful enchanted glass.  Much stronger and more shatter resistant than normal glass, the Tears of Nantosuelta serve a host of domestic purposes far better than most base materials.</English>
+		<French>A source of cheap and plentiful enchanted glass.  Much stronger and more shatter resistant than normal glass, the Tears of Nantosuelta serve a host of domestic purposes far better than most base materials</French>
+		<German>A source of cheap and plentiful enchanted glass.  Much stronger and more shatter resistant than normal glass, the Tears of Nantosuelta serve a host of domestic purposes far better than most base materials</German>
+		<Italian>A source of cheap and plentiful enchanted glass.  Much stronger and more shatter resistant than normal glass, the Tears of Nantosuelta serve a host of domestic purposes far better than most base materials</Italian>
+		<Spanish>A source of cheap and plentiful enchanted glass.  Much stronger and more shatter resistant than normal glass, the Tears of Nantosuelta serve a host of domestic purposes far better than most base materials</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEARS2_PEDIA</Tag>
+		<English>Master Enchanters among the Unblemished create Adamantine Crystal.  It can only be worked on a special forge, and is used to create goods and tools of unmatched quality, or weapons, walls, and wonders comparable only to the best dwarfwork.</English>
+		<French>Master Enchanters among the Unblemished create Adamantine Crystal.  It can only be worked on a special forge, and is used to create goods and tools of unmatched quality, or weapons, walls, and wonders comparable only to the best dwarfwork.</French>
+		<German>Master Enchanters among the Unblemished create Adamantine Crystal.  It can only be worked on a special forge, and is used to create goods and tools of unmatched quality, or weapons, walls, and wonders comparable only to the best dwarfwork.</German>
+		<Italian>Master Enchanters among the Unblemished create Adamantine Crystal.  It can only be worked on a special forge, and is used to create goods and tools of unmatched quality, or weapons, walls, and wonders comparable only to the best dwarfwork.</Italian>
+		<Spanish>Master Enchanters among the Unblemished create Adamantine Crystal.  It can only be worked on a special forge, and is used to create goods and tools of unmatched quality, or weapons, walls, and wonders comparable only to the best dwarfwork.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RITES</Tag>
+		<English>The Rites of Sucellus</English>
+		<French>The Rites of Sucellus</French>
+		<German>The Rites of Sucellus</German>
+		<Italian>The Rites of Sucellus</Italian>
+		<Spanish>The Rites of Sucellus</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RITES_STRATEGY</Tag>
+		<English>A unique blend of Nature-loving sentiment and patience on the one hand, and Life-affirming devotion and drive on the other.  Some Unblemished are still informed by the hard lessons of the Age of Ice, but most are solely forward looking.  Ambitious and determined, they seek perfection.  Sometimes at the expensive of practicality.</English>
+		<French>A unique blend of Nature-loving sentiment and patience on the one hand, and Life-affirming devotion and drive on the other.  Some Unblemished are still informed by the hard lessons of the Age of Ice, but most are solely forward looking.  Ambitious and determined, they seek perfection.  Sometimes at the expensive of practicality.</French>
+		<German>A unique blend of Nature-loving sentiment and patience on the one hand, and Life-affirming devotion and drive on the other.  Some Unblemished are still informed by the hard lessons of the Age of Ice, but most are solely forward looking.  Ambitious and determined, they seek perfection.  Sometimes at the expensive of practicality.</German>
+		<Italian>A unique blend of Nature-loving sentiment and patience on the one hand, and Life-affirming devotion and drive on the other.  Some Unblemished are still informed by the hard lessons of the Age of Ice, but most are solely forward looking.  Ambitious and determined, they seek perfection.  Sometimes at the expensive of practicality.</Italian>
+		<Spanish>A unique blend of Nature-loving sentiment and patience on the one hand, and Life-affirming devotion and drive on the other.  Some Unblemished are still informed by the hard lessons of the Age of Ice, but most are solely forward looking.  Ambitious and determined, they seek perfection.  Sometimes at the expensive of practicality.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HEROIC</Tag>
+		<English>Heroic</English>
+		<French>Heroic</French>
+		<German>Heroic</German>
+		<Italian>Heroic</Italian>
+		<Spanish>Heroic</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_HEROIC_SHORT</Tag>
+		<English>Her</English>
+		<French>Her</French>
+		<German>Her</German>
+		<Italian>Her</Italian>
+		<Spanish>Her</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HEROIC_HELP</Tag>
+		<English>"Heroic" also means "Outnumbered."</English>
+		<French>Chronically undermanned, soldiers in every Unblemished units have ample opportunity for glory.</French>
+		<German>Chronically undermanned, soldiers in every Unblemished units have ample opportunity for glory.</German>
+		<Italian>Chronically undermanned, soldiers in every Unblemished units have ample opportunity for glory.</Italian>
+		<Spanish>Chronically undermanned, soldiers in every Unblemished units have ample opportunity for glory.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_HEROIC</Tag>
+		<English>Heroic</English>
+		<French>Heroic</French>
+		<German>Heroic</German>
+		<Italian>Heroic</Italian>
+		<Spanish>Heroic</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEARS_OF_NANTOSUELTA1</Tag>
+		<English>Tears of Nantosuelta I</English>
+		<French>Tears of Nantosuelta I</French>
+		<German>Tears of Nantosuelta I</German>
+		<Italian>Tears of Nantosuelta I</Italian>
+		<Spanish>Tears of Nantosuelta I</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEARS_OF_NANTOSUELTA1_PEDIA</Tag>
+		<English>Mana is diverted into a Glass Forge in each settlement, allowing the creation of the valuable enchanted glass known as the "Tears of Nantosuelta."  It can be worked much like wood or a ceramic and incorporated into almost any tool.  Food production and small-scale industry are greatly enhanced, and keen blades may be easily forged.  Unfortunately the Tears lose their virtue beyond the spell-warded borders of the Unblemished.</English>
+		<French>Mana is diverted into a Glass Forge in each settlement, allowing the creation of the valuable enchanted glass known as the "Tears of Nantosuelta."  It can be worked much like wood or a ceramic and incorporated into almost any tool.  Food production and small-scale industry are greatly enhanced, and keen blades may be easily forged.  Unfortunately the Tears lose their virtue beyond the spell-warded borders of the Unblemished.</French>
+		<German>Mana is diverted into a Glass Forge in each settlement, allowing the creation of the valuable enchanted glass known as the "Tears of Nantosuelta."  It can be worked much like wood or a ceramic and incorporated into almost any tool.  Food production and small-scale industry are greatly enhanced, and keen blades may be easily forged.  Unfortunately the Tears lose their virtue beyond the spell-warded borders of the Unblemished.</German>
+		<Italian>Mana is diverted into a Glass Forge in each settlement, allowing the creation of the valuable enchanted glass known as the "Tears of Nantosuelta."  It can be worked much like wood or a ceramic and incorporated into almost any tool.  Food production and small-scale industry are greatly enhanced, and keen blades may be easily forged.  Unfortunately the Tears lose their virtue beyond the spell-warded borders of the Unblemished.</Italian>
+		<Spanish>Mana is diverted into a Glass Forge in each settlement, allowing the creation of the valuable enchanted glass known as the "Tears of Nantosuelta."  It can be worked much like wood or a ceramic and incorporated into almost any tool.  Food production and small-scale industry are greatly enhanced, and keen blades may be easily forged.  Unfortunately the Tears lose their virtue beyond the spell-warded borders of the Unblemished.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEARS_OF_NANTOSUELTA2_PEDIA</Tag>
+		<English>Mana is bound to a glass now so hard is must be worked on special Crystal Forges.  Crystal Tears may be cast strong and large enough to greatly increase the productivity of the already industrious Unblemished.  Deadly weapons are also created on the Crystal Forges.  Unfortunately, even Crystal Tears revert to normal glass beyond the lands of the Unblemished.</English>
+		<French>Mana is bound to a glass now so hard is must be worked on special Crystal Forges.  Crystal Tears may be cast strong and large enough to greatly increase the productivity of the already industrious Unblemished.  Deadly weapons are also created on the Crystal Forges.  Unfortunately, even Crystal Tears revert to normal glass beyond the lands of the Unblemished. </French>
+		<German>Mana is bound to a glass now so hard is must be worked on special Crystal Forges.  Crystal Tears may be cast strong and large enough to greatly increase the productivity of the already industrious Unblemished.  Deadly weapons are also created on the Crystal Forges.  Unfortunately, even Crystal Tears revert to normal glass beyond the lands of the Unblemished. </German>
+		<Italian>Mana is bound to a glass now so hard is must be worked on special Crystal Forges.  Crystal Tears may be cast strong and large enough to greatly increase the productivity of the already industrious Unblemished.  Deadly weapons are also created on the Crystal Forges.  Unfortunately, even Crystal Tears revert to normal glass beyond the lands of the Unblemished. </Italian>
+		<Spanish>Mana is bound to a glass now so hard is must be worked on special Crystal Forges.  Crystal Tears may be cast strong and large enough to greatly increase the productivity of the already industrious Unblemished.  Deadly weapons are also created on the Crystal Forges.  Unfortunately, even Crystal Tears revert to normal glass beyond the lands of the Unblemished. </Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEARS_OF_NANTOSUELTA2</Tag>
+		<English>Tears of Nantosuelta II</English>
+		<French>Tears of Nantosuelta II</French>
+		<German>Tears of Nantosuelta II</German>
+		<Italian>Tears of Nantosuelta II</Italian>
+		<Spanish>Tears of Nantosuelta II</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PRESERVED_CRYSTAL_WEAPONS</Tag>
+		<English>Crystal Weapons</English>
+		<French>Crystal Weapons</French>
+		<German>Crystal Weapons</German>
+		<Italian>Crystal Weapons</Italian>
+		<Spanish>Crystal Weapons</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PRESERVED_GLASS_WEAPONS</Tag>
+		<English>Glass Weapons</English>
+		<French>Glass Weapons</French>
+		<German>Glass Weapons</German>
+		<Italian>Glass Weapons</Italian>
+		<Spanish>Glass Weapons</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEARN_COLDINE</Tag>
+		<English>Scearn Coldine</English>
+		<French>Scearn Coldine</French>
+		<German>Scearn Coldine</German>
+		<Italian>Scearn Coldine</Italian>
+		<Spanish>Scearn Coldine</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEARN_COLDINE_HELP</Tag>
+		<English>Paragon and leader of the Unblemished armies.</English>
+		<French>Paragon and leader of the Unblemished armies.</French>
+		<German>Paragon and leader of the Unblemished armies.</German>
+		<Italian>Paragon and leader of the Unblemished armies.</Italian>
+		<Spanish>Paragon and leader of the Unblemished armies.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEARN_COLDINE_PEDIA</Tag>
+		<English>Paragon Scearn Coldine is the Unblemished war-leader.  Obbaern's mentor, Scearn is an excellent swordsman, deft tactician, and revered commander.  But more than anything Scearn is an inspiration.  Hero of countless engagements, Scean's flashing blade seems everywhere during battle.  Afterward his all-encompassing good humor keeps bivouacked soldiers enthusiastic and ready to fight.[PARAGRAPH:1]Scearn is thought to be specially blessed by Nantosuelta.  Why else would Glass or Crystal Weapons belonging to troops under Scearn's direct command maintain their virtue beyond Unblemished borders?</English>
+		<French>Paragon Scearn Coldine is the Unblemished war-leader.  Obbaern's mentor, Scearn is an excellent swordsman, deft tactician, and revered commander.  But more than anything Scearn is an inspiration.  Hero of countless engagements, Scean's flashing blade seems everywhere during battle.  Afterward his all-encompassing good humor keeps bivouacked soldiers enthusiastic and ready to fight.[PARAGRAPH:1]Scearn is thought to be specially blessed by Nantosuelta.  Why else would Glass or Crystal Weapons belonging to troops under Scearn's direct command maintain their virtue beyond Unblemished borders?</French>
+		<German>Paragon Scearn Coldine is the Unblemished war-leader.  Obbaern's mentor, Scearn is an excellent swordsman, deft tactician, and revered commander.  But more than anything Scearn is an inspiration.  Hero of countless engagements, Scean's flashing blade seems everywhere during battle.  Afterward his all-encompassing good humor keeps bivouacked soldiers enthusiastic and ready to fight.[PARAGRAPH:1]Scearn is thought to be specially blessed by Nantosuelta.  Why else would Glass or Crystal Weapons belonging to troops under Scearn's direct command maintain their virtue beyond Unblemished borders?</German>
+		<Italian>Paragon Scearn Coldine is the Unblemished war-leader.  Obbaern's mentor, Scearn is an excellent swordsman, deft tactician, and revered commander.  But more than anything Scearn is an inspiration.  Hero of countless engagements, Scean's flashing blade seems everywhere during battle.  Afterward his all-encompassing good humor keeps bivouacked soldiers enthusiastic and ready to fight.[PARAGRAPH:1]Scearn is thought to be specially blessed by Nantosuelta.  Why else would Glass or Crystal Weapons belonging to troops under Scearn's direct command maintain their virtue beyond Unblemished borders?</Italian>
+		<Spanish>Paragon Scearn Coldine is the Unblemished war-leader.  Obbaern's mentor, Scearn is an excellent swordsman, deft tactician, and revered commander.  But more than anything Scearn is an inspiration.  Hero of countless engagements, Scean's flashing blade seems everywhere during battle.  Afterward his all-encompassing good humor keeps bivouacked soldiers enthusiastic and ready to fight.[PARAGRAPH:1]Scearn is thought to be specially blessed by Nantosuelta.  Why else would Glass or Crystal Weapons belonging to troops under Scearn's direct command maintain their virtue beyond Unblemished borders?</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PARAGON</Tag>
+		<English>Paragon</English>
+		<French>Paragon</French>
+		<German>Paragon</German>
+		<Italian>Paragon</Italian>
+		<Spanish>Paragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PARAGON</Tag>
+		<English>Paragon</English>
+		<French>Paragon</French>
+		<German>Paragon</German>
+		<Italian>Paragon</Italian>
+		<Spanish>Paragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PARAGON_COLDINE</Tag>
+		<English>Paragon - Coldine</English>
+		<French>Paragon - Coldine</French>
+		<German>Paragon - Coldine</German>
+		<Italian>Paragon - Coldine</Italian>
+		<Spanish>Paragon - Coldine</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PARAGON_HELP</Tag>
+		<English>Unblemished Battle Captain</English>
+		<French>Unblemished Battle Captain</French>
+		<German>Unblemished Battle Captain</German>
+		<Italian>Unblemished Battle Captain</Italian>
+		<Spanish>Unblemished Battle Captain</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SUMMON_DRAKE</Tag>
+		<English>Create Drake</English>
+		<French>Create Drake</French>
+		<German>Create Drake</German>
+		<Italian>Create Drake</Italian>
+		<Spanish>Create Drake</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRAKE_PEDIA</Tag>
+		<English>The Unblemished pursue the greatest magics of Creation, the weapons of the gods themselves, the creation of Dragons.  But such weapons cannot be wielded without risk.  Each ritual is dangerous, and dragons are ravenous, nearly uncontrollable creatures.  Even a successful casting can end in tragedy.[PARAGRAPH:1]Just as magic is drawn from all Unblemished lands, so do they all share in the risk of these dangerous castings.  The creation of a Drake carries a chance that the population and buildings in a city will suffer losses.  The risk increases with the Great Drake.  Creation of the Crystal Dragon is likely to devastate a city.</English>
+		<French>The Unblemished pursue the greatest magics of Creation, the weapons of the gods themselves, the creation of Dragons.  But such weapons cannot be wielded without risk.  Each ritual is dangerous, and dragons are ravenous, nearly uncontrollable creatures.  Even a successful casting can end in tragedy.[PARAGRAPH:1]Just as magic is drawn from all Unblemished lands, so do they all share in the risk of these dangerous castings.  The creation of a Drake carries a chance that the population and buildings in a city will suffer losses.  The risk increases with the Great Drake.  Creation of the Crystal Dragon is likely to devastate a city.</French>
+		<German>The Unblemished pursue the greatest magics of Creation, the weapons of the gods themselves, the creation of Dragons.  But such weapons cannot be wielded without risk.  Each ritual is dangerous, and dragons are ravenous, nearly uncontrollable creatures.  Even a successful casting can end in tragedy.[PARAGRAPH:1]Just as magic is drawn from all Unblemished lands, so do they all share in the risk of these dangerous castings.  The creation of a Drake carries a chance that the population and buildings in a city will suffer losses.  The risk increases with the Great Drake.  Creation of the Crystal Dragon is likely to devastate a city.</German>
+		<Italian>The Unblemished pursue the greatest magics of Creation, the weapons of the gods themselves, the creation of Dragons.  But such weapons cannot be wielded without risk.  Each ritual is dangerous, and dragons are ravenous, nearly uncontrollable creatures.  Even a successful casting can end in tragedy.[PARAGRAPH:1]Just as magic is drawn from all Unblemished lands, so do they all share in the risk of these dangerous castings.  The creation of a Drake carries a chance that the population and buildings in a city will suffer losses.  The risk increases with the Great Drake.  Creation of the Crystal Dragon is likely to devastate a city.</Italian>
+		<Spanish>The Unblemished pursue the greatest magics of Creation, the weapons of the gods themselves, the creation of Dragons.  But such weapons cannot be wielded without risk.  Each ritual is dangerous, and dragons are ravenous, nearly uncontrollable creatures.  Even a successful casting can end in tragedy.[PARAGRAPH:1]Just as magic is drawn from all Unblemished lands, so do they all share in the risk of these dangerous castings.  The creation of a Drake carries a chance that the population and buildings in a city will suffer losses.  The risk increases with the Great Drake.  Creation of the Crystal Dragon is likely to devastate a city.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SUMMON_GREAT_DRAKE</Tag>
+		<English>Create Great Drake</English>
+		<French>Create Great Drake</French>
+		<German>Create Great Drake</German>
+		<Italian>Create Great Drake</Italian>
+		<Spanish>Create Great Drake</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SUMMON_CRYSTAL_DRAGON</Tag>
+		<English>Create Crystal Dragon</English>
+		<French>Create Crystal Dragon</French>
+		<German>Create Crystal Dragon</German>
+		<Italian>Create Crystal Dragon</Italian>
+		<Spanish>Create Crystal Dragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GLASSWEP_HELP</Tag>
+		<English>Quickly decays beyond Unblemished lands or Coldine's influence.</English>
+		<French>Quickly decays beyond Unblemished lands or Coldine's influence.</French>
+		<German>Quickly decays beyond Unblemished lands or Coldine's influence.</German>
+		<Italian>Quickly decays beyond Unblemished lands or Coldine's influence.</Italian>
+		<Spanish>Quickly decays beyond Unblemished lands or Coldine's influence.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WOODSMAN_AURA</Tag>
+		<English>Apply Woodsman I</English>
+		<French>Apply Woodsman I</French>
+		<German>Apply Woodsman I</German>
+		<Italian>Apply Woodsman I</Italian>
+		<Spanish>Apply Woodsman I</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GARRISON_AURA</Tag>
+		<English>Apply City Garrison I</English>
+		<French>Apply City Garrison I</French>
+		<German>Apply City Garrison I</German>
+		<Italian>Apply City Garrison I</Italian>
+		<Spanish>Apply City Garrison I</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEFENSIVE_AURA</Tag>
+		<English>Apply Defensive</English>
+		<French>Apply Defensive</French>
+		<German>Apply Defensive</German>
+		<Italian>Apply Defensive</Italian>
+		<Spanish>Apply Defensive</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOBILITY_AURA</Tag>
+		<English>Apply Mobility I</English>
+		<French>Apply Mobility I</French>
+		<German>Apply Mobility I</German>
+		<Italian>Apply Mobility I</Italian>
+		<Spanish>Apply Mobility I</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARCH_AURA</Tag>
+		<English>Apply March</English>
+		<French>Apply March</French>
+		<German>Apply March</German>
+		<Italian>Apply March</Italian>
+		<Spanish>Apply March</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FEAR_AURA</Tag>
+		<English>Apply Fear</English>
+		<French>Apply Fear</French>
+		<German>Apply Fear</German>
+		<Italian>Apply Fear</Italian>
+		<Spanish>Apply Fear</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>PROMOTION_FIRST_STRIKES_AURA</Tag>
+		<English>Apply First Strikes</English>
+		<French>Apply First Strikes</French>
+		<German>Apply First Strikes</German>
+		<Italian>Apply First Strikes</Italian>
+		<Spanish>Apply First Strikes</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_WILD_DRAGON</Tag>
+		<English>Wild Dragon</English>
+		<French>Wild Dragon</French>
+		<German>Wild Dragon</German>
+		<Italian>Wild Dragon</Italian>
+		<Spanish>Wild Dragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SONS_OF_CERNUNNOS</Tag>
+		<English>Sons of Cernunnos</English>
+		<French>Sons of Cernunnos</French>
+		<German>Sons of Cernunnos</German>
+		<Italian>Sons of Cernunnos</Italian>
+		<Spanish>Sons of Cernunnos</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SONS_OF_CERNUNNOS_PEDIA</Tag>
+		<English>Members of a Sect within the Unblemished that holds Cernunnos in extremely high regard.  The Sons worship not the nurturing aspect of nature, but instead revere its hostility.</English>
+		<French>Members of a Sect within the Unblemished that holds Cernunnos in extremely high regard.  The Sons worship not the nurturing aspect of nature, but instead revere its hostility.</French>
+		<German>Members of a Sect within the Unblemished that holds Cernunnos in extremely high regard.  The Sons worship not the nurturing aspect of nature, but instead revere its hostility.</German>
+		<Italian>Members of a Sect within the Unblemished that holds Cernunnos in extremely high regard.  The Sons worship not the nurturing aspect of nature, but instead revere its hostility.</Italian>
+		<Spanish>Members of a Sect within the Unblemished that holds Cernunnos in extremely high regard.  The Sons worship not the nurturing aspect of nature, but instead revere its hostility.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SONS_OF_CERNUNNOS_STRATEGY</Tag>
+		<English>As warrior-priests of Nature the Sons have access to two special magics:  First, they may effectively vanish, concealed by whatever natural features or living things are nearby.  Second, a group of Sons may sacrifice themselves to summon a group of hostile creatures.  These creatures will be hostile to any culture's units, including the Unblemished.  The more powerful the Sons the more creatures will tend to be created.</English>
+		<French>As warrior-priests of Nature the Sons have access to two special magics:  First, they may effectively vanish, concealed by whatever natural features or living things are nearby.  Second, a group of Sons may sacrifice themselves to summon a group of hostile creatures.  These creatures will be hostile to any culture's units, including the Unblemished.  The more powerful the Sons the more creatures will tend to be created.</French>
+		<German>As warrior-priests of Nature the Sons have access to two special magics:  First, they may effectively vanish, concealed by whatever natural features or living things are nearby.  Second, a group of Sons may sacrifice themselves to summon a group of hostile creatures.  These creatures will be hostile to any culture's units, including the Unblemished.  The more powerful the Sons the more creatures will tend to be created.</German>
+		<Italian>As warrior-priests of Nature the Sons have access to two special magics:  First, they may effectively vanish, concealed by whatever natural features or living things are nearby.  Second, a group of Sons may sacrifice themselves to summon a group of hostile creatures.  These creatures will be hostile to any culture's units, including the Unblemished.  The more powerful the Sons the more creatures will tend to be created.</Italian>
+		<Spanish>As warrior-priests of Nature the Sons have access to two special magics:  First, they may effectively vanish, concealed by whatever natural features or living things are nearby.  Second, a group of Sons may sacrifice themselves to summon a group of hostile creatures.  These creatures will be hostile to any culture's units, including the Unblemished.  The more powerful the Sons the more creatures will tend to be created.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_DRAKE</Tag>
+		<English>Great Drake</English>
+		<French>Great Drake</French>
+		<German>Great Drake</German>
+		<Italian>Great Drake</Italian>
+		<Spanish>Great Drake</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_DRAKE_PEDIA</Tag>
+		<English>Possessing the power of fear in addition to flight, Great Drakes may not be true dragons but they are still formidable creatures.  Not a Summons, the Great Drake costs no mana.  However, like the Drake, it cannot be allowed to hunt freely and is expensive to keep.</English>
+		<French>Possessing the power of fear in addition to flight, Great Drakes may not be true dragons but they are still formidable creatures.  However, like the Drake, it cannot be allowed to hunt freely and is expensive to keep.</French>
+		<German>Possessing the power of fear in addition to flight, Great Drakes may not be true dragons but they are still formidable creatures.  However, like the Drake, it cannot be allowed to hunt freely and is expensive to keep.</German>
+		<Italian>Possessing the power of fear in addition to flight, Great Drakes may not be true dragons but they are still formidable creatures.  However, like the Drake, it cannot be allowed to hunt freely and is expensive to keep.</Italian>
+		<Spanish>Possessing the power of fear in addition to flight, Great Drakes may not be true dragons but they are still formidable creatures.  However, like the Drake, it cannot be allowed to hunt freely and is expensive to keep.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_DRAKE_STRATEGY</Tag>
+		<English>Like the Drake, the Great Drake can be an excellent raider.  But it's far more effective than the Drake in battle.</English>
+		<French>Like the Drake, the Great Drake can be an excellent raider.  But it's far more effective than the Drake in battle.</French>
+		<German>Like the Drake, the Great Drake can be an excellent raider.  But it's far more effective than the Drake in battle.</German>
+		<Italian>Like the Drake, the Great Drake can be an excellent raider.  But it's far more effective than the Drake in battle.</Italian>
+		<Spanish>Like the Drake, the Great Drake can be an excellent raider.  But it's far more effective than the Drake in battle.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAKE</Tag>
+		<English>Drake</English>
+		<French>Drake</French>
+		<German>Drake</German>
+		<Italian>Drake</Italian>
+		<Spanish>Drake</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAKE_PEDIA</Tag>
+		<English>Not a true dragon, the Drake demonstrates the Unblemished are on the right track.  The Drake demonstrates the power of Creation in the most violent possible manner.  Not a Summons, the Drake costs no mana.  However, it cannot be allowed to hunt freely and keeping the beast fed isn't cheap.</English>
+		<French>Not a true dragon, the Drake demonstrates the Unblemished are on the right track.  The Drake demonstrates the power of Creation in the most violent possible manner.</French>
+		<German>Not a true dragon, the Drake demonstrates the Unblemished are on the right track.  The Drake demonstrates the power of Creation in the most violent possible manner.</German>
+		<Italian>Not a true dragon, the Drake demonstrates the Unblemished are on the right track.  The Drake demonstrates the power of Creation in the most violent possible manner.</Italian>
+		<Spanish>Not a true dragon, the Drake demonstrates the Unblemished are on the right track.  The Drake demonstrates the power of Creation in the most violent possible manner.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAKE_STRATEGY</Tag>
+		<English>Use everywhere you might use a Horseman but would prefer a flying armored monster.</English>
+		<French>Use everywhere you might use a Horseman but would prefer a flying armored monster.</French>
+		<German>Use everywhere you might use a Horseman but would prefer a flying armored monster.</German>
+		<Italian>Use everywhere you might use a Horseman but would prefer a flying armored monster.</Italian>
+		<Spanish>Use everywhere you might use a Horseman but would prefer a flying armored monster.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CRYSTAL_DRAGON</Tag>
+		<English>Crystal Dragon</English>
+		<French>Crystal Dragon</French>
+		<German>Crystal Dragon</German>
+		<Italian>Crystal Dragon</Italian>
+		<Spanish>Crystal Dragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CRYSTAL_DRAGON_PEDIA</Tag>
+		<English>Scholars debate whether the Crystal Dragon is a true dragon or simply a tremendously powerful artifact of Creation magic.  Few care.  The Crystal Dragon is not as powerful as Abashi or Eurabatres, but remains one of greatest creatures of Erebus.[PARAGRAPH:1]Apparently made from the Tears of Nantosuelta, the Crystal Dragon needs not fear losing its power outside Unblemished territory.[PARAGRAPH:1]While a Crystal Dragon might be permitted to hunt, it's diet would remain precious substances of many kinds.</English>
+		<French>Scholars debate whether the Crystal Dragon is a true dragon or simply a tremendously powerful artifact of Creation magic.  Few care.  The Crystal Dragon is not as powerful as Abashi or Eurabatres, but remains one of greatest creatures of Erebus.[PARAGRAPH:1]Apparently made from the Tears of Nantosuelta, the Crystal Dragon needs not fear losing its power outside Unblemished territory.[PARAGRAPH:1]While a Crystal Dragon might be permitted to hunt, it's diet would remain precious substances of many kinds.</French>
+		<German>Scholars debate whether the Crystal Dragon is a true dragon or simply a tremendously powerful artifact of Creation magic.  Few care.  The Crystal Dragon is not as powerful as Abashi or Eurabatres, but remains one of greatest creatures of Erebus.[PARAGRAPH:1]Apparently made from the Tears of Nantosuelta, the Crystal Dragon needs not fear losing its power outside Unblemished territory.[PARAGRAPH:1]While a Crystal Dragon might be permitted to hunt, it's diet would remain precious substances of many kinds.</German>
+		<Italian>Scholars debate whether the Crystal Dragon is a true dragon or simply a tremendously powerful artifact of Creation magic.  Few care.  The Crystal Dragon is not as powerful as Abashi or Eurabatres, but remains one of greatest creatures of Erebus.[PARAGRAPH:1]Apparently made from the Tears of Nantosuelta, the Crystal Dragon needs not fear losing its power outside Unblemished territory.[PARAGRAPH:1]While a Crystal Dragon might be permitted to hunt, it's diet would remain precious substances of many kinds.</Italian>
+		<Spanish>Scholars debate whether the Crystal Dragon is a true dragon or simply a tremendously powerful artifact of Creation magic.  Few care.  The Crystal Dragon is not as powerful as Abashi or Eurabatres, but remains one of greatest creatures of Erebus.[PARAGRAPH:1]Apparently made from the Tears of Nantosuelta, the Crystal Dragon needs not fear losing its power outside Unblemished territory.[PARAGRAPH:1]While a Crystal Dragon might be permitted to hunt, it's diet would remain precious substances of many kinds.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CRYSTAL_DRAGON_STRATEGY</Tag>
+		<English>Turn aside armies, destroy cities, mortally wound demons by with its mere presence, etc. etc.</English>
+		<French>Turn aside armies, destroy cities, mortally wound demons by with its mere presence, etc. etc.</French>
+		<German>Turn aside armies, destroy cities, mortally wound demons by with its mere presence, etc. etc.</German>
+		<Italian>Turn aside armies, destroy cities, mortally wound demons by with its mere presence, etc. etc.</Italian>
+		<Spanish>Turn aside armies, destroy cities, mortally wound demons by with its mere presence, etc. etc.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GROVE_OF_SHADOWS</Tag>
+		<English>Grove of Shadows</English>
+		<French>Grove of Shadows</French>
+		<German>Grove of Shadows</German>
+		<Italian>Grove of Shadows</Italian>
+		<Spanish>Grove of Shadows</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GROVE_OF_SHADOWS_PEDIA</Tag>
+		<English>The powers of nature hide the faithful Sons.</English>
+		<French>The powers of nature hide the faithful Sons.</French>
+		<German>The powers of nature hide the faithful Sons.</German>
+		<Italian>The powers of nature hide the faithful Sons.</Italian>
+		<Spanish>The powers of nature hide the faithful Sons.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PRIMEVAL_FURY</Tag>
+		<English>Primeval Fury</English>
+		<French>Primeval Fury</French>
+		<German>Primeval Fury</German>
+		<Italian>Primeval Fury</Italian>
+		<Spanish>Primeval Fury</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PRIMEVAL_FURY_PEDIA</Tag>
+		<English>Sacrificing themselves in a blood-ceremony, the Sons summon Lions, and perhaps even a Treant or Drake to carry on their war against those who would threaten Cernunnos' world.  Creature number and power tends to increase with the Son's level.[PARAGRAPH:1]The resulting units are "Barbarian," and not controlled by any player.</English>
+		<French>Sacrificing themselves in a blood-ceremony, the Sons summon Lions, and perhaps even a Treant or Drake to carry on their war against those who would threaten Cernunnos' world.  Creature number and power tends to increase with the Son's level.[PARAGRAPH:1]The resulting units are "Barbarian," and not controlled by any player.</French>
+		<German>Sacrificing themselves in a blood-ceremony, the Sons summon Lions, and perhaps even a Treant or Drake to carry on their war against those who would threaten Cernunnos' world.  Creature number and power tends to increase with the Son's level.[PARAGRAPH:1]The resulting units are "Barbarian," and not controlled by any player.</German>
+		<Italian>Sacrificing themselves in a blood-ceremony, the Sons summon Lions, and perhaps even a Treant or Drake to carry on their war against those who would threaten Cernunnos' world.  Creature number and power tends to increase with the Son's level.[PARAGRAPH:1]The resulting units are "Barbarian," and not controlled by any player.</Italian>
+		<Spanish>Sacrificing themselves in a blood-ceremony, the Sons summon Lions, and perhaps even a Treant or Drake to carry on their war against those who would threaten Cernunnos' world.  Creature number and power tends to increase with the Son's level.[PARAGRAPH:1]The resulting units are "Barbarian," and not controlled by any player.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PRESERVE_WEAPONS</Tag>
+		<English>Preserve Weapons</English>
+		<French>Preserve Weapons</French>
+		<German>Preserve Weapons</German>
+		<Italian>Preserve Weapons</Italian>
+		<Spanish>Preserve Weapons</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_NEW_DRAGON</Tag>
+		<English>Newly Created</English>
+		<French>Newly Created</French>
+		<German>Newly Created</German>
+		<Italian>Newly Created</Italian>
+		<Spanish>Newly Created</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_BAD_DRAGON</Tag>
+		<English>A Creation spell has gone tragically awry.</English>
+		<French>A Creation spell has gone tragically awry.</French>
+		<German>A Creation spell has gone tragically awry.</German>
+		<Italian>A Creation spell has gone tragically awry.</Italian>
+		<Spanish>A Creation spell has gone tragically awry.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FIRST_STRIKES_AURA</Tag>
+		<English>Apply First Strikes</English>
+		<French>Apply First Strikes</French>
+		<German>Apply First Strikes</German>
+		<Italian>Apply First Strikes</Italian>
+		<Spanish>Apply First Strikes</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EMPOWERED_COMBAT_AURA4U</Tag>
+		<English>Paragon Effect IV</English>
+		<French>Paragon Effect IV</French>
+		<German>Paragon Effect IV</German>
+		<Italian>Paragon Effect IV</Italian>
+		<Spanish>Paragon Effect IV</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EMPOWERED_COMBAT_AURA5U</Tag>
+		<English>Paragon Effect V</English>
+		<French>Paragon Effect V</French>
+		<German>Paragon Effect V</German>
+		<Italian>Paragon Effect V</Italian>
+		<Spanish>Paragon Effect V</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GREATER_COMBAT_AURA4U</Tag>
+		<English>Paragon Dispersion IV</English>
+		<French>Paragon Dispersion IV</French>
+		<German>Paragon Dispersion IV</German>
+		<Italian>Paragon Dispersion IV</Italian>
+		<Spanish>Paragon Dispersion IV</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GREATER_COMBAT_AURA5U</Tag>
+		<English>Paragon Dispersion V</English>
+		<French>Paragon Dispersion V</French>
+		<German>Paragon Dispersion V</German>
+		<Italian>Paragon Dispersion V</Italian>
+		<Spanish>Paragon Dispersion V</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_WOODSMAN</Tag>
+		<English>Paragon Woodsman</English>
+		<French>Paragon Woodsman</French>
+		<German>Paragon Woodsman</German>
+		<Italian>Paragon Woodsman</Italian>
+		<Spanish>Paragon Woodsman</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_GARRISON</Tag>
+		<English>Paragon City Garrison</English>
+		<French>Paragon City Garrison</French>
+		<German>Paragon City Garrison</German>
+		<Italian>Paragon City Garrison</Italian>
+		<Spanish>Paragon City Garrison</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_DEFENSIVE</Tag>
+		<English>Paragon Defensive</English>
+		<French>Paragon Defensive</French>
+		<German>Paragon Defensive</German>
+		<Italian>Paragon Defensive</Italian>
+		<Spanish>Paragon Defensive</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_MOBILITY</Tag>
+		<English>Paragon Mobility</English>
+		<French>Paragon Mobility</French>
+		<German>Paragon Mobility</German>
+		<Italian>Paragon Mobility</Italian>
+		<Spanish>Paragon Mobility</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_MARCH</Tag>
+		<English>Paragon March</English>
+		<French>Paragon March</French>
+		<German>Paragon March</German>
+		<Italian>Paragon March</Italian>
+		<Spanish>Paragon March</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_AURA_FEAR</Tag>
+		<English>Paragon Fear</English>
+		<French>Paragon Fear</French>
+		<German>Paragon Fear</German>
+		<Italian>Paragon Fear</Italian>
+		<Spanish>Paragon Fear</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAGON_TAMER</Tag>
+		<English>Dragon Brother</English>
+		<French>Dragon Brother</French>
+		<German>Dragon Brother</German>
+		<Italian>Dragon Brother</Italian>
+		<Spanish>Dragon Brother</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRAGON_TAMER_PEDIA</Tag>
+		<English>Dragon Brothers form a spiritual bond to a Great Drake.  The Drake's Creation energies stabalized, the Brothers together may wreak great havoc across Erebus.</English>
+		<French>Dragon Brothers form a spiritual bond to a Great Drake.  The Drake's Creation energies stabalized, the Brothers together may wreak great havoc across Erebus.</French>
+		<German>Dragon Brothers form a spiritual bond to a Great Drake.  The Drake's Creation energies stabalized, the Brothers together may wreak great havoc across Erebus.</German>
+		<Italian>Dragon Brothers form a spiritual bond to a Great Drake.  The Drake's Creation energies stabalized, the Brothers together may wreak great havoc across Erebus.</Italian>
+		<Spanish>Dragon Brothers form a spiritual bond to a Great Drake.  The Drake's Creation energies stabalized, the Brothers together may wreak great havoc across Erebus.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRIEST_OF_SUCELLUS</Tag>
+		<English>Priest of Sucellus</English>
+		<French>Priest of Sucellus</French>
+		<German>Priest of Sucellus</German>
+		<Italian>Priest of Sucellus</Italian>
+		<Spanish>Priest of Sucellus</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PRIEST_OF_SUCELLUS_PEDIA</Tag>
+		<English>Created by the "Favor of Sucellus" WorldSpell, Priests of Sucellus are Unblemished Druids taking power from Life rather than Nature.  Allows acces to the "Mark of Redemption" spell.</English>
+		<French>Created by the "Favor of Sucellus" WorldSpell, Priests of Sucellus are Unblemished Druids taking power from Life rather than Nature.  Allows acces to the "Mark of Redemption" spell.</French>
+		<German>Created by the "Favor of Sucellus" WorldSpell, Priests of Sucellus are Unblemished Druids taking power from Life rather than Nature.  Allows acces to the "Mark of Redemption" spell.</German>
+		<Italian>Created by the "Favor of Sucellus" WorldSpell, Priests of Sucellus are Unblemished Druids taking power from Life rather than Nature.  Allows acces to the "Mark of Redemption" spell.</Italian>
+		<Spanish>Created by the "Favor of Sucellus" WorldSpell, Priests of Sucellus are Unblemished Druids taking power from Life rather than Nature.  Allows acces to the "Mark of Redemption" spell.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RITES_OF_SCUELLUS</Tag>
+		<English>Favor of Sucellus</English>
+		<French>Favor of Sucellus</French>
+		<German>Favor of Sucellus</German>
+		<Italian>Favor of Sucellus</Italian>
+		<Spanish>Favor of Sucellus</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RITES_OF_SUCELLUS_HELP</Tag>
+		<English>Requires Medicine and Feral Bond.  Creates Priests of Sucellus (Druids), increases Vim by 50, and grants high-level units "Mark of Redemption."</English>
+		<French>Requires Medicine and Feral Bond.  Creates Priests of Sucellus (Druids), increases Vim by 50, and grants high-level units "Mark of Redemption."</French>
+		<German>Requires Medicine and Feral Bond.  Creates Priests of Sucellus (Druids), increases Vim by 50, and grants high-level units "Mark of Redemption."</German>
+		<Italian>Requires Medicine and Feral Bond.  Creates Priests of Sucellus (Druids), increases Vim by 50, and grants high-level units "Mark of Redemption."</Italian>
+		<Spanish>Requires Medicine and Feral Bond.  Creates Priests of Sucellus (Druids), increases Vim by 50, and grants high-level units "Mark of Redemption."</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_RITES_OF_SCUELLUS_PEDIA</Tag>
+		<English>Celebrating their reborn god, the Unblemished recieve several Priests of Sucellus and special blessing for their most accomplished warriors.  For every unit of level 8 or greater a "Priest of Sucellus" appears in the capital.  Additionally, each of those units gains the "Mark of Redemption" promotion.</English>
+		<French>Celebrating their reborn god, the Unblemished recieve several Priests of Sucellus and special blessing for their most accomplished warriors.  For every unit of level 8 or greater a "Priest of Sucellus" appears in the capital.  Additionally, each of those units gains the "Mark of Redemption" promotion. </French>
+		<German>Celebrating their reborn god, the Unblemished recieve several Priests of Sucellus and special blessing for their most accomplished warriors.  For every unit of level 8 or greater a "Priest of Sucellus" appears in the capital.  Additionally, each of those units gains the "Mark of Redemption" promotion.</German>
+		<Italian>Celebrating their reborn god, the Unblemished recieve several Priests of Sucellus and special blessing for their most accomplished warriors.  For every unit of level 8 or greater a "Priest of Sucellus" appears in the capital.  Additionally, each of those units gains the "Mark of Redemption" promotion.</Italian>
+		<Spanish>Celebrating their reborn god, the Unblemished recieve several Priests of Sucellus and special blessing for their most accomplished warriors.  For every unit of level 8 or greater a "Priest of Sucellus" appears in the capital.  Additionally, each of those units gains the "Mark of Redemption" promotion.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GLORY</Tag>
+		<English>Glory</English>
+		<French>Glory</French>
+		<German>Glory</German>
+		<Italian>Glory</Italian>
+		<Spanish>Glory</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ACCORD_TO_FAITH</Tag>
+		<English>Unwavering Piety</English>
+		<French>Unwavering Piety</French>
+		<German>Unwavering Piety</German>
+		<Italian>Unwavering Piety</Italian>
+		<Spanish>Unwavering Piety</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GLORY</Tag>
+		<English>Glory</English>
+		<French>Glory</French>
+		<German>Glory</German>
+		<Italian>Glory</Italian>
+		<Spanish>Glory</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARTYR</Tag>
+		<English>Martyr</English>
+		<French>Martyr</French>
+		<German>Martyr</German>
+		<Italian>Martyr</Italian>
+		<Spanish>Martyr</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARTYR</Tag>
+		<English>Martyr</English>
+		<French>Martyr</French>
+		<German>Martyr</German>
+		<Italian>Martyr</Italian>
+		<Spanish>Martyr</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARTYR</Tag>
+		<English>Martyr</English>
+		<French>Martyr</French>
+		<German>Martyr</German>
+		<Italian>Martyr</Italian>
+		<Spanish>Martyr</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARTYR_PEDIA</Tag>
+		<English>Self-Sacrifice seems part of the Life precept.  Those who martyr themsevles in battle inspire all Unblemished.</English>
+		<French>Self-Sacrifice seems part of the Life precept.  Those who martyr themsevles in battle inspire all Unblemished.</French>
+		<German>Self-Sacrifice seems part of the Life precept.  Those who martyr themsevles in battle inspire all Unblemished.</German>
+		<Italian>Self-Sacrifice seems part of the Life precept.  Those who martyr themsevles in battle inspire all Unblemished.</Italian>
+		<Spanish>Self-Sacrifice seems part of the Life precept.  Those who martyr themsevles in battle inspire all Unblemished.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARTYR_HELP</Tag>
+		<English>Unit death increases Vim.  Destroyed in 1 turn.</English>
+		<French>Unit death increases Vim.  Destroyed in 1 turn.</French>
+		<German>Unit death increases Vim.  Destroyed in 1 turn.</German>
+		<Italian>Unit death increases Vim.  Destroyed in 1 turn.</Italian>
+		<Spanish>Unit death increases Vim.  Destroyed in 1 turn.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_COMPLACENT</Tag>
+		<English>Citizens are becoming complacent.</English>
+		<French>Citizens are becoming complacent.</French>
+		<German>Citizens are becoming complacent.</German>
+		<Italian>Citizens are becoming complacent.</Italian>
+		<Spanish>Citizens are becoming complacent.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_COMMANDER</Tag>
+		<English>The people are restless, and a new voice goads them toward war.</English>
+		<French>The people are restless, and a new voice goads them toward war.</French>
+		<German>The people are restless, and a new voice goads them toward war.</German>
+		<Italian>The people are restless, and a new voice goads them toward war.</Italian>
+		<Spanish>The people are restless, and a new voice goads them toward war.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_GOLD</Tag>
+		<English>Exemplars in the city help restore order.  -1 turn Revolt, -50 gold.</English>
+		<French>Exemplars in the city help restore order.  -1 turn Revolt, -50 gold.</French>
+		<German>Exemplars in the city help restore order.  -1 turn Revolt, -50 gold.</German>
+		<Italian>Exemplars in the city help restore order.  -1 turn Revolt, -50 gold.</Italian>
+		<Spanish>Exemplars in the city help restore order.  -1 turn Revolt, -50 gold.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ACCORD_TO_FAITH_HELP</Tag>
+		<English>Converts 500 Faith to 10 Vim.</English>
+		<French>Converts 500 Faith to 10 Vim.</French>
+		<German>Converts 500 Faith to 10 Vim.</German>
+		<Italian>Converts 500 Faith to 10 Vim.</Italian>
+		<Spanish>Converts 500 Faith to 10 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_PROPHET</Tag>
+		<English>Sucellus did not mean for the Unblemished to be killers!  A Prophet demands change.</English>
+		<French>Sucellus did not mean for the Unblemished to be killers!  A Prophet demands change.</French>
+		<German>Sucellus did not mean for the Unblemished to be killers!  A Prophet demands change.</German>
+		<Italian>Sucellus did not mean for the Unblemished to be killers!  A Prophet demands change.</Italian>
+		<Spanish>Sucellus did not mean for the Unblemished to be killers!  A Prophet demands change.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_MERCHANT</Tag>
+		<English>We must never fight without purpose.  We must never fight simply for glory.  We are not the spawn of Agares, to fight for blood, or conquest, or to seek the end of all things.  We are of the Unblemished and we shall fight, but only for the good.  Behind our blades marches civilization.  With our rule comes... prosperity.</English>
+		<French>We must never fight without purpose.  We must never fight simply for glory.  We are not the spawn of Agares, to fight for blood, or conquest, or to seek the end of all things.  We are of the Unblemished and we shall fight, but only for the good.  Behind our blades marches civilization.  With our rule comes... prosperity.</French>
+		<German>We must never fight without purpose.  We must never fight simply for glory.  We are not the spawn of Agares, to fight for blood, or conquest, or to seek the end of all things.  We are of the Unblemished and we shall fight, but only for the good.  Behind our blades marches civilization.  With our rule comes... prosperity.</German>
+		<Italian>We must never fight without purpose.  We must never fight simply for glory.  We are not the spawn of Agares, to fight for blood, or conquest, or to seek the end of all things.  We are of the Unblemished and we shall fight, but only for the good.  Behind our blades marches civilization.  With our rule comes... prosperity.</Italian>
+		<Spanish>We must never fight without purpose.  We must never fight simply for glory.  We are not the spawn of Agares, to fight for blood, or conquest, or to seek the end of all things.  We are of the Unblemished and we shall fight, but only for the good.  Behind our blades marches civilization.  With our rule comes... prosperity.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_ARTIST</Tag>
+		<English>A young bard's songs of rebirth and change have seized the popular imaginiation.  A new art and cultural movement flourishes everywhere.  And challenges everything.</English>
+		<French>A young bard's songs of rebirth and change have seized the popular imaginiation.  A new art and cultural movement flourishes everywhere.  And challenges everything.</French>
+		<German>A young bard's songs of rebirth and change have seized the popular imaginiation.  A new art and cultural movement flourishes everywhere.  And challenges everything.</German>
+		<Italian>A young bard's songs of rebirth and change have seized the popular imaginiation.  A new art and cultural movement flourishes everywhere.  And challenges everything.</Italian>
+		<Spanish>A young bard's songs of rebirth and change have seized the popular imaginiation.  A new art and cultural movement flourishes everywhere.  And challenges everything.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY</Tag>
+		<English>This city has fallen prey to the worse of vices: Complacency.</English>
+		<French>This city has fallen prey to the worse of vices: Complacency.</French>
+		<German>This city has fallen prey to the worse of vices: Complacency.</German>
+		<Italian>This city has fallen prey to the worse of vices: Complacency.</Italian>
+		<Spanish>This city has fallen prey to the worse of vices: Complacency.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY1</Tag>
+		<English>Sponsor games demonstrating the virtues of struggle and perseverance.</English>
+		<French>Sponsor games demonstrating the virtues of struggle and perseverance.</French>
+		<German>Sponsor games demonstrating the virtues of struggle and perseverance.</German>
+		<Italian>Sponsor games demonstrating the virtues of struggle and perseverance.</Italian>
+		<Spanish>Sponsor games demonstrating the virtues of struggle and perseverance.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY3</Tag>
+		<English>They'll learn eventually.</English>
+		<French>They'll learn eventually.</French>
+		<German>They'll learn eventually.</German>
+		<Italian>They'll learn eventually.</Italian>
+		<Spanish>They'll learn eventually.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY2</Tag>
+		<English>Allow a Metropolitan Assembly here. (-2 gold, +1 culture, reduces "Complacency" frequencey by 2/3s, and revolt frequency by 20%.)</English>
+		<French>Allow a Metropolitan Assembly here. (-2 gold, +1 culture, reduces "Complacency" frequencey by 2/3s, and revolt frequency by 20%.)</French>
+		<German>Allow a Metropolitan Assembly here. (-2 gold, +1 culture, reduces "Complacency" frequencey by 2/3s, and revolt frequency by 20%.)</German>
+		<Italian>Allow a Metropolitan Assembly here. (-2 gold, +1 culture, reduces "Complacency" frequencey by 2/3s, and revolt frequency by 20%.)</Italian>
+		<Spanish>Allow a Metropolitan Assembly here. (-2 gold, +1 culture, reduces "Complacency" frequencey by 2/3s, and revolt frequency by 20%.)</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING</Tag>
+		<English>The people of this city have lost faith with your rule and the city has fallen to riot and disorder.</English>
+		<French>The people of this city have lost faith with your rule and the city has fallen to riot and disorder.</French>
+		<German>The people of this city have lost faith with your rule and the city has fallen to riot and disorder.</German>
+		<Italian>The people of this city have lost faith with your rule and the city has fallen to riot and disorder.</Italian>
+		<Spanish>The people of this city have lost faith with your rule and the city has fallen to riot and disorder.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING1</Tag>
+		<English>Pay them off and end the disorder.</English>
+		<French>Pay them off and end the disorder.</French>
+		<German>Pay them off and end the disorder.</German>
+		<Italian>Pay them off and end the disorder.</Italian>
+		<Spanish>Pay them off and end the disorder.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING2</Tag>
+		<English>Crush the rebels.</English>
+		<French>Crush the rebels.</French>
+		<German>Crush the rebels.</German>
+		<Italian>Crush the rebels.</Italian>
+		<Spanish>Crush the rebels.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING3</Tag>
+		<English>Life is struggle, but it need not be viloent.  Negotiate.</English>
+		<French>Life is struggle, but it need not be viloent.  Negotiate.</French>
+		<German>Life is struggle, but it need not be viloent.  Negotiate.</German>
+		<Italian>Life is struggle, but it need not be viloent.  Negotiate.</Italian>
+		<Spanish>Life is struggle, but it need not be viloent.  Negotiate.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT</Tag>
+		<English>The people of this city have united behind their Metropolitian Assembly in a dispute against your policies.</English>
+		<French>The people of this city have united behind their Metropolitian Assembly in a dispute against your policies.</French>
+		<German>The people of this city have united behind their Metropolitian Assembly in a dispute against your policies.</German>
+		<Italian>The people of this city have united behind their Metropolitian Assembly in a dispute against your policies.</Italian>
+		<Spanish>The people of this city have united behind their Metropolitian Assembly in a dispute against your policies.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT3</Tag>
+		<English>The Assembly exists on the sufferance of the Apothearch, and the Apothearch has had enough of this city's petty demands.</English>
+		<French>The Assembly exists on the sufferance of the Apothearch, and the Apothearch has had enough of this city's petty demands.</French>
+		<German>The Assembly exists on the sufferance of the Apothearch, and the Apothearch has had enough of this city's petty demands.</German>
+		<Italian>The Assembly exists on the sufferance of the Apothearch, and the Apothearch has had enough of this city's petty demands.</Italian>
+		<Spanish>The Assembly exists on the sufferance of the Apothearch, and the Apothearch has had enough of this city's petty demands.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT2</Tag>
+		<English>Divert material to the city's own projects.</English>
+		<French>Divert material to the city's own projects.</French>
+		<German>Divert material to the city's own projects.</German>
+		<Italian>Divert material to the city's own projects.</Italian>
+		<Spanish>Divert material to the city's own projects.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT1</Tag>
+		<English>Whatever it is they want, money can buy it.</English>
+		<French>Whatever it is they want, money can buy it.</French>
+		<German>Whatever it is they want, money can buy it.</German>
+		<Italian>Whatever it is they want, money can buy it.</Italian>
+		<Spanish>Whatever it is they want, money can buy it.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOOT_PEDIA</Tag>
+		<English>An outlet for debate and opportunity for activism, the Assembly makes "Complacency" and rioting less likely in the city. (66% and 20% respectively.)</English>
+		<French>An outlet for debate and opportunity for activism, the Assembly makes "Complacency" and rioting less likely in the city. (66% and 20% respectively.)</French>
+		<German>An outlet for debate and opportunity for activism, the Assembly makes "Complacency" and rioting less likely in the city. (66% and 20% respectively.)</German>
+		<Italian>An outlet for debate and opportunity for activism, the Assembly makes "Complacency" and rioting less likely in the city. (66% and 20% respectively.)</Italian>
+		<Spanish>An outlet for debate and opportunity for activism, the Assembly makes "Complacency" and rioting less likely in the city. (66% and 20% respectively.)</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEDICATED_TO_SUCELLUS</Tag>
+		<English>Dedicated to Sucellus</English>
+		<French>Dedicated to Sucellus</French>
+		<German>Dedicated to Sucellus</German>
+		<Italian>Dedicated to Sucellus</Italian>
+		<Spanish>Dedicated to Sucellus</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DEDICATED_TO_SUCELLUS_HELP</Tag>
+		<English>Adds 3 Vim when needed.</English>
+		<French>Adds 3 Vim when needed.</French>
+		<German>Adds 3 Vim when needed.</German>
+		<Italian>Adds 3 Vim when needed.</Italian>
+		<Spanish>Adds 3 Vim when needed.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY3_HELP</Tag>
+		<English>Lose 15 Vim.</English>
+		<French>Lose 15 Vim.</French>
+		<German>Lose 15 Vim.</German>
+		<Italian>Lose 15 Vim.</Italian>
+		<Spanish>Lose 15 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_COMPLACENCY2_HELP</Tag>
+		<English>Spend 250 Lumber and 500 Stone.  Receive Metropolitan Assembly.</English>
+		<French>Spend 250 Lumber and 500 Stone.  Receive Metropolitan Assembly.</French>
+		<German>Spend 250 Lumber and 500 Stone.  Receive Metropolitan Assembly.</German>
+		<Italian>Spend 250 Lumber and 500 Stone.  Receive Metropolitan Assembly.</Italian>
+		<Spanish>Spend 250 Lumber and 500 Stone.  Receive Metropolitan Assembly.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT2_HELP</Tag>
+		<English>Spend 250 each Metal and Leather.  +1 Happiness for 10 turns.</English>
+		<French>Spend 250 each Metal and Leather.  +1 Happiness for 10 turns.</French>
+		<German>Spend 250 each Metal and Leather.  +1 Happiness for 10 turns.</German>
+		<Italian>Spend 250 each Metal and Leather.  +1 Happiness for 10 turns.</Italian>
+		<Spanish>Spend 250 each Metal and Leather.  +1 Happiness for 10 turns.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_MOOT3_HELP</Tag>
+		<English>Lose the Metropolitan Assembly and 30 Vim.</English>
+		<French>Lose the Metropolitan Assembly and 30 Vim.</French>
+		<German>Lose the Metropolitan Assembly and 30 Vim.</German>
+		<Italian>Lose the Metropolitan Assembly and 30 Vim.</Italian>
+		<Spanish>Lose the Metropolitan Assembly and 30 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING2_HELP</Tag>
+		<English>End the rioting at the cost of 1 population and (25% chance) some of the city's buildings.</English>
+		<French>End the rioting at the cost of 1 population and (25% chance) some of the city's buildings.</French>
+		<German>End the rioting at the cost of 1 population and (25% chance) some of the city's buildings.</German>
+		<Italian>End the rioting at the cost of 1 population and (25% chance) some of the city's buildings.</Italian>
+		<Spanish>End the rioting at the cost of 1 population and (25% chance) some of the city's buildings.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_UNBLEMISHED_RIOTING3_HELP</Tag>
+		<English>+5 Vim.  25% chance to end riot, 25% chance to lower timer by 1 turn, 50% chance to extend the disorder.</English>
+		<French>+5 Vim.  25% chance to end riot, 25% chance to lower timer by 1 turn, 50% chance to extend the disorder.</French>
+		<German>+5 Vim.  25% chance to end riot, 25% chance to lower timer by 1 turn, 50% chance to extend the disorder.</German>
+		<Italian>+5 Vim.  25% chance to end riot, 25% chance to lower timer by 1 turn, 50% chance to extend the disorder.</Italian>
+		<Spanish>+5 Vim.  25% chance to end riot, 25% chance to lower timer by 1 turn, 50% chance to extend the disorder.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACCORD_ANARCHY</Tag>
+		<English>Our people have become divided and struggle against each other.  This is Vim.  It is vitality and healing, perserverance and energy.  Struggle and rebirth.  After our time of struggle there will be rebirth.</English>
+		<French>Our people have become divided and struggle against each other.  This is Vim.  It is vitality and healing, perserverance and energy.  Struggle and rebirth.  After our time of struggle there will be rebirth.</French>
+		<German>Our people have become divided and struggle against each other.  This is Vim.  It is vitality and healing, perserverance and energy.  Struggle and rebirth.  After our time of struggle there will be rebirth.</German>
+		<Italian>Our people have become divided and struggle against each other.  This is Vim.  It is vitality and healing, perserverance and energy.  Struggle and rebirth.  After our time of struggle there will be rebirth.</Italian>
+		<Spanish>Our people have become divided and struggle against each other.  This is Vim.  It is vitality and healing, perserverance and energy.  Struggle and rebirth.  After our time of struggle there will be rebirth.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_FIRE_MAGIC_MASTERY_HELP</Tag>
+		<English>Starts with Fireball, Elemental Assault I, Fireshield</English>
+		<French>Starts with Fireball, Elemental Assault I, Fireshield</French>
+		<German>Starts with Fireball, Elemental Assault I, Fireshield</German>
+		<Italian>Starts with Fireball, Elemental Assault I, Fireshield</Italian>
+		<Spanish>Starts with Fireball, Elemental Assault I, Fireshield</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_CITY_RIOT</Tag>
+		<English>Civil disorder.</English>
+		<French>Civil disorder</French>
+		<German>Civil disorder</German>
+		<Italian>Civil disorder</Italian>
+		<Spanish>Civil disorder</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARK_OF_REDEMPTION</Tag>
+		<English>Mark of Redemption</English>
+		<French>Mark of Redemption</French>
+		<German>Mark of Redemption</German>
+		<Italian>Mark of Redemption</Italian>
+		<Spanish>Mark of Redemption</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARK_OF_REDEMPTION_PEDIA</Tag>
+		<English>Sucellus is the reborn God of Life.  Priests may give followers his mark, the Mark of Redemption.  Those bearing the mark are granted a second life upon dying. Requires a Priest of Sucellus in the stack in addition to Faith and 10 Vim.  The Mark gained will cost a further 1 Vim/turn and 15 more when activated upon the unit's death.</English>
+		<French>Sucellus is the reborn God of Life.  Priests may give followers his mark, the Mark of Redemption.  Those bearing the mark are granted a second life upon dying.  Requires a Priest of Sucellus in the stack in addition to Faith and 10 Vim.  The Mark gained will cost a further 1 Vim/turn and 15 more when activated upon the unit's death.</French>
+		<German>Sucellus is the reborn God of Life.  Priests may give followers his mark, the Mark of Redemption.  Those bearing the mark are granted a second life upon dying. Requires a Priest of Sucellus in the stack in addition to Faith and 10 Vim.  The Mark gained will cost a further 1 Vim/turn and 15 more when activated upon the unit's death.</German>
+		<Italian>Sucellus is the reborn God of Life.  Priests may give followers his mark, the Mark of Redemption.  Those bearing the mark are granted a second life upon dying. Requires a Priest of Sucellus in the stack in addition to Faith and 10 Vim.  The Mark gained will cost a further 1 Vim/turn and 15 more when activated upon the unit's death.</Italian>
+		<Spanish>Sucellus is the reborn God of Life.  Priests may give followers his mark, the Mark of Redemption.  Those bearing the mark are granted a second life upon dying. Requires a Priest of Sucellus in the stack in addition to Faith and 10 Vim.  The Mark gained will cost a further 1 Vim/turn and 15 more when activated upon the unit's death.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARK_OF_REDEMPTION_HELP</Tag>
+		<English>Requires a Priest of Sucellus in the stack in addition to Faith and Vim.</English>
+		<French>Requires a Priest of Sucellus in the stack in addition to Faith and Vim.</French>
+		<German>Requires a Priest of Sucellus in the stack in addition to Faith and Vim.</German>
+		<Italian>Requires a Priest of Sucellus in the stack in addition to Faith and Vim.</Italian>
+		<Spanish>Requires a Priest of Sucellus in the stack in addition to Faith and Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARK_OF_REDEMPTION</Tag>
+		<English>Mark of Redemption</English>
+		<French>Mark of Redemption</French>
+		<German>Mark of Redemption</German>
+		<Italian>Mark of Redemption</Italian>
+		<Spanish>Mark of Redemption</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MARK_OF_REDEMPTION_HELP</Tag>
+		<English>Prevents the unit from dying one time.  Costs 1 Vim/turn.</English>
+		<French>Prevents the unit from dying one time.  Costs 1 Vim/turn.</French>
+		<German>Prevents the unit from dying one time.  Costs 1 Vim/turn.</German>
+		<Italian>Prevents the unit from dying one time.  Costs 1 Vim/turn.</Italian>
+		<Spanish>Prevents the unit from dying one time.  Costs 1 Vim/turn.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PILLAR_OF_COURAGE</Tag>
+		<English>Pillar of Courage</English>
+		<French>Pillar of Courage</French>
+		<German>Pillar of Courage</German>
+		<Italian>Pillar of Courage</Italian>
+		<Spanish>Pillar of Courage</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PILLAR_OF_COURAGE_PEDIA</Tag>
+		<English>Standing in mute defiance against the forces of destruction, the Pillar of Courage halves the Armageddon Counter Vim Revolt modifier in it's city.</English>
+		<French>Standing in mute defiance against the forces of destruction, the Pillar of Courage halves the Armageddon Counter Vim Revolt modifier in it's city.</French>
+		<German>Standing in mute defiance against the forces of destruction, the Pillar of Courage halves the Armageddon Counter Vim Revolt modifier in it's city.</German>
+		<Italian>Standing in mute defiance against the forces of destruction, the Pillar of Courage halves the Armageddon Counter Vim Revolt modifier in it's city.</Italian>
+		<Spanish>Standing in mute defiance against the forces of destruction, the Pillar of Courage halves the Armageddon Counter Vim Revolt modifier in it's city.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_ENGINEER</Tag>
+		<English>This war is a waste of resources, a waste of effort, a waste of time, and more than anything a waste of lives.  Glory is to be found in building, not destruction.</English>
+		<French>This war is a waste of resources, a waste of effort, a waste of time, and more than anything a waste of lives.  Glory is to be found in building, not destruction.</French>
+		<German>This war is a waste of resources, a waste of effort, a waste of time, and more than anything a waste of lives.  Glory is to be found in building, not destruction.</German>
+		<Italian>This war is a waste of resources, a waste of effort, a waste of time, and more than anything a waste of lives.  Glory is to be found in building, not destruction.</Italian>
+		<Spanish>This war is a waste of resources, a waste of effort, a waste of time, and more than anything a waste of lives.  Glory is to be found in building, not destruction.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GLORY_HELP</Tag>
+		<English>Costs 15 Vim.</English>
+		<French>Costs 15 Vim.</French>
+		<German>Costs 15 Vim.</German>
+		<Italian>Costs 15 Vim.</Italian>
+		<Spanish>Costs 15 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MARTYR_HELP</Tag>
+		<English>Bonus to combat, increase Vim by Level * 5, unit dies after combat.</English>
+		<French>Bonus to combat, increase Vim by Level * 5, unit dies after combat.</French>
+		<German>Bonus to combat, increase Vim by Level * 5, unit dies after combat.</German>
+		<Italian>Bonus to combat, increase Vim by Level * 5, unit dies after combat.</Italian>
+		<Spanish>Bonus to combat, increase Vim by Level * 5, unit dies after combat.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_ACCORD_PROPHET_PEACE</Tag>
+		<English>Life is struggle.  You know this.  And where you find struggle, you find violence.  When you seek peace you turn your back on life.</English>
+		<French>Life is struggle.  You know this.  And where you find struggle, you find violence.  When you seek peace you turn your back on life.</French>
+		<German>Life is struggle.  You know this.  And where you find struggle, you find violence.  When you seek peace you turn your back on life.</German>
+		<Italian>Life is struggle.  You know this.  And where you find struggle, you find violence.  When you seek peace you turn your back on life.</Italian>
+		<Spanish>Life is struggle.  You know this.  And where you find struggle, you find violence.  When you seek peace you turn your back on life.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_STRENGTH_OF_PURPOSE</Tag>
+		<English>Indomitable Purpose</English>
+		<French>Indomitable Purpose</French>
+		<German>Indomitable Purpose</German>
+		<Italian>Indomitable Purpose</Italian>
+		<Spanish>Indomitable Purpose</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_STRENGTH_OF_PURPOSE_PEDIA</Tag>
+		<English>Calling on the energies of Life and their own strength of will, troops heal all damage but receive "Fatigued" and "Slow".  They may (10% change) shake off the effects of disease, plauge, poison, and withering.</English>
+		<French>Calling on the energies of Life and their own strength of will, troops heal all damage but receive "Fatigued" and "Slow".  They may (10% change) shake off the effects of disease, plauge, poison, and withering.</French>
+		<German>Calling on the energies of Life and their own strength of will, troops heal all damage but receive "Fatigued" and "Slow".  They may (10% change) shake off the effects of disease, plauge, poison, and withering.</German>
+		<Italian>Calling on the energies of Life and their own strength of will, troops heal all damage but receive "Fatigued" and "Slow".  They may (10% change) shake off the effects of disease, plauge, poison, and withering.</Italian>
+		<Spanish>Calling on the energies of Life and their own strength of will, troops heal all damage but receive "Fatigued" and "Slow".  They may (10% change) shake off the effects of disease, plauge, poison, and withering.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_STRENGTH_OF_PURPOSE_HELP</Tag>
+		<English>Heals unit, costs 10 Vim.</English>
+		<French>Heals unit, costs 10 Vim.</French>
+		<German>Heals unit, costs 10 Vim.</German>
+		<Italian>Heals unit, costs 10 Vim.</Italian>
+		<Spanish>Heals unit, costs 10 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_UNIT_REDEEMED</Tag>
+		<English>Unit Redeemed!  They live again, but not without pain.  -15 Vim.</English>
+		<French>Unit Redeemed!  They live again, but not without pain.  -15 Vim.</French>
+		<German>Unit Redeemed!  They live again, but not without pain.  -15 Vim.</German>
+		<Italian>Unit Redeemed!  They live again, but not without pain.  -15 Vim.</Italian>
+		<Spanish>Unit Redeemed!  They live again, but not without pain.  -15 Vim.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_VIM</Tag>
+		<English>Unblemished Vim and Revolt</English>
+		<French>Unblemished Vim and Revolt</French>
+		<German>Unblemished Vim and Revolt</German>
+		<Italian>Unblemished Vim and Revolt</Italian>
+		<Spanish>Unblemished Vim and Revolt</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_VIM_PEDIA</Tag>
+		<English>[H1]Unblemished Vim[\H1][PARAGRAPH:1]Vim represents the Unblemished's vitality and perseverance. Their energy and determination. "Vim" can help the civ pull together in times of adversity or split it apart on the verge of victory, when powerful and driven Unblemished differ on how to seal thier victory... or just become complacent.[PARAGRAPH:1]When Vim is too low the Unblemished become discontent with your rule and cities may temporarily revolt. If Vim goes below 0 the whole civilization may fall into Anarchy for a time, but will emerge with renewed Vim. If Vim becomes too high an Iconoclast Great Person may rise from among the people and attempt to re-direct the civilization's efforts. Even "healthy" levels of Vim can see cities falling into complacency. Vim will rise and fall throughout the game. Sometimes via your actions, and sometimes pop-up Events will demonstrate that your citizens - determined folk that they are - will act on their own.[PARAGRAPH:1]You start with 100 Vim. A symbol in the upper left will call your attention to the Vim display. "Unblemished Vim" is how many Vim points you currently have. The % number after the slash is the base chance for each city to fall into revolt.[PARAGRAPH:1][PARAGRAPH:1]All gains and losses have a message or pop-up except for unit loss and population gain.[PARAGRAPH:1]
+[H2]Gaining Vim[\H2]
+[ICON_BULLET]City gains population: +3 Vim.
+[ICON_BULLET]Civic Works: +10 Vim.  Clicking on the blue Unblemished symbol by the Vim display spends 200-400 gold for the Works.
+[ICON_BULLET]Armageddon Counter: The people rally.  +1 Vim/turn at 40+.  +2 Vim/turn at 80+.
+[ICON_BULLET]Golden Age: + 25 Vim.
+[ICON_BULLET]Build a Wonder: +15 Vim.
+[ICON_BULLET]Gain a tech: +2 Vim.
+[ICON_BULLET]Losing a unit: +1 Vim.
+[ICON_BULLET]Losing a city: +10 Vim.
+[ICON_BULLET]Taking a city +10 Vim.
+[ICON_BULLET]Unwavering Piety: +10 Vim.  A spell cast by Priest units for 500 Faith.
+[ICON_BULLET]Martyrdom:  A unit sacrifices itself to gain a combat bonus and 5 Vim/Level.
+[ICON_BULLET]Dedicated to Sucellus: +3 Vim.  A Promotion.  Activates once (icon will change) when unit dies or Vim goes below 100.
+[ICON_BULLET]Negotiate: +5 Vim.  An Event choice when a city revolts.
+[ICON_BULLET]Own Aquae Sucellus: +1 Vim.
+[PARAGRAPH:1]
+[H2]Losing Vim[\H2]
+[ICON_BULLET]Complacency Event: May cost -15 or -30 Vim, depending on conditions and choice.  High city population, high civ gold, and high Vim lead to Complacency.
+[ICON_BULLET]Great People: When a Great Person is created they convert 40% of Vim to an appropriate resource. (Exception:  Bard increases Vim.)
+[ICON_BULLET]Iconoclast Great Person Event: An Iconoclast consumes 80% of the civilization's Vim.  Only above 100 Vim.  Very high Vim makes an Iconoclast more likely.
+[ICON_BULLET]Low Science slider:  Your people desire progress and a healthy economy.  -1 Vim if below 80, -2 if below 50.
+[ICON_BULLET]High Rank:  Being in the top 1/3 costs 1 Vim/turn, more as rank increases.  Complacency writ large.
+[ICON_BULLET]Razing a city: -10 Vim.
+[ICON_BULLET]Unit Redeemed: -15 Vim when a unit with Mark of Redemption saved.
+[ICON_BULLET]Mark of Redemption: A promotion.  -1 Vim/turn.
+[PARAGRAPH:1]
+[H2]Spending Vim[\H2]
+[ICON_BULLET]Glory:  15 Vim.  Used by Paragons.  Increases a Paragon's combat aura effect by 45%.
+[ICON_BULLET]Indominatable Purpose: 5 Vim.  Used by level 5+ units.  Heals the unit, chance to dispel illness effects.
+[ICON_BULLET]Mark of Redemption: 10 Vim.  Requires a Priest of Sucellus.  Gives a unit Mark of Redemption promotion.
+[ICON_BULLET]Militia Assault: 10 Vim.  Destroy barbarian lairs and damage barbarian units near Unblemished cities.
+[PARAGRAPH:1]
+[H1]Revolts[\H1]
+[PARAGRAPH:1]The % readout on the main screen gives the empire-wide base revolt chance. It's increased by War Weariness and a high Armageddon counter. Individual cities have their revolt chance modified by several other factors:
+[PARAGRAPH:1]
+[ICON_BULLET]Palace: -10.
+[ICON_BULLET]Metropolitan Assembly (Can be gained by Complacency Event): -20%.
+[ICON_BULLET]Hope: -20%.
+[ICON_BULLET]Courthouse: -10%.
+[ICON_BULLET]Pillar of Courage: Reduces Armageddon modifier by 50%.
+[ICON_BULLET]Dungeon: Reduces War weariness modifier by 50%.
+[ICON_BULLET]Metropolitan Assembly: -20%.
+[ICON_BULLET]Excess Unhappiness: +1 per Unhappy person.
+[ICON_BULLET]Unhealth: +1 each at 3, 5 and 7 Unhealth.  +2 more at 9+ Unhealth.
+[ICON_BULLET]Forbidden and Winter Palaces: +20%.
+[PARAGRAPH:1]A negative Vim score will soon throw the whole civilization into Anarchy.  When the Anarchy is over the Vim score will be 50.
+</English>
+		<French>[H1]Unblemished Vim[\H1][PARAGRAPH:1]Vim represents the Unblemished's vitality and perseverance. Their energy and determination. "Vim" can help the civ pull together in times of adversity or split it apart on the verge of victory, when powerful and driven Unblemished differ on how to seal thier victory... or just become complacent.[PARAGRAPH:1]When Vim is too low the Unblemished become discontent with your rule and cities may temporarily revolt. If Vim goes below 0 the whole civilization may fall into Anarchy for a time, but will emerge with renewed Vim. If Vim becomes too high an Iconoclast Great Person may rise from among the people and attempt to re-direct the civilization's efforts. Even "healthy" levels of Vim can see cities falling into complacency. Vim will rise and fall throughout the game. Sometimes via your actions, and sometimes pop-up Events will demonstrate that your citizens - determined folk that they are - will act on their own.[PARAGRAPH:1]You start with 100 Vim. A symbol in the upper left will call your attention to the Vim display. "Unblemished Vim" is how many Vim points you currently have. The % number after the slash is the base chance for each city to fall into revolt.[PARAGRAPH:1][PARAGRAPH:1]All gains and losses have a message or pop-up except for unit loss and population gain.[PARAGRAPH:1]
+[H2]Gaining Vim[\H2]
+[ICON_BULLET]City gains population: +3 Vim.
+[ICON_BULLET]Civic Works: +10 Vim.  Clicking on the blue Unblemished symbol by the Vim display spends 200-400 gold for the Works.
+[ICON_BULLET]Armageddon Counter: The people rally.  +1 Vim/turn at 40+.  +2 Vim/turn at 80+.
+[ICON_BULLET]Golden Age: + 25 Vim.
+[ICON_BULLET]Build a Wonder: +15 Vim.
+[ICON_BULLET]Gain a tech: +2 Vim.
+[ICON_BULLET]Losing a unit: +1 Vim.
+[ICON_BULLET]Losing a city: +10 Vim.
+[ICON_BULLET]Taking a city +10 Vim.
+[ICON_BULLET]Unwavering Piety: +10 Vim.  A spell cast by Priest units for 500 Faith.
+[ICON_BULLET]Martyrdom:  A unit sacrifices itself to gain a combat bonus and 5 Vim/Level.
+[ICON_BULLET]Dedicated to Sucellus: +3 Vim.  A Promotion.  Activates once (icon will change) when unit dies or Vim goes below 100.
+[ICON_BULLET]Negotiate: +5 Vim.  An Event choice when a city revolts.
+[ICON_BULLET]Own Aquae Sucellus: +1 Vim.
+[PARAGRAPH:1]
+[H2]Losing Vim[\H2]
+[ICON_BULLET]Complacency Event: May cost -15 or -30 Vim, depending on conditions and choice.  High city population, high civ gold, and high Vim lead to Complacency.
+[ICON_BULLET]Great People: When a Great Person is created they convert 40% of Vim to an appropriate resource. (Exception:  Bard increases Vim.)
+[ICON_BULLET]Iconoclast Great Person Event: An Iconoclast consumes 80% of the civilization's Vim.  Only above 100 Vim.  Very high Vim makes an Iconoclast more likely.
+[ICON_BULLET]Low Science slider:  Your people desire progress and a healthy economy.  -1 Vim if below 80, -2 if below 50.
+[ICON_BULLET]High Rank:  Being in the top 1/3 costs 1 Vim/turn, more as rank increases.  Complacency writ large.
+[ICON_BULLET]Razing a city: -10 Vim.
+[ICON_BULLET]Unit Redeemed: -15 Vim when a unit with Mark of Redemption saved.
+[ICON_BULLET]Mark of Redemption: A promotion.  -1 Vim/turn.
+[PARAGRAPH:1]
+[H2]Spending Vim[\H2]
+[ICON_BULLET]Glory:  15 Vim.  Used by Paragons.  Increases a Paragon's combat aura effect by 45%.
+[ICON_BULLET]Indominatable Purpose: 5 Vim.  Used by level 5+ units.  Heals the unit, chance to dispel illness effects.
+[ICON_BULLET]Mark of Redemption: 10 Vim.  Requires a Priest of Sucellus.  Gives a unit Mark of Redemption promotion.
+[ICON_BULLET]Militia Assault: 10 Vim.  Destroy barbarian lairs and damage barbarian units near Unblemished cities.
+[PARAGRAPH:1]
+[H1]Revolts[\H1]
+[PARAGRAPH:1]The % readout on the main screen gives the empire-wide base revolt chance. It's increased by War Weariness and a high Armageddon counter. Individual cities have their revolt chance modified by several other factors:
+[PARAGRAPH:1]
+[ICON_BULLET]Palace: -10.
+[ICON_BULLET]Metropolitan Assembly (Can be gained by Complacency Event): -20%.
+[ICON_BULLET]Hope: -20%.
+[ICON_BULLET]Courthouse: -10%.
+[ICON_BULLET]Pillar of Courage: Reduces Armageddon modifier by 50%.
+[ICON_BULLET]Dungeon: Reduces War weariness modifier by 50%.
+[ICON_BULLET]Metropolitan Assembly: -20%.
+[ICON_BULLET]Excess Unhappiness: +1 per Unhappy person.
+[ICON_BULLET]Unhealth: +1 each at 3, 5 and 7 Unhealth.  +2 more at 9+ Unhealth.
+[ICON_BULLET]Forbidden and Winter Palaces: +20%.
+[PARAGRAPH:1]A negative Vim score will soon throw the whole civilization into Anarchy.  When the Anarchy is over the Vim score will be 50.</French>
+		<German>[H1]Unblemished Vim[\H1][PARAGRAPH:1]Vim represents the Unblemished's vitality and perseverance. Their energy and determination. "Vim" can help the civ pull together in times of adversity or split it apart on the verge of victory, when powerful and driven Unblemished differ on how to seal thier victory... or just become complacent.[PARAGRAPH:1]When Vim is too low the Unblemished become discontent with your rule and cities may temporarily revolt. If Vim goes below 0 the whole civilization may fall into Anarchy for a time, but will emerge with renewed Vim. If Vim becomes too high an Iconoclast Great Person may rise from among the people and attempt to re-direct the civilization's efforts. Even "healthy" levels of Vim can see cities falling into complacency. Vim will rise and fall throughout the game. Sometimes via your actions, and sometimes pop-up Events will demonstrate that your citizens - determined folk that they are - will act on their own.[PARAGRAPH:1]You start with 100 Vim. A symbol in the upper left will call your attention to the Vim display. "Unblemished Vim" is how many Vim points you currently have. The % number after the slash is the base chance for each city to fall into revolt.[PARAGRAPH:1][PARAGRAPH:1]All gains and losses have a message or pop-up except for unit loss and population gain.[PARAGRAPH:1]
+[H2]Gaining Vim[\H2]
+[ICON_BULLET]City gains population: +3 Vim.
+[ICON_BULLET]Civic Works: +10 Vim.  Clicking on the blue Unblemished symbol by the Vim display spends 200-400 gold for the Works.
+[ICON_BULLET]Armageddon Counter: The people rally.  +1 Vim/turn at 40+.  +2 Vim/turn at 80+.
+[ICON_BULLET]Golden Age: + 25 Vim.
+[ICON_BULLET]Build a Wonder: +15 Vim.
+[ICON_BULLET]Gain a tech: +2 Vim.
+[ICON_BULLET]Losing a unit: +1 Vim.
+[ICON_BULLET]Losing a city: +10 Vim.
+[ICON_BULLET]Taking a city +10 Vim.
+[ICON_BULLET]Unwavering Piety: +10 Vim.  A spell cast by Priest units for 500 Faith.
+[ICON_BULLET]Martyrdom:  A unit sacrifices itself to gain a combat bonus and 5 Vim/Level.
+[ICON_BULLET]Dedicated to Sucellus: +3 Vim.  A Promotion.  Activates once (icon will change) when unit dies or Vim goes below 100.
+[ICON_BULLET]Negotiate: +5 Vim.  An Event choice when a city revolts.
+[ICON_BULLET]Own Aquae Sucellus: +1 Vim.
+[PARAGRAPH:1]
+[H2]Losing Vim[\H2]
+[ICON_BULLET]Complacency Event: May cost -15 or -30 Vim, depending on conditions and choice.  High city population, high civ gold, and high Vim lead to Complacency.
+[ICON_BULLET]Great People: When a Great Person is created they convert 40% of Vim to an appropriate resource. (Exception:  Bard increases Vim.)
+[ICON_BULLET]Iconoclast Great Person Event: An Iconoclast consumes 80% of the civilization's Vim.  Only above 100 Vim.  Very high Vim makes an Iconoclast more likely.
+[ICON_BULLET]Low Science slider:  Your people desire progress and a healthy economy.  -1 Vim if below 80, -2 if below 50.
+[ICON_BULLET]High Rank:  Being in the top 1/3 costs 1 Vim/turn, more as rank increases.  Complacency writ large.
+[ICON_BULLET]Razing a city: -10 Vim.
+[ICON_BULLET]Unit Redeemed: -15 Vim when a unit with Mark of Redemption saved.
+[ICON_BULLET]Mark of Redemption: A promotion.  -1 Vim/turn.
+[PARAGRAPH:1]
+[H2]Spending Vim[\H2]
+[ICON_BULLET]Glory:  15 Vim.  Used by Paragons.  Increases a Paragon's combat aura effect by 45%.
+[ICON_BULLET]Indominatable Purpose: 5 Vim.  Used by level 5+ units.  Heals the unit, chance to dispel illness effects.
+[ICON_BULLET]Mark of Redemption: 10 Vim.  Requires a Priest of Sucellus.  Gives a unit Mark of Redemption promotion.
+[ICON_BULLET]Militia Assault: 10 Vim.  Destroy barbarian lairs and damage barbarian units near Unblemished cities.
+[PARAGRAPH:1]
+[H1]Revolts[\H1]
+[PARAGRAPH:1]The % readout on the main screen gives the empire-wide base revolt chance. It's increased by War Weariness and a high Armageddon counter. Individual cities have their revolt chance modified by several other factors:
+[PARAGRAPH:1]
+[ICON_BULLET]Palace: -10.
+[ICON_BULLET]Metropolitan Assembly (Can be gained by Complacency Event): -20%.
+[ICON_BULLET]Hope: -20%.
+[ICON_BULLET]Courthouse: -10%.
+[ICON_BULLET]Pillar of Courage: Reduces Armageddon modifier by 50%.
+[ICON_BULLET]Dungeon: Reduces War weariness modifier by 50%.
+[ICON_BULLET]Metropolitan Assembly: -20%.
+[ICON_BULLET]Excess Unhappiness: +1 per Unhappy person.
+[ICON_BULLET]Unhealth: +1 each at 3, 5 and 7 Unhealth.  +2 more at 9+ Unhealth.
+[ICON_BULLET]Forbidden and Winter Palaces: +20%.
+[PARAGRAPH:1]A negative Vim score will soon throw the whole civilization into Anarchy.  When the Anarchy is over the Vim score will be 50.</German>
+		<Italian>[H1]Unblemished Vim[\H1][PARAGRAPH:1]Vim represents the Unblemished's vitality and perseverance. Their energy and determination. "Vim" can help the civ pull together in times of adversity or split it apart on the verge of victory, when powerful and driven Unblemished differ on how to seal thier victory... or just become complacent.[PARAGRAPH:1]When Vim is too low the Unblemished become discontent with your rule and cities may temporarily revolt. If Vim goes below 0 the whole civilization may fall into Anarchy for a time, but will emerge with renewed Vim. If Vim becomes too high an Iconoclast Great Person may rise from among the people and attempt to re-direct the civilization's efforts. Even "healthy" levels of Vim can see cities falling into complacency. Vim will rise and fall throughout the game. Sometimes via your actions, and sometimes pop-up Events will demonstrate that your citizens - determined folk that they are - will act on their own.[PARAGRAPH:1]You start with 100 Vim. A symbol in the upper left will call your attention to the Vim display. "Unblemished Vim" is how many Vim points you currently have. The % number after the slash is the base chance for each city to fall into revolt.[PARAGRAPH:1][PARAGRAPH:1]All gains and losses have a message or pop-up except for unit loss and population gain.[PARAGRAPH:1]
+[H2]Gaining Vim[\H2]
+[ICON_BULLET]City gains population: +3 Vim.
+[ICON_BULLET]Civic Works: +10 Vim.  Clicking on the blue Unblemished symbol by the Vim display spends 200-400 gold for the Works.
+[ICON_BULLET]Armageddon Counter: The people rally.  +1 Vim/turn at 40+.  +2 Vim/turn at 80+.
+[ICON_BULLET]Golden Age: + 25 Vim.
+[ICON_BULLET]Build a Wonder: +15 Vim.
+[ICON_BULLET]Gain a tech: +2 Vim.
+[ICON_BULLET]Losing a unit: +1 Vim.
+[ICON_BULLET]Losing a city: +10 Vim.
+[ICON_BULLET]Taking a city +10 Vim.
+[ICON_BULLET]Unwavering Piety: +10 Vim.  A spell cast by Priest units for 500 Faith.
+[ICON_BULLET]Martyrdom:  A unit sacrifices itself to gain a combat bonus and 5 Vim/Level.
+[ICON_BULLET]Dedicated to Sucellus: +3 Vim.  A Promotion.  Activates once (icon will change) when unit dies or Vim goes below 100.
+[ICON_BULLET]Negotiate: +5 Vim.  An Event choice when a city revolts.
+[ICON_BULLET]Own Aquae Sucellus: +1 Vim.
+[PARAGRAPH:1]
+[H2]Losing Vim[\H2]
+[ICON_BULLET]Complacency Event: May cost -15 or -30 Vim, depending on conditions and choice.  High city population, high civ gold, and high Vim lead to Complacency.
+[ICON_BULLET]Great People: When a Great Person is created they convert 40% of Vim to an appropriate resource. (Exception:  Bard increases Vim.)
+[ICON_BULLET]Iconoclast Great Person Event: An Iconoclast consumes 80% of the civilization's Vim.  Only above 100 Vim.  Very high Vim makes an Iconoclast more likely.
+[ICON_BULLET]Low Science slider:  Your people desire progress and a healthy economy.  -1 Vim if below 80, -2 if below 50.
+[ICON_BULLET]High Rank:  Being in the top 1/3 costs 1 Vim/turn, more as rank increases.  Complacency writ large.
+[ICON_BULLET]Razing a city: -10 Vim.
+[ICON_BULLET]Unit Redeemed: -15 Vim when a unit with Mark of Redemption saved.
+[ICON_BULLET]Mark of Redemption: A promotion.  -1 Vim/turn.
+[PARAGRAPH:1]
+[H2]Spending Vim[\H2]
+[ICON_BULLET]Glory:  15 Vim.  Used by Paragons.  Increases a Paragon's combat aura effect by 45%.
+[ICON_BULLET]Indominatable Purpose: 5 Vim.  Used by level 5+ units.  Heals the unit, chance to dispel illness effects.
+[ICON_BULLET]Mark of Redemption: 10 Vim.  Requires a Priest of Sucellus.  Gives a unit Mark of Redemption promotion.
+[ICON_BULLET]Militia Assault: 10 Vim.  Destroy barbarian lairs and damage barbarian units near Unblemished cities.
+[PARAGRAPH:1]
+[H1]Revolts[\H1]
+[PARAGRAPH:1]The % readout on the main screen gives the empire-wide base revolt chance. It's increased by War Weariness and a high Armageddon counter. Individual cities have their revolt chance modified by several other factors:
+[PARAGRAPH:1]
+[ICON_BULLET]Palace: -10.
+[ICON_BULLET]Metropolitan Assembly (Can be gained by Complacency Event): -20%.
+[ICON_BULLET]Hope: -20%.
+[ICON_BULLET]Courthouse: -10%.
+[ICON_BULLET]Pillar of Courage: Reduces Armageddon modifier by 50%.
+[ICON_BULLET]Dungeon: Reduces War weariness modifier by 50%.
+[ICON_BULLET]Metropolitan Assembly: -20%.
+[ICON_BULLET]Excess Unhappiness: +1 per Unhappy person.
+[ICON_BULLET]Unhealth: +1 each at 3, 5 and 7 Unhealth.  +2 more at 9+ Unhealth.
+[ICON_BULLET]Forbidden and Winter Palaces: +20%.
+[PARAGRAPH:1]A negative Vim score will soon throw the whole civilization into Anarchy.  When the Anarchy is over the Vim score will be 50.</Italian>
+		<Spanish>[H1]Unblemished Vim[\H1][PARAGRAPH:1]Vim represents the Unblemished's vitality and perseverance. Their energy and determination. "Vim" can help the civ pull together in times of adversity or split it apart on the verge of victory, when powerful and driven Unblemished differ on how to seal thier victory... or just become complacent.[PARAGRAPH:1]When Vim is too low the Unblemished become discontent with your rule and cities may temporarily revolt. If Vim goes below 0 the whole civilization may fall into Anarchy for a time, but will emerge with renewed Vim. If Vim becomes too high an Iconoclast Great Person may rise from among the people and attempt to re-direct the civilization's efforts. Even "healthy" levels of Vim can see cities falling into complacency. Vim will rise and fall throughout the game. Sometimes via your actions, and sometimes pop-up Events will demonstrate that your citizens - determined folk that they are - will act on their own.[PARAGRAPH:1]You start with 100 Vim. A symbol in the upper left will call your attention to the Vim display. "Unblemished Vim" is how many Vim points you currently have. The % number after the slash is the base chance for each city to fall into revolt.[PARAGRAPH:1][PARAGRAPH:1]All gains and losses have a message or pop-up except for unit loss and population gain.[PARAGRAPH:1]
+[H2]Gaining Vim[\H2]
+[ICON_BULLET]City gains population: +3 Vim.
+[ICON_BULLET]Civic Works: +10 Vim.  Clicking on the blue Unblemished symbol by the Vim display spends 200-400 gold for the Works.
+[ICON_BULLET]Armageddon Counter: The people rally.  +1 Vim/turn at 40+.  +2 Vim/turn at 80+.
+[ICON_BULLET]Golden Age: + 25 Vim.
+[ICON_BULLET]Build a Wonder: +15 Vim.
+[ICON_BULLET]Gain a tech: +2 Vim.
+[ICON_BULLET]Losing a unit: +1 Vim.
+[ICON_BULLET]Losing a city: +10 Vim.
+[ICON_BULLET]Taking a city +10 Vim.
+[ICON_BULLET]Unwavering Piety: +10 Vim.  A spell cast by Priest units for 500 Faith.
+[ICON_BULLET]Martyrdom:  A unit sacrifices itself to gain a combat bonus and 5 Vim/Level.
+[ICON_BULLET]Dedicated to Sucellus: +3 Vim.  A Promotion.  Activates once (icon will change) when unit dies or Vim goes below 100.
+[ICON_BULLET]Negotiate: +5 Vim.  An Event choice when a city revolts.
+[ICON_BULLET]Own Aquae Sucellus: +1 Vim.
+[PARAGRAPH:1]
+[H2]Losing Vim[\H2]
+[ICON_BULLET]Complacency Event: May cost -15 or -30 Vim, depending on conditions and choice.  High city population, high civ gold, and high Vim lead to Complacency.
+[ICON_BULLET]Great People: When a Great Person is created they convert 40% of Vim to an appropriate resource. (Exception:  Bard increases Vim.)
+[ICON_BULLET]Iconoclast Great Person Event: An Iconoclast consumes 80% of the civilization's Vim.  Only above 100 Vim.  Very high Vim makes an Iconoclast more likely.
+[ICON_BULLET]Low Science slider:  Your people desire progress and a healthy economy.  -1 Vim if below 80, -2 if below 50.
+[ICON_BULLET]High Rank:  Being in the top 1/3 costs 1 Vim/turn, more as rank increases.  Complacency writ large.
+[ICON_BULLET]Razing a city: -10 Vim.
+[ICON_BULLET]Unit Redeemed: -15 Vim when a unit with Mark of Redemption saved.
+[ICON_BULLET]Mark of Redemption: A promotion.  -1 Vim/turn.
+[PARAGRAPH:1]
+[H2]Spending Vim[\H2]
+[ICON_BULLET]Glory:  15 Vim.  Used by Paragons.  Increases a Paragon's combat aura effect by 45%.
+[ICON_BULLET]Indominatable Purpose: 5 Vim.  Used by level 5+ units.  Heals the unit, chance to dispel illness effects.
+[ICON_BULLET]Mark of Redemption: 10 Vim.  Requires a Priest of Sucellus.  Gives a unit Mark of Redemption promotion.
+[PARAGRAPH:1]
+[H1]Revolts[\H1]
+[PARAGRAPH:1]The % readout on the main screen gives the empire-wide base revolt chance. It's increased by War Weariness and a high Armageddon counter. Individual cities have their revolt chance modified by several other factors:
+[PARAGRAPH:1]
+[ICON_BULLET]Palace: -10.
+[ICON_BULLET]Metropolitan Assembly (Can be gained by Complacency Event): -20%.
+[ICON_BULLET]Hope: -20%.
+[ICON_BULLET]Courthouse: -10%.
+[ICON_BULLET]Pillar of Courage: Reduces Armageddon modifier by 50%.
+[ICON_BULLET]Dungeon: Reduces War weariness modifier by 50%.
+[ICON_BULLET]Metropolitan Assembly: -20%.
+[ICON_BULLET]Excess Unhappiness: +1 per Unhappy person.
+[ICON_BULLET]Unhealth: +1 each at 3, 5 and 7 Unhealth.  +2 more at 9+ Unhealth.
+[ICON_BULLET]Forbidden and Winter Palaces: +20%.
+[PARAGRAPH:1]A negative Vim score will soon throw the whole civilization into Anarchy.  When the Anarchy is over the Vim score will be 50.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CRYSTAL_DRAGON</Tag>
+		<English>Create Crystal Dragon</English>
+		<French>Create Crystal Dragon</French>
+		<German>Create Crystal Dragon</German>
+		<Italian>Create Crystal Dragon</Italian>
+		<Spanish>Create Crystal Dragon</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CRYSTAL_DRAGON_HELP</Tag>
+		<English>Requires the Global Enchantments Dragon Heart, Dragon Fire, and Dragon Forge.</English>
+		<French>Requires the Global Enchantments Dragon Heart, Dragon Fire, and Dragon Forge.</French>
+		<German>Requires the Global Enchantments Dragon Heart, Dragon Fire, and Dragon Forge.</German>
+		<Italian>Requires the Global Enchantments Dragon Heart, Dragon Fire, and Dragon Forge.</Italian>
+		<Spanish>Requires the Global Enchantments Dragon Heart, Dragon Fire, and Dragon Forge.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CRYSTAL_DRAGON_PEDIA</Tag>
+		<English>Once the precurser Enchantments are active a single, final, burst of mana consumes a Drake or Great Drake.  From the ashes rises the Crystal Dragon.  The Unblemished can support only one Crystal Dragon at a time.</English>
+		<French>Once the precurser Enchantments are active a single, final, burst of mana consumes a Drake or Great Drake.  From the ashes rises the Crystal Dragon.  The Unblemished can support only one Crystal Dragon at a time.</French>
+		<German>Once the precurser Enchantments are active a single, final, burst of mana consumes a Drake or Great Drake.  From the ashes rises the Crystal Dragon.  The Unblemished can support only one Crystal Dragon at a time.</German>
+		<Italian>Once the precurser Enchantments are active a single, final, burst of mana consumes a Drake or Great Drake.  From the ashes rises the Crystal Dragon.  The Unblemished can support only one Crystal Dragon at a time.</Italian>
+		<Spanish>Once the precurser Enchantments are active a single, final, burst of mana consumes a Drake or Great Drake.  From the ashes rises the Crystal Dragon.  The Unblemished can support only one Crystal Dragon at a time.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_DRAGON_HEART_PEDIA</Tag>
+		<English>A trio of gloabal spells springing from Enchantment, Life and especially Creation mana are necessary to bring forth the Crystal Dragon.  The Dragon Forge is not a physical structure, but instead magical crafting techniques involving fire and blood.  The Dragon Heart breathes a superabundance of Life into drakes and related creatures.  The Dragon Fire is the energy of Creation itself.</English>
+		<French>A trio of gloabal spells springing from Enchantment, Life and especially Creation mana are necessary to bring forth the Crystal Dragon.  The Dragon Forge is not a physical structure, but instead magical crafting techniques involving fire and blood.  The Dragon Heart breathes a superabundance of Life into drakes and related creatures.  The Dragon Fire is the energy of Creation itself.</French>
+		<German>A trio of gloabal spells springing from Enchantment, Life and especially Creation mana are necessary to bring forth the Crystal Dragon.  The Dragon Forge is not a physical structure, but instead magical crafting techniques involving fire and blood.  The Dragon Heart breathes a superabundance of Life into drakes and related creatures.  The Dragon Fire is the energy of Creation itself.</German>
+		<Italian>A trio of gloabal spells springing from Enchantment, Life and especially Creation mana are necessary to bring forth the Crystal Dragon.  The Dragon Forge is not a physical structure, but instead magical crafting techniques involving fire and blood.  The Dragon Heart breathes a superabundance of Life into drakes and related creatures.  The Dragon Fire is the energy of Creation itself.</Italian>
+		<Spanish>A trio of gloabal spells springing from Enchantment, Life and especially Creation mana are necessary to bring forth the Crystal Dragon.  The Dragon Forge is not a physical structure, but instead magical crafting techniques involving fire and blood.  The Dragon Heart breathes a superabundance of Life into drakes and related creatures.  The Dragon Fire is the energy of Creation itself.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_MILITIA_ASSAULT</Tag>
+		<English>The attack was a success and our lands safe.  Honor the many citizens who sacrificed themselves.</English>
+		<French>The attack was a success and our lands safe.  Honor the many citizens who sacrificed themselves.</French>
+		<German>The attack was a success and our lands safe.  Honor the many citizens who sacrificed themselves.</German>
+		<Italian>The attack was a success and our lands safe.  Honor the many citizens who sacrificed themselves.</Italian>
+		<Spanish>The attack was a success and our lands safe.  Honor the many citizens who sacrificed themselves.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MILITIA_ASSAULT_HELP</Tag>
+		<English>Requires 10 Vim, a unit within borders, an adjacent defended barbarian lair, and a Size 3+ city within 4 tiles.</English>
+		<French>Requires 10 Vim, a unit within borders, an adjacent defended barbarian lair, and a Size 3+ city within 4 tiles.</French>
+		<German>Requires 10 Vim, a unit within borders, an adjacent defended barbarian lair, and a Size 3+ city within 4 tiles.</German>
+		<Italian>Requires 10 Vim, a unit within borders, an adjacent defended barbarian lair, and a Size 3+ city within 4 tiles.</Italian>
+		<Spanish>Requires 10 Vim, a unit within borders, an adjacent defended barbarian lair, and a Size 3+ city within 4 tiles.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MILITIA_ASSAULT_PEDIA</Tag>
+		<English>Rouse citizens to a fanatical defense of Unblemished territory.  Such a mob is of little real military use, but waves of attackers can overrun an unsophiticated foe.[PARAGRAPH:1]Use to destroy barbarian lairs and damage barbarian units in or near Unblemished lands.  This costs a nearby city 1 population point.</English>
+		<French>Rouse citizens to a fanatical defense of Unblemished territory.  Such a mob is of little real military use, but waves of attackers can overrun an unsophiticated foe.[PARAGRAPH:1]Use to destroy barbarian lairs and damage barbarian units in or near Unblemished lands.  This costs a nearby city 1 population point.</French>
+		<German>Rouse citizens to a fanatical defense of Unblemished territory.  Such a mob is of little real military use, but waves of attackers can overrun an unsophiticated foe.[PARAGRAPH:1]Use to destroy barbarian lairs and damage barbarian units in or near Unblemished lands.  This costs a nearby city 1 population point.</German>
+		<Italian>Rouse citizens to a fanatical defense of Unblemished territory.  Such a mob is of little real military use, but waves of attackers can overrun an unsophiticated foe.[PARAGRAPH:1]Use to destroy barbarian lairs and damage barbarian units in or near Unblemished lands.  This costs a nearby city 1 population point.</Italian>
+		<Spanish>Rouse citizens to a fanatical defense of Unblemished territory.  Such a mob is of little real military use, but waves of attackers can overrun an unsophiticated foe.[PARAGRAPH:1]Use to destroy barbarian lairs and damage barbarian units in or near Unblemished lands.  This costs a nearby city 1 population point.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_INITIATE_OF_NAN</Tag>
+		<English>Initiate of Nantosuelta</English>
+		<French>Initiate of Nantosuelta</French>
+		<German>Initiate of Nantosuelta</German>
+		<Italian>Initiate of Nantosuelta</Italian>
+		<Spanish>Initiate of Nantosuelta</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_INITIATE_OF_NAN_HELP</Tag>
+		<English>[ICON_BULLET]Lowers aura effect.
+		[ICON_BULLET]Reduces aura targets.
+		[ICON_BULLET]8+ units gives +1 Enchantment mana.</English>
+		<French>[ICON_BULLET]Lowers aura effect.[ICON_BULLET]Reduces aura targets.[ICON_BULLET]8+ increases Enchantment mana by 1.</French>
+		<German>[ICON_BULLET]Lowers aura effect.[ICON_BULLET]Reduces aura targets.[ICON_BULLET]8+ increases Enchantment mana by 1.</German>
+		<Italian>[ICON_BULLET]Lowers aura effect.[ICON_BULLET]Reduces aura targets.[ICON_BULLET]8+ increases Enchantment mana by 1.</Italian>
+		<Spanish>[ICON_BULLET]Lowers aura effect.[ICON_BULLET]Reduces aura targets.[ICON_BULLET]8+ increases Enchantment mana by 1.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_PLUS_ENCHANTMENT</Tag>
+		<English>Congratulations, there are eight Initiates.  The Circle of Nantosuelta is complete.  +1 Enchantment mana.</English>
+		<French>Congratulations, there are eight Initiates.  The Circle of Nantosuelta is complete.  +1 Enchantment mana.</French>
+		<German>Congratulations, there are eight Initiates.  The Circle of Nantosuelta is complete.  +1 Enchantment mana.</German>
+		<Italian>Congratulations, there are eight Initiates.  The Circle of Nantosuelta is complete.  +1 Enchantment mana.</Italian>
+		<Spanish>Congratulations, there are eight Initiates.  The Circle of Nantosuelta is complete.  +1 Enchantment mana.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_MINUS_ENCHANTMENT</Tag>
+		<English>The Circle has been broken.  -1 Enchantment mana.</English>
+		<French>The Circle has been broken.  -1 Enchantment mana.</French>
+		<German>The Circle has been broken.  -1 Enchantment mana.</German>
+		<Italian>The Circle has been broken.  -1 Enchantment mana.</Italian>
+		<Spanish>The Circle has been broken.  -1 Enchantment mana.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_MAGNIFICENT</Tag>
+		<English>Grand Architect</English>
+		<French>Grand Architect</French>
+		<German>Grand Architect</German>
+		<Italian>Grand Architect</Italian>
+		<Spanish>Grand Architect</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_MAGNIFICENT_SHORT</Tag>
+		<English>GrA</English>
+		<French>GrA</French>
+		<German>GrA</German>
+		<Italian>GrA</Italian>
+		<Spanish>GrA</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_MAGNIFICENT_HELP</Tag>
+		<English>Improves a city based on Culture.  Ultimately gives +2 Health/Happiness, +3 Commerce, +3 Beakers, -10% maint.</English>
+		<French>Improves a city based on Culture.  Ultimately gives +2 Health/Happiness, +3 Commerce, +3 Beakers, -10% maint.</French>
+		<German>Improves a city based on Culture.  Ultimately gives +2 Health/Happiness, +3 Commerce, +3 Beakers, -10% maint.</German>
+		<Italian>Improves a city based on Culture.  Ultimately gives +2 Health/Happiness, +3 Commerce, +3 Beakers, -10% maint.</Italian>
+		<Spanish>Improves a city based on Culture.  Ultimately gives +2 Health/Happiness, +3 Commerce, +3 Beakers, -10% maint.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TOLME</Tag>
+		<English>Aradon the Wolf</English>
+		<French>Aradon the Wolf</French>
+		<German>Aradon the Wolf</German>
+		<Italian>Aradon the Wolf</Italian>
+		<Spanish>Aradon the Wolf</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TOLME_PEDIA</Tag>
+		<English>A "March Paragon," the Epitome Aradon commands by acclaim rather than appointment from the Apothearch.  Called "the Wolf," Aradon made a name for himself by starting and winning a small war the week of his elevation.  Officially censored by palace, his campaign was marked by cruelties seldom seen among the Unblemished.  Such dark practices ended after the rebuke.  Or at least word of them did.[PARAGRAPH:1]Unpredictable in the extreme, the only constants of Aradon's behavior are his great loves.  Love of wealth, and love of power.  He is not known to be devout in the Rites, yet few can match his determination and willingness to embrace struggle.[PARAGRAPH:1]Aradon spends many nights among the campfires of his troops, cultivating the comradarie expected from Unblemished commanders.  Despite this he maintains an iron-hard grip on both his forces and himself.  He rarely leaves the field, weilding his army and often even ruling it's conquests independantly of the capital.  He's yet to even see Maegeht.  Rumor says he wouldn't be allowed with his army, and that he has no reason to see the palace without it.[PARAGRAPH:1]All agree Aradon represents the darker aspects of the Rites, of the shadows too easily born of all-consuming ambition and an eagerness for violence.  Just how far into the shadows Aradon has stalked, only the Wolf himself can say.</English>
+		<French>A "March Paragon," the Epitome Aradon commands by acclaim rather than appointment from the Apothearch.  Called "the Wolf," Aradon made a name for himself by starting and winning a small war the week of his elevation.  Officially censored by palace, his campaign was marked by cruelties seldom seen among the Unblemished.  Such dark practices ended after the rebuke.  Or at least word of them did.[PARAGRAPH:1]Unpredictable in the extreme, the only constants of Aradon's behavior are his great loves.  Love of wealth, and love of power.  He is not known to be devout in the Rites, yet few can match his determination and willingness to embrace struggle.[PARAGRAPH:1]Aradon spends many nights among the campfires of his troops, cultivating the comradarie expected from Unblemished commanders.  Despite this he maintains an iron-hard grip on both his forces and himself.  He rarely leaves the field, weilding his army and often even ruling it's conquests independantly of the capital.  He's yet to even see Maegeht.  Rumor says he wouldn't be allowed with his army, and that he has no reason to see the palace without it.[PARAGRAPH:1]All agree Aradon represents the darker aspects of the Rites, of the shadows too easily born of all-consuming ambition and an eagerness for violence.  Just how far into the shadows Aradon has stalked, only the Wolf himself can say.</French>
+		<German>A "March Paragon," the Epitome Aradon commands by acclaim rather than appointment from the Apothearch.  Called "the Wolf," Aradon made a name for himself by starting and winning a small war the week of his elevation.  Officially censored by palace, his campaign was marked by cruelties seldom seen among the Unblemished.  Such dark practices ended after the rebuke.  Or at least word of them did.[PARAGRAPH:1]Unpredictable in the extreme, the only constants of Aradon's behavior are his great loves.  Love of wealth, and love of power.  He is not known to be devout in the Rites, yet few can match his determination and willingness to embrace struggle.[PARAGRAPH:1]Aradon spends many nights among the campfires of his troops, cultivating the comradarie expected from Unblemished commanders.  Despite this he maintains an iron-hard grip on both his forces and himself.  He rarely leaves the field, weilding his army and often even ruling it's conquests independantly of the capital.  He's yet to even see Maegeht.  Rumor says he wouldn't be allowed with his army, and that he has no reason to see the palace without it.[PARAGRAPH:1]All agree Aradon represents the darker aspects of the Rites, of the shadows too easily born of all-consuming ambition and an eagerness for violence.  Just how far into the shadows Aradon has stalked, only the Wolf himself can say.</German>
+		<Italian>A "March Paragon," the Epitome Aradon commands by acclaim rather than appointment from the Apothearch.  Called "the Wolf," Aradon made a name for himself by starting and winning a small war the week of his elevation.  Officially censored by palace, his campaign was marked by cruelties seldom seen among the Unblemished.  Such dark practices ended after the rebuke.  Or at least word of them did.[PARAGRAPH:1]Unpredictable in the extreme, the only constants of Aradon's behavior are his great loves.  Love of wealth, and love of power.  He is not known to be devout in the Rites, yet few can match his determination and willingness to embrace struggle.[PARAGRAPH:1]Aradon spends many nights among the campfires of his troops, cultivating the comradarie expected from Unblemished commanders.  Despite this he maintains an iron-hard grip on both his forces and himself.  He rarely leaves the field, weilding his army and often even ruling it's conquests independantly of the capital.  He's yet to even see Maegeht.  Rumor says he wouldn't be allowed with his army, and that he has no reason to see the palace without it.[PARAGRAPH:1]All agree Aradon represents the darker aspects of the Rites, of the shadows too easily born of all-consuming ambition and an eagerness for violence.  Just how far into the shadows Aradon has stalked, only the Wolf himself can say.</Italian>
+		<Spanish>A "March Paragon," the Epitome Aradon commands by acclaim rather than appointment from the Apothearch.  Called "the Wolf," Aradon made a name for himself by starting and winning a small war the week of his elevation.  Officially censored by palace, his campaign was marked by cruelties seldom seen among the Unblemished.  Such dark practices ended after the rebuke.  Or at least word of them did.[PARAGRAPH:1]Unpredictable in the extreme, the only constants of Aradon's behavior are his great loves.  Love of wealth, and love of power.  He is not known to be devout in the Rites, yet few can match his determination and willingness to embrace struggle.[PARAGRAPH:1]Aradon spends many nights among the campfires of his troops, cultivating the comradarie expected from Unblemished commanders.  Despite this he maintains an iron-hard grip on both his forces and himself.  He rarely leaves the field, weilding his army and often even ruling it's conquests independantly of the capital.  He's yet to even see Maegeht.  Rumor says he wouldn't be allowed with his army, and that he has no reason to see the palace without it.[PARAGRAPH:1]All agree Aradon represents the darker aspects of the Rites, of the shadows too easily born of all-consuming ambition and an eagerness for violence.  Just how far into the shadows Aradon has stalked, only the Wolf himself can say.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_WTF</Tag>
+		<English>The Assembly here has been destroyed.</English>
+		<French>The Assembly here has been destroyed.</French>
+		<German>The Assembly here has been destroyed.</German>
+		<Italian>The Assembly here has been destroyed.</Italian>
+		<Spanish>The Assembly here has been destroyed.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag></Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+    </TEXT>
+</Civ4GameText>

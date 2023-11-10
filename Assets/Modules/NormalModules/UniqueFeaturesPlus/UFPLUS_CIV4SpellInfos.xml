@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:UFPLUS_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_EXPLORE_LAIR_BRADELINES_WELL</Type>
+            <PyResult>__import__('UniqueFeaturesPlus').spellExploreLairEpic(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqExploreLairEpic(pCaster)</PyRequirement>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_EXPLORE_LAIR_BROKEN_SEPULCHER</Type>
+            <PyResult>__import__('UniqueFeaturesPlus').spellExploreLairEpic(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqExploreLairEpic(pCaster)</PyRequirement>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_EXPLORE_LAIR_PYRE_OF_THE_SERAPHIC</Type>
+            <PyResult>__import__('UniqueFeaturesPlus').spellExploreLairEpic(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqExploreLairEpic(pCaster)</PyRequirement>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_EXPLORE_LAIR_TOWER_OF_EYES</Type>
+            <Description>TXT_KEY_SPELL_EXPLORE_LAIR</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <ImprovementPrereq>IMPROVEMENT_TOWER_OF_EYES</ImprovementPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>__import__('UniqueFeaturesPlus').spellExploreLairEpic(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqExploreLairEpic(pCaster)</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_HASTE</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,3,4</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SANCTIFY_UNIQUE_FEATURE</Type>
+            <Description>TXT_KEY_SPELL_SANCTIFY_UNIQUE_FEATURE</Description>
+            <Help>TXT_KEY_SPELL_SANCTIFY_UNIQUE_FEATURE_HELP</Help>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <UnitPrereq>UNIT_MONK</UnitPrereq>
+            <CivilizationPrereq>CIVILIZATION_ELOHIM</CivilizationPrereq>
+            <iCasterMinLevel>3</iCasterMinLevel>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>300</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>__import__('UniqueFeaturesPlus').spellSanctifyUF(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqSanctifyUF(pCaster)</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_SANCTIFY</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,2,10</Button>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

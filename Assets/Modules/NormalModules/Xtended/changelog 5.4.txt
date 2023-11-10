@@ -1,0 +1,79 @@
+changelog 5.4
+
+- [AOS SI] Sprites and Sun Faeries have +1 Fire affinity. Pixies and Moon Faeries have +1 Cold affinity. Eternal Court units have Nature affinity.
+- [AOS SI] Pixie and Sprite no longer cost metal.
+- [AOS SI] Fixed Sun Faerie's Brilliance.
+- [AOS SI] Foxfire is now str 8/8 +2 fire +2 Fire mana affinity.
+- [AOS SI] Larincidhe (the hero) is now Melee unit.
+- [AOS SI] Merged Linvega's tweaks for Aos Si.
+	- Aos Si Slave can teleport to Capital.
+	- On Winter Court, Aos Si Slave can be sacrificed to increase city population.
+- [AOS SI] Leaders' traits changes:
+	- Larincsidhe is Enlightened/Summoner/Nature Magic Mastery.
+	- Corm Dubh is Charismatic/Philosophical/Fire Magic Mastery.
+	- Carn Diorne is Aggressive/Hunter/Water Magic Mastery.
+- [AOS SI] Fixed Aos Si unit graphics changing into Ljosalfar's upon getting Eternal Faerie promotion.
+- [AMURITES] Changed Govannon's Aura. Now it gives Govannon Legacy to units with Channeling 1 (mostly Arcane) and Arcane Weapon/Shield.
+- [AMURITES] Animals and Beasts are not silenced by Arcane Lacuna. Non-Amurites Humanoids will lost all of their abilities (spells, miracles or special abilities).
+- [AMURITES] Alchemy Lab is now 2 science/1 mana/1 spell research. Amurites' Transmutation Lab is 2 science/2 mana/2 spell research.
+- [AUSTRIN] Harmatt is str 10/10 +2 Air mana affinity +scale with tech (he is a mid game hero).
+- [AUSTRIN] Prepare Settlement requires Exotic trait. Only Sorah and Ecks can use this feature. 
+- [AUSTRIN] Deirdra now Trader/Cartographer. Trader gives 30% food/hammer/commerce from trade routes. Cartographer gives her Barter and Cartography techs at the start of the game .
+- [AUSTRIN] Deirdra has +2 diplo modifiers both to and from male/female leaders. This will help her to establish trade routes.
+- [AUSTRIN] has Food Caravan building (requires Merchant District) which sells 10 food for 4 gold (+1 gold for each food resources). AI can only build this after the city has reached its maximum (6, or 8 in the Capital).
+- [BALSERAPHS] Balseraphs start with 3 Freaks and Loki, to help AI Balseraphs.
+- [BALSERAPHS] More powerful promotions are available through Mutated.
+- [BANNOR] Starts with 2 Footmen and 1 Demon Hunter.
+- [BANNOR] Bannor palace gives +20 metal, instead of +15. It does not give herbs. This is necessary to help AI Bannor.
+- [CLAN] Clan of the Embers can not explore barbarian lairs (Goblin Forts etc) unless breaking the peace with the Barbarian faction.
+- [DOVIELLO] Starts with Lucian and 3 Beastmen, to boost early game strength.
+- [DOVIELLO] Feral trait enables units to steal weapon/armor if they win battle and do not have one. Chance: 20% + unit level.
+- [DURAL] Starts with Builder's Code (give quarries +2 stone and mines +2 metal, able to research Righteousness).
+- [ELOHIM] Monks start with Staff, but still unable to buy any other weapons/armors/gears.
+- [ELOHIM] Hospitaliers start with movement of 2.
+- [ELOHIM] Changed Shrine Maiden's healing spell's name to Sirona's Touch. The old Sirona Touch is not working, don't know why.
+- [HIPPUS] Adjusted Magnadine's Recruit. Magnadine can recruit various units now.
+- [HIPPUS] Magnadine is buildable at Horseback Riding.
+- [HIPPUS] Starts with 2 Spearmen and 1 Scout.
+- [ILLIANS] Starts with 1 Frost Maiden and 2 Javelin Thrower.
+- [INFERNAL] Gains +1 food on Field of Perdition (so they can found cities there).
+- [KHAZAD] Boar Riders can bring birds, not any other units (!)
+- [KHAZAD] Gains +1 food on Sordid Field.
+- [KHAZAD] Fixed Create Battering Ram (again!).
+- [KURIOTATES] Musteval lost Trap Making 2.
+- [KURIOTATES] Added Guardinal for Kuriotates Ranger UU, with Trap Making 2.
+- [KURIOTATES] Moved Skaven to Esus Guild.
+- [MAZATL] AI can play Mazatl.
+- [SHEAIM] Starts with 3 Queensquards.
+- [SIDAR] Meditation Ground (Training Yard UB) gives Inspiration (+10% str, immune to fear) to units staying in the city.
+- [SIDAR] Chamber of Reflection (Barrack UB) gives Inner Strength (+20% heal rate in own territory) to units staying in the city.
+- [SIDAR] Granite Fort (Archery Range UB) gives +30% defense and +20% resist spell to units staying in the city.
+- [SIDAR] College of Mists (War Academy UB) gives Quick Learner to units build in the city.
+- [BUILDING] Stonecutter is buildable on cities with stone income, gives +25% of that city's stone income, costs 100 hammers/100 metal.
+- [BUILDING] Sawmill and Enchanted Sawmill cost 100 hammer/100 metal each.
+- [BUILDING] Shaft Mine and Deep Mine cost 100 hammer/100 lumber each.
+- [BUILDING] Agravaine Supply gives +2 lumber/+2 stone for Trading Posts, Trading Markets and Trading Centers.
+- [BUILDING] Alms House requires -2 gold/turn maintenance (no longer -1 gold/culture level), gives +1 happiness per 10% culture and faith slider.
+- [BUILDING] Infirmary no longer requires Aqueduct in the city.
+- [BUILDING] Shrine of Sirona grants +1 Life Mana, +1 happiness for Alms Houses and Infirmaries.
+- [BUILDING] Moved Inn to Trade.
+- [BUILDING] Moved Naval Academy to Warfare.
+- [BUILDING] Celestial Compass is moved to Wealth of Nations, giving +2 Merchant GPP, makes merchant specialists give +1 gold.
+- [GAME] Gaelan starts with Channeling 1-3, strength 0/10, combat aura spreads Mutated to friendly units.
+- [GAME] "Noble Houses of Erebus" button is now on the same row with "Magic screen" button.
+- [GAME] Fixed pink buttons on Appocalypse horsemen's auras.
+- [GAME] Fixed Child of Condatis' red blob attack.
+- [GAME] Wild Ogres kill themselves automatically, making Ogre population manageable (should be at most 4 Ogres now).
+- [GEAR] Added Elixir of Life for Esus Guild. It heals your unit a bit but it can not move for two turns.
+- [GEAR] Added Witches' Brew at Poisons (the tech). It heals your unit to half of their HP but mutated them.
+- [GEAR] Added Blood of Dragon potion, which turns the drinker into Red Drake permanently. You can find this on dungeons/lairs.
+- [GEAR] Added Rifles and ammos for Khazad and Dural.
+- [IMPROVEMENT] Quarries now give +1 hammer/+4 stone.
+- [MAGIC] (Mind School) Fixed Clarity promotion's pink button on tool tip.
+- [PROMOTION] Fixed Assimilate Mind (for sure this time!)
+- [RELIGION] Gives Satyr stronger Bloom.
+- [RELIGION] Hemah no longer scales with tech but gain +2 Water mana affinity.
+- [TERRAIN] Removes Fertile Grass from random map generation.
+- [TECH] Blasting Powder no longer increases yields from mine. It unlocked various rifles instead. Non-Khazad and non-Dural do not need to research this.
+- [TECH] Renamed Guilds tech to Wealth of Nations, to avoid confusion.
+- [TECH] Trades through Deep Ocean is pushed back to Wealth of Nations.

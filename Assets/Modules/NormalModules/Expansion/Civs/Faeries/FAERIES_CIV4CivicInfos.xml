@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:FAERIES_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+            <Type>CIVIC_NONE</Type>
+            <Description>None</Description>
+            <Civilopedia>Default civic for non-Faerie Civilizations.</Civilopedia>
+            <Button>Art/Interface/Buttons/TechTree/Never.dds</Button>
+            <bStateReligion>1</bStateReligion>
+        </CivicInfo>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+            <Type>CIVIC_WINTER_COURT</Type>
+            <Description>Winter Court</Description>
+            <Help>Converts all your units to Winter Court units, and your terrain to Snow</Help>
+            <Button>, ,Art/Interface/Buttons/Misc_Atlas1.dds,4,1</Button>
+            <iNumCitiesMaintenanceModifier>20</iNumCitiesMaintenanceModifier>
+            <iMilitaryProductionModifier>10</iMilitaryProductionModifier>
+            <bStateReligion>1</bStateReligion>
+            <YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>15</iYield>
+				<iYield>0</iYield>
+            </YieldModifiers>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-75</iYield>
+			</TradeYieldModifiers>			
+            <PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+            <PrereqReligion>NONE</PrereqReligion>
+        </CivicInfo>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+            <Type>CIVIC_SUMMER_COURT</Type>
+            <Description>Summer Court</Description>
+			<Help>Converts all your units to Summer Court units, and your terrain to Grasslands</Help>
+            <Button>Art/Interface/Buttons/TechTree/Hiddenpaths.dds</Button>
+            <iDistanceMaintenanceModifier>-10</iDistanceMaintenanceModifier>
+            <iNumCitiesMaintenanceModifier>-10</iNumCitiesMaintenanceModifier>
+            <iCorporationMaintenanceModifier>0</iCorporationMaintenanceModifier>
+            <iExtraHealth>1</iExtraHealth>
+            <bStateReligion>1</bStateReligion>
+            <Hurrys>
+			    <Hurry>
+                    <HurryType>HURRY_GOLD</HurryType>
+                    <bHurry>1</bHurry>
+                </Hurry>
+            </Hurrys>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>-33</iYield>
+			</TradeYieldModifiers>						
+            <PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+            <PrereqReligion>NONE</PrereqReligion>
+        </CivicInfo>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+            <Type>CIVIC_ETERNAL_COURT</Type>
+            <Description>Eternal Court</Description>
+            <Help>Allows you the bonuses of both courts, and then some.</Help>
+            <Button>Art/Interface/Buttons/Promotions/SoftSpoken.dds</Button>
+			<TechPrereq>TECH_ARCANE_LORE</TechPrereq>
+            <iGreatPeopleRateModifier>10</iGreatPeopleRateModifier>
+            <iDistanceMaintenanceModifier>-10</iDistanceMaintenanceModifier>
+            <iNumCitiesMaintenanceModifier>-10</iNumCitiesMaintenanceModifier>
+            <iExtraHealth>1</iExtraHealth>
+            <bStateReligion>1</bStateReligion>
+            <YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>10</iYield>
+				<iYield>0</iYield>
+            </YieldModifiers>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>10</iCommerce>
+			</CommerceModifiers>
+            <Hurrys>
+			    <Hurry>
+                    <HurryType>HURRY_GOLD</HurryType>
+                    <bHurry>1</bHurry>
+                </Hurry>
+            </Hurrys>
+            <FeatureHappinessChanges>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_ETERNAL_WOODS</FeatureType>
+					<iHappinessChange>25</iHappinessChange>
+				</FeatureHappinessChange>
+            </FeatureHappinessChanges>
+            <WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DESPOT</WeLoveTheKing>
+            <PrereqCivilization>CIVILIZATION_FAERIES</PrereqCivilization>
+        </CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

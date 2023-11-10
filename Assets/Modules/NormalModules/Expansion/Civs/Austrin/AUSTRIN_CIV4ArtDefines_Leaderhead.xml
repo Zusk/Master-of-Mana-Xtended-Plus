@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:AUSTRIN_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_DEIRDRA</Type>
+			<Button>,Art/interface/LeaderHeads/Austrin/DeirdraButton.dds</Button>
+			<NIF>art/interface/LeaderHeads/Austrin/Deirdra.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SORAH_AND_ECKS</Type>
+			<Button>art/interface/LeaderHeads/Austrin/sorah_and_ecks_button.dds</Button>
+			<NIF>art/interface/LeaderHeads/Austrin/sorah_and_ecks.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>		
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

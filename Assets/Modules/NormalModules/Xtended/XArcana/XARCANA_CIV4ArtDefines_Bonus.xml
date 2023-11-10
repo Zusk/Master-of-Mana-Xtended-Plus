@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jon Shafer (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 --><!-- -->
+<!-- Bonus/Resource art path information -->
+<Civ4ArtDefines xmlns="x-schema:XARCANA_CIV4ArtDefinesSchema.xml">
+	<BonusArtInfos>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_MANA_WATER</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/mana/Raw Mana/water_mana.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/WorldBuilder/Water.dds</Button>
+			<FontButtonIndex>49</FontButtonIndex>
+		</BonusArtInfo>
+	</BonusArtInfos>
+</Civ4ArtDefines>

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XELOHIM_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_PEACE</Type>
+            <Description>TXT_KEY_SPELL_PEACE</Description>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_PEACE_HELP</Help>
+            <UnitPrereq>UNIT_CORLINDALE</UnitPrereq>
+            <AddPromotionType1>PROMOTION_PEACEFUL_CORLINDALE</AddPromotionType1>
+            <bAllowAI>1</bAllowAI>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+            <bSacrificeCaster>1</bSacrificeCaster>
+			<PyResult>spellPeace(pCaster)</PyResult>
+            <PyRequirement>reqPeace(pCaster)</PyRequirement>
+            <Effect>EFFECT_CREATION</Effect>
+            <Sound>AS3D_SPELL_BLESS</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,5,7</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SANCTIFY_UNIQUE_FEATURE</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>Sealing Ritual</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>[ICON_BULLET]Removes bad mana and prevents exploration from epic dungeons (permanent).[NEWLINE][ICON_BULLET]Performing this ritual gives [COLOR_TECH_TEXT]+100 exp[COLOR_REVERT].</Help>
+            <UnitPrereq>UNIT_DEVOUT</UnitPrereq>
+            <CivilizationPrereq>CIVILIZATION_ELOHIM</CivilizationPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>300</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>__import__('UniqueFeaturesPlus').spellSanctifyUF(pCaster)</PyResult>
+            <PyRequirement>__import__('UniqueFeaturesPlus').reqSanctifyUF(pCaster)</PyRequirement>
+            <Effect>EFFECT_RESSURECTION</Effect>
+            <Sound>AS3D_SPELL_BLESS</Sound>
+            <Button>Modules/NormalModules/Xtended/XReligion/Buttons/sealing_uf.dds</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_GLORIES_PACIFY</Type>
+            <Description>Pacify</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <UnitPrereq>UNIT_GLORIES</UnitPrereq>
+            <bAbility>1</bAbility>
+            <bAllowAI>1</bAllowAI>
+			<iAIWeight>500</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <iRange>1</iRange>
+			<AddPromotionType1>PROMOTION_SILENCED</AddPromotionType1>			
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <Effect>EFFECT_RESSURECTION</Effect>
+            <Sound>AS3D_SPELL_DESTROY_UNDEAD</Sound>
+            <Button>Modules/NormalModules/Xtended/XReligion/Buttons/Pacify_Glories.dds</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>3</iNumTargets>
+			<iFaithCost>100</iFaithCost>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SUNLIGHT_MAIDEN</Type>
+            <Description>Banish Evil</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <UnitPrereq>UNIT_SHRINE_MAIDEN</UnitPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <iDamage>25</iDamage>
+            <iDamageLimit>100</iDamageLimit>
+            <DamageType>DAMAGE_HOLY</DamageType>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <iImmobileTurns>2</iImmobileTurns>
+            <Effect>EFFECT_TURN_UNDEAD_SPELL</Effect>
+            <Sound>AS3D_SPELL_BLESS</Sound>
+            <Button>Art/Interface/Buttons/Manaschools/Light.dds</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>3</iNumTargets>
+			<iAIWeight>200</iAIWeight>
+			<iManaCost>40</iManaCost>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SIRONAS_TOUCH</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>TXT_KEY_SPELL_SIRONAS_TOUCH</Description>
+            <Civilopedia>Elohim's Shrine Maidens help their allies by healing their wounds and easing their sufferings.</Civilopedia>
+            <UnitPrereq>UNIT_SHRINE_MAIDEN</UnitPrereq>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+			<iHeal>50</iHeal>
+            <RemovePromotionType1>PROMOTION_DISEASED</RemovePromotionType1>
+            <RemovePromotionType2>PROMOTION_POISONED</RemovePromotionType2>
+            <RemovePromotionType3>PROMOTION_CRIPPLED</RemovePromotionType3>
+            <Effect>EFFECT_CREATION</Effect>
+            <Sound>AS3D_SPELL_HEAL</Sound>
+            <Button>Modules/NormalModules/Xtended/XPromotion/Buttons1/Monk5.dds</Button>
+			<iFaithCost>100</iFaithCost>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

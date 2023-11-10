@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:WILDMANA_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+		<SpellInfo>
+            <Type>SPELL_GROUR_DARK_CURSE</Type>
+            <Description>Dark Curse of Grour</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+			<UnitPrereq>UNIT_GUARDIAN_GROUR</UnitPrereq>			
+            <bAllowAI>1</bAllowAI>
+			<iAIWeight>1000</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+			<bHasCasted>1</bHasCasted>
+            <iDamage>10</iDamage>
+            <iDamageLimit>20</iDamageLimit>
+            <DamageType>DAMAGE_UNHOLY</DamageType>
+            <Effect>EFFECT_WRAITH_SUMMON</Effect>
+            <Sound>AS3D_SPELL_DEFILE</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas2_tesb.dds,8,10</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>5</iNumTargets>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

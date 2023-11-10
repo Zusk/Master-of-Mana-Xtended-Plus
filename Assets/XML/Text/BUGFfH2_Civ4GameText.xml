@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BUGFfH by Denev-->
+<Civ4GameText xmlns="http://www.firaxis.com">
+<!-- New Entries by Denev -->
+	<!-- Civilopedia (Major Category) -->
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_WORLD_WONDERS</Tag>
+        <English>World Wonders</English>
+        <French>Merveille mondiale</French>
+        <German>Weltwunder</German>
+        <Italian>Grande Meraviglia</Italian>
+        <Spanish>Maravilla del mundo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_EQUIPMENTS</Tag>
+        <English>Equipments</English>
+        <French>Equipments</French>
+        <German>Equipments</German>
+        <Italian>Equipments</Italian>
+        <Spanish>Equipments</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_SPELLS</Tag>
+        <English>Spells</English>
+        <French>Spells</French>
+        <German>Spells</German>
+        <Italian>Spells</Italian>
+        <Spanish>Spells</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_ABILITY</Tag>
+		<English>Special Abilities</English>
+		<French>Special Abilities</French>
+		<German>Special Abilities</German>
+		<Italian>Special Abilities</Italian>
+		<Spanish>Special Abilities</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Resources) -->
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_PRODUCING_BUILDINGS</Tag>
+        <English>Producing Buildings</English>
+        <French>Producing Buildings</French>
+        <German>Producing Buildings</German>
+        <Italian>Producing Buildings</Italian>
+        <Spanish>Producing Buildings</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Buildings) -->
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_REQ_STATE_RELIGION</Tag>
+        <English>State[ICON_RELIGION] is</English>
+        <French>State[ICON_RELIGION] is</French>
+        <German>State[ICON_RELIGION] is</German>
+        <Italian>State[ICON_RELIGION] is</Italian>
+        <Spanish>State[ICON_RELIGION] is</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_REQ_CITY_HAS</Tag>
+        <English>City Has</English>
+        <French>City Has</French>
+        <German>City Has</German>
+        <Italian>City Has</Italian>
+        <Spanish>City Has</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Improvements) -->
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_BASE_YIELDS</Tag>
+		<English>Base Yields</English>
+		<French>Base Yields</French>
+		<German>Base Yields</German>
+		<Italian>Base Yields</Italian>
+		<Spanish>Base Yields</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_IMPROVEMENT_COST_TITLE</Tag>
+		<English>Build Cost:</English>
+		<French>Coût de la Construction: %d1_worker_turns</French>
+		<German>Bauen Sie Kosten:</German>
+		<Italian>Costruisca Costo:</Italian>
+		<Spanish>Costo de la figura:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_IMPROVEMENT_COST</Tag>
+		<English>[ICON_BULLET]%d1 [NUM1:Turn:Turns] by %s2_improvement</English>
+		<French>[ICON_BULLET]%d1 [NUM1:Turn:Turns] par %s2_improvement</French>
+		<German>[ICON_BULLET]%d1 [NUM1:Turn:Turns] von %s2_improvement</German>
+		<Italian>[ICON_BULLET]%d1 [NUM1:Turn:Turns] da %s2_improvement</Italian>
+		<Spanish>[ICON_BULLET]%d1 [NUM1:Turn:Turns] por %s2_improvement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_IMPROVEMENT_COST_KILL</Tag>
+		<English>[ICON_BULLET]%s1_unit Unit</English>
+		<French>[ICON_BULLET]%s1_unit Unit&#233;</French>
+		<German>[ICON_BULLET]%s1_unit Einheit</German>
+		<Italian>[ICON_BULLET]%s1_unit Unit&#224;</Italian>
+		<Spanish>[ICON_BULLET]%s1_unit Unidad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_IMPROVEMENT_COST_KILL_MULTIPLE</Tag>
+		<English>[ICON_BULLET]%d1 [NUM1:Unit:Units] of %s2_unit</English>
+		<French>[ICON_BULLET]%d1 [NUM1:Unit&#233;:Unit&#233;s] d'%s2_unit</French>
+		<German>[ICON_BULLET]%d1 [NUM1:Einheit:Einheiten] von %s2_unit</German>
+		<Italian>[ICON_BULLET]%d1 Unit&#224; di %s2_unit</Italian>
+		<Spanish>[ICON_BULLET]%d1 [NUM1:Unidad:Unidades] de %s2_unit</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Project) -->
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DOUBLE_SPEED</Tag>
+		<English>Double Speed Production with</English>
+		<French>Double Speed Production with</French>
+		<German>Double Speed Production with</German>
+		<Italian>Double Speed Production with</Italian>
+		<Spanish>Double Speed Production with</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Promotions) -->
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_PLAYER_PREREQ</Tag>
+        <English>Requires of Player</English>
+        <French>Requires of Player</French>
+        <German>Requires of Player</German>
+        <Italian>Requires of Player</Italian>
+        <Spanish>Requires of Player</Spanish>
+    </TEXT>
+	<!-- Civilopedia (Religions) -->
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FOUNDED_BY_FIRST</Tag>
+		<English>Founded by First to Discover</English>
+		<French>Fond&#233;e par le premier &#224; d&#233;couvrir</French>
+		<German>Founded by First to Discover</German>
+		<Italian>Fondato dalla prima civilit&#224; che scopre</Italian>
+		<Spanish>Fundado por el primero en descubrir</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_HEROES_OR_WONDERS_ENABLED</Tag>
+        <English>Heroes or Wonders Enabled</English>
+        <French>Heroes or Wonders Enabled</French>
+        <German>Heroes or Wonders Enabled</German>
+        <Italian>Heroes or Wonders Enabled</Italian>
+        <Spanish>Heroes or Wonders Enabled</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_ENABLED_WITHOUT_STATE</Tag>
+        <English>Enabled without State Religion</English>
+        <French>Enabled without State Religion</French>
+        <German>Enabled without State Religion</German>
+        <Italian>Enabled without State Religion</Italian>
+        <Spanish>Enabled without State Religion</Spanish>
+    </TEXT>
+	<!-- Civilopedia (Spells) -->
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_GAIN</Tag>
+        <English>Gain: %d1_Num</English>
+        <French>Gain: %d1_Num</French>
+        <German>Gain: %d1_Num</German>
+        <Italian>Gain: %d1_Num</Italian>
+        <Spanish>Gain: %d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_DELAY</Tag>
+        <English>Delay: %d1_turns [NUM1:Turn:Turns]</English>
+        <French>Delay: %d1_turns [NUM1:Turn:Turns]</French>
+        <German>Delay: %d1_turns [NUM1:Turn:Turns]</German>
+        <Italian>Delay: %d1_turns [NUM1:Turn:Turns]</Italian>
+        <Spanish>Delay: %d1_turns [NUM1:Turn:Turns]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CASTER_PREREQ</Tag>
+        <English>Requires of Caster</English>
+        <French>Requires of Caster</French>
+        <German>Requires of Caster</German>
+        <Italian>Requires of Caster</Italian>
+        <Spanish>Requires of Caster</Spanish>
+    </TEXT>
+	<!-- Civilopedia (Techs) -->
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_OTHERS_ENABLED</Tag>
+        <English>Others Enabled</English>
+        <French>Others Enabled</French>
+        <German>Others Enabled</German>
+        <Italian>Others Enabled</Italian>
+        <Spanish>Others Enabled</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_UNRESEARCHABLE</Tag>
+        <English>Can not be Researched</English>
+        <French>Can not be Researched</French>
+        <German>Can not be Researched</German>
+        <Italian>Can not be Researched</Italian>
+        <Spanish>Can not be Researched</Spanish>
+    </TEXT>
+	<!-- Civilopedia (Terrain) -->
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_TERRAIN_EARTHLY</Tag>
+        <English>Earthly Terrain</English>
+        <French>Earthly Terrain</French>
+        <German>Earthly Terrain</German>
+        <Italian>Earthly Terrain</Italian>
+        <Spanish>Earthly Terrain</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_TERRAIN_HELL</Tag>
+        <English>Hell Terrain</English>
+        <French>Hell Terrain</French>
+        <German>Hell Terrain</German>
+        <Italian>Hell Terrain</Italian>
+        <Spanish>Hell Terrain</Spanish>
+    </TEXT>
+	<!-- Resource Help -->
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TILE_MODIFIER</Tag>
+        <English>Tile Modifier:</English>
+        <French>Tile Modifier:</French>
+        <German>Tile Modifier:</German>
+        <Italian>Tile Modifier:</Italian>
+        <Spanish>Tile Modifier:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_FREE_PROMOTION</Tag>
+        <English>[ICON_BULLET]Free %s1_promotion for new units belonging to available category in the city</English>
+        <French>[ICON_BULLET]Free %s1_promotion for new units belonging to available category in the city</French>
+        <German>[ICON_BULLET]Free %s1_promotion for new units belonging to available category in the city</German>
+        <Italian>[ICON_BULLET]Free %s1_promotion for new units belonging to available category in the city</Italian>
+        <Spanish>[ICON_BULLET]Free %s1_promotion for new units belonging to available category in the city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_FREE_PROMOTION_CHANCE</Tag>
+        <English>[ICON_BULLET]%D1_chance% chance free %s2_promotion for new units belonging to available category in the city</English>
+        <French>[ICON_BULLET]%D1_chance% chance free %s2_promotion for new units belonging to available category in the city</French>
+        <German>[ICON_BULLET]%D1_chance% chance free %s2_promotion for new units belonging to available category in the city</German>
+        <Italian>[ICON_BULLET]%D1_chance% chance free %s2_promotion for new units belonging to available category in the city</Italian>
+        <Spanish>[ICON_BULLET]%D1_chance% chance free %s2_promotion for new units belonging to available category in the city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_FORBIDDEN_MANA_PENALTY</Tag>
+        <English>[ICON_BULLET]%D1_penalty Attitude Modifier (Each Leader evaluates this coefficient value)</English>
+        <French>[ICON_BULLET]%D1_penalty Attitude Modifier (Each Leader evaluates this coefficient value)</French>
+        <German>[ICON_BULLET]%D1_penalty Attitude Modifier (Each Leader evaluates this coefficient value)</German>
+        <Italian>[ICON_BULLET]%D1_penalty Attitude Modifier (Each Leader evaluates this coefficient value)</Italian>
+        <Spanish>[ICON_BULLET]%D1_penalty Attitude Modifier (Each Leader evaluates this coefficient value)</Spanish>
+	</TEXT>
+	<!-- Building Help -->
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FREE_PROMOTION_STAYED</Tag>
+		<English>[ICON_BULLET]Free %s1_Name Promotion for Units Stayed in this City</English>
+		<French>[ICON_BULLET]Free %s1_Name Promotion for Units Stayed in this City</French>
+		<German>[ICON_BULLET]Free %s1_Name Promotion for Units Stayed in this City</German>
+		<Italian>[ICON_BULLET]Free %s1_Name Promotion for Units Stayed in this City</Italian>
+		<Spanish>[ICON_BULLET]Free %s1_Name Promotion for Units Stayed in this City</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REPLACES_BUILDING</Tag>
+		<English>Replaces %s1_default_building</English>
+		<French>Remplace : %s1_default_building</French>
+		<German>Ersetzt %s1_default_building</German>
+		<Italian>Sostituisce l'unit&#224; %s1_default_building</Italian>
+		<Spanish>Reemplaza a la unidad de %s1_default_building</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_IGNORE_REQUIREMENT</Tag>
+		<English>[SPACE](Ignoring Requirements)</English>
+		<French>[SPACE](Ignoring Requirements)</French>
+		<German>[SPACE](Ignoring Requirements)</German>
+		<Italian>[SPACE](Ignoring Requirements)</Italian>
+		<Spanish>[SPACE](Ignoring Requirements)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_REQ_STATE_RELIGION</Tag>
+        <English>[COLOR_WARNING_TEXT]Requires %F1_RelIcon as State[ICON_RELIGION][COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Requires %F1_RelIcon as State[ICON_RELIGION][COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Requires %F1_RelIcon as State[ICON_RELIGION][COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Requires %F1_RelIcon as State[ICON_RELIGION][COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requires %F1_RelIcon as State[ICON_RELIGION][COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_REQ_CITY_HAS_RELIGION</Tag>
+        <English>[COLOR_WARNING_TEXT]Requires %F1_RelIcon in the City[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Requires %F1_RelIcon in the City[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Requires %F1_RelIcon in the City[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Requires %F1_RelIcon in the City[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requires %F1_RelIcon in the City[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_REQ_CITY_HAS</Tag>
+        <English>[COLOR_WARNING_TEXT]Requires %s1_requirement in the City[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Requires %s1_requirement in the City[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Requires %s1_requirement in the City[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Requires %s1_requirement in the City[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requires %s1_requirement in the City[COLOR_REVERT]</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_DWARVEN_VAULT_HELP</Tag>
+        <English>[ICON_BULLET]Be upgraded automatically depending on the amount of Empire Treasury per City.[NEWLINE][SPACE][SPACE][ICON_BULLET]000-049 [ICON_GOLD] per City: +2 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]050-099 [ICON_GOLD] per City: +1 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]100-149 [ICON_GOLD] per City: None[NEWLINE][SPACE][SPACE][ICON_BULLET]150-199 [ICON_GOLD] per City: +1 [ICON_HAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]200-299 [ICON_GOLD] per City: +2 [ICON_HAPPY], +10% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]300-499 [ICON_GOLD] per City: +2 [ICON_HAPPY], +25% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]500over [ICON_GOLD] per City: +3 [ICON_HAPPY], +40% [ICON_PRODUCTION], +25% [ICON_GREATPEOPLE]</English>
+        <French>[ICON_BULLET]Be upgraded automatically depending on the amount of Empire Treasury per City.[NEWLINE][SPACE][SPACE][ICON_BULLET]000-049 [ICON_GOLD] per City: +2 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]050-099 [ICON_GOLD] per City: +1 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]100-149 [ICON_GOLD] per City: None[NEWLINE][SPACE][SPACE][ICON_BULLET]150-199 [ICON_GOLD] per City: +1 [ICON_HAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]200-299 [ICON_GOLD] per City: +2 [ICON_HAPPY], +10% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]300-499 [ICON_GOLD] per City: +2 [ICON_HAPPY], +25% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]500over [ICON_GOLD] per City: +3 [ICON_HAPPY], +40% [ICON_PRODUCTION], +25% [ICON_GREATPEOPLE]</French>
+        <German>[ICON_BULLET]Be upgraded automatically depending on the amount of Empire Treasury per City.[NEWLINE][SPACE][SPACE][ICON_BULLET]000-049 [ICON_GOLD] per City: +2 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]050-099 [ICON_GOLD] per City: +1 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]100-149 [ICON_GOLD] per City: None[NEWLINE][SPACE][SPACE][ICON_BULLET]150-199 [ICON_GOLD] per City: +1 [ICON_HAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]200-299 [ICON_GOLD] per City: +2 [ICON_HAPPY], +10% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]300-499 [ICON_GOLD] per City: +2 [ICON_HAPPY], +25% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]500over [ICON_GOLD] per City: +3 [ICON_HAPPY], +40% [ICON_PRODUCTION], +25% [ICON_GREATPEOPLE]</German>
+        <Italian>[ICON_BULLET]Be upgraded automatically depending on the amount of Empire Treasury per City.[NEWLINE][SPACE][SPACE][ICON_BULLET]000-049 [ICON_GOLD] per City: +2 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]050-099 [ICON_GOLD] per City: +1 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]100-149 [ICON_GOLD] per City: None[NEWLINE][SPACE][SPACE][ICON_BULLET]150-199 [ICON_GOLD] per City: +1 [ICON_HAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]200-299 [ICON_GOLD] per City: +2 [ICON_HAPPY], +10% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]300-499 [ICON_GOLD] per City: +2 [ICON_HAPPY], +25% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]500over [ICON_GOLD] per City: +3 [ICON_HAPPY], +40% [ICON_PRODUCTION], +25% [ICON_GREATPEOPLE]</Italian>
+        <Spanish>[ICON_BULLET]Be upgraded automatically depending on the amount of Empire Treasury per City.[NEWLINE][SPACE][SPACE][ICON_BULLET]000-049 [ICON_GOLD] per City: +2 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]050-099 [ICON_GOLD] per City: +1 [ICON_UNHAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]100-149 [ICON_GOLD] per City: None[NEWLINE][SPACE][SPACE][ICON_BULLET]150-199 [ICON_GOLD] per City: +1 [ICON_HAPPY][NEWLINE][SPACE][SPACE][ICON_BULLET]200-299 [ICON_GOLD] per City: +2 [ICON_HAPPY], +10% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]300-499 [ICON_GOLD] per City: +2 [ICON_HAPPY], +25% [ICON_PRODUCTION][NEWLINE][SPACE][SPACE][ICON_BULLET]500over [ICON_GOLD] per City: +3 [ICON_HAPPY], +40% [ICON_PRODUCTION], +25% [ICON_GREATPEOPLE]</Spanish>
+    </TEXT>
+	<!-- Civic Help -->
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_YIELD_FROM_IMPROVEMENT</Tag>
+		<English>[SPACE]from %s1_ImprovementName</English>
+		<French>[SPACE]: %s1_ImprovementName</French>
+		<German>[SPACE]durch die Modernisierung %s1_ImprovementName</German>
+		<Italian>[SPACE]da %s1_ImprovementName</Italian>
+		<Spanish>[SPACE]por %s1_ImprovementName</Spanish>
+	</TEXT>
+	<!-- Feature Help -->
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_GROWING_TO_NEAR_TILE</Tag>
+		<English>[ICON_BULLET]1 in %d1_denominator% chance of growing per each %d2_num_directions adjacent tiles[NEWLINE][ICON_BULLET]1 in %d3_denominator% chance of growing per each tiles with any route</English>
+		<French>[ICON_BULLET]1 in %d1_denominator% chance of growing per each %d2_num_directions adjacent tiles[NEWLINE][ICON_BULLET]1 in %d3_denominator% chance of growing per each tiles with any route</French>
+		<German>[ICON_BULLET]1 in %d1_denominator% chance of growing per each %d2_num_directions adjacent tiles[NEWLINE][ICON_BULLET]1 in %d3_denominator% chance of growing per each tiles with any route</German>
+		<Italian>[ICON_BULLET]1 in %d1_denominator% chance of growing per each %d2_num_directions adjacent tiles[NEWLINE][ICON_BULLET]1 in %d3_denominator% chance of growing per each tiles with any route</Italian>
+		<Spanish>[ICON_BULLET]1 in %d1_denominator% chance of growing per each %d2_num_directions adjacent tiles[NEWLINE][ICON_BULLET]1 in %d3_denominator% chance of growing per each tiles with any route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FLAMMABLE</Tag>
+		<English>[ICON_BULLET]Can catch [LINK=IMPROVEMENT_SMOKE]Fire[\LINK]</English>
+		<French>[ICON_BULLET]Can catch [LINK=IMPROVEMENT_SMOKE]Fire[\LINK]</French>
+		<German>[ICON_BULLET]Can catch [LINK=IMPROVEMENT_SMOKE]Fire[\LINK]</German>
+		<Italian>[ICON_BULLET]Can catch [LINK=IMPROVEMENT_SMOKE]Fire[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can catch [LINK=IMPROVEMENT_SMOKE]Fire[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_REQUIRE_RESIST</Tag>
+		<English>[ICON_BULLET]Requires %D1_resist%% %s2_damage_type Resistance to Enter</English>
+		<French>[ICON_BULLET]Requires %D1_resist%% %s2_damage_type Resistance to Enter</French>
+		<German>[ICON_BULLET]Requires %D1_resist%% %s2_damage_type Resistance to Enter</German>
+		<Italian>[ICON_BULLET]Requires %D1_resist%% %s2_damage_type Resistance to Enter</Italian>
+		<Spanish>[ICON_BULLET]Requires %D1_resist%% %s2_damage_type Resistance to Enter</Spanish>
+	</TEXT>
+	<!-- Improvement Help -->
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_GENERATES_BONUS</Tag>
+		<English>[ICON_BULLET]Provides %s1_bonus</English>
+		<French>[ICON_BULLET]Provides %s1_bonus</French>
+		<German>[ICON_BULLET]Provides %s1_bonus</German>
+		<Italian>[ICON_BULLET]Provides %s1_bonus</Italian>
+		<Spanish>[ICON_BULLET]Provides %s1_bonus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_YIELD_WITH_TECH</Tag>
+		<English>[SPACE](with [COLOR_TECH_TEXT]%s1_TechName[COLOR_REVERT])</English>
+		<French>[SPACE](avec [COLOR_TECH_TEXT]%s1_TechName[COLOR_REVERT])</French>
+		<German>[SPACE](mit der Technologie [COLOR_TECH_TEXT]%s1_TechName[COLOR_REVERT])</German>
+		<Italian>[SPACE](con [COLOR_TECH_TEXT]%s1_TechName[COLOR_REVERT])</Italian>
+		<Spanish>[SPACE](con [COLOR_TECH_TEXT]%s1_TechName[COLOR_REVERT])</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_YIELD_FROM_CIVIC</Tag>
+		<English>[SPACE](from [COLOR_HIGHLIGHT_TEXT]%s1_CivicName[COLOR_REVERT])</English>
+		<French>[SPACE](: [COLOR_HIGHLIGHT_TEXT]%s1_CivicName[COLOR_REVERT])</French>
+		<German>[SPACE](durch die Modernisierung [COLOR_HIGHLIGHT_TEXT]%s1_CivicName[COLOR_REVERT])</German>
+		<Italian>[SPACE](da [COLOR_HIGHLIGHT_TEXT]%s1_CivicName[COLOR_REVERT])</Italian>
+		<Spanish>[SPACE](por [COLOR_HIGHLIGHT_TEXT]%s1_CivicName[COLOR_REVERT])</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_YIELD_WITH_ROUTE</Tag>
+		<English>[SPACE](with [COLOR_ALT_HIGHLIGHT_TEXT][LINK=CONCEPT_MOVEMENT]%s1_RouteName[\LINK][COLOR_REVERT])</English>
+		<French>[SPACE](avec [COLOR_ALT_HIGHLIGHT_TEXT][LINK=CONCEPT_MOVEMENT]%s1_RouteName[\LINK][COLOR_REVERT])</French>
+		<German>[SPACE](mit Bonusgut [COLOR_ALT_HIGHLIGHT_TEXT][LINK=CONCEPT_MOVEMENT]%s1_RouteName[\LINK][COLOR_REVERT])</German>
+		<Italian>[SPACE](con [COLOR_ALT_HIGHLIGHT_TEXT][LINK=CONCEPT_MOVEMENT]%s1_RouteName[\LINK][COLOR_REVERT])</Italian>
+		<Spanish>[SPACE](con [COLOR_ALT_HIGHLIGHT_TEXT][LINK=CONCEPT_MOVEMENT]%s1_RouteName[\LINK][COLOR_REVERT])</Spanish>
+	</TEXT>
+	<!-- Leader Help -->
+	<TEXT>
+		<Tag>TXT_KEY_TEMPORARY_TRAIT</Tag>
+		<English>[SPACE](Temporary)</English>
+		<French>[SPACE](Temporary)</French>
+		<German>[SPACE](Temporary)</German>
+		<Italian>[SPACE](Temporary)</Italian>
+		<Spanish>[SPACE](Temporary)</Spanish>
+	</TEXT>
+	<!-- Promotion Help -->
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXTRA_COMBAT_STR_BOTH</Tag>
+		<English>[ICON_BULLET]%D1 Strength</English>
+		<French>[ICON_BULLET]Puissance %D1</French>
+		<German>[ICON_BULLET]%D1 Stärke</German>
+		<Italian>[ICON_BULLET]%D1 di forza</Italian>
+		<Spanish>[ICON_BULLET]%D1 a la fuerza</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FREE_XP_CHANCE_PER_TURN</Tag>
+		<English>[ICON_BULLET]%D1% chance of gaining XP per turn</English>
+		<French>[ICON_BULLET]%D1% chance of gaining XP per turn</French>
+		<German>[ICON_BULLET]%D1% chance of gaining XP per turn</German>
+		<Italian>[ICON_BULLET]%D1% chance of gaining XP per turn</Italian>
+		<Spanish>[ICON_BULLET]%D1% chance of gaining XP per turn</Spanish>
+	</TEXT>
+	<!-- Religion Help -->
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_ALIGNMENT_CONVERT</Tag>
+        <English>[ICON_BULLET]State [ICON_RELIGION] converts %s1_alignment Leader to %s2_alignment</English>
+        <French>[ICON_BULLET]State [ICON_RELIGION] converts %s1_alignment Leader to %s2_alignment</French>
+        <German>[ICON_BULLET]State [ICON_RELIGION] converts %s1_alignment Leader to %s2_alignment</German>
+        <Italian>[ICON_BULLET]State [ICON_RELIGION] converts %s1_alignment Leader to %s2_alignment</Italian>
+        <Spanish>[ICON_BULLET]State [ICON_RELIGION] converts %s1_alignment Leader to %s2_alignment</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_ALIGNMENT_CONVERT_ANY</Tag>
+        <English>[ICON_BULLET]State [ICON_RELIGION] converts any Leader to %s1_alignment</English>
+        <French>[ICON_BULLET]State [ICON_RELIGION] converts any Leader to %s1_alignment</French>
+        <German>[ICON_BULLET]State [ICON_RELIGION] converts any Leader to %s1_alignment</German>
+        <Italian>[ICON_BULLET]State [ICON_RELIGION] converts any Leader to %s1_alignment</Italian>
+        <Spanish>[ICON_BULLET]State [ICON_RELIGION] converts any Leader to %s1_alignment</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_MODIFY_GLOBAL_COUNTER_ON_FOUND</Tag>
+        <English>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Founded</English>
+        <French>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Founded</French>
+        <German>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Founded</German>
+        <Italian>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Founded</Italian>
+        <Spanish>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Founded</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_MODIFY_GLOBAL_COUNTER_ON_SPREAD</Tag>
+        <English>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Spread</English>
+        <French>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Spread</French>
+        <German>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Spread</German>
+        <Italian>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Spread</Italian>
+        <Spanish>[ICON_BULLET]%D1 to the Armageddon Counter when %F2_RelIcon is Spread</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_HIDE_STATE_RELIGION</Tag>
+        <English>[ICON_BULLET]State [ICON_RELIGION] doesn't cause attitude penalty</English>
+        <French>[ICON_BULLET]State [ICON_RELIGION] doesn't cause attitude penalty</French>
+        <German>[ICON_BULLET]State [ICON_RELIGION] doesn't cause attitude penalty</German>
+        <Italian>[ICON_BULLET]State [ICON_RELIGION] doesn't cause attitude penalty</Italian>
+        <Spanish>[ICON_BULLET]State [ICON_RELIGION] doesn't cause attitude penalty</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_SNEAK_ATTACK</Tag>
+        <English>[ICON_BULLET]Declaring War doesn't push out your armies from opponent lands</English>
+        <French>[ICON_BULLET]Declaring War doesn't push out your armies from opponent lands</French>
+        <German>[ICON_BULLET]Declaring War doesn't push out your armies from opponent lands</German>
+        <Italian>[ICON_BULLET]Declaring War doesn't push out your armies from opponent lands</Italian>
+        <Spanish>[ICON_BULLET]Declaring War doesn't push out your armies from opponent lands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_UPDATE_SIGHT</Tag>
+        <English>[ICON_BULLET]State %F1_RelIcon Holy City owner gains visibility from all %F2_RelIcon cities</English>
+        <French>[ICON_BULLET]State %F1_RelIcon Holy City owner gains visibility from all %F2_RelIcon cities</French>
+        <German>[ICON_BULLET]State %F1_RelIcon Holy City owner gains visibility from all %F2_RelIcon cities</German>
+        <Italian>[ICON_BULLET]State %F1_RelIcon Holy City owner gains visibility from all %F2_RelIcon cities</Italian>
+        <Spanish>[ICON_BULLET]State %F1_RelIcon Holy City owner gains visibility from all %F2_RelIcon cities</Spanish>
+	</TEXT>
+	<!-- Spell Help -->
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_TERRAIN_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Can only be used in a %s1_terrain tile</English>
+        <French>[ICON_BULLET]Requires a %s1_terrain in the casters tile</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_terrain auf dem Feld des Zaubernden</German>
+        <Italian>[ICON_BULLET]Requires a %s1_terrain in the casters tile</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_terrain in the casters tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_TERRAIN2_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Can only be used in a %s1_terrain or a %s2_terrain tile</English>
+        <French>[ICON_BULLET]Requires a %s1_terrain or a %s2_terrain in the casters tile</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_terrain oder ein %s2_terrain auf dem Feld des Zaubernden.</German>
+        <Italian>[ICON_BULLET]Requires a %s1_terrain or a %s2_terrain in the casters tile</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_terrain or a %s2_terrain in the casters tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_REMOVED_BY_DISPEL</Tag>
+        <English>[ICON_BULLET]is Dispellable</English>
+        <French>[ICON_BULLET]is Dispellable</French>
+        <German>[ICON_BULLET]is Dispellable</German>
+        <Italian>[ICON_BULLET]is Dispellable</Italian>
+        <Spanish>[ICON_BULLET]is Dispellable</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_ARCHER</Tag>
+		<English>Upgrade to Archer</English>
+		<French>Upgrade to Archer</French>
+		<German>Upgrade to Archer</German>
+		<Italian>Upgrade to Archer</Italian>
+		<Spanish>Upgrade to Archer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_CHARIOT</Tag>
+		<English>Upgrade to Chariot</English>
+		<French>Upgrade to Chariot</French>
+		<German>Upgrade to Chariot</German>
+		<Italian>Upgrade to Chariot</Italian>
+		<Spanish>Upgrade to Chariot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_SPECTRE</Tag>
+		<English>Upgrade to Spectre</English>
+		<French>Upgrade to Spectre</French>
+		<German>Upgrade to Spectre</German>
+		<Italian>Upgrade to Spectre</Italian>
+		<Spanish>Upgrade to Spectre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_WOLF_RIDER</Tag>
+		<English>Upgrade to Wolf Rider</English>
+		<French>Upgrade to Wolf Rider</French>
+		<German>Upgrade to Wolf Rider</German>
+		<Italian>Upgrade to Wolf Rider</Italian>
+		<Spanish>Upgrade to Wolf Rider</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UPGRADE_WRAITH</Tag>
+		<English>Upgrade to Wraith</English>
+		<French>Upgrade to Wraith</French>
+		<German>Upgrade to Wraith</German>
+		<Italian>Upgrade to Wraith</Italian>
+		<Spanish>Upgrade to Wraith</Spanish>
+	</TEXT>
+	<!-- Trait Help -->
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SELECTABLE</Tag>
+		<English>[ICON_BULLET]Selectable Traits:</English>
+		<French>[ICON_BULLET]Selectable Traits:</French>
+		<German>[ICON_BULLET]Selectable Traits:</German>
+		<Italian>[ICON_BULLET]Selectable Traits:</Italian>
+		<Spanish>[ICON_BULLET]Selectable Traits:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CAN_BUILD</Tag>
+		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Can Build[SPACE]</English>
+		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Construction possible de :[SPACE]</French>
+		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Kann Folgendes errichten:[SPACE]</German>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Può costruire[SPACE]</Italian>
+		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Se puede construir[SPACE]</Spanish>
+	</TEXT>
+	<!-- Unit Help -->
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLODE_IN_COMBAT</Tag>
+		<English>[ICON_BULLET]When Killed explodes. Damages Unit that killed it and can set Surrounding Tiles on Fire.</English>
+		<French>[ICON_BULLET]When Killed explodes. Damages Unit that killed it and can set Surrounding Tiles on Fire.</French>
+		<German>[ICON_BULLET]When Killed explodes. Damages Unit that killed it and can set Surrounding Tiles on Fire.</German>
+		<Italian>[ICON_BULLET]When Killed explodes. Damages Unit that killed it and can set Surrounding Tiles on Fire.</Italian>
+		<Spanish>[ICON_BULLET]When Killed explodes. Damages Unit that killed it and can set Surrounding Tiles on Fire.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INVESTIGATE_CITY</Tag>
+		<English>[ICON_BULLET]Can Investigate Rival Cities</English>
+		<French>[ICON_BULLET]Can Investigate Rival Cities</French>
+		<German>[ICON_BULLET]Can Investigate Rival Cities</German>
+		<Italian>[ICON_BULLET]Can Investigate Rival Cities</Italian>
+		<Spanish>[ICON_BULLET]Can Investigate Rival Cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANNOT_PILLAGE</Tag>
+		<English>[ICON_BULLET]Can not Pillage Tile Improvements</English>
+		<French>[ICON_BULLET]Can not Pillage Tile Improvements</French>
+		<German>[ICON_BULLET]Can not Pillage Tile Improvements</German>
+		<Italian>[ICON_BULLET]Can not Pillage Tile Improvements</Italian>
+		<Spanish>[ICON_BULLET]Can not Pillage Tile Improvements</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANNOT_PROTECT_CITY</Tag>
+		<English>[ICON_BULLET]Can not Keep Peace and Order of Cities</English>
+		<French>[ICON_BULLET]Can not Keep Peace and Order of Cities</French>
+		<German>[ICON_BULLET]Can not Keep Peace and Order of Cities</German>
+		<Italian>[ICON_BULLET]Can not Keep Peace and Order of Cities</Italian>
+		<Spanish>[ICON_BULLET]Can not Keep Peace and Order of Cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DURATION_FROM_COMBAT</Tag>
+		<English>[ICON_BULLET]Gains %D1_Amount Duration after Defeating Enemy Unit in Combat</English>
+		<French>[ICON_BULLET]Gains %D1_Amount Duration after Defeating Enemy Unit in Combat</French>
+		<German>[ICON_BULLET]Gains %D1_Amount Duration after Defeating Enemy Unit in Combat</German>
+		<Italian>[ICON_BULLET]Gains %D1_Amount Duration after Defeating Enemy Unit in Combat</Italian>
+		<Spanish>[ICON_BULLET]Gains %D1_Amount Duration after Defeating Enemy Unit in Combat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_GAIN_XP_PER_TURN</Tag>
+		<English>[ICON_BULLET]Has a chance of gaining XP per turn</English>
+		<French>[ICON_BULLET]Has a chance of gaining XP per turn</French>
+		<German>[ICON_BULLET]Has a chance of gaining XP per turn</German>
+		<Italian>[ICON_BULLET]Has a chance of gaining XP per turn</Italian>
+		<Spanish>[ICON_BULLET]Has a chance of gaining XP per turn</Spanish>
+	</TEXT>
+	<!-- Misc Help -->
+	<TEXT>
+		<Tag>TXT_KEY_MISC_WITH</Tag>
+		<English>[SPACE]with[SPACE]</English>
+		<French>[SPACE]avec :[SPACE]</French>
+		<German>[SPACE]mit[SPACE]</German>
+		<Italian>[SPACE]con[SPACE]</Italian>
+		<Spanish>[SPACE]con[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ALLOWS</Tag>
+        <English>[ICON_BULLET]Allows: %s1</English>
+        <French>[ICON_BULLET]Autorise: %s1</French>
+        <German>[ICON_BULLET]Erlaubt: %s1</German>
+        <Italian>[ICON_BULLET]Allows: %s1</Italian>
+        <Spanish>[ICON_BULLET]Allows: %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ALLOWS_LIST</Tag>
+        <English>[ICON_BULLET]Allows:[SPACE]</English>
+        <French>[ICON_BULLET]Autorise:[SPACE]</French>
+        <German>[ICON_BULLET]Erlaubt:[SPACE]</German>
+        <Italian>[ICON_BULLET]Allows:[SPACE]</Italian>
+        <Spanish>[ICON_BULLET]Allows:[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ALLOWS_TO_OWNER</Tag>
+		<English>[ICON_BULLET]Allows to owner civilization: %s1</English>
+		<French>[ICON_BULLET]Allows to owner civilization: %s1</French>
+		<German>[ICON_BULLET]Allows to owner civilization: %s1</German>
+		<Italian>[ICON_BULLET]Allows to owner civilization: %s1</Italian>
+		<Spanish>[ICON_BULLET]Allows to owner civilization: %s1</Spanish>
+	</TEXT>
+	<!-- Unit info pane -->
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SUMMON_PERK_HEADER</Tag>
+		<English>[ICON_BULLET]All summoned units gain:</English>
+		<French>[ICON_BULLET]All summoned units gain:</French>
+		<German>[ICON_BULLET]All summoned units gain:</German>
+		<Italian>[ICON_BULLET]All summoned units gain:</Italian>
+		<Spanish>[ICON_BULLET]All summoned units gain:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_DEFENSIVE</Tag>
+		<English>[ICON_BULLET]Can Flee from Defensive Combat (%d1_Amount%% Chance)</English>
+		<French>[ICON_BULLET]Can Flee from Defensive Combat (%d1_Amount%% Chance)</French>
+		<German>[ICON_BULLET]Can Flee from Defensive Combat (%d1_Amount%% Chance)</German>
+		<Italian>[ICON_BULLET]Can Flee from Defensive Combat (%d1_Amount%% Chance)</Italian>
+		<Spanish>[ICON_BULLET]Can Flee from Defensive Combat (%d1_Amount%% Chance)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_DEFENSIVE_SHORT</Tag>
+		<English>[ICON_BULLET]Flight Chance: %d1_Amount%%</English>
+		<French>[ICON_BULLET]Flight Chance: %d1_Amount%%</French>
+		<German>[ICON_BULLET]Flight Chance: %d1_Amount%%</German>
+		<Italian>[ICON_BULLET]Flight Chance: %d1_Amount%%</Italian>
+		<Spanish>[ICON_BULLET]Flight Chance: %d1_Amount%%</Spanish>
+	</TEXT>
+	<!-- City Screen pane -->
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_BONUS</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from Resources</English>
+		<French>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] des ressources</French>
+		<German>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] durch Ressourcen</German>
+		<Italian>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] dalle risorse</Italian>
+		<Spanish>[ICON_BULLET]%D1%% a [ICON_GREATPEOPLE] por recursos</Spanish>
+	</TEXT>
+	<!-- Mainscreen Message -->
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_START_PRODUCTION_ACHERON</Tag>
+		<English>Travellers from far away speak of a mighty Dragon, who wants to make %s1_city his lair.</English>
+		<French>Travellers from far away speak of a mighty Dragon, who wants to make %s1_city his lair.</French>
+		<German>Travellers from far away speak of a mighty Dragon, who wants to make %s1_city his lair.</German>
+		<Italian>Travellers from far away speak of a mighty Dragon, who wants to make %s1_city his lair.</Italian>
+		<Spanish>Travellers from far away speak of a mighty Dragon, who wants to make %s1_city his lair.</Spanish>
+	</TEXT>
+<!-- Alterd from CIV4GameText_FFH2.xml -->
+	<!-- Civilopedia (Improvements) -->
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_EVOLVES_PREREQ_CIV_NO_LINK</Tag>
+        <English>[ICON_BULLET]Becomes a %s1_ImpName in %d2_Num [NUM2:Turn:Turns] (%s3_CivName only)</English>
+        <French>[ICON_BULLET]Becomes a %s1_ImpName in %d2_Num [NUM2:Turn:Turns] (%s3_CivName only)</French>
+        <German>[ICON_BULLET]Wird in %d2_Num [NUM2:Runde:Runden] %s1_ImpName (nur %s3_CivName)</German>
+        <Italian>[ICON_BULLET]Becomes a %s1_ImpName in %d2_Num [NUM2:Turn:Turns] (%s3_CivName only)</Italian>
+        <Spanish>[ICON_BULLET]Becomes a %s1_ImpName in %d2_Num [NUM2:Turn:Turns] (%s3_CivName only)</Spanish>
+    </TEXT>
+	<!-- Civilopedia (Spells) -->
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_NO_LINK</Tag>
+		<English>[ICON_BULLET]Adds the %s1_promotion promotion to all units in the casters stack</English>
+		<French>[ICON_BULLET]Ajoute la promotion %s1_promotion</French>
+		<German>[ICON_BULLET]fügt die %s1_promotion Beförderung hinzu</German>
+		<Italian>[ICON_BULLET]Adds the %s1_promotion promotion to all units in the casters stack</Italian>
+		<Spanish>[ICON_BULLET]Adds the %s1_promotion promotion to all units in the casters stack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_REQ_UNITCOMBAT</Tag>
+		<English>[ICON_BULLET]Adds the %s1_promotion promotion to all %s2 units in the casters stack</English>
+		<French>[ICON_BULLET]Adds the %s1_promotion promotion to all %s2 units in the casters stack</French>
+		<German>[ICON_BULLET]Adds the %s1_promotion promotion to all %s2 units in the casters stack</German>
+		<Italian>[ICON_BULLET]Adds the %s1_promotion promotion to all %s2 units in the casters stack</Italian>
+		<Spanish>[ICON_BULLET]Adds the %s1_promotion promotion to all %s2 units in the casters stack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_AT_RANGE_NO_LINK</Tag>
+		<English>[ICON_BULLET]Adds the %s1_promotion promotion to units</English>
+		<French>[ICON_BULLET]Adds the %s1_promotion promotion to units</French>
+		<German>[ICON_BULLET]fügt die %s1_promotion Beförderung hinzu</German>
+		<Italian>[ICON_BULLET]Adds the %s1_promotion promotion to units</Italian>
+		<Spanish>[ICON_BULLET]Adds the %s1_promotion promotion to units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ADD_PROMOTION_CASTER_NO_LINK</Tag>
+		<English>[ICON_BULLET]Adds the %s1_promotion promotion to the caster</English>
+		<French>ICON_BULLET]Ajoute la promotion %s1_promotion au lanceur</French>
+		<German>[ICON_BULLET]fügt die %s1_promotion Beförderung zum Zaubernden hinzu</German>
+		<Italian>[ICON_BULLET]Adds the %s1_promotion promotion to the caster</Italian>
+		<Spanish>[ICON_BULLET]Adds the %s1_promotion promotion to the caster</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_REMOVE_PROMOTION_NO_LINK</Tag>
+		<English>[ICON_BULLET]Removes the %s1_promotion promotion</English>
+		<French>[ICON_BULLET]Enlève la promotion %s1_promotion</French>
+		<German>[ICON_BULLET]entfernt die %s1_promotion Beförderung</German>
+		<Italian>[ICON_BULLET]Removes the %s1_promotion promotion</Italian>
+		<Spanish>[ICON_BULLET]Removes the %s1_promotion promotion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_REMOVE_PROMOTION_CASTER_NO_LINK</Tag>
+		<English>[ICON_BULLET]Removes the %s1_promotion promotion from the caster</English>
+		<French>[ICON_BULLET]Enlève la promotion %s1_promotion du lanceur</French>
+		<German>[ICON_BULLET]entfernt die %s1_promotion Beförderung von dem Zaubernden</German>
+		<Italian>[ICON_BULLET]Removes the %s1_promotion promotion from the caster</Italian>
+		<Spanish>[ICON_BULLET]Removes the %s1_promotion promotion from the caster</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_PROMOTION_IN_STACK_PREREQ_NO_LINK</Tag>
+		<English>[ICON_BULLET]Requires a unit with %s1_promotion promotion in the casters stack</English>
+		<French>[ICON_BULLET]Requires a unit with %s1_promotion promotion in the casters stack</French>
+		<German>[ICON_BULLET]Erfordert eine Einheit mit der Beförderung %s1_promotion im Einheitenverband des Zaubernden.</German>
+		<Italian>[ICON_BULLET]Requires a unit with %s1_promotion promotion in the casters stack</Italian>
+		<Spanish>[ICON_BULLET]Requires a unit with %s1_promotion promotion in the casters stack</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CREATE_UNIT_PROMOTION_NO_LINK</Tag>
+		<English>[ICON_BULLET]Summoned units start with the %s1_promotion promotion</English>
+		<French>[ICON_BULLET]Les unités évoquées commencent avec la promotion %s1_promotion</French>
+		<German>[ICON_BULLET]Beschworene Einheiten beginnen mit der %s1_promotion Beförderung</German>
+		<Italian>[ICON_BULLET]Summoned units start with the %s1_promotion promotion</Italian>
+		<Spanish>[ICON_BULLET]Summoned units start with the %s1_promotion promotion</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CREATE_BUILDING_NO_LINK</Tag>
+        <English>[ICON_BULLET]Creates a %s1_building in the city</English>
+        <French>[ICON_BULLET]Crée un %s1_building dans la ville</French>
+        <German>[ICON_BULLET]Erschafft ein %s1_building in der Stadt.</German>
+        <Italian>[ICON_BULLET]Creates a %s1_building in the city</Italian>
+        <Spanish>[ICON_BULLET]Creates a %s1_building in the city</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CREATE_FEATURE_NO_LINK</Tag>
+        <English>[ICON_BULLET]Creates a %s1_feature in the tile</English>
+        <French>[ICON_BULLET]Crée un %s1_feature sur la case</French>
+        <German>[ICON_BULLET]Erschafft eine %s1_feature auf dem Geländefeld.</German>
+        <Italian>[ICON_BULLET]Creates a %s1_feature in the tile</Italian>
+        <Spanish>[ICON_BULLET]Creates a %s1_feature in the tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CREATE_IMPROVEMENT_NO_LINK</Tag>
+        <English>[ICON_BULLET]Creates a %s1_improvement in the tile</English>
+        <French>[ICON_BULLET]Crée un %s1_improvement sur la case</French>
+        <German>[ICON_BULLET]Erschafft eine %s1_improvement auf dem Geländefeld.</German>
+        <Italian>[ICON_BULLET]Creates a %s1_improvement in the tile</Italian>
+        <Spanish>[ICON_BULLET]Creates a %s1_improvement in the tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SPREAD_RELIGION_NO_LINK</Tag>
+        <English>[ICON_BULLET]Spreads %s1_religion religion</English>
+        <French>[ICON_BULLET]Propage la religion %s1_religion</French>
+        <German>[ICON_BULLET]Verbreitet  %s1_religion Religion</German>
+        <Italian>[ICON_BULLET]Spreads %s1_religion religion</Italian>
+        <Spanish>[ICON_BULLET]Spreads %s1_religion religion</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUMMON_UNIT_NO_LINK</Tag>
+		<English>[ICON_BULLET]Summons a %s1_unit.</English>
+		<French>[ICON_BULLET]Evoque un %s1_unit.</French>
+		<German>[ICON_BULLET]Beschwört eine %s1_unit.</German>
+		<Italian>[ICON_BULLET]Summons a %s1_unit.</Italian>
+		<Spanish>[ICON_BULLET]Summons a %s1_unit.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUMMON_UNIT_MULTIPLE_NO_LINK</Tag>
+		<English>[ICON_BULLET]Summons %D1 %s2_unit(s).</English>
+		<French>[ICON_BULLET]Evoque %D1 %s2_unit(s).</French>
+		<German>[ICON_BULLET]Beschwört %D1 %s2_unit(s).</German>
+		<Italian>[ICON_BULLET]Summons %D1 %s2_unit(s).</Italian>
+		<Spanish>[ICON_BULLET]Summons %D1 %s2_unit(s).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_CONVERT_UNIT_NO_LINK</Tag>
+		<English>[ICON_BULLET]Transforms the caster into a %s1_unit</English>
+		<French>[ICON_BULLET]Transforme le lanceur en %s1_unit</French>
+		<German>[ICON_BULLET]Verwandelt den Zaubernden in eine %s1_unit.</German>
+		<Italian>[ICON_BULLET]Transforms the caster into a %s1_unit</Italian>
+		<Spanish>[ICON_BULLET]Transforms the caster into a %s1_unit</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_BUILDING_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Requires a %s1_building building in the casters city</English>
+        <French>[ICON_BULLET]Requires a %s1_building building in the casters city</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_building in der Stadt des Zaubernden</German>
+        <Italian>[ICON_BULLET]Requires a %s1_building building in the casters city</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_building building in the casters city</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_BUILDINGCLASS_OWNED_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]The player must own the %s1_building to use this spell</English>
+        <French>[ICON_BULLET]The player must own the %s1_building to use this spell</French>
+        <German>[ICON_BULLET]Dem Spieler muss das %s1_building gehören um den Zauber zu sprechen</German>
+        <Italian>[ICON_BULLET]The player must own the %s1_building to use this spell</Italian>
+        <Spanish>[ICON_BULLET]The player must own the %s1_building to use this spell</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CIVILIZATION_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Can only be used by the %s1_civ civilization</English>
+        <French>[ICON_BULLET]Ne peut être utilisé que par la civilisation %s1_civilization.</French>
+        <German>[ICON_BULLET]Kann nur von den %s1_civilization benutzt werden.</German>
+        <Italian>[ICON_BULLET]Can only be used by the %s1_civ civilization</Italian>
+        <Spanish>[ICON_BULLET]Can only be used by the %s1_civ civilization</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FEATURE_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Can only be used in a %s1_feature tile</English>
+        <French>[ICON_BULLET]Requires a %s1_feature in the casters tile</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_feature auf dem Feld des Zaubernden</German>
+        <Italian>[ICON_BULLET]Requires a %s1_feature in the casters tile</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_feature in the casters tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_FEATURE2_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Can only be used in a %s1_feature or a %s2_feature tile</English>
+        <French>[ICON_BULLET]Requires a %s1_feature or a %s2_feature in the casters tile</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_feature oder ein %s2_feature auf dem Feld des Zaubernden.</German>
+        <Italian>[ICON_BULLET]Requires a %s1_feature or a %s2_feature in the casters tile</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_feature or a %s2_feature in the casters tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_IMPROVEMENT_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Requires a %s1_improvement in the casters tile</English>
+        <French>[ICON_BULLET]Requires a %s1_improvement in the casters tile</French>
+        <German>[ICON_BULLET]Erfordert ein %s1_improvement auf dem Feld des Zaubernden</German>
+        <Italian>[ICON_BULLET]Requires a %s1_improvement in the casters tile</Italian>
+        <Spanish>[ICON_BULLET]Requires a %s1_improvement in the casters tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_RELIGION_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Caster must have the %s1_religion religion</English>
+        <French>[ICON_BULLET]Le lanceur doit avoir la religion %s1_religion</French>
+        <German>[ICON_BULLET]Der Zaubernde muss der %s1_religion angehören</German>
+        <Italian>[ICON_BULLET]Caster must have the %s1_religion religion</Italian>
+        <Spanish>[ICON_BULLET]Caster must have the %s1_religion religion</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_STATE_RELIGION_PREREQ_NO_LINK</Tag>
+        <English>[ICON_BULLET]Player must have the %s1_religion state religion</English>
+        <French>[ICON_BULLET]le joueur doit avoir la religion d'état %s1_religion</French>
+        <German>[ICON_BULLET]Spieler muss der Staatsreligion %s1_religion angehören</German>
+        <Italian>[ICON_BULLET]Player must have the %s1_religion state religion</Italian>
+        <Spanish>[ICON_BULLET]Player must have the %s1_religion state religion</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TECH_PREREQ_NO_LINK</Tag>
+		<English>[ICON_BULLET]Requires the %s1_tech technology</English>
+		<French>[ICON_BULLET]Requiert la technologie %s1_tech</French>
+		<German>[ICON_BULLET]Benötigt die %s1_tech Technologie</German>
+		<Italian>[ICON_BULLET]Requires the %s1_tech technology</Italian>
+		<Spanish>[ICON_BULLET]Requires the %s1_tech technology</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UNIT_PREREQ_NO_LINK</Tag>
+		<English>[ICON_BULLET]Can only be used by a %s1_unit.</English>
+		<French>[ICON_BULLET]Peut seulement être utilisé par un %s1_unit.</French>
+		<German>[ICON_BULLET]Kann nur von %s1_unit Einheiten verwendet werden.</German>
+		<Italian>[ICON_BULLET]Can only be used by a %s1_unit.</Italian>
+		<Spanish>[ICON_BULLET]Can only be used by a %s1_unit.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_UNIT_IN_STACK_PREREQ_NO_LINK</Tag>
+		<English>[ICON_BULLET]Can only be used if there is a %s1_unit unit in the stack.</English>
+		<French>[ICON_BULLET]Peut seulement être utilisé si il y a un %s1_unit dans la pile.</French>
+		<German>[ICON_BULLET]Kann nur verwendet werden wenn eine %s1_unit Einheit im Truppenverband ist.</German>
+		<Italian>[ICON_BULLET]Can only be used if there is a %s1_unit unit in the stack.</Italian>
+		<Spanish>[ICON_BULLET]Can only be used if there is a %s1_unit unit in the stack.</Spanish>
+	</TEXT>
+	<!-- Civilopedia (Units) -->
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPELL_ABILITY_NO_LINK</Tag>
+		<English>[ICON_BULLET]Unit can use the %s1_spell ability</English>
+		<French>[ICON_BULLET]Unit can use the %s1_spell ability</French>
+		<German>[ICON_BULLET]Unit can use the %s1_spell ability</German>
+		<Italian>[ICON_BULLET]Unit can use the %s1_spell ability</Italian>
+		<Spanish>[ICON_BULLET]Unit can use the %s1_spell ability</Spanish>
+	</TEXT>
+<!-- Override CIV4GameTextInfos.xml  -->
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HEALTHY</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_HEALTHY]</English>
+		<French>[ICON_BULLET]%D1_Change[ICON_HEALTHY]</French>
+		<German>[ICON_BULLET]%D1_Change[ICON_HEALTHY]</German>
+		<Italian>[ICON_BULLET]%D1_Change[ICON_HEALTHY]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change[ICON_HEALTHY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_UNHEALTHY</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_UNHEALTHY]</English>
+		<French>[ICON_BULLET]%D1_Change[ICON_UNHEALTHY]</French>
+		<German>[ICON_BULLET]%D1_Change[ICON_UNHEALTHY]</German>
+		<Italian>[ICON_BULLET]%D1_Change[ICON_UNHEALTHY]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change[ICON_UNHEALTHY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HAPPY</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_HAPPY]</English>
+		<French>[ICON_BULLET]%D1_Change[ICON_HAPPY]</French>
+		<German>[ICON_BULLET]%D1_Change[ICON_HAPPY]</German>
+		<Italian>[ICON_BULLET]%D1_Change[ICON_HAPPY]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change[ICON_HAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_UNHAPPY</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</English>
+		<French>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</French>
+		<German>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</German>
+		<Italian>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change[ICON_UNHAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FREE_PROMOTION</Tag>
+		<English>[ICON_BULLET]Free %s1_Name Promotion for Units Built in this City</English>
+		<French>[ICON_BULLET]Promotion gratuite (%s1_Name) pour les unit&#233;s construites dans cette ville</French>
+		<German>[ICON_BULLET]Freie Bef&#246;rderung zu %s1_Name f&#252;r die in dieser Stadt errichteten Einheiten</German>
+		<Italian>[ICON_BULLET]Promozione %s1_Name gratuita per le unit&#224; costruite in questa citt&#224;.</Italian>
+		<Spanish>[ICON_BULLET]Da gratis el ascenso de %s1_Name a las unidades construidas en esta ciudad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FREE_SPECIALIST</Tag>
+		<English>[ICON_BULLET]%D1_Change Free %s2_SpclstName</English>
+		<French>[ICON_BULLET]%D1_Change Donne un %s2_SpclstName gratuit</French>
+		<German>[ICON_BULLET]%D1_Change freien Spezialisten %s2_SpclstName</German>
+		<Italian>[ICON_BULLET]%D1_Change %s2_SpclstName gratis</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change %s2_SpclstName gratis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FROM_IN_ALL_CITIES</Tag>
+		<English>[SPACE]from %s1_SpclstName in All Cities</English>
+		<French>[SPACE]de tous les %s1_SpclstName dans toutes les villes</French>
+		<German>[SPACE]per %s1:2_SpclstName in allen St&#228;dten</German>
+		<Italian>[SPACE]per %s1:2_SpclstName in tutte le citt&#224;</Italian>
+		<Spanish>[SPACE]por %s1_SpclstName en todas las ciudades</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PROVIDES</Tag>
+		<English>[ICON_BULLET]Provides %d1_Num %s2_BonusName</English>
+		<French>[ICON_BULLET]Fournit %d1_Num %s2_BonusName</French>
+		<German>[ICON_BULLET]Liefert %d1_Num des Bonusguts %s2_BonusName</German>
+		<Italian>[ICON_BULLET]Fornisce %d1_Num %s2_BonusName</Italian>
+		<Spanish>[ICON_BULLET]Da %d1_Num de %s2_BonusName</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURN_CITIZEN_INTO</Tag>
+		<English>[ICON_BULLET]Can turn 1 Citizen into %s1_SpecName</English>
+		<French>[ICON_BULLET]Peut transformer un citoyen en %s1_SpecName</French>
+		<German>[ICON_BULLET]Kann 1 B&#252;rger in einen Spezialisten des Typs %s1_SpecName verwandeln</German>
+		<Italian>[ICON_BULLET]Pu&#242; trasformare un cittadino in %s1_SpecName</Italian>
+		<Spanish>[ICON_BULLET]Puede convertir a ciudadano en %s1_SpecName</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TURN_CITIZENS_INTO</Tag>
+		<English>[ICON_BULLET]Can turn %d1_Num Citizens into %s2_SpclstName</English>
+		<French>[ICON_BULLET]Peut transformer %d1_Num citoyens en %s2_SpclstName</French>
+		<German>[ICON_BULLET]Kann %d1_Num B&#252;rger in einen Spezialisten des Typs %s2_SpclstName verwandeln</German>
+		<Italian>[ICON_BULLET]Pu&#242; trasformare %d1_Num cittadini in %s2:2_SpclstName</Italian>
+		<Spanish>[ICON_BULLET]Puede convertir a %d1_Num ciudadanos en %s2:2_SpclstName</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_WITH_IRRIGATION</Tag>
+		<English>[SPACE](with [LINK=CONCEPT_IRRIGATION]Irrigation[\LINK])</English>
+		<French>[SPACE](avec [LINK=CONCEPT_IRRIGATION]irrigation[\LINK])</French>
+		<German>[SPACE](mit [LINK=CONCEPT_IRRIGATION]Bew&#228;sserung[\LINK])</German>
+		<Italian>[SPACE](con [LINK=CONCEPT_IRRIGATION]irrigazione[\LINK])</Italian>
+		<Spanish>[SPACE](con [LINK=CONCEPT_IRRIGATION]riego[\LINK])</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ON_HILLS</Tag>
+		<English>[SPACE](on Hills)</English>
+		<French>[SPACE](dans les collines)</French>
+		<German>[SPACE](auf H&#252;geln)</German>
+		<Italian>[SPACE](sulle colline)</Italian>
+		<Spanish>[SPACE](en una colina)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ALONG_RIVER</Tag>
+		<English>[SPACE](along River)</English>
+		<French>[SPACE](pr&#232;s d'une rivi&#232;re)</French>
+		<German>[SPACE](entlang eines Flusses)</German>
+		<Italian>[SPACE](lungo il fiume)</Italian>
+		<Spanish>[SPACE](junto a un r&#237;o)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REQUIRES</Tag>
+		<English>[COLOR_WARNING_TEXT]Reqs %s1_ItemName[COLOR_REVERT]</English>
+		<French>[COLOR_WARNING_TEXT]Req. %s1_ItemName[COLOR_REVERT]</French>
+		<German>[COLOR_WARNING_TEXT]Erfordert die Technologie %s1_ItemName[COLOR_REVERT]</German>
+		<Italian>[COLOR_WARNING_TEXT]Richiede %s1_ItemName[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requiere [NUM1:el:la:los:las] %s1_ItemName[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_EVOLVES</Tag>
+		<English>[ICON_BULLET]Becomes a %s1_ImpName in %d2_Num [NUM2:Turn:Turns]</English>
+		<French>[ICON_BULLET]Se transforme en : %s1_ImpName apr&#232;s %d2_Num [NUM2:tour:tours]</French>
+		<German>[ICON_BULLET]Wird in %d2_Num [NUM2:Runde:Runden] zu der Modernisierung %s1_ImpName</German>
+		<Italian>[ICON_BULLET]Diventa [NUM1:un:una] %s1_ImpName in %d2_Num [NUM2:Turno:Turni]</Italian>
+		<Spanish>[ICON_BULLET]Se convierte en %s1_ImpName en %d2_Num [NUM2:turno:turnos]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_VERSUS_TEXT</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% vs. %s2_Against</English>
+		<French>[ICON_BULLET]%D1_Mod%% contre %s2_Against</French>
+		<German>[ICON_BULLET]%D1_Mod%% gegen %s2_Against</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% contro %s2_Against</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% contra %s2_Against</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RELIGION_FOUNDER_RECEIVES</Tag>
+		<English>[ICON_BULLET]Founder Receives a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Le fondateur re&#231;oit 1 [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Der Gr&#252;nder erh&#228;lt eine Einheit: [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]Il fondatore riceve [NUM1:un:una:dei:delle] [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET]El que lo funda recibe [NUM1:un:una:unos:unas] [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANIMAL_COMBAT_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Change%% vs. Wild Species</English>
+		<French>[ICON_BULLET]%D1_Mod%% contre Wild Species</French>
+		<German>[ICON_BULLET]%D1_Mod%% gegen Wild Species</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% contro Wild Species</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% contra Wild Species</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIQUE_UNIT</Tag>
+		<English>Unique Unit for %s1_civ</English>
+		<French>Unit&#233; unique pour : %s1_civ</French>
+		<German>Spezialeinheit der Zivilisation %s1_civ</German>
+		<Italian>Unit&#224; unica per la civilt&#224; %s1_civ</Italian>
+		<Spanish>Unidad exclusiva de %s1_civ</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REPLACES_UNIT</Tag>
+		<English>Replaces %s1_default_unit</English>
+		<French>Remplace : %s1_default_unit</French>
+		<German>Ersetzt %s1_default_unit</German>
+		<Italian>Sostituisce l'unit&#224; %s1_default_unit</Italian>
+		<Spanish>Reemplaza a la unidad de %s1_default_unit</Spanish>
+	</TEXT>
+<!-- Override CIV4GameTextInfos_Objects.xml -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TEMPLE</Tag>
+		<English>Religious Temple</English>
+		<French>Religious Temple</French>
+		<German>Religious Temple</German>
+		<Italian>Religious Temple</Italian>
+		<Spanish>Religious Temple</Spanish>
+	</TEXT>
+<!-- Override CIV4GameText_Warlords.xml -->
+	<TEXT>
+		<Tag>TXT_KEY_UNIQUE_BUILDING</Tag>
+		<English>Unique Building for %s1_civDesc</English>
+		<French>B&#226;timent unique pour %s1_civDesc</French>
+		<German>Einzigartiges Geb&#228;ude f&#252;r: %s1_civDesc</German>
+		<Italian>Edificio unico %s1_civDesc</Italian>
+		<Spanish>Edificio exclusivo del %s1_civDesc</Spanish>
+	</TEXT>
+<!-- Override CIV4GameText_BTS.xml -->
+	<TEXT>
+		<Tag>TXT_KEY_REPLACED_BY_UNIT</Tag>
+		<English>Replaced by %s1_default_unit</English>
+		<French>Remplac&#233; par %s1_default_unit</French>
+		<German>Ersetzt durch Einheit %s1_default_unit</German>
+		<Italian>Sostituita dall'unit&#224; %s1_default_unit</Italian>
+		<Spanish>Sustituida por una unidad de %s1_default_unit</Spanish>
+	</TEXT>
+<!-- Override CIV4GameTextChanged_BTS.xml -->
+	<TEXT>
+		<Tag>TXT_KEY_REPLACED_BY_BUILDING</Tag>
+		<English>Replaced by %s1_default_building</English>
+		<French>Remplac&#233; par %s1_default_building</French>
+		<German>Ersetzt durch Geb&#228;ude %s1_default_building</German>
+		<Italian>Sostituita dall'edifici&#224; %s1_default_building</Italian>
+		<Spanish>Sustituida por una edifico de %s1_default_building</Spanish>
+	</TEXT>
+<!-- Override CIV4GameText_FFH2.xml -->
+    <TEXT>
+        <Tag>TXT_KEY_DAMAGE_TYPE_COMBAT</Tag>
+        <English>[ICON_BULLET]%D1 %s2 Strength</English>
+        <French>[ICON_BULLET]%D1 %s2 combat</French>
+        <German>[ICON_BULLET]%D1 %s2 im Kampf</German>
+        <Italian>[ICON_BULLET]%D1 %s2 combat</Italian>
+        <Spanish>[ICON_BULLET]%D1 %s2 en combate</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_ALE_PEDIA</Tag>
+        <English>[TAB]Ale can only be produced by the [LINK=BUILDING_BREWERY]Deruptus Brewing House[\LINK] national wonder.</English>
+        <French>[TAB]Ale can only be produced by the [LINK=BUILDING_BREWERY]Deruptus Brewing House[\LINK] national wonder.</French>
+        <German>[TAB]Bier kann nur von dem Nationalwunder [LINK=BUILDING_BREWERY]Brauerei der Deruptus[\LINK] produziert werden</German>
+        <Italian>[TAB]Ale can only be produced by the [LINK=BUILDING_BREWERY]Deruptus Brewing House[\LINK] national wonder.</Italian>
+        <Spanish>[TAB]Ale can only be produced by the [LINK=BUILDING_BREWERY]Deruptus Brewing House[\LINK] national wonder.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FREE_PROMOTION_PICK</Tag>
+        <English>[ICON_BULLET]Units start with a %D1 free [NUM1:promotion:promotions]</English>
+        <French>[ICON_BULLET] Les unités commencent avec %D1 [NUM1:promotion gratuite:promotions gratuites]</French>
+        <German>[ICON_BULLET]Einheiten beginnen mit %D1 [NUM1:freier Beförderung:freien Beförderungen]</German>
+        <Italian>[ICON_BULLET]Units start with a %D1 free [NUM1:promotion:promotions]</Italian>
+        <Spanish>[ICON_BULLET]Las unidades empiezan con un %D1 de [NUM1:ascenso:ascensos] gratis</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CHANCEL_OF_GUARDIANS_HELP</Tag>
+        <English>[ICON_BULLET]20% chance of bestowing the [LINK=PROMOTION_DEFENSIVE]Defensive[\LINK] promotion on any unit trained in the city</English>
+        <French>[ICON_BULLET]20% chance of bestowing the [LINK=PROMOTION_DEFENSIVE]Defensive[\LINK] promotion on any unit trained in the city</French>
+        <German>[ICON_BULLET]20% chance of bestowing the [LINK=PROMOTION_DEFENSIVE]Defensive[\LINK] promotion on any unit trained in the city</German>
+        <Italian>[ICON_BULLET]20% chance of bestowing the [LINK=PROMOTION_DEFENSIVE]Defensive[\LINK] promotion on any unit trained in the city</Italian>
+        <Spanish>[ICON_BULLET]20% chance of bestowing the [LINK=PROMOTION_DEFENSIVE]Defensive[\LINK] promotion on any unit trained in the city</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOKKAS_CAULDRON_HELP</Tag>
+		<English>[ICON_BULLET]Raises units that die in the city as [LINK=UNIT_FLESH_GOLEM]flesh golems[\LINK]</English>
+		<French>[ICON_BULLET]Raises units that die in the city as [LINK=UNIT_FLESH_GOLEM]flesh golems[\LINK]</French>
+		<German>[ICON_BULLET]Belebt Einheiten, die in der Stadt sterben, als [LINK=UNIT_FLESH_GOLEM]Humunkuli wieder[\LINK].</German>
+		<Italian>[ICON_BULLET]Raises units that die in the city as [LINK=UNIT_FLESH_GOLEM]flesh golems[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Raises units that die in the city as [LINK=UNIT_FLESH_GOLEM]flesh golems[\LINK]</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWER_OF_THE_ELEMENTS_HELP</Tag>
+        <English>[ICON_BULLET]Your Elementals start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion[NEWLINE][ICON_BULLET]Summons a permanent elemental guardian.</English>
+        <French>[ICON_BULLET]Your Elementals start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion[NEWLINE][ICON_BULLET]Summons a permanent elemental guardian.</French>
+        <German>[ICON_BULLET]Eure Elementare beginnen mit der [LINK=PROMOTION_STRONG]Strong[\LINK] Beförderung[NEWLINE][ICON_BULLET]Beschwört einen permanenten elementaren Wächter.</German>
+        <Italian>[ICON_BULLET]Your Elementals start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion[NEWLINE][ICON_BULLET]Summons a permanent elemental guardian.</Italian>
+        <Spanish>[ICON_BULLET]Your Elementals start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion[NEWLINE][ICON_BULLET]Summons a permanent elemental guardian.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWER_OF_NECROMANCY_HELP</Tag>
+        <English>[ICON_BULLET]Increases the amount of [LINK=UNIT_SKELETON]skeleton[\LINK]s its empire can summon by 5[NEWLINE][ICON_BULLET]Your [LINK=PROMOTION_UNDEAD]Undead[\LINK] start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion</English>
+        <French>[ICON_BULLET]Increases the amount of [LINK=UNIT_SKELETON]skeleton[\LINK]s its empire can summon by 5[NEWLINE][ICON_BULLET]Your [LINK=PROMOTION_UNDEAD]Undead[\LINK] start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion</French>
+        <German>[ICON_BULLET]Erhöht die Anzahl der [LINK=UNIT_SKELETON]Skelette[\LINK], die das Reich beschwören kann um 5[NEWLINE][ICON_BULLET]Euer [LINK=PROMOTION_UNDEAD]Untoter[\LINK] beginnt mit der [LINK=PROMOTION_STRONG]Strong[\LINK] Beförderung.</German>
+        <Italian>[ICON_BULLET]Increases the amount of [LINK=UNIT_SKELETON]skeleton[\LINK]s its empire can summon by 5[NEWLINE][ICON_BULLET]Your [LINK=PROMOTION_UNDEAD]Undead[\LINK] start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion</Italian>
+        <Spanish>[ICON_BULLET]Increases the amount of [LINK=UNIT_SKELETON]skeleton[\LINK]s its empire can summon by 5[NEWLINE][ICON_BULLET]Your [LINK=PROMOTION_UNDEAD]Undead[\LINK] start with the [LINK=PROMOTION_STRONG]Strong[\LINK] promotion</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SCULPTORS_STUDIO_PEDIA</Tag>
+        <English>[TAB]In most Luchuirp cities, the sculptor's studio can be found next to the graveyard. Charged with crafting both golems and gravestones, the mason's art perfectly embodies both life and death.[PARAGRAPH:1]It is a well-known fact that the craft of a sculptor is often one of the most profitable professions within Luchuirp society. Many years ago, a young sculptor carved an Iron Golem with the face of Athos Ulthane, the saviour of Ironstone Pass. Since that day many prominent citizens became supporters of the arts in the hope that they might be remembered in a similar fashion.[PARAGRAPH:1]Yet what of the lesser golems, those baked from mud and clay and the detritus of the streets. The silent servants that perform the tasks that no-one else wants to. Who knows what faces adorn these pitiless creatures? Ask all you want. For all the words written in the heads, none will ever emerge from their lips.[PARAGRAPH:1]But if you pay for sufficient drinks and listen carefully to the whispers of the right rotgut beggar in the wrong part of Ithralia, you might learn that the golem which cleans the sewers at the docks bears an uncanny resemblance to Hamish Two-Strings, the infamous murderer and thief.[PARAGRAPH:1]In death, as in life, social hierarchies remain, carved in metal and stone and clay forever.</English>
+        <French>[TAB]In most Luchuirp cities, the sculptor's studio can be found next to the graveyard. Charged with crafting both golems and gravestones, the mason's art perfectly embodies both life and death.[PARAGRAPH:1]It is a well-known fact that the craft of a sculptor is often one of the most profitable professions within Luchuirp society. Many years ago, a young sculptor carved an Iron Golem with the face of Athos Ulthane, the saviour of Ironstone Pass. Since that day many prominent citizens became supporters of the arts in the hope that they might be remembered in a similar fashion.[PARAGRAPH:1]Yet what of the lesser golems, those baked from mud and clay and the detritus of the streets. The silent servants that perform the tasks that no-one else wants to. Who knows what faces adorn these pitiless creatures? Ask all you want. For all the words written in the heads, none will ever emerge from their lips.[PARAGRAPH:1]But if you pay for sufficient drinks and listen carefully to the whispers of the right rotgut beggar in the wrong part of Ithralia, you might learn that the golem which cleans the sewers at the docks bears an uncanny resemblance to Hamish Two-Strings, the infamous murderer and thief.[PARAGRAPH:1]In death, as in life, social hierarchies remain, carved in metal and stone and clay forever.</French>
+        <German>[TAB]In most Luchuirp cities, the sculptor's studio can be found next to the graveyard. Charged with crafting both golems and gravestones, the mason's art perfectly embodies both life and death.[PARAGRAPH:1]It is a well-known fact that the craft of a sculptor is often one of the most profitable professions within Luchuirp society. Many years ago, a young sculptor carved an Iron Golem with the face of Athos Ulthane, the saviour of Ironstone Pass. Since that day many prominent citizens became supporters of the arts in the hope that they might be remembered in a similar fashion.[PARAGRAPH:1]Yet what of the lesser golems, those baked from mud and clay and the detritus of the streets. The silent servants that perform the tasks that no-one else wants to. Who knows what faces adorn these pitiless creatures? Ask all you want. For all the words written in the heads, none will ever emerge from their lips.[PARAGRAPH:1]But if you pay for sufficient drinks and listen carefully to the whispers of the right rotgut beggar in the wrong part of Ithralia, you might learn that the golem which cleans the sewers at the docks bears an uncanny resemblance to Hamish Two-Strings, the infamous murderer and thief.[PARAGRAPH:1]In death, as in life, social hierarchies remain, carved in metal and stone and clay forever.</German>
+        <Italian>[TAB]In most Luchuirp cities, the sculptor's studio can be found next to the graveyard. Charged with crafting both golems and gravestones, the mason's art perfectly embodies both life and death.[PARAGRAPH:1]It is a well-known fact that the craft of a sculptor is often one of the most profitable professions within Luchuirp society. Many years ago, a young sculptor carved an Iron Golem with the face of Athos Ulthane, the saviour of Ironstone Pass. Since that day many prominent citizens became supporters of the arts in the hope that they might be remembered in a similar fashion.[PARAGRAPH:1]Yet what of the lesser golems, those baked from mud and clay and the detritus of the streets. The silent servants that perform the tasks that no-one else wants to. Who knows what faces adorn these pitiless creatures? Ask all you want. For all the words written in the heads, none will ever emerge from their lips.[PARAGRAPH:1]But if you pay for sufficient drinks and listen carefully to the whispers of the right rotgut beggar in the wrong part of Ithralia, you might learn that the golem which cleans the sewers at the docks bears an uncanny resemblance to Hamish Two-Strings, the infamous murderer and thief.[PARAGRAPH:1]In death, as in life, social hierarchies remain, carved in metal and stone and clay forever.</Italian>
+        <Spanish>[TAB]In most Luchuirp cities, the sculptor's studio can be found next to the graveyard. Charged with crafting both golems and gravestones, the mason's art perfectly embodies both life and death.[PARAGRAPH:1]It is a well-known fact that the craft of a sculptor is often one of the most profitable professions within Luchuirp society. Many years ago, a young sculptor carved an Iron Golem with the face of Athos Ulthane, the saviour of Ironstone Pass. Since that day many prominent citizens became supporters of the arts in the hope that they might be remembered in a similar fashion.[PARAGRAPH:1]Yet what of the lesser golems, those baked from mud and clay and the detritus of the streets. The silent servants that perform the tasks that no-one else wants to. Who knows what faces adorn these pitiless creatures? Ask all you want. For all the words written in the heads, none will ever emerge from their lips.[PARAGRAPH:1]But if you pay for sufficient drinks and listen carefully to the whispers of the right rotgut beggar in the wrong part of Ithralia, you might learn that the golem which cleans the sewers at the docks bears an uncanny resemblance to Hamish Two-Strings, the infamous murderer and thief.[PARAGRAPH:1]In death, as in life, social hierarchies remain, carved in metal and stone and clay forever.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVIC_BLOCKS</Tag>
+        <English>[COLOR_WARNING_TEXT]Unavailable to %s1 Leaders[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Inacessible aux %s1 dirigeants [COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]nicht Verfügbar für %s1 Anführer[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Unavailable to %s1 Leaders[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Inaccesible para líderes %s1[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PIRATE_COVE_HELP</Tag>
+        <English>[ICON_BULLET]A cove can't be built within 3 tiles of another cove.</English>
+        <French>[ICON_BULLET]La Crique Pirate est seulement disponible pour les civilisations qui commencent avec la technologie Navigation (les Lanuns). Cela permet aux ouvriers de créer une crique sur une case de côte (possédée par le joueur ou non possédée) dans laquelle les navires peuvent entrer. Tant qu'ils sont dans la crique, les navires gagnent en défense, augmente le taux de guérison et un champ de vision légèrement meilleur. Si une crique est dans une case possédée par le joueur, elle fournit une petite quantité d'or. Une crique ne peut être construite à moins de trois cases d'une autre crique.</French>
+        <German>[ICON_BULLET] Eine Bucht muss mindestens 3 Geländefelder Abstand zur nächsten haben.</German>
+        <Italian>[ICON_BULLET]A cove can't be built within 3 tiles of another cove.</Italian>
+        <Spanish>[ICON_BULLET]A cove can't be built within 3 tiles of another cove.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PREREQ_CIVILIZATION</Tag>
+        <English>[COLOR_WARNING_TEXT]Requires %s1_civilization civilization[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Requires %s1_civilization civilization[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]erfordert die Zivilization der %s1_civilization[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Requires %s1_civilization civilization[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requires %s1_civilization civilization[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SMOKE_PEDIA</Tag>
+        <English>Smoke is an early indication that a tile could burst into [LINK=FEATURE_FLAMES]flames[\LINK].</English>
+        <French>La Fumée est une indication préventive qu'une case peut s'incendier.</French>
+        <German>Rauch ist ein frühes Zeichen dafür das ein Feld bald in Flammen stehen könnte.</German>
+        <Italian>Smoke is an early indication that a tile could burst into [LINK=FEATURE_FLAMES]flames[\LINK].</Italian>
+        <Spanish>El humo es una indicación previa de que una casilla podría incendiarse.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MODIFY_GLOBAL_COUNTER</Tag>
+        <English>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK]</English>
+        <French>[ICON_BULLET]%D1 au [LINK=CONCEPT_ARMAGEDDON_COUNTER]Compteur Armageddon[\LINK]</French>
+        <German>[ICON_BULLET]%D1 zum [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddonzähler[\LINK]</German>
+        <Italian>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK]</Italian>
+        <Spanish>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MESSAGE_MODIFY_GLOBAL_COUNTER_ON_COMBAT</Tag>
+        <English>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK] when a living unit is killed in combat</English>
+        <French>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK] when a living unit is killed in combat</French>
+        <German>[ICON_BULLET]%D1 zum [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddonzähler[\LINK] Wenn eine lebende Einheit im Kampf getötet wurde.</German>
+        <Italian>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK] when a living unit is killed in combat</Italian>
+        <Spanish>[ICON_BULLET]%D1 to the [LINK=CONCEPT_ARMAGEDDON_COUNTER]Armageddon Counter[\LINK] when a living unit is killed in combat</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_IMMUNE_TO_DEFENSIVE_STRIKE_PEDIA</Tag>
+        <English>[ICON_BULLET]Immune to [LINK=CONCEPT_DEFENSIVE_STRIKE]Defensive Strikes[\LINK]</English>
+        <French>[ICON_BULLET]Immune to [LINK=CONCEPT_DEFENSIVE_STRIKE]Defensive Strikes[\LINK]</French>
+        <German>[ICON_BULLET]Immunität gegen [LINK=CONCEPT_DEFENSIVE_STRIKE]Verteidigungsschläge[\LINK]</German>
+        <Italian>[ICON_BULLET]Immune to [LINK=CONCEPT_DEFENSIVE_STRIKE]Defensive Strikes[\LINK]</Italian>
+        <Spanish>[ICON_BULLET]Immune to [LINK=CONCEPT_DEFENSIVE_STRIKE]Defensive Strikes[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LOYALTY_PEDIA</Tag>
+        <English>[ICON_BULLET]Unit is 20% more likely to resist the [LINK=SPELL_CHARM_PERSON]Charm Person[\LINK] spell.</English>
+        <French>[ICON_BULLET]Unit is 20% more likely to resist the [LINK=SPELL_CHARM_PERSON]Charm Person[\LINK] spell.</French>
+        <German>[ICON_BULLET]Es besteht eine Wahrscheinlichkeit von 20%, dass die Einheit dem [LINK=SPELL_CHARM_PERSON]Beeindrucken[\LINK] Zauber widersteht.</German>
+        <Italian>[ICON_BULLET]Unit is 20% more likely to resist the [LINK=SPELL_CHARM_PERSON]Charm Person[\LINK] spell.</Italian>
+        <Spanish>[ICON_BULLET]Unit is 20% more likely to resist the [LINK=SPELL_CHARM_PERSON]Charm Person[\LINK] spell.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_TARGET_WEAKEST_UNIT_COUNTER</Tag>
+        <English>[ICON_BULLET]Guards against enemy [LINK=PROMOTION_MARKSMAN]marksman[\LINK] units</English>
+        <French>[ICON_BULLET]Se protège contre les [LINK=PROMOTION_MARKSMAN]Tireurs d'Elite[\LINK] ennemis</French>
+        <German>[ICON_BULLET]Schutz gegen feindliche [LINK=PROMOTION_MARKSMAN]Scharfschützen[\LINK] Einheiten</German>
+        <Italian>[ICON_BULLET]Guards against enemy [LINK=PROMOTION_MARKSMAN]marksman[\LINK] units</Italian>
+        <Spanish>[ICON_BULLET]Guards against enemy [LINK=PROMOTION_MARKSMAN]marksman[\LINK] units</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_WEREWOLF_PEDIA</Tag>
+        <English>[ICON_BULLET]Units killed by a Werewolf become [LINK=UNIT_RAVENOUS_WEREWOLF]Ravenous Werewolves[\LINK] under the werewolf's owner's control.</English>
+        <French>[ICON_BULLET]Les unités tuées par un Loup-Garou deviennent des [LINK=UNIT_RAVENOUS_WEREWOLF]Loup-Garou Vorace[\LINK] sous le contrôle de propriétaire du Loup-Garou.</French>
+        <German>[ICON_BULLET]Von einem Werwolf besiegte Einheiten verwandeln sich selbst in [LINK=UNIT_RAVENOUS_WEREWOLF]Lechzende Werwölfe[\LINK] und folgen ihrem Herrn.</German>
+        <Italian>[ICON_BULLET]Units killed by a Werewolf become [LINK=UNIT_RAVENOUS_WEREWOLF]Ravenous Werewolves[\LINK] under the werewolf's owner's control.</Italian>
+        <Spanish>[ICON_BULLET]Units killed by a Werewolf become [LINK=UNIT_RAVENOUS_WEREWOLF]Ravenous Werewolves[\LINK] under the werewolf's owner's control.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_ARENA_BATTLE_HELP</Tag>
+        <English>[ICON_BULLET]City gains happiness for a few turns[NEWLINE][ICON_BULLET]Caster gains a few experience[NEWLINE][ICON_BULLET]50% chance to kill the caster[NEWLINE][ICON_BULLET]Winning [LINK=UNIT_SLAVE]Slave[\LINK] will upgrade to [LINK=UNIT_WARRIOR]Warrior[\LINK]</English>
+        <French>[ICON_BULLET]50% de chances de tuer votre unité, mais si elle survit elle obtiendra de l'expérience pour son combat.  Dans tous les cas, la ville gagne du bonheur pour quelques tours.</French>
+        <German>[ICON_BULLET]50% Chance dass die Einheit stirbt, aber wenn deine Einheit überlebt wid sie aus diesem Kampf Erfahrungen erhalten. So oder so wird die Stadt für einige Runden zufriedener sein</German>
+        <Italian>[ICON_BULLET]50% chance to kill your unit, but if your unit survives he will gain experience from his battle.  Either way the city gains happiness for a few turns.</Italian>
+        <Spanish>[ICON_BULLET]50% chance to kill your unit, but if your unit survives he will gain experience from his battle.  Either way the city gains happiness for a few turns.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CALL_FORM_HELP</Tag>
+        <English>[ICON_BULLET]Teleports the [LINK=UNIT_DIVIDED_SOUL]Divided Soul[\LINK] into this tile</English>
+        <French>[ICON_BULLET]Teleports the [LINK=UNIT_DIVIDED_SOUL]Divided Soul[\LINK] into this tile</French>
+        <German>[ICON_BULLET]Teleportiert einen [LINK=UNIT_DIVIDED_SOUL]Seelenwirt[\LINK] auf das Feld</German>
+        <Italian>[ICON_BULLET]Teleports the [LINK=UNIT_DIVIDED_SOUL]Divided Soul[\LINK] into this tile</Italian>
+        <Spanish>[ICON_BULLET]Teleports the [LINK=UNIT_DIVIDED_SOUL]Divided Soul[\LINK] into this tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_CALL_OF_THE_GRAVE_HELP</Tag>
+        <English>[ICON_BULLET]Does 40% death damage to enemy units[NEWLINE][ICON_BULLET]Heals all allied [LINK=PROMOTION_UNDEAD]undead[\LINK] units[NEWLINE][ICON_BULLET]Raises 3 [LINK=UNIT_WRAITH]Wraith[\LINK]s from graveyards[NEWLINE][ICON_BULLET]Range: 2</English>
+        <French>[ICON_BULLET]Does 40% death damage to enemy units[NEWLINE][ICON_BULLET]Heals all allied [LINK=PROMOTION_UNDEAD]undead[\LINK] units[NEWLINE][ICON_BULLET]Raises 3 [LINK=UNIT_WRAITH]Wraith[\LINK]s from graveyards[NEWLINE][ICON_BULLET]Range: 2</French>
+        <German>[ICON_BULLET]Fügt feindlichen Einheiten 40% Todes-Schaden hinzu[NEWLINE][ICON_BULLET]Heilt alle verbündeten [LINK=PROMOTION_UNDEAD]untoten[\LINK] Einheiten[NEWLINE][ICON_BULLET]Aus Gräbern entsteigen 3 [LINK=UNIT_WRAITH]Gespenster[\LINK][NEWLINE][ICON_BULLET]Reichweite: 2</German>
+        <Italian>[ICON_BULLET]Does 40% death damage to enemy units[NEWLINE][ICON_BULLET]Heals all allied [LINK=PROMOTION_UNDEAD]undead[\LINK] units[NEWLINE][ICON_BULLET]Raises 3 [LINK=UNIT_WRAITH]Wraith[\LINK]s from graveyards[NEWLINE][ICON_BULLET]Range: 2</Italian>
+        <Spanish>[ICON_BULLET]Does 40% death damage to enemy units[NEWLINE][ICON_BULLET]Heals all allied [LINK=PROMOTION_UNDEAD]undead[\LINK] units[NEWLINE][ICON_BULLET]Raises 3 [LINK=UNIT_WRAITH]Wraith[\LINK]s from graveyards[NEWLINE][ICON_BULLET]Range: 2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_DESTROY_UNDEAD_HELP</Tag>
+        <English>[ICON_BULLET]Does 30% holy damage to all [LINK=PROMOTION_UNDEAD]undead[\LINK] units within 1 tile</English>
+        <French>[ICON_BULLET]Does 30% holy damage to all [LINK=PROMOTION_UNDEAD]undead[\LINK] units within 1 tile</French>
+        <German>[ICON_BULLET]fügt allen [LINK=PROMOTION_UNDEAD]untoten[\LINK] Einheiten 20% Schaden durch Weihung zu, bis zu einem Maximum von 50%[NEWLINE][ICON_BULLET]Reichweite: +1</German>
+        <Italian>[ICON_BULLET]Does 30% holy damage to all [LINK=PROMOTION_UNDEAD]undead[\LINK] units within 1 tile</Italian>
+        <Spanish>[ICON_BULLET]Does 30% holy damage to all [LINK=PROMOTION_UNDEAD]undead[\LINK] units within 1 tile</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_DIVINE_RETRIBUTION_HELP</Tag>
+        <English>[ICON_BULLET]Does Damage to all the worlds [LINK=PROMOTION_DEMON]Demonic[\LINK] and [LINK=PROMOTION_UNDEAD]Undead[\LINK] units</English>
+        <French>[ICON_BULLET]Endommage toues les [LINK=PROMOTION_DEMON]Démons[\LINK] et [LINK=PROMOTION_UNDEAD]Mort-vivants[\LINK] du monde</French>
+        <German>[ICON_BULLET]Beschädigt alle [LINK=PROMOTION_DEMON]Dämonen[\LINK] und [LINK=PROMOTION_UNDEAD]untoten[\LINK] Einheiten</German>
+        <Italian>[ICON_BULLET]Does Damage to all the worlds [LINK=PROMOTION_DEMON]Demonic[\LINK] and [LINK=PROMOTION_UNDEAD]Undead[\LINK] units</Italian>
+        <Spanish>[ICON_BULLET]Does Damage to all the worlds [LINK=PROMOTION_DEMON]Demonic[\LINK] and [LINK=PROMOTION_UNDEAD]Undead[\LINK] units</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_GIFTS_OF_NANTOSUELTA_HELP</Tag>
+        <English>[ICON_BULLET]Creates a [LINK=EQUIPMENT_GOLDEN_HAMMER]Golden Hammer[\LINK] in each of your cities</English>
+        <French>[ICON_BULLET]Crée un [LINK=EQUIPMENT_GOLDEN_HAMMER]Marteau doré[\LINK] dans chacune de vos villes</French>
+        <German>[ICON_BULLET]Erschafft einen [LINK=EQUIPMENT_GOLDEN_HAMMER]Goldenen Hammer[\LINK] in jeder euerer Städte</German>
+        <Italian>[ICON_BULLET]Creates a [LINK=EQUIPMENT_GOLDEN_HAMMER]Golden Hammer[\LINK] in each of your cities</Italian>
+        <Spanish>[ICON_BULLET]Creates a [LINK=EQUIPMENT_GOLDEN_HAMMER]Golden Hammer[\LINK] in each of your cities</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_GIFT_VAMPIRISM_HELP</Tag>
+		<English>[ICON_BULLET]Gives living units of at least 6th level the [LINK=PROMOTION_VAMPIRE]Vampire[\LINK] promotion</English>
+		<French>Transforme l'unité en [LINK=PROMOTION_VAMPIRE]Vampire[\LINK]</French>
+		<German>[ICON_BULLET]Verleiht einer lebenden Einheit die [LINK=PROMOTION_VAMPIRE]Vampirismus[\LINK]-Beförderung, vorausgesetzt sie hat Erfahrungsstufe 6 erreicht.</German>
+		<Italian>[ICON_BULLET]Gives living units of at least 6th level the [LINK=PROMOTION_VAMPIRE]Vampire[\LINK] promotion</Italian>
+		<Spanish>[ICON_BULLET]Gives living units of at least 6th level the [LINK=PROMOTION_VAMPIRE]Vampire[\LINK] promotion</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_HERALDS_CALL_HELP</Tag>
+        <English>[ICON_BULLET]Grants living units in the tile the [LINK=PROMOTION_BLESSED]Blessed[\LINK], [LINK=PROMOTION_LOYALTY]Loyalty[\LINK], [LINK=PROMOTION_COURAGE]Courage[\LINK] and [LINK=PROMOTION_VALOR]Valor[\LINK] promotions but will kill them at the end of the turn</English>
+        <French>[ICON_BULLET]Accorde aux unités vivantes dans la case les promotions [LINK=PROMOTION_BLESSED]Béni[\LINK], [LINK=PROMOTION_LOYALTY]Loyauté[\LINK], [LINK=PROMOTION_COURAGE]Courage[\LINK] et [LINK=PROMOTION_VALOR]Valeur[\LINK] mais les tuera à la fin du tour.</French>
+        <German>[ICON_BULLET]Verleiht allen lebenden Einheiten auf dem Geländefeld die Beförderungen [LINK=PROMOTION_BLESSED]Gesegnet[\LINK], [LINK=PROMOTION_LOYALTY]Loyalität[\LINK], [LINK=PROMOTION_COURAGE]Tapferkeit[\LINK] und [LINK=PROMOTION_VALOR]Heldenmut[\LINK], aber das wird sie am Ende der Runde töten.</German>
+        <Italian>[ICON_BULLET]Grants living units in the tile the [LINK=PROMOTION_BLESSED]Blessed[\LINK], [LINK=PROMOTION_LOYALTY]Loyalty[\LINK], [LINK=PROMOTION_COURAGE]Courage[\LINK] and [LINK=PROMOTION_VALOR]Valor[\LINK] promotions but will kill them at the end of the turn</Italian>
+        <Spanish>[ICON_BULLET]Grants living units in the tile the [LINK=PROMOTION_BLESSED]Blessed[\LINK], [LINK=PROMOTION_LOYALTY]Loyalty[\LINK], [LINK=PROMOTION_COURAGE]Courage[\LINK] and [LINK=PROMOTION_VALOR]Valor[\LINK] promotions but will kill them at the end of the turn</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_MARCH_OF_THE_TREES_HELP</Tag>
+        <English>[ICON_BULLET]Transforms all the forests in your empire into [LINK=UNIT_TREANT]Treant[/LINK]'s for a few turns</English>
+        <French>[ICON_BULLET]Transforme toutes les forêts de votre empire en [LINK=UNIT_TREANT]Homarbres[/LINK] pour quelques tours</French>
+        <German>[ICON_BULLET]Verwandelt alle Wälder in eurem Reich für einige Runden in [LINK=UNIT_TREANT]Baumhirten[/LINK]</German>
+        <Italian>[ICON_BULLET]Transforms all the forests in your empire into [LINK=UNIT_TREANT]Treant[/LINK]'s for a few turns</Italian>
+        <Spanish>[ICON_BULLET]Transforms all the forests in your empire into [LINK=UNIT_TREANT]Treant[/LINK]'s for a few turns</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SIRONAS_TOUCH_HELP</Tag>
+        <English>[ICON_BULLET]Can only be used once per turn[NEWLINE][ICON_BULLET]Heals the unit by 15%</English>
+        <French>[ICON_BULLET]Ne peut être utilisé qu'une fois par tour[NEWLINE][ICON_BULLET]Soigne l'unité de 15%</French>
+        <German>[ICON_BULLET]Kann nur einmal pro Runde benutzt werden[NEWLINE][ICON_BULLET]Heilt 20% Schaden bei einer Einheit</German>
+        <Italian>[ICON_BULLET]Can only be used once per turn[NEWLINE][ICON_BULLET]Heals the unit by 15%</Italian>
+        <Spanish>[ICON_BULLET]Can only be used once per turn[NEWLINE][ICON_BULLET]Heals the unit by 15%</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_SNOWFALL_HELP</Tag>
+        <English>[ICON_BULLET]Temporarily turns surrounding tiles to [LINK=TERRAIN_SNOW]ice[\LINK]</English>
+        <French>[ICON_BULLET]Temporarily turns surrounding tiles to [LINK=TERRAIN_SNOW]ice[\LINK]</French>
+        <German>[ICON_BULLET]Verwandelt das Geländefeld für eine gewisse Zeit in [LINK=TERRAIN_SNOW]Eis[\LINK]</German>
+        <Italian>[ICON_BULLET]Temporarily turns surrounding tiles to [LINK=TERRAIN_SNOW]ice[\LINK]</Italian>
+        <Spanish>[ICON_BULLET]Temporarily turns surrounding tiles to [LINK=TERRAIN_SNOW]ice[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_VEIL_OF_NIGHT_HELP</Tag>
+        <English>[ICON_BULLET]All your units gain [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK]</English>
+        <French>[ICON_BULLET]Toutes vos unités gagne la [LINK=PROMOTION_HIDDEN_NATIONALITY]Nationalité Cachée[\LINK]</French>
+        <German>[ICON_BULLET]Alle eure Einheiten erhalten die Beförderung [LINK=PROMOTION_HIDDEN_NATIONALITY]Verborgene Nationalität[\LINK]</German>
+        <Italian>[ICON_BULLET]All your units gain [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK]</Italian>
+        <Spanish>[ICON_BULLET]All your units gain [LINK=PROMOTION_HIDDEN_NATIONALITY]Hidden Nationality[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_WARCRY_HELP</Tag>
+        <English>[ICON_BULLET]All your units gain the [LINK=PROMOTION_WARCRY]Warcry[\LINK] promotion</English>
+        <French>[ICON_BULLET]Toutes vos unités gagnent la promotion [LINK=PROMOTION_WARCRY]Cri de Guerre[\LINK]</French>
+        <German>[ICON_BULLET]Alle eure Einheiten erhalten die [LINK=PROMOTION_WARCRY]Schlachtruf[\LINK] Beförderung</German>
+        <Italian>[ICON_BULLET]All your units gain the [LINK=PROMOTION_WARCRY]Warcry[\LINK] promotion</Italian>
+        <Spanish>[ICON_BULLET]All your units gain the [LINK=PROMOTION_WARCRY]Warcry[\LINK] promotion</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DURATION</Tag>
+        <English>Duration: Will die in %D1 [NUM1:turn:turns].</English>
+        <French>Durée: mourra dans %D1 [NUM1:tour:tours].</French>
+        <German>Dauer: Wird sterben in %D1 [NUM1:Runde:Rundens].</German>
+        <Italian>Duration: Will die in %D1 [NUM1:turn:turns].</Italian>
+        <Spanish>Duration: Will die in %D1 [NUM1:turn:turns].</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ENSLAVEMENT_CHANCE</Tag>
+		<English>[ICON_BULLET]%D1% chance to create a [LINK=UNIT_SLAVE]slave[\LINK] from combat</English>
+		<French>[ICON_BULLET]%D1% probabilité de créer un [LINK=UNIT_SLAVE]esclave[\LINK] à l'issue d'un combat</French>
+		<German>[ICON_BULLET]%D1% Chance nach dem Kampf einen [LINK=UNIT_SLAVE]Sklaven[\LINK] zu bekommen</German>
+		<Italian>[ICON_BULLET]%D1% chance to create a [LINK=UNIT_SLAVE]slave[\LINK] from combat</Italian>
+		<Spanish>[ICON_BULLET]%D1% chance to create a [LINK=UNIT_SLAVE]slave[\LINK] from combat</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FREE_PROMOTION_PICK</Tag>
+        <English>[ICON_BULLET]Unit starts with %D1 free [NUM1:promotion:promotions]</English>
+        <French>[ICON_BULLET]L'unité commence avec %D1 [NUM1:promotion gratuite:promotions gratuites]</French>
+        <German>[ICON_BULLET]Einheit startet mit %D1 freie [NUM1:Beförderung:Beförderungen]</German>
+        <Italian>[ICON_BULLET]Unit starts with %D1 free [NUM1:promotion:promotions]</Italian>
+        <Spanish>[ICON_BULLET]Unit starts with %D1 free [NUM1:promotion:promotions]</Spanish>
+    </TEXT>
+</Civ4GameText>

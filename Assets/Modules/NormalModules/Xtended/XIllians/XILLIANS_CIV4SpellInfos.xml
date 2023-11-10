@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:XILLIANS_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+        <SpellInfo>
+            <Type>SPELL_FROSTLING_THRALL</Type>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>TXT_KEY_SPELL_FROSTLING_THRALL</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_WHITE_HAND</PromotionPrereq1>
+            <Help>TXT_KEY_SPELL_FROSTLING_THRALL_HELP</Help>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>30</iAIWeight>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <CreateUnitType>UNIT_FROSTLING</CreateUnitType>
+            <iCreateUnitNum>1</iCreateUnitNum>
+			<bPermanentUnitCreate>1</bPermanentUnitCreate>
+            <Effect>EFFECT_SPELL2</Effect>
+            <Sound>AS3D_SPELL_REPAIR</Sound>
+            <Button>, ,Art/Interface/Buttons/Units/Units_Atlas2.dds,2,10</Button>
+			<iFaithCost>20</iFaithCost> 
+        </SpellInfo> 
+        <SpellInfo>
+            <Type>SPELL_SLOW_WHITE_HAND</Type>
+            <Description>Frostbite</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_WHITE_HAND</PromotionPrereq1>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+            <iRange>1</iRange>
+            <iResistModify>25</iResistModify>
+            <iDamage>15</iDamage>
+            <iDamageLimit>100</iDamageLimit>
+            <DamageType>DAMAGE_COLD</DamageType>
+            <AddPromotionType1>PROMOTION_SLOW</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <Effect>EFFECT_SPRING</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,1,11</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>3</iNumTargets>
+			<iFaithCost>50</iFaithCost> 
+			<ObsoletedBySpells>
+				<ObsoletedBySpell>
+					<SpellType>SPELL_SNOWFALL_WHITE_HAND</SpellType>
+					<bObsolete>1</bObsolete>
+				</ObsoletedBySpell>
+			</ObsoletedBySpells>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SNOWFALL_WHITE_HAND</Type>
+            <Description>Winter Blast</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_WHITE_HAND</PromotionPrereq1>
+            <PromotionPrereq2>PROMOTION_CHANNELING2</PromotionPrereq2>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+            <iRange>1</iRange>
+            <iDamage>20</iDamage>
+            <iDamageLimit>100</iDamageLimit>
+            <DamageType>DAMAGE_COLD</DamageType>
+            <AddPromotionType1>PROMOTION_SLOW</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <Effect>EFFECT_SLOW</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,1,11</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>6</iNumTargets>
+			<iFaithCost>100</iFaithCost> 
+			<ObsoletedBySpells>
+				<ObsoletedBySpell>
+					<SpellType>SPELL_SNOWFALL_GREATOR_WHITE_HAND</SpellType>
+					<bObsolete>1</bObsolete>
+				</ObsoletedBySpell>
+			</ObsoletedBySpells>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_SNOWFALL_GREATOR_WHITE_HAND</Type>
+            <Description>Avalanche</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <PromotionPrereq1>PROMOTION_WHITE_HAND</PromotionPrereq1>
+            <PromotionPrereq2>PROMOTION_CHANNELING3</PromotionPrereq2>
+            <bAllowAI>1</bAllowAI>
+            <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
+            <bHasCasted>1</bHasCasted>
+            <bResistable>1</bResistable>
+            <iRange>1</iRange>
+            <iDamage>25</iDamage>
+            <iDamageLimit>100</iDamageLimit>
+            <DamageType>DAMAGE_COLD</DamageType>
+            <AddPromotionType1>PROMOTION_SLOW</AddPromotionType1>
+            <bImmuneTeam>1</bImmuneTeam>
+            <bImmuneNeutral>1</bImmuneNeutral>
+            <PyResult>spellSnowfallGreator(pCaster)</PyResult>
+            <Effect>EFFECT_SNOWFALL_GREATOR</Effect>
+            <Sound>AS3D_SPELL_SPRING</Sound>
+            <Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,1,11</Button>
+			<bTargetedHostile>1</bTargetedHostile>
+			<iNumTargets>-1</iNumTargets>
+			<iFaithCost>100</iFaithCost> 
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_PASSIVE_SNOW</Type>
+            <Description>Frozen Land</Description>
+            <Button>Art/Interface/Buttons/TerrainFeatures/Blizzard.dds</Button>
+        </SpellInfo>
+	</SpellInfos>
+</Civ4SpellInfos>

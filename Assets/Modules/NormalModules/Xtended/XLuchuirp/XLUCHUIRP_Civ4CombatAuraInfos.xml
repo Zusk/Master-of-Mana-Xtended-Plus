@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Promotion Infos -->
+<Civ4CombatAuraInfos xmlns="x-schema:XHERO_CIV4CombatAuraSchema.xml">
+	<CombatAuraInfos>	
+		<CombatAuraInfo>
+			<CombatAuraClassType>COMBATAURACLASS_ARTIFICER</CombatAuraClassType>
+			<Type>COMBATAURA_ARTIFICER</Type>
+			<bBlessing>1</bBlessing>
+			<PrereqPromotion>PROMOTION_GOLEM</PrereqPromotion>
+			<iRange>1</iRange>
+			<iTargets>2</iTargets>
+			<iTier>4</iTier>
+			<Button>Modules/NormalModules/Xtended/XLuchuirp/Arts/Buttons/Artifice.dds</Button>
+		</CombatAuraInfo>		
+	</CombatAuraInfos>		
+</Civ4CombatAuraInfos>

@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>AI_DIPLO_DECLARE_WAR_LEADER_DURAL</Tag>
+		<English>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</English>
+		<French>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</French>
+		<German>Es gibt Zeiten f&#252;r das Lernen, f&#252;r das Wachstum, f&#252;r Rast und Mu&#223;e, f&#252;r Freude und gro&#223;e Errungenschaften - doch jetzt ist es Zeit f&#252;r einen ordentlichen Krieg.</German>
+		<Italian>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</Italian>
+		<Spanish>There is a time for study, a time for meditation, a time for great works - but now it is time for war.</Spanish>
+	</TEXT>
+    <TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_DURAL</Tag>
+		<English>The people of Dural greet you - may we learn much from each other.</English>
+		<French>The people of Dural greet you - may we learn much from each other</French>
+		<German>Das Volk der Jotnar gr&#252;&#223;t Euch - wir werden sicher eine Menge voneinander lernen k&#246;nnen.</German>
+		<Italian>The people of Dural greet you - may we learn much from each other</Italian>
+		<Spanish>The people of Dural greet you - may we learn much from each other</Spanish>
+	</TEXT>
+    <TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_DURAL</Tag>
+		<English>The path is chosen. We have nothing to discuss.</English>
+		<French>The path is chosen. We have nothing to discuss.</French>
+		<German>Der Weg wurde eingeschlagen, die W&#252;rfel sind gefallen. Es gibt nichts zu reden.</German>
+		<Italian>The path is chosen. We have nothing to discuss.</Italian>
+		<Spanish>The path is chosen. We have nothing to discuss.</Spanish>
+	</TEXT>
+    <TEXT>
+		<Tag>AI_DIPLO_PEACE_LEADER_DURAL</Tag>
+		<English>I am glad that we shall live in peace.</English>
+		<French>I am glad that we shall live in peace.</French>
+		<German>Ich freue mich, da&#223; wir in Frieden leben werden.</German>
+		<Italian>I am glad that we shall live in peace.</Italian>
+		<Spanish>I am glad that we shall live in peace.</Spanish>
+	</TEXT>
+     <TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_LEADER_DURAL</Tag>
+		<English>Our proud warriors yet seek greater glories - who am I to stay their hand?</English>
+		<French>Our proud warriors yet seek greater glories - who am I to stay their hand?</French>
+		<German>Unsere Krieger suchen noch gr&#246;&#223;ere Schlachten und mehr Ruhm. Wer w&#228;re ich, w&#252;rde ich ihnen das verwehren?</German>
+		<Italian>Our proud warriors yet seek greater glories - who am I to stay their hand?</Italian>
+		<Spanish>Our proud warriors yet seek greater glories - who am I to stay their hand?</Spanish>
+	</TEXT>   
+     <TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_LEADER_DURAL</Tag>
+		<English>Let us end this bloodshed and rebuild in peace.</English>
+		<French>Let us end this bloodshed and rebuild in peace.</French>
+		<German>La&#223; uns das Schlachten beenden und alles in Frieden enden.</German>
+		<Italian>Let us end this bloodshed and rebuild in peace.</Italian>
+		<Spanish>Let us end this bloodshed and rebuild in peace.</Spanish>
+	</TEXT>
+     <TEXT>
+		<Tag>AI_DIPLO_ACCEPT_LEADER_DANNMOS  </Tag>
+		<English>I have listened and I like what I have heard.</English>
+		<French>I have listened and I like what I have heard.</French>
+		<German>Was ich h&#246;re, findet unsere Zustimmung.</German>
+		<Italian>I have listened and I like what I have heard.</Italian>
+		<Spanish>I have listened and I like what I have heard.</Spanish>
+	</TEXT>    
+     <TEXT>
+		<Tag>AI_DIPLO_REJECT_LEADER_DURAL</Tag>
+		<English>I do not see the wisdom in your proposal.</English>
+		<French>I do not see the wisdom in your proposal.</French>
+		<German>Ich sehe keine Weitsicht in eurem Vorschlag. Meine Antort wird also nein lauten, wenn es dabei bleibt.</German>
+		<Italian>I do not see the wisdom in your proposal.</Italian>
+		<Spanish>I do not see the wisdom in your proposal.</Spanish>
+	</TEXT>    
+     <TEXT>
+		<Tag>AI_DIPLO_THANKS_LEADER_DURAL</Tag>
+		<English>Your words are wise.</English>
+		<French>Your words are wise.</French>
+		<German>Weise Worte.</German>
+		<Italian>Your words are wise.</Italian>
+		<Spanish>Your words are wise.</Spanish>
+	</TEXT>    
+
+    <TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_DANNMOS</Tag>
+		<English>Why do you seek to destroy that which we have created? Are you so jealous?</English>
+		<French>Why do you seek to destroy that which we have created? Are you so jealous?</French>
+		<German>Warum sucht Ihr zu zerst&#246;ren, was m&#252;hsam aufgebaut wurde. Seid ihr neidisch oder einfach nur schlechter Laune?</German>
+		<Italian>Why do you seek to destroy that which we have created? Are you so jealous?</Italian>
+		<Spanish>Why do you seek to destroy that which we have created? Are you so jealous?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_DEFAULT</Tag>
+		<English>Greetings, [CT_NAME]. Would you rather be our friend, or our foe?</English>
+		<French>Greetings, [CT_NAME]. Would you rather be our friend, or our foe?</French>
+		<German>Seid gegr&#252;&#223;t, [CT_NAME]. W&#252;rdet Ihr lieber zu unseren Freunden z&#228;hlen, oder zu unseren Feinden?</German>
+		<Italian>Greetings, [CT_NAME]. Would you rather be our friend, or our foe?</Italian>
+		<Spanish>Greetings, [CT_NAME]. Would you rather be our friend, or our foe?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_REFUSE_TO_TALK_DEFAULT</Tag>
+		<English>We have nothing to say to you.</English>
+		<French>We have nothing to say to you.</French>
+		<German>Wir haben nichts mit Euch zu besprechen.</German>
+		<Italian>We have nothing to say to you.</Italian>
+		<Spanish>We have nothing to say to you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_PEACE_DEFAULT</Tag>
+		<English>Good. Then there shall be peace between our lands.</English>
+		<French>Good. Then there shall be peace between our lands.</French>
+		<German>Abgemacht. So soll denn Frieden herrschen zwischen unseren L&#228;ndern.</German>
+		<Italian>Good. Then there shall be peace between our lands.</Italian>
+		<Spanish>Good. Then there shall be peace between our lands.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_PEACE_DEFAULT</Tag>
+		<English>There shall be no peace until our warriors have had their fill.</English>
+		<French>There shall be no peace until our warriors have had their fill.</French>
+		<German>Frieden? Nicht, solange unsere Krieger noch nach Blut lechzen.</German>
+		<Italian>There shall be no peace until our warriors have had their fill.</Italian>
+		<Spanish>There shall be no peace until our warriors have had their fill.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_DEFAULT</Tag>
+		<English>What do you want, [CT_NAME]? Speak quickly and choose your words carefully.</English>
+		<French>What do you want, [CT_NAME]? Speak quickly and choose your words carefully.</French>
+		<German>Was wollt Ihr, [CT_NAME]? Sprecht rasch und w&#228;hlt Eure Worte mit Bedacht.</German>
+		<Italian>What do you want, [CT_NAME]? Speak quickly and choose your words carefully.</Italian>
+		<Spanish>What do you want, [CT_NAME]? Speak quickly and choose your words carefully.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_ACCEPT_DEFAULT</Tag>
+		<English>That is acceptable</English>
+		<French>That is acceptable</French>
+		<German>Das ist akzeptabel.</German>
+		<Italian>That is acceptable</Italian>
+		<Spanish>That is acceptable</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_NO_DEAL_DEFAULT</Tag>
+		<English>That offer is inacceptable.</English>
+		<French>That offer is inacceptable.</French>
+		<German>Euer Angebot ist inakzeptabel, [CT_NAME].</German>
+		<Italian>That offer is inacceptable.</Italian>
+		<Spanish>That offer is inacceptable.</Spanish>
+	</TEXT>
+	   <TEXT>
+		<Tag>AI_DIPLO_OFFER_PEACE_DEFAULT</Tag>
+		<English>I am tired of war, can there be peace?</English>
+		<French>I am tired of war, can there be peace?</French>
+		<German>Ich bin den Krieg so leid. Wollen wir dem Frieden nicht mal eine Chance geben?</German>
+		<Italian>I am tired of war, can there be peace?</Italian>
+		<Spanish>I am tired of war, can there be peace?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_THANKS_DEFAULT</Tag>
+		<English>Thank you, [CT_NAME].</English>
+		<French>Thank you, [CT_NAME].</French>
+		<German>Ich danke Euch, [CT_NAME].</German>
+		<Italian>Thank you, [CT_NAME].</Italian>
+		<Spanish>Thank you, [CT_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_DEMAND_REJECTED_DEFAULT</Tag>
+		<English>We shall see, [CT_NAME].</English>
+		<French>We shall see, [CT_NAME].</French>
+		<German>We shall see, [CT_NAME].</German>
+		<Italian>We shall see, [CT_NAME].</Italian>
+		<Spanish>We shall see, [CT_NAME].</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LEADER_OPHELIA</Tag>
+        <English>Ophelia Rosenthal</English>
+        <French>Ophelia Rosenthal</French>
+        <German>Ophelia Rosenthal</German>
+        <Italian>Ophelia Rosenthal</Italian>
+        <Spanish>Ophelia Rosenthal</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_OPHELIA_PEDIA</Tag>
+        <English>Ophelia has the opportunity to take the Gift if leading the Scions, removing the [LINK=TRAIT_STRATEGIST]Strategist[\LINK] trait and adding the [LINK=TRAIT_DEATHTOUCHED]Deathtouched[\LINK], [LINK=TRAIT_AGNOSTIC]Agnostic[\LINK], and [LINK=TRAIT_EMPEROR_CULT]Emperor's Cult[\LINK] traits.
+		
+		They had left her.
+They had escaped where she had remained. Lost, cold, and alone, Ophelia had seen the bloodshed caused by both man and demon alike, and in this hell, the memories faded together where she could neither separate the demon from the man. Even Donal, the one whom had stayed behind, was as brutal and if not more lethal than the demons that chased her through the wastes.
+But neither demon nor man would ever find her. Having been abandoned, Ophelia had abandoned many of the Bannor's fanatical approaches to survival. And it was because of this that for the first time since she had fought alongside Capria as a Secondline-Woman, she had felt the surge of hope that was nonexistent in the place like this. In this hell where she had been abandoned, she had adapted.
+"Perhaps you are more like that fool Donal than you care to admit, Ms. Rosenthal." The voice was quick to shatter her mood as she spun around, the blade in her hand chipped and stained with the blood of many. But it pointed at nothing but the dusty winds, no foe whispering in her ear, no beast that warranted her sword through its chest. Her eyes darted to and fro, seeing nothing on the horizon.
+Seeing nothing but hearing the sounds of rope tearing, rocks tumbling against one another and the inevitable shattering as her traps had been destroyed by something. The sounds echoed across the broken fields, as Ophelia stood there watching precious hours of her labor be destroyed. As the last rock tumbled down from her makeshift rockslide, she knew that this would go on. That fleeting moment of hope was gone.
+It had been replaced by something far more sinister. A cold burning sensation on her soul. Perhaps it was the machinations of countless generations that had pushed her to this edge, or perhaps it was something else. But escape was the only option. Her head filled itself with ideas, plots, theories that she hadn't conceived before. But each idea, each thought, was foreign and malicious.
+And it was these ideas that had whispered in her ear the only way out of hell, was to be gated out. The path up Mulcarn's domain was too slow- she needed to be free of this wretched place. The seductive whispers of freedom filled her mind as the wastelands grew smaller to her, each step no longer taking the effort of a hundred and each day spent in the red haze she had been left in grew shorter as she found herself taking an almost macabre ecstasy from breaking each demon not of their strength, but of their will. She relished in the confusion and frustration as the enemy lost her trail, and laughed at their incompetence as she followed the whispering winds of the hells.
+Time held no meaning for Ophelia as she slipped from one vault, moving in the shadows and slipping by unnoticed. Demons no longer paid heed to her, mistaking her for another petitioner as she pushed between vaults and into her ultimate goal- the Vault of Cerdiwen. The whispers had told her where to go, how to get there, the sigils and mysteries she would need to decipher and ultimately, the way to navigate the vault. But no whisper, no false hope, no burning desire could prepare her as she slipped into the unmentionable abyss. She saw everything in the maelstrom and webways, secrets that pushed her mind to break and then break again, her perceptions shattered every instant. She perceived Furia's torture from the view of the Balseraph angel, gazed through the eyes of Nemed as he twisted and writhed in excruciating pain under the will of Os-Gabella, and felt Flauros pierce her flesh as Taerry, the poor Calabim girl whom was nothing more than a plaything the aristocrat. But to Ophelia, she was all of these people and had seen everything through their eyes. Their pain, their fears, their sorrows, but also their hopes, their dreams, and the futures that could have been. Ophelia didn't know if this was from the whispers or from Cerdiwen herself preying upon the trespassing Bannor, but she no longer cared as her lungs were filled with cold, crisp air. She was on Erebus again. But she had seen the visions of millions of souls, gazed into the very Avatar of Wrath as he was being formed. Things a mere mortal was never meant to see. And her very being was no longer part of her. Her gaze, where it had once been both frightened but and hopeful was now left sinister and distant. Her voice was controlled and her tone pert and quick, her temper now short but her reactions to be thought out and executed with precision. She was no longer Ophelia Rosenthal, but rather the sum of what she had seen.</English>
+        <French>Ophelia has the opportunity to take the Gift if leading the Scions, removing the [LINK=TRAIT_STRATEGIST]Strategist[\LINK] trait and adding the [LINK=TRAIT_DEATHTOUCHED]Deathtouched[\LINK], [LINK=TRAIT_AGNOSTIC]Agnostic[\LINK], and [LINK=TRAIT_EMPEROR_CULT]Emperor's Cult[\LINK] traits.
+		
+		They had left her.
+They had escaped where she had remained. Lost, cold, and alone, Ophelia had seen the bloodshed caused by both man and demon alike, and in this hell, the memories faded together where she could neither separate the demon from the man. Even Donal, the one whom had stayed behind, was as brutal and if not more lethal than the demons that chased her through the wastes.
+But neither demon nor man would ever find her. Having been abandoned, Ophelia had abandoned many of the Bannor's fanatical approaches to survival. And it was because of this that for the first time since she had fought alongside Capria as a Secondline-Woman, she had felt the surge of hope that was nonexistent in the place like this. In this hell where she had been abandoned, she had adapted.
+"Perhaps you are more like that fool Donal than you care to admit, Ms. Rosenthal." The voice was quick to shatter her mood as she spun around, the blade in her hand chipped and stained with the blood of many. But it pointed at nothing but the dusty winds, no foe whispering in her ear, no beast that warranted her sword through its chest. Her eyes darted to and fro, seeing nothing on the horizon.
+Seeing nothing but hearing the sounds of rope tearing, rocks tumbling against one another and the inevitable shattering as her traps had been destroyed by something. The sounds echoed across the broken fields, as Ophelia stood there watching precious hours of her labor be destroyed. As the last rock tumbled down from her makeshift rockslide, she knew that this would go on. That fleeting moment of hope was gone.
+It had been replaced by something far more sinister. A cold burning sensation on her soul. Perhaps it was the machinations of countless generations that had pushed her to this edge, or perhaps it was something else. But escape was the only option. Her head filled itself with ideas, plots, theories that she hadn't conceived before. But each idea, each thought, was foreign and malicious.
+And it was these ideas that had whispered in her ear the only way out of hell, was to be gated out. The path up Mulcarn's domain was too slow- she needed to be free of this wretched place. The seductive whispers of freedom filled her mind as the wastelands grew smaller to her, each step no longer taking the effort of a hundred and each day spent in the red haze she had been left in grew shorter as she found herself taking an almost macabre ecstasy from breaking each demon not of their strength, but of their will. She relished in the confusion and frustration as the enemy lost her trail, and laughed at their incompetence as she followed the whispering winds of the hells.
+Time held no meaning for Ophelia as she slipped from one vault, moving in the shadows and slipping by unnoticed. Demons no longer paid heed to her, mistaking her for another petitioner as she pushed between vaults and into her ultimate goal- the Vault of Cerdiwen. The whispers had told her where to go, how to get there, the sigils and mysteries she would need to decipher and ultimately, the way to navigate the vault. But no whisper, no false hope, no burning desire could prepare her as she slipped into the unmentionable abyss. She saw everything in the maelstrom and webways, secrets that pushed her mind to break and then break again, her perceptions shattered every instant. She perceived Furia's torture from the view of the Balseraph angel, gazed through the eyes of Nemed as he twisted and writhed in excruciating pain under the will of Os-Gabella, and felt Flauros pierce her flesh as Taerry, the poor Calabim girl whom was nothing more than a plaything the aristocrat. But to Ophelia, she was all of these people and had seen everything through their eyes. Their pain, their fears, their sorrows, but also their hopes, their dreams, and the futures that could have been. Ophelia didn't know if this was from the whispers or from Cerdiwen herself preying upon the trespassing Bannor, but she no longer cared as her lungs were filled with cold, crisp air. She was on Erebus again. But she had seen the visions of millions of souls, gazed into the very Avatar of Wrath as he was being formed. Things a mere mortal was never meant to see. And her very being was no longer part of her. Her gaze, where it had once been both frightened but and hopeful was now left sinister and distant. Her voice was controlled and her tone pert and quick, her temper now short but her reactions to be thought out and executed with precision. She was no longer Ophelia Rosenthal, but rather the sum of what she had seen.</French>
+        <German>Ophelia has the opportunity to take the Gift if leading the Scions, removing the [LINK=TRAIT_STRATEGIST]Strategist[\LINK] trait and adding the [LINK=TRAIT_DEATHTOUCHED]Deathtouched[\LINK], [LINK=TRAIT_AGNOSTIC]Agnostic[\LINK], and [LINK=TRAIT_EMPEROR_CULT]Emperor's Cult[\LINK] traits.
+
+		They had left her.
+They had escaped where she had remained. Lost, cold, and alone, Ophelia had seen the bloodshed caused by both man and demon alike, and in this hell, the memories faded together where she could neither separate the demon from the man. Even Donal, the one whom had stayed behind, was as brutal and if not more lethal than the demons that chased her through the wastes.
+But neither demon nor man would ever find her. Having been abandoned, Ophelia had abandoned many of the Bannor's fanatical approaches to survival. And it was because of this that for the first time since she had fought alongside Capria as a Secondline-Woman, she had felt the surge of hope that was nonexistent in the place like this. In this hell where she had been abandoned, she had adapted.
+"Perhaps you are more like that fool Donal than you care to admit, Ms. Rosenthal." The voice was quick to shatter her mood as she spun around, the blade in her hand chipped and stained with the blood of many. But it pointed at nothing but the dusty winds, no foe whispering in her ear, no beast that warranted her sword through its chest. Her eyes darted to and fro, seeing nothing on the horizon.
+Seeing nothing but hearing the sounds of rope tearing, rocks tumbling against one another and the inevitable shattering as her traps had been destroyed by something. The sounds echoed across the broken fields, as Ophelia stood there watching precious hours of her labor be destroyed. As the last rock tumbled down from her makeshift rockslide, she knew that this would go on. That fleeting moment of hope was gone.
+It had been replaced by something far more sinister. A cold burning sensation on her soul. Perhaps it was the machinations of countless generations that had pushed her to this edge, or perhaps it was something else. But escape was the only option. Her head filled itself with ideas, plots, theories that she hadn't conceived before. But each idea, each thought, was foreign and malicious.
+And it was these ideas that had whispered in her ear the only way out of hell, was to be gated out. The path up Mulcarn's domain was too slow- she needed to be free of this wretched place. The seductive whispers of freedom filled her mind as the wastelands grew smaller to her, each step no longer taking the effort of a hundred and each day spent in the red haze she had been left in grew shorter as she found herself taking an almost macabre ecstasy from breaking each demon not of their strength, but of their will. She relished in the confusion and frustration as the enemy lost her trail, and laughed at their incompetence as she followed the whispering winds of the hells.
+Time held no meaning for Ophelia as she slipped from one vault, moving in the shadows and slipping by unnoticed. Demons no longer paid heed to her, mistaking her for another petitioner as she pushed between vaults and into her ultimate goal- the Vault of Cerdiwen. The whispers had told her where to go, how to get there, the sigils and mysteries she would need to decipher and ultimately, the way to navigate the vault. But no whisper, no false hope, no burning desire could prepare her as she slipped into the unmentionable abyss. She saw everything in the maelstrom and webways, secrets that pushed her mind to break and then break again, her perceptions shattered every instant. She perceived Furia's torture from the view of the Balseraph angel, gazed through the eyes of Nemed as he twisted and writhed in excruciating pain under the will of Os-Gabella, and felt Flauros pierce her flesh as Taerry, the poor Calabim girl whom was nothing more than a plaything the aristocrat. But to Ophelia, she was all of these people and had seen everything through their eyes. Their pain, their fears, their sorrows, but also their hopes, their dreams, and the futures that could have been. Ophelia didn't know if this was from the whispers or from Cerdiwen herself preying upon the trespassing Bannor, but she no longer cared as her lungs were filled with cold, crisp air. She was on Erebus again. But she had seen the visions of millions of souls, gazed into the very Avatar of Wrath as he was being formed. Things a mere mortal was never meant to see. And her very being was no longer part of her. Her gaze, where it had once been both frightened but and hopeful was now left sinister and distant. Her voice was controlled and her tone pert and quick, her temper now short but her reactions to be thought out and executed with precision. She was no longer Ophelia Rosenthal, but rather the sum of what she had seen.</German>
+        <Italian>Ophelia has the opportunity to take the Gift if leading the Scions, removing the [LINK=TRAIT_STRATEGIST]Strategist[\LINK] trait and adding the [LINK=TRAIT_DEATHTOUCHED]Deathtouched[\LINK], [LINK=TRAIT_AGNOSTIC]Agnostic[\LINK], and [LINK=TRAIT_EMPEROR_CULT]Emperor's Cult[\LINK] traits.
+
+		They had left her.
+They had escaped where she had remained. Lost, cold, and alone, Ophelia had seen the bloodshed caused by both man and demon alike, and in this hell, the memories faded together where she could neither separate the demon from the man. Even Donal, the one whom had stayed behind, was as brutal and if not more lethal than the demons that chased her through the wastes.
+But neither demon nor man would ever find her. Having been abandoned, Ophelia had abandoned many of the Bannor's fanatical approaches to survival. And it was because of this that for the first time since she had fought alongside Capria as a Secondline-Woman, she had felt the surge of hope that was nonexistent in the place like this. In this hell where she had been abandoned, she had adapted.
+"Perhaps you are more like that fool Donal than you care to admit, Ms. Rosenthal." The voice was quick to shatter her mood as she spun around, the blade in her hand chipped and stained with the blood of many. But it pointed at nothing but the dusty winds, no foe whispering in her ear, no beast that warranted her sword through its chest. Her eyes darted to and fro, seeing nothing on the horizon.
+Seeing nothing but hearing the sounds of rope tearing, rocks tumbling against one another and the inevitable shattering as her traps had been destroyed by something. The sounds echoed across the broken fields, as Ophelia stood there watching precious hours of her labor be destroyed. As the last rock tumbled down from her makeshift rockslide, she knew that this would go on. That fleeting moment of hope was gone.
+It had been replaced by something far more sinister. A cold burning sensation on her soul. Perhaps it was the machinations of countless generations that had pushed her to this edge, or perhaps it was something else. But escape was the only option. Her head filled itself with ideas, plots, theories that she hadn't conceived before. But each idea, each thought, was foreign and malicious.
+And it was these ideas that had whispered in her ear the only way out of hell, was to be gated out. The path up Mulcarn's domain was too slow- she needed to be free of this wretched place. The seductive whispers of freedom filled her mind as the wastelands grew smaller to her, each step no longer taking the effort of a hundred and each day spent in the red haze she had been left in grew shorter as she found herself taking an almost macabre ecstasy from breaking each demon not of their strength, but of their will. She relished in the confusion and frustration as the enemy lost her trail, and laughed at their incompetence as she followed the whispering winds of the hells.
+Time held no meaning for Ophelia as she slipped from one vault, moving in the shadows and slipping by unnoticed. Demons no longer paid heed to her, mistaking her for another petitioner as she pushed between vaults and into her ultimate goal- the Vault of Cerdiwen. The whispers had told her where to go, how to get there, the sigils and mysteries she would need to decipher and ultimately, the way to navigate the vault. But no whisper, no false hope, no burning desire could prepare her as she slipped into the unmentionable abyss. She saw everything in the maelstrom and webways, secrets that pushed her mind to break and then break again, her perceptions shattered every instant. She perceived Furia's torture from the view of the Balseraph angel, gazed through the eyes of Nemed as he twisted and writhed in excruciating pain under the will of Os-Gabella, and felt Flauros pierce her flesh as Taerry, the poor Calabim girl whom was nothing more than a plaything the aristocrat. But to Ophelia, she was all of these people and had seen everything through their eyes. Their pain, their fears, their sorrows, but also their hopes, their dreams, and the futures that could have been. Ophelia didn't know if this was from the whispers or from Cerdiwen herself preying upon the trespassing Bannor, but she no longer cared as her lungs were filled with cold, crisp air. She was on Erebus again. But she had seen the visions of millions of souls, gazed into the very Avatar of Wrath as he was being formed. Things a mere mortal was never meant to see. And her very being was no longer part of her. Her gaze, where it had once been both frightened but and hopeful was now left sinister and distant. Her voice was controlled and her tone pert and quick, her temper now short but her reactions to be thought out and executed with precision. She was no longer Ophelia Rosenthal, but rather the sum of what she had seen.</Italian>
+        <Spanish>Ophelia has the opportunity to take the Gift if leading the Scions, removing the [LINK=TRAIT_STRATEGIST]Strategist[\LINK] trait and adding the [LINK=TRAIT_DEATHTOUCHED]Deathtouched[\LINK], [LINK=TRAIT_AGNOSTIC]Agnostic[\LINK], and [LINK=TRAIT_EMPEROR_CULT]Emperor's Cult[\LINK] traits.
+
+		They had left her.
+They had escaped where she had remained. Lost, cold, and alone, Ophelia had seen the bloodshed caused by both man and demon alike, and in this hell, the memories faded together where she could neither separate the demon from the man. Even Donal, the one whom had stayed behind, was as brutal and if not more lethal than the demons that chased her through the wastes.
+But neither demon nor man would ever find her. Having been abandoned, Ophelia had abandoned many of the Bannor's fanatical approaches to survival. And it was because of this that for the first time since she had fought alongside Capria as a Secondline-Woman, she had felt the surge of hope that was nonexistent in the place like this. In this hell where she had been abandoned, she had adapted.
+"Perhaps you are more like that fool Donal than you care to admit, Ms. Rosenthal." The voice was quick to shatter her mood as she spun around, the blade in her hand chipped and stained with the blood of many. But it pointed at nothing but the dusty winds, no foe whispering in her ear, no beast that warranted her sword through its chest. Her eyes darted to and fro, seeing nothing on the horizon.
+Seeing nothing but hearing the sounds of rope tearing, rocks tumbling against one another and the inevitable shattering as her traps had been destroyed by something. The sounds echoed across the broken fields, as Ophelia stood there watching precious hours of her labor be destroyed. As the last rock tumbled down from her makeshift rockslide, she knew that this would go on. That fleeting moment of hope was gone.
+It had been replaced by something far more sinister. A cold burning sensation on her soul. Perhaps it was the machinations of countless generations that had pushed her to this edge, or perhaps it was something else. But escape was the only option. Her head filled itself with ideas, plots, theories that she hadn't conceived before. But each idea, each thought, was foreign and malicious.
+And it was these ideas that had whispered in her ear the only way out of hell, was to be gated out. The path up Mulcarn's domain was too slow- she needed to be free of this wretched place. The seductive whispers of freedom filled her mind as the wastelands grew smaller to her, each step no longer taking the effort of a hundred and each day spent in the red haze she had been left in grew shorter as she found herself taking an almost macabre ecstasy from breaking each demon not of their strength, but of their will. She relished in the confusion and frustration as the enemy lost her trail, and laughed at their incompetence as she followed the whispering winds of the hells.
+Time held no meaning for Ophelia as she slipped from one vault, moving in the shadows and slipping by unnoticed. Demons no longer paid heed to her, mistaking her for another petitioner as she pushed between vaults and into her ultimate goal- the Vault of Cerdiwen. The whispers had told her where to go, how to get there, the sigils and mysteries she would need to decipher and ultimately, the way to navigate the vault. But no whisper, no false hope, no burning desire could prepare her as she slipped into the unmentionable abyss. She saw everything in the maelstrom and webways, secrets that pushed her mind to break and then break again, her perceptions shattered every instant. She perceived Furia's torture from the view of the Balseraph angel, gazed through the eyes of Nemed as he twisted and writhed in excruciating pain under the will of Os-Gabella, and felt Flauros pierce her flesh as Taerry, the poor Calabim girl whom was nothing more than a plaything the aristocrat. But to Ophelia, she was all of these people and had seen everything through their eyes. Their pain, their fears, their sorrows, but also their hopes, their dreams, and the futures that could have been. Ophelia didn't know if this was from the whispers or from Cerdiwen herself preying upon the trespassing Bannor, but she no longer cared as her lungs were filled with cold, crisp air. She was on Erebus again. But she had seen the visions of millions of souls, gazed into the very Avatar of Wrath as he was being formed. Things a mere mortal was never meant to see. And her very being was no longer part of her. Her gaze, where it had once been both frightened but and hopeful was now left sinister and distant. Her voice was controlled and her tone pert and quick, her temper now short but her reactions to be thought out and executed with precision. She was no longer Ophelia Rosenthal, but rather the sum of what she had seen.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEADER_DEFEATED_OPHELIA</Tag>
+        <English>Have you no remorse in your heart, sending me back into the Hells from which I escaped?</English>
+        <French>Have you no remorse in your heart, sending me back into the Hells from which I escaped?</French>
+        <German>Habt Ihr kein schlechtes Gewissen, mich in die H&#246;lle zur&#252;ckzuschicken, aus der ich entflohen war?</German>
+        <Italian>Have you no remorse in your heart, sending me back into the Hells from which I escaped?</Italian>
+        <Spanish>Have you no remorse in your heart, sending me back into the Hells from which I escaped?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_FIRST_CONTACT_OPHELIA</Tag>
+        <English>I have seen many people walk through the palace doors... What is your reason?</English>
+        <French>I have seen many people walk through the palace doors... What is your reason?</French>
+        <German>Es kommen viele Leute durch die Tore meines Palastes, um mit mir zu reden ... Was ist bei Euch der Grund?</German>
+        <Italian>I have seen many people walk through the palace doors... What is your reason?</Italian>
+        <Spanish>I have seen many people walk through the palace doors... What is your reason?</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_OPHELIA</Tag>
+        <English>Leave my sight before I make you see things that would shatter your perceptions.</English>
+        <French>Leave my sight before I make you see things that would shatter your perceptions.</French>
+        <German>Geht mir aus den Augen.</German>
+        <Italian>Leave my sight before I make you see things that would shatter your perceptions.</Italian>
+        <Spanish>Leave my sight before I make you see things that would shatter your perceptions.</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OPHELIA</Tag>
+		<English>Welcome once more, friend. Have you experienced few hardships since we last met?</English>
+        <French>Welcome once more, friend. Have you experienced few hardships since we last met?</French>
+        <German>Willkommen zur&#252;ck, Freund. Ich hoffe, es ist Euch in der Zwischenzeit gut ergangen?</German>
+        <Italian>Welcome once more, friend. Have you experienced few hardships since we last met?</Italian>
+        <Spanish>Welcome once more, friend. Have you experienced few hardships since we last met?</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_CAUT_LEADER_OPHELIA</Tag>
+		<English>I see you have returned. What brings you back into my view?</English>
+        <French>I see you have returned. What brings you back into my view?</French>
+        <German>Ich sehe, Ihr seid zur&#252;ck. Was verschafft mir die Ehre?</German>
+        <Italian>I see you have returned. What brings you back into my view?</Italian>
+        <Spanish>I see you have returned. What brings you back into my view?</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_OPHELIA</Tag>
+		<English>I do not wish to see you. Be quick so that I need not gaze upon the face of one such as you.</English>
+        <French>I do not wish to see you. Be quick so that I need not gaze upon the face of one such as you.</French>
+        <German>Ich m&#246;chte Euch eigentlich nicht sehen. Also macht schnell, damit ich den Anblick von jemandem wie Euch nicht allzu lang ertragen muss.</German>
+        <Italian>I do not wish to see you. Be quick so that I need not gaze upon the face of one such as you.</Italian>
+        <Spanish>I do not wish to see you. Be quick so that I need not gaze upon the face of one such as you.</Spanish>
+    </TEXT>
+</Civ4GameText>

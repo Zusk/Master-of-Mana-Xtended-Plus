@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Infos -->
+<Civ4CivicInfos xmlns="x-schema:JOTNAR_CIV4GameInfoSchema.xml">
+	<CivicInfos>
+		<CivicInfo>
+            <CivicOptionType>CIVICOPTION_FAERIE_COURT</CivicOptionType>
+			<Type>CIVIC_TRADITIONS</Type>
+			<Description>TXT_KEY_CIVIC_TRADITIONS</Description>
+			<Strategy>TXT_KEY_CIVIC_TRADITIONS_STRATEGY</Strategy>
+			<Button>Art/Interface/Buttons/Promotions/jot_traditions.dds</Button>
+			<TechPrereq>TECH_JO1</TechPrereq>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<iNumCitiesMaintenanceModifier>-30</iNumCitiesMaintenanceModifier>
+			<iWarWearinessModifier>-35</iWarWearinessModifier>
+			<BuildingHappinessChanges>
+			  <BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_WALLS</BuildingType>
+					<iHappinessChange>1</iHappinessChange>
+				</BuildingHappinessChange>
+			</BuildingHappinessChanges>
+			<PrereqCivilization>CIVILIZATION_JOTNAR</PrereqCivilization>
+        </CivicInfo>
+	</CivicInfos>
+</Civ4CivicInfos>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:ARISTRAKH_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_NIKEPHOROS</Type>
+			<Button>Art/interface/LeaderHeads/Aristrakh/Nikephorosbutton.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Aristrakh/Nikephoros.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>	
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_NAJESH</Type>
+			<Button>Art/interface/LeaderHeads/Aristrakh/NajeshButton.dds</Button>
+			<NIF>Art/interface/LeaderHeads/Aristrakh/Najesh.dds</NIF>
+			<KFM/>
+			<NoShaderNIF/>
+			<BackgroundKFM/>
+		</LeaderheadArtInfo>			
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

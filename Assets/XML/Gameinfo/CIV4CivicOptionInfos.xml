@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civic Option -->
+<Civ4CivicOptionInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<CivicOptionInfos>
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_GOVERNMENT</Type>
+			<Description>Privileged Class</Description>
+			<TraitNoUpkeeps/>
+		</CivicOptionInfo>
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_CULTURAL_VALUES</Type>
+			<Description>Virtues</Description>
+			<TraitNoUpkeeps/>
+		</CivicOptionInfo>
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_LABOR</Type>
+			<Description>Religion</Description>
+			<TraitNoUpkeeps/>
+		</CivicOptionInfo>
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_MEMBERSHIP</Type>
+			<Description>TXT_KEY_CIVICOPTION_MEMBERSHIP</Description>
+			<TraitNoUpkeeps/>
+		</CivicOptionInfo>
+		<CivicOptionInfo>
+			<Type>CIVICOPTION_FAERIE_COURT</Type>
+			<Description>Special</Description>
+			<TraitNoUpkeeps/>
+		</CivicOptionInfo>		
+	</CivicOptionInfos>
+</Civ4CivicOptionInfos>

@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - Units -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIN_DESC</Tag>
+		<English>Austrin</English>
+		<French>Austrin</French>
+        <German>Reich der Austrin</German>
+		<Italian>Austrin</Italian>
+		<Spanish>Austrin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIN_SHORT_DESC</Tag>
+		<English>Austrin</English>
+		<French>Austrin</French>
+		<German>Austrin</German>
+		<Italian>Austrin</Italian>
+		<Spanish>Austrin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIN_ADJECTIVE</Tag>
+		<English>Austrin</English>
+		<French>Austrin</French>
+        <German>Austrinisch:Austrinischen:Austrinische</German>
+		<Italian>Austrin</Italian>
+		<Spanish>Austrin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AUSTRIN_PEDIA</Tag>
+		<English>The Austrin are explorers. All civilizations are naturally drawn to discover what lies outside their walls - knowing of threats and opportunities is essential to their development - but for the Austrin the need is compelling. They did not exist as an organized people before the Age of Ice - they could be identified only as the loners who defied the advice of the village elders and walked the frozen lands around the village. During the time that the ice receded, they were among the first to take to the wilds. Many were surprised to see others there at all, but when they did meet they found kindred spirits.[PARAGRAPH]Eventually they began to settle, often in the furthest reaches of a windswept moor or heath. Their cities are practical constructions - roughly built yet designed to endure - where young Austrin are prepared to make their way in the world.[PARAGRAPH]The defacto leader of the Austrin is Deirdra - a prolific wanderer and self stated worshipper of Tali, though few among the Austrin have ever seen her perform any form of religious rite to prove her devotion. Those who know better realize that worshipping Tali is generally a personal matter and better suited to a mountaintop than a temple and Deirdra often travels to find such a place when she faces a difficult choice on behalf of her people. To outsiders, she is enigmatic yet charming, often seemiming whimsical - though if a foreign diplomat mistakes this for a weakness of character which can be exploited, they swiftly discover this is not the case.[PARAGRAPH]Whilst the Austrin are generally aware of and appreciate Tali's nature, his worship is not a principle religion amongst them. Their settlements often have temples dedicated to various powers, even to Kilmorph who is traditionally the antithesis of Tali (for a time a group worshipping Kilmorph became quite prominent in Telynohn, though their popularity fluctuated and waned - the Austrin often change their mind).[PARAGRAPH]More important than religion to most Austrin however is the Exploration Guild. This started as a loose group of explorers who combined their efforts to chart the surrounding lands, but has since grown to be a place of training and preparation for the young as well as a respite for those too elderly to travel the world anymore. The first charts have become atlases and the guild claims to know more about the world than even the omniscient seers of the neighbouring Amurites. Despite the wealth of knowledge the guild holds, the Austrin are still drawn to that which lies beyond their maps - the unknown.</English>
+		<French>The Austrin are explorers. All civilizations are naturally drawn to discover what lies outside their walls - knowing of threats and opportunities is essential to their development - but for the Austrin the need is compelling. They did not exist as an organized people before the Age of Ice - they could be identified only as the loners who defied the advice of the village elders and walked the frozen lands around the village. During the time that the ice receded, they were among the first to take to the wilds. Many were surprised to see others there at all, but when they did meet they found kindred spirits.[PARAGRAPH]Eventually they began to settle, often in the furthest reaches of a windswept moor or heath. Their cities are practical constructions - roughly built yet designed to endure - where young Austrin are prepared to make their way in the world.[PARAGRAPH]The defacto leader of the Austrin is Deirdra - a prolific wanderer and self stated worshipper of Tali, though few among the Austrin have ever seen her perform any form of religious rite to prove her devotion. Those who know better realize that worshipping Tali is generally a personal matter and better suited to a mountaintop than a temple and Deirdra often travels to find such a place when she faces a difficult choice on behalf of her people. To outsiders, she is enigmatic yet charming, often seemiming whimsical - though if a foreign diplomat mistakes this for a weakness of character which can be exploited, they swiftly discover this is not the case.[PARAGRAPH]Whilst the Austrin are generally aware of and appreciate Tali's nature, his worship is not a principle religion amongst them. Their settlements often have temples dedicated to various powers, even to Kilmorph who is traditionally the antithesis of Tali (for a time a group worshipping Kilmorph became quite prominent in Telynohn, though their popularity fluctuated and waned - the Austrin often change their mind).[PARAGRAPH]More important than religion to most Austrin however is the Exploration Guild. This started as a loose group of explorers who combined their efforts to chart the surrounding lands, but has since grown to be a place of training and preparation for the young as well as a respite for those too elderly to travel the world anymore. The first charts have become atlases and the guild claims to know more about the world than even the omniscient seers of the neighbouring Amurites. Despite the wealth of knowledge the guild holds, the Austrin are still drawn to that which lies beyond their maps - the unknown.</French>
+		<German>The Austrin are explorers. All civilizations are naturally drawn to discover what lies outside their walls - knowing of threats and opportunities is essential to their development - but for the Austrin the need is compelling. They did not exist as an organized people before the Age of Ice - they could be identified only as the loners who defied the advice of the village elders and walked the frozen lands around the village. During the time that the ice receded, they were among the first to take to the wilds. Many were surprised to see others there at all, but when they did meet they found kindred spirits.[PARAGRAPH]Eventually they began to settle, often in the furthest reaches of a windswept moor or heath. Their cities are practical constructions - roughly built yet designed to endure - where young Austrin are prepared to make their way in the world.[PARAGRAPH]The defacto leader of the Austrin is Deirdra - a prolific wanderer and self stated worshipper of Tali, though few among the Austrin have ever seen her perform any form of religious rite to prove her devotion. Those who know better realize that worshipping Tali is generally a personal matter and better suited to a mountaintop than a temple and Deirdra often travels to find such a place when she faces a difficult choice on behalf of her people. To outsiders, she is enigmatic yet charming, often seemiming whimsical - though if a foreign diplomat mistakes this for a weakness of character which can be exploited, they swiftly discover this is not the case.[PARAGRAPH]Whilst the Austrin are generally aware of and appreciate Tali's nature, his worship is not a principle religion amongst them. Their settlements often have temples dedicated to various powers, even to Kilmorph who is traditionally the antithesis of Tali (for a time a group worshipping Kilmorph became quite prominent in Telynohn, though their popularity fluctuated and waned - the Austrin often change their mind).[PARAGRAPH]More important than religion to most Austrin however is the Exploration Guild. This started as a loose group of explorers who combined their efforts to chart the surrounding lands, but has since grown to be a place of training and preparation for the young as well as a respite for those too elderly to travel the world anymore. The first charts have become atlases and the guild claims to know more about the world than even the omniscient seers of the neighbouring Amurites. Despite the wealth of knowledge the guild holds, the Austrin are still drawn to that which lies beyond their maps - the unknown.</German>
+		<Italian>The Austrin are explorers. All civilizations are naturally drawn to discover what lies outside their walls - knowing of threats and opportunities is essential to their development - but for the Austrin the need is compelling. They did not exist as an organized people before the Age of Ice - they could be identified only as the loners who defied the advice of the village elders and walked the frozen lands around the village. During the time that the ice receded, they were among the first to take to the wilds. Many were surprised to see others there at all, but when they did meet they found kindred spirits.[PARAGRAPH]Eventually they began to settle, often in the furthest reaches of a windswept moor or heath. Their cities are practical constructions - roughly built yet designed to endure - where young Austrin are prepared to make their way in the world.[PARAGRAPH]The defacto leader of the Austrin is Deirdra - a prolific wanderer and self stated worshipper of Tali, though few among the Austrin have ever seen her perform any form of religious rite to prove her devotion. Those who know better realize that worshipping Tali is generally a personal matter and better suited to a mountaintop than a temple and Deirdra often travels to find such a place when she faces a difficult choice on behalf of her people. To outsiders, she is enigmatic yet charming, often seemiming whimsical - though if a foreign diplomat mistakes this for a weakness of character which can be exploited, they swiftly discover this is not the case.[PARAGRAPH]Whilst the Austrin are generally aware of and appreciate Tali's nature, his worship is not a principle religion amongst them. Their settlements often have temples dedicated to various powers, even to Kilmorph who is traditionally the antithesis of Tali (for a time a group worshipping Kilmorph became quite prominent in Telynohn, though their popularity fluctuated and waned - the Austrin often change their mind).[PARAGRAPH]More important than religion to most Austrin however is the Exploration Guild. This started as a loose group of explorers who combined their efforts to chart the surrounding lands, but has since grown to be a place of training and preparation for the young as well as a respite for those too elderly to travel the world anymore. The first charts have become atlases and the guild claims to know more about the world than even the omniscient seers of the neighbouring Amurites. Despite the wealth of knowledge the guild holds, the Austrin are still drawn to that which lies beyond their maps - the unknown.</Italian>
+		<Spanish>The Austrin are explorers. All civilizations are naturally drawn to discover what lies outside their walls - knowing of threats and opportunities is essential to their development - but for the Austrin the need is compelling. They did not exist as an organized people before the Age of Ice - they could be identified only as the loners who defied the advice of the village elders and walked the frozen lands around the village. During the time that the ice receded, they were among the first to take to the wilds. Many were surprised to see others there at all, but when they did meet they found kindred spirits.[PARAGRAPH]Eventually they began to settle, often in the furthest reaches of a windswept moor or heath. Their cities are practical constructions - roughly built yet designed to endure - where young Austrin are prepared to make their way in the world.[PARAGRAPH]The defacto leader of the Austrin is Deirdra - a prolific wanderer and self stated worshipper of Tali, though few among the Austrin have ever seen her perform any form of religious rite to prove her devotion. Those who know better realize that worshipping Tali is generally a personal matter and better suited to a mountaintop than a temple and Deirdra often travels to find such a place when she faces a difficult choice on behalf of her people. To outsiders, she is enigmatic yet charming, often seemiming whimsical - though if a foreign diplomat mistakes this for a weakness of character which can be exploited, they swiftly discover this is not the case.[PARAGRAPH]Whilst the Austrin are generally aware of and appreciate Tali's nature, his worship is not a principle religion amongst them. Their settlements often have temples dedicated to various powers, even to Kilmorph who is traditionally the antithesis of Tali (for a time a group worshipping Kilmorph became quite prominent in Telynohn, though their popularity fluctuated and waned - the Austrin often change their mind).[PARAGRAPH]More important than religion to most Austrin however is the Exploration Guild. This started as a loose group of explorers who combined their efforts to chart the surrounding lands, but has since grown to be a place of training and preparation for the young as well as a respite for those too elderly to travel the world anymore. The first charts have become atlases and the guild claims to know more about the world than even the omniscient seers of the neighbouring Amurites. Despite the wealth of knowledge the guild holds, the Austrin are still drawn to that which lies beyond their maps - the unknown.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DEIRDRA</Tag>
+		<English>Deirdra</English>
+		<French>Deirdra</French>
+		<German>Deirdra</German>
+		<Italian>Deirdra</Italian>
+		<Spanish>Deirdra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_DEIRDRA_PEDIA</Tag>
+		<English>"My home? Where I lay my head is home."[NEWLINE]  "But where do you come from?"[NEWLINE]"Long ago I lived in the east, now I travel west"[NEWLINE]  "Where are you going?"[NEWLINE]"Wherever I may."[NEWLINE]  "So you're what, some sort of traveller?"[NEWLINE]"Of a sort. Rove or wanderer. Nomad, vagabond - call me what you will."[NEWLINE]  "But you travel the wastes alone? Unarmed? How do you survive out there?"[NEWLINE]"I adapt to the unknown. Under the wandering stars I've grown - by myself but not alone. I ask of no-one."[NEWLINE]  "You speak oddly, milady, but if you keep to the laws of the city, you are welcomed in Brookden."[NEWLINE][NEWLINE]The guards stepped aside and permitted Deirdra to enter the city. A majestic sight indeed, the massive bronzed dome of the Dural palace dominating the scene but surrounded by sights of at least equal beauty - statues, murals and the finest architecture. One could spend a lifetime here and not have time to fully appreciate the arts of the Dural. She would not be there long however. There was still a long road ahead.</English>
+		<French>"My home? Where I lay my head is home."[NEWLINE]  "But where do you come from?"[NEWLINE]"Long ago I lived in the east, now I travel west"[NEWLINE]  "Where are you going?"[NEWLINE]"Wherever I may."[NEWLINE]  "So you're what, some sort of traveller?"[NEWLINE]"Of a sort. Rove or wanderer. Nomad, vagabond - call me what you will."[NEWLINE]  "But you travel the wastes alone? Unarmed? How do you survive out there?"[NEWLINE]"I adapt to the unknown. Under the wandering stars I've grown - by myself but not alone. I ask of no-one."[NEWLINE]  "You speak oddly, milady, but if you keep to the laws of the city, you are welcomed in Brookden."[NEWLINE][NEWLINE]The guards stepped aside and permitted Deirdra to enter the city. A majestic sight indeed, the massive bronzed dome of the Dural palace dominating the scene but surrounded by sights of at least equal beauty - statues, murals and the finest architecture. One could spend a lifetime here and not have time to fully appreciate the arts of the Dural. She would not be there long however. There was still a long road ahead.</French>
+		<German>"My home? Where I lay my head is home."[NEWLINE]  "But where do you come from?"[NEWLINE]"Long ago I lived in the east, now I travel west"[NEWLINE]  "Where are you going?"[NEWLINE]"Wherever I may."[NEWLINE]  "So you're what, some sort of traveller?"[NEWLINE]"Of a sort. Rove or wanderer. Nomad, vagabond - call me what you will."[NEWLINE]  "But you travel the wastes alone? Unarmed? How do you survive out there?"[NEWLINE]"I adapt to the unknown. Under the wandering stars I've grown - by myself but not alone. I ask of no-one."[NEWLINE]  "You speak oddly, milady, but if you keep to the laws of the city, you are welcomed in Brookden."[NEWLINE][NEWLINE]The guards stepped aside and permitted Deirdra to enter the city. A majestic sight indeed, the massive bronzed dome of the Dural palace dominating the scene but surrounded by sights of at least equal beauty - statues, murals and the finest architecture. One could spend a lifetime here and not have time to fully appreciate the arts of the Dural. She would not be there long however. There was still a long road ahead.</German>
+		<Italian>"My home? Where I lay my head is home."[NEWLINE]  "But where do you come from?"[NEWLINE]"Long ago I lived in the east, now I travel west"[NEWLINE]  "Where are you going?"[NEWLINE]"Wherever I may."[NEWLINE]  "So you're what, some sort of traveller?"[NEWLINE]"Of a sort. Rove or wanderer. Nomad, vagabond - call me what you will."[NEWLINE]  "But you travel the wastes alone? Unarmed? How do you survive out there?"[NEWLINE]"I adapt to the unknown. Under the wandering stars I've grown - by myself but not alone. I ask of no-one."[NEWLINE]  "You speak oddly, milady, but if you keep to the laws of the city, you are welcomed in Brookden."[NEWLINE][NEWLINE]The guards stepped aside and permitted Deirdra to enter the city. A majestic sight indeed, the massive bronzed dome of the Dural palace dominating the scene but surrounded by sights of at least equal beauty - statues, murals and the finest architecture. One could spend a lifetime here and not have time to fully appreciate the arts of the Dural. She would not be there long however. There was still a long road ahead.</Italian>
+		<Spanish>"My home? Where I lay my head is home."[NEWLINE]  "But where do you come from?"[NEWLINE]"Long ago I lived in the east, now I travel west"[NEWLINE]  "Where are you going?"[NEWLINE]"Wherever I may."[NEWLINE]  "So you're what, some sort of traveller?"[NEWLINE]"Of a sort. Rove or wanderer. Nomad, vagabond - call me what you will."[NEWLINE]  "But you travel the wastes alone? Unarmed? How do you survive out there?"[NEWLINE]"I adapt to the unknown. Under the wandering stars I've grown - by myself but not alone. I ask of no-one."[NEWLINE]  "You speak oddly, milady, but if you keep to the laws of the city, you are welcomed in Brookden."[NEWLINE][NEWLINE]The guards stepped aside and permitted Deirdra to enter the city. A majestic sight indeed, the massive bronzed dome of the Dural palace dominating the scene but surrounded by sights of at least equal beauty - statues, murals and the finest architecture. One could spend a lifetime here and not have time to fully appreciate the arts of the Dural. She would not be there long however. There was still a long road ahead.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROGUE</Tag>
+		<English>Rogue</English>
+		<French>Rogue</French>
+        <German>Schurke</German>
+		<Italian>Rogue</Italian>
+		<Spanish>Rogue</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROGUE_PEDIA</Tag>
+		<English>The palace may reject foreign envoys, the army prevents the encroachment of foreign forces and the temple may reject the advances of foreign missionaries. The tavern however will never reject the coin of foreign drinkers and this is where the rogue tends to be found. Seemingly displaced individuals, they spend time in the cities of their rivals learning as much as is necessary to survive. They are not (all) criminals, but they do have a tendency to find themselves in places they do not belong.</English>
+		<French>The palace may reject foreign envoys, the army prevents the encroachment of foreign forces and the temple may reject the advances of foreign missionaries. The tavern however will never reject the coin of foreign drinkers and this is where the rogue tends to be found. Seemingly displaced individuals, they spend time in the cities of their rivals learning as much as is necessary to survive. They are not (all) criminals, but they do have a tendency to find themselves in places they do not belong.</French>
+		<German>The palace may reject foreign envoys, the army prevents the encroachment of foreign forces and the temple may reject the advances of foreign missionaries. The tavern however will never reject the coin of foreign drinkers and this is where the rogue tends to be found. Seemingly displaced individuals, they spend time in the cities of their rivals learning as much as is necessary to survive. They are not (all) criminals, but they do have a tendency to find themselves in places they do not belong.</German>
+		<Italian>The palace may reject foreign envoys, the army prevents the encroachment of foreign forces and the temple may reject the advances of foreign missionaries. The tavern however will never reject the coin of foreign drinkers and this is where the rogue tends to be found. Seemingly displaced individuals, they spend time in the cities of their rivals learning as much as is necessary to survive. They are not (all) criminals, but they do have a tendency to find themselves in places they do not belong.</Italian>
+		<Spanish>The palace may reject foreign envoys, the army prevents the encroachment of foreign forces and the temple may reject the advances of foreign missionaries. The tavern however will never reject the coin of foreign drinkers and this is where the rogue tends to be found. Seemingly displaced individuals, they spend time in the cities of their rivals learning as much as is necessary to survive. They are not (all) criminals, but they do have a tendency to find themselves in places they do not belong.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ROGUE_STRATEGY</Tag>
+		<English>Rogues are scout units that are able to travel through rival territory freely and investigate their cities. This information may be of use when planning for diplomacy, expansion or war.</English>
+		<French>Rogues are scout units that are able to travel through rival territory freely and investigate their cities. This information may be of use when planning for diplomacy, expansion or war.</French>
+		<German>Rogues are scout units that are able to travel through rival territory freely and investigate their cities. This information may be of use when planning for diplomacy, expansion or war.</German>
+		<Italian>Rogues are scout units that are able to travel through rival territory freely and investigate their cities. This information may be of use when planning for diplomacy, expansion or war.</Italian>
+		<Spanish>Rogues are scout units that are able to travel through rival territory freely and investigate their cities. This information may be of use when planning for diplomacy, expansion or war.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TRACKER</Tag>
+		<English>Tracker</English>
+		<French>Tracker</French>
+        <German>F&#228;hrtensucher</German>
+		<Italian>Tracker</Italian>
+		<Spanish>Tracker</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TRACKER_PEDIA</Tag>
+		<English>Whilst the Explorer travels in search of new discoveries and the unknown, the Tracker knows exactly what it is that he seeks. It might be an orc warband that has pillaged a nearby village or it may be the vanguard of a large enemy army. Whatever the quarry, the tracker will find it long before anyone else even suspects it is there.</English>
+		<French>Whilst the Explorer travels in search of new discoveries and the unknown, the Tracker knows exactly what it is that he seeks. It might be an orc warband that has pillaged a nearby village or it may be the vanguard of a large enemy army. Whatever the quarry, the tracker will find it long before anyone else even suspects it is there.</French>
+		<German>Whilst the Explorer travels in search of new discoveries and the unknown, the Tracker knows exactly what it is that he seeks. It might be an orc warband that has pillaged a nearby village or it may be the vanguard of a large enemy army. Whatever the quarry, the tracker will find it long before anyone else even suspects it is there.</German>
+		<Italian>Whilst the Explorer travels in search of new discoveries and the unknown, the Tracker knows exactly what it is that he seeks. It might be an orc warband that has pillaged a nearby village or it may be the vanguard of a large enemy army. Whatever the quarry, the tracker will find it long before anyone else even suspects it is there.</Italian>
+		<Spanish>Whilst the Explorer travels in search of new discoveries and the unknown, the Tracker knows exactly what it is that he seeks. It might be an orc warband that has pillaged a nearby village or it may be the vanguard of a large enemy army. Whatever the quarry, the tracker will find it long before anyone else even suspects it is there.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TRACKER_STRATEGY</Tag>
+		<English>This unit replaces the Ranger but is available earlier and fulfills a different role. The Tracker has the Sentry and Woodsman promotions and can gain the second level of both to make it a solid wilderness explorer, able to spot income threats from a great distance and travel quickly through forests. It also has the Adventurer promotion, granting it a bonus when exploring monster lairs and dungeons.</English>
+		<French>This unit replaces the Ranger but is available earlier and fulfills a different role. The Tracker has the Sentry and Woodsman promotions and can gain the second level of both to make it a solid wilderness explorer, able to spot income threats from a great distance and travel quickly through forests. It also has the Adventurer promotion, granting it a bonus when exploring monster lairs and dungeons.</French>
+		<German>This unit replaces the Ranger but is available earlier and fulfills a different role. The Tracker has the Sentry and Woodsman promotions and can gain the second level of both to make it a solid wilderness explorer, able to spot income threats from a great distance and travel quickly through forests. It also has the Adventurer promotion, granting it a bonus when exploring monster lairs and dungeons.</German>
+		<Italian>This unit replaces the Ranger but is available earlier and fulfills a different role. The Tracker has the Sentry and Woodsman promotions and can gain the second level of both to make it a solid wilderness explorer, able to spot income threats from a great distance and travel quickly through forests. It also has the Adventurer promotion, granting it a bonus when exploring monster lairs and dungeons.</Italian>
+		<Spanish>This unit replaces the Ranger but is available earlier and fulfills a different role. The Tracker has the Sentry and Woodsman promotions and can gain the second level of both to make it a solid wilderness explorer, able to spot income threats from a great distance and travel quickly through forests. It also has the Adventurer promotion, granting it a bonus when exploring monster lairs and dungeons.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RECURVE_ARCHER</Tag>
+		<English>Recurve Archer</English>
+		<French>Recurve Archer</French>
+        <German>Recurve Bogensch&#252;tzen</German>
+		<Italian>Recurve Archer</Italian>
+		<Spanish>Recurve Archer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RECURVE_ARCHER_PEDIA</Tag>
+		<English>A recurve bow is a form of bow defined by the side-view profile; in contrast to the simple longbow, a recurve bow has tips that curve away from the archer when the bow is unstrung. By one technical definition, the difference between recurve and other bows is that the string touches sections of the limbs of recurve bows when the bow is strung. A recurve bow stores more energy than an equivalent straight-limbed bow, giving a greater amount of cast to the arrow. A recurve will permit a shorter bow than the simple bow for a given arrow energy and this form was preferred by archers in environments where long weapons could be cumbersome, such as in brush and forest terrain, or while on horseback. By contrast, the traditional straight longbow tends to "stack" that is, the required draw force increases more rapidly per unit of draw length as the string is drawn back.</English>
+		<French>A recurve bow is a form of bow defined by the side-view profile; in contrast to the simple longbow, a recurve bow has tips that curve away from the archer when the bow is unstrung. By one technical definition, the difference between recurve and other bows is that the string touches sections of the limbs of recurve bows when the bow is strung. A recurve bow stores more energy than an equivalent straight-limbed bow, giving a greater amount of cast to the arrow. A recurve will permit a shorter bow than the simple bow for a given arrow energy and this form was preferred by archers in environments where long weapons could be cumbersome, such as in brush and forest terrain, or while on horseback. By contrast, the traditional straight longbow tends to "stack" that is, the required draw force increases more rapidly per unit of draw length as the string is drawn back.</French>
+		<German>A recurve bow is a form of bow defined by the side-view profile; in contrast to the simple longbow, a recurve bow has tips that curve away from the archer when the bow is unstrung. By one technical definition, the difference between recurve and other bows is that the string touches sections of the limbs of recurve bows when the bow is strung. A recurve bow stores more energy than an equivalent straight-limbed bow, giving a greater amount of cast to the arrow. A recurve will permit a shorter bow than the simple bow for a given arrow energy and this form was preferred by archers in environments where long weapons could be cumbersome, such as in brush and forest terrain, or while on horseback. By contrast, the traditional straight longbow tends to "stack" that is, the required draw force increases more rapidly per unit of draw length as the string is drawn back.</German>
+		<Italian>A recurve bow is a form of bow defined by the side-view profile; in contrast to the simple longbow, a recurve bow has tips that curve away from the archer when the bow is unstrung. By one technical definition, the difference between recurve and other bows is that the string touches sections of the limbs of recurve bows when the bow is strung. A recurve bow stores more energy than an equivalent straight-limbed bow, giving a greater amount of cast to the arrow. A recurve will permit a shorter bow than the simple bow for a given arrow energy and this form was preferred by archers in environments where long weapons could be cumbersome, such as in brush and forest terrain, or while on horseback. By contrast, the traditional straight longbow tends to "stack" that is, the required draw force increases more rapidly per unit of draw length as the string is drawn back.</Italian>
+		<Spanish>A recurve bow is a form of bow defined by the side-view profile; in contrast to the simple longbow, a recurve bow has tips that curve away from the archer when the bow is unstrung. By one technical definition, the difference between recurve and other bows is that the string touches sections of the limbs of recurve bows when the bow is strung. A recurve bow stores more energy than an equivalent straight-limbed bow, giving a greater amount of cast to the arrow. A recurve will permit a shorter bow than the simple bow for a given arrow energy and this form was preferred by archers in environments where long weapons could be cumbersome, such as in brush and forest terrain, or while on horseback. By contrast, the traditional straight longbow tends to "stack" that is, the required draw force increases more rapidly per unit of draw length as the string is drawn back.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RECURVE_ARCHER_STRATEGY</Tag>
+		<English>This longbow replacement is able to defend both in cities and in the wilds, thanks to the Woodsman Promotion. The shorter Recurve bow also allows them to loose arrows more quickly, giving them greater chance to strike first.</English>
+		<French>This longbow replacement is able to defend both in cities and in the wilds, thanks to the Woodsman Promotion. The shorter Recurve bow also allows them to loose arrows more quickly, giving them greater chance to strike first.</French>
+		<German>This longbow replacement is able to defend both in cities and in the wilds, thanks to the Woodsman Promotion. The shorter Recurve bow also allows them to loose arrows more quickly, giving them greater chance to strike first.</German>
+		<Italian>This longbow replacement is able to defend both in cities and in the wilds, thanks to the Woodsman Promotion. The shorter Recurve bow also allows them to loose arrows more quickly, giving them greater chance to strike first.</Italian>
+		<Spanish>This longbow replacement is able to defend both in cities and in the wilds, thanks to the Woodsman Promotion. The shorter Recurve bow also allows them to loose arrows more quickly, giving them greater chance to strike first.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHOREPARTY</Tag>
+		<English>Shore Party</English>
+		<French>Shore Party</French>
+        <German>K&#252;stentrupp</German>
+		<Italian>Shore Party</Italian>
+		<Spanish>Shore Party</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHOREPARTY_PEDIA</Tag>
+		<English>Whilst most sailors stick to sailing, the Austrin can't resist investigating newly discovered lands. All their seamen are experienced in tracking and wilderness survival and so will explore at least a short distance into any island they encouter before putting back out to sea.</English>
+		<French>Whilst most sailors stick to sailing, the Austrin can't resist investigating newly discovered lands. All their seamen are experienced in tracking and wilderness survival and so will explore at least a short distance into any island they encouter before putting back out to sea.</French>
+		<German>Whilst most sailors stick to sailing, the Austrin can't resist investigating newly discovered lands. All their seamen are experienced in tracking and wilderness survival and so will explore at least a short distance into any island they encouter before putting back out to sea.</German>
+		<Italian>Whilst most sailors stick to sailing, the Austrin can't resist investigating newly discovered lands. All their seamen are experienced in tracking and wilderness survival and so will explore at least a short distance into any island they encouter before putting back out to sea.</Italian>
+		<Spanish>Whilst most sailors stick to sailing, the Austrin can't resist investigating newly discovered lands. All their seamen are experienced in tracking and wilderness survival and so will explore at least a short distance into any island they encouter before putting back out to sea.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SHOREPARTY_STRATEGY</Tag>
+		<English>Shoreparties are summoned from Austrin ships and allow you to explore a landmass more thoroughly than is possible by simply sailing by. They cannot fight, but will move quickly over the terrain for a single turn before returning to their ship.</English>
+		<French>Shoreparties are summoned from Austrin ships and allow you to explore a landmass more thoroughly than is possible by simply sailing by. They cannot fight, but will move quickly over the terrain for a single turn before returning to their ship.</French>
+		<German>Shoreparties are summoned from Austrin ships and allow you to explore a landmass more thoroughly than is possible by simply sailing by. They cannot fight, but will move quickly over the terrain for a single turn before returning to their ship.</German>
+		<Italian>Shoreparties are summoned from Austrin ships and allow you to explore a landmass more thoroughly than is possible by simply sailing by. They cannot fight, but will move quickly over the terrain for a single turn before returning to their ship.</Italian>
+		<Spanish>Shoreparties are summoned from Austrin ships and allow you to explore a landmass more thoroughly than is possible by simply sailing by. They cannot fight, but will move quickly over the terrain for a single turn before returning to their ship.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLORER</Tag>
+		<English>Explorer</English>
+		<French>Explorer</French>
+        <German>Kundschafter</German>
+		<Italian>Explorer</Italian>
+		<Spanish>Explorer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLORER_PEDIA</Tag>
+		<English>Most civilizations search the areas surrounding their lands to discover new resources and neighbouring civilizations. The Austrin however explore the world purely for the love of discovering the unknown. Often, that unknown can be hostile or even deadly, but the Exploration guild trains its members well and most fare well in the wild.</English>
+		<French>Most civilizations search the areas surrounding their lands to discover new resources and neighbouring civilizations. The Austrin however explore the world purely for the love of discovering the unknown. Often, that unknown can be hostile or even deadly, but the Exploration guild trains its members well and most fare well in the wild.</French>
+		<German>Most civilizations search the areas surrounding their lands to discover new resources and neighbouring civilizations. The Austrin however explore the world purely for the love of discovering the unknown. Often, that unknown can be hostile or even deadly, but the Exploration guild trains its members well and most fare well in the wild.</German>
+		<Italian>Most civilizations search the areas surrounding their lands to discover new resources and neighbouring civilizations. The Austrin however explore the world purely for the love of discovering the unknown. Often, that unknown can be hostile or even deadly, but the Exploration guild trains its members well and most fare well in the wild.</Italian>
+		<Spanish>Most civilizations search the areas surrounding their lands to discover new resources and neighbouring civilizations. The Austrin however explore the world purely for the love of discovering the unknown. Often, that unknown can be hostile or even deadly, but the Exploration guild trains its members well and most fare well in the wild.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLORER_STRATEGY</Tag>
+		<English>This Hunter-replacement unit shares many of the hunter's strengths, whilst being available at Cartography and also able to traverse difficult terrain rapidly.</English>
+		<French>This Hunter-replacement unit shares many of the hunter's strengths, whilst being available at Cartography and also able to traverse difficult terrain rapidly.</French>
+		<German>This Hunter-replacement unit shares many of the hunter's strengths, whilst being available at Cartography and also able to traverse difficult terrain rapidly.</German>
+		<Italian>This Hunter-replacement unit shares many of the hunter's strengths, whilst being available at Cartography and also able to traverse difficult terrain rapidly.</Italian>
+		<Spanish>This Hunter-replacement unit shares many of the hunter's strengths, whilst being available at Cartography and also able to traverse difficult terrain rapidly.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINDSWORD</Tag>
+		<English>Windsword</English>
+		<French>Windsword</French>
+        <German>Schwert des Windes</German>
+		<Italian>Windsword</Italian>
+		<Spanish>Windsword</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINDSWORD_PEDIA</Tag>
+		<English>The Windswords are considered to be an old legend by many Erubusians - even amongst the Austrin. They did once exist however, schooled in advanced swordsplay and able to move as unpredicatably as the wind. Inspired by the nature of Tali, the Windswords could keep their foe utterly off guard and scythe through their ranks as the wind cuts through a field of corn. [NEWLINE][NEWLINE]Rumours persist that there is still one person schooled in that ancient art - though Deirdra herself has searched since childhood for him with little success. With the combined resources of the Austrin empire however, perhaps she will have more success...</English>
+		<French>The Windswords are considered to be an old legend by many Erubusians - even amongst the Austrin. They did once exist however, schooled in advanced swordsplay and able to move as unpredicatably as the wind. Inspired by the nature of Tali, the Windswords could keep their foe utterly off guard and scythe through their ranks as the wind cuts through a field of corn. [NEWLINE][NEWLINE]Rumours persist that there is still one person schooled in that ancient art - though Deirdra herself has searched since childhood for him with little success. With the combined resources of the Austrin empire however, perhaps she will have more success...</French>
+		<German>The Windswords are considered to be an old legend by many Erubusians - even amongst the Austrin. They did once exist however, schooled in advanced swordsplay and able to move as unpredicatably as the wind. Inspired by the nature of Tali, the Windswords could keep their foe utterly off guard and scythe through their ranks as the wind cuts through a field of corn. [NEWLINE][NEWLINE]Rumours persist that there is still one person schooled in that ancient art - though Deirdra herself has searched since childhood for him with little success. With the combined resources of the Austrin empire however, perhaps she will have more success...</German>
+		<Italian>The Windswords are considered to be an old legend by many Erubusians - even amongst the Austrin. They did once exist however, schooled in advanced swordsplay and able to move as unpredicatably as the wind. Inspired by the nature of Tali, the Windswords could keep their foe utterly off guard and scythe through their ranks as the wind cuts through a field of corn. [NEWLINE][NEWLINE]Rumours persist that there is still one person schooled in that ancient art - though Deirdra herself has searched since childhood for him with little success. With the combined resources of the Austrin empire however, perhaps she will have more success...</Italian>
+		<Spanish>The Windswords are considered to be an old legend by many Erubusians - even amongst the Austrin. They did once exist however, schooled in advanced swordsplay and able to move as unpredicatably as the wind. Inspired by the nature of Tali, the Windswords could keep their foe utterly off guard and scythe through their ranks as the wind cuts through a field of corn. [NEWLINE][NEWLINE]Rumours persist that there is still one person schooled in that ancient art - though Deirdra herself has searched since childhood for him with little success. With the combined resources of the Austrin empire however, perhaps she will have more success...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WINDSWORD_STRATEGY</Tag>
+		<English>The Windswords are a national unit and replace the Phalanx of other civilizations. The unit is most notable for its special ability - "Bladewind" - which forces all foes to retreat away from the Windswords flashing blade, taking a small amount of damage in the process. Windswords excel against melee and ranged troops alike - with a 25% bonus against melee and an immunity to first strikes helping the to close with ranged troops.</English>
+		<French>The Windswords are a national unit and replace the Phalanx of other civilizations. The unit is most notable for its special ability - "Bladewind" - which forces all foes to retreat away from the Windswords flashing blade, taking a small amount of damage in the process. Windswords excel against melee and ranged troops alike - with a 25% bonus against melee and an immunity to first strikes helping the to close with ranged troops.</French>
+		<German>The Windswords are a national unit and replace the Phalanx of other civilizations. The unit is most notable for its special ability - "Bladewind" - which forces all foes to retreat away from the Windswords flashing blade, taking a small amount of damage in the process. Windswords excel against melee and ranged troops alike - with a 25% bonus against melee and an immunity to first strikes helping the to close with ranged troops.</German>
+		<Italian>The Windswords are a national unit and replace the Phalanx of other civilizations. The unit is most notable for its special ability - "Bladewind" - which forces all foes to retreat away from the Windswords flashing blade, taking a small amount of damage in the process. Windswords excel against melee and ranged troops alike - with a 25% bonus against melee and an immunity to first strikes helping the to close with ranged troops.</Italian>
+		<Spanish>The Windswords are a national unit and replace the Phalanx of other civilizations. The unit is most notable for its special ability - "Bladewind" - which forces all foes to retreat away from the Windswords flashing blade, taking a small amount of damage in the process. Windswords excel against melee and ranged troops alike - with a 25% bonus against melee and an immunity to first strikes helping the to close with ranged troops.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PEGASUS</Tag>
+		<English>Pegasus</English>
+		<French>Pegasus</French>
+		<German>Pegasus</German>
+		<Italian>Pegasus</Italian>
+		<Spanish>Pegasus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PEGASUS_PEDIA</Tag>
+		<English>The Pegasus is a mythical creature, generally remembered due to its namesake constellation. They are wild animals who have tasted the freedom of the skies, though they are also highly intelligent and will allow themselves to be ridden if the cause suits them.</English>
+		<French>The Pegasus is a mythical creature, generally remembered due to its namesake constellation. They are wild animals who have tasted the freedom of the skies, though they are also highly intelligent and will allow themselves to be ridden if the cause suits them.</French>
+		<German>The Pegasus is a mythical creature, generally remembered due to its namesake constellation. They are wild animals who have tasted the freedom of the skies, though they are also highly intelligent and will allow themselves to be ridden if the cause suits them.</German>
+		<Italian>The Pegasus is a mythical creature, generally remembered due to its namesake constellation. They are wild animals who have tasted the freedom of the skies, though they are also highly intelligent and will allow themselves to be ridden if the cause suits them.</Italian>
+		<Spanish>The Pegasus is a mythical creature, generally remembered due to its namesake constellation. They are wild animals who have tasted the freedom of the skies, though they are also highly intelligent and will allow themselves to be ridden if the cause suits them.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PEGASUS_STRATEGY</Tag>
+		<English>Pegasi are maginally useful as a unit, but far more useful as a mount for an existing high level unit. Using the "Ride Pegasus" ability, any Melee, Archer or Adept unit can ride the Pegasus, allowing it rapid and unrestricted movement.</English>
+		<French>Pegasi are maginally useful as a unit, but far more useful as a mount for an existing high level unit. Using the "Ride Pegasus" ability, any Melee, Archer or Adept unit can ride the Pegasus, allowing it rapid and unrestricted movement.</French>
+		<German>Pegasi are maginally useful as a unit, but far more useful as a mount for an existing high level unit. Using the "Ride Pegasus" ability, any Melee, Archer or Adept unit can ride the Pegasus, allowing it rapid and unrestricted movement.</German>
+		<Italian>Pegasi are maginally useful as a unit, but far more useful as a mount for an existing high level unit. Using the "Ride Pegasus" ability, any Melee, Archer or Adept unit can ride the Pegasus, allowing it rapid and unrestricted movement.</Italian>
+		<Spanish>Pegasi are maginally useful as a unit, but far more useful as a mount for an existing high level unit. Using the "Ride Pegasus" ability, any Melee, Archer or Adept unit can ride the Pegasus, allowing it rapid and unrestricted movement.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARMATT</Tag>
+		<English>Harmatt</English>
+		<French>Harmatt</French>
+		<German>Harmatt</German>
+		<Italian>Harmatt</Italian>
+		<Spanish>Harmatt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARMATT_PEDIA</Tag>
+		<English>The ocean spread before him, Harmatt breathed in the salt-air. He had travelled the breadth of this land, from Telynohn to the Great Western Sea. Now he could travel no more, as the water stretched out to the north and south, forming a barrier. Yet the horizon still called him. This was not the edge of the world, he could feel it. There was more to find, to see.[NEWLINE][NEWLINE]As night fell, he crept back to the Amurite port. Ships travelled along the coast at all hours to dock at Glorairine, though they were mostly cargo ships - ugly, cumbersome and ill-suited to a voyage on untamed waves. Then he saw it. A cruiser - simple and elegant lines, designed for speed, belonging to some high-ranking mage who needed to travel between the Amurite cities and beyond rapidly.[NEWLINE][NEWLINE]Harmatt held no antipathy toward the Amurites - in fact they'd been nothing but accomadating when he'd paid Cervedes a visit. He needed to sail however and the cruiser was the key to that. He quickly slipped on board and darted across the main deck. The craft was designed for a crew of a dozen or more, but he had sailed far larger crafts alone in the past - the winds favoured him. Checking that there were none aboard, he sliced the mooring ropes and prepared to make way.[NEWLINE][NEWLINE]It would not move. He had spent minutes that felt like a lifetime trying to set sail, but the vessel was stuck fast. The small anchor had been raised, the moorings were cleared and the sails had been dropped enough to manoeuvre (though hopefully not enough to attract attention from the docks) - but still it refused to move. Knowing that time was short, Harmatt opened the sails full, hoping that a sail full of wind would pull him free of the unseen obstruction. The ship lurched uncertainly, then began to vibrate, but still it refused to move.[NEWLINE]A light on the dockside alerted him to the approach of guards, he could flee into the water, but despite being a strong swimmer, he doubted he could outpace an archer's arrow. He stood his ground as the guards laid a gang plank and boarded the ship.[NEWLINE][NEWLINE]At their head stood a mage. "What exactly are you doing here, in the dead of night? Speak quickly, lest I think you a thief"[NEWLINE][NEWLINE]  "Surely not a thief", said Harmatt. "I am merely here to render this vessel seaworthy once more - something unseen has snared it and the owner wished me to free it". The Mage looked amused.[NEWLINE]This vessel will become seaworthy only when its owner wishes it to be so. This is the personal transport of Archmage Govannon - without his magic, it will never move."[NEWLINE]  "Oh. Drat. I guess it's not what I needed afterall then. The water it is..." Before the Amurites could respond, he had darted back several feet and flung himself from the deck, over the side of the boat. The guards ran to the rail as something heavy splashed into the water and seconds later the area was showered with arrows. They waited several minutes, but naught but the thief's hat surfaced.[NEWLINE][NEWLINE]Hanging on grimly to the underside of the anchor, Harmatt lamented the loss of his hat and swordbelt - cast into the water as he made his escape. This was not turning out to be a good night...</English>
+		<French>The ocean spread before him, Harmatt breathed in the salt-air. He had travelled the breadth of this land, from Telynohn to the Great Western Sea. Now he could travel no more, as the water stretched out to the north and south, forming a barrier. Yet the horizon still called him. This was not the edge of the world, he could feel it. There was more to find, to see.[NEWLINE][NEWLINE]As night fell, he crept back to the Amurite port. Ships travelled along the coast at all hours to dock at Glorairine, though they were mostly cargo ships - ugly, cumbersome and ill-suited to a voyage on untamed waves. Then he saw it. A cruiser - simple and elegant lines, designed for speed, belonging to some high-ranking mage who needed to travel between the Amurite cities and beyond rapidly.[NEWLINE][NEWLINE]Harmatt held no antipathy toward the Amurites - in fact they'd been nothing but accomadating when he'd paid Cervedes a visit. He needed to sail however and the cruiser was the key to that. He quickly slipped on board and darted across the main deck. The craft was designed for a crew of a dozen or more, but he had sailed far larger crafts alone in the past - the winds favoured him. Checking that there were none aboard, he sliced the mooring ropes and prepared to make way.[NEWLINE][NEWLINE]It would not move. He had spent minutes that felt like a lifetime trying to set sail, but the vessel was stuck fast. The small anchor had been raised, the moorings were cleared and the sails had been dropped enough to manoeuvre (though hopefully not enough to attract attention from the docks) - but still it refused to move. Knowing that time was short, Harmatt opened the sails full, hoping that a sail full of wind would pull him free of the unseen obstruction. The ship lurched uncertainly, then began to vibrate, but still it refused to move.[NEWLINE]A light on the dockside alerted him to the approach of guards, he could flee into the water, but despite being a strong swimmer, he doubted he could outpace an archer's arrow. He stood his ground as the guards laid a gang plank and boarded the ship.[NEWLINE][NEWLINE]At their head stood a mage. "What exactly are you doing here, in the dead of night? Speak quickly, lest I think you a thief"[NEWLINE][NEWLINE]  "Surely not a thief", said Harmatt. "I am merely here to render this vessel seaworthy once more - something unseen has snared it and the owner wished me to free it". The Mage looked amused.[NEWLINE]This vessel will become seaworthy only when its owner wishes it to be so. This is the personal transport of Archmage Govannon - without his magic, it will never move."[NEWLINE]  "Oh. Drat. I guess it's not what I needed afterall then. The water it is..." Before the Amurites could respond, he had darted back several feet and flung himself from the deck, over the side of the boat. The guards ran to the rail as something heavy splashed into the water and seconds later the area was showered with arrows. They waited several minutes, but naught but the thief's hat surfaced.[NEWLINE][NEWLINE]Hanging on grimly to the underside of the anchor, Harmatt lamented the loss of his hat and swordbelt - cast into the water as he made his escape. This was not turning out to be a good night...</French>
+		<German>The ocean spread before him, Harmatt breathed in the salt-air. He had travelled the breadth of this land, from Telynohn to the Great Western Sea. Now he could travel no more, as the water stretched out to the north and south, forming a barrier. Yet the horizon still called him. This was not the edge of the world, he could feel it. There was more to find, to see.[NEWLINE][NEWLINE]As night fell, he crept back to the Amurite port. Ships travelled along the coast at all hours to dock at Glorairine, though they were mostly cargo ships - ugly, cumbersome and ill-suited to a voyage on untamed waves. Then he saw it. A cruiser - simple and elegant lines, designed for speed, belonging to some high-ranking mage who needed to travel between the Amurite cities and beyond rapidly.[NEWLINE][NEWLINE]Harmatt held no antipathy toward the Amurites - in fact they'd been nothing but accomadating when he'd paid Cervedes a visit. He needed to sail however and the cruiser was the key to that. He quickly slipped on board and darted across the main deck. The craft was designed for a crew of a dozen or more, but he had sailed far larger crafts alone in the past - the winds favoured him. Checking that there were none aboard, he sliced the mooring ropes and prepared to make way.[NEWLINE][NEWLINE]It would not move. He had spent minutes that felt like a lifetime trying to set sail, but the vessel was stuck fast. The small anchor had been raised, the moorings were cleared and the sails had been dropped enough to manoeuvre (though hopefully not enough to attract attention from the docks) - but still it refused to move. Knowing that time was short, Harmatt opened the sails full, hoping that a sail full of wind would pull him free of the unseen obstruction. The ship lurched uncertainly, then began to vibrate, but still it refused to move.[NEWLINE]A light on the dockside alerted him to the approach of guards, he could flee into the water, but despite being a strong swimmer, he doubted he could outpace an archer's arrow. He stood his ground as the guards laid a gang plank and boarded the ship.[NEWLINE][NEWLINE]At their head stood a mage. "What exactly are you doing here, in the dead of night? Speak quickly, lest I think you a thief"[NEWLINE][NEWLINE]  "Surely not a thief", said Harmatt. "I am merely here to render this vessel seaworthy once more - something unseen has snared it and the owner wished me to free it". The Mage looked amused.[NEWLINE]This vessel will become seaworthy only when its owner wishes it to be so. This is the personal transport of Archmage Govannon - without his magic, it will never move."[NEWLINE]  "Oh. Drat. I guess it's not what I needed afterall then. The water it is..." Before the Amurites could respond, he had darted back several feet and flung himself from the deck, over the side of the boat. The guards ran to the rail as something heavy splashed into the water and seconds later the area was showered with arrows. They waited several minutes, but naught but the thief's hat surfaced.[NEWLINE][NEWLINE]Hanging on grimly to the underside of the anchor, Harmatt lamented the loss of his hat and swordbelt - cast into the water as he made his escape. This was not turning out to be a good night...</German>
+		<Italian>The ocean spread before him, Harmatt breathed in the salt-air. He had travelled the breadth of this land, from Telynohn to the Great Western Sea. Now he could travel no more, as the water stretched out to the north and south, forming a barrier. Yet the horizon still called him. This was not the edge of the world, he could feel it. There was more to find, to see.[NEWLINE][NEWLINE]As night fell, he crept back to the Amurite port. Ships travelled along the coast at all hours to dock at Glorairine, though they were mostly cargo ships - ugly, cumbersome and ill-suited to a voyage on untamed waves. Then he saw it. A cruiser - simple and elegant lines, designed for speed, belonging to some high-ranking mage who needed to travel between the Amurite cities and beyond rapidly.[NEWLINE][NEWLINE]Harmatt held no antipathy toward the Amurites - in fact they'd been nothing but accomadating when he'd paid Cervedes a visit. He needed to sail however and the cruiser was the key to that. He quickly slipped on board and darted across the main deck. The craft was designed for a crew of a dozen or more, but he had sailed far larger crafts alone in the past - the winds favoured him. Checking that there were none aboard, he sliced the mooring ropes and prepared to make way.[NEWLINE][NEWLINE]It would not move. He had spent minutes that felt like a lifetime trying to set sail, but the vessel was stuck fast. The small anchor had been raised, the moorings were cleared and the sails had been dropped enough to manoeuvre (though hopefully not enough to attract attention from the docks) - but still it refused to move. Knowing that time was short, Harmatt opened the sails full, hoping that a sail full of wind would pull him free of the unseen obstruction. The ship lurched uncertainly, then began to vibrate, but still it refused to move.[NEWLINE]A light on the dockside alerted him to the approach of guards, he could flee into the water, but despite being a strong swimmer, he doubted he could outpace an archer's arrow. He stood his ground as the guards laid a gang plank and boarded the ship.[NEWLINE][NEWLINE]At their head stood a mage. "What exactly are you doing here, in the dead of night? Speak quickly, lest I think you a thief"[NEWLINE][NEWLINE]  "Surely not a thief", said Harmatt. "I am merely here to render this vessel seaworthy once more - something unseen has snared it and the owner wished me to free it". The Mage looked amused.[NEWLINE]This vessel will become seaworthy only when its owner wishes it to be so. This is the personal transport of Archmage Govannon - without his magic, it will never move."[NEWLINE]  "Oh. Drat. I guess it's not what I needed afterall then. The water it is..." Before the Amurites could respond, he had darted back several feet and flung himself from the deck, over the side of the boat. The guards ran to the rail as something heavy splashed into the water and seconds later the area was showered with arrows. They waited several minutes, but naught but the thief's hat surfaced.[NEWLINE][NEWLINE]Hanging on grimly to the underside of the anchor, Harmatt lamented the loss of his hat and swordbelt - cast into the water as he made his escape. This was not turning out to be a good night...</Italian>
+		<Spanish>The ocean spread before him, Harmatt breathed in the salt-air. He had travelled the breadth of this land, from Telynohn to the Great Western Sea. Now he could travel no more, as the water stretched out to the north and south, forming a barrier. Yet the horizon still called him. This was not the edge of the world, he could feel it. There was more to find, to see.[NEWLINE][NEWLINE]As night fell, he crept back to the Amurite port. Ships travelled along the coast at all hours to dock at Glorairine, though they were mostly cargo ships - ugly, cumbersome and ill-suited to a voyage on untamed waves. Then he saw it. A cruiser - simple and elegant lines, designed for speed, belonging to some high-ranking mage who needed to travel between the Amurite cities and beyond rapidly.[NEWLINE][NEWLINE]Harmatt held no antipathy toward the Amurites - in fact they'd been nothing but accomadating when he'd paid Cervedes a visit. He needed to sail however and the cruiser was the key to that. He quickly slipped on board and darted across the main deck. The craft was designed for a crew of a dozen or more, but he had sailed far larger crafts alone in the past - the winds favoured him. Checking that there were none aboard, he sliced the mooring ropes and prepared to make way.[NEWLINE][NEWLINE]It would not move. He had spent minutes that felt like a lifetime trying to set sail, but the vessel was stuck fast. The small anchor had been raised, the moorings were cleared and the sails had been dropped enough to manoeuvre (though hopefully not enough to attract attention from the docks) - but still it refused to move. Knowing that time was short, Harmatt opened the sails full, hoping that a sail full of wind would pull him free of the unseen obstruction. The ship lurched uncertainly, then began to vibrate, but still it refused to move.[NEWLINE]A light on the dockside alerted him to the approach of guards, he could flee into the water, but despite being a strong swimmer, he doubted he could outpace an archer's arrow. He stood his ground as the guards laid a gang plank and boarded the ship.[NEWLINE][NEWLINE]At their head stood a mage. "What exactly are you doing here, in the dead of night? Speak quickly, lest I think you a thief"[NEWLINE][NEWLINE]  "Surely not a thief", said Harmatt. "I am merely here to render this vessel seaworthy once more - something unseen has snared it and the owner wished me to free it". The Mage looked amused.[NEWLINE]This vessel will become seaworthy only when its owner wishes it to be so. This is the personal transport of Archmage Govannon - without his magic, it will never move."[NEWLINE]  "Oh. Drat. I guess it's not what I needed afterall then. The water it is..." Before the Amurites could respond, he had darted back several feet and flung himself from the deck, over the side of the boat. The guards ran to the rail as something heavy splashed into the water and seconds later the area was showered with arrows. They waited several minutes, but naught but the thief's hat surfaced.[NEWLINE][NEWLINE]Hanging on grimly to the underside of the anchor, Harmatt lamented the loss of his hat and swordbelt - cast into the water as he made his escape. This was not turning out to be a good night...</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HARMATT_STRATEGY</Tag>
+		<English>Harmatt is an early hero though has some mid-game potential thanks to his Air-affinity. He is best used to explore and is able to deal with the worst that the wild can throw at him.</English>
+		<French>Harmatt is an early hero though has some mid-game potential thanks to his Air-affinity. He is best used to explore and is able to deal with the worst that the wild can throw at him.</French>
+		<German>Harmatt is an early hero though has some mid-game potential thanks to his Air-affinity. He is best used to explore and is able to deal with the worst that the wild can throw at him.</German>
+		<Italian>Harmatt is an early hero though has some mid-game potential thanks to his Air-affinity. He is best used to explore and is able to deal with the worst that the wild can throw at him.</Italian>
+		<Spanish>Harmatt is an early hero though has some mid-game potential thanks to his Air-affinity. He is best used to explore and is able to deal with the worst that the wild can throw at him.</Spanish>
+	</TEXT>   
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EXPLORATION_GUILD</Tag>
+		<English>Exploration Guild</English>
+		<French>Exploration Guild</French>
+        <German>Erkundungsgilde</German>
+		<Italian>Exploration Guild</Italian>
+		<Spanish>Exploration Guild</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EXPLORATION_GUILD_PEDIA</Tag>
+		<English>Those of a like mind often band together. With so many amongst the Austrin with a mind to explore, it is unsurprising to find an exploration guild in most of their cities.</English>
+		<French>Those of a like mind often band together. With so many amongst the Austrin with a mind to explore, it is unsurprising to find an exploration guild in most of their cities.</French>
+		<German>Those of a like mind often band together. With so many amongst the Austrin with a mind to explore, it is unsurprising to find an exploration guild in most of their cities.</German>
+		<Italian>Those of a like mind often band together. With so many amongst the Austrin with a mind to explore, it is unsurprising to find an exploration guild in most of their cities.</Italian>
+		<Spanish>Those of a like mind often band together. With so many amongst the Austrin with a mind to explore, it is unsurprising to find an exploration guild in most of their cities.</Spanish>
+	</TEXT>
+	   <TEXT>
+		<Tag>TXT_KEY_PROMOTION_PEGASUS_RIDER</Tag>
+		<English>Pegasus Rider</English>
+		<French>Pegasus Rider</French>
+        <German>Pegasus Reiter</German>
+		<Italian>Pegasus Rider</Italian>
+		<Spanish>Pegasus Rider</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TRAVEL_LIGHT</Tag>
+		<English>Travel Light</English>
+		<French>Travel Light</French>
+        <German>Reiselicht</German>
+		<Italian>Travel Light</Italian>
+		<Spanish>Travel Light</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TRAVEL_LIGHT_PEDIA</Tag>
+		<English>A warrior carries much to aid him in battle, but much of this can be discarded in favour of speed. Afterall- new equipment can often be found at the destination.</English>
+		<French>A warrior carries much to aid him in battle, but much of this can be discarded in favour of speed. Afterall- new equipment can often be found at the destination.</French>
+		<German>A warrior carries much to aid him in battle, but much of this can be discarded in favour of speed. Afterall- new equipment can often be found at the destination.</German>
+		<Italian>A warrior carries much to aid him in battle, but much of this can be discarded in favour of speed. Afterall- new equipment can often be found at the destination.</Italian>
+		<Spanish>A warrior carries much to aid him in battle, but much of this can be discarded in favour of speed. Afterall- new equipment can often be found at the destination.</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_REEQUIP</Tag>
+		<English>Re-equip</English>
+		<French>Re-equip</French>
+        <German>Wiederausr&#252;sten</German>
+		<Italian>Re-equip</Italian>
+		<Spanish>Re-equip</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_REEQUIP_PEDIA</Tag>
+		<English>Whilst the Austrin armies tend to travel with little equipment, they will normally scavenge or create weapons as they near the battlefield.</English>
+		<French>Whilst the Austrin armies tend to travel with little equipment, they will normally scavenge or create weapons as they near the battlefield.</French>
+		<German>Whilst the Austrin armies tend to travel with little equipment, they will normally scavenge or create weapons as they near the battlefield.</German>
+		<Italian>Whilst the Austrin armies tend to travel with little equipment, they will normally scavenge or create weapons as they near the battlefield.</Italian>
+		<Spanish>Whilst the Austrin armies tend to travel with little equipment, they will normally scavenge or create weapons as they near the battlefield.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_REEQUIP_STRATEGY</Tag>
+		<English>Using this ability returns the unit to normal speed and removes the combat penalty from travelling light. It does take a full turn to take effect however and does not restore weapon promotions - these must be regained in a city.</English>
+		<French>Using this ability returns the unit to normal speed and removes the combat penalty from travelling light. It does take a full turn to take effect however and does not restore weapon promotions - these must be regained in a city.</French>
+		<German>Using this ability returns the unit to normal speed and removes the combat penalty from travelling light. It does take a full turn to take effect however and does not restore weapon promotions - these must be regained in a city.</German>
+		<Italian>Using this ability returns the unit to normal speed and removes the combat penalty from travelling light. It does take a full turn to take effect however and does not restore weapon promotions - these must be regained in a city.</Italian>
+		<Spanish>Using this ability returns the unit to normal speed and removes the combat penalty from travelling light. It does take a full turn to take effect however and does not restore weapon promotions - these must be regained in a city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_ASSEMBLE_SHOREPARTY</Tag>
+		<English>Assemble Shoreparty</English>
+		<French>Assemble Shoreparty</French>
+        <German>K&#252;stentrupp versammeln</German>
+		<Italian>Assemble Shoreparty</Italian>
+		<Spanish>Assemble Shoreparty</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_BLADEWIND</Tag>
+		<English>Bladewind</English>
+		<French>Bladewind</French>
+        <German>Wind der Klingen</German>
+		<Italian>Bladewind</Italian>
+		<Spanish>Bladewind</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_SUMMON_PEGASUS</Tag>
+		<English>Summon Pegasus</English>
+		<French>Summon Pegasus</French>
+        <German>Pegasus beschw&#246;ren</German>
+		<Italian>Summon Pegasus</Italian>
+		<Spanish>Summon Pegasus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_MOUNT_PEGASUS</Tag>
+		<English>Mount Pegasus</English>
+		<French>Mount Pegasus</French>
+        <German>Pegasus satteln</German>
+		<Italian>Mount Pegasus</Italian>
+		<Spanish>Mount Pegasus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEMPEST</Tag>
+		<English>Tempest</English>
+		<French>Tempest</French>
+        <German>Seesturm</German>
+		<Italian>Tempest</Italian>
+		<Spanish>Tempest</Spanish>
+	</TEXT> 
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEMPEST_PEDIA</Tag>
+		<English>When the air itself turns against you, there's nowhere left to run.</English>
+		<French>When the air itself turns against you, there's nowhere left to run.</French>
+        <German>Wenn die Luft selbst sich gegen Dich wendet, gibt es keinen ort mehr, an den Du fliehen kannst.</German>
+		<Italian>When the air itself turns against you, there's nowhere left to run.</Italian>
+		<Spanish>When the air itself turns against you, there's nowhere left to run.</Spanish>
+	</TEXT> 
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_TEMPEST_HELP</Tag>
+		<English>[ICON_BULLET]Immobilizes all enemy units in your territory for a random amount of time (1-5 turns)[NEWLINE][ICON_BULLET]May create air elementals in your territory with a random duration (1-5 turns)</English>
+		<French>[ICON_BULLET]Immobilizes all enemy units in your territory for a random amount of time (1-5 turns)[NEWLINE][ICON_BULLET]May create air elementals in your territory with a random duration (1-5 turns)</French>
+        <German>[ICON_BULLET]Verhindert die Bewegung aller feindlicher Einheiten auf Eurem Gebiet f&#252;r eine ungewisse Zeit (1-5 Runden)[NEWLINE][ICON_BULLET]Kann auf Eurem Territorium Luftelementare mit einer ungewissen Verweildauer (1-5 Runden) erschaffen</German>
+		<Italian>[ICON_BULLET]Immobilizes all enemy units in your territory for a random amount of time (1-5 turns)[NEWLINE][ICON_BULLET]May create air elementals in your territory with a random duration (1-5 turns)</Italian>
+		<Spanish>[ICON_BULLET]Immobilizes all enemy units in your territory for a random amount of time (1-5 turns)[NEWLINE][ICON_BULLET]May create air elementals in your territory with a random duration (1-5 turns)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALACE_AUSTERIN</Tag>
+		<English>Austrin Palace</English>
+		<French>Austrin Palace</French>
+        <German>Palast der Austrin</German>
+		<Italian>Austrin Palace</Italian>
+		<Spanish>Austrin Palace</Spanish>
+	</TEXT>	 
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DEFEATED_DEIRDRA</Tag>
+		<English>"You cannot defeat a storm, merely survive it. We may not survive this storm, but keep your eye to the sky- for the next may claim your own lands"</English>
+		<French>"You cannot defeat a storm, merely survive it. We may not survive this storm, but keep your eye to the sky- for the next may claim your own lands"</French>
+        <German>"Ihr k&#246;nnt einen Sturm nicht bezwingen, ihn schwerlich nur &#252;berleben. Wir scheinen diesen Sturm nicht zu &#252;berstehen, aber behaltet den Himmel im Auge - der n&#228;chste k&#246;nnte EUCH E&#252;r Land kosten."</German>
+		<Italian>"You cannot defeat a storm, merely survive it. We may not survive this storm, but keep your eye to the sky- for the next may claim your own lands"</Italian>
+		<Spanish>"You cannot defeat a storm, merely survive it. We may not survive this storm, but keep your eye to the sky- for the next may claim your own lands"</Spanish>
+	</TEXT>		 
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_SIGN_TALI_AUSTRIN</Tag>
+		<English>It is time for the Festival of Winds - inform the people</English>
+		<French>It is time for the Festival of Winds - inform the people</French>
+        <German>Die Zeit f&#252;r das Festival der Winde ist gekommen - informiert das Volk.</German>
+		<Italian>It is time for the Festival of Winds - inform the people</Italian>
+		<Spanish>It is time for the Festival of Winds - inform the people</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT</Tag>
+		<English>Austrin Settlement</English>
+		<French>Austrin Settlement</French>
+		<German>Austrin Settlement</German>
+		<Italian>Austrin Settlement</Italian>
+		<Spanish>Austrin Settlement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT_PEDIA</Tag>
+		<English>The Austrin do not worry about great distances between their cities - their wanderers travel often and communication is easy.</English>
+		<French>The Austrin do not worry about great distances between their cities - their wanderers travel often and communication is easy.</French>
+		<German>The Austrin do not worry about great distances between their cities - their wanderers travel often and communication is easy.</German>
+		<Italian>The Austrin do not worry about great distances between their cities - their wanderers travel often and communication is easy.</Italian>
+		<Spanish>The Austrin do not worry about great distances between their cities - their wanderers travel often and communication is easy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AUSTRIN_SETTLEMENT_STRATEGY</Tag>
+		<English>The Austrin Settlement is present in all Austrin cities, massively reducing the maintenance due to distance that they need to pay.</English>
+		<French>The Austrin Settlement is present in all Austrin cities, massively reducing the maintenance due to distance that they need to pay.</French>
+		<German>The Austrin Settlement is present in all Austrin cities, massively reducing the maintenance due to distance that they need to pay.</German>
+		<Italian>The Austrin Settlement is present in all Austrin cities, massively reducing the maintenance due to distance that they need to pay.</Italian>
+		<Spanish>The Austrin Settlement is present in all Austrin cities, massively reducing the maintenance due to distance that they need to pay.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_AUSTRIN_REMOTE_FOUND</Tag>
+		<English>Found Settlement</English>
+		<French>Found Settlement</French>
+		<German>Found Settlement</German>
+		<Italian>Found Settlement</Italian>
+		<Spanish>Found Settlement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_AUSTRIN_REMOTE_FOUND_PEDIA</Tag>
+		<English>Austrin wanderers often find far flung locations with valuable resources. After reporting back, an expedition may be sent to found a permanent settlement.</English>
+		<French>Austrin wanderers often find far flung locations with valuable resources. After reporting back, an expedition may be sent to found a permanent settlement.</French>
+		<German>Austrin wanderers often find far flung locations with valuable resources. After reporting back, an expedition may be sent to found a permanent settlement.</German>
+		<Italian>Austrin wanderers often find far flung locations with valuable resources. After reporting back, an expedition may be sent to found a permanent settlement.</Italian>
+		<Spanish>Austrin wanderers often find far flung locations with valuable resources. After reporting back, an expedition may be sent to found a permanent settlement.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPELL_AUSTRIN_REMOTE_FOUND_HELP</Tag>
+		<English>[ICON_BULLET]Requires you to "Prepare an Expedition" in one of your cities.
+	[ICON_BULLET]Allows your recon unit to found a city</English>
+		<French>[ICON_BULLET]Requires you to "Prepare an Expedition" in one of your cities.
+	[ICON_BULLET]Allows your recon unit to found a city</French>
+		<German>[ICON_BULLET]Requires you to "Prepare an Expedition" in one of your cities.
+	[ICON_BULLET]Allows your recon unit to found a city</German>
+		<Italian>[ICON_BULLET]Requires you to "Prepare an Expedition" in one of your cities.
+	[ICON_BULLET]Allows your recon unit to found a city</Italian>
+		<Spanish>[ICON_BULLET]Requires you to "Prepare an Expedition" in one of your cities.
+	[ICON_BULLET]Allows your recon unit to found a city</Spanish>
+	</TEXT>  
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_PREPARE_EXPEDITION</Tag>
+		<English>Prepare Expedition</English>
+		<French>Prepare Expedition</French>
+		<German>Prepare Expedition</German>
+		<Italian>Prepare Expedition</Italian>
+		<Spanish>Prepare Expedition</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_PREPARE_EXPEDITION_STRATEGY</Tag>
+		<English>Once an expedition is prepared, you may found a city with any recon unit. You must prepare a separate expedition for every settlement you wish to found in this way.</English>
+		<French>Once an expedition is prepared, you may found a city with any recon unit. You must prepare a separate expedition for every settlement you wish to found in this way.</French>
+		<German>Once an expedition is prepared, you may found a city with any recon unit. You must prepare a separate expedition for every settlement you wish to found in this way.</German>
+		<Italian>Once an expedition is prepared, you may found a city with any recon unit. You must prepare a separate expedition for every settlement you wish to found in this way.</Italian>
+		<Spanish>Once an expedition is prepared, you may found a city with any recon unit. You must prepare a separate expedition for every settlement you wish to found in this way.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WANDERER</Tag>
+		<English>Wanderer</English>
+		<French>Wanderer</French>
+		<German>Wanderer</German>
+		<Italian>Wanderer</Italian>
+		<Spanish>Wanderer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WANDERER_SHORT</Tag>
+		<English>Wan</English>
+		<French>Wan</French>
+		<German>Wan</German>
+		<Italian>Wan</Italian>
+		<Spanish>Wan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HIGHLANDER</Tag>
+		<English>Highlander</English>
+		<French>Highlander</French>
+		<German>Highlander</German>
+		<Italian>Highlander</Italian>
+		<Spanish>Highlander</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HIGHLANDER_STRATEGY</Tag>
+		<English>With their extra strength against animals/beasts and recon, bonuses in hills, and against animals, Highlanders are a well rounded unit for exploring the world and battling against the elements.</English>
+		<French>With their extra strength against animals/beasts and recon, bonuses in hills, and against animals, Highlanders are a well rounded unit for exploring the world and battling against the elements.</French>
+		<German>With their extra strength against animals/beasts and recon, bonuses in hills, and against animals, Highlanders are a well rounded unit for exploring the world and battling against the elements.</German>
+		<Italian>With their extra strength against animals/beasts and recon, bonuses in hills, and against animals, Highlanders are a well rounded unit for exploring the world and battling against the elements.</Italian>
+		<Spanish>With their extra strength against animals/beasts and recon, bonuses in hills, and against animals, Highlanders are a well rounded unit for exploring the world and battling against the elements.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HIGHLANDER_PEDIA</Tag>
+		<English>Trained not in cramped barracks, but out on the hillsides of erebus, Highlanders are the core of an Austrin offensive army. They live their lives camping out in glens and forests, hunting for food, honing their survival skills, fighting wild beasts, and sparring for training. This lifestyle gives them a natural affinity for rough terrain, and a good experience of fending off wild animals.[PARAGRAPH:1][PARAGRAPH:1]They carry a large Claymore on their back, a powerful and flexible greatsword that is carried like a polearm, but swung like a sword. The base of the blade is blunted and wrapped in dark cloth, giving an extra place to grip when holding it at the ready, and both hands are moved down to the hilt when swinging, allowing it to gather massive momentum from its huge arc of motion. Such a weapon favours combat in open spaces, though. And unlike their city-dwelling cousins, they are not well used to fighting on cramped battlements and castle hallways, much preferring combat in the field.</English>
+		<French>Exercé pas dans les casernes à l'etroit, mais dehors sur les flancs de coteau de l'erebus, les montagnards sont le noyau d'une armée d'offensive d'Austrin. Ils vivent leurs vies campant dehors dans les gorges et les forêts, chassant pour la nourriture, aiguisant leurs qualifications de survie, bêtes sauvages de combat, et sparring pour la formation. Ce style de vie donne leur une affinité normale pour le terrain accidenté, et à une bonne expérience de défendre outre des animaux sauvages.[PARAGRAPH:1][PARAGRAPH:1]Ils portent un grand Claymore sur leur dos, un greatsword puissant et flexible qui est porté comme un polearm, mais balancé comme une épée. La base de la lame est émoussée et enveloppé en tissu foncé, donnant un endroit supplémentaire pour saisir quand le tenir le prêt, et aux deux mains sont abaissés à la poignée en balançant, lui permettant de recueillir l'élan massif de son arc énorme de mouvement. Une telle arme favorise le combat dans les espaces ouverts, cependant. Et à la différence de leurs cousins de ville-logement, ils ne sont pas bons utilisés au combat sur les remparts à l'etroit et ne se retranchent pas les vestibules, beaucoup de combat de préférence dans le domaine.</French>
+		<German>Ausgebildet nicht in verkrampften Kasernen, aber heraus auf den Abhängen von erebus, sind Hochländer der Kern einer Austrin Offensivearmee. Sie leben ihre Leben kampierend heraus in den Schluchten und in den Wäldern und jagen für Nahrung und ziehen ihre Überlebensfähigkeiten, kämpfenden wilden Tiere und sparring für Training ab. Dieser Lebensstil gibt ihnen eine natürliche Affinität für raues Gelände und einer guten Erfahrung des Abwehrens weg von den wilden Tieren.[PARAGRAPH:1][PARAGRAPH:1]Sie tragen ein großes Claymore auf ihrer Rückseite, einem leistungsfähigen und flexiblen greatsword, das wie ein polearm getragen wird, aber geschwungen wie eine Klinge. Die Unterseite des Blattes wird abgestumpft und eingewickelt im dunklen Tuch, einen Extraplatz gebend, um wann das Halten er am bereiten und an beiden Händen zu greifen, nach unten auf den Griff beim Schwingen bewogen werden und es massives Momentum von seinem sehr großen Bogen der Bewegung erfassen lassen. Solch eine Waffe bevorzugt Kampf in den offenen Räumen, zwar. Und anders als ihre Stadtwohnung Vetter, sind sie nicht gewohnt zu auf, verkrampften Zinnen zu kämpfen wohles und ziehen sich Hallen, viel bevorzugenkampf im Feld zurück.</German>
+		<Italian>Addestrato non in caserne ristrette, ma fuori sui pendii di collina del erebus, gli abitanti degli altipiani scozzesi sono il centro di un esercito di offensiva di Austrin. Vivono le loro vite che si accampano fuori nelle vallette e nelle foreste, cercando per l'alimento, smerigliatrice le loro abilità di sopravvivenza, bestie selvagge combattenti e sparring per l'addestramento. Questo stile di vita dà loro un'affinità naturale per terreno di massima e ad una buona esperienza in parare fuori dagli animali selvatici.[PARAGRAPH:1][PARAGRAPH:1]Trasportano un grande Claymore sulla loro parte posteriore, su un greatsword potente e flessibile che è trasportato come un polearm, ma oscillato come una spada. La base della lamierina è smussata e spostato in panno scuro, dante un posto supplementare per afferrare quando tenerlo al pronto e ad entrambe le mani è abbassato verso l'elsa quando oscilla, permettendo che si riunisca la quantità di moto voluminosa dal relativo arco enorme di movimento. Una tal arma favorisce il combattimento negli spazi all'aperto, comunque. E diverso dei loro cugini della città-dimora, non sono buono usati al combattimento sui merli ristretti e non fortificano i corridoi, molto combattimento di preferenza nel campo.</Italian>
+		<Spanish>Entrenado no en cuarteles encogidos, sino hacia fuera en las laderas del erebus, los montañeses son la base de un ejército de la ofensiva de Austrin. Viven sus vidas que acampan hacia fuera en cañadas y bosques, buscando para el alimento, afilando con piedra sus habilidades de la supervivencia, bestias salvajes que luchan, y sparring para el entrenamiento. Esta forma de vida da les una afinidad natural para el terreno áspero, y a buena experiencia del mantenimiento de animales salvajes.[PARAGRAPH:1][PARAGRAPH:1]Llevan un Claymore grande en su parte posterior, un greatsword de gran alcance y flexible que se lleve como un polearm, pero hecho pivotar como una espada. La base de la lámina se embota y envuelto en el paño oscuro, dando un lugar adicional para agarrar cuando llevarlo a cabo en el listo, y ambas manos se baja al puño al hacer pivotar, permitiendo que recolecte ímpetu masivo de su arco enorme del movimiento. Tal arma favorece combate en espacios abiertos, aunque. Y desemejante de sus primos de la ciudad-vivienda, no están bien usados a luchar en los almenajes encogidos y no se escudan los vestíbulos, mucho combate que prefiere en el campo.</Spanish>
+    	</TEXT>	
+</Civ4GameText>

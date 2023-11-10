@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Spell Infos -->
+<Civ4SpellInfos xmlns="x-schema:ITEMS_CIV4UnitSpellSchema.xml">
+    <SpellInfos>
+		<SpellInfo>
+            <Type>SPELL_TAKE_ALSOPHOCUS_TOME_PROMOTION</Type>
+            <Description>Take the Tome of Alsophocus</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <PromotionInStackPrereq>PROMOTION_ALSOPHOCUS_TOME</PromotionInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentPromotion(pCaster,'EQUIPMENT_ALSOPHOCUS_TOME')</PyResult>
+            <PyRequirement>reqTakeEquipmentPromotion(pCaster,'EQUIPMENT_ALSOPHOCUS_TOME')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/AlsophocusTome.dds</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_TAKE_ALSOPHOCUS_TOME_UNIT</Type>
+            <Description>Take the Tome of Alsophocus</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <UnitInStackPrereq>EQUIPMENT_ALSOPHOCUS_TOME</UnitInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <AddPromotionType1>PROMOTION_ALSOPHOCUS_TOME</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentUnit(pCaster,'EQUIPMENT_ALSOPHOCUS_TOME')</PyResult>
+            <PyRequirement>reqTakeEquipmentUnit(pCaster,'EQUIPMENT_ALSOPHOCUS_TOME')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/AlsophocusTome.dds</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_BURN_ALSOPHOCUS_TOME</Type>
+            <Description>Burn the Tome of Alsophocus</Description>
+            <Civilopedia>Burns the unholy tome.</Civilopedia>
+            <PromotionPrereq1>PROMOTION_ALSOPHOCUS_TOME</PromotionPrereq1>
+			<AddPromotionType1>PROMOTION_MAGIC_IMMUNE</AddPromotionType1>
+			<RemovePromotionType1>PROMOTION_ALSOPHOCUS_TOME</RemovePromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <Effect>EFFECT_SCORCH</Effect>
+            <Sound>AS3D_SPELL_DEFILE</Sound>
+            <Button>Art/Interface/Buttons/Equipment/BurnTome.dds</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_TAKE_PRESERVER_PROMOTION</Type>
+            <Description>Take Preserver</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <PromotionInStackPrereq>PROMOTION_PRESERVER</PromotionInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentPromotion(pCaster,'EQUIPMENT_PRESERVER')</PyResult>
+            <PyRequirement>reqTakeEquipmentPromotion(pCaster,'EQUIPMENT_PRESERVER')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/Preserver.dds</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_TAKE_PRESERVER_UNIT</Type>
+            <Description>Take Preserver</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <UnitInStackPrereq>EQUIPMENT_PRESERVER</UnitInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <AddPromotionType1>PROMOTION_PRESERVER</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentUnit(pCaster,'EQUIPMENT_PRESERVER')</PyResult>
+            <PyRequirement>reqTakeEquipmentUnit(pCaster,'EQUIPMENT_PRESERVER')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/Preserver.dds</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_TAKE_SEVEN_LEAGUE_PROMOTION</Type>
+            <Description>Take the Seven League Boots</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <PromotionInStackPrereq>PROMOTION_SEVEN_LEAGUE</PromotionInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentPromotion(pCaster,'EQUIPMENT_SEVEN_LEAGUE')</PyResult>
+            <PyRequirement>reqTakeEquipmentPromotion(pCaster,'EQUIPMENT_SEVEN_LEAGUE')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/SevenLEague.dds</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_TAKE_SEVEN_LEAGUE_UNIT</Type>
+            <Description>Take the Seven League Boots</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <UnitInStackPrereq>EQUIPMENT_SEVEN_LEAGUE</UnitInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <AddPromotionType1>PROMOTION_SEVEN_LEAGUE</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentUnit(pCaster,'EQUIPMENT_SEVEN_LEAGUE')</PyResult>
+            <PyRequirement>reqTakeEquipmentUnit(pCaster,'EQUIPMENT_SEVEN_LEAGUE')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/SevenLeague.dds</Button>
+        </SpellInfo>
+		<SpellInfo>
+            <Type>SPELL_TAKE_MARTYR_CROWN_PROMOTION</Type>
+            <Description>Take the Crown of the Martyr</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <PromotionInStackPrereq>PROMOTION_MARTYR_CROWN</PromotionInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentPromotion(pCaster,'EQUIPMENT_MARTYR_CROWN')</PyResult>
+            <PyRequirement>reqTakeEquipmentPromotion(pCaster,'EQUIPMENT_MARTYR_CROWN')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/MartyrCrown.dds</Button>
+        </SpellInfo>
+        <SpellInfo>
+            <Type>SPELL_TAKE_MARTYR_CROWN_UNIT</Type>
+            <Description>Take the Crown of the Martyr</Description>
+            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Help>TXT_KEY_SPELL_TAKE_EQUIPMENT_HELP</Help>
+            <UnitInStackPrereq>EQUIPMENT_MARTYR_CROWN</UnitInStackPrereq>
+            <bAllowAI>1</bAllowAI>
+            <iAIWeight>50</iAIWeight>
+            <bHasCasted>1</bHasCasted>
+            <AddPromotionType1>PROMOTION_MARTYR_CROWN</AddPromotionType1>
+            <bBuffCasterOnly>1</bBuffCasterOnly>
+            <bAbility>1</bAbility>
+            <PyResult>spellTakeEquipmentUnit(pCaster,'EQUIPMENT_MARTYR_CROWN')</PyResult>
+            <PyRequirement>reqTakeEquipmentUnit(pCaster,'EQUIPMENT_MARTYR_CROWN')</PyRequirement>
+            <Effect>EFFECT_SPELL1</Effect>
+            <Sound>AS3D_SPELL_TRAIN</Sound>
+            <bGraphicalOnly>1</bGraphicalOnly>
+            <Button>Art/Interface/Buttons/Equipment/MartyrCrown.dds</Button>
+        </SpellInfo>
+    </SpellInfos>
+</Civ4SpellInfos>

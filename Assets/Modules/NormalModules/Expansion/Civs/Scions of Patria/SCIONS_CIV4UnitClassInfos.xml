@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2006 sp1 U (http://www.altova.com) by Derek Paxton (None) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- UnitClass Schema -->
+<Civ4UnitClassInfos xmlns="x-schema:SCIONS_CIV4UnitSchema.xml">
+	<UnitClassInfos>
+		<UnitClassInfo>		<!-- REVENANT -->
+			<Type>UNITCLASS_REVENANT</Type>
+			<Description>TXT_KEY_UNIT_REVENANT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_REVENANT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- KORRINA -->
+			<Type>UNITCLASS_KORRINA</Type>
+			<Description>TXT_KEY_UNIT_KORRINA_PROTECTOR</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_KORRINA_PROTECTOR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- KORRINA_BLACK_LADY -->
+			<Type>UNITCLASS_KORRINA_BLACK_LADY</Type>
+			<Description>TXT_KEY_UNIT_KORRINA_BLACK_LADY</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_KORRINA_BLACK_LADY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- KORRINA_RED_LADY -->
+			<Type>UNITCLASS_KORRINA_RED_LADY</Type>
+			<Description>TXT_KEY_UNIT_KORRINA_RED_LADY</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_KORRINA_RED_LADY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- KORRINA_WHITE_LADY -->
+			<Type>UNITCLASS_KORRINA_WHITE_LADY</Type>
+			<Description>TXT_KEY_UNIT_KORRINA_WHITE_LADY</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_KORRINA_WHITE_LADY</DefaultUnit>
+		</UnitClassInfo>		
+		<UnitClassInfo>		<!-- AWAKENED -->
+			<Type>UNITCLASS_AWAKENED</Type>
+			<Description>TXT_KEY_UNIT_AWAKENED</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_AWAKENED</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- LEGATE -->
+			<Type>UNITCLASS_LEGATE</Type>
+			<Description>TXT_KEY_UNIT_LEGATE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_LEGATE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- DOOMGIVER -->
+			<Type>UNITCLASS_DOOMGIVER</Type>
+			<Description>TXT_KEY_UNIT_DOOMGIVER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DOOMGIVER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- DOOMSAYER -->
+			<Type>UNITCLASS_DOOMSAYER</Type>
+			<Description>TXT_KEY_UNIT_DOOMSAYER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_DOOMSAYER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- PELEMOC -->
+			<Type>UNITCLASS_PELEMOC</Type>
+			<Description>TXT_KEY_UNIT_PELEMOC</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_PELEMOC</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- THEMOCH -->
+			<Type>UNITCLASS_THEMOCH</Type>
+			<Description>TXT_KEY_UNIT_THEMOCH</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_THEMOCH</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- MELANTE -->
+			<Type>UNITCLASS_MELANTE</Type>
+			<Description>TXT_KEY_UNIT_MELANTE</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_MELANTE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- REBORN -->
+			<Type>UNITCLASS_REBORN</Type>
+			<Description>TXT_KEY_UNIT_REBORN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>4</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_REBORN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- RISEN_EMPEROR -->
+			<Type>UNITCLASS_RISEN_EMPEROR</Type>
+			<Description>TXT_KEY_UNIT_RISEN_EMPEROR</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_RISEN_EMPEROR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- MARTYR_OF_PATRIA -->
+			<Type>UNITCLASS_MARTYR_OF_PATRIA</Type>
+			<Description>TXT_KEY_UNIT_MARTYR_OF_PATRIA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>6</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_MARTYR_OF_PATRIA</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- EMPERORS_DAGGER -->
+			<Type>UNITCLASS_EMPERORS_DAGGER</Type>
+			<Description>TXT_KEY_UNIT_EMPERORS_DAGGER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_EMPERORS_DAGGER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- CREEPER -->
+			<Type>UNITCLASS_CREEPER</Type>
+			<Description>TXT_KEY_UNIT_CREEPER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_CREEPER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- HAUNT -->
+			<Type>UNITCLASS_HAUNT</Type>
+			<Description>TXT_KEY_UNIT_HAUNT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_HAUNT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- ALCINUS -->
+			<Type>UNITCLASS_ALCINUS</Type>
+			<Description>TXT_KEY_UNIT_ALCINUS</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_ALCINUS</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- ALCINUS_UPGRADED -->
+			<Type>UNITCLASS_ALCINUS_UPGRADED</Type>
+			<Description>TXT_KEY_UNIT_ALCINUS</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_ALCINUS_UPGRADED</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- ALCINUS_ARCHMAGE -->
+			<Type>UNITCLASS_ALCINUS_ARCHMAGE</Type>
+			<Description>TXT_KEY_UNIT_ALCINUS</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_ALCINUS_ARCHMAGE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- BEASTMASTER_SCION -->
+			<Type>UNITCLASS_BEASTMASTER_SCION</Type>
+			<Description>TXT_KEY_UNIT_BEASTMASTER_SCION</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_BEASTMASTER_SCION</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>		<!-- CREEPER -->
+			<Type>UNITCLASS_CREEPER</Type>
+			<Description>TXT_KEY_UNIT_CREEPER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_CREEPER</DefaultUnit>
+		</UnitClassInfo>		
+	</UnitClassInfos>
+</Civ4UnitClassInfos>
