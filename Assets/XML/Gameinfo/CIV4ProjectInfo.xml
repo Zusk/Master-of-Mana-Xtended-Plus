@@ -141,6 +141,43 @@
 			<iAIWeight>0</iAIWeight>
 		</ProjectInfo>
 		<ProjectInfo>
+			<Type>PROJECT_TWILIGHT_GENESIS</Type>
+			<Description>Twilight Genesis</Description>
+			<Civilopedia>TXT_KEY_PROJECT_TWILIGHT_GENESIS_STRATEGY</Civilopedia>
+			<Strategy>TXT_KEY_PROJECT_TWILIGHT_GENESIS_STRATEGY</Strategy>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<TechPrereq>TECH_INFERNAL_PACT</TechPrereq>
+			<PrereqCivilization>CIVILIZATION_SVARTALFAR</PrereqCivilization>
+			<AnyonePrereqProject>NONE</AnyonePrereqProject>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iCost>600</iCost>
+			<iNukeInterception>0</iNukeInterception>
+			<iTechShare>0</iTechShare>
+			<EveryoneSpecialUnit>NONE</EveryoneSpecialUnit>
+			<EveryoneSpecialBuilding>NONE</EveryoneSpecialBuilding>
+			<bSpaceship>0</bSpaceship>
+			<bAllowsNukes>0</bAllowsNukes>
+			<Button>Art/Interface/Buttons/Projects/Rites of Oghma.dds</Button>
+			<PrereqProjects/>
+			<VictoryThresholds/>
+			<VictoryMinThresholds/>
+			<iVictoryDelayPercent>0</iVictoryDelayPercent>
+			<iSuccessRate>0</iSuccessRate>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_MANA_CHAOS</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<CreateSound/>
+			<MovieDefineTag/>
+			<PrereqReligion>RELIGION_THE_ASHEN_VEIL</PrereqReligion>
+			<iPrereqGlobalCounter>30</iPrereqGlobalCounter>
+			<iModifyGlobalCounter>10</iModifyGlobalCounter>
+			<iAIWeight>0</iAIWeight>
+		</ProjectInfo>
+		<ProjectInfo>
 			<Type>PROJECT_ELEGY_OF_THE_SHEAIM</Type>
 			<Description>TXT_KEY_PROJECT_ELEGY_OF_THE_SHEAIM</Description>
 			<Civilopedia>TXT_KEY_PROJECT_ELEGY_OF_THE_SHEAIM_STRATEGY</Civilopedia>
