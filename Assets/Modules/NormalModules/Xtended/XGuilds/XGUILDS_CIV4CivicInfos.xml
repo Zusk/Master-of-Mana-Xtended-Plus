@@ -921,6 +921,18 @@
                         <iYield>2</iYield>
                     </ImprovementYields>
                 </ImprovementYieldChange>
+                <ImprovementYieldChange>
+                    <ImprovementType>IMPROVEMENT_BLACK_GARDEN</ImprovementType>
+                    <ImprovementYields>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>						
+                        <iYield>0</iYield>						
+                        <iYield>2</iYield>
+                    </ImprovementYields>
+                </ImprovementYieldChange>
             </ImprovementYieldChanges>
             <WeLoveTheKing></WeLoveTheKing>
             <bHidden>0</bHidden>
