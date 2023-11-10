@@ -7461,6 +7461,46 @@
             <iSpellCasterXP>20</iSpellCasterXP>
         	<iPowerModifier>10</iPowerModifier>
 		</PromotionInfo>
+        <PromotionInfo> <!-- Barbarian Unit Trait -->
+            <Type>PROMOTION_BARBARIAN_UNIT</Type>
+            <TechPrereq>TECH_NEVER</TechPrereq>
+			<bForceOverwrite>1</bForceOverwrite>
+            <Description>Barbarian</Description>
+            <Civilopedia>Given to most units under [LINK=TRAIT_BARBARIAN]Barbarian[\LINK] leaders.</Civilopedia>
+            <Button>Modules/NormalModules/Xtended/XPromotion/Buttons2/6_barbarian.dds</Button>
+			<iExperiencePercent>20</iExperiencePercent>
+            <iCombatHealPercent>10</iCombatHealPercent>
+            <UnitCombats>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ANIMAL</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_BEAST</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+                <UnitCombat>
+                    <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+                    <bUnitCombat>1</bUnitCombat>
+                </UnitCombat>
+            </UnitCombats>
+		</PromotionInfo>
         <PromotionInfo>    <!-- free promotion for Divine Units -->
             <Type>PROMOTION_DIVINE</Type>
 			<bForceOverwrite>1</bForceOverwrite>
