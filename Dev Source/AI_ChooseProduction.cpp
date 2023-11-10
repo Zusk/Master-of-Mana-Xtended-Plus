@@ -924,7 +924,16 @@ bool CvCityAI::AI_chooseProductionBarbarian()
 
 	if(eBestUnit!=NO_UNIT)
 	{
-		pushOrder(ORDER_TRAIN,eBestUnit,(bDefenderNeeded) ? UNITAI_CITY_DEFENSE : UNITAI_ATTACK,false,false,false);
+		// Check if the selected unit is Acheron, and if so, set its AI to UNITAI_ACHERON
+		if (eBestUnit == GC.getInfoTypeForString("UNIT_ACHERON"))
+		{
+			pushOrder(ORDER_TRAIN, eBestUnit, UNITAI_ACHERON, false, false, false, false);
+		}
+		else
+		{
+			// For other units, continue as normal, deciding between city defense and attack
+			pushOrder(ORDER_TRAIN, eBestUnit, (bDefenderNeeded) ? UNITAI_CITY_DEFENSE : UNITAI_ATTACK, false, false, false, false);
+		}
 		return true;
 	}
 
