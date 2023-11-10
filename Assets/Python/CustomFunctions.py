@@ -1692,15 +1692,21 @@ class CustomFunctions:
 			CyInterface().addMessage(0, true, 25, CyTranslator().getText("TXT_KEY_MESSAGE_START_PRODUCTION_ACHERON", (pCity.getName(), )), '', 0, '', ColorTypes(11), pPlot.getX(), pPlot.getY(), True, True)
 ##--------	BUGFfH: End Modify
 
-		if iBestBuilding!=-1:
+		if iBestBuilding != -1:
 			iUnit = infoCiv.getCivilizationUnits(gc.getInfoTypeForString(sProd[iBestBuilding]))
-			if (gc.getUnitInfo(iUnit).getUnitCombatType()==gc.getInfoTypeForString('UNITCOMBAT_ARCHER')):
-				pCity.pushOrder(OrderTypes.ORDER_TRAIN,iUnit,gc.getInfoTypeForString('UNITAI_CITY_DEFENSE'), False, False, False, False)
+			if iUnit == gc.getInfoTypeForString('UNIT_ACHERON'):  # Check if the unit is Acheron
+				# If it's Acheron, use the special AI type for Acheron
+				pCity.pushOrder(OrderTypes.ORDER_TRAIN, iUnit, gc.getInfoTypeForString('UNITAI_ACHERON'), False, False, False, False)
+			elif (gc.getUnitInfo(iUnit).getUnitCombatType() == gc.getInfoTypeForString('UNITCOMBAT_ARCHER')):
+				# If the unit is an archer, set it to city defense
+				pCity.pushOrder(OrderTypes.ORDER_TRAIN, iUnit, gc.getInfoTypeForString('UNITAI_CITY_DEFENSE'), False, False, False, False)
 			else:
-				pCity.pushOrder(OrderTypes.ORDER_TRAIN,iUnit,gc.getInfoTypeForString('UNITAI_ATTACK_CITY'), False, False, False, False)
+				# Otherwise, set the unit to attack city
+				pCity.pushOrder(OrderTypes.ORDER_TRAIN, iUnit, gc.getInfoTypeForString('UNITAI_ATTACK_CITY'), False, False, False, False)
 			return 1
 
 		return False
+
 
 #	Added in Frozen: TC01
 #	This function is called when a city is captured by the Frozen and a Temple of the Hand is built via python. This applies the effects.
