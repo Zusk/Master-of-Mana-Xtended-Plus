@@ -814,9 +814,9 @@ def reqDestroyBarbBase(caster):
 	if iAccord < 10:
 		return False
 
-	iCheck1 = 0
-	iCheck2 = 0
-	iCheck3 = 0
+	cityNearby = False
+	specialImprovementNearby = False
+	barbarianUnitNearby = False
 
 	iX = caster.getX()
 	iY = caster.getY()
@@ -828,39 +828,21 @@ def reqDestroyBarbBase(caster):
 				if pLoopPlot.isCity() and pLoopPlot.getOwner()==caster.getOwner():
 					pCity = pLoopPlot.getPlotCity()
 					if pCity.getPopulation() > 2:
-						iCheck1 = 1
+						cityNearby = True
 
-
-	iPhantFortress = gc.getInfoTypeForString('IMPROVEMENT_PHANTOM_FORTRESS')
-	iMercFortress = gc.getInfoTypeForString('IMPROVEMENT_MERCENARY_FORTRESS')
 	for iiX in range(iX-1, iX+2, 1):
 		for iiY in range(iY-1, iY+2, 1):
 			pPlot = CyMap().plot(iiX,iiY)
 			if pPlot.isNone() == False:
-				if pPlot.getImprovementType() == iPhantFortress:
-					iCheck2 = 1
-				if pPlot.getImprovementType() == iMercFortress:
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_GOBLIN_FORT'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_GOBLIN_FORT2'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_RUINS'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_WEREWOLF_FORTRESS'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_HILLGIANT_FORTRESS'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_DEN_STAG'):
-					iCheck2 = 1
-				if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_DEN_GORILLA'):
-					iCheck2 = 1
+				improvementType = pPlot.getImprovementType()
+				if improvementType.getImprovementInfo(improvementType).getSpawnUnitCiv() != CivilizationTypes.NO_CIVILIZATION:
+					specialImprovementNearby = True
 			for i in range(pPlot.getNumUnits()):
 				pUnit = pPlot.getUnit(i)
 				if pUnit.getOwner() == gc.getBARBARIAN_PLAYER():
-					iCheck3 = 1
+					barbarianUnitNearby = True
 
-	if (iCheck1 + iCheck2 + iCheck3) > 2:
+	if cityNearby and specialImprovementNearby and barbarianUnitNearby:
 		return True
 
 	return False
@@ -876,33 +858,16 @@ def spellDestroyBarbBase(caster):
 	iAccord -= 10
 	pPlayer.setPurityCounter(iAccord)
 
-	iPhantFortress = gc.getInfoTypeForString('IMPROVEMENT_PHANTOM_FORTRESS')
-	iMercFortress = gc.getInfoTypeForString('IMPROVEMENT_MERCENARY_FORTRESS')
 	for iiX in range(iX-1, iX+2, 1):
 		for iiY in range(iY-1, iY+2, 1):
 			pPlot = CyMap().plot(iiX,iiY)
 			for i in range(pPlot.getNumUnits()):
 				pUnit = pPlot.getUnit(i)
+				improvementType = pPlot.getImprovementType()
 #				if pUnit.getRace() == gc.getInfoTypeForString('PROMOTION_UNDEAD'):
 				if pUnit.getOwner() == gc.getBARBARIAN_PLAYER():
 					pUnit.doDamage(50, 100, caster, gc.getInfoTypeForString('DAMAGE_PHYSICAL'), true)
-			if pPlot.getImprovementType() == iPhantFortress:
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == iMercFortress:
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_GOBLIN_FORT'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_GOBLIN_FORT2'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_RUINS'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_WEREWOLF_FORTRESS'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_HILLGIANT_FORTRESS'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_DEN_STAG'):
-				pPlot.setImprovementType(-1)
-			if pPlot.getImprovementType() == gc.getInfoTypeForString('IMPROVEMENT_DEN_GORILLA'):
+			if improvementType.getImprovementInfo(improvementType).getSpawnUnitCiv() != CivilizationTypes.NO_CIVILIZATION:
 				pPlot.setImprovementType(-1)
 
 
