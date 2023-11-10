@@ -235,12 +235,15 @@ selection_names_and_values = [
 					[ #Lonely island size:
 					["Medium (default)","medium",True],
 					],
-					[ #Allow 1-tile islands:
-					["No (default)",False,True],
-					],
-					[ #Mountains (peaks):
-					["Some peaks, Groups up to 5 (default)",[0.067,0.6,5],True],
-					],
+                    [ #Allow 1-tile islands:
+                    ["No (default)", False, True],
+                    ["Yes", True, True],
+                    ],
+                    [ #Mountains (peaks):
+                    ["Some peaks, Groups up to 5 (default)", [0.067, 0.6, 5], True],
+                    ["Many peaks, Groups up to 10", [0.1, 0.8, 10], True],
+                    ["Lots of peaks, Groups up to 30", [0.15, 0.9, 30], True],  # <- This is the new option
+                    ],
 					[ #Hills:
 					["Normal hills, Groups up to 2 (default)",[0.18,0.5,2],True],
 					],
