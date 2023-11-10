@@ -3358,6 +3358,12 @@
             <Type>PROMOTION_SINISTER</Type>
             <Description>TXT_KEY_PROMOTION_SINISTER</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
             <UnitCombats>
                 <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
