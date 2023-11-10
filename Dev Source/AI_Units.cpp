@@ -223,6 +223,12 @@ bool CvUnitAI::AI_update_main()
 	case UNITAI_MANADEFENDER:
 		AI_manadefendermove();
 		break;
+	case UNITAI_ACHERON:
+		AI_acheronMove();
+		break;
+	case UNITAI_ANIMALDEFENDER:
+		AI_animalDefenderMove();
+		break;
     case UNITAI_BARBSMASHER:
         AI_barbsmashermove();
         break;

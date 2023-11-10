@@ -46,6 +46,8 @@ public:
     void AI_manadefendermove();
     void AI_manadefenderEffect();
     bool AI_manadefenderneedshelp();
+	void AI_acheronMove();
+	void AI_animalDefenderMove();
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/

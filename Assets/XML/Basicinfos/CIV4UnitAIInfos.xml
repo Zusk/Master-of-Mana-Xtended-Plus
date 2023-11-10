@@ -175,6 +175,14 @@
 			<Description>UNITAI_MANADEFENDER</Description>
 		</UnitAIInfo>
 		<UnitAIInfo>
+			<Type>UNITAI_ACHERON</Type>
+			<Description>UNITAI_ACHERON</Description>
+		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_ANIMALDEFENDER</Type>
+			<Description>UNITAI_ANIMALDEFENDER</Description>
+		</UnitAIInfo>
+		<UnitAIInfo>
 			<Type>UNITAI_BARBSMASHER</Type>
 			<Description>UNITAI_BARBSMASHER</Description>
 		</UnitAIInfo>

@@ -522,6 +522,12 @@ bool CvUnitAI::AI_update()
     	case UNITAI_MANADEFENDER:
 			AI_manadefendermove();
 			break;
+    	case UNITAI_ACHERON:
+			AI_acheronMove();
+			break;
+		case UNITAI_ANIMALDEFENDER:
+			AI_animalDefenderMove();
+			break;
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/
@@ -1310,6 +1316,8 @@ int CvUnitAI::AI_groupFirstVal()
 /**						                                            							**/
 /*************************************************************************************************/
     case UNITAI_MANADEFENDER:
+	case UNITAI_ACHERON:
+	case UNITAI_ANIMALDEFENDER:
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/
@@ -22390,6 +22398,68 @@ void CvUnitAI::AI_manadefendermove()
 
 	getGroup()->pushMission(MISSION_SKIP);
     return;
+}
+
+// UnitAI::doTurn function for animal defenders
+void CvUnitAI::AI_animalDefenderMove()
+{
+    // Ensure the Acheron unit has an origin plot set
+    if (getOriginPlot() == NULL)
+    {
+        setOriginPlot(plot());
+    }
+
+    // Check if the unit belongs to the Barbarian nation
+    if (getOwnerINLINE() == ANIMAL_PLAYER)
+    {
+        // If the Acheron unit is not at its origin plot, command it to move there
+        if (!atPlot(getOriginPlot()))
+        {
+            getGroup()->pushMission(MISSION_MOVE_TO, getOriginPlot()->getX_INLINE(), getOriginPlot()->getY_INLINE(), MOVE_DIRECT_ATTACK);
+            return;
+        }
+        else // If the Acheron unit is already at its origin plot, skip the turn
+        {
+            getGroup()->pushMission(MISSION_SKIP);
+            return;
+        }
+    }
+    else // If the unit is not under the control of the Barbarian nation
+    {
+        // Switch to city defense mode
+        AI_setUnitAIType(UNITAI_ATTACK);
+    }
+}
+
+// UnitAI::doTurn function for UNITAI_ACHERON
+void CvUnitAI::AI_acheronMove()
+{
+    // Ensure the Acheron unit has an origin plot set
+    if (getOriginPlot() == NULL)
+    {
+        setOriginPlot(plot());
+    }
+
+    // Check if the unit belongs to the Barbarian nation
+    if (getOwnerINLINE() == BARBARIAN_PLAYER)
+    {
+        // If the Acheron unit is not at its origin plot, command it to move there
+        if (!atPlot(getOriginPlot()))
+        {
+            getGroup()->pushMission(MISSION_MOVE_TO, getOriginPlot()->getX_INLINE(), getOriginPlot()->getY_INLINE(), MOVE_DIRECT_ATTACK);
+            return;
+        }
+        else // If the Acheron unit is already at its origin plot, skip the turn
+        {
+            getGroup()->pushMission(MISSION_SKIP);
+            return;
+        }
+    }
+    else // If the unit is not under the control of the Barbarian nation
+    {
+        // Switch to city defense mode
+        AI_setUnitAIType(UNITAI_CITY_DEFENSE);
+    }
 }
 
 void CvUnitAI::AI_upgrademanaMove()
