@@ -1043,10 +1043,12 @@
 					<iExperience>10</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
+            <iCrime>5</iCrime>
+            <iMilitaryProductionModifier>10</iMilitaryProductionModifier>
             <iUnitSupportChange>2</iUnitSupportChange>
 			<BuildingClassPrereq>BUILDINGCLASS_TRAINING_YARD</BuildingClassPrereq>
 			<GlobalYieldTypeCost>YIELD_LUMBER</GlobalYieldTypeCost>
-			<iGlobalYieldCost>500</iGlobalYieldCost>
+			<iGlobalYieldCost>400</iGlobalYieldCost>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
