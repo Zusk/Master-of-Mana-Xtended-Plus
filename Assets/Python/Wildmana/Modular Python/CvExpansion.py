@@ -100,8 +100,7 @@ def BuildingCreated(argsList):
 	game = gc.getGame()
 	iBuildingClass = gc.getBuildingInfo(iBuildingType).getBuildingClassType()
 
-	if (iBuildingType==gc.getInfoTypeForString('BUILDING_TREE_OF_SUCELLUS')):
-
+	if (iBuildingType == gc.getInfoTypeForString('BUILDING_TREE_OF_SUCELLUS') or iBuildingType == gc.getInfoTypeForString('BUILDING_FRUIT_OF_SUCELLUS')):
 		iFlames = gc.getInfoTypeForString('FEATURE_FLAMES')
 		iForest = gc.getInfoTypeForString('FEATURE_FOREST')
 		iJungle = gc.getInfoTypeForString('FEATURE_JUNGLE')
