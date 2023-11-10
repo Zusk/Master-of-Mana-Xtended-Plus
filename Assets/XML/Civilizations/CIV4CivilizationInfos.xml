@@ -1593,6 +1593,10 @@
                     <LeaderName>LEADER_ELDARWEN</LeaderName>
                     <bLeaderAvailability>1</bLeaderAvailability>
                 </Leader>
+                <Leader>
+                    <LeaderName>LEADER_ELEWEN</LeaderName>
+                    <bLeaderAvailability>1</bLeaderAvailability>
+                </Leader>
             </Leaders>
 			<Flavors>
                  <Flavor>
