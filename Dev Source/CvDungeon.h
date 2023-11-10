@@ -5,6 +5,7 @@
 
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
+//#include <vector>
 
 class CvDungeon
 {
@@ -40,6 +41,12 @@ public:
 	void spawnGuards();
 	void spawnGuard(); 
 	void doTurn();
+	int calculateDungeonSpawnDelay();
+	int countDungeonGuards(CvPlot* pPlot);
+	int calculateDungeonGuardsNeeded();
+	void processDungeonGuardSpawning(CvPlot* pPlot);
+	void processDungeonWealthAndPopulation();
+    //const std::vector<CvUnit*>& getUnits() const;
 	void doLogging();
 
 	void updateLandmark();
@@ -60,6 +67,7 @@ public:
 	int getPower() const;
 	int getPowerTimes1000() const;
 	void changePowerTimes1000(int iChange);
+	void UpdateDungeonBarbarianStrength(CvUnit* pUnit);
 
 	int getPopulation() const;
 	void changePopulation(int iChange);
@@ -88,6 +96,8 @@ protected:
 	int m_iPower;
 	int m_iScoutRange;
 	int m_iPopulation;
+	//std::vector<CvUnit*> m_units; //List of units associated with the dungeon.
+    int m_iTurnsSinceLastSpawn; //This variable is used to track how many turns it has been since we have spawned a guard. Implementing this is mostly to fix Dungeons spawning guards instantly if they are under their cap.
 	ReligionTypes m_eReligion;
 
 	bool m_bWealthy;

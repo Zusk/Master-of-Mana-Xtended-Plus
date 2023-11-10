@@ -12,6 +12,7 @@
 CvDungeon::CvDungeon()
 {
     m_paiPlayerAttitude = new int[MAX_PLAYERS];
+    m_iTurnsSinceLastSpawn = 0;
 
 	reset(0, true);
 }
@@ -57,7 +58,6 @@ void CvDungeon::reset(int iID, int iDungeonType, int iPlotIndex, bool bConstruct
 	m_iScoutRange = 5;
 	m_iPopulation = 0;
 	m_eReligion = NO_RELIGION;
-
 	m_bWealthy = false;
 
     for (int iI = 0; iI < MAX_PLAYERS; iI++)
@@ -141,6 +141,13 @@ void CvDungeon::setWealthy(bool bNewValue)
 	m_bWealthy = bNewValue;
 }
 
+/*
+const std::vector<CvUnit*>& CvDungeon::getUnits() const
+{
+    return m_units;
+}
+*/
+
 void CvDungeon::changePowerTimes1000(int iChange)
 {
 	if(iChange != 0) {
@@ -157,13 +164,57 @@ void CvDungeon::changePowerTimes1000(int iChange)
 			{
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = plot()->nextUnitNode(pUnitNode);
-				
-				pLoopUnit->setBaseCombatStr(pLoopUnit->baseCombatStr() + getPower());
-				pLoopUnit->setBaseCombatStrDefense(pLoopUnit->baseCombatStrDefense() + getPower());
+				UpdateDungeonBarbarianStrength(pLoopUnit);
 			}
 		}
 	}
 }
+
+void CvDungeon::UpdateDungeonBarbarianStrength(CvUnit* pUnit) {
+    int dungeonPower = getPower(); // Get the dungeon's power
+    bool isRagingBarbarians = GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS);
+
+    // Adjust dungeon power based on the 'Raging Barbarians' game option
+    if (!isRagingBarbarians) {
+        dungeonPower /= 2; // Half the power if 'Raging Barbarians' is not active
+    }
+
+    // Get the unit's current base combat strengths
+    int baseCombatStr = pUnit->baseCombatStr();
+    int baseCombatStrDefense = pUnit->baseCombatStrDefense();
+
+    // Initialize power increase variables
+    int powerIncrease = 0;
+    int defensePowerIncrease = 0;
+
+    // Determine power increases based on unit's current strengths and conditions
+    if (baseCombatStr <= 23) {
+        if (baseCombatStr > 19 && !isRagingBarbarians) {
+            // No power increase unless Raging Barbarians is on
+        } else if (baseCombatStr > 17) {
+            // Increase power 5% of the time
+            if (GC.getGame().getSorenRandNum(100, "Dungeon Unit: Increase Combat Strength 1%") < 5) {
+                powerIncrease = dungeonPower;
+            }
+        } else if (baseCombatStr > 14) {
+            // Increase power 10% of the time
+            if (GC.getGame().getSorenRandNum(100, "Dungeon Unit: Increase Combat Strength 10%") < 10) {
+                powerIncrease = dungeonPower;
+            }
+        } else {
+            // Always increase power if base strength is 14 or less
+            powerIncrease = dungeonPower;
+        }
+
+        // Apply the power increases to the unit's combat strengths, clamping to a max of 25
+        int newCombatStr = std::min(baseCombatStr + powerIncrease, 25);
+        int newCombatStrDefense = std::min(baseCombatStrDefense + powerIncrease, 25);
+
+        pUnit->setBaseCombatStr(newCombatStr);
+        pUnit->setBaseCombatStrDefense(newCombatStrDefense);
+    }
+}
+
 
 void CvDungeon::read(FDataStreamBase* pStream)
 {
@@ -188,7 +239,7 @@ void CvDungeon::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eReligion);
 	pStream->Read(&m_bWealthy);	
 	pStream->Read(MAX_PLAYERS, m_paiPlayerAttitude);
-
+    pStream->Read(&m_iTurnsSinceLastSpawn);
 }
 
 void CvDungeon::write(FDataStreamBase* pStream)
@@ -210,6 +261,7 @@ void CvDungeon::write(FDataStreamBase* pStream)
 	pStream->Write(m_iPopulation);
 	pStream->Write(m_eReligion);
 	pStream->Write(m_bWealthy);
+    pStream->Write(m_iTurnsSinceLastSpawn);
 
 	pStream->Write(MAX_PLAYERS, m_paiPlayerAttitude);
 }
@@ -229,18 +281,20 @@ void CvDungeon::spawnGuards()
     int iCiv = GC.getImprovementInfo(eImprovement).getSpawnUnitCiv();
 
 	if(m_eGuardUnit != NO_UNIT) {
+		int iNumGuards = GC.getGame().getSorenRandNum(3, "Random number of guards") + 2;
+
 		if (iCiv == GC.getDefineINT("BARBARIAN_CIVILIZATION")) {
 			m_eOwner = BARBARIAN_PLAYER;
-			spawnGuard();
-			spawnGuard();
-			spawnGuard();
+			for (int i = 0; i < iNumGuards; ++i) {
+				spawnGuard();
+			}
 		}
 
 		if (iCiv == GC.getDefineINT("ANIMAL_CIVILIZATION")) {
 			m_eOwner = ANIMAL_PLAYER;
-			spawnGuard();
-			spawnGuard();
-			spawnGuard();
+			for (int i = 0; i < iNumGuards; ++i) {
+				spawnGuard();
+			}
 		}
 	}
 }
@@ -250,8 +304,22 @@ void CvDungeon::spawnGuard()
 	if(m_eOwner == BARBARIAN_PLAYER)
 		plot()->SpawnBarbarianUnit(m_eGuardUnit, m_eOwner);
 
-	if(m_eOwner == ANIMAL_PLAYER)
-		plot()->SpawnBarbarianUnit(m_eGuardUnit, m_eOwner, true, UNITAI_ANIMAL);
+    // Check if the dungeon owner is the animal player.
+    if (m_eOwner == ANIMAL_PLAYER) {
+		plot()->SpawnBarbarianUnit(m_eGuardUnit, m_eOwner, true, UNITAI_ANIMALDEFENDER);
+		/*Need to add caps to animals per dungeon
+        // Count the current guards in the dungeon.
+        int iGuardCount = countDungeonGuards(plot());
+
+        // If no guards are present, spawn the guard as a defender of the den.
+        if (iGuardCount < (calculateDungeonGuardsNeeded() - 1)) {
+            plot()->SpawnBarbarianUnit(m_eGuardUnit, m_eOwner, true, NO_UNITAI);
+        } else {
+            // If there are already guards, spawn the guard with animal AI.
+            plot()->SpawnBarbarianUnit(m_eGuardUnit, m_eOwner, true, UNITAI_ANIMAL);
+        }
+	*/
+	}
 }
 
 AttitudeTypes CvDungeon::getAttitude(PlayerTypes ePlayer) const
@@ -270,53 +338,193 @@ void CvDungeon::DecreaseAttitude(PlayerTypes ePlayer)
 		--m_paiPlayerAttitude[ePlayer];	
 }
 
-void CvDungeon::doTurn()
-{
-	doLogging();
-	triggerDeals();
+void CvDungeon::doTurn() {
+    // Retrieve the plot on which the dungeon is located.
+    CvPlot* pPlot = plot();
+    // If the plot is invalid or does not exist, remove the dungeon from the game.
+    if (pPlot == NULL) {
+        kill();
+        return;
+    }
 
-	changePowerTimes1000(10);
+    // Get the type of improvement on the plot.
+    ImprovementTypes eImprovementType = pPlot->getImprovementType();
+    // Default to no civilization type for spawning.
+    CivilizationTypes eSpawnCiv = NO_CIVILIZATION;
 
-	if(isWealthy()) {
-		if(GC.getGame().getSorenRandNum(100, "Trigger PopulationIncrease") == 0) {
-			changePopulation(1);		
+    // Check if the plot has a valid improvement.
+    if (eImprovementType != NO_IMPROVEMENT) {
+        // Retrieve the civilization type that is supposed to spawn from the improvement.
+        eSpawnCiv = static_cast<CivilizationTypes>(GC.getImprovementInfo(eImprovementType).getSpawnUnitCiv());
+    } else {
+        // If there is no valid improvement, remove the dungeon.
+        kill();
+        return;
+    }
+
+    // If the improvement has a civilization type for spawning, execute turn processes.
+    if (eSpawnCiv != NO_CIVILIZATION) {
+        // Perform logging activities for the dungeon.
+        doLogging();
+        //Only barbarians care about deals. Animals and necromancers cba.
+		if(eSpawnCiv == GC.getDefineINT("BARBARIAN_CIVILIZATION")){
+			// Trigger any deals associated with the dungeon.
+			triggerDeals();
 		}
-	}
+        // Increase the dungeon's power slightly every turn.
+        changePowerTimes1000(10);
+        // Process changes to wealth and population.
+        processDungeonWealthAndPopulation();
+        // Handle the spawning of guards based on various conditions.
+        processDungeonGuardSpawning(pPlot);
+    } else {
+        // If the improvement type does not spawn any units, remove the dungeon.
+        kill();
+    }
+}
 
-	if(GC.getGame().getSorenRandNum(100, "Trigger DungeonWealthDecay") == 0) {
-		setWealthy(false);		
-	}
+void CvDungeon::processDungeonWealthAndPopulation() {
+    // If the dungeon is wealthy, there's a chance to increase its population.
+    if (isWealthy()) {
+        if (GC.getGame().getSorenRandNum(100, "Trigger PopulationIncrease") == 0) {
+            changePopulation(1);
+        }
+    }
 
-	if(plot()->getVisibleEnemyDefender(m_eOwner) == NULL) {
+    // There's a chance for a wealthy dungeon to lose its wealth over time.
+    if (GC.getGame().getSorenRandNum(100, "Trigger DungeonWealthDecay") == 0) {
+        setWealthy(false);
+    }
+}
 
-		int iGuardsneeded = 3;
-		int iCountGuards = 0;
+/*
+bool areAdjacentAnimalsPresent(CvPlot* pLoopPlot) {
+    // Loop through all direction types
+    for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI) {
+        // Get the adjacent plot in the current direction
+        CvPlot* pAdjacentPlot = plotDirection(pLoopPlot->getX(), pLoopPlot->getY(), (DirectionTypes)iI);
+        
+        // Check if the adjacent plot exists
+        if (pAdjacentPlot != NULL) {
+            // Check for the presence of any units
+            for (int i = 0; i < pAdjacentPlot->getNumUnits(); ++i) {
+                // Get the unit in the adjacent plot
+    			// Retrieve the first unit in the plot's unit list.
+   				 CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
 
-		CLLNode<IDInfo>* pUnitNode;
-		CvUnit* pLoopUnit;
-
-		pUnitNode = plot()->headUnitNode();
-
-		// Don't spawn units in cities if a dungeon somehow ended up there.
-		if (plot()->getPlotCity() != NULL)
-			return;
-
-		while (pUnitNode != NULL)
-		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
-
-			if(pLoopUnit->getOwnerINLINE() == m_eOwner)
-			{
-				if(pLoopUnit->getAIGroup() == NULL) {
-					++iCountGuards;
+    			// Iterate over all units in the plot.
+    			if (pUnitNode != NULL) {
+					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+					if(pLoopUnit != NULL){
+						if (pLoopUnit->getOwner() == GC.getANIMAL_PLAYER()) {
+							// Return true as soon as an animal is found
+							return true;
+						}
+					}
 				}
 			}
 		}
+    }
+    
+    // Return false if no animals are found in any adjacent plots
+    return false;
+}
+*/
 
-		if(iCountGuards < iGuardsneeded)
-			spawnGuard();
+void CvDungeon::processDungeonGuardSpawning(CvPlot* pPlot) {
+    // Do not spawn guards if there's an enemy defender visible.
+    if (pPlot->getVisibleEnemyDefender(m_eOwner) != NULL) {
+        return;
+    }
+
+    // Do not spawn guards if the dungeon is located in a city plot.
+    if (pPlot->getPlotCity() != NULL) {
+        return;
+    }
+
+    // Calculate the number of guards needed based on current conditions.
+    int iGuardsNeeded = calculateDungeonGuardsNeeded();
+    // Count the current number of guards at the plot.
+    int iCountGuards = countDungeonGuards(pPlot);
+
+    // Determine how many turns to wait before spawning a new guard.
+    int spawnDelay = calculateDungeonSpawnDelay();
+
+    // If the required number of guards is present, reset the spawn counter.
+    if (iCountGuards >= iGuardsNeeded) {
+        m_iTurnsSinceLastSpawn = 0;
+    } else {
+        // If not enough guards, increment the counter.
+        m_iTurnsSinceLastSpawn++;
+    }
+
+    // Spawn a guard if the conditions are met.
+    if (iCountGuards < iGuardsNeeded && m_iTurnsSinceLastSpawn >= spawnDelay) {
+		spawnGuard();
+        // Reset the spawn counter after spawning a guard.
+        m_iTurnsSinceLastSpawn = 0;
+    }
+}
+
+int CvDungeon::calculateDungeonGuardsNeeded() {
+    // Start with a base number of guards.
+    int iGuardsNeeded = 3;
+    // Check if the 'Raging Barbarians' game option is enabled.
+    bool isRagingBarbarians = GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS);
+    // Adjust the dungeon's power based on the game difficulty and settings.
+    int iDungeonPower = std::max(1, getPower()) / (isRagingBarbarians ? 2 : 4);
+    // Calculate additional guards needed based on dungeon power and game settings.
+    iGuardsNeeded += isRagingBarbarians ? std::min(5, iDungeonPower) : std::min(2, iDungeonPower);
+
+    // Check if the dungeon's civilization is the animal civilization and halve the guards needed if so.
+	ImprovementTypes eImprovement = plot()->getImprovementType();
+    int iCiv = GC.getImprovementInfo(eImprovement).getSpawnUnitCiv();
+    if (iCiv == GC.getDefineINT("ANIMAL_CIVILIZATION")) {
+        iGuardsNeeded = std::max(2, iGuardsNeeded / 2);
+    }
+
+    return iGuardsNeeded;
+}
+
+int CvDungeon::countDungeonGuards(CvPlot* pPlot) {
+    // Initialize the guard counter.
+    int iCountGuards = 0;
+    // Retrieve the first unit in the plot's unit list.
+    CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+
+    // Iterate over all units in the plot.
+    while (pUnitNode != NULL) {
+        CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+        pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+        // Count units that belong to the dungeon's owner and are not in any AI group.
+        if (pLoopUnit->getOwnerINLINE() == m_eOwner && pLoopUnit->getAIGroup() == NULL) {
+            ++iCountGuards;
+        }
+    }
+    // Return the total count of guards.
+    return iCountGuards;
+}
+
+int CvDungeon::calculateDungeonSpawnDelay() {
+	int iSpawnDelay;
+    // Check if 'Raging Barbarians' is active to adjust spawn delay.
+    bool isRagingBarbarians = GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS);
+	iSpawnDelay = isRagingBarbarians ? 2 : 3; 
+    // Set the spawn delay based on the game option.
+
+	//For animals
+	ImprovementTypes eImprovement = plot()->getImprovementType();
+    int iCiv = GC.getImprovementInfo(eImprovement).getSpawnUnitCiv();
+    if (iCiv == GC.getDefineINT("ANIMAL_CIVILIZATION")) {
+		iSpawnDelay = isRagingBarbarians ? 4 : 6;
 	}
+	//For non animals
+	else{
+		iSpawnDelay = isRagingBarbarians ? 2 : 3;
+	}
+	//Return the value
+    return iSpawnDelay;
 }
 
 void CvDungeon::doLogging()
@@ -555,8 +763,7 @@ void CvDungeon::Deal_DonateUnits(PlayerTypes ePlayer, DungeonEventTypes eEvent)
 		for(int iI = 0; iI < 2; iI++)
 		{
 			CvUnit* pNewUnit = kPlayer.initUnit(m_eGuardUnit, pTarget->getX_INLINE(), pTarget->getY_INLINE());
-			pNewUnit->setBaseCombatStr(pNewUnit->baseCombatStr() + getPower());
-			pNewUnit->setBaseCombatStrDefense(pNewUnit->baseCombatStrDefense() + getPower());
+			UpdateDungeonBarbarianStrength(pNewUnit);
 		}
 	}
 }
@@ -585,7 +792,7 @@ void CvDungeon::Deal_TriggerRaidGroup(PlayerTypes ePlayer, DungeonEventTypes eEv
 		}
 	}
 
-	int iSize = 2;
+	int iSize = 1; //Raids are slightly smaller by default.
 
 	switch(getPopulation()) {
 		case DUNGEON_POPULATION_LOW:
@@ -668,8 +875,8 @@ void CvDungeon::Deal_TriggerRaidGroup(PlayerTypes ePlayer, DungeonEventTypes eEv
 			CvUnit* pNewUnit = kBarb.initUnit(eUnit1, plot()->getX_INLINE(), plot()->getY_INLINE());
 			pNewUnit->setOriginPlot(plot());
 			pNewUnit->setAIGroup(pSpawnGroup);
-			pNewUnit->setBaseCombatStr(pNewUnit->baseCombatStr() + getPower());
-			pNewUnit->setBaseCombatStrDefense(pNewUnit->baseCombatStrDefense() + getPower());
+			//Assigns the unit promotions based on the dungeons power.
+			UpdateDungeonBarbarianStrength(pNewUnit);
 		}
 		
 		changePopulation(-(1 + iNumUnit1 / 5));
@@ -707,17 +914,28 @@ int CvDungeon::Deal_calculateLeatherCost(PlayerTypes ePlayer, DungeonEventTypes 
 	return GC.getDungeonEventInfo(eEvent).getLeather();
 }
 
+//This used to reduce EVERY cities population by 10%, which essentially was crippling if you were playing wide, with how food growth is harder in MoM. This had to be nerfed to be about equivelant to the gold option.
 void CvDungeon::sellSlaves(PlayerTypes ePlayer, int iSlaves) const
 {
-	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-	int iLoop, iPopChange;
+    CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+    int iLoop;
+    int iPopChange;
+    CvCity* pTargetCity = NULL;
+    int iBestValue = MAX_INT; // Initialize with maximum possible int value to find the minimum later
 
-	for(CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop)) {
-		if(pLoopCity->getPopulation() > 1) {
-			iPopChange = std::max(1, pLoopCity->getPopulation() / 10);
-			pLoopCity->changePopulation(-iPopChange);
-		}
-	}
+    // Find the city with the smallest population greater than 1 to be the target
+    for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop)) {
+        if (pLoopCity->getPopulation() > 1 && pLoopCity->getPopulation() < iBestValue) {
+            iBestValue = pLoopCity->getPopulation();
+            pTargetCity = pLoopCity;
+        }
+    }
+
+    // If a target city is found, reduce its population
+    if (pTargetCity != NULL) {
+        iPopChange = std::max(1, iSlaves); // Use the number of slaves sold to determine the population change
+        pTargetCity->changePopulation(-iPopChange);
+    }
 }
 
 void CvDungeon::updateLandmark()
