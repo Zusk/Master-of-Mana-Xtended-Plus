@@ -5,7 +5,7 @@
 #USAGE: ./compile.sh [release/debug/final_release] [clean]
 #See also: compile_settings.sh, which is sourced by this script.
 
-. ../compile_settings.sh
+. ./compile_settings.sh
 
 error() {
 	echo "ERROR: $*" >&2
@@ -209,14 +209,13 @@ else
 
 	GLOBALFLAGS="$LINKFILES /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DLL /NOLOGO /PDB:$TARGET/CvGameCoreDLL.pdb"
 	if test "$TARGET" = "Release"; then
-		FLAGS="$GLOBALFLAGS /INCREMENTAL:NO /OPT:REF /OPT:ICF /IMPLIB:$TARGET/CvGameCoreDLL.lib"
+		FLAGS="$GLOBALFLAGS /INCREMENTAL:NO /OPT:REF /OPT:ICF"
 		set -- ""
 	elif test "$TARGET" = "Final_release"; then
 		FLAGS="$GLOBALFLAGS /INCREMENTAL:NO /OPT:REF /OPT:ICF /LTCG"
 		set -- ""
 	else
 		FLAGS="$GLOBALFLAGS /DEBUG /INCREMENTAL /IMPLIB:$TARGET/CvGameCoreDLL.lib"
-		#FLAGS="$GLOBALFLAGS /INCREMENTAL /IMPLIB:$TARGET/CvGameCoreDLL.lib"
 		set -- " " "$PSDK/Lib/AMD64/msvcprtd.lib"
 	fi
 
