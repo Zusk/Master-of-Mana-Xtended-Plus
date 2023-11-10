@@ -3073,6 +3073,19 @@
 						<iYield>0</iYield>
                     </ImprovementYields>
                 </ImprovementYieldChange>
+                <ImprovementYieldChange>
+                    <ImprovementType>IMPROVEMENT_BLACK_GARDEN</ImprovementType>
+                    <ImprovementYields>
+                        <iYield>1</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+						<iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+						<iYield>0</iYield>
+                    </ImprovementYields>
+                </ImprovementYieldChange>
             </ImprovementYieldChanges>
         </BuildingInfo>
         <BuildingInfo>
@@ -3256,6 +3269,14 @@
             <ImprovementYieldChanges>
                 <ImprovementYieldChange>
                     <ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+                    <ImprovementYields>
+                        <iYield>0</iYield>
+                        <iYield>0</iYield>
+                        <iYield>2</iYield>
+                    </ImprovementYields>
+                </ImprovementYieldChange>
+                <ImprovementYieldChange>
+                    <ImprovementType>IMPROVEMENT_BLACK_GARDEN</ImprovementType>
                     <ImprovementYields>
                         <iYield>0</iYield>
                         <iYield>0</iYield>
