@@ -3164,6 +3164,12 @@
             </YieldChanges>
             <YieldModifiers>
             </YieldModifiers>
+			<CommercePerPopulationChanges>
+				<CommercePerPopulationChange>
+					<CommerceType>COMMERCE_CULTURE</CommerceType>
+					<iCommerce>2</iCommerce>
+				</CommercePerPopulationChange>
+			</CommercePerPopulationChanges>
             <CommerceChanges>
             </CommerceChanges>
             <ObsoleteSafeCommerceChanges>
@@ -29063,6 +29069,7 @@
             <NoBonus>NONE</NoBonus>
             <PowerBonus>NONE</PowerBonus>
             <FreeBonus>BONUS_MANA_NATURE</FreeBonus>
+            <FreeBonus2>BONUS_RAZORWEED</FreeBonus2>
             <iNumFreeBonuses>1</iNumFreeBonuses>
             <FreeBuilding>NONE</FreeBuilding>
             <FreePromotion>NONE</FreePromotion>
@@ -30515,6 +30522,10 @@
             <iCitiesPrereq>0</iCitiesPrereq>
             <iTeamsPrereq>0</iTeamsPrereq>
             <iLevelPrereq>0</iLevelPrereq>
+            <PrereqBonuses>
+                    <BonusType>BONUS_SILK</BonusType>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
+            </PrereqBonuses>
             <iMinLatitude>0</iMinLatitude>
             <iMaxLatitude>90</iMaxLatitude>
             <iHappiness>0</iHappiness>
@@ -30525,7 +30536,6 @@
 				<iYield>0</iYield>
 				<iYield>0</iYield>
 			</YieldChanges>
-            <Bonus>BONUS_SILK</Bonus>
 			<CommercePerCultureLevelChanges>
 				<CommercePerCultureLevelChange>
 					<CommerceType>COMMERCE_GOLD</CommerceType>
@@ -30535,6 +30545,10 @@
 			<BonusesNearbyNeeded>
 				<BonusNearbyNeeded>
 					<BonusType>BONUS_SILK</BonusType>
+					<bLinked>1</bLinked>
+				</BonusNearbyNeeded>
+				<BonusNearbyNeeded>
+					<BonusType>BONUS_RAZORWEED</BonusType>
 					<bLinked>1</bLinked>
 				</BonusNearbyNeeded>
 			</BonusesNearbyNeeded>
@@ -39763,6 +39777,36 @@
         </BuildingInfo>
         <BuildingInfo>
             <BuildingClass>BUILDINGCLASS_TRAINING_YARD</BuildingClass>
+            <Type>BUILDING_THIEVES_DEN</Type>
+            <SpecialBuildingType>NONE</SpecialBuildingType>
+            <Description>Thieves Den</Description>
+            <Civilopedia>TXT_KEY_BUILDING_THIEVES_DEN_PEDIA</Civilopedia>
+            <Strategy></Strategy>
+            <Help></Help>
+            <Advisor>ADVISOR_MILITARY</Advisor>
+            <ArtDefineTag>ART_DEF_BUILDING_GEOMANCERS_STATION</ArtDefineTag>
+            <iAIWeight>200</iAIWeight>
+            <iCost>60</iCost>
+            <iCrime>5</iCrime>
+            <Flavors>
+                <Flavor>
+                    <FlavorType>FLAVOR_MILITARY</FlavorType>
+                    <iFlavor>20</iFlavor>
+                </Flavor>
+            </Flavors>
+            <UnitCombatFreeExperiences>
+                <UnitCombatFreeExperience>
+                    <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+                    <iExperience>10</iExperience>
+                </UnitCombatFreeExperience>
+            </UnitCombatFreeExperiences>
+			<iUnitSupportChange>2</iUnitSupportChange>
+			<GlobalYieldTypeCost>YIELD_STONE</GlobalYieldTypeCost>
+			<iGlobalYieldCost>80</iGlobalYieldCost>
+			<BuildingClassPrereq>BUILDINGCLASS_NOBLE_DISTRICT</BuildingClassPrereq>
+		</BuildingInfo>
+        <BuildingInfo>
+            <BuildingClass>BUILDINGCLASS_TRAINING_YARD</BuildingClass>
             <Type>BUILDING_SCULPTORS_STUDIO</Type>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>TXT_KEY_BUILDING_SCULPTORS_STUDIO</Description>
@@ -42071,6 +42115,7 @@
             <PrereqBonuses>
                     <BonusType>BONUS_SHEEP</BonusType>
                     <BonusType>BONUS_COTTON</BonusType>
+                    <BonusType>BONUS_RAZORWEED</BonusType>
             </PrereqBonuses>
 			<BonusCommerceType>COMMERCE_GOLD</BonusCommerceType>
             <YieldChanges>
@@ -42088,6 +42133,10 @@
 					<BonusType>BONUS_COTTON</BonusType>
 					<bLinked>1</bLinked>
 				</BonusLinked>
+				<BonusLinked>
+					<BonusType>BONUS_RAZORWEED</BonusType>
+					<bLinked>1</bLinked>
+				</BonusLinked>
 			</BonusesLinked>
 			<BonusesNearbyNeeded>
 				<BonusNearbyNeeded>
@@ -42096,6 +42145,10 @@
 				</BonusNearbyNeeded>
 				<BonusNearbyNeeded>
 					<BonusType>BONUS_COTTON</BonusType>
+					<bLinked>1</bLinked>
+				</BonusNearbyNeeded>
+				<BonusNearbyNeeded>
+					<BonusType>BONUS_RAZORWEED</BonusType>
 					<bLinked>1</bLinked>
 				</BonusNearbyNeeded>
 			</BonusesNearbyNeeded>			
@@ -43724,6 +43777,73 @@
 				</PrereqBuildingClass>
             </PrereqBuildingClasses>
         </BuildingInfo>
+        <BuildingInfo>
+            <BuildingClass>BUILDINGCLASS_GUILD_OF_FIGHTERS</BuildingClass>
+            <Type>BUILDING_GUILD_OF_FIGHTERS_SVARTALFAR</Type>
+            <SpecialBuildingType>NONE</SpecialBuildingType>
+            <Description>Assassin's Guild</Description>
+            <Civilopedia>The Assassin's Guild for the Svartalfar is focused on perfecting the art of reconnaissance.</Civilopedia>
+            <Strategy></Strategy>
+            <Help></Help>
+            <Advisor>ADVISOR_ECONOMY</Advisor>
+            <ArtDefineTag>ART_DEF_BUILDING_VETERAN_COMPOUND</ArtDefineTag>
+            <PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+            <CivicOption>NONE</CivicOption>
+            <GreatPeopleUnitClass>UNITCLASS_COMMANDER</GreatPeopleUnitClass>
+            <iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+            <iHurryAngerModifier>0</iHurryAngerModifier>
+            <bBorderObstacle>0</bBorderObstacle>
+            <bTeamShare>1</bTeamShare>
+            <iCost>300</iCost>
+            <iHurryCostModifier>100</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>100</iConquestProb>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iCrime>10</iCrime>
+            <iAsset>12</iAsset>
+            <iPower>20</iPower>
+            <fVisibilityPriority>15000</fVisibilityPriority>
+            <ObsoleteSafeCommerceChanges>
+                <iCommerce>0</iCommerce>
+                <iCommerce>0</iCommerce>
+                <iCommerce>4</iCommerce>
+            </ObsoleteSafeCommerceChanges>
+            <CommerceChangeDoubleTimes>
+                <iCommerce>0</iCommerce>
+                <iCommerce>0</iCommerce>
+                <iCommerce>1000</iCommerce>
+            </CommerceChangeDoubleTimes>
+            <CommerceChangeOriginalOwners>
+                <iCommerce>0</iCommerce>
+                <iCommerce>0</iCommerce>
+                <iCommerce>1</iCommerce>
+            </CommerceChangeOriginalOwners>
+            <Flavors>
+                <Flavor>
+                    <FlavorType>FLAVOR_MILITARY</FlavorType>
+                    <iFlavor>10</iFlavor>
+                </Flavor>
+            </Flavors>
+            <UnitCombatFreeExperiences>
+                <UnitCombatFreeExperience>
+                    <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+                    <iExperience>20</iExperience>
+                </UnitCombatFreeExperience>
+            </UnitCombatFreeExperiences>
+            <FreeBonus>BONUS_RAZORWEED</FreeBonus>
+            <iNumFreeBonuses>1</iNumFreeBonuses>
+            <iMilitaryProductionModifier>10</iMilitaryProductionModifier>
+            <PrereqBuildingClasses>
+                <PrereqBuildingClass>
+                    <BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+                    <iNumBuildingNeeded>3</iNumBuildingNeeded>
+                </PrereqBuildingClass>
+            </PrereqBuildingClasses>
+            <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
+        </BuildingInfo>
 		<BuildingInfo>		<!-- Fletcher -->
 			<BuildingClass>BUILDINGCLASS_FLETCHER</BuildingClass>
 			<Type>BUILDING_FLETCHER</Type>
@@ -43897,6 +44017,35 @@
             <fVisibilityPriority>15000</fVisibilityPriority>
             <ManaFromImprovementType>IMPROVEMENT_PLANTATION</ManaFromImprovementType>
             <iManaFromImprovement>20</iManaFromImprovement>
+            <iAIWeight>1000</iAIWeight>
+        </BuildingInfo>
+        <BuildingInfo>
+            <BuildingClass>BUILDINGCLASS_FRUIT_OF_OZZIEL</BuildingClass>
+            <Type>BUILDING_FRUIT_OF_SUCELLUS</Type>
+            <SpecialBuildingType>NONE</SpecialBuildingType>
+            <Description>Fruit of Sucellus</Description>
+            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+            <Strategy></Strategy>
+            <Help>[ICON_BULLET]Converts all Forest and Jungle near the City to Ancient Forest</Help>
+            <Advisor>ADVISOR_GROWTH</Advisor>
+            <ArtDefineTag>ART_DEF_FRUIT_OF_OZZIEL</ArtDefineTag>
+            <PrereqTech>TECH_HERBALISM</PrereqTech>
+            <iCost>300</iCost>
+            <GreatPeopleUnitClass>UNITCLASS_ARTIST</GreatPeopleUnitClass>
+            <iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+            <iHurryCostModifier>100</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>100</iConquestProb>
+            <iAsset>6</iAsset>
+            <iPower>6</iPower>
+            <FreeBonus>BONUS_MANA_LIFE</FreeBonus>
+            <iNumFreeBonuses>1</iNumFreeBonuses>
+            <fVisibilityPriority>15000</fVisibilityPriority>
+            <ManaFromImprovementType>IMPROVEMENT_BLACK_GARDEN</ManaFromImprovementType>
+            <iManaFromImprovement>20</iManaFromImprovement>
+            <PrereqCiv>CIVILIZATION_SVARTALFAR</PrereqCiv>
             <iAIWeight>1000</iAIWeight>
         </BuildingInfo>
         <BuildingInfo>
