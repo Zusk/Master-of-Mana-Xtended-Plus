@@ -1502,6 +1502,10 @@
                     <LeaderName>LEADER_ELDARWEN</LeaderName>
                     <bLeaderAvailability>1</bLeaderAvailability>
                 </Leader>
+                <Leader>
+                    <LeaderName>LEADER_ELEWEN</LeaderName>
+                    <bLeaderAvailability>1</bLeaderAvailability>
+                </Leader>
             </Leaders>
 			<Flavors>
                  <Flavor>
@@ -3615,9 +3619,21 @@
                     <BuildingClassType>BUILDINGCLASS_SIEGE_WORKSHOP</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TRAINING_YARD</BuildingClassType>
+                    <BuildingType>BUILDING_THIEVES_DEN</BuildingType>
+                </Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
 					<BuildingType>BUILDING_HUNTERS_HALL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GUILD_OF_FIGHTERS</BuildingClassType>
+					<BuildingType>BUILDING_GUILD_OF_FIGHTERS_SVARTALFAR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FRUIT_OF_OZZIEL</BuildingClassType>
+					<BuildingType>BUILDING_FRUIT_OF_SUCELLUS</BuildingType>
 				</Building>
             </Buildings>
             <Units>
@@ -3741,6 +3757,10 @@
                     <LeaderName>LEADER_UTIRUSO</LeaderName>
                     <bLeaderAvailability>1</bLeaderAvailability>
                 </Leader>
+                <Leader>
+                    <LeaderName>LEADER_ELEWEN</LeaderName>
+                    <bLeaderAvailability>1</bLeaderAvailability>
+                </Leader>
             </Leaders>
 			<Flavors>
                  <Flavor>
@@ -3787,7 +3807,7 @@
                 </MaintainFeature>
             </MaintainFeatures>
 			<bSpellResearchFromMaintainFeatures>1</bSpellResearchFromMaintainFeatures>
-			<ImpInfrastructureHalfCost>IMPROVEMENT_CAMP</ImpInfrastructureHalfCost>
+			<ImpInfrastructureHalfCost>IMPROVEMENT_PLANTATION</ImpInfrastructureHalfCost>
 			<FavoredYield>YIELD_LEATHER</FavoredYield>
 			<FlavorScreenImage>Art/Interface/CityScreen/svartalfar</FlavorScreenImage>
 			<FlavorCityScreenImage>Art/Interface/CityScreen/svartalfar</FlavorCityScreenImage>
