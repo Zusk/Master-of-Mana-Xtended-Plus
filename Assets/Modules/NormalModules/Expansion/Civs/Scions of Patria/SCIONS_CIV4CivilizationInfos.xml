@@ -181,6 +181,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_RHIANNON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_BARNAXUS</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
