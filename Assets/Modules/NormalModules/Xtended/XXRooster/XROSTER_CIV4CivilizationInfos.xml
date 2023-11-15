@@ -3642,6 +3642,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_RHIANNON</UnitClassType>
+                    <UnitType>UNIT_RHIANNON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_CIV_DEFAULT</UnitClassType>
                     <UnitType>UNIT_SVART_WARRIOR</UnitType>
                 </Unit>
@@ -3654,6 +3658,10 @@
                     <UnitType>UNIT_HUNTRESS</UnitType>
                 </Unit>				
                 <Unit>
+                    <UnitClassType>UNITCLASS_CIV_ARCHER</UnitClassType>
+                    <UnitType>UNIT_SVART_ARCHER</UnitType>
+                </Unit>	
+                <Unit>
                     <UnitClassType>UNITCLASS_MARKSMAN</UnitClassType>
                     <UnitType>UNIT_MARKSMAN</UnitType>
                 </Unit>
@@ -3662,8 +3670,8 @@
                     <UnitType>UNIT_BEASTMASTER</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_CIV_UU2</UnitClassType>
-                    <UnitType>NONE</UnitType>
+                    <UnitClassType>UNITCLASS_CIV_UU1</UnitClassType>
+                    <UnitType>UNIT_SVART_MONK</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ASSASSIN</UnitClassType>
