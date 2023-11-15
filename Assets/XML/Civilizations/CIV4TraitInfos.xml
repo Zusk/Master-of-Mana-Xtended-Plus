@@ -1130,6 +1130,10 @@
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
 				</FreePromotionUnitCombat>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
 			</FreePromotionUnitCombats>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</TraitInfo>
