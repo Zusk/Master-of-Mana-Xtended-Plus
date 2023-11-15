@@ -3394,7 +3394,7 @@ def reqSironasTouch(caster):
 def spellSironasTouch(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	pPlayer.setFeatAccomplished(FeatTypes.FEAT_HEAL_UNIT_PER_TURN, false)
-	caster.changeDamage(-25,0)
+	caster.changeDamage(-15,0)
 	if caster.isHasPromotion(gc.getInfoTypeForString('PROMOTION_POISONED')) and caster.getDamage() == 0:
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_POISONED'), false)
 

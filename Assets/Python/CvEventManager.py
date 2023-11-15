@@ -2590,6 +2590,10 @@ class CvEventManager:
 			if pCity.isHasReligion(gc.getInfoTypeForString('RELIGION_THE_ASHEN_VEIL')) == False:
 				pCity.setHasReligion(gc.getInfoTypeForString('RELIGION_THE_ASHEN_VEIL'), True, True, True)
 
+		#Zusk: Re-add this line to return Shrine of Sirona functionality
+		if pCity.getNumRealBuilding(gc.getInfoTypeForString('BUILDING_SHRINE_OF_SIRONA')) > 0:
+			pPlayer.setFeatAccomplished(FeatTypes.FEAT_HEAL_UNIT_PER_TURN, True)
+
 		if pCity.getNumRealBuilding(gc.getInfoTypeForString('BUILDING_LUXURY_DISTRICT')) > 0:
 			eResourceClass=gc.getInfoTypeForString('BUILDINGCLASS_LUXURY_DISTRICT')
 			eManaClass=gc.getInfoTypeForString('BONUSCLASS_MANA')
