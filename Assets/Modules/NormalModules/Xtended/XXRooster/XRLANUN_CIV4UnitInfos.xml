@@ -331,6 +331,11 @@
             <PrereqCiv>CIVILIZATION_LANUN</PrereqCiv>
 			<bScaleWithTech>1</bScaleWithTech>	
             <bAIblockPermDefense>1</bAIblockPermDefense>
+			<CityCommerceChanges>
+				<iCommerce>1</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CityCommerceChanges>
         </UnitInfo>
         <UnitInfo>
             <Class>UNITCLASS_CIV_MOUNTED</Class>
