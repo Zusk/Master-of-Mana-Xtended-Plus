@@ -262,7 +262,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SVART_MONK</Type>
-            <Button>Art/Interface/Buttons/Units/Rhiannon_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Units/Svart_Monk_Button.dds</Button>
             <fScale>0.44</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <bActAsLand>0</bActAsLand>
@@ -277,12 +277,13 @@
                 <fBattleDistance>0.35</fBattleDistance>
                 <fRangedDeathTime>0.31</fRangedDeathTime>
                 <bActAsRanged>0</bActAsRanged>
-            <TrainSound>AS3D_MONK_SELECT</TrainSound>
+            <TrainSound>AS3D_UN_FEMALE_GOOD_SELECTION_VOX</TrainSound>
             <AudioRunSounds>
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-            <SelectionSound>AS3D_MONK_SELECT</SelectionSound>			
+            <SelectionSound>AS3D_UN_FEMALE_GOOD_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_GOOD_ORDER_VOX</ActionSound>		
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_RHIANNON</Type>
@@ -301,12 +302,13 @@
                 <fBattleDistance>0.35</fBattleDistance>
                 <fRangedDeathTime>0.31</fRangedDeathTime>
                 <bActAsRanged>0</bActAsRanged>
-            <TrainSound>AS3D_MONK_SELECT</TrainSound>
+            <TrainSound>AS3D_UN_FEMALE_GOOD_SELECTION_VOX</TrainSound>
             <AudioRunSounds>
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-            <SelectionSound>AS3D_MONK_SELECT</SelectionSound>			
+            <SelectionSound>AS3D_UN_FEMALE_GOOD_SELECTION_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_FEMALE_GOOD_ORDER_VOX</ActionSound>		
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_DEVOUT</Type>

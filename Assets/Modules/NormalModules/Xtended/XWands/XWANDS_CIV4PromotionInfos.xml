@@ -972,7 +972,7 @@
 			<Type>EQUIPMENT_ROBE_BLOOD</Type>
 			<Description>Robe of Blood Witch</Description>
 			<Sound>NONE</Sound>
-			<TechPrereq>TECH_WAY_OF_THE_WICKED</TechPrereq>
+			<TechPrereq>TECH_SORCERY</TechPrereq>
 			<EquipmentCategory>EQUIPMENTCATEGORY_ARMOR</EquipmentCategory>
 			<DurabilityType>DURABILITY_LIGHT_ARMOR</DurabilityType>
 			<YieldCostType>YIELD_LEATHER</YieldCostType>
@@ -3528,7 +3528,7 @@
 			<Type>EQUIPMENT_SOUL_DAGGER</Type>
 			<Description>Soul Essence</Description>
             <Help>TXT_KEY_GEAR_DURABILITY_SIMPLE_WEAPON</Help>
-			<TechPrereq>TECH_WAY_OF_THE_WICKED</TechPrereq>
+			<TechPrereq>TECH_SORCERY</TechPrereq>
 			<Sound>NONE</Sound>
 			<EquipmentCategory>EQUIPMENTCATEGORY_WEAPON</EquipmentCategory>
 			<DurabilityType>DURABILITY_SIMPLE_WEAPON</DurabilityType>			
@@ -4533,7 +4533,7 @@
 			<Type>PROMOTION_GEAR_PURE_BLOOD</Type>
 			<Description>TXT_KEY_PROMOTION_GEAR_PURE_BLOOD</Description>
 			<Sound>NONE</Sound>
-			<TechPrereq>TECH_WAY_OF_THE_WICKED</TechPrereq>
+			<TechPrereq>TECH_SORCERY</TechPrereq>
 			<EquipmentCategory>EQUIPMENTCATEGORY_MISC2</EquipmentCategory>
 			<iEquipmentLevel>1</iEquipmentLevel>
 			<DurabilityType>DURABILITY_UNBREAKABLE</DurabilityType>

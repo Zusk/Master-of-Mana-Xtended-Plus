@@ -35,7 +35,10 @@
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
-            <PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+            <PrereqTech>TECH_WARFARE</PrereqTech>
+            <TechTypes>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+            </TechTypes>
             <bMilitarySupport>0</bMilitarySupport>
             <iCost>100</iCost>
             <iMoves>2</iMoves>
@@ -79,6 +82,20 @@
             </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <BonusAffinities>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+            </BonusAffinities>
             <iTier>4</iTier>
             <PrereqCiv>CIVILIZATION_CALABIM</PrereqCiv>
             <PromotionFromCombat>PROMOTION_IMMORTAL</PromotionFromCombat>
@@ -211,7 +228,15 @@
             </DamageTypeCombats>
             <BonusAffinities>
                 <BonusAffinity>
+                    <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
                     <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
                     <iAffinity>1</iAffinity>
                 </BonusAffinity>
             </BonusAffinities>
@@ -400,7 +425,15 @@
             </FreePromotions>
             <BonusAffinities>
                 <BonusAffinity>
+                    <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
                     <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
                     <iAffinity>2</iAffinity>
                 </BonusAffinity>
             </BonusAffinities>
@@ -437,10 +470,7 @@
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
-            <PrereqTech>TECH_WAY_OF_THE_WICKED</PrereqTech>
-            <TechTypes>
-				<PrereqTech>TECH_ARCANE_POWER</PrereqTech>
-            </TechTypes>
+            <PrereqTech>TECH_SORCERY</PrereqTech>
             <iCost>90</iCost>
             <iMoves>1</iMoves>
             <iCombat>6</iCombat>
@@ -489,6 +519,10 @@
             </DamageTypeCombats>
             <BonusAffinities>
                 <BonusAffinity>
+                    <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
                     <BonusType>BONUS_MANA_DEATH</BonusType>
                     <iAffinity>2</iAffinity>
                 </BonusAffinity>
@@ -500,8 +534,8 @@
             <iTier>3</iTier>
 			<iArcaneRange>2</iArcaneRange>
             <PrereqCiv>CIVILIZATION_CALABIM</PrereqCiv>
-			<GlobalYieldTypeCost>YIELD_LEATHER</GlobalYieldTypeCost>
-			<iGlobalYieldCost>300</iGlobalYieldCost>						
+			<GlobalYieldTypeCost>YIELD_HERB</GlobalYieldTypeCost>
+			<iGlobalYieldCost>200</iGlobalYieldCost>						
 			<bScaleWithTech>0</bScaleWithTech>	
         </UnitInfo>
         <UnitInfo>
@@ -571,7 +605,15 @@
             </FreePromotions>			
             <BonusAffinities>
                 <BonusAffinity>
+                    <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
                     <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <iAffinity>2</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
                     <iAffinity>2</iAffinity>
                 </BonusAffinity>
             </BonusAffinities>

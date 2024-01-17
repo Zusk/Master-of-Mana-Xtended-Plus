@@ -337,7 +337,15 @@
             </DamageTypeCombats>
             <BonusAffinities>
                 <BonusAffinity>
+                    <BonusType>BONUS_MANA_DEATH</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
                     <BonusType>BONUS_MANA_CHAOS</BonusType>
+                    <iAffinity>1</iAffinity>
+                </BonusAffinity>
+                <BonusAffinity>
+                    <BonusType>BONUS_MANA_FIRE</BonusType>
                     <iAffinity>1</iAffinity>
                 </BonusAffinity>
             </BonusAffinities>
@@ -375,6 +383,7 @@
             <iMinLevel>4</iMinLevel>
 			<PromotionRandomApply>PROMOTION_VAMPIRE_WILLPOWER</PromotionRandomApply>
 			<iPromotionRandomApplyChance>20</iPromotionRandomApplyChance>
+            <iCombatCapturePercent>20</iCombatCapturePercent>
             <DamageTypeResists>
                 <DamageTypeResist>
                     <DamageType>DAMAGE_HOLY</DamageType>
@@ -404,6 +413,11 @@
             </UnitCombats>
             <Button>Art/Interface/Buttons/Promotions/willpower.dds</Button>
 			<bRemovedByCasting>1</bRemovedByCasting>
+            <bRemovedByCombat>1</bRemovedByCombat>
+            <bImmuneToFirstStrikes>1</bImmuneToFirstStrikes>
+			<iFirstStrikesChange>2</iFirstStrikesChange>
+            <bTargetWeakestUnit>1</bTargetWeakestUnit>
+            <iCombatCapturePercent>60</iCombatCapturePercent>
             <iReducedManaCost>10</iReducedManaCost>
 			<iCasterResistModify>-10</iCasterResistModify>
             <iAIWeight>10</iAIWeight>
@@ -448,6 +462,7 @@
                     <iResist>-10</iResist>
                 </DamageTypeResist>
             </DamageTypeResists>
+            <iCombatCapturePercent>20</iCombatCapturePercent>
 			<PrereqCivilizations>
 				<PrereqCivilization>CIVILIZATION_CALABIM</PrereqCivilization>
 			</PrereqCivilizations>						

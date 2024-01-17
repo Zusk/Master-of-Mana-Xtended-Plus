@@ -1239,7 +1239,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_PLACEHOLDER_PEDIA</Civilopedia>
 			<PrereqCivilization>CIVILIZATION_CALABIM</PrereqCivilization>
 			<VictoryPrereq>NONE</VictoryPrereq>
-			<TechPrereq>TECH_FEUDALISM</TechPrereq>
+			<TechPrereq>TECH_CODE_OF_LAWS</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>

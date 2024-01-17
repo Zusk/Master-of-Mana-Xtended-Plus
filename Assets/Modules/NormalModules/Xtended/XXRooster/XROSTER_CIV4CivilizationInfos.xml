@@ -5117,6 +5117,10 @@
 					<LeaderName>LEADER_SORAH_AND_ECKS</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
+				<Leader>
+					<LeaderName>LEADER_XUANFENG</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
 			</Leaders>
             <Flavors>
                  <Flavor>
