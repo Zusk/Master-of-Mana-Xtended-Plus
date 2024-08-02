@@ -5991,7 +5991,7 @@
             <iVisibilityChange>1</iVisibilityChange>
             <SpawnUnitType>UNIT_MINOTAUR</SpawnUnitType>
             <SpawnUnitCiv>CIVILIZATION_BARBARIAN</SpawnUnitCiv>
-            <iAppearanceProbability>50</iAppearanceProbability>
+            <iAppearanceProbability>20</iAppearanceProbability>
 			<iMinWilderness>8</iMinWilderness>
 			<iMaxWilderness>12</iMaxWilderness>
 			<DungeonType>DUNGEON_REGULAR</DungeonType>
@@ -6181,7 +6181,7 @@
             <SpawnUnitCiv>CIVILIZATION_BARBARIAN</SpawnUnitCiv>  <!-- TODO: create undead faction -->
 			<iMinWilderness>5</iMinWilderness>
 			<iMaxWilderness>15</iMaxWilderness>
-            <iAppearanceProbability>100</iAppearanceProbability>
+            <iAppearanceProbability>30</iAppearanceProbability>
 			<SpawnGroup>AIGROUP_BARB_SKELETONS</SpawnGroup>
 			<DungeonType>DUNGEON_BARROW</DungeonType>
         </ImprovementInfo>
