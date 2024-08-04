@@ -158,6 +158,14 @@
         <Spanish>Mastery of Mind Magic</Spanish>
     </TEXT>
 	<TEXT>
+        <Tag>TXT_KEY_TRAIT_MERCIFUL</Tag>
+        <English>Merciful</English>
+        <French>Merciful</French>
+        <German>Merciful</German>
+        <Italian>Merciful</Italian>
+        <Spanish>Merciful</Spanish>
+    </TEXT>
+	<TEXT>
         <Tag>TXT_KEY_TRAIT_MIND_MAGIC_MASTERY_SHORTX</Tag>
         <English>Mind</English>
         <French>Mind</French>
