@@ -1435,9 +1435,11 @@ def reqExploreLair(caster):
 				if pPlayer.getCivilizationType()==gc.getInfoTypeForString('CIVILIZATION_ELOHIM'):
 					return False
 
-	if caster.plot().getOwner() != -1:
-		if caster.getOwner() != caster.plot().getOwner():
-			return False
+	#This leads to frustrating situations, re; lairs spawning in barbarian cities, or ESPECIALLY with clan of embers/barbarian leaders.
+	#Without this you can get access to a civ through open borders, then clear out their dungeons for them.
+	#if caster.plot().getOwner() != -1:
+	#		if caster.getOwner() != caster.plot().getOwner():
+	#		return False
 	if caster.isOnlyDefensive():
 		return False
 	if caster.getUnitCombatType() == gc.getInfoTypeForString('UNITCOMBAT_SIEGE'):
