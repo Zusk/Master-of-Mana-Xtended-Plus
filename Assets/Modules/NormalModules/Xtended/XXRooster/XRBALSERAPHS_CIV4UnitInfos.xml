@@ -516,11 +516,23 @@
             <Class>UNITCLASS_MISTRESS_MALECIA</Class>
             <Type>UNIT_MISTRESS_MALECIA</Type>
             <iCost>100</iCost>
-            <iCombat>10</iCombat>
+            <iCombat>6</iCombat>
             <DamageTypeCombats>
                 <DamageTypeCombat>
                     <DamageType>DAMAGE_UNHOLY</DamageType>
-                    <iCombat>2</iCombat>
+                    <iCombat>1</iCombat>
+                </DamageTypeCombat>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_HOLY</DamageType>
+                    <iCombat>1</iCombat>
+                </DamageTypeCombat>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_FIRE</DamageType>
+                    <iCombat>1</iCombat>
+                </DamageTypeCombat>
+                <DamageTypeCombat>
+                    <DamageType>DAMAGE_LIGHTNING</DamageType>
+                    <iCombat>1</iCombat>
                 </DamageTypeCombat>
             </DamageTypeCombats>
             <BonusAffinities>
@@ -529,6 +541,9 @@
                     <iAffinity>2</iAffinity>
                 </BonusAffinity>
             </BonusAffinities>
+			<iWithdrawalProb>70</iWithdrawalProb>
+            <iWithdrawlProbDefensive>70</iWithdrawlProbDefensive>
+			<bScaleWithTech>1</bScaleWithTech>
         </UnitInfo>
     </UnitInfos>
 </Civ4UnitInfos>
