@@ -77,7 +77,7 @@
             <bDisplayWhenDisabled>1</bDisplayWhenDisabled>
             <bHasCasted>1</bHasCasted>
             <iRange>3</iRange>
-			<iFaithCost>1000</iFaithCost>
+			<iFaithCost>2500</iFaithCost>
             <PyResult>__import__('CvFaith').spellLugusGuidance(pCaster)</PyResult>
             <Effect>EFFECT_SPELL1</Effect>
             <Sound>AS3D_SPELL_REVELATION</Sound>
@@ -460,7 +460,7 @@
             <Effect>EFFECT_SACRIFICE</Effect>
             <Sound>AS3D_SPELL_SPECTRE</Sound>
             <Button>Art/Interface/Buttons/Spells/InspireMadness.dds</Button>
-			<iFaithCost>1000</iFaithCost>
+			<iFaithCost>1500</iFaithCost>
         </SpellInfo>
         <SpellInfo>
             <Type>SPELL_HIDEOUS_DREAM</Type>
@@ -513,7 +513,7 @@
             <Effect>EFFECT_WRAITH_SUMMON</Effect>
             <Sound>AS3D_SPELL_HYBOREMS_WHISPER</Sound>
             <Button>Art/Interface/Buttons/Spells/InspireForbidden.dds</Button>
-			<iFaithCost>2000</iFaithCost>
+			<iFaithCost>3000</iFaithCost>
         </SpellInfo>
         <SpellInfo>
             <Type>SPELL_TSUNAMI</Type>
