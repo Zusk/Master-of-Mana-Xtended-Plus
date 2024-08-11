@@ -460,7 +460,7 @@
             <Effect>EFFECT_SACRIFICE</Effect>
             <Sound>AS3D_SPELL_SPECTRE</Sound>
             <Button>Art/Interface/Buttons/Spells/InspireMadness.dds</Button>
-			<iFaithCost>1500</iFaithCost>
+			<iFaithCost>2000</iFaithCost>
         </SpellInfo>
         <SpellInfo>
             <Type>SPELL_HIDEOUS_DREAM</Type>
