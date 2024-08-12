@@ -380,6 +380,8 @@ public:
 	int getGoldPerTurnByPlayer(int /*PlayerTypes*/ eIndex);
 	void setGoldPerTurnByPlayer(int /*PlayerTypes*/ eIndex, int iValue);
 
+	int getGoldPerTurnNetAtZeroPercent();
+
 	bool isFeatAccomplished(int /*FeatTypes*/ eIndex);
 	void setFeatAccomplished(int /*FeatTypes*/ eIndex, bool bNewValue);
 	bool isOption(int /*PlayerOptionTypes*/ eIndex);
@@ -561,7 +563,7 @@ public:
 /** Allow Python to modify the CivilizationType of a Player **/
     void setCivilizationType(int newCivType);
 	void launchPickEquipmentPopup();
-	bool canEquipUnit(CyUnit* pUnit, int Equipment, bool bTestVisible, bool bTreasure);
+	bool canEquipUnit(CyUnit* pUnit, int Equipment, bool bTestVisible, bool bTreasure, bool bResources);
 	bool isCanEverSpellResearch(int iSpellResearch);
 	int CalculateCivCounter(int iStep, int iValue);
 	void setTerraformPlan(int iProject);
@@ -588,6 +590,8 @@ public:
 	bool canDoGlobalEnchantment(int eProject) const;
 	bool canDoTerraformRitual(int eProject) const;
 	bool canCreateSummon(int eProject) const;
+	int doTerraformRitual(int eRitual) const;
+	void doSummonRitual(int eProject) const;
 	int getMagicRitualTurnsNeeded(int eProject, bool bStarted);
 	int getCurrentMagicRitual() const;
 	int getSpecificMagicRitualCost(int eProject) const;
@@ -607,6 +611,7 @@ public:
 	bool canGetTrait(int iTech) const;
 	int getTraitCost(int iTech) const;
 	int getUnitSupportLimitTotal() const;
+	int getUnitSupportUsed() const;
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/
@@ -644,7 +649,7 @@ public:
 /*************************************************************************************************/
 /**	    									END													**/
 /*************************************************************************************************/
-
+	void setHumanDisabled(bool bNewValue);
 private:
 	CvPlayer* m_pPlayer;
 };

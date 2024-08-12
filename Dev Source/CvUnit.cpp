@@ -276,6 +276,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 
 	if (isSummon())
 	{
+		/*oosLog(
+		"AIsetXY"
+		,"Turn:%d,PlayerID:%d,UnitID:%d,init,isSummon:%d"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,getOwnerINLINE()
+		,getID()
+		,isSummon()
+		);*/
 		GET_PLAYER(getOwnerINLINE()).changeNumSummonUnits(1);
 	}
 
@@ -369,6 +377,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	if (m_pUnitInfo->getFreePromotionPick() > 0)
 	{
 	    changeFreePromotionPick(m_pUnitInfo->getFreePromotionPick());
+		//testPromotionReady();
         setPromotionReady(true);
     }
     GC.getGameINLINE().changeGlobalCounter(m_pUnitInfo->getModifyGlobalCounter());
@@ -960,6 +969,7 @@ void CvUnit::convert(CvUnit* pUnit)
     }
     if (m_pUnitInfo->getFreePromotionPick() > 0 && getGameTurnCreated() == GC.getGameINLINE().getGameTurn())
 	{
+		//testPromotionReady();
         setPromotionReady(true);
     }
     setDuration(pUnit->getDuration());
@@ -1065,6 +1075,16 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	oldUnits.clear();
 	pUnitNode = pPlot->headUnitNode();
 
+	/*if(isOOSLogging())
+	{
+		oosLog(
+			"Kill"
+			,"Turn:%d,Player:%d,UnitID:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+		);
+	}*/
 	//Extra Lives
 	if(getExtraLives() > 0)
 	{
@@ -1164,14 +1184,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 		}
 	}
 
-	oosLog(
-		"AIsetXY"
-		,"UnitID: %d,startDelayedDeath: %d, ePlayer:%d,isAlive:%d"
-		,getID()
-		,bDelay
-		,ePlayer
-		,isAlive()
-	);
 	if (bDelay)
 	{
 		startDelayedDeath();
@@ -1180,13 +1192,24 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 
 	if (isSummon())
 	{
+		/*oosLog(
+		"AIsetXY"
+		,"Turn:%d,PlayerID:%d,UnitID:%d,startDelayedDeath:%d,isSummon:%d"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,ePlayer
+		,getID()
+		,bDelay
+		,isSummon()
+		);*/
+
 		GET_PLAYER(getOwnerINLINE()).changeNumSummonUnits(-1);
 	}
 
 //FfH: Added by Kael 07/23/2008
     if (isImmortal())
     {
-        if (GET_PLAYER(getOwnerINLINE()).getCapitalCity() != NULL)
+		if(isImmortalRebirthDestinationExisting())
+        //if (GET_PLAYER(getOwnerINLINE()).getCapitalCity() != NULL)
         {
             m_bDeathDelay = false;
             doImmortalRebirth();
@@ -1207,20 +1230,20 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
                 {
                     if (GC.getUnitInfo((UnitTypes)iJ).getEquipmentPromotion() == iI)
                     {
-			//DEBUG
-			if(isOOSLogging())	
-			{
-			oosLog(
-			"EquipmentPromotion"
-			,"Turn: %d,PlayerID: %d, UnitID: %d,EquipmentPromotionCreated: %S,Type: %d\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,GC.getUnitInfo((UnitTypes)iJ).getDescription()
-			,AI_getUnitAIType()
-			);
-			}
-			//DEBUG 
+						//DEBUG
+						if(isOOSLogging())
+						{
+							oosLog(
+								"EquipmentPromotion"
+								,"Turn: %d,PlayerID: %d, UnitID: %d,EquipmentPromotionCreated: %S,Type: %d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getOwner()
+								,getID()
+								,GC.getUnitInfo((UnitTypes)iJ).getDescription()
+								,AI_getUnitAIType()
+							);
+						}
+						//DEBUG
                         GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes)iJ, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
                         setHasPromotion((PromotionTypes)iI, false);
                     }
@@ -1614,9 +1637,22 @@ void CvUnit::doTurn()
                 kill(true);
                 GC.getGameINLINE().decrementUnitCreatedCount(getUnitType());
                 GC.getGameINLINE().decrementUnitClassCreatedCount((UnitClassTypes)(m_pUnitInfo->getUnitClassType()));
-                GET_TEAM(getTeam()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), -1);
-                GET_PLAYER(getOwnerINLINE()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), -1);
-                GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(m_pUnitInfo->getExtraCost() * -1);
+		/*
+		if(isOOSLogging())
+		{
+			oosLog("UnitClassCount"
+				,"Turn:%d,Player:%d,X:%d,Y:%d,ClassType:%S,Count:%d"
+				,GC.getGameINLINE().getGameTurn()
+				,getOwner()
+				,getX()
+				,getY()
+				,GC.getUnitClassInfo((UnitClassTypes)(m_pUnitInfo->getUnitClassType())).getDescription()
+				,GET_PLAYER(getOwnerINLINE()).getUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())))
+			);
+		}*/
+                //GET_TEAM(getTeam()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), -1);				//SpyFanatic: already called during kill
+                //GET_PLAYER(getOwnerINLINE()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), -1);		//SpyFanatic: already called during kill
+                //GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(m_pUnitInfo->getExtraCost() * -1);								//SpyFanatic: already called during kill
 				return;
             }
         }
@@ -1880,8 +1916,12 @@ void CvUnit::doTurn()
 
 	if(isGarrision() && (!plot()->isCity() || plot()->getOwnerINLINE()!=getOwnerINLINE()))
 	{
-		setGarrision(false);
-		setAIGroup(NULL);
+		//SpyFanatic: do not ungarrison if they are in fort and gameoption is enabled
+		if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) || plot()->getImprovementType() == NO_IMPROVEMENT || GC.getImprovementInfo(plot()->getImprovementType()).getCulture() <= 0)
+		{
+			setGarrision(false);
+			setAIGroup(NULL);
+		}
 	}
 
 	//added Sephi
@@ -3223,19 +3263,43 @@ void CvUnit::updateCombat(bool bQuick)
             {
                 iChance = 4;
             }
+            /*oosLog("FearEffect","Turn:%d,Player:%d,Unit:%S,X:%d,Y:%d,Fear:%d",GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,GC.getUnitInfo(getUnitType()).getDescription()
+				,getX_INLINE()
+				,getY_INLINE()
+				,iChance
+			);*/
             if (GC.getGameINLINE().getSorenRandNum(40, "Im afeared!") > iChance)
             {
 				bFear=true;
 			}
 		}
 
-		if(getFearEffect()>0)
+		//SpyFanatic: corrected management of fear effect of combat aura, to affect enemy units
+		//if(getFearEffect()>0)
+		if(pDefender->getFearEffect()>0)
 		{
-            int iChance = getFearEffect() - pDefender->getLevel() - GC.getUnitInfo(pDefender->getUnitType()).getTier()*4;
+			//int iChance = getFearEffect() - pDefender->getLevel() - GC.getUnitInfo(pDefender->getUnitType()).getTier()*4;
+            int iChance = pDefender->getFearEffect() - getLevel() - GC.getUnitInfo(getUnitType()).getTier()*4;
             if (iChance < 4)
             {
                 iChance = 4;
             }
+
+			/*oosLog("FearEffect","Turn:%d,Player:%d,Unit:%S,Defender:%S,X:%d,Y:%d,FearEffect:%d,DefenderFearEffect:%d,level:%d,tier:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,GC.getUnitInfo(getUnitType()).getDescription()
+				,GC.getUnitInfo(pDefender->getUnitType()).getDescription()
+				,getX_INLINE()
+				,getY_INLINE()
+				,iChance
+				,pDefender->getFearEffect()
+				,getLevel()
+				,GC.getUnitInfo(getUnitType()).getTier()
+			);*/
+
             if (iChance<GC.getGameINLINE().getSorenRandNum(100, "Im afeared!"))
             {
 				bFear=true;
@@ -3626,8 +3690,12 @@ void CvUnit::updateCombat(bool bQuick)
 				pDefender = NULL;
 
 //FfH Fear: Added by Kael 07/30/2007
-                if (getFear()>=10 && pPlot->isCity() == false)
+				//SpyFanatic: corrected management of fear effect of combat aura, to affect enemy units
+				if ((getFear() >= 10 || getFearEffect() > 0) && pPlot->isCity() == false)
+                //if (getFear()>=10 && pPlot->isCity() == false)
                 {
+					int iChance = getFear()>=10 ? getFear() : getFearEffect();
+
                     CvUnit* pLoopUnit;
                     CLLNode<IDInfo>* pUnitNode;
                     pUnitNode = pPlot->headUnitNode();
@@ -3637,9 +3705,26 @@ void CvUnit::updateCombat(bool bQuick)
                         pUnitNode = pPlot->nextUnitNode(pUnitNode);
                         if (pLoopUnit->isEnemy(getTeam()))
                         {
-                            if (!pLoopUnit->isImmuneToFear())
+                            if (!pLoopUnit->isImmuneToFear() && !pLoopUnit->isGarrision())
                             {
-                                if (GC.getGameINLINE().getSorenRandNum(20, "Im afeared!") <= (getFear()*(baseCombatStr() + 10 - pLoopUnit->baseCombatStr())/100))
+								//if (GC.getGameINLINE().getSorenRandNum(20, "Im afeared!") <= (getFear()*(baseCombatStr() + 10 - pLoopUnit->baseCombatStr())/100))
+
+								/*oosLog("FearEffect","Turn:%d,Player:%d,Unit:%S,X:%d,Y:%d,FearEffect:%d,%d,isCity:%d,Chance:%d,baseCombatStr:%d,defenderbasecombat:%d,result:%d"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,getOwner()
+									,GC.getUnitInfo(getUnitType()).getDescription()
+									,getX_INLINE()
+									,getY_INLINE()
+									,getFear()
+									,getFearEffect()
+									,pPlot->isCity()
+									,iChance
+									,baseCombatStr()
+									,pLoopUnit->baseCombatStr()
+									,iChance * (baseCombatStr() + 10 - pLoopUnit->baseCombatStr())/100
+								);*/
+
+                                if (GC.getGameINLINE().getSorenRandNum(20, "Im afeared!") <= iChance * (baseCombatStr() + 10 - pLoopUnit->baseCombatStr())/100)
                                 {
                                     pLoopUnit->joinGroup(NULL);
                                     pLoopUnit->withdrawlToNearestValidPlot();
@@ -4710,7 +4795,9 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		return false;
 	}
-
+	/*if(!bAttack && pPlot->getX_INLINE() == 6 && pPlot->getY_INLINE() == 16){
+		FAssert(false);
+	}*/
 	if (pPlot->isImpassable())
 	{
 		if (!canMoveImpassable())
@@ -4743,6 +4830,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	CvArea *pPlotArea = pPlot->area();
 	TeamTypes ePlotTeam = pPlot->getTeam();
 	bool bCanEnterArea = canEnterArea(ePlotTeam, pPlotArea);
+
 	if (bCanEnterArea)
 	{
 		if (pPlot->getFeatureType() != NO_FEATURE)
@@ -4795,6 +4883,16 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (!pPlot->isWater() && !canMoveAllTerrain())
 		{
 			if (!pPlot->isFriendlyCity(*this, true) || !pPlot->isCoastalLand())
+			{
+				//SpyFanatic: allow boats to pass through forts if gameoption is enabled, maybe isActsAsCity should have been better... but it can mess with existing MoM code
+				if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) || pPlot->getImprovementType() == NO_IMPROVEMENT || GC.getImprovementInfo(pPlot->getImprovementType()).getCulture() <= 0)
+				{
+					return false;
+				}
+				//return false;
+			}
+			//SpyFanatic: block ship from passing through Austrin Fortified Outpost
+			if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FORTIFIED_DUNGEON"))
 			{
 				return false;
 			}
@@ -6654,6 +6752,22 @@ bool CvUnit::canAirliftAt(const CvPlot* pPlot, int iX, int iY) const
 		return false;
 	}
 
+	// Super Forts begin *airlift*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pTargetPlot->getTeam() != NO_TEAM)
+	{
+		if (pTargetPlot->getTeam() == getTeam() || GET_TEAM(pTargetPlot->getTeam()).isVassal(getTeam()))
+		{
+			if (pTargetPlot->getImprovementType() != NO_IMPROVEMENT)
+			{
+				if (GC.getImprovementInfo(pTargetPlot->getImprovementType()).isActsAsCity())
+				{
+					return true;
+				}
+			}
+		}
+	}
+	// Super Forts end
+
 	pTargetCity = pTargetPlot->getPlotCity();
 
 	if (pTargetCity == NULL)
@@ -7362,6 +7476,40 @@ CvCity* CvUnit::bombardTarget(const CvPlot* pPlot) const
 	return pBestCity;
 }
 
+// Super Forts begin *bombard*
+CvPlot* CvUnit::bombardImprovementTarget(const CvPlot* pPlot) const
+{
+	int iBestValue = MAX_INT;
+	CvPlot* pBestPlot = NULL;
+
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pLoopPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pLoopPlot != NULL)
+		{
+			if (pLoopPlot->isBombardable(this))
+			{
+				int iValue = pLoopPlot->getDefenseDamage();
+
+				// always prefer cities we are at war with
+				if (isEnemy(pLoopPlot->getTeam(), pPlot))
+				{
+					iValue *= 128;
+				}
+
+				if (iValue < iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPlot = pLoopPlot;
+				}
+			}
+		}
+	}
+
+	return pBestPlot;
+}
+// Super Forts end
 
 bool CvUnit::canBombard(const CvPlot* pPlot)
 {
@@ -7455,7 +7603,20 @@ int CvUnit::bombard(const CvPlot* pTarget, bool bCoundDamageOnly)
 			}
 		}
 	}
+	else if(pBombardCity==NULL && GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pTarget->isBombardable(this))
+	{
+		//bombardImprovementTarget ? if (pLoopPlot->isBombardable(this))
+		//pTarget->changeDefenseDamage(bombardRate());
+		iDamageDone = bombardRate();
+		CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_DEFENSES_IN_CITY_REDUCED_TO", GC.getImprovementInfo(pTarget->getImprovementType()).getText(),
+				(GC.getImprovementInfo(pTarget->getImprovementType()).getDefenseModifier()-pTarget->getDefenseDamage()), GET_PLAYER(getOwnerINLINE()).getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(pTarget->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARDED", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pTarget->getX_INLINE(), pTarget->getY_INLINE(), true, true);
 
+		szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_REDUCE_CITY_DEFENSES", getNameKey(), GC.getImprovementInfo(pTarget->getImprovementType()).getText(),
+			(GC.getImprovementInfo(pTarget->getImprovementType()).getDefenseModifier()-pTarget->getDefenseDamage()));
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARD", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pTarget->getX_INLINE(), pTarget->getY_INLINE());
+
+	}
 	//apply Damage to units on plot
 	int iMaxDamage=bombardRate()/10;
 
@@ -8472,7 +8633,13 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	if (pPlot->getImprovementType() != NULL && pPlot->getImprovementType() != NO_IMPROVEMENT) // SayWhatEh Don't let the AI think he can settle on permanent improvements when he cant
 	{
 		if (GC.getImprovementInfo(pPlot->getImprovementType()).isPermanent())
-			return false;
+		{
+			//SpyFanatic: allow destroy of mana shrine, witch hut and ancient tower for human player
+			if(!isHuman() || (pPlot->getImprovementType() != (ImprovementTypes)GC.getIMPROVEMENT_MANA_SHRINE() && pPlot->getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_WITCH_HUT") && pPlot->getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TOWER") && pPlot->getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_LOST_TEMPLE")))
+			{
+				return false;
+			}
+		}
 	}
 //FfH: End Add
 
@@ -9806,7 +9973,18 @@ bool CvUnit::canBuild(CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible) const
 	{
 		return false;
 	}
-
+	/*if(isOOSLogging())
+	{
+		oosLog("AIWorker"
+			,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,canBuild:%S\n"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwner()
+			,getID()
+			,plot()->getX()
+			,plot()->getY()
+			,eBuild!=NO_IMPROVEMENT?GC.getBuildInfo(eBuild).getDescription():L"NO_IMPROVEMENT"
+		);
+	}*/
 	if (!(m_pUnitInfo->getBuilds(eBuild)))
 	{
 		//Allow Adepts to build on MagicNodes
@@ -9847,7 +10025,42 @@ bool CvUnit::canBuild(CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible) const
     {
         if (eBuild == GC.getDefineINT("BUILD_FORT"))
         {
-            return false;
+			return false;
+			/*
+			//SpyFanatic: Allow AI to build fort at choke point
+			if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+			{
+				if(pPlot->getWorkingCity() != NULL)
+				{
+					return false; //Not inside City Plot
+				}
+				int iPlotCanalValue = pPlot->getCanalValue();
+				int iPlotChokeValue = pPlot->getChokeValue();
+				if(iPlotCanalValue == 0 && iPlotChokeValue == 0)
+				{
+					return false; //Not if does not act as canal or choke point
+				}
+				int iUniqueRange = GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).getUniqueRange();
+				for (int iDX = -iUniqueRange; iDX <= iUniqueRange; iDX++)
+				{
+					for (int iDY = -iUniqueRange; iDY <= iUniqueRange; iDY++)
+					{
+						CvPlot *pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
+						if (pLoopPlot != NULL && pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
+						{
+							if (pPlot->getChokeValue() > iPlotChokeValue)
+							{
+								return false; //Not if there is a better Choke point nearby
+							}
+						}
+					}
+				}
+			}
+			else
+			{
+				return false;
+			}
+			*/
         }
     }
 
@@ -9883,6 +10096,7 @@ bool CvUnit::canBuild(CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible) const
 /*************************************************************************************************/
 /**	END                                                                  						**/
 /*************************************************************************************************/
+
 
 	return true;
 }
@@ -9923,6 +10137,33 @@ bool CvUnit::build(BuildTypes eBuild)
 
 	if (bFinished)
 	{
+		/*if(isOOSLogging())
+		{
+			oosLog("AIWorker"
+				,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,Build:%S,Value:%d,Plot:%S\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,plot()->getX()
+				,plot()->getY()
+				,GC.getBuildInfo(eBuild).getImprovement()!=NO_IMPROVEMENT?GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).getDescription():L"NO_IMPROVEMENT"
+				,plot()->getWorkingCity()!=NULL?static_cast<CvCityAI*>(plot()->getWorkingCity())->AI_PlotBuildValue(eBuild,plot()):-100
+				,plot()->getBonusType()!=NO_BONUS?GC.getBonusInfo(plot()->getBonusType()).getDescription():L"NO_BONUS"
+			);
+		}*/
+		// Super Forts begin *culture*
+		if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+		{
+			if(GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).getCulture() > 0 /*isActsAsCity()*/)
+			{
+				if(plot()->getOwner() == NO_PLAYER/* && getOwnerINLINE() < BARBARIAN_PLAYER*/)
+				{
+					plot()->setOwner(getOwnerINLINE(),true,true);
+				}
+			}
+		}
+		// Super Forts end
+
 		if (GC.getBuildInfo(eBuild).isKill())
 		{
 			kill(true);
@@ -13509,6 +13750,31 @@ bool CvUnit::canJoinGroup(const CvPlot* pPlot, CvSelectionGroup* pSelectionGroup
 
 void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, bool bRejoin)
 {
+	/*TCHAR szSelectionList[2048];
+	sprintf(szSelectionList,"");
+	CLLNode<int>* pSelectionGroupNode = GET_PLAYER(getOwnerINLINE()).headGroupCycleNode();
+	while (pSelectionGroupNode != NULL)
+	{
+		sprintf(szSelectionList,"%s,%d",szSelectionList,pSelectionGroupNode->m_data);
+		pSelectionGroupNode = GET_PLAYER(getOwnerINLINE()).nextGroupCycleNode(pSelectionGroupNode);
+	}
+	//FAssert(getID() != 786448);
+	oosLog("AISelectionGroup"
+		,"Turn:%d,Player:%d,UnitID:%d,X:%d,Y:%d,GroupID:%d,SelectionGroupID:%d,X:%d,Y:%d,Count:%d,Flags:%d %d,joinGroup:%s\n"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,getOwner()
+		,getID()
+		,getX()
+		,getY()
+		,getGroupID()
+		,pSelectionGroup != NULL ? pSelectionGroup->getID() : 0
+		,pSelectionGroup != NULL ? pSelectionGroup->getX() : 0
+		,pSelectionGroup != NULL ? pSelectionGroup->getY() : 0
+		,pSelectionGroup != NULL ? pSelectionGroup->getNumUnits() : 0//,getNumSelectionGroups()
+		,bRemoveSelected
+		,bRejoin
+		,szSelectionList
+	);*/
 	CvSelectionGroup* pOldSelectionGroup;
 	CvSelectionGroup* pNewSelectionGroup;
 	CvPlot* pPlot;
@@ -13604,7 +13870,18 @@ void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, 
 			{
 				m_iGroupID = FFreeList::INVALID_INDEX;
 			}
-
+			/*if(isOOSLogging())
+			{ //PS: this is group, not AIGroup
+				oosLog("AIGroup"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,UnitID:%d,joinGroup:%d,pOldSelectionGroup:%d\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getGroup() != NULL ? getGroup()->getID() : 0
+					,getID()
+					,m_iGroupID
+					,pOldSelectionGroup != NULL ? pOldSelectionGroup->getID() : 0
+				);
+			}*/
 			if (getGroup() != NULL)
 			{
 				if (getGroup()->getNumUnits() > 1)
@@ -13717,17 +13994,25 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	}*/
 	if(isOOSLogging())
 	{
+		CvPlot* pNewLogPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+		CvPlot* pOldLogPlot = plot();
 		oosLog("AIsetXY"
-		,"Turn: %d,Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,getID()
-		,GET_PLAYER(getOwnerINLINE()).getNameKey()
-		,getName().GetCString()
-		,getX_INLINE()
-		,getY_INLINE()
-		,iX
-		,iY
+			,"Turn:%d,PlayerID:%d,Unit:%d,Name:%S,Power:%d,GroupID:%d,AIGroupID:%d,AIGroupType:%S,AIUnitType:%S,fromArea:%d,X:%d,Y:%d,toArea:%d,X:%d,toY:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,getName().GetCString()
+			,getPower()
+			,getGroupID()
+			,getAIGroup()!=NULL ? getAIGroup()->getID() : -1
+			,getAIGroup()!=NULL ? GC.getAIGroupInfo(getAIGroup()->getGroupType()).getDescription() : L""
+			,AI_getUnitAIType() != NO_UNITAI ? GC.getUnitAIInfo(AI_getUnitAIType()).getDescription() : L""
+			,pOldLogPlot != NULL && pOldLogPlot->area() != NULL ? pOldLogPlot->area()->getID() : -MAX_INT
+			,getX_INLINE()
+			,getY_INLINE()
+			,pNewLogPlot != NULL && pNewLogPlot->area() != NULL ? pNewLogPlot->area()->getID() : -MAX_INT
+			,iX
+			,iY
 		);
 	}
 
@@ -13903,6 +14188,19 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 //			GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(-1);
             if (getDuration() == 0 && GC.getUnitInfo((UnitTypes)getUnitType()).isCitySupportNeeded())
             {
+				/*if(isOOSLogging())
+				{
+					oosLog("OutSideUnit"
+						,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numOutsideUnits:%d,setXY:-1"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwnerINLINE()
+						,getID()
+						,getName().GetCString()
+						,pOldPlot->getX_INLINE()
+						,pOldPlot->getY_INLINE()
+						,GET_PLAYER(getOwnerINLINE()).getNumOutsideUnits()
+					);
+				}*/
                 GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(-1);
             }
 //FfH: End Modify
@@ -14002,6 +14300,32 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 			}
 		}
 
+		// Super Forts begin *culture* *text*
+		ImprovementTypes eImprovement = pNewPlot->getImprovementType();
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && eImprovement != NO_IMPROVEMENT)
+		{
+			if(GC.getImprovementInfo(eImprovement).getCulture() > 0 /*isActsAsCity()*/ && !isNoCapture())
+			{
+				if(pNewPlot->getOwner() != NO_PLAYER)
+				{
+					if(isEnemy(pNewPlot->getTeam()) && !canCoexistWithEnemyUnit(pNewPlot->getTeam()) && canFight())
+					{
+						CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_CAPTURED_BY", GC.getImprovementInfo(eImprovement).getText(), GET_PLAYER(getOwnerINLINE()).getCivilizationDescriptionKey());
+						gDLL->getInterfaceIFace()->addMessage(pNewPlot->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, GC.getImprovementInfo(eImprovement).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE(), true, true);
+						pNewPlot->setOwner(getOwnerINLINE(),true,true);
+					}
+				}
+				else
+				{
+					//if(getOwnerINLINE() < BARBARIAN_PLAYER)
+					{
+						pNewPlot->setOwner(getOwnerINLINE(),true,true);
+					}
+				}
+			}
+		}
+		// Super Forts end
+
 		//update facing direction
 		if(pOldPlot != NULL)
 		{
@@ -14045,6 +14369,19 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 //			GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(1);
             if (getDuration() == 0 && GC.getUnitInfo((UnitTypes)getUnitType()).isCitySupportNeeded())
             {
+				/*if(isOOSLogging())
+				{
+					oosLog("OutSideUnit"
+						,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numoutsideunits:%d,setXY:1"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwnerINLINE()
+						,getID()
+						,getName().GetCString()
+						,pNewPlot->getX_INLINE()
+						,pNewPlot->getY_INLINE()
+						,GET_PLAYER(getOwnerINLINE()).getNumOutsideUnits()
+					);
+				}*/
                 GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(1);
             }
 //FfH: End Modify
@@ -15636,6 +15973,8 @@ void CvUnit::setPromotionReady(bool bNewValue)
 void CvUnit::testPromotionReady()
 {
 	setPromotionReady((getExperience() >= experienceNeeded()) && canAcquirePromotionAny());
+	//SpyFanatic: count also free promotion
+	//setPromotionReady((getExperience() >= experienceNeeded() || (getFreePromotionPick() > 0 && getLevel()>3)) && canAcquirePromotionAny());
 }
 
 
@@ -15656,12 +15995,12 @@ bool CvUnit::doDelayedDeath()
 {
 	if (m_bDeathDelay && !isFighting())
 	{
-		oosLog(
+		/*oosLog(
 			"AIsetXY"
 			,"UnitID: %d,doDelayedDeath"
 			,getID()
 
-		);
+		);*/
 		kill(false);
 		return true;
 	}
@@ -17890,7 +18229,6 @@ bool CvUnit::canCast(int spell, bool bTestVisible, CvPlot* targetPlot)
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/
-
 	if (!CvString(GC.getSpellInfo(eSpell).getPyRequirement()).empty())
     {
         CyUnit* pyUnit = new CyUnit(this);
@@ -19801,6 +20139,19 @@ void CvUnit::castCreateUnit(int spell)
         pUnit->changeDuration(2);
         if (plot()->getTeam() != getTeam() && pUnit->getUnitInfo().isCitySupportNeeded())
         {
+			/*if(isOOSLogging())
+			{
+				oosLog("OutSideUnit"
+					,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numOutsideUnits:%d,castCreateUnit:-1"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,getName().GetCString()
+					,plot()->getX_INLINE()
+					,plot()->getY_INLINE()
+					,GET_PLAYER(getOwnerINLINE()).getNumOutsideUnits()
+				);
+			}*/
             GET_PLAYER(getOwnerINLINE()).changeNumOutsideUnits(-1);
         }
    	}
@@ -21289,12 +21640,96 @@ int CvUnit::getSpellDefenderValue(CvUnit* pLoopUnit, CvPlot * pTargetplot, int i
 	return iValue;
 }
 
+bool CvUnit::isImmortalRebirthDestinationExisting()
+{
+	return getImmortalRebirthDestination() != NULL;
+}
+CvCity* CvUnit::getImmortalRebirthDestination()
+{
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+    if (kPlayer.getCapitalCity() != NULL)
+    {
+		int iSpawnX = kPlayer.getCapitalCity()->getX();
+		int iSpawnY = kPlayer.getCapitalCity()->getY();
+		//SpyFanatic: if the unit die due to capital city being conquered...
+		if(at(iSpawnX, iSpawnY))
+		{
+			CvPlot* pPlot;
+			pPlot = plot();
+			if(pPlot != NULL)
+			{
+				CvUnit* pLoopUnit;
+				CLLNode<IDInfo>* pUnitNode;
+				CvCity* pBestCity = NULL;
+				bool bCapitalWillBeRazed = true;
+
+				pUnitNode = pPlot->headUnitNode();
+				while (pUnitNode != NULL)
+				{
+					pLoopUnit = ::getUnit(pUnitNode->m_data);
+					if(pLoopUnit->getTeam() != getTeam() && atWar(pLoopUnit->getTeam(),getTeam()))
+					{
+						bCapitalWillBeRazed = true;
+						//Not sure if actually the enemy unit has already 'moved' inside the city
+						break;
+					}
+					else if(pLoopUnit->getTeam() == getTeam() && pLoopUnit->getID() != getID() && pLoopUnit->canDefend())
+					{
+						bCapitalWillBeRazed = false;
+						//If there is at least one other unit who can defend, then you can do rebirth here
+					}
+					pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				}
+				if(bCapitalWillBeRazed)
+				{
+					//capital has been conquered... immmortal rebirth cannot happen in this plot! Normally new capital will be find using CvPlayer::findNewCapital
+					pBestCity = kPlayer.getNewCityCapital();
+					if(pBestCity != NULL)
+					{
+						//rebirth in what will be the new capital
+						return pBestCity;
+					}
+					else
+					{
+						//there will be no new capital as current one will get razed
+						return NULL;
+					}
+				}
+			}
+		}
+		else
+		{
+			//rebirth in capital
+			return kPlayer.getCapitalCity();
+		}
+	}
+	//No city, no rebirth
+	return NULL;
+}
 void CvUnit::doEscape()
 {
-    if (GET_PLAYER(getOwnerINLINE()).getCapitalCity() != NULL)
-    {
-        setXY(GET_PLAYER(getOwnerINLINE()).getCapitalCity()->getX(), GET_PLAYER(getOwnerINLINE()).getCapitalCity()->getY(), false, true, true);
-    }
+	CvCity* pCapitalCity = getImmortalRebirthDestination();
+	if(pCapitalCity != NULL)
+	{
+		/*if(isOOSLogging())
+		{
+			oosLog("AIsetXY"
+				,"Turn:%d,PlayerID:%d,Unit:%d,Name:%S,GroupID:%d,AIGroupID:%d,AIGroupType:%S,fromX:%d,fromY:%d,toX:%d,toY:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,getName().GetCString()
+				,getGroupID()
+				,getAIGroup()!=NULL ? getAIGroup()->getID() : -1
+				,getAIGroup()!=NULL ? GC.getAIGroupInfo(getAIGroup()->getGroupType()).getDescription() : L""
+				,getX_INLINE()
+				,getY_INLINE()
+				,pCapitalCity->getX()
+				,pCapitalCity->getY()
+			);
+		}*/
+		setXY(pCapitalCity->getX(), pCapitalCity->getY(), false, true, true);
+	}
 }
 
 void CvUnit::doImmortalRebirth()
@@ -21319,6 +21754,32 @@ void CvUnit::doImmortalRebirth()
         changeImmortal(-1);
 	}
     doEscape();
+
+	//SpyFanatic: manage combat auras
+	/*if(isOOSLogging())
+	{
+		oosLog(
+			"CombatAura"
+			,"Turn:%d,Player:%d,UnitID:%d,getBlessing1:%d,getBlessing2:%d,getCurse1:%d,getCurse2:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,(getBlessing1()!=NULL)
+			,(getBlessing2()!=NULL)
+			,(getCurse1()!=NULL)
+			,(getCurse2()!=NULL)
+		);
+	}
+	if(getBlessing1()!=NULL)
+		getBlessing1()->Remove(this);
+	if(getBlessing2()!=NULL)
+		getBlessing2()->Remove(this);
+	if(getCurse1()!=NULL)
+		getCurse1()->Remove(this);
+	if(getCurse2()!=NULL)
+		getCurse2()->Remove(this);
+	setCombatAuraType(NO_COMBATAURA);
+*/
 /*************************************************************************************************/
 /**	BETTER AI (Immortal Units heal) Sephi                                      					**/
 /**																								**/
@@ -24018,7 +24479,12 @@ bool CvUnit::canGarrision() const
 
 	if(!plot()->isCity())
 	{
-		return false;
+		//SpyFanatic: allow units to garrison into forts
+		if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) || plot()->getImprovementType() == NO_IMPROVEMENT || GC.getImprovementInfo(plot()->getImprovementType()).getCulture() <= 0)
+		{
+			return false;
+		}
+		//return false;
 	}
 
     CvUnit* pLoopUnit;
@@ -24813,12 +25279,9 @@ void CvUnit::updatePower()
 			// Add configured XML value to power modifier
 			iModifier += kPromotion.getPowerModifier();
 
-			/*
-			 * Special case 1:
-			 *
-			 * Any changes to attack, defense, moves or damage type combat are
-			 * added directly to the power rating
-			 */
+			//Special case 1:
+			//Any changes to attack, defense, moves or damage type combat are
+			//added directly to the power rating
 
 			iPower += kPromotion.getExtraCombatStr();
 			iPower += kPromotion.getExtraCombatDefense();
@@ -24831,11 +25294,8 @@ void CvUnit::updatePower()
 				iPower += kPromotion.getDamageTypeCombat(iJ) * 2;
 			}
 
-			/*
-             * Special case 2:
-			 *
-			 * This ability relies on current Armageddon Counter value
-			 */
+            //Special case 2:
+			//This ability relies on current Armageddon Counter value
 
 			int iCounterModifier = kPromotion.getCombatPercentGlobalCounter();
 
@@ -24849,9 +25309,15 @@ void CvUnit::updatePower()
 
 	// Number can get big here (see declaration of iPower above)
 	iPower *= iModifier;
+	//long double iPowerPrePowl = iPower;
+	//iPower = powl(iPower,1.4); //SpyFanatic: Different results between wine and windows
+	iPower = iPower * iPower;
 
-	iPower = powl(iPower,1.4);
-	iPower /= 40;
+	//long double iPowerPostPowl = iPower;
+	//iPower /= 40; //SpyFanatic: Different results between wine and windows
+	iPower = ((int)iPower)/10000;
+	//long double iPowerPostPowl40 = iPower;
+
 
 	int iMod=1+getExtraLives();
 	if(isHasSecondChance())
@@ -24860,17 +25326,47 @@ void CvUnit::updatePower()
 	}
 
 	iPower*=iMod;
+	//long double iPowerPostPowlMod = iPower;
 
 	// Calculated power value cannot be below zero
 //	iPower = std::max(iPower, (long long)0);
     iPower = std::max(iPower, (long double)0);
 
 	// Ignore Garrisons
-	if (isGarrision())
+	if (!isGarrision())
 	{
-		iPower/=3;
+		iPower*=3;
 	}
 
+	//if (isGarrision())
+	//{
+	//	iPower/=3; //SpyFanatic: Different results between wine and windows
+	//}
+//TODO: check if > MAX_INT ???
+
+	/*if(isOOSLogging())
+	{
+		if (m_iPower != iPower)
+		{
+			oosLog("AIPower"
+				,"Turn:%d,Player:%d,Unit:%d,m_iPower:%d,iPower[size %d]:%Lf,iPowerPrePowl:%Lf,iPowerPostPowl:%Lf,iPowerPostPowl40:%Lf,iPowerPostPowlMod:%Lf,iModifier:%d,isGarrision:%d,iMod:%d,floor_iPower:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,m_iPower
+				,sizeof(double)
+				,iPower
+				,iPowerPrePowl
+				,iPowerPostPowl
+				,iPowerPostPowl40
+				,iPowerPostPowlMod
+				,iModifier
+				,isGarrision()
+				,iMod
+				,(int)std::floor(iPower)
+			);
+		}
+	}*/
 	// Update player and area power ratings to reflect new value
 	if (m_iPower != iPower)
 	{
@@ -24917,7 +25413,16 @@ void CvUnit::setAIGroup(CvAIGroup* pNewGroup)
 			m_iAIGroupID=pNewGroup->getID();
 			pNewGroup->addUnit(this);
 		}
-
+		/*if(isOOSLogging() && m_iAIGroupID != -1)
+		{
+			oosLog("AIGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,setAIGroup,UnitID:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,m_iAIGroupID
+				,getID()
+			);
+		}*/
 		if(!isDelayedDeath() && getGroup() && getGroup()->getNumUnits()>1)
 		{
 			joinGroup(NULL);
@@ -25057,6 +25562,17 @@ void CvUnit::setCombatAuraType(int iNewValue)
 		{
 			if(getCombatAura())
 			{
+				/*if(isOOSLogging())
+				{
+					oosLog(
+						"CombatAura"
+						,"Turn:%d,Player:%d,UnitID:%d,Kill:%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwner()
+						,getID()
+						,getCombatAuraType()
+					);
+				}*/
 				getCombatAura()->kill();
 			}
 		}

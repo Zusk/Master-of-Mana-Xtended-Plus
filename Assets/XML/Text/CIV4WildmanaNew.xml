@@ -5133,11 +5133,11 @@ Sly and treacherous, no quarter should be expected from those that count Volanna
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_GLOBAL_DISJUNCTION</Tag>
-		<English>[ICON_BULLET]Chance to Dispel hostile Global Enchantments</English>
-		<French>[ICON_BULLET]Chance to Dispel hostile Global Enchantments</French>
-		<German>[ICON_BULLET]Chance to Dispel hostile Global Enchantments</German>
-		<Italian>[ICON_BULLET]Chance to Dispel hostile Global Enchantments</Italian>
-		<Spanish>[ICON_BULLET]Chance to Dispel hostile Global Enchantments</Spanish>
+		<English>[ICON_BULLET]%D1%% Chance to Dispel hostile Global Enchantments</English>
+		<French>[ICON_BULLET]%D1%% Chance to Dispel hostile Global Enchantments</French>
+		<German>[ICON_BULLET]%D1%% Chance to Dispel hostile Global Enchantments</German>
+		<Italian>[ICON_BULLET]%D1%% Chance to Dispel hostile Global Enchantments</Italian>
+		<Spanish>[ICON_BULLET]%D1%% Chance to Dispel hostile Global Enchantments</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_GLOBAL_DOUBLECOST_OTHER_MANASCHOOL</Tag>
@@ -10914,11 +10914,11 @@ Sly and treacherous, no quarter should be expected from those that count Volanna
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FOOD_PER_POPULATION_HELP</Tag>
-        <English>[ICON_BULLET]Population consumes %d1 [ICON_FOOD]</English>
-        <French>[ICON_BULLET]Population consumes %d1 [ICON_FOOD]</French>
-        <German>[ICON_BULLET]Population consumes %d1 [ICON_FOOD]</German>
-        <Italian>[ICON_BULLET]Population consumes %d1 [ICON_FOOD]</Italian>
-        <Spanish>[ICON_BULLET]Population consumes %d1 [ICON_FOOD]</Spanish>
+        <English>[ICON_BULLET]Population consumes %D1 [ICON_FOOD]</English>
+        <French>[ICON_BULLET]Population consumes %D1 [ICON_FOOD]</French>
+        <German>[ICON_BULLET]Population consumes %D1 [ICON_FOOD]</German>
+        <Italian>[ICON_BULLET]Population consumes %D1 [ICON_FOOD]</Italian>
+        <Spanish>[ICON_BULLET]Population consumes %D1 [ICON_FOOD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TECH_FREE_UNITCLASS</Tag>
@@ -12098,11 +12098,11 @@ Sly and treacherous, no quarter should be expected from those that count Volanna
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
-        <English>Fill me</English>
-        <French>Fill me</French>
-        <German>Fill me</German>
-        <Italian>Fill me</Italian>
-        <Spanish>Fill me</Spanish>
+        <English>Improves Chance to find a Resource in the Plot</English>
+        <French>Improves Chance to find a Resource in the Plot</French>
+        <German>Improves Chance to find a Resource in the Plot</German>
+        <Italian>Improves Chance to find a Resource in the Plot</Italian>
+        <Spanish>Improves Chance to find a Resource in the Plot</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROJECT_GLOBAL_WALL_OF_FORCE_PEDIA</Tag>
@@ -12202,11 +12202,11 @@ Sly and treacherous, no quarter should be expected from those that count Volanna
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROJECT_EVERGROW_STRATEGY</Tag>
-        <English>Fill me</English>
-        <French>Fill me</French>
-        <German>Fill me</German>
-        <Italian>Fill me</Italian>
-        <Spanish>Fill me</Spanish>
+        <English>Improves by 50% the Base Chance to find a Food Resources, Plantation Resources and Wine, Timber, Deer, Ivory, Fur Resources in your Empire.</English>
+        <French>Improves by 50% the Base Chance to find a Food Resources, Plantation Resources and Wine, Timber, Deer, Ivory, Fur Resources in your Empire.</French>
+        <German>Improves by 50% the Base Chance to find a Food Resources, Plantation Resources and Wine, Timber, Deer, Ivory, Fur Resources in your Empire.</German>
+        <Italian>Improves by 50% the Base Chance to find a Food Resources, Plantation Resources and Wine, Timber, Deer, Ivory, Fur Resources in your Empire.</Italian>
+        <Spanish>Improves by 50% the Base Chance to find a Food Resources, Plantation Resources and Wine, Timber, Deer, Ivory, Fur Resources in your Empire.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPELL_SUMMON_TREANT_PEDIA</Tag>
@@ -12626,10 +12626,142 @@ Sly and treacherous, no quarter should be expected from those that count Volanna
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_TIER_PEDIA</Tag>
-        <English>Tier: %d1</English>
-        <French>Tier: %d1</French>
-        <German>Tier: %d1</German>
-        <Italian>Tier: %d1</Italian>
-        <Spanish>Tier: %d1</Spanish>
+        <English>[ICON_BULLET]Tier: %d1</English>
+        <French>[ICON_BULLET]Tier: %d1</French>
+        <German>[ICON_BULLET]Tier: %d1</German>
+        <Italian>[ICON_BULLET]Tier: %d1</Italian>
+        <Spanish>[ICON_BULLET]Tier: %d1</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_LEVEL</Tag>
+        <English>[ICON_BULLET]Level: %d1</English>
+        <French>[ICON_BULLET]Level: %d1</French>
+        <German>[ICON_BULLET]Level: %d1</German>
+        <Italian>[ICON_BULLET]Level: %d1</Italian>
+        <Spanish>[ICON_BULLET]Level: %d1</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_FREEPROMOTION</Tag>
+        <English>[ICON_BULLET]Free Promotion: %d1</English>
+        <French>[ICON_BULLET]Free Promotion: %d1</French>
+        <German>[ICON_BULLET]Free Promotion: %d1</German>
+        <Italian>[ICON_BULLET]Free Promotion: %d1</Italian>
+        <Spanish>[ICON_BULLET]Free Promotion: %d1</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_CIVICS_PRIVILEGED_CLASS</Tag>
+         <English>[COLOR_GREEN]Privileged Class[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Privileged Class[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Privileged Class[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Privileged Class[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Privileged Class[COLOR_REVERT]</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_CIVICS_VIRTUES</Tag>
+        <English>[COLOR_GREEN]Virtues[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Virtues[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Virtues[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Virtues[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Virtues[COLOR_REVERT]</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_CIVICS_RELIGION</Tag>
+        <English>[COLOR_GREEN]Religion[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Religion[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Religion[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Religion[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Religion[COLOR_REVERT]</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_CIVICS_MEMBERSHIP</Tag>
+        <English>[COLOR_GREEN]Membership[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Membership[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Membership[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Membership[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Membership[COLOR_REVERT]</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_CIVICS_SPECIAL</Tag>
+        <English>[COLOR_GREEN]Special[COLOR_REVERT]</English>
+        <French>[COLOR_GREEN]Special[COLOR_REVERT]</French>
+        <German>[COLOR_GREEN]Special[COLOR_REVERT]</German>
+        <Italian>[COLOR_GREEN]Special[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Special[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SPELL_HIRE_UNITS_PEDIA</Tag>
+        <English>Will allow to hire the following units:
+[ICON_BULLET]Wildling
+[ICON_BULLET]Goblin Archer, Savage or Catapult(Requires Warfare)
+[ICON_BULLET]Medic (Requires Trade)
+[ICON_BULLET]Assassin, Arquebus or Berserker (Requires Wealth of Empires)</English>
+        <French>Will allow to hire the following units:
+[ICON_BULLET]Wildling
+[ICON_BULLET]Goblin Archer, Savage or Catapult(Requires Warfare)
+[ICON_BULLET]Medic (Requires Trade)
+[ICON_BULLET]Assassin, Arquebus or Berserker (Requires Wealth of Empires)</French>
+        <German>Will allow to hire the following units:
+[ICON_BULLET]Wildling
+[ICON_BULLET]Goblin Archer, Savage or Catapult(Requires Warfare)
+[ICON_BULLET]Medic (Requires Trade)
+[ICON_BULLET]Assassin, Arquebus or Berserker (Requires Wealth of Empires)</German>
+        <Italian>Will allow to hire the following units:
+[ICON_BULLET]Wildling
+[ICON_BULLET]Goblin Archer, Savage or Catapult(Requires Warfare)
+[ICON_BULLET]Medic (Requires Trade)
+[ICON_BULLET]Assassin, Arquebus or Berserker (Requires Wealth of Empires)</Italian>
+        <Spanish>Will allow to hire the following units:
+[ICON_BULLET]Wildling
+[ICON_BULLET]Goblin Archer, Savage or Catapult(Requires Warfare)
+[ICON_BULLET]Medic (Requires Trade)
+[ICON_BULLET]Assassin, Arquebus or Berserker (Requires Wealth of Empires)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_ARID_PEDIA</Tag>
+        <English>Improves by 40% the Base Chance to find a Mineral and Wine Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_HUMID]Humid Realm[\LINK] is active.</English>
+        <French>Improves by 40% the Base Chance to find a Mineral and Wine Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_HUMID]Humid Realm[\LINK] is active.</French>
+        <German>Improves by 40% the Base Chance to find a Mineral and Wine Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_HUMID]Humid Realm[\LINK] is active.</German>
+        <Italian>Improves by 40% the Base Chance to find a Mineral and Wine Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_HUMID]Humid Realm[\LINK] is active.</Italian>
+        <Spanish>Improves by 40% the Base Chance to find a Mineral and Wine Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_HUMID]Humid Realm[\LINK] is active.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROJECT_HUMID_PEDIA</Tag>
+        <English>Improves by 40% the Base Chance to find a Food and Wine, Timber, Deer, Ivory, Fur Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_ARID]Aird Realm[\LINK] is active.</English>
+        <French>Improves by 40% the Base Chance to find a Food and Wine, Timber, Deer, Ivory, Fur Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_ARID]Aird Realm[\LINK] is active.</French>
+        <German>Improves by 40% the Base Chance to find a Food and Wine, Timber, Deer, Ivory, Fur Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_ARID]Aird Realm[\LINK] is active.</German>
+        <Italian>Improves by 40% the Base Chance to find a Food and Wine, Timber, Deer, Ivory, Fur Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_ARID]Aird Realm[\LINK] is active.</Italian>
+        <Spanish>Improves by 40% the Base Chance to find a Food and Wine, Timber, Deer, Ivory, Fur Resources in your Empire and by 20% Plantation resources if also [LINK=PROJECT_GLOBAL_CLIMATE_ARID]Aird Realm[\LINK] is active.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURE_FROZEN_EPIC1</Tag>
+        <English>TARANIS ASCENDED</English>
+        <French>TARANIS ASCENDED</French>
+        <German>TARANIS ASCENDED</German>
+        <Italian>TARANIS ASCENDED</Italian>
+        <Spanish>TARANIS ASCENDED</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_TERRAIN_BONUS</Tag>
+        <English>Bonus</English>
+        <French>Bonus</French>
+        <German>Bonus</German>
+        <Italian>Bonus</Italian>
+        <Spanish>Bonus</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PEDIA_TERRAIN_FEATURE</Tag>
+        <English>Features</English>
+        <French>Features</French>
+        <German>Features</German>
+        <Italian>Features</Italian>
+        <Spanish>Features</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROJECT_WANING_PEDIA</Tag>
+        <English>Needs to gather a total of 10 * (number of cities +1 ) from existing units to summon a shade. Only units with 20 experience can provide experience to the pool. Each unit can only provide 5 XP to the pool.</English>
+        <French>Needs to gather a total of 10 * (number of cities +1 ) from existing units to summon a shade. Only units with 20 experience can provide experience to the pool. Each unit can only provide 5 XP to the pool.</French>
+        <German>Needs to gather a total of 10 * (number of cities +1 ) from existing units to summon a shade. Only units with 20 experience can provide experience to the pool. Each unit can only provide 5 XP to the pool.</German>
+        <Italian>Needs to gather a total of 10 * (number of cities +1 ) from existing units to summon a shade. Only units with 20 experience can provide experience to the pool. Each unit can only provide 5 XP to the pool.</Italian>
+        <Spanish>Needs to gather a total of 10 * (number of cities +1 ) from existing units to summon a shade. Only units with 20 experience can provide experience to the pool. Each unit can only provide 5 XP to the pool.</Spanish>
     </TEXT>
 </Civ4GameText>

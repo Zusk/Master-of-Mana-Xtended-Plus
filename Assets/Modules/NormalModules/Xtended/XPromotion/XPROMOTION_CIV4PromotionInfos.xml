@@ -389,6 +389,32 @@
             <TerrainType>TERRAIN_SHALLOWS</TerrainType>
             <bTerrainDoubleMove>1</bTerrainDoubleMove>
           </TerrainDoubleMove>
+          <!--
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_DARK_MUSHGROUND</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_GRASS_FERTILE</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_NEVER_NEVER</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_MUSHGROUND</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_SWAMP</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          <TerrainDoubleMove>
+            <TerrainType>TERRAIN_WASTELAND</TerrainType>
+            <bTerrainDoubleMove>1</bTerrainDoubleMove>
+          </TerrainDoubleMove>
+          -->
         </TerrainDoubleMoves>
         <DamageTypeResists>
         </DamageTypeResists>

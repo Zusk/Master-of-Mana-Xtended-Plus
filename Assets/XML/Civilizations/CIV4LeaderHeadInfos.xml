@@ -54,6 +54,7 @@
             <iVassalPowerModifier>0</iVassalPowerModifier>
             <iFreedomAppreciation>0</iFreedomAppreciation>
             <FavoriteCivic>NONE</FavoriteCivic>
+            <HatedCivic>CIVIC_UNDERCOUNCIL</HatedCivic>
             <FavoriteReligion>NONE</FavoriteReligion>
             <Traits>
                  <Trait>

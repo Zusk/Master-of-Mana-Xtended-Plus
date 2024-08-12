@@ -160,6 +160,8 @@ bool CvSelectionGroupAI::AI_update()
 	FAssert(!(GET_PLAYER(getOwnerINLINE()).isAutoMoves()));
 
 	int iTempHack = 0; // XXX
+	//bool bCanGroupAttack = true;	//SpyFanatic: take into account that maybe a unit cannot attack (e.g. great bard)
+
 
 	bDead = false;
 
@@ -212,7 +214,7 @@ bool CvSelectionGroupAI::AI_update()
 			CvUnit* pHeadUnit = getHeadUnit();
 			if (NULL != pHeadUnit)
 			{
-				if (GC.getLogging())
+				/*if (GC.getLogging())
 				{
 					TCHAR szOut[1024];
 					CvWString szTempString;
@@ -220,13 +222,46 @@ bool CvSelectionGroupAI::AI_update()
 					sprintf(szOut, "Unit stuck in loop: %S(%S)[%d, %d] (%S)\n", pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 						pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), szTempString.GetCString());
 					gDLL->messageControlLog(szOut);
+				}*/
+				if(isOOSLogging())
+				{
+					oosLog("AISelectionGroup","Turn:%d,Player:%d,UnitID:%d,GroupID:%d,Units:%d,X:%d,Y:%d,canAttack:%d,GroupAttack:%d,X:%d,Y:%d,alreadyFighting:%d,UnitStuckInLoop"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,pHeadUnit->getOwnerINLINE()
+						,pHeadUnit->getID()
+						,getID()
+						,getNumUnits()
+						,pHeadUnit->getX_INLINE()
+						,pHeadUnit->getY_INLINE()
+						,pHeadUnit->canAttack()
+						,m_bGroupAttack
+						,m_iGroupAttackX
+						,m_iGroupAttackY
+						,bFailedAlreadyFighting
+					);
 				}
-
 				pHeadUnit->finishMoves();
 			}
 			break;
 		}
-
+		/*if(isOOSLogging())
+		{
+			CvUnit* pHeadUnit = getHeadUnit();
+			oosLog("AISelectionGroup","Turn:%d,Player:%d,UnitID:%d,GroupID:%d,Units:%d,X:%d,Y:%d,canAttack:%d,GroupAttack:%d,X:%d,Y:%d,alreadyFighting:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,pHeadUnit->getOwnerINLINE()
+				,pHeadUnit->getID()
+				,getID()
+				,getNumUnits()
+				,pHeadUnit->getX_INLINE()
+				,pHeadUnit->getY_INLINE()
+				,pHeadUnit->canAttack()
+				,m_bGroupAttack
+				,m_iGroupAttackX
+				,m_iGroupAttackY
+				,bFailedAlreadyFighting
+			);
+		}*/
 		// if we want to force the group to attack, force another attack
 		if (m_bGroupAttack)
 		{
@@ -246,12 +281,29 @@ bool CvSelectionGroupAI::AI_update()
 
 			resetPath();
 
+			/*if(isOOSLogging())
+			{
+				oosLog("AIWorker"
+					,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,AI_update\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,pHeadUnit->getOwnerINLINE()
+					,pHeadUnit->getID()
+					,pHeadUnit->plot()->getX()
+					,pHeadUnit->plot()->getY()
+
+				);
+			}*/
+
 			if (pHeadUnit->AI_update())
 			{
 				// AI_update returns true when we should abort the loop and wait until next slice
 				break;
 			}
-
+			//SpyFanatic: If there is only one unit in the group which cannot attack, exit the loop. E.g. for Great Bard pHeadUnit->AI_update() is not returning true...
+			if (!m_bGroupAttack && getNumUnits() == 1 && !pHeadUnit->canAttack())
+			{
+				break;
+			}
 		}
 
 		if (doDelayedDeath())
@@ -1136,6 +1188,43 @@ int CvSelectionGroup::getBombardTurns(CvCity* pCity)
 		iBombardTurns *= 100;
 		iBombardTurns /= std::max(25, (100 - pCity->getBuildingBombardDefense()));
 	}
+	iBombardTurns /= std::max(8, iTotalBombardRate);
+
+	// added Sephi
+	if (iTotalBombardRate==0)
+	{
+		return -1;
+	}
+
+	return iBombardTurns;
+}
+//
+// Approximate how many turns this group would take to reduce pPlot's defense modifier to zero
+//
+int CvSelectionGroup::getBombardTurns(CvPlot* pPlot)
+{
+	PROFILE_FUNC();
+
+	if(pPlot->getImprovementType() == NO_IMPROVEMENT)
+	{
+		return -1;
+	}
+	bool bHasBomber = (area()->getNumAIUnits(getOwner(),UNITAI_ATTACK_AIR) > 0);
+	int iTotalBombardRate = (bHasBomber ? 16 : 0);
+
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		if( pLoopUnit->bombardRate() > 0 )
+		{
+			iTotalBombardRate += pLoopUnit->bombardRate();
+		}
+	}
+
+	int iBombardTurns = GC.getImprovementInfo(pPlot->getImprovementType()).getDefenseModifier();
 	iBombardTurns /= std::max(8, iTotalBombardRate);
 
 	// added Sephi

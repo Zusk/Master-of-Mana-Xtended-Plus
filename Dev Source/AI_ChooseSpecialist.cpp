@@ -21,19 +21,16 @@ int CvCityAI::AI_specialistValueNew(SpecialistTypes eSpecialist)
 	PROFILE_FUNC();
 
 	int iValue=0;
-
 	iValue+=AI_specialistGrowthValue(eSpecialist);
 	iValue+=AI_specialistProductionValue(eSpecialist);
 	iValue+=AI_specialistCommerceValue(eSpecialist);
 	iValue+=AI_specialistGreatPersonValue(eSpecialist);
 	iValue+=AI_specialistSpecializationValue(eSpecialist);
 	iValue+=AI_specialistMiscValue(eSpecialist);
-
 	if(AI_isEmphasizeGreatPeople())
 	{
 		iValue*=2;
 	}
-
 	return iValue;
 }
 

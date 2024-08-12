@@ -71,8 +71,8 @@
 		</GameOptionInfo>
 		<GameOptionInfo>
 			<Type>GAMEOPTION_RAGING_BARBARIANS</Type>
-			<Description>Raging Wilderness</Description>
-			<Help>More Barbarians and Animals spawn and they might spawn in unclaimed territory even if it is visible.</Help>
+			<Description>Raging Barbarians</Description>
+			<Help>More Barbarians spawn and they might spawn in unclaimed territory even if it is visible.</Help>
 			<bDefault>0</bDefault>
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
@@ -182,25 +182,25 @@
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>
-			<Type>GAMEOPTION_DUMMY_02</Type>
-			<Description>TXT_KEY_GAMEOPTION_DUMMY_01</Description>
-			<Help>TXT_KEY_GAMEOPTION_DUMMY_01_HELP</Help>
+			<Type>GAMEOPTION_INCREASE_RESOURCE_SPAWN</Type>
+			<Description>Increase Resource Spawning on Improvements</Description>
+			<Help>If disabled Cottage, Trade Post and Merchant district bonus are applied to a plot only if same resource is in nearby plot. If enabled bonus are applied in any case and same resource provide x2 base Chance. If disabled Water resource will not spawn at all.</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>
-			<Type>GAMEOPTION_DUMMY_03</Type>
-			<Description>TXT_KEY_GAMEOPTION_DUMMY_01</Description>
-			<Help>TXT_KEY_GAMEOPTION_DUMMY_01_HELP</Help>
+			<Type>GAMEOPTION_RAGING_ANIMALS</Type>
+			<Description>Raging Wilderness</Description>
+			<Help>More Animals spawn.</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>
-			<Type>GAMEOPTION_DUMMY_04</Type>
-			<Description>TXT_KEY_GAMEOPTION_DUMMY_01</Description>
-			<Help>TXT_KEY_GAMEOPTION_DUMMY_01_HELP</Help>
+			<Type>GAMEOPTION_SUPER_FORTS</Type>
+			<Description>Enable forts to generate culture</Description>
+			<Help>Enabling this option will allow to forts to generate small culture if units are inside, allows to garrison units in forts and allows naval units to pass through it.</Help>
 			<bDefault>0</bDefault>
-			<bVisible>0</bVisible>
+			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>
 			<Type>GAMEOPTION_DUMMY_05</Type>

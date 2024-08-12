@@ -443,6 +443,7 @@ void CyEnumsPythonInterface()
 /**	END                                                                                         **/
 /*************************************************************************************************/
 
+		.value("WIDGET_PEDIA_JUMP_TO_CIV_EPIC", WIDGET_PEDIA_JUMP_TO_CIV_EPIC)
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 

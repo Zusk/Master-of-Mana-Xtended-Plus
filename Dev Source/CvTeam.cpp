@@ -1342,7 +1342,7 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 }
 
 
-void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
+void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, TCHAR* szLog)
 {
 	PROFILE_FUNC();
 
@@ -1371,6 +1371,78 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 		}
 //FfH: End Add
 
+	/*if(szLog == NULL){
+		FAssert(false);
+	}*/
+	if(isOOSLogging())
+	{
+		if(eTeam < BARBARIAN_TEAM)
+		{
+			if(szLog != NULL && isOOSLogging())
+			{
+				oosLog("AIGroupDeclareWar"
+					,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Python: %s"
+					,GC.getGame().getElapsedGameTurns()
+					,getID()
+					,eTeam
+					,szLog
+				);
+			}
+			CvWString szString;
+			switch (eWarPlan)
+			{
+			case WARPLAN_ATTACKED_RECENT: szString.assign(L"new defensive war"); break;
+			case WARPLAN_ATTACKED: szString.assign(L"defensive war"); break;
+			case WARPLAN_PREPARING_LIMITED: szString.assign(L"preparing limited war"); break;
+			case WARPLAN_PREPARING_TOTAL: szString.assign(L"preparing total war"); break;
+			case WARPLAN_LIMITED: szString.assign(L"limited war"); break;
+			case WARPLAN_TOTAL: szString.assign(L"total war"); break;
+			case WARPLAN_DOGPILE: szString.assign(L"dogpile war"); break;
+			case NO_WARPLAN: szString.assign(L"unplanned war"); break;
+			default:  szString.assign(L"unknown war"); break;
+			}
+
+			for (iI = 0; iI < MAX_PLAYERS; iI++)
+			{
+				if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
+				{
+					for(CvAIGroup* pAIGroup = GET_PLAYER((PlayerTypes)iI).firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = GET_PLAYER((PlayerTypes)iI).nextAIGroup(&iLoop))
+					{
+/*
+						for (CLLNode<IDInfo>* pUnitNode = pAIGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pAIGroup->nextUnitNode(pUnitNode))
+						{
+							CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+							{
+								UnitCombatTypes eUnitType = pLoopUnit->getUnitCombatType()
+							}
+						}*/
+						if(isOOSLogging())
+						{
+							oosLog("AIGroupDeclareWar"
+								,"Turn:%d,TeamID:%d,DeclareWarOn:%d,WarPlan:%S,AIGroupID:%d,%S,NumUnit:%d,Needed:%d (Siege:%d,Wizard:%d,Combat:%d,Naval:%d,Transport:%d,Settle:%d)"
+								,GC.getGame().getElapsedGameTurns()
+								,getID()
+								,eTeam
+								,szString.c_str()
+								,pAIGroup->getID()
+								,GC.getAIGroupInfo(pAIGroup->getGroupType()).getDescription()
+								,pAIGroup->getNumUnits()
+								,pAIGroup->UnitsNeeded()
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_SIEGE)
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_WARWIZARD)
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_COMBAT)
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_COMBAT_NAVAL)
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_TRANSPORT_NAVAL)
+								,pAIGroup->getNumUnitCategoryUnits(UNITCATEGORY_SETTLE)
+							);
+						}
+					}
+				}
+			}
+			/*if (getID() == 6)
+				FAssert(false);*/
+		}
+	}
 /*************************************************************************************************/
 /**	ADDON (Adventures) Sephi                                                      				**/
 /** tag bDeclareWarAtFriendly                                                                   **/
@@ -1764,6 +1836,16 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 				{
 					if (GET_TEAM((TeamTypes)iI).isDefensivePact(eTeam))
 					{
+						if(isOOSLogging())
+						{
+							oosLog("AIGroupDeclareWar"
+								,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Having defensive pact with %d"
+								,GC.getGame().getElapsedGameTurns()
+								,iI
+								,getID()
+								,eTeam
+							);
+						}
 						GET_TEAM((TeamTypes)iI).declareWar(getID(), bNewDiplo, WARPLAN_DOGPILE);
 					}
 				}
@@ -1779,10 +1861,30 @@ void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 					{
 						if (GET_TEAM((TeamTypes)iI).isVassal(eTeam) || GET_TEAM(eTeam).isVassal((TeamTypes)iI))
 						{
+							if(isOOSLogging())
+							{
+								oosLog("AIGroupDeclareWar"
+									,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Vassallage with %d"
+									,GC.getGame().getElapsedGameTurns()
+									,getID()
+									,iI
+									,eTeam
+								);
+							}
 							declareWar((TeamTypes)iI, bNewDiplo, AI_getWarPlan(eTeam));
 						}
 						else if (GET_TEAM((TeamTypes)iI).isVassal(getID()) || isVassal((TeamTypes)iI))
 						{
+							if(isOOSLogging())
+							{
+								oosLog("AIGroupDeclareWar"
+									,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Vassallage with %d"
+									,GC.getGame().getElapsedGameTurns()
+									,iI
+									,eTeam
+									,getID()
+								);
+							}
 							GET_TEAM((TeamTypes)iI).declareWar(eTeam, bNewDiplo, WARPLAN_DOGPILE);
 						}
 					}
@@ -2507,6 +2609,12 @@ int CvTeam::getAtWarCount(bool bIgnoreMinors) const
 					FAssert(iI != getID());
 					FAssert(!(AI_isSneakAttackPreparing((TeamTypes)iI)));
 					iCount++;
+					/*oosLog("AIWarPlan"
+						,"Turn:%d,Team:%d,WarWithTeam:%d\n"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getID()
+						,iI
+					);*/
 				}
 			}
 		}
@@ -2542,7 +2650,7 @@ int CvTeam::getWarPlanCount(WarPlanTypes eWarPlan, bool bIgnoreMinors) const
 }
 
 
-int CvTeam::getAnyWarPlanCount(bool bIgnoreMinors) const
+int CvTeam::getAnyWarPlanCount(bool bIgnoreMinors,TeamTypes eTeam) const
 {
 	int iCount;
 	int iI;
@@ -2555,16 +2663,31 @@ int CvTeam::getAnyWarPlanCount(bool bIgnoreMinors) const
 		{
 			if (!bIgnoreMinors || !(GET_TEAM((TeamTypes)iI).isMinorCiv()))
 			{
-				if (AI_getWarPlan((TeamTypes)iI) != NO_WARPLAN)
+				if(eTeam == NO_TEAM || eTeam == (TeamTypes)iI)
 				{
-					FAssert(iI != getID());
-					iCount++;
+					if (AI_getWarPlan((TeamTypes)iI) != NO_WARPLAN)
+					{
+						FAssert(iI != getID());
+						/*if(eTeam == NO_TEAM)
+						{
+							oosLog("AIWarPlan"
+								,"Turn:%d,Team:%d,WarPlanWithTeam:%d,AI_getWarPlan:%d,getAtWarCount:%d\n"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getID()
+								,iI
+								,AI_getWarPlan((TeamTypes)iI)
+								,getAtWarCount(bIgnoreMinors)
+							);
+						}*/
+
+						iCount++;
+					}
 				}
 			}
 		}
 	}
 
-	FAssert(iCount >= getAtWarCount(bIgnoreMinors));
+	FAssert(eTeam != NO_TEAM || iCount >= getAtWarCount(bIgnoreMinors)); //SpyFanatic: this only applies if eTeam is not specified
 
 	return iCount;
 }
@@ -4361,6 +4484,19 @@ void CvTeam::setVassal(TeamTypes eIndex, bool bNewValue, bool bCapitulated)
 //						kLoopPlayer.changeNumOutsideUnits(-1);
                         if (pLoopUnit->getDuration() == 0 && pLoopUnit->getUnitInfo().isCitySupportNeeded())
                         {
+							/*if(isOOSLogging())
+							{
+								oosLog("OutSideUnit"
+									,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numoutsideunits:%d,setVassal:-1"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,pLoopUnit->getOwnerINLINE()
+									,pLoopUnit->getID()
+									,pLoopUnit->getName().GetCString()
+									,pPlot->getX_INLINE()
+									,pPlot->getY_INLINE()
+									,kLoopPlayer.getNumOutsideUnits()
+								);
+							}*/
                             kLoopPlayer.changeNumOutsideUnits(-1);
                         }
 //FfH: End Modify
@@ -4389,6 +4525,19 @@ void CvTeam::setVassal(TeamTypes eIndex, bool bNewValue, bool bCapitulated)
 //						kLoopPlayer.changeNumOutsideUnits(1);
                         if (pLoopUnit->getDuration() == 0 && pLoopUnit->getUnitInfo().isCitySupportNeeded())
                         {
+							/*if(isOOSLogging())
+							{
+								oosLog("OutSideUnit"
+									,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numoutsideunits:%d,setVassal:1"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,pLoopUnit->getOwnerINLINE()
+									,pLoopUnit->getID()
+									,pLoopUnit->getName().GetCString()
+									,pPlot->getX_INLINE()
+									,pPlot->getY_INLINE()
+									,kLoopPlayer.getNumOutsideUnits()
+								);
+							}*/
                             kLoopPlayer.changeNumOutsideUnits(1);
                         }
 //FfH: End Modify
@@ -6372,7 +6521,9 @@ void CvTeam::processTech(TechTypes eTech, int iChange)
 /**	ADDON (Techeffects) Sephi				                                 					**/
 /*************************************************************************************************/
 			CvPlayer& kPlayer=GET_PLAYER((PlayerTypes)iI);
+			kPlayer.processTech(eTech,iChange); //SpyFanatic: moved at player level to be called by addPlayerAdvanced
 /**	ADDON (Houses of Erebus) Sephi			                                 					**/
+/*
             for (int i=0;i<GC.getNumCorporationInfos();i++)
             {
                 if (GC.getTechInfo(eTech).getCorporationSupport((CorporationTypes)i)!=0)
@@ -6477,6 +6628,7 @@ void CvTeam::processTech(TechTypes eTech, int iChange)
 					kPlayer.changeStateReligionCommerceTechRateModifier((CommerceTypes) iJ, GC.getTechInfo(eTech).getReligionCommerceTechRateModifier(kPlayer.getStateReligion(), iJ));
 				}
 			}
+*/
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/

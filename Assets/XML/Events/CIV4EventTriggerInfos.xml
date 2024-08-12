@@ -26813,7 +26813,8 @@
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerHasReligion>0</bOtherPlayerHasReligion>
             <bOtherPlayerHasOtherReligion>0</bOtherPlayerHasOtherReligion>
-            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <!--bOtherPlayerAI>0</bOtherPlayerAI-->
+            <bOtherPlayerAI>1</bOtherPlayerAI>
             <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
             <OtherPlayerHasTech>NONE</OtherPlayerHasTech>
             <bPickCity>1</bPickCity>

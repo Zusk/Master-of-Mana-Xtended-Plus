@@ -183,6 +183,7 @@ public:
 	void stopTradingWithTeam(TeamTypes eTeam);																											// Exposed to Python
 	void killAllDeals();																																						// Exposed to Python
 
+	CvCity* CvPlayer::getNewCityCapital();
 	void findNewCapital();																																					// Exposed to Python 
 	DllExport int getNumGovernmentCenters() const;																												// Exposed to Python 
 
@@ -749,6 +750,7 @@ public:
 	int getGoldPerTurnByPlayer(PlayerTypes eIndex) const;																							// Exposed to Python
 	void changeGoldPerTurnByPlayer(PlayerTypes eIndex, int iChange);
 
+	int CvPlayer::getGoldPerTurnNetAtZeroPercent();
 	bool isFeatAccomplished(FeatTypes eIndex) const;																									// Exposed to Python
 	void setFeatAccomplished(FeatTypes eIndex, bool bNewValue);																	// Exposed to Python
 
@@ -1057,6 +1059,7 @@ public:
 	void setSprawling(bool bNewValue);
 	bool isGamblingRing() const;
 	bool isHasTech(int iTech) const;
+	void processTech(TechTypes eTech, int iChange);
 	bool isSlaveTrade() const;
 	bool isSmugglingRing() const;
 	int getSanctuaryTimer() const;
@@ -1342,7 +1345,7 @@ public:
 /** allow to modifiy the Civilizationtype of a player   **/
     void setCivilizationType(CivilizationTypes newCivType);
 	void launchPickEquipmentPopup();
-	bool canEquipUnit(const CvUnit* pUnit, PromotionTypes eEquipment, bool bTestVisible = false, bool bTreasure = false) const;
+	bool canEquipUnit(const CvUnit* pUnit, PromotionTypes eEquipment, bool bTestVisible = false, bool bTreasure = false, bool bResources = false) const;
 	void killGlobalEnchantments();
 	int doCivicPreservation(bool bCountOnly) const;
 /**	New Esus                                                                 					**/

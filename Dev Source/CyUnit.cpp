@@ -2121,6 +2121,22 @@ int CyUnit::getTier()
 		return -1;
 	}
 }
+bool CyUnit::isGarrision() const
+{
+	return m_pUnit ? m_pUnit->isGarrision() : -1;
+}
+void CyUnit::setGarrision(bool bNewValue)
+{
+	if(m_pUnit)
+	{
+		return m_pUnit->setGarrision(bNewValue);
+	}
+}
+bool CyUnit::canGarrision() const
+{
+	return m_pUnit ? m_pUnit->canGarrision() : -1;
+}
+
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/

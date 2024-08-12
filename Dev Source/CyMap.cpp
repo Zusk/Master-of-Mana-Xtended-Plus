@@ -325,3 +325,13 @@ int CyMap::placeCityState(int eState)
 	}
 	return -1;
 }
+
+// Super Forts begin *canal* *choke*
+void CyMap::calculateCanalAndChokePoints()
+{
+	if(m_pMap)
+	{
+		m_pMap->calculateCanalAndChokePoints();
+	}
+}
+// Super Forts end

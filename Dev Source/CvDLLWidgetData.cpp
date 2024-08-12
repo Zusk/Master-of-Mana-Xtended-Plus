@@ -565,6 +565,10 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		parseCivilizationHelp(widgetDataStruct, szBuffer);
 		break;
 
+	case WIDGET_PEDIA_JUMP_TO_CIV_EPIC:
+		szBuffer.assign(GAMETEXT.getLinkedText((CivilizationTypes)widgetDataStruct.m_iData1));
+		break;
+
 	case WIDGET_PEDIA_JUMP_TO_LEADER:
 		parseLeaderHelp(widgetDataStruct, szBuffer);
 		break;
@@ -911,6 +915,9 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		doPediaCivilizationJump(widgetDataStruct);
 		break;
 
+	case WIDGET_PEDIA_JUMP_TO_CIV_EPIC:
+		doPediaEpicJump(widgetDataStruct);
+		break;
 	case WIDGET_PEDIA_JUMP_TO_LEADER:
 		doPediaLeaderJump(widgetDataStruct);
 		break;
@@ -1202,6 +1209,7 @@ bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 	case WIDGET_PEDIA_JUMP_TO_IMPROVEMENT:
 	case WIDGET_PEDIA_JUMP_TO_CIVIC:
 	case WIDGET_PEDIA_JUMP_TO_CIV:
+	case WIDGET_PEDIA_JUMP_TO_CIV_EPIC:
 	case WIDGET_PEDIA_JUMP_TO_LEADER:
 	case WIDGET_PEDIA_JUMP_TO_SPECIALIST:
 	case WIDGET_PEDIA_JUMP_TO_PROJECT:
@@ -1782,6 +1790,13 @@ void CvDLLWidgetData::doPediaCivilizationJump(CvWidgetDataStruct &widgetDataStru
 	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToCiv", argsList.makeFunctionArgs());
 }
 
+void CvDLLWidgetData::doPediaEpicJump(CvWidgetDataStruct &widgetDataStruct)
+{
+	CyArgsList argsList;
+	argsList.add(widgetDataStruct.m_iData1);
+	gDLL->getPythonIFace()->callFunction(PYScreensModule, "pediaJumpToEpic", argsList.makeFunctionArgs());
+}
+
 void CvDLLWidgetData::doPediaLeaderJump(CvWidgetDataStruct &widgetDataStruct)
 {
 	CyArgsList argsList;
@@ -1894,6 +1909,12 @@ void CvDLLWidgetData::doMagicScreen(CvWidgetDataStruct &widgetDataStruct)
 
 void CvDLLWidgetData::doTerraform(CvWidgetDataStruct &widgetDataStruct)
 {
+	//SpyFanatic: Arcane Lacuna disable
+	if(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getDisableSpellcasting() > 0)
+	{
+		return;
+	}
+
 	if(widgetDataStruct.m_iData1!=NO_PROJECT && !GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoTerraformRitual((ProjectTypes)widgetDataStruct.m_iData1))
 	{
 		return;
@@ -1935,6 +1956,12 @@ void CvDLLWidgetData::doTraitFromCulture(CvWidgetDataStruct &widgetDataStruct)
 
 void CvDLLWidgetData::doSummon(CvWidgetDataStruct &widgetDataStruct)
 {
+	//SpyFanatic: Arcane Lacuna disable
+	if(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getDisableSpellcasting() > 0)
+	{
+		return;
+	}
+
 	ProjectTypes eProject=NO_PROJECT;
 	for(int iI=0;iI<GC.getNumProjectInfos();iI++)
 	{
@@ -1964,6 +1991,12 @@ void CvDLLWidgetData::doSummon(CvWidgetDataStruct &widgetDataStruct)
 
 void CvDLLWidgetData::doGlobalenchantment(CvWidgetDataStruct &widgetDataStruct)
 {
+	//SpyFanatic: Arcane Lacuna disable
+	if(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getDisableSpellcasting() > 0)
+	{
+		return;
+	}
+
 	if(widgetDataStruct.m_iData1!=NO_PROJECT && !GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoGlobalEnchantment((ProjectTypes)widgetDataStruct.m_iData1))
 	{
 		return;
@@ -3289,7 +3322,11 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					if (GC.getImprovementInfo(eImprovement).getDefenseModifier() != 0)
 					{
 						szBuffer.append(NEWLINE);
-						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_DEFENSE_MODIFIER", GC.getImprovementInfo(eImprovement).getDefenseModifier()));
+						// Super Forts begin *bombard* *text*
+						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_DEFENSE_MODIFIER", GC.getImprovementInfo(eImprovement).getDefenseModifier()
+ - (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? pMissionPlot->getDefenseDamage() : 0)
+));
+						// Super Forts end
 					}
 
 					if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() != NO_IMPROVEMENT && 
@@ -3343,7 +3380,8 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						szBuffer.append(gDLL->getText("TXT_KEY_ACTUAL_PLOT_YIELDS"));
 						for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 						{
-							iYield = pWorker->plot()->ActualImprovementChanges(pWorker->getOwnerINLINE(),eBuild,(YieldTypes)iI,NO_COMMERCE,false);
+							//SpyFanatic: Actual Changes should check plot only (last parameter to true of ActualImprovementChanges)
+							iYield = pWorker->plot()->ActualImprovementChanges(pWorker->getOwnerINLINE(),eBuild,(YieldTypes)iI,NO_COMMERCE,false,true);
 
 							if (iYield != 0 && iI!=YIELD_COMMERCE)
 							{
@@ -3358,7 +3396,8 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 						for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 						{
-							int iCommerce = pWorker->plot()->ActualImprovementChanges(pWorker->getOwnerINLINE(),eBuild,NO_YIELD,(CommerceTypes)iI,false);
+							//SpyFanatic: Actual Changes should check plot only (last parameter to true of ActualImprovementChanges)
+							int iCommerce = pWorker->plot()->ActualImprovementChanges(pWorker->getOwnerINLINE(),eBuild,NO_YIELD,(CommerceTypes)iI,false,true);
 
 							if (iCommerce != 0)
 							{
@@ -3874,7 +3913,7 @@ void CvDLLWidgetData::parseChangeSpecialistHelp(CvWidgetDataStruct &widgetDataSt
 		{
 			GAMETEXT.parseSpecialistHelp(szBuffer, ((SpecialistTypes)(widgetDataStruct.m_iData1)), pHeadSelectedCity);
 
-			if (widgetDataStruct.m_iData1 != GC.getDefineINT("DEFAULT_SPECIALIST"))
+			if (widgetDataStruct.m_iData1 != GC.getDEFAULT_SPECIALIST())
 			{
 				if (!(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isSpecialistValid((SpecialistTypes)(widgetDataStruct.m_iData1))))
 				{
@@ -4240,6 +4279,14 @@ void CvDLLWidgetData::parseTradeItem(CvWidgetDataStruct &widgetDataStruct, CvWSt
 			break;
 		case TRADE_RESOURCES:
 			GAMETEXT.setBonusHelp(szBuffer, ((BonusTypes)widgetDataStruct.m_iData2));
+			//SpyFanatic: Add debug info for bonus trading (only with AI)
+			szBuffer.append(NEWLINE);
+			szBuffer.append(CvWString::format(L"%cFrom (%s):",gDLL->getSymbolID(BULLET_CHAR),GET_TEAM(GET_PLAYER(eWhoFrom).getTeam()).getName().GetCString()));
+			GET_PLAYER(eWhoFrom).AI_bonusVal_new(((BonusTypes)widgetDataStruct.m_iData2), -1, false, szBuffer);
+			szBuffer.append(NEWLINE);
+			szBuffer.append(CvWString::format(L"%cTo (%s):",gDLL->getSymbolID(BULLET_CHAR),GET_TEAM(GET_PLAYER(eWhoTo).getTeam()).getName().GetCString()));
+			GET_PLAYER(eWhoTo).AI_bonusVal_new(((BonusTypes)widgetDataStruct.m_iData2), 1, false, szBuffer);
+
 			eWhoDenies = (widgetDataStruct.m_bOption ? eWhoFrom : eWhoTo);
 			break;
 		case TRADE_CITIES:

@@ -470,6 +470,7 @@ def spellBodySnatch(caster): #Xtended Gibbon
 		newUnit.setExperience(caster.getExperience(), -1)
 		newUnit.setDamage(0, caster.getOwner())
 		newUnit.setName("Gibbon Goetia")
+		newUnit.setHasCasted(True)
 
 		#remove all promotions then kill old Gibbon
 		for iProm in range(gc.getNumPromotionInfos()):
@@ -623,7 +624,8 @@ def spellArcaneLacuna(caster):
 			if pPlayer2.getTeam() != pPlayer.getTeam():
 				pPlayer2.changeDisableSpellcasting(iDelay)
 
-def reqSilencedArcaneLacuna(caster):
+def reqSilencedArcaneLacuna(caster,spell):
+	#CvUtil.pyPrint("reqSilencedArcaneLacuna %s" + str(spell.getDescription()))
 	pPlayer = gc.getPlayer(caster.getOwner())
 	caster.setHasCasted(True)
 	if pPlayer.getDisableSpellcasting() == 0:
@@ -2400,14 +2402,15 @@ def spellMarchOfTheTrees(caster):
 def reqMotherLode(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	if pPlayer.isHuman() == False:
-		if pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MINE')) < 10:
+		if (pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MINE')) + pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_DEEP_MINE'))) < 10:
 			return False
 	return True
 
 def spellMotherLode(caster):
 	iPlayer = caster.getOwner()
 	pPlayer = gc.getPlayer(iPlayer)
-	pPlayer.changeGold(pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MINE')) * 25)
+	#CvUtil.pyPrint('spellMotherLode: %s - %s' %(pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MINE')), pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_DEEP_MINE')),))
+	pPlayer.changeGold((pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_MINE')) + pPlayer.getImprovementCount(gc.getInfoTypeForString('IMPROVEMENT_DEEP_MINE')))* 25)
 	for i in range (CyMap().numPlots()):
 		pPlot = CyMap().plotByIndex(i)
 		if pPlot.isOwned():
@@ -2659,13 +2662,15 @@ def spellReadTheGrimoire(caster):
 	if iRnd >= 80 and iRnd < 100:
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHANNELING1'), True)
 	if iRnd >= 100 and iRnd < 110:
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_PIT_BEAST'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_PIT_BEAST'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_PIT_BEAST'))
 	if iRnd >= 110 and iRnd < 120:
 		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_SPECTRE'))
 	if iRnd >= 120 and iRnd < 130:
 		caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
 	if iRnd >= 130 and iRnd < 140:
-		caster.cast(gc.getInfoTypeForString('SPELL_MUTATION'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_MUTATION'))
+		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_MUTATED'), True)
 	if iRnd >= 140 and iRnd < 145:
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_STIGMATA'), True)
 	if iRnd >= 145 and iRnd < 150:
@@ -2680,9 +2685,11 @@ def spellReadTheGrimoire(caster):
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHANNELING1'), True)
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHANNELING2'), True)
 	if iRnd >= 200 and iRnd < 210:
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_BALOR'))
 	if iRnd >= 210 and iRnd < 220:
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WRAITH'))
 	if iRnd >= 220 and iRnd < 230:
 		caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
 		caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
@@ -2715,13 +2722,19 @@ def spellReadTheGrimoire(caster):
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHANNELING2'), True)
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHANNELING3'), True)
 	if iRnd >= 300 and iRnd < 310:
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_BALOR'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_BALOR'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_BALOR'))
 	if iRnd >= 310 and iRnd < 320:
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
-		caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WRAITH'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WRAITH'))
+		pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WRAITH'))
 	if iRnd >= 320 and iRnd < 330:
 		caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
 		caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
@@ -2777,7 +2790,8 @@ def spellReadTheGrimoire(caster):
 	if iRnd >= 430 and iRnd < 440:
 		caster.changeExperience(50, -1, False, False, False)
 	if iRnd >= 440 and iRnd < 443:
-		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_TWINCAST'), True)
+		#caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_TWINCAST'), True)
+		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_ADEPT_TINKER'), True)
 	if iRnd >= 443:
 		caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_IMMORTAL'), True)
 
@@ -3195,7 +3209,9 @@ def spellRoar(caster):
 						p2Player = gc.getPlayer(pUnit.getOwner())
 						if p2Player:
 							i2Team = p2Player.getTeam()
-							if eTeam.isAtWar(i2Team):
+							#SpyFanatic: mind also garrison unit in forts wih gameoption
+							#if eTeam.isAtWar(i2Team):
+							if eTeam.isAtWar(i2Team) and not pUnit.isGarrision():
 								if cf.doFear(pUnit, pPlot, caster, True):
 									CyInterface().addMessage(pUnit.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_FEAR", (gc.getUnitInfo(pUnit.getUnitType()).getDescription(), )),'',1,', ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,7,9',ColorTypes(7),pUnit.getX(),pUnit.getY(),True,True)
 									CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_FEAR_ENEMY", (gc.getUnitInfo(pUnit.getUnitType()).getDescription(), )),'',1,', ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,7,9',ColorTypes(8),pUnit.getX(),pUnit.getY(),True,True)
@@ -3273,6 +3289,8 @@ def spellSanctuary(caster):
 	iTeam = caster.getTeam()
 	pPlayer = gc.getPlayer(iPlayer)
 	pPlayer.changeSanctuaryTimer(30)
+	iBarbarianTeam = gc.getPlayer(gc.getBARBARIAN_PLAYER()).getTeam() #gc.getTeam(gc.getPlayer(gc.getBARBARIAN_PLAYER()))
+
 	for i in range (CyMap().numPlots()):
 		pPlot = CyMap().plotByIndex(i)
 		if pPlot.isOwned():
@@ -3280,7 +3298,9 @@ def spellSanctuary(caster):
 				for i in range(pPlot.getNumUnits(), -1, -1):
 					pUnit = pPlot.getUnit(i)
 					if pUnit.getTeam() != iTeam:
-						pUnit.jumpToNearestValidPlot()
+						#SpyFanatic: do not push barbarian out of border (if in lair)
+						if pUnit.getTeam() < iBarbarianTeam or pPlot.getImprovementType() == -1 or gc.getImprovementInfo(pPlot.getImprovementType()).getSpawnUnitCiv() != gc.getDefineINT("BARBARIAN_CIVILIZATION"):
+							pUnit.jumpToNearestValidPlot()
 
 def reqSandLion(caster):
 	pPlot = caster.plot()
@@ -4134,32 +4154,52 @@ def spellWonder(caster):
 		iRnd = CyGame().getSorenRandNum(66, "Wonder")
 		iUnit = -1
 		if iRnd == 0:
-			caster.cast(gc.getInfoTypeForString('SPELL_BLAZE'))
+			CvUtil.pyPrint("spellWonder 0")
+			#caster.cast(gc.getInfoTypeForString('SPELL_BLAZE'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_FIRESHIELD_AURA'), True)
 		if iRnd == 1:
+			CvUtil.pyPrint("spellWonder 1")
 			caster.cast(gc.getInfoTypeForString('SPELL_BLESS'))
 		if iRnd == 2:
-			caster.cast(gc.getInfoTypeForString('SPELL_BLINDING_LIGHT'))
+			CvUtil.pyPrint("spellWonder 2")
+			#caster.cast(gc.getInfoTypeForString('SPELL_BLINDING_LIGHT'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_AIR_SHIELD'), True)
 		if iRnd == 3:
-			caster.cast(gc.getInfoTypeForString('SPELL_BLOOM'))
+			CvUtil.pyPrint("spellWonder 3")
+			#caster.cast(gc.getInfoTypeForString('SPELL_BLOOM'))
+			pPlayer.doTerraformRitual(gc.getInfoTypeForString('PROJECT_BLOOM'))
 		if iRnd == 4:
-			caster.cast(gc.getInfoTypeForString('SPELL_BLUR'))
+			CvUtil.pyPrint("spellWonder 4")
+			#caster.cast(gc.getInfoTypeForString('SPELL_BLUR'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_BLUR'), True)
 		if iRnd == 5:
+			CvUtil.pyPrint("spellWonder 5")
 			caster.cast(gc.getInfoTypeForString('SPELL_CHARM_PERSON'))
 		if iRnd == 6:
+			CvUtil.pyPrint("spellWonder 6")
 			caster.cast(gc.getInfoTypeForString('SPELL_CONTAGION'))
 		if iRnd == 7:
+			CvUtil.pyPrint("spellWonder 7")
 			caster.cast(gc.getInfoTypeForString('SPELL_COURAGE'))
 		if iRnd == 8:
+			CvUtil.pyPrint("spellWonder 8")
 			caster.cast(gc.getInfoTypeForString('SPELL_CRUSH'))
 		if iRnd == 9:
-			caster.cast(gc.getInfoTypeForString('SPELL_DESTROY_UNDEAD'))
+			CvUtil.pyPrint("spellWonder 9")
+			#caster.cast(gc.getInfoTypeForString('SPELL_DESTROY_UNDEAD'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CYROMANCY_AURA'), True)
 		if iRnd == 10:
+			CvUtil.pyPrint("spellWonder 10")
 			caster.cast(gc.getInfoTypeForString('SPELL_DISPEL_MAGIC'))
 		if iRnd == 11:
+			CvUtil.pyPrint("spellWonder 11")
 			caster.cast(gc.getInfoTypeForString('SPELL_EARTHQUAKE'))
 		if iRnd == 12:
-			caster.cast(gc.getInfoTypeForString('SPELL_ENCHANTED_BLADE'))
+			CvUtil.pyPrint("spellWonder 12")
+			#caster.cast(gc.getInfoTypeForString('SPELL_ENCHANTED_BLADE'))
+			caster.setHasPromotion(gc.getInfoTypeForString('SPELL_ENCHANTED_BLADE'), True)
 		if iRnd == 13:
+			CvUtil.pyPrint("spellWonder 13")
 			CyEngine().triggerEffect(gc.getInfoTypeForString('EFFECT_SPELL1'),point)
 			CyAudioGame().Play3DSound("AS3D_SPELL_DEFILE",point.x,point.y,point.z)
 			for iX in range(pPlot.getX()-1, pPlot.getX()+2, 1):
@@ -4168,93 +4208,162 @@ def spellWonder(caster):
 					if pLoopPlot.isNone() == False:
 						pLoopPlot.changePlotCounter(100)
 		if iRnd == 14:
+			CvUtil.pyPrint("spellWonder 14")
 			caster.cast(gc.getInfoTypeForString('SPELL_ENTANGLE'))
 		if iRnd == 15:
+			CvUtil.pyPrint("spellWonder 15")
 			if caster.getOwner() != gc.getBARBARIAN_PLAYER():
 				caster.cast(gc.getInfoTypeForString('SPELL_ESCAPE'))
 		if iRnd == 16:
+			CvUtil.pyPrint("spellWonder 16")
 			caster.cast(gc.getInfoTypeForString('SPELL_FIREBALL'))
 		if iRnd == 17:
-			caster.cast(gc.getInfoTypeForString('SPELL_FLAMING_ARROWS'))
+			CvUtil.pyPrint("spellWonder 17")
+			#caster.cast(gc.getInfoTypeForString('SPELL_FLAMING_ARROWS'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CHARGED_WEAPON_AURA'), True)
 		if iRnd == 18:
+			CvUtil.pyPrint("spellWonder 18")
 			caster.cast(gc.getInfoTypeForString('SPELL_FLOATING_EYE'))
 		if iRnd == 19:
-			caster.cast(gc.getInfoTypeForString('SPELL_HASTE'))
+			CvUtil.pyPrint("spellWonder 19")
+			#caster.cast(gc.getInfoTypeForString('SPELL_HASTE'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_HASTED'), True)
 		if iRnd == 20:
+			CvUtil.pyPrint("spellWonder 20")
 			caster.cast(gc.getInfoTypeForString('SPELL_HASTURS_RAZOR'))
 		if iRnd == 21:
+			CvUtil.pyPrint("spellWonder 21")
 			caster.cast(gc.getInfoTypeForString('SPELL_HEAL'))
 		if iRnd == 22:
+			CvUtil.pyPrint("spellWonder 22")
 			caster.cast(gc.getInfoTypeForString('SPELL_HIDE'))
 		if iRnd == 23:
-			caster.cast(gc.getInfoTypeForString('SPELL_LOYALTY'))
+			CvUtil.pyPrint("spellWonder 23")
+			#caster.cast(gc.getInfoTypeForString('SPELL_LOYALTY'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_LOYALTY'), True)
 		if iRnd == 24:
+			CvUtil.pyPrint("spellWonder 24")
 			caster.cast(gc.getInfoTypeForString('SPELL_MAELSTROM'))
 		if iRnd == 25:
-			caster.cast(gc.getInfoTypeForString('SPELL_MORALE'))
+			CvUtil.pyPrint("spellWonder 25")
+			#caster.cast(gc.getInfoTypeForString('SPELL_MORALE'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_MORALE'), True)
 		if iRnd == 26:
-			caster.cast(gc.getInfoTypeForString('SPELL_MUTATION'))
+			CvUtil.pyPrint("spellWonder 26")
+			#caster.cast(gc.getInfoTypeForString('SPELL_MUTATION'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_MUTATED'), True)
 		if iRnd == 27:
+			CvUtil.pyPrint("spellWonder 27")
 			caster.cast(gc.getInfoTypeForString('SPELL_PILLAR_OF_FIRE'))
 		if iRnd == 28:
-			caster.cast(gc.getInfoTypeForString('SPELL_POISONED_BLADE'))
+			CvUtil.pyPrint("spellWonder 28")
+			#caster.cast(gc.getInfoTypeForString('SPELL_POISONED_BLADE'))
+			caster.setHasPromotion(gc.getInfoTypeForString('SPELL_POISONED_BLADE'), True)
 		if iRnd == 29:
+			CvUtil.pyPrint("spellWonder 29")
 			caster.cast(gc.getInfoTypeForString('SPELL_REVELATION'))
 		if iRnd == 30:
+			CvUtil.pyPrint("spellWonder 30")
 			caster.cast(gc.getInfoTypeForString('SPELL_RING_OF_FLAMES'))
 		if iRnd == 31:
-			caster.cast(gc.getInfoTypeForString('SPELL_RUST'))
+			CvUtil.pyPrint("spellWonder 31")
+			#caster.cast(gc.getInfoTypeForString('SPELL_RUST'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CURSED'), True)
 		if iRnd == 32:
-			caster.cast(gc.getInfoTypeForString('SPELL_SANCTIFY'))
+			CvUtil.pyPrint("spellWonder 32")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SANCTIFY'))
+			pPlayer.doTerraformRitual(gc.getInfoTypeForString('PROJECT_SANCTIFY'))
 		if iRnd == 33:
-			caster.cast(gc.getInfoTypeForString('SPELL_SCORCH'))
+			CvUtil.pyPrint("spellWonder 33")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SCORCH'))
+			pPlayer.doTerraformRitual(gc.getInfoTypeForString('PROJECT_SCORCH'))
 		if iRnd == 34:
+			CvUtil.pyPrint("spellWonder 34")
 			caster.cast(gc.getInfoTypeForString('SPELL_SHADOWWALK'))
 		if iRnd == 35:
+			CvUtil.pyPrint("spellWonder 35")
 			caster.cast(gc.getInfoTypeForString('SPELL_SPORES'))
 		if iRnd == 36:
-			caster.cast(gc.getInfoTypeForString('SPELL_SPRING'))
+			CvUtil.pyPrint("spellWonder 36")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SPRING'))
+			pPlayer.doTerraformRitual(gc.getInfoTypeForString('PROJECT_SPRING'))
 		if iRnd == 37:
-			caster.cast(gc.getInfoTypeForString('SPELL_STONESKIN'))
+			CvUtil.pyPrint("spellWonder 37")
+			#caster.cast(gc.getInfoTypeForString('SPELL_STONESKIN'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_STONESKIN'), True)
 		if iRnd == 38:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_AIR_ELEMENTAL'))
+			CvUtil.pyPrint("spellWonder 38")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_AIR_ELEMENTAL'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_AIR_ELEMENTAL'))
 		if iRnd == 39:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_AUREALIS'))
+			CvUtil.pyPrint("spellWonder 39")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_AUREALIS'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_AUREALIS'))
 		if iRnd == 40:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+			CvUtil.pyPrint("spellWonder 40")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_BALOR'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_BALOR'))
 		if iRnd == 41:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_DJINN'))
+			CvUtil.pyPrint("spellWonder 41")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_DJINN'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_DJINN'))
 		if iRnd == 42:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_EARTH_ELEMENTAL'))
+			CvUtil.pyPrint("spellWonder 42")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_EARTH_ELEMENTAL'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_EARTH_ELEMENTAL'))
 		if iRnd == 43:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_EINHERJAR'))
+			CvUtil.pyPrint("spellWonder 43")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_EINHERJAR'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_EINHERJAR'))
 		if iRnd == 44:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_FIRE_ELEMENTAL'))
+			CvUtil.pyPrint("spellWonder 44")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_FIRE_ELEMENTAL'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_FIRE_ELEMENTAL'))
 		if iRnd == 45:
+			CvUtil.pyPrint("spellWonder 45")
 			iUnit = gc.getInfoTypeForString('UNIT_KRAKEN')
 		if iRnd == 46:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_MISTFORM'))
+			CvUtil.pyPrint("spellWonder 46")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_MISTFORM'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_MISTFORM'))
 		if iRnd == 47:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_PIT_BEAST'))
+			CvUtil.pyPrint("spellWonder 47")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_PIT_BEAST'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_PIT_BEAST'))
 		if iRnd == 48:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_SAND_LION'))
+			CvUtil.pyPrint("spellWonder 48")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_SAND_LION'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_SAND_LION'))
 		if iRnd == 49:
+			CvUtil.pyPrint("spellWonder 49")
 			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_SPECTRE'))
 		if iRnd == 50:
+			CvUtil.pyPrint("spellWonder 50")
 			iUnit = gc.getInfoTypeForString('UNIT_TIGER')
 		if iRnd == 51:
+			CvUtil.pyPrint("spellWonder 51")
 			iUnit = gc.getInfoTypeForString('UNIT_TREANT')
 		if iRnd == 52:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WATER_ELEMENTAL'))
+			CvUtil.pyPrint("spellWonder 52")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WATER_ELEMENTAL'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WATER_ELEMENTAL'))
 		if iRnd == 53:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+			CvUtil.pyPrint("spellWonder 53")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_WRAITH'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_WRAITH'))
 		if iRnd == 54:
+			CvUtil.pyPrint("spellWonder 54")
 			caster.cast(gc.getInfoTypeForString('SPELL_TSUNAMI'))
 		if iRnd == 55:
-			caster.cast(gc.getInfoTypeForString('SPELL_VALOR'))
+			CvUtil.pyPrint("spellWonder 55")
+			#caster.cast(gc.getInfoTypeForString('SPELL_VALOR'))
+			caster.setHasPromotion(gc.getInfoTypeForString('PROMOTION_VALOR'), True)
 		if iRnd == 56:
-			caster.cast(gc.getInfoTypeForString('SPELL_VITALIZE'))
+			CvUtil.pyPrint("spellWonder 56")
+			#caster.cast(gc.getInfoTypeForString('SPELL_VITALIZE'))
+			pPlayer.doTerraformRitual(gc.getInfoTypeForString('PROJECT_VITALIZE_LAND'))
 		if iRnd == 57:
+			CvUtil.pyPrint("spellWonder 57")
 			caster.cast(gc.getInfoTypeForString('SPELL_WITHER'))
 		if iRnd == 58:
 			if bCity == False:
@@ -4264,6 +4373,7 @@ def spellWonder(caster):
 					if gc.getImprovementInfo(iImprovement).isPermanent() :
 						bValid = False
 				if bValid :
+					CvUtil.pyPrint("spellWonder 58")
 					pPlot.setImprovementType(gc.getInfoTypeForString('IMPROVEMENT_PENGUINS'))
 					CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_WONDER_PENGUINS", ()),'',1,'Art/Interface/Buttons/Improvements/Penguins.dds',ColorTypes(8),pPlot.getX(),pPlot.getY(),True,True)
 		if iRnd == 59:
@@ -4274,9 +4384,11 @@ def spellWonder(caster):
 					if gc.getImprovementInfo(iImprovement).isPermanent() :
 						bValid = False
 				if bValid :
+					CvUtil.pyPrint("spellWonder 59")
 					pPlot.setImprovementType(gc.getInfoTypeForString('IMPROVEMENT_MUSHROOMS'))
 					CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_WONDER_MUSHROOMS", ()),'',1,'Art/Interface/Buttons/Improvements/Mushrooms.dds',ColorTypes(8),pPlot.getX(),pPlot.getY(),True,True)
 		if iRnd == 60:
+			CvUtil.pyPrint("spellWonder 60")
 			for iProm in range(gc.getNumPromotionInfos()):
 				if caster.isHasPromotion(iProm):
 					if gc.getPromotionInfo(iProm).isRace():
@@ -4288,6 +4400,7 @@ def spellWonder(caster):
 				if not CyGame().isHasTrophy(t):
 					CyGame().changeTrophyValue(t, 1)
 		if iRnd == 61:
+			CvUtil.pyPrint("spellWonder 61")
 			CyEngine().triggerEffect(gc.getInfoTypeForString('EFFECT_SPELL1'),point)
 			CyAudioGame().Play3DSound("AS3D_SPELL_SANCTIFY",point.x,point.y,point.z)
 			for iX in range(pPlot.getX()-2, pPlot.getX()+3, 1):
@@ -4296,6 +4409,7 @@ def spellWonder(caster):
 					if pLoopPlot.isNone() == False:
 						pLoopPlot.changePlotCounter(-100)
 		if iRnd == 62:
+			CvUtil.pyPrint("spellWonder 62")
 			iUnit = gc.getInfoTypeForString('UNIT_SPIDERKIN')
 			CyInterface().addMessage(caster.getOwner(),True,25,CyTranslator().getText("TXT_KEY_MESSAGE_WONDER_SPIDERKIN", ()),'',1,', ,Art/Interface/Buttons/Units/Units_atlas4.dds,7,7',ColorTypes(8),pPlot.getX(),pPlot.getY(),True,True)
 		if iUnit != -1:
@@ -4305,10 +4419,14 @@ def spellWonder(caster):
 			else:
 				newUnit.setDuration(1)
 		if iRnd == 63:
+			CvUtil.pyPrint("spellWonder 63")
 			caster.cast(gc.getInfoTypeForString('SPELL_SLOW'))
 		if iRnd == 64:
-			caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_ICE_ELEMENTAL'))
+			CvUtil.pyPrint("spellWonder 64")
+			#caster.cast(gc.getInfoTypeForString('SPELL_SUMMON_ICE_ELEMENTAL'))
+			pPlayer.doSummonRitual(gc.getInfoTypeForString('PROJECT_SUMMON_ICE_ELEMENTAL'))
 		if iRnd == 65:
+			CvUtil.pyPrint("spellWonder 65")
 			caster.cast(gc.getInfoTypeForString('SPELL_SNOWFALL'))
 
 def reqWorldbreak(caster):

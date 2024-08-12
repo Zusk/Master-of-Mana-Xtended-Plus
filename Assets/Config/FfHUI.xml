@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<mod id="FfHUI"
+	name="Fall from Heaven 2 UI"
+	module="FfHUI"
+	author="lfgr"
+	date="05/2020">
+
+	<!-- Plot help unit cycling -->
+	<shortcut function="cyclePlotHelpForwards" key="Ctrl Space"/>
+	<shortcut function="cyclePlotHelpBackwards" key="Ctrl Shift Space"/>
+</mod>

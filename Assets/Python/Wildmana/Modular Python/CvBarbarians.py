@@ -45,7 +45,7 @@ def BarbarianDefeated(argsList):
 		if pLoser.isHasPromotion(gc.getInfoTypeForString('PROMOTION_TREASURE_GEAR')):
 			ListPossibleGear =[]
 			for i in range(gc.getNumPromotionInfos()):
-				if pPlayerW.canEquipUnit(pWinner,i,false,true):
+				if pPlayerW.canEquipUnit(pWinner,i,false,true,false):
 					ListPossibleGear.append(i)
 
 			iPick=CyGame().getSorenRandNum(len(ListPossibleGear), "Pick loot from named Barbs")

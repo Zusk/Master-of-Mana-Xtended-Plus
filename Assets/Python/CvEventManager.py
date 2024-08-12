@@ -418,7 +418,7 @@ class CvEventManager:
 		cf.CreateTerrainOnGameStart()
 		cf.CreateFeatureOnGameStart()
 		iUnit = gc.getInfoTypeForString('UNIT_ZARCAZ')
-		cf.addUnit(iUnit)
+		cf.addUnit(iUnit,5)
 
 		iDesert = gc.getInfoTypeForString('TERRAIN_DESERT')
 		iGrass = gc.getInfoTypeForString('TERRAIN_GRASS')
@@ -651,6 +651,9 @@ class CvEventManager:
 					popupInfo.setOption1(true)
 					popupInfo.addPopup(iPlayer)
 
+		# Super Forts
+		CyMap().calculateCanalAndChokePoints()
+					
 		CvAdvisorUtils.resetNoLiberateCities()
 
 		#debug tool to see if Bonuses are placed correctly
@@ -747,6 +750,9 @@ class CvEventManager:
 					if bvalid:
 						iUnit = gc.getInfoTypeForString('UNIT_ORTHUS')
 						cf.addUnit(iUnit)
+
+					if CyGame().getAIAutoPlay() == 0:
+						iUnit = gc.getInfoTypeForString('UNIT_ORTHUS')
 						cf.addPopup(CyTranslator().getText("TXT_KEY_POPUP_ORTHUS_CREATION",()), str(gc.getUnitInfo(iUnit).getImage()))
 
 #		if not CyGame().isOption(gc.getInfoTypeForString('GAMEOPTION_NO_PLOT_COUNTER')):
@@ -1053,6 +1059,13 @@ class CvEventManager:
 						pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_BAZAAR_OF_MAMMON'), 1)
 					if iBuildingType == gc.getInfoTypeForString('BUILDING_AUSTRIN_NOBLE_DISTRICT'):
 						pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_GRAND_MENAGERIE'), 1)
+					#SpyFanatic: do not give this bonus on Kuriotates on purpose. Civilopedia entry corrected
+					#if iBuildingType == gc.getInfoTypeForString('BUILDING_SAGE_QUARTER'):
+					#	pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_GREAT_LIBRARY'), 1)
+					#if iBuildingType == gc.getInfoTypeForString('BUILDING_MERCHANT_QUARTER'):
+					#	pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_BAZAAR_OF_MAMMON'), 1)
+					#if iBuildingType == gc.getInfoTypeForString('BUILDING_NOBLE_QUARTER'):
+					#	pCity.setNumRealBuilding(gc.getInfoTypeForString('BUILDING_GRAND_MENAGERIE'), 1)
 
 		if iBuildingType == gc.getInfoTypeForString('BUILDING_INFERNAL_GRIMOIRE'):
 			if CyGame().getSorenRandNum(100, "Bob") <= 20:

@@ -517,8 +517,11 @@
 					<AdventureCounter>30</AdventureCounter>
 				</AdventureStep>
 				<AdventureStep>
+					<!--
 					<Step>ADVENTURESTEP_PURITY_COUNTER_100</Step>
-					<AdventureCounter>1</AdventureCounter>
+					-->
+					<Step>ADVENTURESTEP_ABBEY</Step>
+					<AdventureCounter>4</AdventureCounter>
 				</AdventureStep>
 				<AdventureStep>
 					<Step>ADVENTURESTEP_STAY_IN_PACIFISM_CIVIC</Step>

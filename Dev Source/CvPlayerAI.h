@@ -139,10 +139,17 @@ public:
 	DenialTypes AI_bonusTrade(BonusTypes eBonus, PlayerTypes ePlayer) const;
 	int AI_corporationBonusVal(BonusTypes eBonus) const;
 
-	int AI_bonusVal_new(BonusTypes eBonus, int iChange) const;
+	int AI_bonusVal_new(BonusTypes eBonus, int iChange, bool bDebugValue = false, CvWStringBuffer &szBuffer = CvWStringBuffer()) const;
 	int AI_bonusHealthValue(BonusTypes eBonus, int iChange, int iBonusCount) const;
 	int AI_bonusHappinessValue(BonusTypes eBonus, int iChange, int iBonusCount) const;
 	int AI_bonusYieldCommerceValue(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusBuildFaster(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusBuildingConsumeResource(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusGivesAffinityUnit(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusAllowsEquipment(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusAllowsUnit(BonusTypes eBonus, int iChange, int iBonusCount) const;
+	int CvPlayerAI::AI_bonusAllowsBuilding(BonusTypes eBonus, int iChange, int iBonusCount) const;
+
 
 	int AI_cityTradeVal(CvCity* pCity) const;
 	DenialTypes AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const;
@@ -337,6 +344,9 @@ public:
 	
 	int AI_getPlotAirbaseValue(CvPlot* pPlot) const;
 	int AI_getPlotCanalValue(CvPlot* pPlot) const;
+	// Super Forts *choke*
+	int AI_getPlotChokeValue(CvPlot* pPlot) const;
+	// Super Forts end
 
 	bool AI_isPlotThreatened(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true) const;
 

@@ -855,30 +855,30 @@ def isClimateMap():
 def isSeaLevelMap():
 	return mapscript.isSeaLevelMap()
 
-def getNumCustomMapOptions():
-	return mapscript.getNumCustomMapOptions()
+#def getNumCustomMapOptions():
+#	return mapscript.getNumCustomMapOptions()
 
-def getNumHiddenCustomMapOptions():
-	return mapscript.getNumHiddenCustomMapOptions()
+#def getNumHiddenCustomMapOptions():
+#	return mapscript.getNumHiddenCustomMapOptions()
 
-def getCustomMapOptionName(argsList):
-	return mapscript.getCustomMapOptionName(argsList)
+#def getCustomMapOptionName(argsList):
+#	return mapscript.getCustomMapOptionName(argsList)
 	
-def getNumCustomMapOptionValues(argsList):
-	return mapscript.getNumCustomMapOptionValues(argsList)
+#def getNumCustomMapOptionValues(argsList):
+#	return mapscript.getNumCustomMapOptionValues(argsList)
 	
-def getCustomMapOptionDescAt(argsList):
-	return mapscript.getCustomMapOptionDescAt(argsList)
+#def getCustomMapOptionDescAt(argsList):
+#	return mapscript.getCustomMapOptionDescAt(argsList)
 	
-def getCustomMapOptionDefault(argsList):
-	return mapscript.getCustomMapOptionDefault(argsList)
+#def getCustomMapOptionDefault(argsList):
+#	return mapscript.getCustomMapOptionDefault(argsList)
 
-def isRandomCustomMapOption(argsList):
-	return mapscript.isRandomCustomMapOption(argsList)
+#def isRandomCustomMapOption(argsList):
+#	return mapscript.isRandomCustomMapOption(argsList)
 
 #general functions
-def beforeGeneration():
-	return mapscript.beforeGeneration()
+#def beforeGeneration():
+#	return mapscript.beforeGeneration()
 
 def getWrapX():
 	return mapscript.getWrapX()

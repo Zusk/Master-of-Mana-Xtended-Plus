@@ -375,13 +375,12 @@ class SevoPediaUnit:
 		szSpecialText = CyGameTextMgr().getUnitHelp(self.iUnit, True, False, False, None)[1:]
 		screen.addMultilineText(listName, szSpecialText, self.X_SPECIAL_PANE+5, self.Y_SPECIAL_PANE+30, self.W_SPECIAL_PANE-10, self.H_SPECIAL_PANE-35, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 		"""
-
-		szTier = localText.getText("TXT_KEY_TIER_PEDIA", ( gc.getUnitInfo(self.iUnit).getTier(), ) )
-		screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szTier + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		#szTier = localText.getText("TXT_KEY_TIER_PEDIA", ( gc.getUnitInfo(self.iUnit).getTier(), ) )
+		#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szTier + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 
 		szSpecialText = CyGameTextMgr().getUnitHelp( self.iUnit, True, False, False, None )
-		szSpecialText = localText.getText("TXT_KEY_TIER_PEDIA", ( gc.getUnitInfo(self.iUnit).getTier(), ) ) + szSpecialText;
+		#szSpecialText = localText.getText("TXT_KEY_TIER_PEDIA", ( gc.getUnitInfo(self.iUnit).getTier(), ) ) + szSpecialText;
 		szSpecialText = szSpecialText.strip("\n")	#Trim empty line
 		screen.addMultilineText(listName, szSpecialText, self.X_SPECIAL_PANE + 5, self.Y_SPECIAL_PANE + 30, self.W_SPECIAL_PANE - 5, self.H_SPECIAL_PANE - 32, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 ##--------	BUGFfH: End Modify

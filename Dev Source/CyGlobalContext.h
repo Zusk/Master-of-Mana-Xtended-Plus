@@ -11,6 +11,9 @@
 #include "CvGlobals.h"
 #include "CvArtFileMgr.h"
 
+// lfgr UI 11/2020: Allow cycling through units in plot help
+#include "PlotHelpCycling.h"
+
 class CyGame;
 class CyMap;
 class CyPlayer;
@@ -477,6 +480,9 @@ public:
 	int getINVALID_PLOT_COORD() const { return GC.getINVALID_PLOT_COORD(); }
 	int getNUM_CITY_PLOTS() const { return GC.getNUM_CITY_PLOTS(); }
 	int getCITY_HOME_PLOT() const { return GC.getCITY_HOME_PLOT(); }
+
+// lfgr UI 11/2020: Allow cycling through units in plot help
+	void changePlotHelpCycleIdx( int iChange ) { PlotHelpCyclingManager::getInstance().changeCycleIdx( iChange ); } // Exposed to Python
 };
 
 #endif	// CyGlobalContext_h

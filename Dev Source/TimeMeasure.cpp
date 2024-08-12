@@ -52,8 +52,8 @@ void TimeMeasure::Stop(const TCHAR* TaskName)
 
 void TimeMeasure::doLog()
 {
-	TCHAR szOut[1024];
-
+	if(!isOOSLogging())
+		return;
 	float fTime;
 	float fTimePercent;
 	double dMaxTime;
@@ -69,8 +69,9 @@ void TimeMeasure::doLog()
 			fTime = (float)it->dTimePassed / CLK_TCK;
 			fTimePercent = (float)(100.0f * it->dTimePassed / CLK_TCK / dMaxTime);
 
-			sprintf(szOut, "Task %s : Time Used: %.02f (%.02f%%)\n", it->sTaskName, fTime, fTimePercent);
-			gDLL->logMsg("TimeMeasure.log",szOut, false, false);
+			oosLog("TimeMeasure", "Turn %d,Task %s ,Time Used: %.02f (%.02f%%)",GC.getGameINLINE().getElapsedGameTurns(),it->sTaskName, fTime, fTimePercent);
+			//SpyFanatic: reset time each turn instead of cumulative?
+			it->dTimePassed = 0;
 		}
 	}
 }

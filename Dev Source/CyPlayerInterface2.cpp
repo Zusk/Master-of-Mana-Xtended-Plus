@@ -157,6 +157,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
         .def("canGetTrait",&CyPlayer::canGetTrait, "bool (int)")
         .def("getTraitCost",&CyPlayer::getTraitCost, "int (int)")
         .def("getUnitSupportLimitTotal",&CyPlayer::getUnitSupportLimitTotal, "int (int)")
+        .def("getUnitSupportUsed",&CyPlayer::getUnitSupportUsed, "int (int)")
 /*************************************************************************************************/
 /**	END	                                        												**/
 /*************************************************************************************************/
@@ -191,10 +192,14 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
     .def("VerifyFinishedAdventures",&CyPlayer::VerifyFinishedAdventures,"void ()")
 
 	.def("launchPickEquipmentPopup",&CyPlayer::launchPickEquipmentPopup,"void ()")
-	.def("canEquipUnit",&CyPlayer::canEquipUnit,"bool (CyUnit* pUnit, int, bool, bool)")
+	.def("canEquipUnit",&CyPlayer::canEquipUnit,"bool (CyUnit* pUnit, int, bool, bool, bool)")
 	.def("isCanEverSpellResearch",&CyPlayer::isCanEverSpellResearch,"bool (int)")
 /*************************************************************************************************/
 /**	    									END													**/
 /*************************************************************************************************/
-		;
+    .def("setHumanDisabled",&CyPlayer::setHumanDisabled,"void (bool)")
+    .def("getGoldPerTurnNetAtZeroPercent",&CyPlayer::getGoldPerTurnNetAtZeroPercent,"int ()")
+    .def("doTerraformRitual",&CyPlayer::doTerraformRitual,"int (int)")
+    .def("doSummonRitual",&CyPlayer::doSummonRitual,"void (int)")
+    ;
 }

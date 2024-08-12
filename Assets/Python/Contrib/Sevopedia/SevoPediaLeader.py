@@ -51,12 +51,19 @@ class SevoPediaLeader:
 		self.X_CIVIC = self.X_LEADERHEAD_PANE + self.W_LEADERHEAD_PANE + X_MERGIN
 		self.Y_CIVIC = self.Y_LEADERHEAD_PANE
 		self.W_CIVIC = self.top.R_PEDIA_PAGE - self.X_CIVIC
-		self.H_CIVIC = 80
+		self.H_CIVIC = 80 + 20
 
 		self.X_TRAITS = self.X_LEADERHEAD_PANE + self.W_LEADERHEAD_PANE + X_MERGIN
 		self.Y_TRAITS = self.Y_CIVIC + self.H_CIVIC + Y_MERGIN
 		self.W_TRAITS = self.top.R_PEDIA_PAGE - self.X_TRAITS
-		self.H_TRAITS = self.Y_CIV + self.H_CIV - self.Y_TRAITS
+		#Spyfanatic: display religion that cannot be adopted
+		#self.H_TRAITS = self.Y_CIV + self.H_CIV - self.Y_TRAITS
+		self.H_TRAITS = self.Y_LEADERHEAD_PANE + self.H_LEADERHEAD_PANE - self.Y_TRAITS - Y_MERGIN - Y_MERGIN - 20
+
+		self.X_RELIGION = self.X_TRAITS
+		self.Y_RELIGION = self.Y_TRAITS + self.H_TRAITS + Y_MERGIN
+		self.W_RELIGION = self.W_TRAITS
+		self.H_RELIGION = 80 + 20
 
 		self.X_HISTORY = self.X_LEADERHEAD_PANE
 		self.Y_HISTORY = self.Y_CIV + self.H_CIV + Y_MERGIN
@@ -89,7 +96,17 @@ class SevoPediaLeader:
 ##--------	BUGFfH: End Delete
 		self.placeCiv()
 		self.placeTraits()
+		self.placeBannedReligion()
 
+	def placeBannedReligion(self):
+		screen = self.top.getScreen()
+		panelName = self.top.getNextWidgetName()
+		screen.addPanel(panelName, localText.getText("TXT_KEY_MISC_CANNOT_CONVERT_TO", ()), "", False, True, self.X_RELIGION, self.Y_RELIGION, self.W_RELIGION, self.H_RELIGION, PanelStyles.PANEL_STYLE_BLUE50)
+
+		eLeader = gc.getLeaderHeadInfo(self.iLeader)
+		for iReligionID in range(gc.getNumReligionInfos()):
+			if (eLeader.getReligionWeightModifier(iReligionID) == -100):
+				screen.attachImageButton(panelName, "", gc.getReligionInfo(iReligionID).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_RELIGION, iReligionID, 1, False)
 
 
 	def placeCiv(self):
@@ -111,8 +128,6 @@ class SevoPediaLeader:
 				fX += fEachMargin
 				screen.setImageButton(self.top.getNextWidgetName(), loopCiv[1].getButton(), int(fX), self.Y_CIV, self.W_CIV, self.H_CIV, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, loopCiv[0], 1)
 ##--------	BUGFfH: End Modify
-
-
 
 	def placeTraits(self):
 		screen = self.top.getScreen()
@@ -156,20 +171,28 @@ class SevoPediaLeader:
 		"""
 		screen.addPanel(panelName, localText.getText("TXT_KEY_PEDIA_FAV_CIVIC", ()), "", True, True, self.X_CIVIC, self.Y_CIVIC, self.W_CIVIC, self.H_CIVIC, PanelStyles.PANEL_STYLE_BLUE50)
 		iCivic = gc.getLeaderHeadInfo(self.iLeader).getFavoriteCivic()
+		szCivicText = u""
 		if (-1 != iCivic):
 			szCivicText = u"<link=" + gc.getCivicInfo(iCivic).getType() + ">" + gc.getCivicInfo(iCivic).getDescription() + u"</link>"
 			szCivicText = localText.getText("TXT_KEY_MISC_FAVORITE_CIVIC", ()) + u" " + szCivicText
+
+		#Spyfanatic: show also Hated Civic
+		iCivicHated = gc.getLeaderHeadInfo(self.iLeader).getHatedCivic()
+		if (-1 != iCivicHated):
+			szCivicText += u"\n" + localText.getText("TXT_KEY_MISC_HATED_CIVIC", ()) + u" " +  u"<link=" + gc.getCivicInfo(iCivicHated).getType() + ">" + gc.getCivicInfo(iCivicHated).getDescription() + u"</link>"
+
 		iWonder = gc.getLeaderHeadInfo(self.iLeader).getFavoriteWonder()
-		if (-1 != iWonder and -1 != iCivic):
+		#if (-1 != iWonder and -1 != iCivic):
+		if (-1 != iWonder):
 			szWonderText = u"<link=" + gc.getBuildingInfo(iWonder).getType() + ">" + gc.getBuildingInfo(iWonder).getDescription() + u"</link>"
 			szCivicText += u"\n" + localText.getText("TXT_KEY_MISC_FAVORITE_WONDER", ()) + u" " + szWonderText
-			listName = self.top.getNextWidgetName()
-			screen.addMultilineText(listName, szCivicText, self.X_CIVIC + 5, self.Y_CIVIC + 30, self.W_CIVIC - 5, self.H_CIVIC - 32, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		listName = self.top.getNextWidgetName()
+		screen.addMultilineText(listName, szCivicText, self.X_CIVIC + 5, self.Y_CIVIC + 30, self.W_CIVIC - 5, self.H_CIVIC - 32, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 ##--------	BUGFfH: End Modify
 
 
 ##--------	BUGFfH: Deleted by Denev 2009/10/05
-			"""
+		"""
 	def placeReligion(self):
 		screen = self.top.getScreen()
 		panelName = self.top.getNextWidgetName()

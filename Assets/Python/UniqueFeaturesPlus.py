@@ -91,10 +91,11 @@ def spellSanctifyUF(pCaster):
 	iUF = pPlot.getImprovementType()
 	pPlayer = gc.getPlayer(pCaster.getOwner())
 	bSealed = false
-	if iUF == gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE') or iUF == gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE_EXPLORED'):
-		pPlot.setImprovementType(gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE_SEALED'))
-		bSealed = true
-	elif iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL') or iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL_EXPLORED'):
+	#if iUF == gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE') or iUF == gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE_EXPLORED'):
+	#	pPlot.setImprovementType(gc.getInfoTypeForString('IMPROVEMENT_AIFON_ISLE_SEALED'))
+	#	bSealed = true
+	#elif iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL') or iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL_EXPLORED'):
+	if iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL') or iUF == gc.getInfoTypeForString('IMPROVEMENT_BRADELINES_WELL_EXPLORED'):
 		pPlot.setBonusType(-1)
 		# Bradeline's Well can't be sealed
 		iPlayer = pCaster.getOwner()

@@ -316,6 +316,11 @@ void CvMap::setup()
 	gDLL->getFAStarIFace()->Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	gDLL->getFAStarIFace()->Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
 	gDLL->getFAStarIFace()->Initialize(&GC.getPlotGroupFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, plotGroupValid, NULL, countPlotGroup, NULL);
+
+	//FAStar* pPlotDistanceFinder = gDLL->getFAStarIFace()->create();
+
+	GC.setStepUnitFinder(gDLL->getFAStarIFace()->create());
+	gDLL->getFAStarIFace()->Initialize(&GC.getStepUnitFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), stepDestValid, stepHeuristic, stepCost, stepUnitValid, stepAdd, NULL, NULL);
 }
 
 
@@ -1325,8 +1330,9 @@ void CvMap::resetPathDistance()
 	gDLL->getFAStarIFace()->ForceReset(&GC.getStepFinder());
 }
 
-
-int CvMap::calculatePathDistance(CvPlot *pSource, CvPlot *pDest)
+// Super Forts begin *canal* *choke*
+int CvMap::calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvalidPlot)
+// Super Forts end
 {
 	FAStarNode* pNode;
 
@@ -1335,7 +1341,16 @@ int CvMap::calculatePathDistance(CvPlot *pSource, CvPlot *pDest)
 		return -1;
 	}
 
-	if (gDLL->getFAStarIFace()->GeneratePath(&GC.getStepFinder(), pSource->getX_INLINE(), pSource->getY_INLINE(), pDest->getX_INLINE(), pDest->getY_INLINE(), false, 0, true))
+	// Super Forts begin *canal* *choke*
+	// 1 must be added because 0 is already being used as the default value for iInfo in GeneratePath()
+	int iInvalidPlot = 0;
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		iInvalidPlot = (pInvalidPlot == NULL) ? 0 : GC.getMapINLINE().plotNum(pInvalidPlot->getX_INLINE(), pInvalidPlot->getY_INLINE()) + 1;
+	}
+
+	if (gDLL->getFAStarIFace()->GeneratePath(&GC.getStepFinder(), pSource->getX_INLINE(), pSource->getY_INLINE(), pDest->getX_INLINE(), pDest->getY_INLINE(), false, iInvalidPlot, true))
+	// Super Forts end
 	{
 		pNode = gDLL->getFAStarIFace()->GetLastNode(&GC.getStepFinder());
 
@@ -1347,6 +1362,31 @@ int CvMap::calculatePathDistance(CvPlot *pSource, CvPlot *pDest)
 
 	return -1; // no passable path exists
 }
+
+// Super Forts begin *canal* *choke*
+void CvMap::calculateCanalAndChokePoints()
+{
+	if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+		return;
+
+	int iI;
+	for(iI = 0; iI < numPlotsINLINE(); iI++)
+	{
+		plotByIndexINLINE(iI)->calculateCanalValue();
+		plotByIndexINLINE(iI)->calculateChokeValue();
+		// TEMPORARY HARD CODE for testing purposes
+		/*if((plotByIndexINLINE(iI)->getChokeValue() > 0) || (plotByIndexINLINE(iI)->getCanalValue() > 0))
+		{
+			ImprovementTypes eImprovement = (ImprovementTypes) (plotByIndexINLINE(iI)->isWater() ? GC.getInfoTypeForString("IMPROVEMENT_OFFSHORE_PLATFORM") : GC.getInfoTypeForString("IMPROVEMENT_FORT"));
+			plotByIndexINLINE(iI)->setImprovementType(eImprovement);
+		}
+		else
+		{
+			plotByIndexINLINE(iI)->setImprovementType(NO_IMPROVEMENT);
+		}*/
+	}
+}
+// Super Forts end
 
 //
 // read object from a stream
@@ -2194,7 +2234,8 @@ StartRequirements CvMap::getWantedStartForPlayer(int player)
 	}
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_KHAZAD") == 0)
 	{
-		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_PLAINS");
+		//wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_PLAINS");
+		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_MUSHGROUND");
 		wanted.reqHills = true;
 		wanted.reqMountains = true;
 	}
@@ -2229,7 +2270,8 @@ StartRequirements CvMap::getWantedStartForPlayer(int player)
 	}
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_BALSERAPHS") == 0)
 	{
-		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_PLAINS");
+		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_GRASS"); //SpyFanatic: because of favorite improvement is cottage
+		//wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_PLAINS");
 	}
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_CLAN_OF_EMBERS") == 0)
 	{
@@ -2248,6 +2290,7 @@ StartRequirements CvMap::getWantedStartForPlayer(int player)
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_SHEAIM") == 0)
 	{
 		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_PLAINS");
+		//wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_BROKEN_LANDS");
 		// Shrine or tower or mana?
 	}
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_INFERNAL") == 0)
@@ -2257,6 +2300,7 @@ StartRequirements CvMap::getWantedStartForPlayer(int player)
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_ILLIANS") == 0)
 	{
 		wanted.reqTerrain = (TerrainTypes)GC.getInfoTypeForString("TERRAIN_SNOW");
+		//wanted.reqForest = true; // SpyFanatic: Ice without forest is to hard to live in basically
 	}
 	else if (wanted.szName.CompareNoCase("CIVILIZATION_ARISTRAKH") == 0)
 	{
@@ -2723,7 +2767,7 @@ void CvMap::changeTerrainBasedOnPlayers()
 	addMana();
 
 	// Reporting result code...
-	
+	/*
 	double factor = (double)donePlots.size() / (double)totalLandPlots;
 	//int groups = (int)climateGroups.size();
 	int numberReachedRightSize = 0;
@@ -2733,7 +2777,6 @@ void CvMap::changeTerrainBasedOnPlayers()
 			numberReachedRightSize++;
 	}
 
-///*
 	char	*szMessage = new char[512];
 	char	szMessage1[128];
 	char	szMessage2[128];

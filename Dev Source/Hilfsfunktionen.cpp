@@ -47,6 +47,44 @@ void sortList(int* ListToSort, int* IDs, int iIndex)
 
 void doAI_EconomyLog()
 {
+	if(!isOOSLogging())
+	{
+		return; //If no logging, dont do anything
+	}
+
+	int iTotalImprovementLandNoBonus = 0;
+	int iTotalImprovementLandWithBonus = 0;
+	int iTotalImprovementWaterNoBonus = 0;
+	int iTotalImprovementWaterWithBonus = 0;
+	for(int j = 0; j < GC.getMapINLINE().numPlots(); ++j) {
+		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndex(j);
+
+		if(!pLoopPlot->isWater())
+		{
+			if(pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
+			{
+				if(pLoopPlot->getBonusType() == NO_BONUS)
+				{
+					iTotalImprovementLandNoBonus++;
+				}
+				else
+				{
+					iTotalImprovementLandWithBonus++;
+				}
+			}
+		}
+		else
+		{
+			if(pLoopPlot->getBonusType() == NO_BONUS)
+			{
+				iTotalImprovementWaterNoBonus++;
+			}
+			else
+			{
+				iTotalImprovementWaterWithBonus++;
+			}
+		}
+	}
 
 	for(int i = 0; i < MAX_CIV_PLAYERS; ++i) {
 		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)i);
@@ -62,7 +100,6 @@ void doAI_EconomyLog()
 
 		//int TotalPlayers = 0;
 		int iLoop;
-		TCHAR szOut[1024];
 
 		if(kPlayer.isAlive()) {
 			//++TotalPlayers;
@@ -80,10 +117,12 @@ void doAI_EconomyLog()
 			TotalMana = kPlayer.getManaIncome();
 			TotalSpellResearch = kPlayer.getArcaneIncome();
 
-			sprintf(szOut, "Turn: %d,PlayerID: %d,Player: %S,Food: %d,Production: %d,Science: %d,Faith: %d,Culture: %d,Mana: %d,Gold: %d,SpellResearch: %d"
+			oosLog("AI_economy"
+				,"Turn:%d,PlayerID:%d,Player:%S,NumCities:%d,Food:%d,Production:%d,Science:%d,Faith:%d,Culture:%d,Mana:%d,Gold:%d,SpellResearch:%d,BonusOnLand:%d,Without:%d,BonusOnWater:%d,Without:%d"
 				,GC.getGame().getElapsedGameTurns()
 				,kPlayer.getID()
 				,kPlayer.getName()
+				,kPlayer.getNumCities()
 				,TotalFood
 				,TotalProduction
 				,TotalScience
@@ -92,8 +131,11 @@ void doAI_EconomyLog()
 				,TotalMana
 				,TotalGold
 				,TotalSpellResearch
+				,iTotalImprovementLandWithBonus
+				,iTotalImprovementLandNoBonus
+				,iTotalImprovementWaterWithBonus
+				,iTotalImprovementWaterNoBonus
 			);
-			gDLL->logMsg("AI_economy.log",szOut, false, false);
 		}
 	}
 	/*

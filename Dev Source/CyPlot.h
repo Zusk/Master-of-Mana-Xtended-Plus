@@ -291,6 +291,13 @@ public:
 
 	void destroyDungeon();
 
+	// Super Forts begin *canal* *choke*
+	int getCanalValue();
+	void calculateCanalValue();
+	int getChokeValue();
+	void calculateChokeValue();
+	// Super Forts end
+
 private:
 	CvPlot* m_pPlot;
 };

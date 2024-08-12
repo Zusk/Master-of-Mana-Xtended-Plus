@@ -77,14 +77,14 @@ public:
 	bool isTeamWondersMaxed() const;																							// Exposed to Python
 	bool isNationalWondersMaxed() const;																					// Exposed to Python
 	bool isBuildingsMaxed() const;																								// Exposed to Python
-	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false) const;					// Exposed to Python
+	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false, bool bIgnoreResources = false) const;					// Exposed to Python
 
 //FfH: Added by Kael 08/15/2007
-	bool canUpgrade(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false) const;
+	bool canUpgrade(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false, bool bIgnoreResources = false) const;
 //FfH: End Modify
 
 	bool canTrain(UnitCombatTypes eUnitCombat) const;
-	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;	// Exposed to Python
+	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreResources = false) const;	// Exposed to Python
 	bool canCreate(ProjectTypes eProject, bool bContinue = false, bool bTestVisible = false) const;		// Exposed to Python
 	bool canMaintain(ProcessTypes eProcess, bool bContinue = false) const;														// Exposed to Python
 	bool canJoin() const;																													// Exposed to Python
@@ -1242,6 +1242,9 @@ public:
 	void invalidateCommerceRankCache(CommerceTypes eCommerce = NO_COMMERCE);
 
 	int getBestYieldAvailable(YieldTypes eYield) const;
+
+	//SpyFanatic: plot distance to another plot without counting impassable, water and plot which require resistance
+	int getStepDistance(CvPlot* pTargetPlot);
 
 protected:
 

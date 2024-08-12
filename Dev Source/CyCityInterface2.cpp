@@ -16,6 +16,17 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 	OutputDebugString("Python Extension Module - CyCityPythonInterface2\n");
 
 	x
+
+	//FfH: Added by Kael 10/18/2007
+		.def("applyBuildEffects", &CyCity::applyBuildEffects, "void (CyUnit* pUnit)")
+		.def("changeCrime", &CyCity::changeCrime, "void (int iChange) - changes the Crime Rate for this city")
+		.def("getCrime", &CyCity::getCrime, "int () - crime rate")
+		.def("isHasBuildingClass", &CyCity::isHasBuildingClass, "bool (int /*BuildingClassTypes*/ iIndex) - has building class")
+		.def("isSettlement", &CyCity::isSettlement, "bool () - is settlement")
+		.def("setCivilizationType", &CyCity::setCivilizationType, "void (int iNewValue) - sets the Civilization Type of this city")
+		.def("setPlotRadius", &CyCity::setPlotRadius, "void (int iNewValue) - sets the Plot Radius of this city")
+		.def("setSettlement", &CyCity::setSettlement, "void (bool bNewValue) - sets city as a Settlement or not")
+//FfH: End Add
 /*************************************************************************************************/
 /**	ADDON (New Function Definitions) Sephi                                                      **/
 /*************************************************************************************************/
@@ -38,7 +49,8 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 /**	END Change Building Bonuses	                                        						**/
 /*************************************************************************************************/
 //>>>>BUGFfH: Added by Denev 2009/09/29
-		.def("getUnitArtStyleButton", &CyCity::getUnitArtStyleButton, "string (int iUnit)");
+		.def("getUnitArtStyleButton", &CyCity::getUnitArtStyleButton, "string (int iUnit)")
+		.def("getReligionCount", &CyCity::getReligionCount, "int ()")
 //<<<<BUGFfH: End Add
 		;
 }

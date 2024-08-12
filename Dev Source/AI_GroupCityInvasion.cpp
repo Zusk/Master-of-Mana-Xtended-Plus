@@ -1,5 +1,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvAIGroup.h"
+#include "FAStarNode.h"
+#include "CvDLLFAStarIFaceBase.h"
 
 //checks if the Group can still has a city to target
 bool CvAIGroup::update_City_Invasion_isTargetStillValid()
@@ -130,7 +132,17 @@ bool CvAIGroup::update_City_Invasion_doesEnemyOutNumberUs(double dMod) const
 		return false;
 	}
 
-	int iEnemyPower=calculateEnemyStrength(getMissionTarget(), 2,true,true,false);
+	//SpyFanatic: given that mission target is a non barbarian city, we should count defensive unit
+	//int iEnemyPower=calculateEnemyStrength(getMissionTarget(), 2,true,true,false);
+	int iEnemyPower=0;
+	if(getMissionTarget()!=NULL && getMissionTarget()->getPlotCity()!=NULL && getMissionTarget()->getPlotCity()->getOwnerINLINE() < BARBARIAN_PLAYER)
+	{
+		iEnemyPower=calculateEnemyStrength(getMissionTarget(), 2,true,false,true);
+	}
+	else
+	{
+		iEnemyPower=calculateEnemyStrength(getMissionTarget(), 2,true,true,false);
+	}
 	int iOurPower=getGroupPowerWithinRange(getMissionTarget(),MAX_INT);
 
 	return(iEnemyPower>iOurPower*dMod);
@@ -417,6 +429,7 @@ void CvAIGroup::update_City_Invasion_LookForOtherTarget()
 	CvCity* pBestCity=NULL;
 	int iValue, iBestValue=MAX_INT;
 	int iLoop;
+	int iCityDistance = MAX_INT;
 	CvPlayer& kPlayer=GET_PLAYER(getOwnerINLINE());
 
 	//if we have another Invasion Group on this land area, disband
@@ -441,7 +454,10 @@ void CvAIGroup::update_City_Invasion_LookForOtherTarget()
 			{
 				if(pLoopCity->getArea()==getMissionTarget()->getArea())
 				{
-					if(stepDistance(pLoopCity->getX_INLINE(),pLoopCity->getY_INLINE(),getMissionTarget()->getX_INLINE(),getMissionTarget()->getY_INLINE())<15)
+					int iTempDistance = pLoopCity->getStepDistance(getMissionTarget());
+					if(iTempDistance >= 0 && iTempDistance < iCityDistance)
+					//SpyFanatic: point to the nearest city as route, not in linear distance
+					//if(stepDistance(pLoopCity->getX_INLINE(),pLoopCity->getY_INLINE(),getMissionTarget()->getX_INLINE(),getMissionTarget()->getY_INLINE())<15)
 					{
 						iValue=calculateEnemyStrength(getMissionTarget(), 2,true);
 
@@ -449,18 +465,144 @@ void CvAIGroup::update_City_Invasion_LookForOtherTarget()
 						{
 							iBestValue=iValue;
 							pBestCity=pLoopCity;
+							iCityDistance=iTempDistance;
 						}
 					}
 				}
 			}
 		}
 	}
+
+	//SpyFanatic: if not at war, check for barbs lairs or cities to cleanup
+	if(!GET_TEAM(kPlayer.getTeam()).isAtWar(GET_PLAYER((PlayerTypes)getMissionTarget()->getOwnerINLINE()).getTeam()) && !GET_TEAM(kPlayer.getTeam()).isBarbarianAlly())
+	{
+/*
+		//Train on Lair
+		for(int iI = 0; iI < GC.getMapINLINE().numPlots(); ++iI) {
+			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndex(iI);
+			if(pLoopPlot->isLair())
+			{
+				bool bValid=false;
+				if(pLoopPlot->getOwnerINLINE()==getID())
+				{
+					oosLog("BarbLair"
+					,"Turn:%d,PlayerID:%d,Lairx:%d,LairY:%d,is in cultural borders"
+					,GC.getGame().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,pLoopPlot->getX_INLINE()
+					,pLoopPlot->getY_INLINE()
+					);
+					bValid=true;
+				}
+				else if(!pLoopPlot->isOwned())
+				{
+					int iSearchRange=1;
+					for (int iDX = -iSearchRange; iDX <= iSearchRange; ++iDX)
+					{
+						for (int iDY = -iSearchRange; iDY <= iSearchRange; ++iDY)
+						{
+							CvPlot* pAdjacentPlot = plotXY(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), iDX, iDY);
+							if(pAdjacentPlot!=NULL)
+							{
+								if(pAdjacentPlot->isVisible(getTeam(),false) && pAdjacentPlot->getOwnerINLINE()==getID())
+								{
+									oosLog("BarbLair"
+									,"Turn:%d,PlayerID:%d,Lairx:%d,LairY:%d,is at distance 1 from cultural borders"
+									,GC.getGame().getElapsedGameTurns()
+									,getOwnerINLINE()
+									,pLoopPlot->getX_INLINE()
+									,pLoopPlot->getY_INLINE()
+									);
+									bValid=true;
+									break;
+								}
+							}
+						}
+					}
+				}
+				if(bValid)
+				//if(isAllUnitsWithinRange(pLoopCity->plot(),10))
+				{
+					oosLog("BarbLair"
+					,"Turn:%d,PlayerID:%d,Lairx:%d,LairY:%d"
+					,GC.getGame().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,pLoopPlot->getX_INLINE()
+					,pLoopPlot->getY_INLINE()
+					);
+
+					CvAIGroup* pNewGroup = NULL;
+					for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+					{
+						if(pAIGroup->getGroupType()==AIGROUP_DESTROY_LAIR && pAIGroup->getMissionPlot()==pLoopPlot)
+						{
+							if(pAIGroup->UnitsNeeded() > 0)
+							{
+								pNewGroup = pAIGroup; //Existing group already target lair
+								break;
+							}
+						}
+					}
+					if(pNewGroup == NULL)
+					{
+						//Create new stack and move all units there...
+						CvAIGroup* pNewGroup=kPlayer.initAIGroup(AIGROUP_DESTROY_LAIR);
+						pNewGroup->setMissionPlot(pLoopPlot);
+						pNewGroup->setMissionArea(pLoopPlot->getArea());
+					}
+					//Add Units to this stack
+					while(pAIGroup->UnitsNeeded()>0)
+					{
+						CvUnit* pUnit=getCloseUnit(pAIGroup->getMissionPlot(),pAIGroup, true);
+						if(pUnit==NULL)
+							break;
+						if(isUnitAllowed(pUnit,pAIGroup->getGroupType()) && !pAIGroup->isFull(pUnit))
+						{
+							pUnit->setAIGroup(pAIGroup);
+						}
+					}
+				}
+			}
+			if(getNumUnits() <= 0)
+			{
+				//No more units, stack is empty
+				oosLog("BarbLair"
+					,"Turn:%d,PlayerID:%d,Lairx:%d,LairY:%d,no more unit stack is empty"
+					,GC.getGame().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,pLoopPlot->getX_INLINE()
+					,pLoopPlot->getY_INLINE()
+					);
+				break;
+			}
+		}
+*/
+		//if(getNumUnits() > 0)
+		{
+			//SpyFanatic: if cant take target city but not yet in war... check for some nearby barbs city to conquer and gain xp
+			CvPlayer& kBarbPlayer=GET_PLAYER((PlayerTypes)GC.getBARBARIAN_PLAYER());
+			for(pLoopCity = kBarbPlayer.firstCity(&iLoop);pLoopCity!=NULL;pLoopCity = kBarbPlayer.nextCity(&iLoop))
+			{
+				if(isAllUnitsWithinRange(pLoopCity->plot(),10))
+				{
+					iValue=calculateEnemyStrength(pLoopCity->plot(), 2,true);
+
+					if(iValue<iBestValue) //Find a barb city easier than the original target
+					{
+						iBestValue=iValue;
+						pBestCity=pLoopCity;
+					}
+				}
+			}
+		}
+	}
+
+
 	//TODO
 	if(pBestCity==getMissionTarget()->getPlotCity())
 	{
 		//no other city is a better target, negotioate peace?
 		update_City_Invasion_moveToSecurePlot();
-
 	}
 	if(pBestCity!=NULL)
 	{
@@ -483,6 +625,9 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 	//retreat wounded units
 	healUnits(30,pTarget);
 
+	bool bAtWarWithTarget = getMissionTarget()->getTeam() != NO_TEAM ? GET_TEAM(getTeam()).isAtWar(getMissionTarget()->getTeam()) : false;
+	bool bAtWarWithPlot = getMissionPlot()->getTeam() != NO_TEAM ? GET_TEAM(getTeam()).isAtWar(getMissionPlot()->getTeam()) : false;
+
 	//first lets move all units to the MissionPlot if they aren't already
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
@@ -492,6 +637,26 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 		{
 			if(pLoopUnit->generatePath(getMissionPlot(),0,true,&iPathTurns))
 			{
+				if(isOOSLogging())
+				{
+					oosLog(
+						"AI_Invasion"
+						,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity MOVE TO TARGET AtWar:%d,UnitID:%d,%S,GroupID:%d,X:%d,Y:%d"
+						,GC.getGame().getElapsedGameTurns()
+						,getOwnerINLINE()
+						,getID()
+						,GC.getAIGroupInfo(getGroupType()).getDescription()
+						,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+						,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+						,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+						,bAtWarWithPlot
+						,pLoopUnit->getID()
+						,pLoopUnit->getName().GetCString()
+						,pLoopUnit->getGroupID()
+						,pLoopUnit->getPathEndTurnPlot()->getX_INLINE()
+						,pLoopUnit->getPathEndTurnPlot()->getY_INLINE()
+					);
+				}
 				pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, pLoopUnit->getPathEndTurnPlot()->getX_INLINE(), pLoopUnit->getPathEndTurnPlot()->getY_INLINE(),MOVE_DIRECT_ATTACK);
 			}
 		}
@@ -518,6 +683,24 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 	//not enough units at missionplot
 	if(bNotEnoughUnits && bMissionPlotThreatened)
 	{
+		if(isOOSLogging())
+		{
+			oosLog(
+				"AI_Invasion"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity MOVE SECURE PLOT,PlotThreat:%d,NotEnoughUnit:%d,Count:%d,Num:%d"
+				,GC.getGame().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,GC.getAIGroupInfo(getGroupType()).getDescription()
+				,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+				,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+				,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+				,bMissionPlotThreatened
+				,bNotEnoughUnits
+				,iCounter
+				,getNumUnits()
+			);
+		}
 		update_City_Invasion_moveToSecurePlot();
 	}
 	else
@@ -550,6 +733,24 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 		//not enough units to march on
 		if(iCounter*100>=getNumUnits()*20)
 		{
+			if(isOOSLogging())
+			{
+				oosLog(
+					"AI_Invasion"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity WAIT,PlotThreat:%d,NotEnoughUnit:%d,Count:%d,Num:%d"
+					,GC.getGame().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,GC.getAIGroupInfo(getGroupType()).getDescription()
+					,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+					,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+					,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+					,bMissionPlotThreatened
+					,bNotEnoughUnits
+					,iCounter
+					,getNumUnits()
+				);
+			}
 			return;
 		}
 	}
@@ -562,8 +763,14 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 	for (int iJ = 0; iJ < NUM_DIRECTION_TYPES; iJ++)
 	{
 		CvPlot* pAdjacentPlot = plotDirection(pTarget->getX_INLINE(), pTarget->getY_INLINE(), ((DirectionTypes)iJ));
+
 		if(pAdjacentPlot!=NULL && canMoveIntoPlot(pAdjacentPlot,false))
 		{
+			//SpyFanatic: dont circumnavigate city and lose turn just to find a plot with higher defense
+			bool nearbyX = (pAdjacentPlot->getX_INLINE() <= pTarget->getX_INLINE() && pAdjacentPlot->getX_INLINE() >= getMissionPlot()->getX_INLINE()) || (pAdjacentPlot->getX_INLINE() >= pTarget->getX_INLINE() && pAdjacentPlot->getX_INLINE() <= getMissionPlot()->getX_INLINE());
+			bool nearbyY = (pAdjacentPlot->getY_INLINE() <= pTarget->getY_INLINE() && pAdjacentPlot->getY_INLINE() >= getMissionPlot()->getY_INLINE()) || (pAdjacentPlot->getY_INLINE() >= pTarget->getY_INLINE() && pAdjacentPlot->getY_INLINE() <= getMissionPlot()->getY_INLINE());
+			if(nearbyX && nearbyY)
+			{
 			iValue=10000-100*stepDistance(pAdjacentPlot->getX_INLINE(),pAdjacentPlot->getY_INLINE(),getMissionPlot()->getX_INLINE(),getMissionPlot()->getY_INLINE());
 			if(pAdjacentPlot->isVisibleEnemyUnit(getOwnerINLINE()))
 			{
@@ -575,12 +782,25 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 				pBestPlot=pAdjacentPlot;
 				iBestValue=iValue;
 			}
+			}
 		}
 	}
 
 	//lets move all units to the Plot adjacent to our target City
 	if(pBestPlot!=NULL)
 	{
+		//SpyFanatic: if some units just move here wait for them
+		iCounter = 0;
+		for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			if(pLoopUnit->hasMoved() && pLoopUnit->atPlot(getMissionPlot()))
+			{
+				iCounter++;
+			}
+		}
+		if(iCounter <= 0)
+		{
 		for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 		{
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
@@ -588,9 +808,30 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 			{
 				if(pLoopUnit->generatePath(pBestPlot,MOVE_IGNORE_DANGER,true,&iPathTurns))
 				{
+					if(isOOSLogging())
+					{
+						oosLog(
+							"AI_Invasion"
+							,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity MOVE BEST PLOT AtWar:%d,UnitID:%d,%S,GroupID:%d,X:%d,Y:%d"
+							,GC.getGame().getElapsedGameTurns()
+							,getOwnerINLINE()
+							,getID()
+							,GC.getAIGroupInfo(getGroupType()).getDescription()
+							,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+							,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+							,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+							,bAtWarWithPlot
+							,pLoopUnit->getID()
+							,pLoopUnit->getName().GetCString()
+							,pLoopUnit->getGroupID()
+							,pLoopUnit->getPathEndTurnPlot()->getX_INLINE()
+							,pLoopUnit->getPathEndTurnPlot()->getY_INLINE()
+						);
+					}
 					pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, pLoopUnit->getPathEndTurnPlot()->getX_INLINE(), pLoopUnit->getPathEndTurnPlot()->getY_INLINE(),MOVE_IGNORE_DANGER);
 				}
 			}
+		}
 		}
 	}
 
@@ -602,6 +843,22 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 
 	if(iOurStrength>iEnemyStrength*1.2)
 	{
+		if(isOOSLogging())
+		{
+			oosLog(
+				"AI_Invasion"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity LAUNCH ATTACK,iOurStrength:%d,iEnemyStrength:%d"
+				,GC.getGame().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,GC.getAIGroupInfo(getGroupType()).getDescription()
+				,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+				,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+				,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+				,iOurStrength
+				,iEnemyStrength
+			);
+		}
 		launchAttack(pTarget);
 	}
 	else
@@ -614,6 +871,24 @@ void CvAIGroup::update_City_Invasion_AttackCity()
 			{
 				if(pLoopUnit->canMove())
 				{
+					if(isOOSLogging())
+					{
+						CvPlot* pEndOfTurnPlot = pLoopUnit->getPathEndTurnPlot();
+						oosLog(
+							"AI_Invasion"
+							,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,X:%d,Y:%d,update_City_Invasion_AttackCity PILLAGE,UnitID:%d,X:%d,Y:%d"
+							,GC.getGame().getElapsedGameTurns()
+							,getOwnerINLINE()
+							,getID()
+							,GC.getAIGroupInfo(getGroupType()).getDescription()
+							,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+							,getMissionPlot() != NULL ? getMissionPlot()->getX_INLINE() : 0
+							,getMissionPlot() != NULL ? getMissionPlot()->getY_INLINE() : 0
+							,pLoopUnit->getID()
+							,pEndOfTurnPlot != NULL ? pEndOfTurnPlot->getX_INLINE() : 0
+							,pEndOfTurnPlot != NULL ? pEndOfTurnPlot->getY_INLINE() : 0
+						);
+					}
 					pLoopUnit->pillage();
 				}
 			}
@@ -628,50 +903,8 @@ void CvAIGroup::update_City_Invasion()
 		return;
 	}
 
-	/** DEBUG **/
-	//TCHAR szOut[1024];
-	CvWString szTempBuffer;
-	getAI_InvasionStatusString(szTempBuffer, getMissionStatus());
-
-	if(isOOSLogging())	
-	{
-	oosLog(
-	"AI_Invasion"
-	,"Turn: %d,PlayerID: %d,GroupID: %d,%S,TargetCity: %S,PowerRatio:%d,Already at War:%d,Current MissionStatus:%S,Units:%d,Units needed:%d\n"
-	,GC.getGame().getElapsedGameTurns()
-	,getOwnerINLINE()
-	,getID()
-	,GC.getAIGroupInfo(getGroupType()).getDescription()
-	,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
-	,GET_TEAM(getTeam()).getPower(true)*100/(1+GET_TEAM(getMissionTarget()->getTeam()).getPower(true))
-	,GET_TEAM(getTeam()).isAtWar(getMissionTarget()->getTeam())
-	,szTempBuffer.c_str()
-	,getNumUnits()
-	,UnitsNeeded()
-	);
-	}
-/*
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI_Invasion_%d_%d.log",getOwnerINLINE(),getID());
-
-	TCHAR szOut[1024];
-	sprintf(szOut, "CvAIInvasion %d,%d::update -- %S -- %d\n",getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription(),GC.getGame().getElapsedGameTurns());
-	gDLL->logMsg(szFile,szOut, false, false);
-	if(getMissionTarget()!=NULL && getMissionTarget()->isCity())
-	{
-		sprintf(szOut, "TargetCity -- %S\n",getMissionTarget()->getPlotCity()->getName().c_str());
-		gDLL->logMsg(szFile,szOut, false, false);
-	}
-	sprintf(szOut, "Power Ratio -- %d\n",GET_TEAM(getTeam()).getPower(true)*100/(1+GET_TEAM(getMissionTarget()->getTeam()).getPower(true)));
-	gDLL->logMsg(szFile,szOut, false, false);
-	sprintf(szOut, "Already at War? -- %d\n",GET_TEAM(getTeam()).isAtWar(getMissionTarget()->getTeam()));
-	gDLL->logMsg(szFile,szOut, false, false);
-	sprintf(szOut, "Current MissionStatus -- %d\n",getMissionStatus());
-	gDLL->logMsg(szFile,szOut, false, false);
-	sprintf(szOut, "Units, Units needed -- %d,%d\n",getNumUnits(),UnitsNeeded());
-	gDLL->logMsg(szFile,szOut, false, false);	
-*/
-	/** DEBUG **/
+	CvWString szTempBufferInitial;
+	getAI_InvasionStatusString(szTempBufferInitial, getMissionStatus());
 
 	//MissionPlot should always point to the plot where the AIGROUP "stack" is
 	update_City_Invasion_InitMissionPlot();
@@ -718,9 +951,38 @@ void CvAIGroup::update_City_Invasion()
 		}
 	}
 
+	CvWString szTempBuffer;
+	getAI_InvasionStatusString(szTempBuffer, getMissionStatus());
+
 	//can we attack our target?
 	int iEnemyStrength, iOurStrength;
 	compareInvasionPower(getMissionTarget(),&iEnemyStrength,&iOurStrength);
+
+	if(isOOSLogging())
+	{
+		oosLog(
+			"AI_Invasion"
+			,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,PowerRatio:%d,Already at War:%d,AnyWarPlan:%d,Initial MissionStatus:%S,Current MissionStatus:%S,Units:%d,Units needed:%d,OurStrengthNearTarget:%d,GroupStrength:%d,EnemyStrength:%d"
+			//,"Turn:%d,PlayerID:%d,GroupID:%d,%S,TargetCity:%S,PowerRatio:%d,Already at War:%d,AnyWarPlan:%d,Current MissionStatus:%S,Units:%d,Units needed:%d,OurStrength:%d,EnemyStrength:%d,iEnemyPower:%d (WithDefense: %d),iOurPowerGlobal:%d"
+			,GC.getGame().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,(getMissionTarget()!=NULL && getMissionTarget()->isCity())?getMissionTarget()->getPlotCity()->getName().c_str():L""
+			,GET_TEAM(getTeam()).getPower(true)*100/(1+GET_TEAM(getMissionTarget()->getTeam()).getPower(true))
+			,GET_TEAM(getTeam()).isAtWar(getMissionTarget()->getTeam())
+			,GET_TEAM(getTeam()).getAnyWarPlanCount(true)
+			,szTempBufferInitial.c_str()
+			,szTempBuffer.c_str()
+			,getNumUnits()
+			,UnitsNeeded()
+			,iOurStrength
+			,getMissionTarget() != NULL ? getGroupPowerWithinRange(getMissionTarget(),MAX_INT) : -1 //This is the global power of the group, not only the one near the plot
+			,iEnemyStrength
+			//,getMissionTarget() != NULL ? calculateEnemyStrength(getMissionTarget(), 2,true,true,false) : -1
+			//,getMissionTarget() != NULL ? calculateEnemyStrength(getMissionTarget(), 2,true,false,true) : -1
+		);
+	}
 
 	if(iOurStrength > iEnemyStrength*1.2) {
 		launchAttack(getMissionTarget());

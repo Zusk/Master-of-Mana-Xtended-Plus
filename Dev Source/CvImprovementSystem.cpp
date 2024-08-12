@@ -85,7 +85,39 @@ void CvCityAI::AI_updateBestBuild()
 		pWorker->setMissionPlot(pBestPlot);
 		if(pBestPlot != NULL)
 		{
-			pWorker->setMissionBuild(AI_getBestBuild(getCityPlotIndex(pBestPlot)));
+			BuildTypes eBuild = AI_getBestBuild(getCityPlotIndex(pBestPlot));
+			if(isOOSLogging())
+			{
+				oosLog("AIImprovement"
+					,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,AI_updateBestBuild:%S,BestValue:%d,FOOD:%d,PRODUCTION:%d,COMMERCE:%d,LUMBER:%d,LEATHER:%d,METAL:%d,HERB:%d,STONE:%d,GOLD:%d,RESEARCH:%d,CULTURE:%d,ESPIONAGE:%d,FAITH:%d,MANA:%d,ARCANE:%d\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+					,pBestPlot->getX()
+					,pBestPlot->getY()
+					,GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).getDescription()
+					,iBestValue
+					,AI_valueYield(YIELD_FOOD,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_FOOD, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_PRODUCTION,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_PRODUCTION, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_COMMERCE, NO_COMMERCE, false))
+
+
+					,AI_valueYield(YIELD_LUMBER,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_LUMBER, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_LEATHER,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_LEATHER, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_METAL,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_METAL, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_HERB,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_HERB, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_STONE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, YIELD_STONE, NO_COMMERCE, false))
+
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_GOLD, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_RESEARCH, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_CULTURE, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_ESPIONAGE, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_FAITH, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_MANA, false))
+					,AI_valueYield(YIELD_COMMERCE,pBestPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, COMMERCE_ARCANE, false))
+				);
+			}
+			pWorker->setMissionBuild(eBuild);
 		}
 	}
 }
@@ -118,7 +150,7 @@ void CvCityAI::update_AI_valueYield()
 					m_aiAI_valueYield[i] = 0;
 				}
 				else {
-					iMod = 100;
+					iMod = 250; //iMod = 100; //SpyFanatic: test to give more value to food
 					if(isFoodProduction())
 					{
 						iMod += 20;
@@ -127,11 +159,42 @@ void CvCityAI::update_AI_valueYield()
 					{
 						iMod += 200 * (happyLevel() - unhappyLevel()) * (happyLevel() - unhappyLevel())/std::max(1,(2 + 3 * foodDifference()));
 					}
+					else
+					{
+						//SpyFanatic: currently this means that AI build a couple of food plot and then stop due to not enough happiness.
+						//we should try to 'anticipate' food for the city to grows...
+						if(getPopulation() < 15)
+						{
+							//Let's try to push food up to population 15
+							iMod += 200 * (15 - unhappyLevel()) * (15 - unhappyLevel())/std::max(1,(2 + 3 * foodDifference()));
+						}
+						/*
+						for (int iI = 0; iI < getNumCityPlots(); iI++)
+						{
+							if (iI != CITY_HOME_PLOT)
+							{
+								CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+								if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
+								{
+									if(pLoopPlot->getArea() == getArea())
+									{
+										if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+										{
+
+										}
+									}
+								}
+							}
+						}
+						*/
+					}
 					m_aiAI_valueYield[i] = iMod;
 				}
 				break;
 			case YIELD_PRODUCTION:
-				if(eSpecialization = CITYSPECIALIZATION_MILITARY)
+				//SpyFanatic: bug
+				if(eSpecialization == CITYSPECIALIZATION_MILITARY)
+				//if(eSpecialization = CITYSPECIALIZATION_MILITARY)
 					m_aiAI_valueYield[i] = 250;
 				else 
 					m_aiAI_valueYield[i] = 150;
@@ -238,6 +301,57 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot)
 		iValue = 0;
 		if(GET_PLAYER(getOwnerINLINE()).canBuild(pPlot, (BuildTypes)iI, false))  {
 			iValue = AI_PlotBuildValue((BuildTypes)iI, pPlot);
+
+			if(isOOSLogging() && GC.getBuildInfo((BuildTypes)iI).getImprovement() != NO_IMPROVEMENT)
+			{
+				oosLog("AIImprovement"
+					,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,AI_bestPlotBuild:%S,Value:%d,FOOD:%d,PRODUCTION:%d,COMMERCE:%d,LUMBER:%d,LEATHER:%d,METAL:%d,HERB:%d,STONE:%d,GOLD:%d,RESEARCH:%d,CULTURE:%d,ESPIONAGE:%d,FAITH:%d,MANA:%d,ARCANE:%d\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+					,pPlot->getX()
+					,pPlot->getY()
+					,GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo((BuildTypes)iI).getImprovement())).getDescription()
+					,iValue
+					,AI_valueYield(YIELD_FOOD,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_FOOD, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_PRODUCTION,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_PRODUCTION, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_COMMERCE, NO_COMMERCE, false))
+
+					,AI_valueYield(YIELD_LUMBER,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_LUMBER, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_LEATHER,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_LEATHER, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_METAL,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_METAL, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_HERB,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_HERB, NO_COMMERCE, false))
+					,AI_valueYield(YIELD_STONE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, YIELD_STONE, NO_COMMERCE, false))
+
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_GOLD, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_RESEARCH, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_CULTURE, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_ESPIONAGE, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_FAITH, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_MANA, false))
+					,AI_valueYield(YIELD_COMMERCE,pPlot->ActualImprovementChanges(getOwnerINLINE(), (BuildTypes)iI, NO_YIELD, COMMERCE_ARCANE, false))
+				);
+			}
+		}
+		else
+		{
+			/*if(isOOSLogging() && GC.getBuildInfo((BuildTypes)iI).getImprovement() != NO_IMPROVEMENT)
+			{
+				oosLog("AIImprovement"
+					,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,CannotBuild:%S,PlotCanBuild:%d,GoldCanBuild:%d,CivCanBuild:%d,TooExpensive:%d,CityValue:%d\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+					,pPlot->getX()
+					,pPlot->getY()
+					,GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo((BuildTypes)iI).getImprovement())).getDescription()
+					,pPlot->canBuild((BuildTypes)iI, getOwner(), false)
+					,GET_PLAYER(getOwnerINLINE()).getImprovementGoldCost(pPlot, (BuildTypes)iI) < GET_PLAYER(getOwnerINLINE()).getGold()
+					,GC.getCivilizationInfo(getCivilizationType()).canBuildImprovement(GC.getBuildInfo((BuildTypes)iI).getImprovement())
+					,pPlot->isImprovementToExpensive(getOwner(),(ImprovementTypes)GC.getBuildInfo((BuildTypes)iI).getImprovement())
+					,AI_PlotBuildValue((BuildTypes)iI,pPlot)
+				);
+			}*/
 		}
 
 		if(iValue > iBestValue)  {
@@ -301,13 +415,15 @@ int CvCityAI::AI_PlotBuildValue(BuildTypes eBuild, CvPlot* pPlot)
 
 	// Value Yield
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++) {
-		iChange = pPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, (YieldTypes)iI, NO_COMMERCE, false);
+		//SpyFanatic: AI should check plot only (last parameter to true of ActualImprovementChanges)
+		iChange = pPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, (YieldTypes)iI, NO_COMMERCE, false, true);
 		iValue += AI_valueYield((YieldTypes)iI, iChange);
 	}
 
 	// Value Commerce
 	for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++) {
-		iChange = pPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, (CommerceTypes)iI, false);
+		//SpyFanatic: AI should check plot only (last parameter to true of ActualImprovementChanges)
+		iChange = pPlot->ActualImprovementChanges(getOwnerINLINE(), eBuild, NO_YIELD, (CommerceTypes)iI, false, true);
 		iValue += AI_valueYield(YIELD_COMMERCE, iChange);
 	}
 
@@ -405,7 +521,9 @@ int CvPlot::ActualImprovementYield(PlayerTypes ePlayer, ImprovementTypes eImprov
 	iYield += GET_PLAYER(ePlayer).getImprovementYieldChange(eImprovement, eYield);
 	iYield += GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getImprovementYieldChange(eImprovement, eYield);
 
-	if(isIrrigated())
+	//if(isIrrigated())
+	//SpyFanatic: CvPlot::calculateYield use isIrrigationAvailable, and in fact irrigation in this way is considered...
+	if(isIrrigationAvailable())
 	{
 		iYield += kImprovement.getIrrigatedYieldChange(eYield);
 	}
@@ -425,10 +543,36 @@ int CvPlot::ActualImprovementValues(PlayerTypes ePlayer, BuildTypes eBuild, Yiel
 
 	ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
 
+	//SpyFanatic: consider only if it is allowed by the civilization
 	if(GC.getImprovementInfo(eImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-		eImprovement = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+	{
+		ImprovementTypes eImprovementUpgrade = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+		if(GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+		{
+			eImprovement = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+		}
+	}
 	if(GC.getImprovementInfo(eImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-		eImprovement = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+	{
+		ImprovementTypes eImprovementUpgrade = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+		if(GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+		{
+			eImprovement = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+		}
+	}
+
+/*
+	oosLog("AIImprovement"
+		,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,ActualImprovementValues:%S,UpgradedImprovement:%S\n"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,ePlayer
+		,GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getDescription()
+		,getX()
+		,getY()
+		,GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).getDescription()
+		,GC.getImprovementInfo(eImprovement).getDescription()
+	);
+*/
 
 	if(eYield != NO_YIELD)
 	{
@@ -581,17 +725,28 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 		int eOldValue = 0;
 		int iFavoredImp = GC.getCivilizationInfo(GET_PLAYER(pWorkingCity->getOwnerINLINE()).getCivilizationType()).getImpInfrastructureHalfCost();
 
-		//the new Improvement will replace an Improvement on a different plot because of Improvement Limits	
+		//the new Improvement will replace an Improvement on a different plot because of Improvement Limits
 		if((getImprovementType() == NO_IMPROVEMENT || getImprovementType() == iFavoredImp) && pWorkingCity->calculateImprovementInfrastructureCostFreeLeft() <= 0)
 		{
 			CvPlot* pBestPlot = pWorkingCity->getAI_WorstPlot();
 
 			eOldValue = calculateYield(eYield);
+
 			ImprovementTypes eFinalImprovement = getImprovementType();
 			if(eFinalImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-				eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+			{
+				if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+				{
+					eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				}
+			}
 			if(eFinalImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-				eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+			{
+				if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+				{
+					eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				}
+			}
 			if(eFinalImprovement != getImprovementType()) {
 				eOldValue += GC.getImprovementInfo(eFinalImprovement).getYieldChange(eYield);
 				eOldValue -= GC.getImprovementInfo(getImprovementType()).getYieldChange(eYield);
@@ -604,11 +759,22 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 		else if(isBeingWorked() || bCheckPlotOnly)
 		{
 			eOldValue = calculateYield(eYield);
+
 			ImprovementTypes eFinalImprovement = getImprovementType();
 			if(eFinalImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-				eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+			{
+				if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+				{
+					eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				}
+			}
 			if(eFinalImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
-				eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+			{
+				if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+				{
+					eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				}
+			}
 			if(eFinalImprovement != getImprovementType())
 			{
 				eOldValue += GC.getImprovementInfo(eFinalImprovement).getYieldChange(eYield);
@@ -622,11 +788,22 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 			if(pBestPlot != NULL)
 			{
 				eOldValue=pBestPlot->calculateYield(eYield);
+
 				ImprovementTypes eFinalImprovement=pBestPlot->getImprovementType();
 				if(eFinalImprovement!=NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade()!=NO_IMPROVEMENT)
-					eFinalImprovement=(ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				{
+					if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+					{
+						eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+					}
+				}
 				if(eFinalImprovement!=NO_IMPROVEMENT && GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade()!=NO_IMPROVEMENT)
-					eFinalImprovement=(ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+				{
+					if(GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == NO_CIVILIZATION || GC.getImprovementInfo(eFinalImprovement).getPrereqCivilization() == GET_PLAYER(ePlayer).getCivilizationType())
+					{
+						eFinalImprovement = (ImprovementTypes)GC.getImprovementInfo(eFinalImprovement).getImprovementUpgrade();
+					}
+				}
 				if(eFinalImprovement!=pBestPlot->getImprovementType())
 				{
 					eOldValue+=GC.getImprovementInfo(eFinalImprovement).getYieldChange(eYield);
@@ -635,9 +812,14 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 			}
 		}
 
-		int eNewValue = ActualImprovementValues(ePlayer,eBuild,eYield);
 
+		int eNewValue = ActualImprovementValues(ePlayer,eBuild,eYield);
 		int iChange = eNewValue - eOldValue;
+
+		int iPlusAdj = 0;
+		int iMinusAdj = 0;
+		int iAdjPlus = 0;
+		int iAdjMinus = 0;
 //		GC.getTimeMeasure().Stop("AI_bestPlotBuild Actual Yieldchange");
 //		GC.getTimeMeasure().Start("AI_bestPlotBuild Adjacent Bonuses");
 		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
@@ -651,27 +833,60 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 						//what Plot gains from Adjacent Plots if Improvement Changes
 						if(isExtraYieldfromAdjacentImprovementValid(pLoopPlot, pLoopPlot->getImprovementType()))
 						{
-							iChange += calculateExtraYieldfromAdjacentPlot(pLoopPlot, eYield, eImprovement, pLoopPlot->getImprovementType());
+							int iTmpPlusAdj = calculateExtraYieldfromAdjacentPlot(pLoopPlot, eYield, eImprovement, pLoopPlot->getImprovementType());
+							iPlusAdj += iTmpPlusAdj;
+							iChange += iTmpPlusAdj;
 						}
 						if(isExtraYieldfromAdjacentImprovementValid(pLoopPlot, pLoopPlot->getImprovementType()))
 						{
-							iChange -= calculateExtraYieldfromAdjacentPlot(pLoopPlot, eYield, getImprovementType(), pLoopPlot->getImprovementType());
+							int iTmpMinusAdj = calculateExtraYieldfromAdjacentPlot(pLoopPlot, eYield, getImprovementType(), pLoopPlot->getImprovementType());
+							iMinusAdj -= iTmpMinusAdj;
+							iChange -= iTmpMinusAdj;
 						}
 
 						//What pLoopPlot gains if Improvement Changes on this Plot
 						if(pLoopPlot->isExtraYieldfromAdjacentImprovementValid(this, eImprovement))
 						{
-							iChange += pLoopPlot->calculateExtraYieldfromAdjacentPlot(this, eYield, pLoopPlot->getImprovementType(), eImprovement);
+							int iTmpAdjPlus = pLoopPlot->calculateExtraYieldfromAdjacentPlot(this, eYield, pLoopPlot->getImprovementType(), eImprovement);
+							iAdjPlus += iTmpAdjPlus;
+							iChange += iTmpAdjPlus;
 						}
 						//What pLoopPlot looses if Improvement Changes on this Plot
 						if(pLoopPlot->isExtraYieldfromAdjacentImprovementValid(this, getImprovementType()))
 						{
-							iChange -= pLoopPlot->calculateExtraYieldfromAdjacentPlot(this, eYield, pLoopPlot->getImprovementType(), getImprovementType());
+							int iTmpAdjMinus = pLoopPlot->calculateExtraYieldfromAdjacentPlot(this, eYield, pLoopPlot->getImprovementType(), getImprovementType());
+							iAdjMinus -= iTmpAdjMinus;
+							iChange -= iTmpAdjMinus;
 						}
 					}
 				}
 			}
 		}
+
+/*
+		if(isOOSLogging() && (iPlusAdj != 0 || iMinusAdj != 0 || iAdjPlus != 0 || iAdjMinus != 0 || iChange != 0))
+		{
+			oosLog("AIImprovement"
+				,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,Evaluate:%S,Yield:%S,iPlusAdj:%d,iMinusAdj:%d,iAdjPlus:%d,iAdjMinus:%d,eNewValue:%d,eOldValue:%d,First:%d,Second:%d\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,ePlayer
+				,GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getDescription()
+				,getX()
+				,getY()
+				,GC.getImprovementInfo(eImprovement).getDescription()
+				,GC.getYieldInfo(eYield).getDescription()
+				,iPlusAdj
+				,iMinusAdj
+				,iAdjPlus
+				,iAdjMinus
+				,eNewValue
+				,eOldValue
+				,((getImprovementType() == NO_IMPROVEMENT || getImprovementType() == iFavoredImp) && pWorkingCity->calculateImprovementInfrastructureCostFreeLeft() <= 0)
+				,(isBeingWorked() || bCheckPlotOnly)
+			);
+		}
+*/
+
 //		GC.getTimeMeasure().Stop("AI_bestPlotBuild Adjacent Bonuses");
 
 		iChange *= 100;
@@ -714,6 +929,26 @@ int CvPlot::ActualImprovementChanges(PlayerTypes ePlayer, BuildTypes eBuild, Yie
 
 		iChange*=(100+iModifier);
 		iChange/=100;
+
+
+		/*if(isOOSLogging() && (iChange != 0))
+		{
+			oosLog("AIImprovement"
+				,"Turn: %d,PlayerID:%d,Player:%S,X:%d,Y:%d,Evaluate:%S,Commerce:%S,Change:%d,Modifier:%d\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,ePlayer
+				,GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getDescription()
+				,getX()
+				,getY()
+				,GC.getImprovementInfo(eImprovement).getDescription()
+				,GC.getCommerceInfo(eCommerce).getDescription()
+				,iChange
+				,iModifier
+			);
+		}*/
+
+
+
 		return iChange;
 	}
 	return 0;

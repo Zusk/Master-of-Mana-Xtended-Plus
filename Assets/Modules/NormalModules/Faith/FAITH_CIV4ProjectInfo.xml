@@ -72,6 +72,7 @@
 			<iFaithCost>500</iFaithCost>
 			<bGlobalEnchantment>1</bGlobalEnchantment>
 			<bEffectOnly>1</bEffectOnly>
+			<PyCanDo>whitehandCanDo(iPlayer)</PyCanDo>
 			<PyResult>whitehand(iPlayer)</PyResult>
 		</ProjectInfo>
 		<ProjectInfo>
@@ -90,6 +91,7 @@
 			<iFaithCost>2000</iFaithCost>
 			<bGlobalEnchantment>1</bGlobalEnchantment>
 			<bEffectOnly>1</bEffectOnly>
+			<PyCanDo>deepeningCanDo(iPlayer)</PyCanDo>
 			<PyResult>deepening(iPlayer)</PyResult>
 		</ProjectInfo>
 		<ProjectInfo>
@@ -300,7 +302,7 @@
 			<Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,8,1</Button>
 			<CreateSound/>
 			<MovieDefineTag/>
-			<iAIWeight>0</iAIWeight>
+			<iAIWeight>-10000</iAIWeight>
 			<iFaithCost>500</iFaithCost>
 			<iNumTerrainChanges>4</iNumTerrainChanges>
 			<FeatureTypePost>FEATURE_FOREST_NEW</FeatureTypePost>
@@ -319,7 +321,7 @@
 			<Button>, ,Art/Interface/Buttons/Spells/Spells_Atlas1.dds,8,1</Button>
 			<CreateSound/>
 			<MovieDefineTag/>
-			<iAIWeight>0</iAIWeight>
+			<iAIWeight>-10000</iAIWeight>
 			<iFaithCost>500</iFaithCost>
 			<iNumTerrainChanges>4</iNumTerrainChanges>
 			<FeatureTypePre>FEATURE_FOREST</FeatureTypePre>

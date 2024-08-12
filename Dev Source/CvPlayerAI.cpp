@@ -432,14 +432,41 @@ void CvPlayerAI::AI_doTurnPre()
 /*************************************************************************************************/
 
 	AI_updateBonusValue();
+/*TCHAR szSelectionList[2048]; NB: Barbs player CTD in this code...
+sprintf(szSelectionList,"");
+CLLNode<int>* pSelectionGroupNode = headGroupCycleNode();
+while (pSelectionGroupNode != NULL)
+{
+	sprintf(szSelectionList,"%s,%d",szSelectionList,pSelectionGroupNode->m_data);
+	pSelectionGroupNode = nextGroupCycleNode(pSelectionGroupNode);
+}*/
+/*oosLog("AISelectionGroup"
+	,"Turn:%d,Player:%d,AI_pre:%s\n"
+	,GC.getGameINLINE().getElapsedGameTurns()
+	,getID()
+	,szSelectionList
+);*/
 	AI_doEnemyUnitData();
+/*szSelectionList[2048];
+sprintf(szSelectionList,"");
+pSelectionGroupNode = headGroupCycleNode();
+while (pSelectionGroupNode != NULL)
+{
+	sprintf(szSelectionList,"%s,%d",szSelectionList,pSelectionGroupNode->m_data);
+	pSelectionGroupNode = nextGroupCycleNode(pSelectionGroupNode);
+}
+oosLog("AISelectionGroup"
+	,"Turn:%d,Player:%d,AI_post:%s\n"
+	,GC.getGameINLINE().getElapsedGameTurns()
+	,getID()
+	,szSelectionList
+);*/
 	AI_doCitySpecialization();
 
 	if (isHuman())
 	{
 		return;
 	}
-
 /*************************************************************************************************/
 /**	BETTER AI (better diplomatics) Sephi                                                        **/
 /**																			                    **/
@@ -469,7 +496,7 @@ void CvPlayerAI::AI_doTurnPre()
 		}
     }
 
-	AI_doGlobalCulture();
+    AI_doGlobalCulture();
 
 	AI_doMagic();
 	AI_doFaith();
@@ -487,7 +514,6 @@ void CvPlayerAI::AI_doTurnPre()
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
-
 	if(!isHuman() && !isBarbarian())
 	{
 		if(getSpellResearchFocus() == NO_TECH)
@@ -535,7 +561,6 @@ void CvPlayerAI::AI_doTurnPre()
 	{
 		AI_doMilitary();
 	}
-
 /*************************************************************************************************/
 /**	TIME MEASURE																	Sephi		**/
 /*************************************************************************************************/
@@ -570,7 +595,6 @@ void CvPlayerAI::AI_doTurnPre()
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
-
 	if (isBarbarian())
 	{
 		return;
@@ -738,7 +762,19 @@ void CvPlayerAI::AI_doTurnUnitsPost()
 		int iTurn = GC.getGameINLINE().getElapsedGameTurns();
 		for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 		{
-			if(pLoopUnit->getLevel() > 4 
+			//SpyFanatic: remove hidden nationality... what's for!!
+			if(pLoopUnit->isHasPromotion((PromotionTypes)GC.getDefineINT("HIDDEN_NATIONALITY_PROMOTION")))
+			{
+				pLoopUnit->cast(GC.getInfoTypeForString("SPELL_DECLARE_NATIONALITY"));
+			}
+			/*if(pLoopUnit->isHasPromotion((PromotionTypes)GC.getDefineINT("HIDDEN_NATIONALITY_PROMOTION")) && pLoopUnit->canCast(GC.getInfoTypeForString("SPELL_DECLARE_NATIONALITY"),false))
+			{
+				if(pLoopUnit->AI_getUnitAIType()==UNITAI_HERO || pLoopUnit->isSummon())
+				{
+					pLoopUnit->cast(GC.getInfoTypeForString("SPELL_DECLARE_NATIONALITY"));
+				}
+			}*/
+			if(pLoopUnit->getLevel() > 4
 				|| (iTurn % 5) == (getID() % 5))
 				AI_chooseEquipment(pLoopUnit);
 		}
@@ -1614,11 +1650,17 @@ void CvPlayerAI::AI_unitUpdate()
 			}
 
 			pCurrUnitNode = finalGroupCycle.head();
-            if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
+			if(isOOSLogging())
+			{
+				oosLog("pdebug"
+					,"start AI_update Cycle"
+				);
+			}
+            /*if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
             {
                 CvString szError="start AI_update Cycle";
                 gDLL->logMsg("pdebug.log", szError);
-            }
+            }*/
 			while (pCurrUnitNode != NULL)
 			{
 				pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
@@ -1664,12 +1706,19 @@ void CvPlayerAI::AI_unitUpdate()
 			
 			if ((!isHuman()) && (!hasReadyUnit(true)))
 			{
+				if(isOOSLogging())
+				{
+					oosLog("pdebug"
+						,"AI_POST_UPDATE_AUTO_FUNCTIONS()"
+					);
+				}
+				/*
 				if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
 				{
 					CvString szError="AI_POST_UPDATE_AUTO_FUNCTIONS()";
 					gDLL->logMsg("pdebug.log", szError);
 				}
-			
+				*/
 				int iLoop;
 				for(CvAIGroup* pAIGroup = firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = nextAIGroup(&iLoop))
 				{
@@ -2358,6 +2407,8 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 /**	Pirates love the open sea   																**/
 /**						                                            							**/
 /*************************************************************************************************/
+	//SpyFanatic: for Lanun, lower the value of plot not nearby coast but do not return 0 else for map without sea there can be the risk of infinite loop trying to find a spot for them
+	/*
     if (getNumCities() == 0)
     {
         if (getCivilizationType()==GC.getDefineINT("PIRATES"))
@@ -2368,6 +2419,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
             }
         }
     }
+    */
 
 // stop AI from founding Cities on Bonus
     if (pPlot->getBonusType()!=NO_BONUS)
@@ -2658,6 +2710,18 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	iTeammateTakenTiles = 0;
 	iHealth = 0;
 	iValue = 1000;
+
+	//SpyFanatic: for Lanun, lower the value of plot not nearby coast but do not return 0 else for map without sea there can be the risk of infinite loop trying to find a spot for them
+	if (getNumCities() == 0)
+    {
+        if (getCivilizationType()==GC.getDefineINT("PIRATES"))
+        {
+            if (!pPlot->isCoastalLand(5))
+            {
+                iValue/=2;
+            }
+        }
+    }
 
 	iGreed = 100;
 
@@ -3462,7 +3526,6 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 /**	END	                                        												**/
 /*************************************************************************************************/
 
-
 	return std::max(1, iValue);
 }
 
@@ -3766,8 +3829,8 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves) con
 						{
 							pLoopUnit = ::getUnit(pUnitNode->m_data);
 							pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
-
-							if (pLoopUnit->isEnemy(getTeam()))
+							//SpyFanatic: added ignore Mana Defender for increasing plot danger
+							if (pLoopUnit->isEnemy(getTeam()) && pLoopUnit->getCivilizationType() != GC.getDefineINT("WILDMANA_CIVILIZATION") && pLoopUnit->AI_getUnitAIType()!=UNITAI_MANADEFENDER)
 							{
 								if (pLoopUnit->canAttack())
 								{
@@ -3790,6 +3853,31 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves) con
 												iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit)) ? 1 : 0);
 												if (iDangerRange >= iDistance)
 												{
+
+													if(isOOSLogging())
+													{
+														for (CLLNode<IDInfo>* pUnitNode2 = pPlot->headUnitNode(); pUnitNode2 != NULL; pUnitNode2 = pPlot->nextUnitNode(pUnitNode2))
+														{
+															CvUnit* pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
+															if(pLoopUnit2->getOwner() == getID() && !pLoopUnit2->canAttack())
+															{
+																oosLog("AIPlotDanger"
+																	,"Turn:%d,PlayerID:%d,X:%d,Y:%d,Unit:%S,ThreatenedX:%d,ThreatenY:%d,Unit:%S,Owner:%d,Distance:%d"
+																	,GC.getGameINLINE().getElapsedGameTurns()
+																	,getID()
+																	,pPlot->getX_INLINE()
+																	,pPlot->getY_INLINE()
+																	,pLoopUnit2->getName().GetCString()
+																	,pLoopPlot->getX_INLINE()
+																	,pLoopPlot->getY_INLINE()
+																	,pLoopUnit->getName().GetCString()
+																	,pLoopUnit->getOwner()
+																	,iDangerRange
+																);
+															}
+														}
+													}
+
 													iCount++;
 												}
 											//}
@@ -4138,12 +4226,36 @@ int CvPlayerAI::AI_getGoldTreasury(bool bVictoryHurry, bool bHurry, bool bTradin
                                     //does a tech to trade exist?
        								for (int iJ = 0; iJ < GC.getNumTechInfos(); iJ++)
                                     {
-                                        if (GET_TEAM(getTeam()).AI_techTrade((TechTypes)iJ, GET_PLAYER((PlayerTypes)iI).getTeam()) == NO_DENIAL)
-                                        {
-                                            iNeededGold=GC.getTechInfo((TechTypes)iJ).getResearchCost();
-                                            bValid=true;
-                                            break;
-                                        }
+										//SpyFanatic: start to spare money only when tech can be traded
+										TradeData item;
+										setTradeItem(&item, TRADE_TECHNOLOGIES, iJ);
+										if(GET_PLAYER((PlayerTypes)iI).canTradeItem(getID(),item,true))
+										{
+											if (GET_TEAM(getTeam()).AI_techTrade((TechTypes)iJ, GET_PLAYER((PlayerTypes)iI).getTeam()) == NO_DENIAL)
+											{
+												iNeededGold=GC.getTechInfo((TechTypes)iJ).getResearchCost();
+												//SpyFanatic: Add adjustment
+												iNeededGold*=iAdjustment;
+												iNeededGold/=100;
+												/*
+												if(isOOSLogging())
+												{
+													oosLog("AIResearchSlide"
+														,"Turn:%d,PlayerID:%d,Player:%S,TradeTech:%S,NeededGold:%d,FromPlayer:%d %S\n"
+														,GC.getGameINLINE().getElapsedGameTurns()
+														,getID()
+														,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+														,GC.getTechInfo((TechTypes)iJ).getDescription()
+														,iNeededGold
+														,iI
+														,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+													);
+												}
+												*/
+												bValid=true;
+												break;
+											}
+										}
                                     }
                                 }
                             }
@@ -8816,14 +8928,28 @@ int CvPlayerAI::AI_bonusTradeVal(BonusTypes eBonus, PlayerTypes ePlayer, int iCh
 
 	return (iValue * GC.getDefineINT("PEACE_TREATY_LENGTH"));
 **/
-	iValue = std::max(0,AI_bonusVal_new(eBonus, iChange)-GET_PLAYER(ePlayer).AI_bonusVal_new(eBonus, iChange));
+	//iValue = std::max(0,AI_bonusVal_new(eBonus, iChange)-GET_PLAYER(ePlayer).AI_bonusVal_new(eBonus, iChange));
+
+	if(iChange <= 0)
+		return 0;
+
+	iValue = AI_bonusVal_new(eBonus, iChange);
+	if(iValue == 0)
+		return 0; //We are receiving a bonus from ePlayer, if it is worthless then return 0
+
+	if(iValue > 0)
+	{
+		//Value of player receiving the bonus + value loss by the player givin it (AI_bonusVal_new return negative for negative change)
+		iValue = std::max(0,iValue - GET_PLAYER(ePlayer).AI_bonusVal_new(eBonus, -1 * iChange));
+	}
 
 	//the More Cities other Player has, the more he has to pay for Resources
 	iValue *= 100;
 	iValue /= 100+GET_PLAYER(ePlayer).getNumCities()*3;
 
 	//Minimum Value is 3gold/turn for a Resource
-	iValue =std::max(iValue,300);
+	//SpyFanatic: The min value logic + the random 1-10000 added means AI trade bonus even if there is no gain from them...
+	//iValue =std::max(iValue,300);
 
 	if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isVassal(getTeam()) && !GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isCapitulated())
 	{
@@ -12871,21 +12997,35 @@ void CvPlayerAI::AI_doCommerce()
 
 	int iGoldToSpare = getGold() - iGoldTarget;
 
-/** DEBUG **/
-TCHAR szOut[1024];
-sprintf(szOut, "Turn: %d,PlayerID: %d,iGoldRate: %d,iGoldTarget: %d,iGoldToSpare: %d,Research: %d \n"
-	,GC.getGameINLINE().getElapsedGameTurns()
-	,getID()
-	,iGoldRate
-	,iGoldTarget
-	,iGoldToSpare
-	,getCommercePercent(COMMERCE_RESEARCH)
-);
-gDLL->logMsg("AIResearchSlide.log",szOut, false, false);
-/** DEBUG **/
+	int iGoldAtZeroPercentResearch = getGoldPerTurnNetAtZeroPercent();
+	int turnToGetAt100Research = iGoldAtZeroPercentResearch != 0 ? (int)std::ceil((double)std::abs(iGoldToSpare ) / iGoldAtZeroPercentResearch) : -1;
+	int turnToGetAtCurrentResearch = iGoldAtZeroPercentResearch != 0 ? (int)std::ceil((double)std::abs(iGoldToSpare) / iGoldRate) : -1;
+
+	if(isOOSLogging())
+	{
+		oosLog("AIResearchSlide"
+			,"Turn:%d,PlayerID:%d,Gold:%d,iGoldRate:%d,iGoldTarget:%d,iGoldToSpare:%d,ForTrading:%d,ForReserve:%d,Research:%d,GoldRateAtZeroPercent:%d,GoldRatePer20:%d,CanResumeResearch:%d,TurnResearch100:%d,TurnResearcCurrent:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getID()
+			,getGold()
+			,iGoldRate
+			,iGoldTarget
+			,iGoldToSpare
+			,AI_getGoldTreasury(false,false,true,false)
+			,AI_getGoldTreasury(false,false,false,true)
+			,getCommercePercent(COMMERCE_RESEARCH)
+			,iGoldAtZeroPercentResearch
+			,20 * iGoldRate
+			,iGoldToSpare > 20 * iGoldRate
+			,turnToGetAt100Research
+			,turnToGetAtCurrentResearch
+		);
+	}
 
     if (iGoldToSpare < 0 && getCommercePercent(COMMERCE_GOLD) < iMaxCommerce)
     {
+		//TODO: if iGoldAtZeroPercentResearch, then we have to decrease
+		//If turnToGetAt100Research are almost the same then turnToGetAtCurrentResearch then go to 100%research
         if (isCommerceFlexible(COMMERCE_CULTURE))
         {
             setCommercePercent(COMMERCE_CULTURE, 0);
@@ -12909,10 +13049,26 @@ gDLL->logMsg("AIResearchSlide.log",szOut, false, false);
 
         return;
     }
-	else if(iGoldToSpare > 20 * iGoldRate) 
+	else if(iGoldToSpare > 0)
 	{
 		setCommercePercent(COMMERCE_RESEARCH, 100);
 	}
+    /*
+	else if(iGoldToSpare > 20 * iGoldRate)
+	{
+		setCommercePercent(COMMERCE_RESEARCH, 100);
+	}
+	*/
+	/*
+	else if(GC.getGameINLINE().getElapsedGameTurns() > 100 && iGoldToSpare > 20 * iGoldRate)
+	{
+		setCommercePercent(COMMERCE_RESEARCH, 100);
+	}
+	else if(GC.getGameINLINE().getElapsedGameTurns() <= 100 && iGoldToSpare > 5 * iGoldRate)
+	{
+		setCommercePercent(COMMERCE_RESEARCH, 100);
+	}
+	*/
 /**
 	//increase gold if our reserves do not last for 20 turns
 	if(iGoldToSpare < 20 * iGoldRate)
@@ -13198,6 +13354,59 @@ void CvPlayerAI::AI_doCivics()
 	// XXX AI skips revolution???
 	if (canRevolution(paeBestCivic))
 	{
+		if(isOOSLogging() && !isBarbarian())
+		{
+			bool bIsChange = false;
+			TCHAR szCivic[1024];
+			sprintf(szCivic,"");
+			for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+			{
+				CivicTypes eCurrentCivic = getCivics((CivicOptionTypes)iI);
+				if (paeBestCivic[iI] != eCurrentCivic)
+				{
+					sprintf(szCivic,"%s,From:%S,%d,To:%S,%d"
+						,szCivic
+						,eCurrentCivic!=NO_CIVIC?GC.getCivicInfo(eCurrentCivic).getDescription():L"NONE"
+						,eCurrentCivic!=NO_CIVIC?AI_civicValue(eCurrentCivic):-1
+						,GC.getCivicInfo(paeBestCivic[iI]).getDescription()
+						,AI_civicValue(paeBestCivic[iI])
+					);
+					bIsChange = true;
+				}
+			}
+
+			if(bIsChange)
+			{
+				/*bool bIsAtWar = false;
+				for (iI = 0; iI < MAX_TEAMS; iI++)
+				{
+					if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).isBarbarian())
+					{
+						if(GET_TEAM(getTeam()).isAtWar((TeamTypes)iI))
+						{
+							bIsAtWar = true;
+							break;
+						}
+					}
+				}*/
+				oosLog("AICivic"
+					,"Turn:%d,PlayerID:%d,Player:%S,Gold:%d,PerTurn:%d,Cities:%d,WarPlanCount:%d,FinancialTrouble:%d%s"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getID()
+					,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+					,getGold()
+					,calculateGoldRate()
+					,getNumCities()
+					,GET_TEAM(getTeam()).getAnyWarPlanCount(true)
+
+					//,GET_TEAM(getTeam()).getAtWarCount(true)
+					//,pPlayer.getUnitSupportLimitTotal() - pPlayer.getUnitSupportUsed()
+
+					,AI_isFinancialTrouble()
+					,szCivic
+				);
+			}
+		}
 		revolution(paeBestCivic);
 		AI_setCivicTimer((getMaxAnarchyTurns() == 0) ? (GC.getDefineINT("MIN_REVOLUTION_TURNS") * 2) : CIVIC_CHANGE_DELAY);
 	}
@@ -13374,6 +13583,35 @@ void CvPlayerAI::AI_doDiplo()
 
 										if (bCancelDeal)
 										{
+											/*if(isOOSLogging())
+											{
+												for (pNode = pLoopDeal->headFirstTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextFirstTradesNode(pNode))
+												{
+														TradeData item = (TradeData)pNode->m_data;
+	oosLog("AITrade"
+		,"Turn:%d,Player:%S,StopTradingWith:%S,%S,%d GOLD_PER_TURN"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,(pLoopDeal->getFirstPlayer() == getID()) ? GC.getCivilizationInfo(getCivilizationType()).getDescription() : GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+		,(pLoopDeal->getFirstPlayer() == getID()) ? GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription() : GC.getCivilizationInfo(getCivilizationType()).getDescription()
+		,(item.m_eItemType == TRADE_RESOURCES) ? GC.getBonusInfo((BonusTypes)item.m_iData).getDescription() : L""
+		,(item.m_eItemType == TRADE_GOLD_PER_TURN) ? item.m_iData : 0
+	);
+												}
+												for (pNode = pLoopDeal->headSecondTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextSecondTradesNode(pNode))
+												{
+													TradeData item = (TradeData)pNode->m_data;
+	oosLog("AITrade"
+		,"Turn:%d,Player:%S,StopTradingWith:%S,%S,%d GOLD_PER_TURN"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,(pLoopDeal->getSecondPlayer() == getID()) ? GC.getCivilizationInfo(getCivilizationType()).getDescription() : GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+		,(pLoopDeal->getSecondPlayer() == getID()) ? GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription() : GC.getCivilizationInfo(getCivilizationType()).getDescription()
+		,(item.m_eItemType == TRADE_RESOURCES) ? GC.getBonusInfo((BonusTypes)item.m_iData).getDescription() : L""
+		,(item.m_eItemType == TRADE_GOLD_PER_TURN) ? item.m_iData : 0
+	);
+												}
+
+											}*/
+
 											if (canContact((PlayerTypes)iI) && AI_isWillingToTalk((PlayerTypes)iI))
 											{
 												if (GET_PLAYER((PlayerTypes)iI).isHuman())
@@ -14853,7 +15091,7 @@ void CvPlayerAI::AI_doDiplo()
 									{
 										if (GC.getGameINLINE().getSorenRandNum(GC.getLeaderHeadInfo(getPersonalityType()).getContactRand(CONTACT_TRADE_BONUS), "AI Diplo Trade Bonus") == 0)
 										{
-											iBestValue = 0;
+											int iBestReceiveValue = 0;
 											eBestReceiveBonus = NO_BONUS;
 
 											for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
@@ -14862,58 +15100,79 @@ void CvPlayerAI::AI_doDiplo()
 												{
 													if (GET_PLAYER((PlayerTypes)iI).AI_corporationBonusVal((BonusTypes)iJ) == 0)
 													{
-														if (AI_bonusTradeVal(((BonusTypes)iJ), ((PlayerTypes)iI), 1) > 0)
-													{
-														setTradeItem(&item, TRADE_RESOURCES, iJ);
-
-														if (GET_PLAYER((PlayerTypes)iI).canTradeItem(getID(), item, true))
+														iValue = AI_bonusTradeVal(((BonusTypes)iJ), ((PlayerTypes)iI), 1);
+														if (iValue > 0)
 														{
-															iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "AI Bonus Trading #1"));
+															setTradeItem(&item, TRADE_RESOURCES, iJ);
 
-															if (iValue > iBestValue)
+															if (GET_PLAYER((PlayerTypes)iI).canTradeItem(getID(), item, true))
 															{
-																iBestValue = iValue;
-																eBestReceiveBonus = ((BonusTypes)iJ);
+
+																//iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "AI Bonus Trading #1"));
+																if (iValue > iBestReceiveValue)
+																{
+																	iBestReceiveValue = iValue;
+																	eBestReceiveBonus = ((BonusTypes)iJ);
+																}
 															}
 														}
 													}
+/*
+													else
+													{
+														if(isOOSLogging())
+														{
+															oosLog("AITrade"
+																,"Turn: %d,Player: %S to %S,BonusTypes:%S,AI_corporationBonusVal:%d\n"
+																,GC.getGameINLINE().getElapsedGameTurns()
+																,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+																,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+																,GC.getBonusInfo((BonusTypes)iJ).getDescription()
+																,GET_PLAYER((PlayerTypes)iI).AI_corporationBonusVal((BonusTypes)iJ)
+															);
+														}
+													}
+*/
 												}
 											}
-											}
 
-											if (eBestReceiveBonus != NO_BONUS)
+											int iBestGiveValue = 0;
+											eBestGiveBonus = NO_BONUS;
+											for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
 											{
-												iBestValue = 0;
-												eBestGiveBonus = NO_BONUS;
-
-												for (iJ = 0; iJ < GC.getNumBonusInfos(); iJ++)
+												if (iJ != eBestReceiveBonus)
 												{
-													if (iJ != eBestReceiveBonus)
+													if (getNumTradeableBonuses((BonusTypes)iJ) > 1)
 													{
-														if (getNumTradeableBonuses((BonusTypes)iJ) > 1)
+														iValue = GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(((BonusTypes)iJ), getID(), 1);
+														if (iValue > 0)
 														{
-															if (GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(((BonusTypes)iJ), getID(), 1) > 0)
+															setTradeItem(&item, TRADE_RESOURCES, iJ);
+
+															if (canTradeItem(((PlayerTypes)iI), item, true))
 															{
-																setTradeItem(&item, TRADE_RESOURCES, iJ);
+																//iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "AI Bonus Trading #2"));
 
-																if (canTradeItem(((PlayerTypes)iI), item, true))
+																if (iValue > iBestGiveValue)
 																{
-																	iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "AI Bonus Trading #2"));
-
-																	if (iValue > iBestValue)
-																	{
-																		iBestValue = iValue;
-																		eBestGiveBonus = ((BonusTypes)iJ);
-																	}
+																	iBestGiveValue = iValue;
+																	eBestGiveBonus = ((BonusTypes)iJ);
 																}
 															}
 														}
 													}
 												}
+											}
 
+											int iDebugValue = false;
+											if (eBestReceiveBonus != NO_BONUS)
+											{
 												if (eBestGiveBonus != NO_BONUS)
 												{
-													if (!(GET_PLAYER((PlayerTypes)iI).isHuman()) || (AI_bonusTradeVal(eBestReceiveBonus, ((PlayerTypes)iI), -1) >= GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(eBestGiveBonus, getID(), 1)))
+													//TODO: Spyfanatic: apart from the check !isHuman(), is the other one meaningful?
+													//TODO: SpyFanatic add delta in gold x turn to avoid unbalanced trade of resources? Like 1000 vs 100?
+													//if (!(GET_PLAYER((PlayerTypes)iI).isHuman()) || (AI_bonusTradeVal(eBestReceiveBonus, ((PlayerTypes)iI), -1) >= GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(eBestGiveBonus, getID(), 1)))
+													//if(AI_bonusTradeVal(eBestReceiveBonus, ((PlayerTypes)iI), -1) >= GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(eBestGiveBonus, getID(), 1))
 													{
 														ourList.clear();
 														theirList.clear();
@@ -14924,6 +15183,31 @@ void CvPlayerAI::AI_doDiplo()
 														setTradeItem(&item, TRADE_RESOURCES, eBestReceiveBonus);
 														theirList.insertAtEnd(item);
 
+														if(isOOSLogging())
+														{
+															oosLog("AITrade"
+																,"Turn:%d,Player:%S(%d),Trade %S:%S,Has:%d,Him:%d,Value:%d(him)+%d(me),ToPlayer:%S(%d),For:%S,Has:%d,Him:%d,Value:%d(me)+%d(him)"
+																,GC.getGameINLINE().getElapsedGameTurns()
+
+																,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+																,getNumCities()
+																,(AI_bonusTradeVal(eBestReceiveBonus, ((PlayerTypes)iI), -1) >= GET_PLAYER((PlayerTypes)iI).AI_bonusTradeVal(eBestGiveBonus, getID(), 1)) ? L"YES" : L"NO"
+																,GC.getBonusInfo(eBestGiveBonus).getDescription()
+																,getNumTradeableBonuses(eBestGiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).getNumTradeableBonuses(eBestGiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestGiveBonus, 1, iDebugValue)
+																,-1*AI_bonusVal_new(eBestGiveBonus, -1, iDebugValue)
+
+																,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+																,GET_PLAYER((PlayerTypes)iI).getNumCities()
+																,GC.getBonusInfo(eBestReceiveBonus).getDescription()
+																,getNumTradeableBonuses(eBestReceiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).getNumTradeableBonuses(eBestReceiveBonus)
+																,AI_bonusVal_new(eBestReceiveBonus, 1, iDebugValue)
+																,-1*GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestReceiveBonus, -1, iDebugValue)
+
+															);
+														}
 														if (GET_PLAYER((PlayerTypes)iI).isHuman())
 														{
 															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
@@ -14945,6 +15229,159 @@ void CvPlayerAI::AI_doDiplo()
 														}
 													}
 												}
+												else
+												{
+													//int iGoldPerTurnGive = AI_bonusVal_new(eBestReceiveBonus, 1) - GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestReceiveBonus, 1);
+													//iGoldPerTurnGive = (int)std::ceil(iGoldPerTurnGive/100.0f);
+													float fDivide = (GC.getDefineINT("PEACE_TREATY_LENGTH") * iGoldValuePercent)/100.0f;//(GET_PLAYER((PlayerTypes)iI).AI_isFinancialTrouble() ? 3.0f : 2.0f);
+													int iGoldPerTurnGive = (int)std::ceil( iBestReceiveValue / fDivide); //AI_goldPerTurnTradeVal
+
+													int iGoldPerTurnAvailable = calculateGoldRate();
+
+													if(iGoldPerTurnGive > 0 && iGoldPerTurnAvailable >= iGoldPerTurnGive)
+													{
+														if(isOOSLogging())
+														{
+															oosLog("AITrade"
+																//,"Turn:%d,Player:%S(%d),Trade %S:%d/%d GOLD_PER_TURN,Has:%d,Him:%d,Value:%d(him)-%d(me),ToPlayer:%S(%d),For:%S,Has:%d,Him:%d,Value:%d(me)+%d(him)\n"
+																,"Turn:%d,Player:%S(%d),Trade:%d GOLD_PER_TURN,Has:%d,Him:%d,Value:%d(him),ToPlayer:%S(%d),For:%S,Has:%d,Him:%d,Value:%d(me)+%d(him)"
+																,GC.getGameINLINE().getElapsedGameTurns()
+
+																,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+																,getNumCities()
+																//,(iGoldPerTurnAvailable >= iGoldPerTurnGive)?L"YES":L"NO"
+																,iGoldPerTurnGive
+																//,AI_maxGoldPerTurnTrade((PlayerTypes)iI)
+																,calculateGoldRate()
+																,GET_PLAYER((PlayerTypes)iI).calculateGoldRate()
+																,GET_PLAYER((PlayerTypes)iI).AI_goldPerTurnTradeVal(iGoldPerTurnGive)
+																//,AI_goldPerTurnTradeVal(iGoldPerTurnGive)
+
+																,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+																,GET_PLAYER((PlayerTypes)iI).getNumCities()
+																,GC.getBonusInfo(eBestReceiveBonus).getDescription()
+																,getNumTradeableBonuses(eBestReceiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).getNumTradeableBonuses(eBestReceiveBonus)
+																,AI_bonusVal_new(eBestReceiveBonus, 1, iDebugValue)
+																,-1*GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestReceiveBonus, -1, iDebugValue)
+
+															);
+														}
+
+														ourList.clear();
+														theirList.clear();
+
+														setTradeItem(&item, TRADE_GOLD_PER_TURN, iGoldPerTurnGive);
+														ourList.insertAtEnd(item);
+
+														setTradeItem(&item, TRADE_RESOURCES, eBestReceiveBonus);
+														theirList.insertAtEnd(item);
+														if (GET_PLAYER((PlayerTypes)iI).isHuman())
+														{
+															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
+															{
+																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_BONUS, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_BONUS));
+																pDiplo = new CvDiploParameters(getID());
+																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
+																pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+																pDiplo->setAIContact(true);
+																pDiplo->setOurOfferList(theirList);
+																pDiplo->setTheirOfferList(ourList);
+																gDLL->beginDiplomacy(pDiplo, (PlayerTypes)iI);
+																abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()] = true;
+															}
+														}
+														else
+														{
+															GC.getGameINLINE().implementDeal(getID(), ((PlayerTypes)iI), &ourList, &theirList);
+														}
+													}
+												}
+											}
+											else
+											{
+												if (eBestGiveBonus != NO_BONUS)
+												{
+													//int iGoldPerTurnReceive = GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestGiveBonus, 1) - AI_bonusVal_new(eBestGiveBonus, 1);
+													//iGoldPerTurnReceive = (int)std::ceil(iGoldPerTurnReceive/100.0f);
+													float fDivide = (GC.getDefineINT("PEACE_TREATY_LENGTH") * iGoldValuePercent)/100.0f;//(AI_isFinancialTrouble() ? 3.0f : 2.0f);
+													int iGoldPerTurnReceive = (int)std::ceil(iBestGiveValue / fDivide);	//AI_goldPerTurnTradeVal
+
+													int iGoldPerTurnAvailable = GET_PLAYER((PlayerTypes)iI).calculateGoldRate();
+
+													//Give bonus for money
+													if(iGoldPerTurnReceive > 0 && iGoldPerTurnAvailable >= iGoldPerTurnReceive)
+													{
+														if(isOOSLogging())
+														{
+															oosLog("AITrade"
+																//,"Turn:%d,Player:%S(%d),Trade %S:%S,Has:%d,Him:%d,Value:%d(him)+%d(me),ToPlayer:%S(%d),For: %d/%d GOLD_PER_TURN,Has:%d,Him:%d,Value:%d(me)-%d(him)\n"
+																,"Turn:%d,Player:%S(%d),Trade:%S,Has:%d,Him:%d,Value:%d(him)+%d(me),ToPlayer:%S(%d),For:%d GOLD_PER_TURN,Has:%d,Him:%d,Value:%d(me)"
+																,GC.getGameINLINE().getElapsedGameTurns()
+
+																,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+																,getNumCities()
+																//,(iGoldPerTurnAvailable >= iGoldPerTurnReceive)?L"YES":L"NO"
+																,GC.getBonusInfo(eBestGiveBonus).getDescription()
+																,getNumTradeableBonuses(eBestGiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).getNumTradeableBonuses(eBestGiveBonus)
+																,GET_PLAYER((PlayerTypes)iI).AI_bonusVal_new(eBestGiveBonus, 1, iDebugValue)
+																,-1*AI_bonusVal_new(eBestGiveBonus, -1, iDebugValue)
+
+																,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+																,GET_PLAYER((PlayerTypes)iI).getNumCities()
+																,iGoldPerTurnReceive
+																//,GET_PLAYER((PlayerTypes)iI).AI_maxGoldPerTurnTrade(getID())
+																,calculateGoldRate()
+																,GET_PLAYER((PlayerTypes)iI).calculateGoldRate()
+																,AI_goldPerTurnTradeVal(iGoldPerTurnReceive)
+																//,GET_PLAYER((PlayerTypes)iI).AI_goldPerTurnTradeVal(iGoldPerTurnReceive)
+															);
+														}
+
+														ourList.clear();
+														theirList.clear();
+
+														setTradeItem(&item, TRADE_RESOURCES, eBestGiveBonus);
+														ourList.insertAtEnd(item);
+
+														setTradeItem(&item, TRADE_GOLD_PER_TURN, iGoldPerTurnReceive);
+														theirList.insertAtEnd(item);
+														if (GET_PLAYER((PlayerTypes)iI).isHuman())
+														{
+															if (!(abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()]))
+															{
+																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_TRADE_BONUS, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_BONUS));
+																pDiplo = new CvDiploParameters(getID());
+																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
+																pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+																pDiplo->setAIContact(true);
+																pDiplo->setOurOfferList(theirList);
+																pDiplo->setTheirOfferList(ourList);
+																gDLL->beginDiplomacy(pDiplo, (PlayerTypes)iI);
+																abContacted[GET_PLAYER((PlayerTypes)iI).getTeam()] = true;
+															}
+														}
+														else
+														{
+															GC.getGameINLINE().implementDeal(getID(), ((PlayerTypes)iI), &ourList, &theirList);
+														}
+													}
+
+												}/*
+												else
+												{
+													if(isOOSLogging())
+													{
+														//TODO: Remove
+														oosLog("AITrade"
+															,"Turn:%d,Player:%S,ToPlayer:%S NO_BONUS for NO_BONUS\n"
+															,GC.getGameINLINE().getElapsedGameTurns()
+															,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+															,GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getDescription()
+														);
+													}
+												}*/
 											}
 										}
 									}
@@ -15215,6 +15652,16 @@ void CvPlayerAI::AI_doDiplo()
 														theirList.insertAtEnd(item);
 													}
 
+													if(isOOSLogging())
+													{
+														oosLog("AIGroupDeclareWar"
+															,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Bribed by Player %d"
+															,GC.getGame().getElapsedGameTurns()
+															,GET_PLAYER((PlayerTypes)iI).getTeam()
+															,eBestTeam
+															,getID()
+														);
+													}
 													GC.getGameINLINE().implementDeal(getID(), ((PlayerTypes)iI), &ourList, &theirList);
 												}
 											}
@@ -18166,6 +18613,7 @@ int CvPlayerAI::AI_goldTradeValuePercent() const
 	{
 		iValue += 1;
 	}
+	iValue *= 2; //SpyFanatic: double the value of gold per turn
 	return 100 * iValue;
 
 }
@@ -18366,6 +18814,15 @@ void CvPlayerAI::AI_convertUnitAITypesForCrush()
 					}
 				}
 			}
+			// Super Forts begin *AI_defense* - don't convert units guarding a fort
+			else if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pLoopUnit->plot()->isCity(true))
+			{
+				if (pLoopUnit->plot()->getNumDefenders(pLoopUnit->getOwner()) == 1)
+				{
+					bValid = false;
+				}
+			}
+			// Super Forts end
 		}
 
 		if (bValid)
@@ -18502,6 +18959,13 @@ int CvPlayerAI::AI_getTotalFloatingDefendersNeeded(CvArea* pArea) const
 		}
 	}
 
+	// Super Forts begin *AI_defense* - Build a few extra floating defenders for occupying forts
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		iDefenders += iAreaCities / 2;
+	}
+	// Super Forts end
+	
 	return iDefenders;
 }
 
@@ -19922,7 +20386,8 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	int iLoop;
 	for(int iI=0;iI<GC.getNumUnitCombatInfos();iI++)
 	{
-		m_aiUnitCombatWeights[iI] += 0;
+		//m_aiUnitCombatWeights[iI] += 0;
+		m_aiUnitCombatWeights[iI] = 0; //Spyfanatic bugfix: array initialized to 0
 	}
 
 	for(int iI=0;iI<GC.getMAX_CIV_PLAYERS();iI++)
@@ -19930,13 +20395,25 @@ void CvPlayerAI::AI_doEnemyUnitData()
 		CvPlayer& kPlayer=GET_PLAYER((PlayerTypes)iI);
 		if(kPlayer.getTeam()!=getTeam())
 		{
+			/*if(kPlayer.getTeam() >= MAX_TEAMS || getTeam() >= MAX_TEAMS)
+			{
+				oosLog("AssertIssues"
+					,"Turn:%d,Player:%d,kPlayer:%d,Team:%d,kPlayerTeam:%d\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getID()
+					,iI
+					,getTeam()
+					,kPlayer.getTeam()
+				);
+			}*/
 			if(GET_TEAM(getTeam()).isAtWar(kPlayer.getTeam()))
 			{
 				for(CvUnit* pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 				{
 					if(pLoopUnit->getUnitCombatType()!=NO_UNITCOMBAT && pLoopUnit->canAttack())
 					{
-						m_aiUnitCombatWeights[iI] += 100;
+						//m_aiUnitCombatWeights[iI] += 100;
+						m_aiUnitCombatWeights[pLoopUnit->getUnitCombatType()] += 100; //Spyfanatic bugfix: iI means out of array boundaries
 						iUnitCombatTotal+=100;
 					}
 				}
@@ -20248,8 +20725,17 @@ int CvPlayerAI::AI_getPlotAirbaseValue(CvPlot* pPlot) const
 							{
 								iMinOtherCityDistance = iDistance;
 								iMinOtherCityPlot = pLoopPlot;
+								// Super Forts begin  *choke* *canal* - move iOtherCityCount outside the if statement
+								if (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+{
+									iOtherCityCount++;
+								}
+							}
+							if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+							{
 								iOtherCityCount++;
 							}
+							// Super Forts end
 						}
 					}
 				}
@@ -20271,6 +20757,21 @@ int CvPlayerAI::AI_getPlotAirbaseValue(CvPlot* pPlot) const
 //		}
 //	}
 
+	// Super Forts begin *canal* *choke*
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && iOtherCityCount == 1)
+	{
+		if (iMinOtherCityPlot != NULL)
+		{
+			CvCity* pNearestCity = GC.getMapINLINE().findCity(iMinOtherCityPlot->getX_INLINE(), iMinOtherCityPlot->getY_INLINE(), NO_PLAYER, getTeam(), false);
+			if (NULL != pNearestCity)
+			{
+				if (plotDistance(pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE(), iMinOtherCityPlot->getX_INLINE(), iMinOtherCityPlot->getY_INLINE()) < iMinOtherCityDistance)
+				{
+					return 0;
+				}
+			}
+		}
+	}
 //	if (iMinOtherCityPlot != NULL)
 //	{
 //		CvCity* pNearestCity = GC.getMapINLINE().findCity(iMinOtherCityPlot->getX_INLINE(), iMinOtherCityPlot->getY_INLINE(), NO_PLAYER, getTeam(), false);
@@ -20292,6 +20793,13 @@ int CvPlayerAI::AI_getPlotAirbaseValue(CvPlot* pPlot) const
 //	}
 
 	int iValue = iOtherCityCount * 50;
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		iValue += iDefenseModifier;
+		return std::max(0,iValue);
+	}
+	// Super Forts end
+
 	iValue *= 100 + (2 * (iDefenseModifier + (pPlot->isHills() ? 25 : 0)));
 	iValue /= 100;
 
@@ -20304,6 +20812,11 @@ int CvPlayerAI::AI_getPlotCanalValue(CvPlot* pPlot) const
 
 	FAssert(pPlot != NULL);
 
+	// Super Forts begin *canal*
+	int iCanalValue = GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? pPlot->getCanalValue() : 0;
+
+	if (iCanalValue > 0 || !GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
 	if (pPlot->isOwned())
 	{
 		if (pPlot->getTeam() != getTeam())
@@ -20315,6 +20828,7 @@ int CvPlayerAI::AI_getPlotCanalValue(CvPlot* pPlot) const
 			CvCity* pWorkingCity = pPlot->getWorkingCity();
 			if (pWorkingCity != NULL)
 			{
+				// Left in this part from the original code. Might be needed to avoid workers from getting stuck in a loop?
 				if (pWorkingCity->AI_getBestBuild(pWorkingCity->getCityPlotIndex(pPlot)) != NO_BUILD)
 				{
 					return 0;
@@ -20327,6 +20841,8 @@ int CvPlayerAI::AI_getPlotCanalValue(CvPlot* pPlot) const
 						return 0;
 					}
 				}
+				// Decrease value when within radius of a city
+				iCanalValue -= GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? 5 : 0;
 			}
 		}
 	}
@@ -20338,19 +20854,98 @@ int CvPlayerAI::AI_getPlotCanalValue(CvPlot* pPlot) const
 		{
 			if (pLoopPlot->isCity(true))
 			{
-				return 0;
+				if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+				{
+					return 0;
+				}
+				else if(pLoopPlot->getCanalValue() > 0)
+				{
+					// Decrease value when adjacent to a city or fort with a canal value
+					iCanalValue -= 10;
+				}
 			}
 		}
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+		{
+			iCanalValue *= 10;
+			// Favor plots with higher defense
+			int iDefenseModifier = pPlot->defenseModifier(getTeam(), false);
+			iCanalValue += iDefenseModifier;
+		}
 	}
-
+	}
 	CvArea* pSecondWaterArea = pPlot->secondWaterArea();
 	if (pSecondWaterArea == NULL)
 	{
 		return 0;
 	}
 
-	return 10 * std::min(0, pSecondWaterArea->getNumTiles() - 2);
+	return GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? std::max(0,iCanalValue) : 10 * std::min(0, pSecondWaterArea->getNumTiles() - 2);
+	// Super Forts end
 }
+// Super Forts begin *choke*
+int CvPlayerAI::AI_getPlotChokeValue(CvPlot* pPlot) const
+{
+	PROFILE_FUNC();
+	
+	FAssert(pPlot != NULL);
+
+	int iChokeValue = pPlot->getChokeValue();
+
+	if (iChokeValue > 0)
+	{
+		if (pPlot->isOwned())
+		{
+			if (pPlot->getTeam() != getTeam())
+			{
+				return 0;
+			}
+			if (pPlot->isCityRadius())
+			{
+				CvCity* pWorkingCity = pPlot->getWorkingCity();
+				if (pWorkingCity != NULL)
+				{
+					// Left in this part from the original code. Might be needed to avoid workers from getting stuck in a loop?
+					if (pWorkingCity->AI_getBestBuild(pWorkingCity->getCityPlotIndex(pPlot)) != NO_BUILD)
+					{
+						return 0;
+					}
+					if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+					{
+						CvImprovementInfo &kImprovementInfo = GC.getImprovementInfo(pPlot->getImprovementType());
+						if (!kImprovementInfo.isActsAsCity())
+						{
+							return 0;
+						}
+					}
+					// Decrease value when within radius of a city
+					iChokeValue -= 5;
+				}
+			}
+		}
+	
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		{
+			CvPlot* pLoopPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), (DirectionTypes)iI);
+			if (pLoopPlot != NULL)
+			{
+				if (pLoopPlot->isCity(true) && (pLoopPlot->getChokeValue() > 0))
+				{
+					// Decrease value when adjacent to a city or fort with a choke value
+					iChokeValue -= 10;
+				}
+			}
+		}
+
+		iChokeValue *= 10;
+		// Favor plots with higher defense
+		int iDefenseModifier = pPlot->defenseModifier(getTeam(), false);
+		iChokeValue += iDefenseModifier;
+	}
+
+	return std::max(0,iChokeValue);
+}
+// Super Forts end
 
 //This returns a positive number equal approximately to the sum
 //of the percentage values of each unit (there is no need to scale the output by iHappy)
@@ -20496,6 +21091,29 @@ bool CvPlayerAI::AI_isPlotThreatened(CvPlot* pPlot, int iRange, bool bTestMoves)
 
 											if (iPathTurns <= 1)
 											{
+												if(isOOSLogging())
+												{
+													for (CLLNode<IDInfo>* pUnitNode2 = pPlot->headUnitNode(); pUnitNode2 != NULL; pUnitNode2 = pPlot->nextUnitNode(pUnitNode2))
+													{
+														CvUnit* pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
+														if(pLoopUnit2->getOwner() == getID() && !pLoopUnit2->canAttack())
+														{
+															oosLog("AIPlotThreatened"
+																,"Turn:%d,PlayerID:%d,X:%d,Y:%d,Unit:%S,ThreatenedX:%d,ThreatenY:%d,Unit:%S,Owner:%d,Distance:%d"
+																,GC.getGameINLINE().getElapsedGameTurns()
+																,getID()
+																,pPlot->getX_INLINE()
+																,pPlot->getY_INLINE()
+																,pLoopUnit2->getName().GetCString()
+																,pLoopPlot->getX_INLINE()
+																,pLoopPlot->getY_INLINE()
+																,pLoopUnit->getName().GetCString()
+																,pLoopUnit->getOwner()
+																,iPathTurns
+															);
+														}
+													}
+												}
 												return true;
 											}
 										}
@@ -20900,22 +21518,21 @@ void CvPlayerAI::AI_updateVictoryStrategy()
 
 	//Epic Destiny Victory
 
-	//logging
-    TCHAR szOut[1024];
 	/*
 	sprintf(szOut, "%d -- TowerVictory Stage: %d\n",GC.getGameINLINE().getGameTurn(),AI_getVictoryStrategyStage(AIVICTORYSTRATEGY_TOWER_OF_MASTERY));
     TCHAR szFile[1024];
 	sprintf(szFile, "AI%d Victory.log",getID());
 	*/
-
-	sprintf(szOut, "Turn: %d,PlayerID: %d, Player: %S, TowerVictory Stage: %d\n"
-		,GC.getGameINLINE().getGameTurn()
-		,getID()
-		,getName()
-		,AI_getVictoryStrategyStage(AIVICTORYSTRATEGY_TOWER_OF_MASTERY)
-	);
-    //gDLL->logMsg("AIVictory.log",szOut);
-    gDLL->logMsg("AIVictory.log",szOut, false, false);
+	if(isOOSLogging())
+	{
+		oosLog("AIVictory"
+			,"Turn:%d,PlayerID:%d,Player:%S,TowerVictory Stage:%d"
+			,GC.getGameINLINE().getGameTurn()
+			,getID()
+			,getName()
+			,AI_getVictoryStrategyStage(AIVICTORYSTRATEGY_TOWER_OF_MASTERY)
+		);
+	}
 }
 
 /** BETTER AI (Naval AI) Sephi                                                                   **/
@@ -21036,16 +21653,18 @@ void CvPlayerAI::AI_doExpansion()
     {
 		if (getCapitalCity())
 		{
-			TCHAR szOut[1024];
-			CvWString szPlayerName = getName();
-			sprintf(szOut, "PlayerID: %d,Player: %S,NumberCitySites: %d,ExpansionX: %d, ExpansionY: %d\n"
-				,getID()
-				,szPlayerName.GetCString()
-				,AI_getNumAreaCitySites(getCapitalCity()->getArea(),iBestValue)
-				,(AI_getExpansionPlot()==NULL)?-1:AI_getExpansionPlot()->getX_INLINE()
-				,(AI_getExpansionPlot()==NULL)?-1:AI_getExpansionPlot()->getY_INLINE()
-			);
-			gDLL->logMsg("naval.log",szOut, false, false);
+			if(isOOSLogging())
+			{
+				CvWString szPlayerName = getName();
+				oosLog("naval"
+					,"PlayerID:%d,Player:%S,NumberCitySites:%d,ExpansionX:%d,ExpansionY:%d"
+					,getID()
+					,szPlayerName.GetCString()
+					,AI_getNumAreaCitySites(getCapitalCity()->getArea(),iBestValue)
+					,(AI_getExpansionPlot()==NULL)?-1:AI_getExpansionPlot()->getX_INLINE()
+					,(AI_getExpansionPlot()==NULL)?-1:AI_getExpansionPlot()->getY_INLINE()
+				);
+			}
 		}
     }
 }
@@ -21376,7 +21995,9 @@ void CvPlayerAI::updateAIGroups()
 			if(pLoopPlot->getOwnerINLINE()==getID())
 			{
 				//Counter Groups
-				if(pLoopPlot->isVisibleEnemyUnit(getID()))
+				//SpyFanatic: do not spawn counter group like hell if you see a lot of barbarian roaming your empire... at the end is maybe better to have the aigroup to destroy the lair
+				if(pLoopPlot->isVisibleEnemyUnitNoBarbarian(getID()))
+				//if(pLoopPlot->isVisibleEnemyUnit(getID()))
 				{
 					if(!pLoopPlot->area()->isWater())
 					{
@@ -21386,6 +22007,33 @@ void CvPlayerAI::updateAIGroups()
 							pNewGroup->setMissionTargetUnit(pLoopPlot->getVisibleEnemyDefender(getID()));
 							pNewGroup->setMissionPlot(pLoopPlot);
 							pNewGroup->setMissionArea(pLoopPlot->getArea());
+
+							if(isOOSLogging())
+							{
+
+								CLLNode<IDInfo>* pUnitNode;
+								CvUnit* pLoopUnit;
+								pUnitNode = pLoopPlot->headUnitNode();
+								int iVisibleEnemyOwner = -1;
+
+								if (pUnitNode != NULL)
+								{
+									pLoopUnit = ::getUnit(pUnitNode->m_data);
+									iVisibleEnemyOwner = pLoopUnit->getOwnerINLINE();
+								}
+
+								oosLog("AIGroup"
+									,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,Enemy:%d,atX:%d,atY:%d"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,getID()
+									,pNewGroup->getID()
+									,GC.getAIGroupInfo(pNewGroup->getGroupType()).getDescription()
+									,iVisibleEnemyOwner
+									,pLoopPlot->getX_INLINE()
+									,pLoopPlot->getY_INLINE()
+								);
+							}
+
 						}
 					}
 					else
@@ -21396,6 +22044,32 @@ void CvPlayerAI::updateAIGroups()
 							pNewGroup->setMissionTargetUnit(pLoopPlot->getVisibleEnemyDefender(getID()));
 							pNewGroup->setMissionPlot(pLoopPlot);
 							pNewGroup->setMissionArea(pLoopPlot->getArea());
+
+							if(isOOSLogging())
+							{
+
+								CLLNode<IDInfo>* pUnitNode;
+								CvUnit* pLoopUnit;
+								pUnitNode = pLoopPlot->headUnitNode();
+								int iVisibleEnemyOwner = -1;
+
+								if (pUnitNode != NULL)
+								{
+									pLoopUnit = ::getUnit(pUnitNode->m_data);
+									iVisibleEnemyOwner = pLoopUnit->getOwnerINLINE();
+								}
+
+								oosLog("AIGroup"
+									,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,Enemy:%d,atX:%d,atY:%d"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,getID()
+									,pNewGroup->getID()
+									,GC.getAIGroupInfo(pNewGroup->getGroupType()).getDescription()
+									,iVisibleEnemyOwner
+									,pLoopPlot->getX_INLINE()
+									,pLoopPlot->getY_INLINE()
+								);
+							}
 						}
 					}
 				}
@@ -21438,17 +22112,61 @@ void CvPlayerAI::updateAIGroups()
 					bool bValid=true;
 					for(CvAIGroup* pAIGroup = firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = nextAIGroup(&iLoop))
 					{
-						if(pAIGroup->getGroupType()==AIGROUP_DESTROY_LAIR && pAIGroup->getMissionPlot()==pLoopPlot)
+						//if(pAIGroup->getGroupType()==AIGROUP_DESTROY_LAIR && pAIGroup->getMissionPlot()==pLoopPlot)
+						//TODO: SpyFanatic: also consider AIGROUP that are in the area, first one lair then another one!
+						if(pAIGroup->getGroupType()==AIGROUP_DESTROY_LAIR && pAIGroup->getMissionArea()==pLoopPlot->getArea())
 						{
 							bValid=false;
 							break;
 						}
 					}
-					if(bValid)
+					if(bValid && getNumCities() >= 3) //SpyFanatic: consider lairs only when at least 3 cities
 					{
+
 						CvAIGroup* pNewGroup=initAIGroup(AIGROUP_DESTROY_LAIR);
 						pNewGroup->setMissionPlot(pLoopPlot);
 						pNewGroup->setMissionArea(pLoopPlot->getArea());
+/*
+						//SpyFanatic: if not at war, convert an AIGroup from AIGROUP_CITY_INVASION to AIGROUP_DESTROY_LAIR
+						bool bIsAnyWar = false;
+						for (int iJ = 0; iJ < MAX_CIV_TEAMS; iJ++)
+						{
+							if (iJ != getTeam() && GET_TEAM((TeamTypes)iJ).isAlive())
+							{
+								if(GET_TEAM(getTeam()).isAtWar((TeamTypes)iJ) || GET_TEAM(getTeam()).getAnyWarPlanCount((TeamTypes)iJ) > 0)
+								{
+									bIsAnyWar = true;
+									break;
+								}
+							}
+						}
+						if(!bIsAnyWar){
+							//If there is no war or warplan, pickup unit from a reserve group
+							for(CvAIGroup* pAIGroup = firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = nextAIGroup(&iLoop))
+							{
+								if(pAIGroup->getGroupType()==AIGROUP_RESERVE && pAIGroup->getMissionArea()==pLoopPlot->getArea() && pAIGroup->getNumUnits() > 0)
+								{
+									std::vector<IDInfo> aiUnitIDs;
+									for (CLLNode<IDInfo>* pUnitNode = pAIGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pAIGroup->nextUnitNode(pUnitNode))
+									{
+										CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+										if(pLoopUnit!=NULL && !pLoopUnit->isDelayedDeath())
+										{
+											//aiUnitIDs.push_back(pLoopUnit->getID());
+											aiUnitIDs.push_back(pUnitNode->m_data);
+										}
+									}
+
+									for(std::vector<IDInfo>::iterator it=aiUnitIDs.begin() ; it < aiUnitIDs.end(); it++ )
+									{
+										::getUnit(*it)->setAIGroup(pNewGroup);
+									}
+
+									break;
+								}
+							}
+						}*/
+
 					}
 				}
 			}
@@ -21833,6 +22551,7 @@ void CvPlayerAI::AI_doMagic()
 
 	if(AI_getMagicTargetProject() != NO_PROJECT && getCurrentMagicRitual() == NO_PROJECT)
 	{
+		ProjectTypes iAIMagicTargetProject = AI_getMagicTargetProject();
 		if(canCreateSummon(AI_getMagicTargetProject()))
 		{
 			setCurrentMagicRitual(AI_getMagicTargetProject());
@@ -21849,7 +22568,24 @@ void CvPlayerAI::AI_doMagic()
 		{
 			m_iAIMagicTargetProject = NO_PROJECT;
 			return;
-		}			
+		}
+		if(isOOSLogging())
+		{
+			oosLog("AIEnchantmentSummon"
+				,"Turn:%d,Player:%d,Casted Project:%S,ManaCost:%d,FaithCost:%d,SummonCost:%d,EnchantmentCost:%d,Mana:%d %d,Faith:%d %d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getID()
+				,GC.getProjectInfo(iAIMagicTargetProject).getDescription()
+				,GC.getProjectInfo(iAIMagicTargetProject).getManaCost()
+				,GC.getProjectInfo(iAIMagicTargetProject).getFaithCost()
+				,iSummonCost
+				,iEnchantmentCost
+				,getMana()
+				,getManaIncome()
+				,getFaith()
+				,getFaithIncome()
+			);
+		}
 	}
 
 	if(AI_getMagicTargetProject() != NO_PROJECT)
@@ -21885,28 +22621,98 @@ void CvPlayerAI::AI_doMagic()
 	{
 		CvProjectInfo& kProject = GC.getProjectInfo((ProjectTypes)iI);
 
-		iValue = -1;
-		if(bMoreSummons && canCreateSummon((ProjectTypes)iI, true)) {
-			iValue = pCapital->AI_getUnitValue((UnitTypes)GC.getProjectInfo((ProjectTypes)iI).getSummonUnitType());
-		}
-
-		if(bMoreEnchantments && canDoGlobalEnchantment((ProjectTypes)iI, true)) {
-			iValue = 100;
-			iValue += GC.getProjectInfo((ProjectTypes)iI).getAIWeight();
-		}
-		if(kProject.getNumTerrainChanges() > 0 && canDoTerraformRitual((ProjectTypes)iI,true))
+		//SpyFanatic: some ritual are graphical only, which can means that are an effect from another spell (check evergrow realm which is a GE triggering a terraforming - the latter cannot be cast by its own)
+		if(!kProject.isGraphicalOnly())
 		{
-			iValue = AI_getTerraformRitualValue((ProjectTypes)iI);
-		}
+			iValue = -1;
+			if(bMoreSummons && canCreateSummon((ProjectTypes)iI, true)) {
+				//SpyFanatic: consider summon only if are tier 4 or if are tier greater then what can be produced as unit
+				bool bConsiderSummon = true;
+				int iSummonTier = GC.getUnitInfo((UnitTypes)GC.getProjectInfo((ProjectTypes)iI).getSummonUnitType()).getTier();
 
-		if(iValue > iBestValue) {
-			iBestValue = iValue;
-			eBestProject = (ProjectTypes)iI;
+				if(iSummonTier < 3)
+				{
+					for(int iJ=0;iJ<GC.getNumUnitClassInfos();iJ++)
+					{
+						UnitTypes eUnit=(UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iJ);
+						if(eUnit!=NO_UNIT)
+						{
+							CvUnitInfo &kUnit = GC.getUnitInfo(eUnit);
+							if(kUnit.getProductionCost()>0 && kUnit.getCombat()>0 && kUnit.getCombatDefense()>0 && pCapital->canTrain(eUnit))
+							{
+								if(kUnit.getTier() > iSummonTier)
+								{
+									bConsiderSummon = false;
+									break;
+								}
+							}
+						}
+					}
+				}
+				if(bConsiderSummon)
+				{
+					iValue = pCapital->AI_getUnitValue((UnitTypes)GC.getProjectInfo((ProjectTypes)iI).getSummonUnitType());
+				}
+			}
+
+			if(bMoreEnchantments && canDoGlobalEnchantment((ProjectTypes)iI, true)) {
+				//Mind if it is already active, else no value in cancelling it... e.g. Miracles are cast over and over...
+				if(GET_TEAM(getTeam()).getProjectCount((ProjectTypes)iI) != 1)
+				{
+					iValue = 100;
+					iValue += GC.getProjectInfo((ProjectTypes)iI).getAIWeight();
+					if (kProject.getYieldChangeType() != NO_YIELD && kProject.getYieldChange() != 0)
+					{
+						//For Create xxx evaluate to increase what is less
+						int iCurrentGlobalYieldCount = getGlobalYield(kProject.getYieldChangeType());
+						if(iCurrentGlobalYieldCount >= 1000)
+						{
+							//If I have already 1k yield stop on this
+							iValue = 0;
+						}
+						else
+						{
+							iValue += std::max(0,1000 - iCurrentGlobalYieldCount);
+						}
+					}
+				}
+			}
+			if(kProject.getNumTerrainChanges() > 0 && canDoTerraformRitual((ProjectTypes)iI,true))
+			{
+				//SpyFanatic: mind that inside it is now consider the AIWeight which has been used to 'disable' AI to cast coninuously some worthless terraforming, like creating new forest
+				iValue = AI_getTerraformRitualValue((ProjectTypes)iI);
+			}
+
+			if(iValue > iBestValue) {
+				iBestValue = iValue;
+				eBestProject = (ProjectTypes)iI;
+			}
 		}
 	}
 
 	if(eBestProject != NO_PROJECT)
 	{
+		if(isOOSLogging())
+		{
+			oosLog("AIEnchantmentSummon"
+				,"Turn:%d,Player:%d,Evaluating Project:%S,%d %d %d,Value:%d,ManaCost:%d,FaithCost:%d,SummonCost:%d,EnchantmentCost:%d,Mana:%d %d,Faith:%d %d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getID()
+				,GC.getProjectInfo(eBestProject).getDescription()
+				,canCreateSummon(eBestProject, true)
+				,canDoGlobalEnchantment(eBestProject, true)
+				,canDoTerraformRitual(eBestProject,true)
+				,iBestValue
+				,GC.getProjectInfo(eBestProject).getManaCost()
+				,GC.getProjectInfo(eBestProject).getFaithCost()
+				,iSummonCost
+				,iEnchantmentCost
+				,getMana()
+				,getManaIncome()
+				,getFaith()
+				,getFaithIncome()
+			);
+		}
 		m_iAIMagicTargetProject = eBestProject;
 		return;
 	}
@@ -22414,39 +23220,58 @@ void CvPlayerAI::AI_chooseEquipment(CvUnit* pUnit)
 	if(pUnit==NULL || pUnit->getAIGroup()==NULL)
 		return;
 
+	if (pUnit->AI_getPromotionSpecialization()==NO_AIPROMOTIONSPECIALIZATION)
+	{
+		return;
+	}
+
 	PromotionTypes eBestPromotion=NO_PROMOTION;
 	int iValue;
 	int iBestValue=0;
-	bool* pbAlready=new bool[GC.getNumEquipmentCategoryInfos()];
+	int* pbAlready=new int[GC.getNumEquipmentCategoryInfos()];
 
+	/*
+	<Type>EQUIPMENTCATEGORY_ARMOR</Type>
+	<Type>EQUIPMENTCATEGORY_WEAPON</Type>
+	<Type>EQUIPMENTCATEGORY_MOUNT</Type>
+	<Type>EQUIPMENTCATEGORY_MISC</Type>
+	<Type>EQUIPMENTCATEGORY_POTION</Type>
+	<Type>EQUIPMENTCATEGORY_ENCHANTMENT</Type>
+	*/
 	for(int iJ=0;iJ<GC.getNumEquipmentCategoryInfos();iJ++)
 	{
-		pbAlready[iJ]=false;
+		//pbAlready[iJ]=NO_PROMOTION;
+		pbAlready[iJ]=0;
 		for(int iI=0;iI<GC.getNumPromotionInfos();iI++)
 		{
 			if(GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()==iJ)
 			{
 				if(pUnit->isHasPromotion((PromotionTypes)iI))
 				{
-					pbAlready[iJ]=true;
+					//pbAlready[iJ]=iI;
+					pbAlready[iJ]=AI_EquipmentValue(pUnit,(PromotionTypes)iI);
 					break;
 				}
 			}
 		}
 	}
 
-
 	for(int iI=0;iI<GC.getNumPromotionInfos();iI++)
 	{
 		if(GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()!=NO_EQUIPMENTCATEGORY)
 		{
 			//Not pick Equipment if we already have Equipment of same Class
-			if(!pbAlready[GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()])
+			//SpyFanatic: Allow replacement in some cases, like only for heroes and if values *2
+			//if(pbAlready[GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()] == NO_PROMOTION)
 			{
 				if(canEquipUnit(pUnit,(PromotionTypes)iI))
 				{
 					iValue=AI_EquipmentValue(pUnit,(PromotionTypes)iI);
-					if(iValue>iBestValue)
+
+					//int iValueOld = pbAlready[GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()] == NO_PROMOTION ? 0 : AI_EquipmentValue(pUnit,(PromotionTypes)pbAlready[GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()]);
+					//if(iValue>iBestValue && iValue > (iValueOld * 2))
+					if(iValue>iBestValue && iValue > (pbAlready[GC.getPromotionInfo((PromotionTypes)iI).getEquipmentCategory()] * 2))
+					//if(iValue>iBestValue)
 					{
 						iBestValue=iValue;
 						eBestPromotion=(PromotionTypes)iI;
@@ -22458,6 +23283,16 @@ void CvPlayerAI::AI_chooseEquipment(CvUnit* pUnit)
 
 	if(eBestPromotion!=NO_PROMOTION)
 	{
+		oosLog("AIEquipment"
+			,"Turn:%d,PlayerID:%d,UnitID:%d,Unit:%S,GroupType:%S,PromotionSpecialization:%S,Promotion:%S"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getID()
+			,pUnit->getID()
+			,pUnit->getName().GetCString()
+			,pUnit->getAIGroup()!=NULL ? GC.getAIGroupInfo(pUnit->getAIGroup()->getGroupType()).getDescription() : L"NO_AIGROUP"
+			,GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)pUnit->AI_getPromotionSpecialization()).getDescription()
+			,GC.getPromotionInfo(eBestPromotion).getDescription()
+		);
 		pUnit->equip(eBestPromotion);
 	}
 
@@ -22477,8 +23312,15 @@ int CvPlayerAI::AI_EquipmentValue(CvUnit* pUnit, PromotionTypes Equipment)
 			case AIGROUP_RESERVE:
 				return 0;
 			case AIGROUP_CITY_DEFENSE:
-				bValueAttack=false;
+			{
+				PromotionTypes iHero = (PromotionTypes)GC.getInfoTypeForString("PROMOTION_HERO");
+				//SpyFanatic: in case a Hero is here consider also attack!
+				if(iHero==NO_PROMOTION || !pUnit->isHasPromotion(iHero) || pUnit->AI_getUnitAIType()!=UNITAI_HERO)
+				{
+					bValueAttack=false;
+				}
 				break;
+			}
 			default:
 				break;
 		}
@@ -22506,14 +23348,12 @@ int CvPlayerAI::AI_EquipmentValue(CvUnit* pUnit, PromotionTypes Equipment)
 		}
 		//Temporary
 	}
-
 /**
 	if(kEquipment.getYieldCostType()!=NO_YIELD && getGlobalYield(kEquipment.getYieldCostType())<2000)
 	{
 		bValueDefense=false;
 	}
 **/
-
 	if(bValueAttack)
 	{
 		iValue+=200*kEquipment.getCombatPercent();
@@ -22647,8 +23487,6 @@ void CvPlayerAI::AI_doCitySpecialization()
 		//pick a new one
 		if(pLoopCityAI->AI_getCitySpecialization() == NO_CITYSPECIALIZATION)
 		{
-
-
 			int iFoodBonusModifier = 0;
 			int iProductionBonusModifier = 0;
 			int iCommerceBonusModifier = 0;
@@ -22673,7 +23511,6 @@ void CvPlayerAI::AI_doCitySpecialization()
 								CvBonusInfo& cBonus = GC.getBonusInfo(eBonus);
 								if(cBonus.getBonusClassType() != NO_BONUSCLASS)
 								{
-
 									iFoodBonusModifier+=(cBonus.getCityYieldModifierType() == YIELD_FOOD)?cBonus.getCityBonusModifier():0;
 									iProductionBonusModifier+=(cBonus.getCityYieldModifierType() == YIELD_PRODUCTION)?cBonus.getCityBonusModifier():0;
 									iCommerceBonusModifier+=(cBonus.getCityYieldModifierType() == YIELD_COMMERCE)?cBonus.getCityBonusModifier():0;
@@ -22747,9 +23584,36 @@ void CvPlayerAI::AI_doCitySpecialization()
 					}
 				}
 			}
+			/*
+			else if(getNumCities() == 4)
+			{
+				//Fourth city will definetly need to be merchant. if not already there, else research
+				if(AI_getCitySpecializationCount(CITYSPECIALIZATION_GOLD) <= 0)
+				{
+					pLoopCityAI->AI_setCitySpecialization(CITYSPECIALIZATION_GOLD);
+				}
+				else
+				{
+					if(bNoResearch)
+					{
+						pLoopCityAI->AI_setCitySpecialization(CITYSPECIALIZATION_MILITARY);
+					}
+					else
+					{
+						pLoopCityAI->AI_setCitySpecialization(CITYSPECIALIZATION_ARCANE);
+					}
+				}
+			}
+			*/
 			else
 			{
-				if(iFaithBonusModifier >= 50 && AI_getCitySpecializationCount(CITYSPECIALIZATION_FAITH) <= 0)
+				//if(AI_getCitySpecializationCount(CITYSPECIALIZATION_GOLD) <= getNumCities() / 5 && pLoopCityAI->getPlotRadius() < 3)
+				//Fourth city will definetly need to be merchant. if not already there, else research
+				if(AI_getCitySpecializationCount(CITYSPECIALIZATION_GOLD) <= 0)
+				{
+					pLoopCityAI->AI_setCitySpecialization(CITYSPECIALIZATION_GOLD);
+				}
+				else if(iFaithBonusModifier >= 50 && AI_getCitySpecializationCount(CITYSPECIALIZATION_FAITH) <= 0)
 				{
 					pLoopCityAI->AI_setCitySpecialization(CITYSPECIALIZATION_FAITH);
 				}
@@ -23033,7 +23897,22 @@ bool CvPlayerAI::isLackMoneyForExpansion()
 			return true;
 		}
 	}
-	return AI_isFinancialTrouble();
+	//SpyFanatic: be more relaxed on initial 3 cities to allow logic to build merchant district (if happens, else merch district should be the 4th city, but lets wait economy to stabilize a bit)
+	if(getNumCities() <= 3) {
+		return false;
+		if( isBarbarian() )
+		{
+			return false;
+		}
+
+		int iGoldRate = calculateGoldRate();
+
+		if(iGoldRate < 5 * getNumCities())
+			return true;
+	}
+	//return AI_isFinancialTrouble();
+	//SpyFanatic end
+
 /**
 	//need atleast surplus of 5 gold at max gold ratio
 	int iGoldSurplus=0;

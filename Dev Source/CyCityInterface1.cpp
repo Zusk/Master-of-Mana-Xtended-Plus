@@ -43,7 +43,7 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
 		.def("isNationalWondersMaxed", &CyCity::isNationalWondersMaxed, "bool ()")
 		.def("isBuildingsMaxed", &CyCity::isBuildingsMaxed, "bool ()")
 		.def("canTrain", &CyCity::canTrain, "bool (int eUnit, bool bContinue, bool bTestVisible)")
-		.def("canConstruct", &CyCity::canConstruct, "bool (int eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost)")
+		.def("canConstruct", &CyCity::canConstruct, "bool (int eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreResources)")
 		.def("canCreate", &CyCity::canCreate, "bool (int eProject, bool bContinue, bool bTestVisible)")
 		.def("canMaintain", &CyCity::canMaintain, "bool (int eProcess, bool bContinue)")
 		.def("canJoin", &CyCity::canJoin, "bool () - can a Great Person join the city")
@@ -473,16 +473,7 @@ void CyCityPythonInterface1(python::class_<CyCity>& x)
 		.def("getLiberationPlayer", &CyCity::getLiberationPlayer, "int ()")
 		.def("liberate", &CyCity::liberate, "void ()")
 
-//FfH: Added by Kael 10/18/2007
-		.def("applyBuildEffects", &CyCity::applyBuildEffects, "void (CyUnit* pUnit)")
-		.def("changeCrime", &CyCity::changeCrime, "void (int iChange) - changes the Crime Rate for this city")
-		.def("getCrime", &CyCity::getCrime, "int () - crime rate")
-		.def("isHasBuildingClass", &CyCity::isHasBuildingClass, "bool (int /*BuildingClassTypes*/ iIndex) - has building class")
-		.def("isSettlement", &CyCity::isSettlement, "bool () - is settlement")
-		.def("setCivilizationType", &CyCity::setCivilizationType, "void (int iNewValue) - sets the Civilization Type of this city")
-		.def("setPlotRadius", &CyCity::setPlotRadius, "void (int iNewValue) - sets the Plot Radius of this city")
-		.def("setSettlement", &CyCity::setSettlement, "void (bool bNewValue) - sets city as a Settlement or not")
-//FfH: End Add
+
 		.def("calculateImprovementInfrastructureCost", &CyCity::calculateImprovementInfrastructureCost, "int ()")
 		;
 }

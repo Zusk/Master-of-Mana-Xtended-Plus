@@ -53,13 +53,12 @@ class AIAutoPlay :
             }
 
         self.customEM = customEM
-
         self.customEM.addEventHandler( "kbdEvent", self.onKbdEvent )
         self.customEM.addEventHandler( "EndGameTurn", self.onEndGameTurn )
         self.customEM.addEventHandler( 'BeginPlayerTurn', self.onBeginPlayerTurn )
         self.customEM.addEventHandler( 'EndPlayerTurn', self.onEndPlayerTurn )
-        self.customEM.addEventHandler( 'OnLoad', self.onGameLoad )
-        self.customEM.addEventHandler( 'GameStart', self.onGameStart )
+        #self.customEM.addEventHandler( 'OnLoad', self.onGameLoad ) #SpyFanatic: seems to not be masking the CvEventManager event, but commented as are not needed
+        #self.customEM.addEventHandler( 'GameStart', self.onGameStart ) #SpyFanatic: seems to not be masking the CvEventManager event, but commented as are not needed
         self.customEM.addEventHandler( 'victory', self.onVictory )
 
         self.customEM.setPopupHandler( RevDefs.toAIChooserPopup, ["toAIChooserPopup",self.AIChooserHandler,self.blankHandler] )
@@ -74,13 +73,14 @@ class AIAutoPlay :
             except ValueError :
                 print "Failed to remove 'onCityBuilt', perhaps not registered"
                 self.customEM.setEventHandler( "cityBuilt", self.onCityBuilt )
-            
-            try :
-                self.customEM.removeEventHandler( "BeginGameTurn", customEM.onBeginGameTurn )
-                self.customEM.addEventHandler( "BeginGameTurn", self.onBeginGameTurn )
-            except ValueError :
-                print "Failed to remove 'onBeginGameTurn', perhaps not registered"
-                self.customEM.setEventHandler( "BeginGameTurn", self.onBeginGameTurn )
+
+            #SpyFanatic: onBeginGameTurn must stay to check for Orthus
+            #try :
+            #    self.customEM.removeEventHandler( "BeginGameTurn", customEM.onBeginGameTurn )
+            #    self.customEM.addEventHandler( "BeginGameTurn", self.onBeginGameTurn )
+            #except ValueError :
+            #    print "Failed to remove 'onBeginGameTurn', perhaps not registered"
+            #    self.customEM.setEventHandler( "BeginGameTurn", self.onBeginGameTurn )
 
 
     def removeEventHandlers( self ) :
@@ -90,8 +90,8 @@ class AIAutoPlay :
         self.customEM.removeEventHandler( "EndGameTurn", self.onEndGameTurn )
         self.customEM.removeEventHandler( 'BeginPlayerTurn', self.onBeginPlayerTurn )
         self.customEM.removeEventHandler( 'EndPlayerTurn', self.onEndPlayerTurn )
-        self.customEM.removeEventHandler( 'OnLoad', self.onGameLoad )
-        self.customEM.removeEventHandler( 'GameStart', self.onGameStart )
+        #self.customEM.removeEventHandler( 'OnLoad', self.onGameLoad ) #SpyFanatic: seems to not be masking the CvEventManager event, but commented as are not needed
+        #self.customEM.removeEventHandler( 'GameStart', self.onGameStart ) #SpyFanatic: seems to not be masking the CvEventManager event, but commented as are not needed
         self.customEM.removeEventHandler( 'victory', self.onVictory )
 
         self.customEM.setPopupHandler( RevDefs.toAIChooserPopup, ["toAIChooserPopup",self.blankHandler,self.blankHandler] )
@@ -102,8 +102,8 @@ class AIAutoPlay :
             self.customEM.removeEventHandler( "cityBuilt", self.onCityBuilt )
             self.customEM.addEventHandler( "cityBuilt", self.customEM.onCityBuilt )
             
-            self.customEM.removeEventHandler( "BeginGameTurn", self.onBeginGameTurn )
-            self.customEM.addEventHandler( "BeginGameTurn", self.customEM.onBeginGameTurn )
+            #self.customEM.removeEventHandler( "BeginGameTurn", self.onBeginGameTurn )
+            #self.customEM.addEventHandler( "BeginGameTurn", self.customEM.onBeginGameTurn )
     
     def blankHandler( self, playerID, netUserData, popupReturn ) :
         # Dummy handler to take the second event for popup
@@ -115,12 +115,13 @@ class AIAutoPlay :
 
     def onGameLoad( self, argsList ) :
         # Init things which require a game object or other game data to exist
-
-        if( not SdToolKitCustom.sdObjectExists( "AIAutoPlay", game ) ) :
-            SdToolKitCustom.sdObjectInit( "AIAutoPlay", game, {} )
-            SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
-        elif( SdToolKitCustom.sdObjectGetVal( "AIAutoPlay", game, "bCanCancelAuto" ) == None ) :
-            SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
+        print "AIAutoPlay Init"
+        #SpyFanatic: remove Game ScriptData to allow regenerate map
+        #if( not SdToolKitCustom.sdObjectExists( "AIAutoPlay", game ) ) :
+        #    SdToolKitCustom.sdObjectInit( "AIAutoPlay", game, {} )
+        #    SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
+        #elif( SdToolKitCustom.sdObjectGetVal( "AIAutoPlay", game, "bCanCancelAuto" ) == None ) :
+        #    SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
 
     def onVictory( self, argsList ) :
         self.checkPlayer()
@@ -216,7 +217,7 @@ class AIAutoPlay :
             # popup.addButton( localText.getText("TXT_KEY_AIAUTOPLAY_NONE", ()) )
             # CvUtil.pyPrint('Launching pick human popup')
             # popup.launch()
-#THIS IS OOS!!!! and initUnit at 0,0 means it can also be on impassable, sea, ... but maybe its just meant for still be alive somehow
+#SpyFanatic: this is giving OOS, and anyhow its done inside CvGame reviveActivePlayer when AIAutoTurns ends.
 #            gc.getActivePlayer().setNewPlayerAlive( True )
 #            iSettler = CvUtil.findInfoTypeNum(gc.getUnitInfo,gc.getNumUnitInfos(),'UNIT_SETTLER')
 #            gc.getActivePlayer().initUnit( iSettler, 0, 0, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH )
@@ -237,6 +238,7 @@ class AIAutoPlay :
 
     def onKbdEvent( self, argsList ) :
         'keypress handler'
+
         eventType,key,mx,my,px,py = argsList
 
         if ( eventType == RevDefs.EventKeyDown ):
@@ -245,14 +247,16 @@ class AIAutoPlay :
             if( theKey == int(InputTypes.KB_X) and self.customEM.bShift and self.customEM.bCtrl ) :
                 # Get it?  Shift ... control ... to the AI
                 if( game.getAIAutoPlay() > 0 ) :
-                    try :
-                        bCanCancelAuto = SdToolKitCustom.sdObjectGetVal( "AIAutoPlay", game, "bCanCancelAuto" )
-                        if( bCanCancelAuto is None ) :
-                            bCanCancelAuto = True
-                            SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
-                    except :
-                        print "Error!  AIAutoPlay: Can't find bCanCancelAuto, assuming it would be True"
-                        bCanCancelAuto = True
+                    #SpyFanatic: remove Game ScriptData to allow regenerate map
+                    bCanCancelAuto = True
+                    #try :
+                    #    bCanCancelAuto = SdToolKitCustom.sdObjectGetVal( "AIAutoPlay", game, "bCanCancelAuto" )
+                    #    if( bCanCancelAuto is None ) :
+                    #        bCanCancelAuto = True
+                    #        SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
+                    #except :
+                    #    print "Error!  AIAutoPlay: Can't find bCanCancelAuto, assuming it would be True"
+                    #    bCanCancelAuto = True
 
                     if( bCanCancelAuto ) :
                         if( self.refortify ) :
@@ -271,12 +275,11 @@ class AIAutoPlay :
             if( theKey == int(InputTypes.KB_O) and self.customEM.bShift and self.customEM.bCtrl ) :
                 RevUtils.doRefortify( game.getActivePlayer() )
 
-
-    def onBeginGameTurn( self, argsList):
-        'Called at the beginning of the end of each turn'
-        iGameTurn = argsList[0]
-        if( game.getAIAutoPlay() == 0 ) :
-            CvTopCivs.CvTopCivs().turnChecker(iGameTurn)
+    #def onBeginGameTurn( self, argsList):
+    #    'Called at the beginning of the end of each turn'
+    #    iGameTurn = argsList[0]
+    #     if( game.getAIAutoPlay() == 0 ) :
+    #        CvTopCivs.CvTopCivs().turnChecker(iGameTurn)
 
     def onCityBuilt(self, argsList):
         self.customEM.onCityBuilt(argsList)
@@ -289,7 +292,7 @@ class AIAutoPlay :
         #            CvUtil.pyPrint('AIAutoPlay City Built Event: %s' %(city.getName()))
         #        except :
         #            CvUtil.pyPrint('AIAutoPlay City Built Event: Error processing city name' )
-        #This caused OOS in case of Civ relying on onCityBuilt events
+        #SpyFanatic: This caused OOS in case of Civ relying on onCityBuilt events
 
     def toAIChooser( self ) :
         'Chooser window for when user switches to AI auto play'
@@ -317,6 +320,13 @@ class AIAutoPlay :
 
         popup.popup.setSelectedPulldownID( 1, 2 )
 
+        popup.createPythonPullDown('Select which player to shift to AI (-1 for everyone)', 3 )
+        popup.addPullDownString('ALL', -1, 3 )
+        for i in range(0,gc.getMAX_PLAYERS()) :
+            if (gc.getPlayer(i).isHuman()):
+                popup.addPullDownString(gc.getPlayer(i).getName(), i, 3 )
+        popup.popup.setSelectedPulldownID( -1, 3 )
+
         #popup.createPythonCheckBoxes( 4, 3 )
         #popup.setPythonCheckBoxText( 0, 'Pause at turn end', 'Pauses automation at the end of the turn, so you can inspect things', 3 )
         #popup.setPythonCheckBoxText( 1, 'Pause every 10', 'Pauses automation every 10 turns', 3 )
@@ -340,6 +350,7 @@ class AIAutoPlay :
             numTurns = int( popupReturn.getEditBoxString(0) )
 
         autoIdx = popupReturn.getSelectedPullDownValue( 2 )
+        iCiv = popupReturn.getSelectedPullDownValue( 3 )
 
         if( autoIdx == 0 ) :
             if( self.LOG_DEBUG ) : CyInterface().addImmediateMessage("Clearing all automation","")
@@ -347,7 +358,7 @@ class AIAutoPlay :
         elif( autoIdx == 1 ) :
             if( numTurns > 0 ) :
                 if( self.LOG_DEBUG ) : CyInterface().addImmediateMessage("Fully automating for %d turns"%(numTurns),"")
-                self.abdicate( numTurns = numTurns, voluntary = True )
+                self.abdicate( numTurns = numTurns, voluntary = True , iCiv = iCiv)
         elif( autoIdx == 2 and numTurns > 0 ) :
             if( self.LOG_DEBUG ) : CyInterface().addImmediateMessage("Auto Move","")
             self.setAutoMoves( numTurns )
@@ -360,7 +371,7 @@ class AIAutoPlay :
         #self.bPause =
         #CyInterface().addImmediateMessage("bitfieldsize: %d"%(len(bitField)),"")
 
-    def abdicate( self, numTurns = -1, voluntary = False ) :
+    def abdicate( self, numTurns = -1, voluntary = False ,iCiv = -1) :
         'Turn over control to the AI'
         if( numTurns > 0 ) :
             self.TurnsToAuto = numTurns
@@ -379,10 +390,13 @@ class AIAutoPlay :
             popup.setBodyString( bodStr )
             popup.launch()
         else :
-            if( voluntary ) : SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
-            game.setAIAutoPlay( self.TurnsToAuto )
+            #if( voluntary ) : SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True ) #SpyFanatic: remove Game ScriptData to allow regenerate map
+            if (iCiv == -1):
+                game.setAIAutoPlay( self.TurnsToAuto)
+            else:
+                game.setAIAutoPlayCiv( self.TurnsToAuto, iCiv)
 
     def abdicateHandler( self, playerID, netUserData, popupReturn ) :
         'Handle abdicate popup'
-        SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True )
+       # SdToolKitCustom.sdObjectSetVal( "AIAutoPlay", game, "bCanCancelAuto", True ) #SpyFanatic: remove Game ScriptData to allow regenerate map
         game.setAIAutoPlay( self.TurnsToAuto )

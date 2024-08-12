@@ -876,6 +876,11 @@ def CanDoPrincessRule4 (argsList):
 			return False
 	return True
 
+def CanDoImmigrants1 (argsList):
+	if CyGame().isOption(GameOptionTypes.GAMEOPTION_ONE_CITY_CHALLENGE):
+		return False
+	return True
+
 def CanDoCorruptJudge4 (argsList):
 	iEvent = argsList[0]
 	kTriggeredData = argsList[1]
@@ -1148,6 +1153,13 @@ def doOvercrowdedDungeon5 (argsList):
 	pCity = pPlayer.getCity(kTriggeredData.iCityId)
 	if CyGame().getSorenRandNum(100, "Riot")<25 :
 		pCity.changeOccupationTimer(5)
+
+def doClairone1 (argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlayer = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	pPlayer.changeExtraHappiness(-1)
+
 
 def doAncientBurial2 (argsList):
 	iEvent = argsList[0]

@@ -26,30 +26,36 @@ void CvTeamAI::calculateWarValues()
 	if(getLeaderID() != NO_PLAYER)
 	{
 		//bool bFirst = true;
+		TCHAR szWar[1024];
+		sprintf(szWar,"");
 		for(int iI = 0; iI < GC.getMAX_CIV_TEAMS(); iI++)
 		{
 			if(iI != getID() && GET_TEAM((TeamTypes)iI).isAlive())
 			{
 				GET_PLAYER(getLeaderID()).calculateWarValue((TeamTypes)iI);
-				
-				//DEBUG
+
 				if(isOOSLogging())
 				{
-					oosLog(
-					"AIWarValues"
-					,"Turn: %d,Leader[%d,%d]: %S,vs Leader[%d,%d]: %S,WarValue: %d,Accumulated: %d\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,getLeaderID()
-					,getID()
-					,L""//GET_PLAYER(getLeaderID()).getName()
-					,GET_TEAM((TeamTypes)iI).getLeaderID()
-					,iI
-					,L""//GET_PLAYER(GET_TEAM((TeamTypes)iI).getLeaderID()).getName()
-					,AI_getWarValue((TeamTypes)iI)
-					,AI_getWarValueAccumulated((TeamTypes)iI)
+					sprintf(szWar
+						,"%s,[%d]:%6d/%6d"
+						,szWar
+						,iI
+						,AI_getWarValueAccumulated((TeamTypes)iI)
+						,AI_getWarValue((TeamTypes)iI)
 					);
 				}
-				//DEBUG 
+			}
+			else
+			{
+				if(isOOSLogging() && GET_TEAM((TeamTypes)iI).isEverAlive())
+				{
+					sprintf(szWar
+						,"%s,[%d]:%S"
+						,szWar
+						,iI
+						,iI == getID() ? L"             " : L"XXXXXX/XXXXXX"
+					);
+				}
 			}
 
 		}
@@ -59,18 +65,140 @@ void CvTeamAI::calculateWarValues()
 		{
 			if(AI_getWarValue(AI_getWarPlanTarget())<-500 || isAtWar(AI_getWarPlanTarget()))
 			{
-				/** DEBUG **/
-				/*
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,Leader: %S,vs Leader: %S,Cancelled Warplan\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,GET_PLAYER(getLeaderID()).getName()
-					,GET_PLAYER(GET_TEAM(AI_getWarPlanTarget()).getLeaderID()).getName()
-				);
-				gDLL->logMsg("AIWarplans.log",szOut, false, false);
-				*/
-				/** DEBUG **/
 				AI_setWarPlanTarget(NO_TEAM);
+			}
+		}
+
+		//SpyFanatic: aggressive AI pick valid target chosing less distance and weak
+		if(/*AI_getWarPlanTarget() == NO_TEAM &&*/ GC.getGameINLINE().isOption(GAMEOPTION_AGGRESSIVE_AI))
+		{
+			int iDistance1 = MAX_INT;
+			TeamTypes eEnemyTeam1 = NO_TEAM;
+			int iX1 = MAX_INT;
+			int iY1 = MAX_INT;
+			int iDistance2 = MAX_INT;
+			TeamTypes eEnemyTeam2 = NO_TEAM;
+			int iX2 = MAX_INT;
+			int iY2 = MAX_INT;
+
+			int iLoop, iLoop2;
+			for(int iI = 0; iI < GC.getMAX_CIV_TEAMS(); iI++)
+			{
+				CvTeam& kEnemyTeam = GET_TEAM((TeamTypes)iI);
+				if(iI != getID() && kEnemyTeam.isAlive() && kEnemyTeam.isHasMet(getID())) //Check all teams that has been met
+				{
+					for(int iJ = 0; iJ < kEnemyTeam.getPlayerMemberListSize(); iJ++)
+					{
+						CvPlayer& kEnemy = GET_PLAYER(kEnemyTeam.getPlayerMemberAt(iJ));
+						//Get distance of nearest city of player
+						for (CvCity* pLoopCity = kEnemy.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kEnemy.nextCity(&iLoop))
+						{
+							for(int iK = 0; iK < getPlayerMemberListSize(); iK++)
+							{
+								CvPlayer& kPlayer = GET_PLAYER(getPlayerMemberAt(iK));
+								if(pLoopCity->area()->getCitiesPerPlayer(kPlayer.getID()) > 0) //for each player of enemy team check nearest city
+								{
+									for (CvCity* pLoopCity2 = kPlayer.firstCity(&iLoop2); pLoopCity2 != NULL; pLoopCity2 = kPlayer.nextCity(&iLoop2))
+									{
+										if(pLoopCity2->getArea() == pLoopCity->getArea())
+										{
+											int iTempDistance = pLoopCity->getStepDistance(pLoopCity2->plot());
+											if(iTempDistance >= 0)
+											{
+												//iTempDistance = stepDistance(pLoopCity->getX_INLINE(),pLoopCity->getY_INLINE(),pLoopCity2->getX_INLINE(),pLoopCity2->getY_INLINE());
+												if(iTempDistance < iDistance1)
+												{
+													if(eEnemyTeam1 != kEnemy.getTeam())
+													{
+														iDistance2 = iDistance1;
+														eEnemyTeam2 = eEnemyTeam1;
+														iX2 = iX1;
+														iY2 = iY1;
+													}
+													iDistance1 = iTempDistance;
+													eEnemyTeam1 = kEnemy.getTeam();
+													iX1 = pLoopCity->getX_INLINE();
+													iY1 = pLoopCity->getY_INLINE();
+												}
+												else if(iTempDistance < iDistance2 && eEnemyTeam1 != kEnemy.getTeam())
+												{
+													iDistance2 = iTempDistance;
+													eEnemyTeam2 = kEnemy.getTeam();
+													iX2 = pLoopCity->getX_INLINE();
+													iY2 = pLoopCity->getY_INLINE();
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			if(eEnemyTeam1 != NO_TEAM && eEnemyTeam2 != NO_TEAM)
+			{
+				int iOurPower = getPower(true)*100;
+				int iEnemy1Power = eEnemyTeam1 != NO_TEAM ? 1+GET_TEAM(eEnemyTeam1).getPower(true) : 0;
+				int iEnemy2Power = eEnemyTeam2 != NO_TEAM ? 1+GET_TEAM(eEnemyTeam2).getPower(true) : 0;
+				int iEnemy1PowerRatio = eEnemyTeam1 != NO_TEAM ? iOurPower / iEnemy1Power : 0;
+				int iEnemy2PowerRatio = eEnemyTeam2 != NO_TEAM ? iOurPower / iEnemy2Power : 0;
+				if(eEnemyTeam2 == NO_TEAM || eEnemyTeam1 == eEnemyTeam2 || iEnemy1Power <= iEnemy2Power)
+				{
+					//If power ratio for both is above 5 then pick the nearest one instead
+					if(iEnemy1PowerRatio >= 5 && iEnemy2PowerRatio >= 5)
+					{
+						AI_setWarPlanTarget(iDistance1 < iDistance2 ? eEnemyTeam1 : eEnemyTeam2);
+					}
+					else
+					{
+						AI_setWarPlanTarget(eEnemyTeam1);
+					}
+				}
+				else
+				{
+					AI_setWarPlanTarget(eEnemyTeam2);
+				}
+				if(isOOSLogging())
+				{
+					if(eEnemyTeam2 == NO_TEAM || eEnemyTeam1 == eEnemyTeam2)
+					{
+						oosLog("AINearbyEnemy"
+							,"Turn:%d,Team:%d,Power:%d,Enemy1:%d,X:%d,Y:%d,Distance:%d,Power:%d,PowerRatio:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,getID()
+							,iOurPower
+							,eEnemyTeam1
+							,iX1
+							,iY1
+							,iDistance1
+							,iEnemy1Power
+							,iEnemy1PowerRatio
+						);
+					}
+					else
+					{
+						oosLog("AINearbyEnemy"
+							,"Turn:%d,Team:%d,Power:%d,Enemy1:%d,X:%d,Y:%d,Distance:%d,Power:%d,PowerRatio:%d,Enemy2:%d,X:%d,Y:%d,Distance:%d,Power:%d,PowerRatio:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,getID()
+							,iOurPower
+							,eEnemyTeam1
+							,iX1
+							,iY1
+							,iDistance1
+							,iEnemy1Power
+							,iEnemy1PowerRatio
+							,eEnemyTeam2
+							,iX2
+							,iY2
+							,iDistance2
+							,iEnemy2Power
+							,iEnemy2PowerRatio
+						);
+					}
+				}
 			}
 		}
 
@@ -84,9 +212,10 @@ void CvTeamAI::calculateWarValues()
 			{
 				if(iI!=getID() && GET_TEAM((TeamTypes)iI).isAlive() && !isAtWar((TeamTypes)iI))
 				{
-					if(AI_getWarValue((TeamTypes)iI)>iBestValue)
+					int iAiWarValue = AI_getWarValue((TeamTypes)iI);
+					if(iAiWarValue > iBestValue)
 					{
-						iBestValue = AI_getWarValue((TeamTypes)iI);
+						iBestValue = iAiWarValue;
 						eBestWarTarget = (TeamTypes)iI;
 					}
 				}
@@ -95,18 +224,20 @@ void CvTeamAI::calculateWarValues()
 			if(eBestWarTarget!=NO_TEAM)
 			{
 				AI_setWarPlanTarget(eBestWarTarget);
-				/** DEBUG **/
-				/*
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,Leader: %S,vs Leader: %S,Started Warplan\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,GET_PLAYER(getLeaderID()).getName()
-					,GET_PLAYER(GET_TEAM(eBestWarTarget).getLeaderID()).getName()
-				);
-				gDLL->logMsg("AIWarplans.log",szOut, false, false);
-				*/
-				/** DEBUG **/
 			}
+		}
+
+		if(isOOSLogging())
+		{
+			oosLog(
+			"AIWarValues"
+			,"Turn:%d,Team[%d] Target:%d%s"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			//,getLeaderID()
+			,getID()
+			,AI_getWarPlanTarget()
+			,szWar
+			);
 		}
 	}
 }
@@ -153,12 +284,9 @@ void CvPlayerAI::calculateWarValue(TeamTypes eTeam)
 
 	kTeam.AI_setWarValue(eTeam, iValue);
 }
-
+//Note, the bigger the most difficult to start war with eTeam!
 int CvPlayerAI::calculateBaseWarCost(TeamTypes eTeam) const
 {
-	if(getID() == 0 && eTeam == 3) {
-		int debug = 42;
-	}
 	int iValue = 0;
 	CvTeamAI &kTeam = GET_TEAM(getTeam());
 
@@ -259,6 +387,25 @@ int CvPlayerAI::calculateBaseWarCost(TeamTypes eTeam) const
 		iWarCost *= 3;
 	}
 
+	if(isOOSLogging())
+	{
+		oosLog(
+		"AIWarValuesDetails"
+		,"Turn:%d,Team:%d,Target:%d,Expansion:%d,bNoCitySameArea:%d,bNoCityAround:%d,bNoCityClose:%d,iValue:%d,iEnemyPower:%d,iOurPower:%d,iWarCost:%d"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,getID()
+		,eTeam
+		,(AI_getExpansionPlot() != NULL && AI_getExpansionPlot()->area()->getCitiesPerPlayer(getID()) > 0) ? 1000 : 0
+		,bNoCitySameArea
+		,bNoCityAround
+		,bNoCityClose
+		,iValue
+		,iEnemyPower
+		,iOurPower
+		,iWarCost
+		);
+	}
+
 	iValue += iWarCost;
 
 	return iValue;
@@ -317,25 +464,22 @@ void CvPlayerAI::UpdateWarValueAccumulated(TeamTypes eTeam)
 	iAttitudeChange/=kEnemyTeam.getNumMembers();
 	iNewValue+=iAttitudeChange+iAlignmentChange;
 
-	//DEBUG
-	if(isOOSLogging())	
+	/*if(isOOSLogging())
 	{
-
 		oosLog(
-		"AIWarValues"
-		,"Turn: %d,Leader[%d]: %S,vs Leader[%d]: %S,iAttitudeChange: %d,iAlignmentChange: %d\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		//,getLeaderID()
-		,getID()
-		,L""//GET_PLAYER(getLeaderID()).getName()
-		,GET_TEAM((TeamTypes)eTeam).getLeaderID()
-		//,iI
-		,L""//GET_PLAYER(GET_TEAM((TeamTypes)iI).getLeaderID()).getName()
-		,iAttitudeChange
-		,iAlignmentChange
+			"AIWarValues"
+			,"Turn: %d,Leader[%d]: %S,vs Leader[%d]: %S,iAttitudeChange: %d,iAlignmentChange: %d\n"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			//,getLeaderID()
+			,getID()
+			,L""//GET_PLAYER(getLeaderID()).getName()
+			,GET_TEAM((TeamTypes)eTeam).getLeaderID()
+			//,iI
+			,L""//GET_PLAYER(GET_TEAM((TeamTypes)iI).getLeaderID()).getName()
+			,iAttitudeChange
+			,iAlignmentChange
 		);
-	}
-	//DEBUG 
+	}*/
 	
 	GET_TEAM(getTeam()).AI_setWarValueAccumulated(eTeam, iNewValue);
 }
@@ -583,7 +727,7 @@ bool CvPlayerAI::AI_isValidCityforWar(CvCity* pTargetCity, int* piValue)
 	}
 
 	int iValue;
-	int iDifX,iDifY;
+	//int iDifX,iDifY;
 	int iLoop;
 
 	bool bSameArea = false;
@@ -601,9 +745,29 @@ bool CvPlayerAI::AI_isValidCityforWar(CvCity* pTargetCity, int* piValue)
 				{
 					bSameArea=true;
 				}
-				iDifX = pLoopCity->getX_INLINE() - pTargetCity->getX_INLINE();
-				iDifY = pLoopCity->getY_INLINE() - pTargetCity->getY_INLINE();
-				iDistance = std::min(iDistance,std::max(iDifX * iDifX, iDifY * iDifY));
+
+				//iDifX = pLoopCity->getX_INLINE() - pTargetCity->getX_INLINE();
+				//iDifY = pLoopCity->getY_INLINE() - pTargetCity->getY_INLINE();
+				//iDistance = std::min(iDistance,std::max(iDifX * iDifX, iDifY * iDifY));
+
+				int iTempDistance  = pLoopCity->getStepDistance(pTargetCity->plot());
+
+				if(iTempDistance >= 0)
+				{
+					iDistance = std::min(iTempDistance,iDistance);
+				}
+				/*
+				if(pTargetCity->plot()->area()->getCitiesPerPlayer(getID())>0)
+				{
+					//Method has been called to check for land target in updateWarTargets, use turn to reach
+					iDistance =
+				}
+				else
+				{
+					//Across sea thus use linear distance
+					iDistance = std::min(iDistance,std::max(iDifX * iDifX, iDifY * iDifY));
+				}
+				*/
 			}
 		}
 	}

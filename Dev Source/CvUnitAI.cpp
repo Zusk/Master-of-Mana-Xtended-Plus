@@ -885,9 +885,9 @@ void CvUnitAI::AI_promote()
 /*************************************************************************************************/
 
 	//if we have no Specialization, choose one via python (only Barbarians)
-	if(getAIGroup()==NULL || isBarbarian())
+	if(/*getAIGroup()==NULL || */isBarbarian())
 	{
-		if (AI_getPromotionSpecialization()==-1)
+		if (AI_getPromotionSpecialization()==NO_AIPROMOTIONSPECIALIZATION)
 		{
 			CyUnit* pyUnit = new CyUnit(this);
 			CyArgsList argsList;
@@ -897,7 +897,7 @@ void CvUnitAI::AI_promote()
 			delete pyUnit;	// python fxn must not hold on to this pointer
 		}
 	}
-
+/*
 	//temporary
 	if(AI_getUnitAIType()==UNITAI_WARWIZARD)
 	{
@@ -909,8 +909,8 @@ void CvUnitAI::AI_promote()
 	{
 		AI_setPromotionSpecialization(0);
 	}
-
-	if (AI_getPromotionSpecialization()==-1)
+*/
+	if (AI_getPromotionSpecialization()==NO_AIPROMOTIONSPECIALIZATION)
 	{
 		return;
 	}
@@ -923,172 +923,311 @@ void CvUnitAI::AI_promote()
 
 		if (canPromote((PromotionTypes)iI, -1))
 		{
-		    //Combat Promotions
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCombatPromotions()>0)
-			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCombatPromotions();
+			CvPromotionInfo& pPromotionInfo = GC.getPromotionInfo((PromotionTypes)iI);
+			CvAIPromotionSpecializationInfo& pPromotionSpecializationInfo = GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization());
 
-				iValue += (iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getCombatPercent();
-				iValue += (iTemp/4)*GC.getPromotionInfo((PromotionTypes)iI).getBonusVSUnitsFullHealth();
+		    //Combat Promotions
+			if (pPromotionSpecializationInfo.getCombatPromotions()>0)
+			{
+				iTemp=pPromotionSpecializationInfo.getCombatPromotions();
+
+				iValue += (iTemp/2)*pPromotionInfo.getCombatPercent();
+				iValue += (iTemp/4)*pPromotionInfo.getBonusVSUnitsFullHealth();
+
+				//Combat defense, if not evaluated later, should be considered here
+				if (pPromotionSpecializationInfo.getCityDefense() <= 0)
+				{
+					//iValue += (iTemp/2)*pPromotionInfo.getCombatPercentDefense();
+				}
+
 				for(int iJ=0;iJ<GC.getNumUnitCombatInfos();iJ++)
 				{
-					if(GC.getPromotionInfo((PromotionTypes)iI).getUnitCombatModifierPercent(iJ)>0)
+					if(pPromotionInfo.getUnitCombatModifierPercent(iJ)>0)
 					{
-						iValue +=(iTemp*GET_PLAYER(getOwnerINLINE()).AI_getUnitCombatWeight((UnitCombatTypes)iJ)*GC.getPromotionInfo((PromotionTypes)iI).getUnitCombatModifierPercent(iJ))/100;
+						iValue +=(iTemp*GET_PLAYER(getOwnerINLINE()).AI_getUnitCombatWeight((UnitCombatTypes)iJ)*pPromotionInfo.getUnitCombatModifierPercent(iJ))/100;
 					}
 				}
 			}
 
 			//City Defense
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCityDefense()>0)
+			if (pPromotionSpecializationInfo.getCityDefense()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCityDefense();
+			    iTemp=pPromotionSpecializationInfo.getCityDefense();
 
-			    iValue += (iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getCityDefensePercent();
+			    iValue += (iTemp/2)*pPromotionInfo.getCityDefensePercent();
 
+				//SpyFanatic: consider also generic defense
+				iValue += (iTemp/2)*pPromotionInfo.getCombatPercentDefense();
+
+				//TODO: SpyFanatic: maybe to check terrain only if garrison in city or destination city is on hill?
 			    if (plot()->isHills())
 			    {
-                    iValue += (iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getHillsDefensePercent();
+                    iValue += (iTemp/2)*pPromotionInfo.getHillsDefensePercent();
 			    }
 
                 if (plot()->getTerrainType()!=NO_TERRAIN)
-                    iValue +=GC.getPromotionInfo((PromotionTypes)iI).getTerrainDefensePercent(plot()->getTerrainType());
+                    iValue +=pPromotionInfo.getTerrainDefensePercent(plot()->getTerrainType());
                 if (plot()->getFeatureType()!=NO_FEATURE)
-                    iValue +=GC.getPromotionInfo((PromotionTypes)iI).getFeatureDefensePercent(plot()->getFeatureType());
+                    iValue +=pPromotionInfo.getFeatureDefensePercent(plot()->getFeatureType());
 
 			}
 
 			//City Attack
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCityAttack()>0)
+			if (pPromotionSpecializationInfo.getCityAttack()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getCityAttack();
-
-			    iValue += (iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getCityAttackPercent();
+			    iTemp=pPromotionSpecializationInfo.getCityAttack();
+				//TODO: SpyFanatic add also normal attack percent
+			    iValue += (iTemp/2)*pPromotionInfo.getCityAttackPercent();
+				iValue += (iTemp)*(pPromotionInfo.isIgnoreBuildingDefense() ? 10 : 0);
 			}
 
 			//DefensiveStrikes
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getDefensiveStrikes()>0)
+			if (pPromotionSpecializationInfo.getDefensiveStrikes()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getDefensiveStrikes();
-
-			    iValue +=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getDefensiveStrikeChance();
-			    iValue +=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getDefensiveStrikeDamage();
+			    iTemp=pPromotionSpecializationInfo.getDefensiveStrikes();
+			    iValue +=(iTemp/2)*pPromotionInfo.getDefensiveStrikeChance();
+			    iValue +=(iTemp/2)*pPromotionInfo.getDefensiveStrikeDamage();
 			}
 
             //FirstStrikes
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getFirstStrikes()>0)
+			if (pPromotionSpecializationInfo.getFirstStrikes()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getFirstStrikes();
-
-			    iValue +=iTemp*15*GC.getPromotionInfo((PromotionTypes)iI).getChanceFirstStrikesChange();
-			    iValue +=iTemp*20*GC.getPromotionInfo((PromotionTypes)iI).getFirstStrikesChange();
+			    iTemp=pPromotionSpecializationInfo.getFirstStrikes();
+			    iValue +=iTemp*15*pPromotionInfo.getChanceFirstStrikesChange();
+			    iValue +=iTemp*20*pPromotionInfo.getFirstStrikesChange();
 			}
 
 			//Guardsman
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getGuardsman()>0)
+			if (pPromotionSpecializationInfo.getGuardsman()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getGuardsman();
-
-                if (GC.getPromotionInfo((PromotionTypes)iI).isTargetWeakestUnitCounter())
+			    iTemp=pPromotionSpecializationInfo.getGuardsman();
+                if (pPromotionInfo.isTargetWeakestUnitCounter())
                 {
                     iValue +=iTemp*3/2;
                 }
 			}
 
             //Hunter
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getHunter()>0)
+			if (pPromotionSpecializationInfo.getHunter()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getHunter();
-
-                if (GC.getPromotionInfo((PromotionTypes)iI).getCaptureUnitCombat()!=NO_UNITCOMBAT)
+			    iTemp=pPromotionSpecializationInfo.getHunter();
+				//TODO: SpyFanatic this is not really used at the moment
+                if (pPromotionInfo.getCaptureUnitCombat()!=NO_UNITCOMBAT)
                 {
                     iValue +=iTemp*3/2;
                 }
 			}
 
             //Landscape
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getLandscape()>0)
+			if (pPromotionSpecializationInfo.getLandscape()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getLandscape();
+				//TODO: SpyFanatic: maybe to check terrain only if garrison in city or destination city is on hill? But this is used only by Animals at the moment
+			    iTemp=pPromotionSpecializationInfo.getLandscape();
 
                 for (int i=0;i<GC.getNumTerrainInfos();i++)
                 {
-                    iValue+=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getTerrainAttackPercent(i);
-                    iValue+=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getTerrainDefensePercent(i);
+                    iValue+=(iTemp/2)*pPromotionInfo.getTerrainAttackPercent(i);
+                    iValue+=(iTemp/2)*pPromotionInfo.getTerrainDefensePercent(i);
                 }
 
 			    if (plot()->isHills())
 			    {
-                    iValue += (iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getHillsDefensePercent();
+                    iValue += (iTemp/2)*pPromotionInfo.getHillsDefensePercent();
 			    }
 
                 for (int i=0;i<GC.getNumFeatureInfos();i++)
                 {
-                    iValue+=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getFeatureAttackPercent(i);
-                    iValue+=(iTemp/2)*GC.getPromotionInfo((PromotionTypes)iI).getFeatureDefensePercent(i);
+                    iValue+=(iTemp/2)*pPromotionInfo.getFeatureAttackPercent(i);
+                    iValue+=(iTemp/2)*pPromotionInfo.getFeatureDefensePercent(i);
                 }
 			}
 
             //Mobility
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getMobility()>0)
+			if (pPromotionSpecializationInfo.getMobility()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getMobility();
+			    iTemp=pPromotionSpecializationInfo.getMobility();
 
-			    iValue +=(iTemp*3/2)*GC.getPromotionInfo((PromotionTypes)iI).getMovesChange();
+			    iValue +=(iTemp*3/2)*pPromotionInfo.getMovesChange();
 			}
 
             //Sight
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getSight()>0)
+			if (pPromotionSpecializationInfo.getSight()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getSight();
+				//TODO: SpyFanatic this is not really used at the moment
+			    iTemp=pPromotionSpecializationInfo.getSight();
 
-                if (GC.getPromotionInfo((PromotionTypes)iI).isSeeInvisible())
+                if (pPromotionInfo.isSeeInvisible())
                 {
                     iValue +=(iTemp*3/2);
                 }
 
-			    iValue +=(iTemp*3/2)*GC.getPromotionInfo((PromotionTypes)iI).getVisibilityChange();
+			    iValue +=(iTemp*3/2)*pPromotionInfo.getVisibilityChange();
 			}
 
-
             //Withdraw
-			if (GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getWithdraw()>0)
+			if (pPromotionSpecializationInfo.getWithdraw()>0)
 			{
-			    iTemp=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getWithdraw();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getWithdraw:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionSpecializationInfo.getWithdraw()
+				);
 
-			    iValue +=(iTemp*2/3)*GC.getPromotionInfo((PromotionTypes)iI).getWithdrawalChange();
+			    iTemp=pPromotionSpecializationInfo.getWithdraw();
+
+			    iValue +=(iTemp*2/3)*pPromotionInfo.getWithdrawalChange();
 
             }
 
-			//magic value - add special tag for this?
-			if(GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraType()!=NO_COMBATAURA)
+			if (pPromotionSpecializationInfo.getSpellDamage()>0)
 			{
-				if(getCombatAura()==NULL)
-				{
-					iValue+=100;
-				}
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getSpellDamage:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionSpecializationInfo.getSpellDamage()
+				);
+
+				iTemp=pPromotionSpecializationInfo.getSpellDamage();
+
+				iValue+=(iTemp)*pPromotionInfo.getSpellDamageModify();
+				iValue+=(iTemp)*getSpellTargetIncrease();
 			}
 
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraCityAttackChange();
-			iValue+=100*GC.getPromotionInfo((PromotionTypes)iI).getSpellDamageModify();
-			iValue+=100*GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraEffect();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraExperienceChange();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraFearEffectChange();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraHealthRegenerationChange();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraStrengthChange();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraIgnoreFirstStrikes();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraIncreaseFirstStrikes();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraRange();
-			iValue+=GC.getPromotionInfo((PromotionTypes)iI).getCombatAuraTargets();
+			if (pPromotionSpecializationInfo.getSpellAura()>0)
+			{
+				iTemp=pPromotionSpecializationInfo.getSpellAura();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getSpellAura:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionSpecializationInfo.getSpellAura()
+				);
 
-			//siege - add Special tag for it some day
-			iValue+=100*GC.getPromotionInfo((PromotionTypes)iI).getBombardRateChange();
+				//magic value - add special tag for this?
+				if(pPromotionInfo.getCombatAuraType()!=NO_COMBATAURA)
+				{
+					if(getCombatAura()==NULL)
+					{
+						iValue+=iTemp;
+					}
+				}
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraCityAttackChange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraCityAttackChange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraCityAttackChange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraEffect();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraEffect:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraEffect()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraExperienceChange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraExperienceChange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraExperienceChange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraFearEffectChange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraFearEffectChange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraFearEffectChange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraHealthRegenerationChange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraHealthRegenerationChange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraHealthRegenerationChange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraStrengthChange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraStrengthChange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraStrengthChange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraIgnoreFirstStrikes();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraIgnoreFirstStrikes:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraIgnoreFirstStrikes()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraIncreaseFirstStrikes();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraIncreaseFirstStrikes:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraIncreaseFirstStrikes()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraRange();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraRange:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraRange()
+				);
+				iValue+=(iTemp)*pPromotionInfo.getCombatAuraTargets();
+				oosLog("AIPromotion"
+					,"Turn:%d,PlayerID:%d,UnitID:%d,Promotion:%S,getCombatAuraTargets:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pPromotionInfo.getDescription()
+					,pPromotionInfo.getCombatAuraTargets()
+				);
+			}
+
+			if (pPromotionSpecializationInfo.getBombard()>0)
+			{
+				iTemp=pPromotionSpecializationInfo.getBombard();
+
+				//siege - add Special tag for it some day
+				iValue+=(iTemp)*pPromotionInfo.getBombardRateChange();
+			}
 
 			//misc modifiers
-			iValue+=GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getPromotionValue((PromotionTypes)iI);
+			iValue+=pPromotionSpecializationInfo.getPromotionValue((PromotionTypes)iI);
+
+			//TODO: SpyFanatic prioritize promotion unique to the unit (eg artificer) or unique to civilization (calabrim)
+			//TODO: SPyFanatic: promotion that gives XP?
+
 
 			//TODO: make promotion selection mucho better
-			iValue += GC.getGameINLINE().getSorenRandNum(100, "promotion pick");
+			//iValue += GC.getGameINLINE().getSorenRandNum(100, "promotion pick");
 
 			if (iValue > iBestValue)
 			{
@@ -1100,6 +1239,19 @@ void CvUnitAI::AI_promote()
 
 	if (eBestPromotion != NO_PROMOTION)
 	{
+		if(isOOSLogging())
+		{
+			oosLog("AIPromotion"
+				,"Turn:%d,PlayerID:%d,UnitID:%d,Unit:%S,GroupType:%S,PromotionSpecialization:%S,Promotion:%S"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,getName().GetCString()
+				,getAIGroup()!=NULL ? GC.getAIGroupInfo(getAIGroup()->getGroupType()).getDescription() : L"NO_AIGROUP"
+				,GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)AI_getPromotionSpecialization()).getDescription()
+				,GC.getPromotionInfo(eBestPromotion).getDescription()
+			);
+		}
 		promote(eBestPromotion, -1);
 		AI_promote();
 	}
@@ -2345,14 +2497,31 @@ void CvUnitAI::AI_workerMove()
 	bCanRoute = canBuildRoute();
 	bNextCity = false;
 
-	// XXX could be trouble...
-	if (plot()->getOwnerINLINE() != getOwnerINLINE())
+	/*if(isOOSLogging())
 	{
-		if (AI_retreatToCity())
+		oosLog("AIWorker"
+			,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,AI_workerMove\n"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwner()
+			,getID()
+			,plot()->getX()
+			,plot()->getY()
+		);
+	}*/
+
+	// XXX could be trouble...
+	// Super Forts begin *AI_worker* (removing this to allow workers to build outside borders)
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (plot()->getOwnerINLINE() != getOwnerINLINE())
 		{
-			return;
+			if (AI_retreatToCity())
+			{
+				return;
+			}
 		}
 	}
+	// Super Forts end
 
 	if (!isHuman())
 	{
@@ -2637,6 +2806,30 @@ void CvUnitAI::AI_workerMove()
 		return;
 	}
 
+
+	// Super Forts begin *canal* *choke*
+	bool bBuildFort = false;
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (GC.getGame().getSorenRandNum(5, "AI Worker build Fort with Priority"))
+		{
+			CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+			bool bCanal = kPlayer.countNumCoastalCities() > 0; //((100 * area()->getNumCities()) / std::max(1, GC.getGame().getNumCities()) < 85);
+			bool bAirbase = false;
+			bAirbase = (kPlayer.AI_totalUnitAIs(UNITAI_PARADROP) || kPlayer.AI_totalUnitAIs(UNITAI_ATTACK_AIR) || kPlayer.AI_totalUnitAIs(UNITAI_MISSILE_AIR));
+			
+	//		if (bCanal || bAirbase)
+	//		{
+			if (AI_fortTerritory(bCanal, bAirbase))
+			{
+				return;
+			}
+	//		}
+			bBuildFort = bCanal && bAirbase;
+		}
+	}
+	// Super Forts end
+
 //FfH: Modified by Kael 11/11/2007
 //	bool bBuildFort = false;
 //
@@ -2735,6 +2928,19 @@ void CvUnitAI::AI_workerMove()
 	{
 		return;
 	}
+
+	// Super Forts begin *canal* *choke*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (!bBuildFort)
+		{
+			if (AI_fortTerritory(true, true /*bCanal, bAirbase*/))
+			{
+				return;
+			}
+		}
+	}
+	// Super Forts end
 
 //FfH: Modified by Kael 11/11/2007
 //		if (!bBuildFort)
@@ -2838,10 +3044,14 @@ bool CvUnitAI::AI_createImprovement(bool bSwitch)
 	int iBestValue=0;
 	CvPlayer &kPlayer=GET_PLAYER(getOwnerINLINE());
 	int iLoop, iValue, iPathTurns;
+
+
 	for(CvCity* pLoopCity=kPlayer.firstCity(&iLoop);pLoopCity!=NULL;pLoopCity=kPlayer.nextCity(&iLoop))
 	{
 		if(pLoopCity->getArea()==getArea())
 		{
+
+
 			if(bSwitch || pLoopCity->calculateImprovementInfrastructureCostFreeLeft()>0)
 			{
 				if(pLoopCity->getAIGroup_Worker())
@@ -2849,6 +3059,23 @@ bool CvUnitAI::AI_createImprovement(bool bSwitch)
 					CvPlot* pLoopPlot=pLoopCity->getAIGroup_Worker()->getMissionPlot();
 					if(pLoopPlot!=NULL && pLoopCity->AI_getBestBuild(pLoopCity->getCityPlotIndex(pLoopPlot))!=NO_BUILD)
 					{
+									/*if(isOOSLogging())
+									{
+										oosLog("AIWorker"
+											,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,AI_createImprovement:%d,BestBuild:%d,atX:%d,atY:%d,canBuild:%d\n"
+											,GC.getGameINLINE().getElapsedGameTurns()
+											,getOwner()
+											,getID()
+											,plot()->getX()
+											,plot()->getY()
+											,pLoopPlot!=NULL
+											,pLoopPlot!=NULL?pLoopCity->AI_getBestBuild(pLoopCity->getCityPlotIndex(pLoopPlot)):-100
+											,pLoopPlot!=NULL?pLoopPlot->getX():-100
+											,pLoopPlot!=NULL?pLoopPlot->getY():-100
+											,canBuild(pLoopPlot,pLoopCity->AI_getBestBuild(pLoopCity->getCityPlotIndex(pLoopPlot)))
+										);
+									}*/
+
 						if(canBuild(pLoopPlot,pLoopCity->AI_getBestBuild(pLoopCity->getCityPlotIndex(pLoopPlot))))
 						{
 							if (!GET_PLAYER(getOwnerINLINE()).AI_isPlotThreatened(pLoopPlot, 3))
@@ -2885,7 +3112,7 @@ bool CvUnitAI::AI_createImprovement(bool bSwitch)
 		{
 			if(isOOSLogging())
 			{
-				oosLog("AIImprovement"
+				oosLog("AIWorker"
 					,"Turn: %d,PlayerID:%d,UnitID:%d,X:%d,Y:%d,MoveTo:%d,%d\n"
 					,GC.getGameINLINE().getElapsedGameTurns()
 					,getOwner()
@@ -2900,18 +3127,18 @@ bool CvUnitAI::AI_createImprovement(bool bSwitch)
 		}
 		getGroup()->pushMission(MISSION_BUILD, eBestBuild, -1, 0, (getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, pBestPlot);
 		if(isOOSLogging())
-			{
-				oosLog("AIImprovement"
-					,"Turn: %d,PlayerID:%d,UnitID:%d,X:%d,Y:%d,MoveTo:%d,%d,doBuild\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,getOwner()
-					,getID()
-					,getX()
-					,getY()
-					,pBestPlot->getX_INLINE()
-					,pBestPlot->getY_INLINE()
-				);
-			}
+		{
+			oosLog("AIWorker"
+				,"Turn: %d,PlayerID:%d,UnitID:%d,X:%d,Y:%d,MoveTo:%d,%d,doBuild\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,getX()
+				,getY()
+				,pBestPlot->getX_INLINE()
+				,pBestPlot->getY_INLINE()
+			);
+		}
 		return true;
 	}
 	return false;
@@ -3836,9 +4063,13 @@ void CvUnitAI::AI_attackCityMove()
     AreaAITypes eAreaAIType = area()->getAreaAIType(getTeam());
     bool bLandWar = !isBarbarian() && ((eAreaAIType == AREAAI_OFFENSIVE) || (eAreaAIType == AREAAI_DEFENSIVE) || (eAreaAIType == AREAAI_MASSING));
 
-	if (plot()->isCity())
+	// Super Forts begin *AI_offense* - allow stack to split after capturing a fort in addition to cities
+	if (plot()->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)))
+	//if (plot()->isCity()) // Original Code
 	{
-		if ((GC.getGame().getGameTurn() - plot()->getPlotCity()->getGameTurnAcquired()) <= 1)
+		if (plot()->getOwnershipDuration() <= 1)
+		//if ((GC.getGame().getGameTurn() - plot()->getPlotCity()->getGameTurnAcquired()) <= 1) // Original Code
+	// Super Forts end
 		{
 			CvSelectionGroup* pOldGroup = getGroup();
 
@@ -4686,6 +4917,13 @@ void CvUnitAI::AI_cityDefenseMove()
 		return;
 	}
 
+	// Super Forts begin *AI_defense*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && AI_guardFortMinDefender(true))
+	{
+		return;
+	}
+	// Super Forts end
+
 	if (AI_guardCity(true))
 	{
 		return;
@@ -4821,6 +5059,24 @@ void CvUnitAI::AI_cityDefenseExtraMove()
 		return;
 	}
 
+	// Super Forts begin *AI_defense*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (AI_guardFortMinDefender(true))
+		{
+			return;
+		}
+
+		if ((AI_getBirthmark() % 4) == 0)
+		{
+			if (AI_guardFort(true))
+			{
+				return;
+			}
+		}
+	}
+	// Super Forts end
+
 	pCity = plot()->getPlotCity();
 
 	if ((pCity != NULL) && (pCity->getOwnerINLINE() == getOwnerINLINE())) // XXX check for other team?
@@ -4876,6 +5132,7 @@ void CvUnitAI::AI_exploreMove()
 
 	if (!isHuman() && canAttack())
 	{
+
 		if (AI_cityAttack(1, 60))
 		{
 			return;
@@ -6047,11 +6304,19 @@ void CvUnitAI::AI_pirateSeaMove()
 /*************************************************************************************************/
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 1"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 1";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -6069,11 +6334,19 @@ void CvUnitAI::AI_pirateSeaMove()
 
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 2"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 2";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -6083,11 +6356,19 @@ void CvUnitAI::AI_pirateSeaMove()
 	}
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 3"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 3";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -6097,11 +6378,19 @@ void CvUnitAI::AI_pirateSeaMove()
 	}
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 4"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 4";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -6111,11 +6400,19 @@ void CvUnitAI::AI_pirateSeaMove()
 	}
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 5"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 5";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -6125,11 +6422,19 @@ void CvUnitAI::AI_pirateSeaMove()
 	}
 /*********************************************************************/
 /** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("debug"
+			,"CvUnitAI::AI_pirateSeaMove Begin 6"
+		);
+	}
+	/*
     if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL1")==1)
     {
 		CvString szError="CvUnitAI::AI_pirateSeaMove Begin 6";
 		gDLL->logMsg("debug.log", szError,true,true);
 	}
+	*/
 /** DEBUG End **/
 /*********************************************************************/
 
@@ -9806,6 +10111,32 @@ int CvUnitAI::AI_getPlotDefendersNeeded(CvPlot* pPlot, int iExtra)
 {
 	int iNeeded = iExtra;
 	BonusTypes eNonObsoleteBonus = pPlot->getNonObsoleteBonusType(getTeam());
+	// Super Forts begin *AI_defense*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+		
+		if (eNonObsoleteBonus != NO_BONUS)
+		{
+			if (kPlayer.AI_bonusVal(eNonObsoleteBonus, -1) > 10)
+			{
+				++iNeeded;
+			}
+		}
+
+		if (kPlayer.AI_getPlotDanger(pPlot) > 0)
+		{
+			++iNeeded;
+			if ((kPlayer.AI_getPlotCanalValue(pPlot) > 0) 
+				|| (kPlayer.AI_getPlotChokeValue(pPlot) > 0) 
+				|| (kPlayer.AI_getPlotAirbaseValue(pPlot) > 0))
+			{
+				++iNeeded;
+			}
+		}
+		return iNeeded;
+	}
+	// Super Forts end
 	if (eNonObsoleteBonus != NO_BONUS)
 	{
 		iNeeded += (GET_PLAYER(getOwnerINLINE()).AI_bonusVal(eNonObsoleteBonus) + 10) / 19;
@@ -9857,7 +10188,6 @@ int CvUnitAI::AI_getPlotDefendersNeeded(CvPlot* pPlot, int iExtra)
 			iNeeded = 0;
 		}
 	}
-
 	return iNeeded;
 }
 
@@ -9872,7 +10202,9 @@ bool CvUnitAI::AI_guardFort(bool bSearch)
 		{
 			if (GC.getImprovementInfo(eImprovement).isActsAsCity())
 			{
-				if (plot()->plotCount(PUF_isCityAIType, -1, -1, getOwnerINLINE()) <= AI_getPlotDefendersNeeded(plot(), 0))
+				// Super Forts begin *AI_defense* - just tweaked a number here (iExtra now 1 instead of 0)
+				if (plot()->plotCount(PUF_isCityAIType, -1, -1, getOwnerINLINE()) <= AI_getPlotDefendersNeeded(plot(), GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? 1 : 0))
+				// Super Forts end
 				{
 					getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_BONUS, plot());
 					return true;
@@ -9903,8 +10235,9 @@ bool CvUnitAI::AI_guardFort(bool bSearch)
 				{
 					if (GC.getImprovementInfo(eImprovement).isActsAsCity())
 					{
-						int iValue = AI_getPlotDefendersNeeded(pLoopPlot, 0);
-
+						// Super Forts begin *AI_defense* - just tweaked a number here (iExtra now 1 instead of 0)
+						int iValue = AI_getPlotDefendersNeeded(pLoopPlot, GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? 1 : 0);
+						// Super Forts end
 						if (iValue > 0)
 						{
 							if (!(pLoopPlot->isVisibleEnemyUnit(this)))
@@ -9951,6 +10284,98 @@ bool CvUnitAI::AI_guardFort(bool bSearch)
 
 	return false;
 }
+
+// Super Forts begin *AI_defense* - this is designed to ensure each fort has one defender (or improvements that require a fortified unit to upgrade)
+bool CvUnitAI::AI_guardFortMinDefender(bool bSearch)
+{
+	PROFILE_FUNC();
+	
+	if (plot()->getOwnerINLINE() == getOwnerINLINE())
+	{
+		ImprovementTypes eImprovement = plot()->getImprovementType();
+		if (eImprovement != NO_IMPROVEMENT)
+		{
+			if (GC.getImprovementInfo(eImprovement).isActsAsCity() || GC.getImprovementInfo(eImprovement).isUpgradeRequiresFortify())
+			{
+				if (plot()->plotCount(PUF_isCityAIType, -1, -1, getOwnerINLINE()) <= 1)
+				{
+					getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_BONUS, plot());
+					return true;
+				}
+			}
+		}
+	}
+	
+	if (!bSearch)
+	{
+		return false;
+	}
+
+	int iBestValue = 0;
+	CvPlot* pBestPlot = NULL;
+	CvPlot* pBestGuardPlot = NULL;
+
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+		if (AI_plotValid(pLoopPlot) && !atPlot(pLoopPlot))
+		{
+			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE())
+			{
+				ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+				if (eImprovement != NO_IMPROVEMENT)
+				{
+					if (GC.getImprovementInfo(eImprovement).isActsAsCity() || GC.getImprovementInfo(eImprovement).isUpgradeRequiresFortify())
+					{
+						if (!(pLoopPlot->isVisibleEnemyUnit(this)))
+						{
+							if (pLoopPlot->plotCount(PUF_isCityAIType, -1, -1, getOwnerINLINE()) == 0)
+							{
+								if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_GUARD_BONUS, getGroup()) == 0)
+								{
+									int iPathTurns;
+									if (generatePath(pLoopPlot, 0, true, &iPathTurns))
+									{
+										int iValue = 1000;
+
+										iValue /= (iPathTurns + 2);
+
+										if (iValue > iBestValue)
+										{
+											iBestValue = iValue;
+											pBestPlot = getPathEndTurnPlot();
+											pBestGuardPlot = pLoopPlot;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if ((pBestPlot != NULL) && (pBestGuardPlot != NULL))
+	{
+		if (atPlot(pBestGuardPlot))
+		{
+			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_BONUS, pBestGuardPlot);
+			return true;
+		}
+		else
+		{
+			FAssert(!atPlot(pBestPlot));
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_GUARD_BONUS, pBestGuardPlot);
+			return true;
+		}
+	}
+
+	return false;
+}
+// Super Forts end
+
 // Returns true if a mission was pushed...
 bool CvUnitAI::AI_guardCitySite()
 {
@@ -13000,16 +13425,16 @@ bool CvUnitAI::AI_targetCity(int iFlags)
 /** logging added by Skyre **/
 			if (GC.getDefineINT("USE_DEBUG_LOG") == 1)
 			{
-				TCHAR szMsgLog[1024];
-
-				sprintf(szMsgLog,
-						"*** %d: %S is targeting %S (%d) ***\n",
-						GC.getGameINLINE().getGameTurn(),
-						(const wchar*)GET_PLAYER(getOwnerINLINE()).getName(),
-						(const wchar*)pBestCity->getName(),
-						iBestValue);
-
-				gDLL->logMsg("war.log", szMsgLog);
+				if(isOOSLogging())
+				{
+					oosLog("war"
+						,"*** %d: %S is targeting %S (%d) ***"
+						,GC.getGameINLINE().getGameTurn()
+						,(const wchar*)GET_PLAYER(getOwnerINLINE()).getName()
+						,(const wchar*)pBestCity->getName()
+						,iBestValue
+					);
+				}
 			}
 /** logging added by Skyre **/
 
@@ -13027,14 +13452,14 @@ bool CvUnitAI::AI_targetCity(int iFlags)
 	{
 		if (GET_TEAM(getTeam()).getAnyWarPlanCount(true) > 0)
 		{
-			TCHAR szMsgLog[1024];
-
-			sprintf(szMsgLog,
-					"%d: %S failed to find a target\n",
-					GC.getGameINLINE().getGameTurn(),
-					(const wchar*)GET_PLAYER(getOwnerINLINE()).getName());
-
-			gDLL->logMsg("war.log", szMsgLog);
+			if(isOOSLogging())
+			{
+				oosLog("war"
+					,"%d: %S failed to find a target"
+					,GC.getGameINLINE().getGameTurn()
+					,(const wchar*)GET_PLAYER(getOwnerINLINE()).getName()
+				);
+			}
 		}
 	}
 /** logging added by Skyre **/
@@ -13164,15 +13589,15 @@ bool CvUnitAI::AI_targetBarbCity()
 /** logging added by Skyre **/
 				if (GC.getDefineINT("USE_DEBUG_LOG") == 1)
 				{
-					TCHAR szMsgLog[1024];
-
-					sprintf(szMsgLog,
-							"*** %d: %S is targeting %S (Barbarian) ***\n",
-							GC.getGameINLINE().getGameTurn(),
-							(const wchar*)GET_PLAYER(getOwnerINLINE()).getName(),
-							(const wchar*)pBestCity->getName());
-
-					gDLL->logMsg("war.log", szMsgLog);
+					if(isOOSLogging())
+					{
+						oosLog("war"
+							,"*** %d: %S is targeting %S (Barbarian) ***"
+							,GC.getGameINLINE().getGameTurn()
+							,(const wchar*)GET_PLAYER(getOwnerINLINE()).getName()
+							,(const wchar*)pBestCity->getName()
+						);
+					}
 				}
 /** logging added by Skyre **/
 
@@ -13197,8 +13622,10 @@ bool CvUnitAI::AI_bombardCity()
 	if (canBombard(plot()))
 	{
 		pBombardCity = bombardTarget(plot());
-		FAssertMsg(pBombardCity != NULL, "BombardCity is not assigned a valid value");
-
+		// Super Forts begin *bombard* (if statement contains original code for cities, else statement is new code for improvements)
+		//FAssertMsg(pBombardCity != NULL, "BombardCity is not assigned a valid value"); //Removed for Super Forts
+		if(pBombardCity != NULL)
+		{
 		// do not bombard cities with no defenders
 		int iDefenderStrength = pBombardCity->plot()->AI_sumStrength(NO_PLAYER, getOwnerINLINE(), DOMAIN_LAND, /*bDefensiveBonuses*/ true, /*bTestAtWar*/ true, false);
 		if (iDefenderStrength == 0)
@@ -13258,6 +13685,71 @@ bool CvUnitAI::AI_bombardCity()
 			getGroup()->pushMission(MISSION_BOMBARD);
 			return true;
 		}
+		}
+		else
+		{
+			CvPlot* pTargetPlot = bombardImprovementTarget(plot());
+
+			// do not bombard cities with no defenders
+			int iDefenderStrength = pTargetPlot->AI_sumStrength(NO_PLAYER, getOwnerINLINE(), DOMAIN_LAND, /*bDefensiveBonuses*/ true, /*bTestAtWar*/ true, false);
+			if (iDefenderStrength == 0)
+			{
+				return false;
+			}
+		
+			// do not bombard cities if we have overwelming odds
+			int iAttackOdds = getGroup()->AI_attackOdds(pTargetPlot, /*bPotentialEnemy*/ true);
+			if (iAttackOdds > 95)
+			{
+				return false;
+			}
+
+/************************************************************************************************/
+/* BETTER_BTS_AI_MOD                      10/28/09                                jdog5000      */
+/*                                                                                              */
+/* War Tactics AI                                                                               */
+/************************************************************************************************/
+			// If we have reasonable odds, check for attacking without waiting for bombards
+			if( iAttackOdds > std::max(1, GC.getDefineINT("BBAI_SKIP_BOMBARD_BEST_ATTACK_ODDS")) )
+			{
+				int iBase = GC.getDefineINT("BBAI_SKIP_BOMBARD_BASE_STACK_RATIO");
+				iBase = ((iBase == 0) ? 300 : iBase);
+				int iComparison = getGroup()->AI_compareStacks(pTargetPlot, /*bPotentialEnemy*/ true, /*bCheckCanAttack*/ true, /*bCheckCanMove*/ true);
+
+				// Big troop advantage plus pretty good starting odds, don't wait to allow reinforcements
+				if( iComparison > (iBase - 2*iAttackOdds) )
+				{
+					return false;
+				}
+
+				int iMin = GC.getDefineINT("BBAI_SKIP_BOMBARD_MIN_STACK_RATIO");
+				iMin = ((iMin == 0) ? 140 : iMin);
+				// Bombard at least one turn to allow bombers/ships to get some shots in too
+				if( (getFortifyTurns() > 0) && (pTargetPlot->getDefenseDamage() > ((GC.getMAX_CITY_DEFENSE_DAMAGE()) / 5)) )
+				{
+					int iBombardTurns = getGroup()->getBombardTurns(pTargetPlot);
+					if( iComparison > std::max(iMin, iBase - 2*iAttackOdds - 3*iBombardTurns) )
+					{
+						return false;
+					}
+				}
+			}
+/************************************************************************************************/
+/* BETTER_BTS_AI_MOD                       END                                                  */
+/************************************************************************************************/
+		
+			// could also do a compare stacks call here if we wanted, the downside of that is that we may just have a lot more units
+			// we may not want to suffer high casualties just to save a turn
+			//getGroup()->AI_compareStacks(pBombardCity->plot(), /*bPotentialEnemy*/ true, /*bCheckCanAttack*/ true, /*bCheckCanMove*/ true);
+			//int iOurStrength = pBombardCity->plot()->AI_sumStrength(getOwnerINLINE(), NO_PLAYER, DOMAIN_LAND, false, false, false)
+
+			if(pTargetPlot->getDefenseDamage() < ((GC.getImprovementInfo(pTargetPlot->getImprovementType()).getDefenseModifier() * 3) / 4))
+			{
+				getGroup()->pushMission(MISSION_BOMBARD);
+				return true;
+			}
+		}
+		// Super Forts end
 	}
 
 	return false;
@@ -13301,7 +13793,10 @@ bool CvUnitAI::AI_cityAttack(int iRange, int iOddsThreshold, bool bFollow)
 			{
 				if (AI_plotValid(pLoopPlot))
 				{
-					if (pLoopPlot->isCity() || (pLoopPlot->isCity(true, getTeam()) && pLoopPlot->isVisibleEnemyUnit(this)))
+					// Super Forts begin *AI_offense* - modified if statement so forts will be attacked too
+					if (pLoopPlot->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)) || (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && (pLoopPlot->isCity(true, getTeam()) && pLoopPlot->isVisibleEnemyUnit(this))))
+					//if (pLoopPlot->isCity() || (pLoopPlot->isCity(true, getTeam()) && pLoopPlot->isVisibleEnemyUnit(this))) - Original Code
+					// Super Forts end
 					{
 						if (AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot))
 						{
@@ -13402,7 +13897,10 @@ bool CvUnitAI::AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack, bool 
 			{
 				if (AI_plotValid(pLoopPlot))
 				{
-					if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam())))
+					// Super Forts begin *AI_offense* - modified if statement so forts will be attacked too
+					if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)) && AI_potentialEnemy(pLoopPlot->getTeam())))
+					//if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam()))) - Original Code
+					// Super Forts end
 					{
 						if (!atPlot(pLoopPlot) && ((bFollow) ? canMoveInto(pLoopPlot, true) : (generatePath(pLoopPlot, 0, true, &iPathTurns) && (iPathTurns <= iRange))))
 						{
@@ -13465,7 +13963,10 @@ bool CvUnitAI::AI_rangeAttack(int iRange)
 
 			if (pLoopPlot != NULL)
 			{
-				if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam())))
+				// Super Forts begin *AI_offense* - modified if statement so forts will be attacked too
+				if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)) && AI_potentialEnemy(pLoopPlot->getTeam())))
+				//if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam()))) - Original Code
+				// Super Forts end 
 				{
 					if (!atPlot(pLoopPlot) && canRangeStrikeAt(plot(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()))
 					{
@@ -13540,7 +14041,10 @@ bool CvUnitAI::AI_leaveAttack(int iRange, int iOddsThreshold, int iStrengthThres
 			{
 				if (AI_plotValid(pLoopPlot))
 				{
-					if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot)))
+					// Super Forts begin *AI_offense* - modified if statement so forts will be attacked too
+					if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)) && AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot)))
+					//if (pLoopPlot->isVisibleEnemyUnit(this) || (pLoopPlot->isCity() && AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot))) - Original code
+					// Super Forts end
 					{
 						if (!atPlot(pLoopPlot) && (generatePath(pLoopPlot, 0, true, &iPathTurns) && (iPathTurns <= iRange)))
 						{
@@ -16151,18 +16655,44 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 
 		if (AI_plotValid(pLoopPlot))
 		{
-			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE()) // XXX team???
+			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE()
+				// Super Forts *canal* *choke* begin
+				|| (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && 
+				pLoopPlot->getOwnerINLINE() == NO_PLAYER && pLoopPlot->isRevealed(getTeam(), false)
+				)
+			) // XXX team???
+				// Super Forts end
 			{
-				if (pLoopPlot->getImprovementType() == NO_IMPROVEMENT)
+				if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT)
+					// Super Forts *canal* *choke* begin
+					|| (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && !pLoopPlot->isCityRadius())
+					// Super Forts end
+				)
 				{
 					int iValue = 0;
 					iValue += bCanal ? kOwner.AI_getPlotCanalValue(pLoopPlot) : 0;
 					iValue += bAirbase ? kOwner.AI_getPlotAirbaseValue(pLoopPlot) : 0;
+					// Super Forts *choke* begin
+					iValue += GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? kOwner.AI_getPlotChokeValue(pLoopPlot) : 0;
 
-					if (iValue > 0)
+					int iMinAcceptableValue = 0;
+					if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+						{
+						if(pLoopPlot->getOwnerINLINE() == NO_PLAYER)
+						{	// Don't go outside borders for low values
+							iMinAcceptableValue += 150;
+						}
+					}
+
+					if (iValue > iMinAcceptableValue)
 					{
 						int iBestTempBuildValue = MAX_INT;
 						BuildTypes eBestTempBuild = NO_BUILD;
+						
+						int iPlotValue = iValue;
+						iPlotValue += bCanal ? 0 : kOwner.AI_getPlotCanalValue(pLoopPlot) / 4;
+						iPlotValue += bAirbase ? 0 : kOwner.AI_getPlotAirbaseValue(pLoopPlot) / 4;
+						// Super Forts end
 
 						for (int iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
 						{
@@ -16220,13 +16750,32 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 
 								if (bValid)
 								{
-									if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_BUILD, getGroup(), 3) == 0)
+									// Super Forts begin *canal* *choke*
+									if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_BUILD, getGroup(), GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? 1 : 3) == 0)
 									{
 										int iPathTurns;
 										if (generatePath(pLoopPlot, 0, true, &iPathTurns))
 										{
-											iValue *= 1000;
+											if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+											{
+												iValue = iPlotValue * 100;
+											}
+											else
+											{
+												iValue *= 1000;
+											}
 											iValue /= (iPathTurns + 1);
+											if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pLoopPlot->getOwnerINLINE() == NO_PLAYER)
+											{
+												CvCity* pNearestCity = GC.getMapINLINE().findCity(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+												if((pNearestCity == NULL) || 
+													(plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE()) > GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS")) ||
+													(iPathTurns > (GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS") / 2)))
+												{
+													iValue = 0;
+												}
+											}
+											// Super Forts end
 
 											if (iValue > iBestValue)
 											{
@@ -16292,7 +16841,10 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
 	{
 		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-		if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE() && AI_plotValid(pLoopPlot))
+		// Super Forts begin *AI_worker*
+		if ((pLoopPlot->getOwnerINLINE() == getOwnerINLINE() || (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pLoopPlot->getOwnerINLINE() == NO_PLAYER && pLoopPlot->isRevealed(getTeam(), false))) && AI_plotValid(pLoopPlot))
+		//if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE() && AI_plotValid(pLoopPlot)) - Original Code
+		// Super Forts end
 		{
 			bool bCanImprove = (pLoopPlot->area() == area());
 			if (!bCanImprove)
@@ -16324,7 +16876,38 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
 				if (eNonObsoleteBonus != NO_BONUS)
 				{
 				    bIsConnected = pLoopPlot->isConnectedToCapital(getOwnerINLINE());
-                    if ((pLoopPlot->getWorkingCity() != NULL) || (bIsConnected || bCanRoute))
+					// Super Forts begin *AI_worker* - This section makes sure the plot is "close enough" to a city to be worth building on
+					bool bCloseEnough = false;
+					
+					if(pLoopPlot->getOwnerINLINE() == getOwnerINLINE())
+					{
+						bCloseEnough = true;
+					}
+					// Automated human workers will not look outside borders to build forts on bonuses the player already has
+					else if(!isHuman() || !GET_PLAYER(getOwnerINLINE()).hasBonus(eNonObsoleteBonus))
+					{
+						CvCity* pNearestCity = GC.getMapINLINE().findCity(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+						int iPathTurns;
+						if ((pNearestCity != NULL) && generatePath(pLoopPlot, 0, true, &iPathTurns))
+						{
+							int iDistanceModifier = 1;
+							if(GET_PLAYER(getOwnerINLINE()).hasBonus(eNonObsoleteBonus))
+							{
+								iDistanceModifier = 2; // AI will not travel as far for bonuses they already have
+							}
+
+							if((plotDistance(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), pNearestCity->getX_INLINE(), pNearestCity->getY_INLINE())*iDistanceModifier) <= GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS"))
+							{
+								if (iPathTurns <= (GC.getDefineINT("AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS") / 2))
+								{
+									bCloseEnough = true;
+								}
+							}
+						}
+					}
+                    if (((pLoopPlot->getWorkingCity() != NULL) || (bIsConnected || bCanRoute)) && (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) || bCloseEnough))
+                    //if ((pLoopPlot->getWorkingCity() != NULL) || (bIsConnected || bCanRoute)) // Original Code
+					// Super Forts end
                     {
                         eImprovement = pLoopPlot->getImprovementType();
 
@@ -16338,6 +16921,12 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
                         {
                         	bDoImprove = false;
                         }
+			// Super Forts begin *AI_worker* (No need to loop through builds if the improvement is permanent)
+			else if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(eImprovement).isPermanent())
+			{
+				bDoImprove = false;
+			}
+			// Super Forts end
                         else if (eImprovement == (ImprovementTypes)(GC.getDefineINT("RUINS_IMPROVEMENT")))
                         {
                             bDoImprove = true;
@@ -16358,6 +16947,9 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
 
                                 if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
                                 {
+								// Super Forts *AI_worker* (added if statement)
+								if(!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) || (pLoopPlot->getOwnerINLINE() == getOwnerINLINE() || (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity() && GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isOutsideBorders())))
+								{
                                     if (GC.getImprovementInfo((ImprovementTypes) GC.getBuildInfo(eBuild).getImprovement()).isImprovementBonusTrade(eNonObsoleteBonus) || (!pLoopPlot->isCityRadius() && GC.getImprovementInfo((ImprovementTypes) GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity()))
                                     {
                                         if (canBuild(pLoopPlot, eBuild))
@@ -16393,6 +16985,7 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
                                         	}
                                         }
                                     }
+								} // Super Forts (closing bracket of if statement added above)
                                 }
                             }
                         }
@@ -16400,6 +16993,12 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
                         {
                         	bDoImprove = false;
                         }
+						// Super Forts begin *AI_worker* (if not building an improvement and you don't own the plot then continue so the AI doesn't consider building a route)
+						if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && !bDoImprove && pLoopPlot->getOwnerINLINE() != getOwnerINLINE())
+						{
+							continue;
+						}
+						// Super Forts end
 
                         if ((eBestTempBuild != NO_BUILD) || (bCanRoute && !bIsConnected))
                         {
@@ -16430,7 +17029,10 @@ bool CvUnitAI::AI_improveBonus(int iMinValue, CvPlot** ppBestPlot, BuildTypes* p
 								}
 
 								int iMaxWorkers = 1;
-								if ((eBestTempBuild != NO_BUILD) && (!GC.getBuildInfo(eBestTempBuild).isKill()))
+								// Super Forts begin *AI_worker* 
+								if ((eBestTempBuild != NO_BUILD) && ((GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getBuildInfo(eBestTempBuild).getTime() > 0) || (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && !GC.getBuildInfo(eBestTempBuild).isKill())))
+								//if ((eBestTempBuild != NO_BUILD) && (!GC.getBuildInfo(eBestTempBuild).isKill())) - Original Code
+								// Super Forts end
 								{
 									//allow teaming.
 									iMaxWorkers = AI_calculatePlotWorkersNeeded(pLoopPlot, eBestTempBuild);
@@ -17163,7 +17765,16 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 					{
 						if (!(pLoopCity->plot()->isVisibleEnemyUnit(this)))
 						{
-							if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), ((iPass > 1) ? MOVE_IGNORE_DANGER : 0), true, &iPathTurns))
+							//SpyFanatic: If end of turn is on same plot but group can move, try to generatePath without caching
+							bool bReuse = true;
+							if(getGroup()->canAllMove())
+							{
+								if(getPathLastNode() != NULL && atPlot(getPathEndTurnPlot()))
+								{
+									bReuse = false;
+								}
+							}
+							if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), ((iPass > 1) ? MOVE_IGNORE_DANGER : 0), bReuse, &iPathTurns))
 							{
 								if (iPathTurns <= ((iPass == 2) ? 1 : iMaxPath))
 								{
@@ -17195,25 +17806,33 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 											iBestValue = iValue;
 											pBestPlot = pNewPlot;
 
-											//TODO: is iCurrentDanger == 0 means no danger???
-											if(isOOSLogging() && !(!atPlot(pBestPlot) || canDefend()))
+											if(isOOSLogging() && !(!atPlot(pBestPlot)))
 											{
-												oosLog("AIplot","Turn: %d, Player: %d,UnitID: %d,X: %d Y: %d,dstX: %d dstY: %d,iCurrentDanger:%d,isCity:%d,canDefend:%d,isPlotThreatened:%d"
+												oosLog("AIPlot","Turn:%d,Player:%d,Pass:%d,UnitID:%d,GroupID:%d,GroupCount:%d,X:%d,Y:%d,bestX:%d,bestY:%d,dstX:%d,dstY:%d,iCurrentDanger:%d,isCity:%d,canDefend:%d,isPlotThreatened:%d,canGroupMove:%d,canAnyMove:%d,canUnitMove:%d,hasMoved:%d,iValue:%d"
 												,GC.getGameINLINE().getElapsedGameTurns()
 												,getOwnerINLINE()
+												,iPass
 												,getID()
+												,getGroup()->getID()
+												,getGroup()->getNumUnits()
 												,plot()->getX()
 												,plot()->getY()
 												,pBestPlot->getX()
 												,pBestPlot->getY()
+												,pLoopCity->plot()->getX()
+												,pLoopCity->plot()->getY()
 												,iCurrentDanger
 												,pNewPlot->isCity()
 												,canDefend()
 												,(!GET_PLAYER(getOwnerINLINE()).AI_isPlotThreatened(pNewPlot, 3))
+												,getGroup()->canAllMove()
+												,getGroup()->canAnyMove()
+												,canMove()
+												,hasMoved()
+												,iValue
 												);
 											}
-											//FAssert(!atPlot(pBestPlot));
-											FAssert(!atPlot(pBestPlot) || canDefend()); //SpyFanatic: prevent triggering if unit remain on same plot but can defend
+											FAssert(!atPlot(pBestPlot));
 										}
 
 /*************************************************************************************************/
@@ -17261,8 +17880,7 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, bool bAirlift, int iMaxPath)
 
 	if (pBestPlot != NULL)
 	{
-		//FAssert(!atPlot(pBestPlot)); //SpyFanatic: redundant
-		//FAssert(!atPlot(pBestPlot) || canDefend()); //SpyFanatic: prevent triggering if unit remain on same plot but can defend
+		//FAssert(!atPlot(pBestPlot)); //SpyFanatic: redundant assert
 		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 0) ? MOVE_IGNORE_DANGER : 0));
 		return true;
 	}
@@ -19260,7 +19878,10 @@ bool CvUnitAI::AI_stackAttackCity(int iRange, int iPowerThreshold, bool bFollow)
 			{
 				if (AI_plotValid(pLoopPlot))
 				{
-					if (pLoopPlot->isCity() || (pLoopPlot->isCity(true) && pLoopPlot->isVisibleEnemyUnit(this)))
+					// Super Forts begin *AI_offense* - modified if statement so forts are attacked too
+					if (pLoopPlot->isCity(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS)) || (!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && pLoopPlot->isCity(true) && pLoopPlot->isVisibleEnemyUnit(this)))
+					//if (pLoopPlot->isCity() || (pLoopPlot->isCity(true) && pLoopPlot->isVisibleEnemyUnit(this))) - Original Code
+					// Super Forts end
 					{
 						if (AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot))
 						{
@@ -22558,6 +23179,12 @@ int CvUnitAI::AI_getSettlerPatrolUnitsNeeded()
     {
         iNeededPatrol=3;
     }
+    //SpyFanatic: increase slightly the number of patrol units to allow more support for lairs (assumption: less then 4 cities means not a lot of map explored)
+    else if(GET_PLAYER(getOwner()).getNumCities() <= 3)
+	{
+		iNeededPatrol=8;
+	}
+	//SpyFanatic: end
 
     return iNeededPatrol;
 }

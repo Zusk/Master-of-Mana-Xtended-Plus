@@ -490,7 +490,9 @@ public:
 	void centerCamera();
 	void attackForDamage(CyUnit *defender, int attakerDamageChange, int defenderDamageChange);
 	void rangeStrike(int iX, int iY);
-
+	bool isGarrision() const;
+	void setGarrision(bool bNewValue);
+	bool canGarrision() const;
 protected:
 	CvUnit* m_pUnit;
 };

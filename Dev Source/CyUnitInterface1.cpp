@@ -477,5 +477,9 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 	.def ("getPower", &CyUnit::getPower, "int ()")
 	.def ("getAIGroupID", &CyUnit::getAIGroupID, "int ()")
 	.def ("getTier", &CyUnit::getAIGroupID, "int ()")
+
+	.def ("isGarrision", &CyUnit::isGarrision, "bool ()")
+	.def ("setGarrision", &CyUnit::setGarrision, "void (bool bNewValue)")
+	.def ("canGarrision", &CyUnit::canGarrision, "bool ()")
 		;
 }

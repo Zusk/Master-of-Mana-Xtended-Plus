@@ -2237,7 +2237,9 @@ bool CvDLLButtonPopup::launchChooseReligionPopup(CvPopup* pPopup, CvPopupInfo &i
 	for (int iI = 0; iI < GC.getNumTechInfos(); iI++)
 	{
 		CvTechInfo& kTech = GC.getTechInfo((TechTypes)iI);
-		if(kTech.isReligion() && (!GET_TEAM(player.getTeam()).isHasTech((TechTypes)iI)|| (player.getStateReligion() == kTech.getReligionType())))
+		if(kTech.isReligion() && (!GET_TEAM(player.getTeam()).isHasTech((TechTypes)iI)|| (player.getStateReligion() == kTech.getReligionType()))
+			&& GC.getLeaderHeadInfo(player.getPersonalityType()).getReligionWeightModifier((ReligionTypes)kTech.getReligionType()) != -100 //SpyFanatic: -100 means cannot be adopted by Human
+		)
 		{
 			CvWString szBuffer;
 			szBuffer.Format(L"%s ", GC.getReligionInfo((ReligionTypes)kTech.getReligionType()).getDescription());
@@ -2268,7 +2270,11 @@ bool CvDLLButtonPopup::launchDungeonEventPopup(CvPopup* pPopup, CvPopupInfo &inf
 	CvPlayer& player = GET_PLAYER(ePlayer);
 
 	CvDungeon* pDungeon = GC.getMapINLINE().getDungeon(info.getData1());
-
+	//SpyFanatic: here Dungeon could have been destroyed in the meantime by AI
+	if(pDungeon==NULL)
+	{
+		return false;
+	}
 	CvWString szHeader = info.getText();
 	CvWString szPopulation, szPower;
 	if (szHeader.empty())
@@ -2642,13 +2648,14 @@ bool CvDLLButtonPopup::launchPickEquipmentPopup(CvPopup* pPopup, CvPopupInfo &in
 					}
 					gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getPromotionInfo((PromotionTypes)iI).getDescription(), GC.getPromotionInfo((PromotionTypes)iI).getButton(), iI,WIDGET_HELP_EQUIPMENT,iI);
 					/**
+					//SpyFanatic: code is nice but it seems that the selectiongroup is not in sync with the selected units... At least until you move them
 					int iUnits=pUnit->getGroup()->getNumUnitsValidForEquipment((PromotionTypes)iI, true);
 					if(iUnits>1)
 					{
 						szBuffer = gDLL->getText("TXT_KEY_POPUP_EQUIPMENT_GROUP",GC.getPromotionInfo((PromotionTypes)iI).getDescription(),iUnits);
 						gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szBuffer, GC.getPromotionInfo((PromotionTypes)iI).getButton(), iI+EQUIPMENT_POPUP_SHIFT,WIDGET_HELP_EQUIPMENT,iI);					
 					}
-					**/
+					//**/
 				}
 				//bTestVisible
 				else if(kPlayer.canEquipUnit(pUnit,(PromotionTypes)iI,true))

@@ -146,6 +146,7 @@ public:
 	int UnitPowerNeeded();
 	int calculateEnemyStrength(CvPlot* pPlot,int iRange, bool bOwnerTeamOnly = false, bool bAttackOnly = false, bool bDefensiveBonuses = false) const;
 	bool isAllUnitsWithinRange(CvPlot* pPlot, int iRange);
+	int getUnitsTurnToPlot(CvPlot* pPlot);
 	int getGroupPowerWithinRange(CvPlot* pPlot, int iMaxTurns, bool bCountWoundedAsFullHealth = true, bool bDefensiveBonuses = false) const;
 	bool isPossibleAttacker(CvUnit* pUnit, CvPlot* pPlot, int iMaxTurns) const;
 	int getNumPossibleAttackers(CvPlot* pPlot, int iMaxTurns) const;

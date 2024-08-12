@@ -19,6 +19,10 @@
 	<ElementType name="iWithdraw" content="textOnly" dt:type="int"/>										
 	<ElementType name="PromotionType" content="textOnly"/>
 	<ElementType name="AIGroup" content="textOnly"/>
+	<ElementType name="UnitAIType" content="textOnly"/>
+	<ElementType name="iSpellDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="iBombard" content="textOnly" dt:type="int"/>
+	<ElementType name="iSpellAura" content="textOnly" dt:type="int"/>
 	<ElementType name="Description" content="textOnly"/>		
 	<ElementType name="iValue" content="textOnly" dt:type="int"/>
 	<ElementType name="Promotion" content="eltOnly">
@@ -44,6 +48,10 @@
 		<element type="iWithdraw" minOccurs="0"/>																	
 		<element type="Promotions" minOccurs="0"/>		
 		<element type="AIGroup" minOccurs="0"/>	
+		<element type="UnitAIType" minOccurs="0"/>
+		<element type="iSpellDamage" minOccurs="0"/>
+		<element type="iBombard" minOccurs="0"/>
+		<element type="iSpellAura" minOccurs="0"/>
 		<element type="Description" minOccurs="0"/>			
 	</ElementType>
 	<ElementType name="AIPromotionSpecializationInfos" content="eltOnly">

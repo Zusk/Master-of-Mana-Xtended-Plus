@@ -129,6 +129,7 @@ void CyGamePythonInterface()
 
 		.def("getAIAutoPlay", &CyGame::getAIAutoPlay)
 		.def("setAIAutoPlay", &CyGame::setAIAutoPlay)
+		.def("setAIAutoPlayCiv", &CyGame::setAIAutoPlayCiv, "void (int, int)")
 
 		.def("isScoreDirty", &CyGame::isScoreDirty, "bool ()")
 		.def("setScoreDirty", &CyGame::setScoreDirty)
@@ -291,6 +292,7 @@ void CyGamePythonInterface()
         .def("setTrophyValue", &CyGame::setTrophyValue)
         .def("changeTrophyValue", &CyGame::changeTrophyValue)
         .def("testVictory", &CyGame::testVictory)
+		.def("setVictoryValid", &CyGame::setVictoryValid, "void (int, bool)")
 //FfH: End Add
 
 //>>>>	BUGFfH: Added by Denev 2009/10/13

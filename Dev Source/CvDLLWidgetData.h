@@ -76,6 +76,7 @@ public:
 	void doPediaImprovementJump(CvWidgetDataStruct &widgetDataStruct, bool bData2 = false);
 	void doPediaCivicJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaCivilizationJump(CvWidgetDataStruct &widgetDataStruct);
+	void doPediaEpicJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaLeaderJump(CvWidgetDataStruct &widgetDataStruct);
 	void doPediaDescription(CvWidgetDataStruct &widgetDataStruct);
 	void doGotoTurnEvent(CvWidgetDataStruct &widgetDataStruct);

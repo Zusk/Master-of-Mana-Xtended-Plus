@@ -21,25 +21,16 @@ CvAIGroup::~CvAIGroup()
 
 void CvAIGroup::init(int iID, int iOwner, int iGroupType)
 {
-	/** DEBUG **/
-	if(iGroupType!=NO_AIGROUP)
+	if(isOOSLogging())
 	{
-		TCHAR szOut[1024];
-		/*
-		sprintf(szOut, "%S %d::init \n",GC.getAIGroupInfo((AIGroupTypes)iGroupType).getDescription(), iID);
-		TCHAR szFile[1024];
-		sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-		gDLL->logMsg(szFile,szOut, false, false);
-		*/
-		sprintf(szOut, "Turn: %d, Player: %d,%S,%d::init\n"
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,init"
 			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwnerINLINE()
-			,GC.getAIGroupInfo((AIGroupTypes)iGroupType).getDescription()
+			,iOwner
 			,iID
+			,iGroupType!=NO_AIGROUP ? GC.getAIGroupInfo((AIGroupTypes)iGroupType).getDescription() : L"NO_AIGROUP"
 		);
-		gDLL->logMsg("AIGroup.log",szOut, false, false);
 	}
-	/** DEBUG **/
 
 /**
 	FAssert(NO_COMBATAURA != iCombatAuraType);
@@ -90,22 +81,16 @@ void CvAIGroup::reset(int iID, int iOwner, int iGroupType, bool bConstructorCall
 
 void CvAIGroup::kill()
 {
-	/** DEBUG **/
-	TCHAR szOut[1024];
-	/*
-	sprintf(szOut, "%S %d::kill \n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID());
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
-	sprintf(szOut, "Turn: %d, Player: %d,%S,%d::kill\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,GC.getAIGroupInfo(getGroupType()).getDescription()
-		,getID()
-	);
-	gDLL->logMsg("AIGroup.log",szOut, false, false);
-	/** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,kill"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+		);
+	}
 
 	std::vector<int> aiUnitIDs;
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
@@ -220,31 +205,20 @@ TeamTypes CvAIGroup::getTeam() const
 
 void CvAIGroup::addUnit(CvUnit* pUnit)
 {
-	//DEBUG
-	/*
-	TCHAR szOut[1024];
-	sprintf(szOut, "%S %d::add -- %S\n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID(), GC.getUnitInfo(pUnit->getUnitType()).getDescription());
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
-/*
 	if(isOOSLogging())
 	{
-	oosLog("AIGroup"
-	,"Turn: %d, Player: %d,GroupID: %d,UnitID: %d,%S,AIPromotionSpecialization: %d,::add %S\n"
-	,GC.getGameINLINE().getElapsedGameTurns()
-	,getOwnerINLINE()
-	,getID()
-	,pUnit->getID()
-	,GC.getAIGroupInfo(getGroupType()).getDescription()
-	,pUnit->AI_getPromotionSpecialization()
-	,GC.getUnitInfo(pUnit->getUnitType()).getDescription()
-	);
-	//gDLL->logMsg("AIGroup.log",szOut, false, false);
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,addUnit:%S,UnitID:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			//,pUnit->AI_getPromotionSpecialization()
+			,GC.getUnitInfo(pUnit->getUnitType()).getDescription()
+			,pUnit->getID()
+		);
 	}
-	//DEBUG
-*/
+
 	m_units.insertAtEnd(pUnit->getIDInfo());
 	setInitialUnitAI(pUnit);
 	changeSeeInvisible((pUnit->isSeeInvisible()) ? 1 : 0);
@@ -252,28 +226,18 @@ void CvAIGroup::addUnit(CvUnit* pUnit)
 
 void CvAIGroup::removeUnit(CvUnit* pUnit)
 {
-	//DEBUG
-	//TCHAR szOut[1024];
-	/*
-	sprintf(szOut, "%S %d::remove -- %S\n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID(), GC.getUnitInfo(pUnit->getUnitType()).getDescription());
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
 	if(isOOSLogging())
 	{
-	oosLog("AIGroup"
-		,"Turn: %d, Player: %d,%S,%d::remove %S ID: %d\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,GC.getAIGroupInfo(getGroupType()).getDescription()
-		,getID()
-		,GC.getUnitInfo(pUnit->getUnitType()).getDescription()
-		,pUnit->getID()
-	);
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,removeUnit:%S,UnitID:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,GC.getUnitInfo(pUnit->getUnitType()).getDescription()
+			,pUnit->getID()
+		);
 	}
-	//gDLL->logMsg("AIGroup.log",szOut, false, false);
-	//DEBUG
 
 	changeSeeInvisible((pUnit->isSeeInvisible()) ? -1 : 0);
 
@@ -375,24 +339,17 @@ void CvAIGroup::setMissionCity(CvCity* pNewCity)
 
 void CvAIGroup::setMissionArea(int iNewArea)
 {
-	/** DEBUG **/
-	TCHAR szOut[1024];
-	/*
-	sprintf(szOut, "%S %d::setMissionArea -- %d\n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID(),iNewArea);
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
-	sprintf(szOut, "Turn: %d, Player: %d,%S,%d::setMissionArea %d\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,GC.getAIGroupInfo(getGroupType()).getDescription()
-		,getID()
-		,iNewArea
-	);
-	gDLL->logMsg("AIGroup.log",szOut, false, false);
-	/** DEBUG **/
-
+	/*if(isOOSLogging())
+	{
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,setMissionArea:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,iNewArea
+		);
+	}*/
 	m_iMissionArea=iNewArea;
 }
 
@@ -423,19 +380,11 @@ int CvAIGroup::getMissionBuild()
 
 void CvAIGroup::setMissionStatus(int iNewStatus)
 {
-	//DEBUG
-	/*
-	TCHAR szOut[1024];
-	sprintf(szOut, "%S %d::setMissionStatus -- %d\n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID(),iNewStatus);
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
 /*
 	if(isOOSLogging())
 	{
 	oosLog("AIGroup"
-	,"Turn: %d, Player: %d,GroupID: %d,%S,::setMissionStatus %d\n"
+	,"Turn: %d, PlayerID: %d,AIGroupID: %d,%S,::setMissionStatus %d\n"
 	,GC.getGameINLINE().getElapsedGameTurns()
 	,getOwnerINLINE()
 	,getID()
@@ -446,6 +395,22 @@ void CvAIGroup::setMissionStatus(int iNewStatus)
 	}
 	//DEBUG
 */
+	if(isOOSLogging() && iNewStatus != m_iMissionStatus)
+	{
+		CvWString szOldMissionStatus;
+		getAI_InvasionStatusString(szOldMissionStatus, getMissionStatus());
+		CvWString szNewMissionStatus;
+		getAI_InvasionStatusString(szNewMissionStatus, getMissionStatus());
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,Status:%S,setMissionStatus:%S"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,szOldMissionStatus.c_str()
+			,szNewMissionStatus.c_str()
+		);
+	}
 	m_iMissionStatus=iNewStatus;
 }
 
@@ -464,21 +429,17 @@ CvAIGroup* CvAIGroup::getReserveGroup()
 
 void CvAIGroup::setReserveGroup(CvAIGroup* pNewGroup)
 {
-	/** DEBUG **/
-	TCHAR szOut[1024];
-	/*
-	sprintf(szOut, "CvAIGroup %d,%d::setReserveGroup -- \n",getOwnerINLINE(),getID());
-		TCHAR szFile[1024];
-		sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-		gDLL->logMsg(szFile,szOut, false, false);
-	*/
-	sprintf(szOut, "Turn: %d, Player: %d,CvAIGroup,%d::setReserveGroup\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,getID()
-	);
-	gDLL->logMsg("AIGroup.log",szOut, false, false);
-	/** DEBUG **/
+	if(isOOSLogging())
+	{
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,setReserveGroup:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,pNewGroup==NULL ? -1 : pNewGroup->getID()
+		);
+	}
 
 	if(pNewGroup==NULL)
 	{
@@ -617,6 +578,18 @@ void CvAIGroup::setMissionPlot(CvPlot* pNewPlot)
 		m_iMissionPlotX=pNewPlot->getX_INLINE();
 		m_iMissionPlotY=pNewPlot->getY_INLINE();
 	}
+	/*if(isOOSLogging())
+	{
+		oosLog("AIGroup"
+			,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,setMissionPlot,X:%d,Y:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,GC.getAIGroupInfo(getGroupType()).getDescription()
+			,m_iMissionPlotX
+			,m_iMissionPlotY
+		);
+	}*/
 }
 
 CvPlot* CvAIGroup::getMissionTarget() const
@@ -678,6 +651,27 @@ CvUnit* CvAIGroup::getCloseUnit(CvPlot* pTarget, CvAIGroup* pNewGroup, bool bSam
 		for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 		{
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			/*if(isOOSLogging())
+			{
+				oosLog("AIGroupReserve"
+					,"Turn:%d,PlayerID:%d,AIGroupID:%d,UnitID:%d,UnitName:%S,getCloseUnitAllowed:%d,samearea:%d,unitarea:%d,targetarea:%d,full:%d,1:%d,2:%d,3:%d,4:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pLoopUnit->getID()
+					,pLoopUnit->getName().GetCString()
+					,isUnitAllowed(pLoopUnit,pNewGroup->getGroupType())
+					,bSameArea
+					,pLoopUnit->getArea()
+					,pTarget->getArea()
+					,pNewGroup->isFull(pLoopUnit)
+					,pLoopUnit->plot()==pTarget
+					,(pTarget->getTeam()!=getTeam() && pLoopUnit->baseCombatStr()==0)
+					,(pTarget->isOwned() && pTarget->getTeam()!=getTeam() && GET_TEAM(getTeam()).canDeclareWar(pTarget->getTeam()))
+					,pLoopUnit->generatePath(pTarget,0,false,&iPathTurns)
+				);
+			}*/
+
 			if(!bSameArea || pLoopUnit->getArea()==pTarget->getArea())
 			{
 				if(isUnitAllowed(pLoopUnit,pNewGroup->getGroupType()) && !pNewGroup->isFull(pLoopUnit))
@@ -773,7 +767,6 @@ CvUnit* CvAIGroup::getCloseUnit(CvPlot* pTarget, CvAIGroup* pNewGroup, bool bSam
 							{
 								iValue/=1000;
 							}
-
 							if(iValue>iBestValue)
 							{
 								iBestValue=iValue;
@@ -953,6 +946,13 @@ bool CvAIGroup::isUnitAllowed(CvUnit* pUnit, int iGroupType)
 		case AIGROUP_CITY_INVASION_PILLAGE:
 		case AIGROUP_SETTLE:
 		case AIGROUP_NAVAL_SETTLE:
+			//SpyFanatic: when city are less then 3, and already 4 units are present in this group, allow every possible unit as escort
+			if(getNumUnits() >= 3 && GET_PLAYER(getOwnerINLINE()).getNumCities() <= 3)
+			{
+				//Please note update_City_Defense has been modified to not allow Garrison of below types
+				return true;
+			}
+
 			if (pUnit->getDuration()>0)
 			{
 				return false;
@@ -1064,14 +1064,53 @@ void CvAIGroup::setInitialUnitAI(CvUnit* pUnit)
 
 	if(pUnit->AI_getPromotionSpecialization()==NO_AIPROMOTIONSPECIALIZATION)
 	{
+		/*PromotionTypes iHero = (PromotionTypes)GC.getInfoTypeForString("PROMOTION_HERO");
+		if((iHero!=NO_PROMOTION && pUnit->isHasPromotion(iHero)) || pUnit->AI_getUnitAIType()==UNITAI_HERO)
+		{
+			//SpyFanatic: give to Hero the
+			pUnit->AI_setPromotionSpecialization((AIPromotionSpecializationTypes)GC.getInfoTypeForString("AIPROMOTIONSPECIALIZATION_UNITAI_HERO"));
+			pUnit->AI_promote();
+		}
+		else
+		{
+			for(int iI=0;iI<GC.getNumAIPromotionSpecializationInfos();iI++)
+			{
+				if(GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getAIGroup()==getGroupType())
+				{
+					pUnit->AI_setPromotionSpecialization((AIPromotionSpecializationTypes)iI);
+					pUnit->AI_promote();
+					break;
+				}
+			}
+		}*/
+
+		AIPromotionSpecializationTypes iSpecialization = NO_AIPROMOTIONSPECIALIZATION;
 		for(int iI=0;iI<GC.getNumAIPromotionSpecializationInfos();iI++)
 		{
-			if(GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getAIGroup()==getGroupType())
+			//SpyFanatic: both AIGroup and UnitAITypes is an exact match, just one of the two means
+			if(GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getAIGroup()==getGroupType() && GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getUnitAIType()==pUnit->AI_getUnitAIType())
 			{
-				pUnit->AI_setPromotionSpecialization((AIPromotionSpecializationTypes)iI);
-				pUnit->AI_promote();
+				iSpecialization = (AIPromotionSpecializationTypes)iI;
 				break;
 			}
+			//UnitAITypes but not AIGroup take it but go on looking for an exact match
+			else if(GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getAIGroup()==NO_AIGROUP && GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getUnitAIType()==pUnit->AI_getUnitAIType())
+			{
+				iSpecialization = (AIPromotionSpecializationTypes)iI;
+			}
+			//AIGroup but not UnitAITypes take it only if we did not get one from UnitAITypes
+			else if(GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getAIGroup()==getGroupType() && GC.getAIPromotionSpecializationInfo((AIPromotionSpecializationTypes)iI).getUnitAIType()==NO_UNITAI)
+			{
+				if(iSpecialization == NO_AIPROMOTIONSPECIALIZATION)
+				{
+					iSpecialization = (AIPromotionSpecializationTypes)iI;
+				}
+			}
+		}
+		if(iSpecialization != NO_AIPROMOTIONSPECIALIZATION)
+		{
+			pUnit->AI_setPromotionSpecialization(iSpecialization);
+			pUnit->AI_promote();
 		}
 	}
 }
@@ -1108,6 +1147,7 @@ void CvAIGroup::compareInvasionPower(CvPlot* pTarget, int* piEnemyStrength, int*
 	*piOurStrength=0;
 
 	*piOurStrength=getGroupPowerWithinRange(pTarget,1,false);
+	//*piOurStrength=getGroupPowerWithinRange(pTarget,MAX_INT,false); //SpyFanatic: check for the group even if its far then 1 plot (used in update_City_Invasion and update_City_Invasion_AttackCity)
 
 	*piEnemyStrength=calculateEnemyStrength(pTarget,0,true,false,true);
 }
@@ -1299,6 +1339,22 @@ void CvAIGroup::launchAttack(CvPlot* pTarget)
 		if(pTarget->isVisibleEnemyDefender(pLoopUnit) || pTarget->getTeam()!=getTeam())
 		{
 			pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, pTarget->getX_INLINE(), pTarget->getY_INLINE(), MOVE_DIRECT_ATTACK);
+			if(isOOSLogging())
+			{
+				if(pTarget->isCity())
+				{
+					oosLog("AILaunchCityAttack"
+						,"Turn:%d,Player:%d,Unit Move:%S,Target:%d,City:%S [%d,%d]"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,pLoopUnit->getOwnerINLINE()
+						,pLoopUnit->getName().GetCString()
+						,pTarget->getPlotCity()->getOwner()
+						,pTarget->getPlotCity()->getName().c_str()
+						,pTarget->getX_INLINE()
+						,pTarget->getY_INLINE()
+					);
+				}
+			}
 		}
 		else 
 		{
@@ -1306,6 +1362,22 @@ void CvAIGroup::launchAttack(CvPlot* pTarget)
 				|| iCount<3)
 			{
 				pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, pTarget->getX_INLINE(), pTarget->getY_INLINE(), MOVE_DIRECT_ATTACK);
+				if(isOOSLogging())
+				{
+					if(pTarget->isCity())
+					{
+						oosLog("AILaunchCityAttack"
+							,"Turn:%d,Player:%d,Unit Attack:%S,Target:%d,City:%S [%d,%d]"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,pLoopUnit->getOwnerINLINE()
+							,pLoopUnit->getName().GetCString()
+							,pTarget->getPlotCity()->getOwner()
+							,pTarget->getPlotCity()->getName().c_str()
+							,pTarget->getX_INLINE()
+							,pTarget->getY_INLINE()
+						);
+					}
+				}
 			}
 		}
 	}
@@ -1968,24 +2040,6 @@ void CvAIGroup::AIGroup_Pillage(CvCity* pTarget,int iRange, bool bIgnoreDanger)
 
 void CvAIGroup::update()
 {
-	/** DEBUG **/
-	TCHAR szOut[1024];
-	/*
-	sprintf(szOut, "%S %d::update -- Units: %d MissionStatus: %d\n",GC.getAIGroupInfo(getGroupType()).getDescription(), getID(),getNumUnits(),getMissionStatus());
-	TCHAR szFile[1024];
-	sprintf(szFile, "AI%d Group.log",getOwnerINLINE());
-	gDLL->logMsg(szFile,szOut, false, false);
-	*/
-	sprintf(szOut, "Turn: %d, Player: %d,%S,%d::update,Units: %d MissionStatus: %d\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwnerINLINE()
-		,GC.getAIGroupInfo(getGroupType()).getDescription()
-		,getID()
-		,getNumUnits()
-		,getMissionStatus()
-	);
-	gDLL->logMsg("AIGroup.log",szOut, false, false);
-
 	/** Carnival Bizarre **/
 	if (GC.getMapINLINE().getArea(getMissionArea()) == NULL)
 	{
@@ -2094,60 +2148,75 @@ void CvAIGroup::update()
 		default:
 			break;
 	}
+
+	if(isOOSLogging())
+	{
+		if(getNumUnits() != 0 && getMissionStatus() != NO_AIGROUP_STATUS)
+		{
+			CvWString szMissionStatus;
+			getAI_InvasionStatusString(szMissionStatus, getMissionStatus());
+			oosLog("AIGroup"
+				,"Turn:%d,PlayerID:%d,AIGroupID:%d,AIGroupType:%S,update,Units:%d,MissionStatus:%S,MissionPlotX:%d,MissionPlotY:%d,%S,MissionArea:%d,Power:%d,PowerNeeded:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,GC.getAIGroupInfo(getGroupType()).getDescription()
+				,getNumUnits()
+				,szMissionStatus.c_str()
+				,getMissionPlot()->getX_INLINE()
+				,getMissionPlot()->getY_INLINE()
+				,getMissionPlot()->getPlotCity() != NULL ? getMissionPlot()->getPlotCity()->getName().c_str() : L""
+				,getMissionArea()
+				,getGroupPowerWithinRange(getMissionPlot(),MAX_INT, false, false)
+				,UnitPowerNeeded()
+			);
+		}
+	}
 }
 
 void CvAIGroup::update_Reserve()
 {
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::healUnits30\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 	healUnits(30);
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceCities\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceCities();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::healUnits10\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	healUnits(10);
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceDestroyLair\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
+
+	/*//SpyFanatic: invasion and destroy lairs is important, but first focus on settling some cities if available... Unless you are at war!
+	CvPlayerAI &kPlayer=GET_PLAYER(getOwnerINLINE());
+	//UnitClassTypes eSettler = (UnitClassTypes)GC.getUNITCLASS_SETTLER();
+	if(kPlayer.getNumCities() <= 3 && GET_TEAM(kPlayer.getTeam()).getAtWarCount(false) <= 0)
+	{
+		update_Reserve_ReinforceSettlers();
+	}*/
 
 	update_Reserve_ReinforceDestroyLair();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceCounters\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
+
 	update_Reserve_ReinforceCounters();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::healUnits0\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	healUnits(0);
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ShuffleCityDefense\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ShuffleCityDefense();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceSiege\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceSiege();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceCityInvasion\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceCityInvasion();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_Reinforce_NavalInvasion\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_Reinforce_NavalInvasion();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceManaNode\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceManaNode();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceSettlers\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceSettlers();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_Reinforce_NavalSettle\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_Reinforce_NavalSettle();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_PickupEquipment\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_PickupEquipment();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ExploreDungeon\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ExploreDungeon();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_ReinforceExplore\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_ReinforceExplore();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_Upgrade\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_Upgrade();
-//if(isOOSLogging()){oosLog("AIGroup","Turn: %d, Player: %d,GroupID: %d,%S::update_Reserve_RetreatToCity\n",GC.getGameINLINE().getElapsedGameTurns(),getOwnerINLINE(),getID(),GC.getAIGroupInfo(getGroupType()).getDescription());}
 
 	update_Reserve_RetreatToCity();
 }
@@ -2171,6 +2240,18 @@ void CvAIGroup::update_Reserve_ReinforceCities()
 					if(pUnit==NULL)
 						break;
 					pUnit->setAIGroup(pLoopCity->getAIGroup_Defense());
+					if(isOOSLogging())
+					{
+						oosLog("AIGroupReserve"
+							,"Turn:%d,PlayerID:%d,AIGroupID:%d,UnitID:%d,UnitName:%S,update_Reserve_ReinforceCities:%S"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,getOwnerINLINE()
+							,getID()
+							,pUnit->getID()
+							,pUnit->getName().GetCString()
+							,pLoopCity->getName().c_str()
+						);
+					}
 				}
 			}
 		}
@@ -2299,7 +2380,8 @@ void CvAIGroup::update_Reserve_ReinforceDestroyLair()
 		{
 			if(pAIGroup->UnitsNeeded()>0)
 			{
-				if(pAIGroup->canFillWithReserveUnits(this))
+				//SpyFanatic: as evaluation is done each turn... Reserve group is not completely filled by 1 unit only
+				//if(pAIGroup->canFillWithReserveUnits(this))
 				{
 					while(pAIGroup->UnitsNeeded()>0)
 					{
@@ -2407,6 +2489,48 @@ void CvAIGroup::update_Reserve_ReinforceSettlers()
 		}
 	}
 
+
+	//SpyFanatic: try to pick up the stack easier to fill first!!
+	CvAIGroup* pBestGroup = NULL;
+	int iGroupValue = MAX_INT;
+	for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+	{
+		if (pAIGroup->getGroupType() == AIGROUP_SETTLE && (pAIGroup->getMissionArea() == getMissionArea() || GC.getMapINLINE().getArea(getMissionArea())->isWater())
+			&& 	pAIGroup->getMissionPlot() != NULL)
+		{
+			if(pAIGroup->UnitsNeeded() < iGroupValue)
+			{
+				iGroupValue = pAIGroup->UnitsNeeded();
+				pBestGroup = pAIGroup;
+			}
+
+		}
+	}
+	if(pBestGroup != NULL)
+	{
+		while(pBestGroup->UnitsNeeded()>0)
+		{
+			CvUnit* pUnit=getCloseUnit(pBestGroup->getMissionPlot(),pBestGroup,true);
+			if(pUnit==NULL)
+				break;
+			pUnit->setAIGroup(pBestGroup);
+			if(isOOSLogging())
+			{
+				oosLog("AIGroupReserve"
+					,"Turn:%d,PlayerID:%d,AIGroupID:%d,UnitID:%d,UnitName:%S,update_Reserve_ReinforceSettlers:%d,%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,pUnit->getID()
+					,pUnit->getName().GetCString()
+					,pBestGroup->getMissionPlot()->getX_INLINE()
+					,pBestGroup->getMissionPlot()->getY_INLINE()
+				);
+			}
+		}
+	}
+
+	/*
 	for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
 	{
 		if (pAIGroup->getGroupType() == AIGROUP_SETTLE && (pAIGroup->getMissionArea() == getMissionArea() || GC.getMapINLINE().getArea(getMissionArea())->isWater())
@@ -2414,13 +2538,27 @@ void CvAIGroup::update_Reserve_ReinforceSettlers()
 		{
 			while(pAIGroup->UnitsNeeded()>0)
 			{
+
 				CvUnit* pUnit=getCloseUnit(pAIGroup->getMissionPlot(),pAIGroup,true);
 				if(pUnit==NULL)
 					break;
 				pUnit->setAIGroup(pAIGroup);
+				if(isOOSLogging())
+				{
+					oosLog("AIGroupReserve"
+						,"Turn:%d,PlayerID:%d,AIGroupID:%d,UnitID:%d,UnitName:%S,update_Reserve_ReinforceSettlers:%d,%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwnerINLINE()
+						,getID()
+						,pUnit->getID()
+						,pUnit->getName().GetCString()
+						,pAIGroup->getMissionPlot()->getX_INLINE()
+						,pAIGroup->getMissionPlot()->getY_INLINE()
+					);
+				}
 			}
 		}
-	}
+	}*/
 }
 
 void CvAIGroup::update_Reserve_ReinforceExplore()
@@ -2502,6 +2640,7 @@ void CvAIGroup::update_Reserve_PickupEquipment()
 				{
 					if(pLoopUnit->generatePath(pEquipment->plot(),0,true,&iPathTurns))
 					{
+						/*
 						if(isOOSLogging())
 						{
 							oosLog("EquipmentPromotion"
@@ -2513,6 +2652,7 @@ void CvAIGroup::update_Reserve_PickupEquipment()
 								,iPathTurns
 							);
 						}
+						*/
 						iValue=iPathTurns;
 						if(iValue<iBestValue)
 						{
@@ -2658,13 +2798,25 @@ void CvAIGroup::update_Reserve_RetreatToCity()
 		for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 		{
 			CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data));
-			if(!pLoopUnit->plot()->isCity())
+			if(!pLoopUnit->plot()->isCity() && pLoopUnit->canMove()) //SpyFanatic: only if unit can move
 			{
 				if(pLoopUnit->getGroup()->getActivityType()==ACTIVITY_AWAKE)
 				{
 					pLoopUnit->AI_retreatToCity();
 				}
 			}
+			/*if(isOOSLogging())
+			{
+				oosLog("AIGroupReserve"
+					,"Turn:%d,PlayerID:%d,AIGroupID:%d,MissionArea:%d,UnitID:%d,UnitName:%S,update_Reserve_RetreatToCity"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwnerINLINE()
+					,getID()
+					,getMissionArea()
+					,pLoopUnit->getID()
+					,pLoopUnit->getName().GetCString()
+				);
+			}*/
 		}
 	}
 }
@@ -2677,6 +2829,44 @@ void CvAIGroup::update_City_Defense()
 		setDeathDelayed(true);
 		return;
 	}
+
+	//SpyFanatic: release extra unit not meant to guard city to a reserve group
+	CvAIGroup* pAIReserveGroup = NULL;
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+	if(getNumUnits() >= 3)
+	{
+		int iLoop;
+		for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+		{
+/*
+			oosLog("AIupdate_City_Defense"
+				,"Turn:%d,PlayerID:%d,AIGroup_CityDefense:%d,AIGroupType:%S,MissionArea:%d,AIGroupReserve:%d,AIGroupType:%S,MissionArea:%d,isWater:%d,MissionTargetNotNull:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,GC.getAIGroupInfo(getGroupType()).getDescription()
+				,getMissionArea()
+				,pAIGroup->getID()
+				,GC.getAIGroupInfo(pAIGroup->getGroupType()).getDescription()
+				,pAIGroup->getMissionArea()
+				,GC.getMapINLINE().getArea(getMissionArea())->isWater()
+				,pAIGroup->getMissionTarget() != NULL
+			);
+*/
+			if (pAIGroup->getGroupType() == AIGROUP_RESERVE && (pAIGroup->getMissionArea() == getMissionArea() || GC.getMapINLINE().getArea(getMissionArea())->isWater()) /*&& pAIGroup->getMissionTarget() != NULL*/)
+			{
+				//make sure the AI will prefere to use single units to fill up Groups already in action
+				pAIReserveGroup = pAIGroup;
+				break;
+			}
+		}
+		if(pAIReserveGroup == NULL)
+		{
+			pAIReserveGroup=kPlayer.initAIGroup(AIGROUP_RESERVE);
+			pAIReserveGroup->setMissionArea(getMissionArea());
+		}
+	}
+
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
@@ -2686,10 +2876,34 @@ void CvAIGroup::update_City_Defense()
 		}
 		else
 		{
-			if(pLoopUnit->canGarrision())
+			//if(pLoopUnit->canGarrision())
+			//Spyfanatic: modification to allow more unit to escort the settle group, but not to garrison!
+			CvUnitInfo& kUnitInfo = GC.getUnitInfo(pLoopUnit->getUnitType());
+			bool bEscortOnly = (pLoopUnit->getDuration()>0)
+				|| (pLoopUnit->isSummon())
+				|| (kUnitInfo.isImmortal())
+				|| (pLoopUnit->AI_getUnitAIType()==UNITAI_HERO)
+				|| kUnitInfo.getManaUpkeep()>0
+				|| kUnitInfo.getFaithUpkeep()>0
+				|| (kPlayer.AI_isUnitCategory(pLoopUnit->getUnitType(),UNITCATEGORY_SIEGE))
+				|| (kPlayer.AI_isUnitCategory(pLoopUnit->getUnitType(),UNITCATEGORY_WARWIZARD))
+				|| (kUnitInfo.isAIblockPermDefense())
+				//block scouts because of early exploration
+				|| (pLoopUnit->AI_getUnitAIType()==UNITAI_EXPLORE && kUnitInfo.getTier()==1)
+				|| (!kUnitInfo.isMilitaryHappiness())
+				;
+
+			if(pLoopUnit->canGarrision() && !bEscortOnly)
 			{
 				pLoopUnit->setGarrision(true);
 			}
+			if(bEscortOnly /*&& pAIReserveGroup != NULL*/)
+			{
+				pUnitNode = setAIGroupInLoop(pAIReserveGroup,pUnitNode,pLoopUnit);
+				if (pUnitNode == NULL)
+					break;
+			}
+			//SpyFanatic: End
 			CLLNode<IDInfo>* nextNode = nextUnitNode(pUnitNode);
 			if (pLoopUnit->AI_upgrade())
 			{
@@ -2765,34 +2979,40 @@ void CvAIGroup::update_Worker()
 				{
 					if(!pLoopUnit->atPlot(getMissionPlot()))
 					{
-						if(isOOSLogging())
+						/*if(isOOSLogging())
 						{
 							oosLog("AIWorker"
-								,"Turn: %d,Owner:%d,X:%d,Y:%d,plotX:%d,plotY:%d,MISSION_MOVE_TO\n"
+								,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,plotX:%d,plotY:%d,MISSION_MOVE_TO\n"
 								,GC.getGameINLINE().getElapsedGameTurns()
 								,pLoopUnit->getOwner()
+								,pLoopUnit->getID()
 								,pLoopUnit->plot()->getX()
 								,pLoopUnit->plot()->getY()
 								,getMissionPlot()->getX()
 								,getMissionPlot()->getY()
 							);
-						}
+						}*/
 						pLoopUnit->getGroup()->pushMission(MISSION_MOVE_TO, getMissionPlot()->getX_INLINE(), getMissionPlot()->getY_INLINE(), 0, false, false, MISSIONAI_BUILD, getMissionPlot());
 					}
+					//TODO: SpyFanatic: It seems this somehow cause OOS... not sure if the pushMission above is completely in sync among pc
+					//else
 					if(pLoopUnit->atPlot(getMissionPlot()))
 					{
-						if(isOOSLogging())
+						/*if(isOOSLogging())
 						{
 							oosLog("AIWorker"
-								,"Turn: %d,Owner:%d,X:%d,Y:%d,plotX:%d,plotY:%d,MISSION_BUILD\n"
+								,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,MISSION_BUILD:%S,Plot:%S\n"
 								,GC.getGameINLINE().getElapsedGameTurns()
 								,pLoopUnit->getOwner()
+								,pLoopUnit->getID()
 								,pLoopUnit->plot()->getX()
 								,pLoopUnit->plot()->getY()
-								,getMissionPlot()->getX()
-								,getMissionPlot()->getY()
+								//,getMissionPlot()->getX()
+								//,getMissionPlot()->getY()
+								,getMissionBuild()!=NO_IMPROVEMENT?GC.getBuildInfo((BuildTypes)getMissionBuild()).getDescription():L"NO_IMPROVEMENT"
+								,getMissionPlot()->getImprovementType()!=NO_IMPROVEMENT?GC.getImprovementInfo(getMissionPlot()->getImprovementType()).getDescription():L"NO_IMPROVEMENT"
 							);
-						}
+						}*/
 						pLoopUnit->getGroup()->pushMission(MISSION_BUILD, getMissionBuild(), -1, MOVE_SAFE_TERRITORY, (pLoopUnit->getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, getMissionPlot());
 					}
 				}
@@ -2900,11 +3120,59 @@ void CvAIGroup::update_Destroy_Lair()
 
 	if(iOurStrength>iEnemyStrength*1.3 || isAllUnitsWithinRange(getMissionPlot(),1))
 	{
+		if(isOOSLogging())
+		{
+			oosLog("AI_DestroyLairGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,Lair:[%d,%d],launchAttack,UnitPowerNeeded:%d,iOurStrength:%d,iEnemyStrength:%d,WithinRange:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,getMissionPlot()->getX_INLINE()
+				,getMissionPlot()->getY_INLINE()
+				,UnitPowerNeeded()
+				,iOurStrength
+				,iEnemyStrength
+				,isAllUnitsWithinRange(getMissionPlot(),1)
+			);
+		}
 		launchAttack(getMissionPlot());
 	}
 	else if(UnitPowerNeeded()<=0)
 	{
+		if(isOOSLogging())
+		{
+			oosLog("AI_DestroyLairGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,Lair:[%d,%d],prepareAttack,UnitPowerNeeded:%d,iOurStrength:%d,iEnemyStrength:%d,WithinRange:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,getMissionPlot()->getX_INLINE()
+				,getMissionPlot()->getY_INLINE()
+				,UnitPowerNeeded()
+				,iOurStrength
+				,iEnemyStrength
+				,isAllUnitsWithinRange(getMissionPlot(),1)
+			);
+		}
 		prepareAttack(getMissionPlot(),MAX_INT,1);
+	}
+	else
+	{
+		if(isOOSLogging())
+		{
+			oosLog("AI_DestroyLairGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,Lair:[%d,%d],Doing Nothing,UnitPowerNeeded:%d,iOurStrength:%d,iEnemyStrength:%d,WithinRange:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,getMissionPlot()->getX_INLINE()
+				,getMissionPlot()->getY_INLINE()
+				,UnitPowerNeeded()
+				,iOurStrength
+				,iEnemyStrength
+				,isAllUnitsWithinRange(getMissionPlot(),1)
+			);
+		}
 	}
 
 	int iExploreSpell=GC.getInfoTypeForString("SPELL_EXPLORE_DUNGEON");
@@ -2919,6 +3187,17 @@ void CvAIGroup::update_Destroy_Lair()
 				if(pLoopUnit->canCast(iExploreSpell,false))
 				{
 					pLoopUnit->cast(iExploreSpell);
+					if(isOOSLogging())
+					{
+						oosLog("AI_DestroyLairGroup"
+							,"Turn:%d,PlayerID:%d,GroupID:%d,Lair:[%d,%d],Destroyed"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,getOwnerINLINE()
+							,getID()
+							,getMissionPlot()->getX_INLINE()
+							,getMissionPlot()->getY_INLINE()
+						);
+					}
 					break;
 				}
 			}
@@ -3805,6 +4084,23 @@ void CvAIGroup::TargetSpell(CvPlot* pTarget, int iThreshold)
 							if(pLoopUnit->castDamage((SpellTypes)iI,pTarget,true)/std::max(1,GC.getSpellInfo((SpellTypes)iI).getManaCost())>=iThreshold)
 							{
 								pLoopUnit->cast((SpellTypes)iI,pTarget);
+
+								if(isOOSLogging())
+								{
+									if(pTarget->isCity())
+									{
+										oosLog("AILaunchCityAttack"
+											,"Turn:%d,Player:%d,Casted Spell:%S,Target:%d,City:%S [%d,%d]"
+											,GC.getGameINLINE().getElapsedGameTurns()
+											,kPlayer.getID()
+											,GC.getSpellInfo((SpellTypes)iI).getDescription()
+											,pTarget->getPlotCity()->getOwner()
+											,pTarget->getPlotCity()->getName().c_str()
+											,pTarget->getX_INLINE()
+											,pTarget->getY_INLINE()
+										);
+									}
+								}
 							}
 						}
 					}
@@ -4754,6 +5050,31 @@ bool CvAIGroup::isAllUnitsWithinRange(CvPlot* pPlot, int iRange)
 		}
 	}
 	return true;
+}
+
+int CvAIGroup::getUnitsTurnToPlot(CvPlot* pPlot)
+{
+	int iPathTurns;
+	int iPathTurnsMax = -1;
+
+	if(pPlot==NULL)
+		return true;
+
+	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		//if(stepDistance(pLoopUnit->getX_INLINE(),pLoopUnit->getY_INLINE(),pPlot->getX_INLINE(),pPlot->getY_INLINE())>iRange)
+		{
+			if(pLoopUnit->generatePath(pPlot,0,false,&iPathTurns))
+			{
+				if(iPathTurns > iPathTurnsMax)
+				{
+					iPathTurnsMax = iPathTurns;
+				}
+			}
+		}
+	}
+	return iPathTurnsMax;
 }
 
 int CvAIGroup::getNumPossibleAttackers(CvPlot* pPlot, int iMaxTurns) const

@@ -37,6 +37,12 @@ void CyTeam::declareWar(int /*TeamTypes*/ eTeam, bool bNewDiplo, int /*WarPlanTy
 		m_pTeam->declareWar((TeamTypes)eTeam, bNewDiplo, (WarPlanTypes)eWarPlan);
 }
 
+void CyTeam::declareWarLog(int /*TeamTypes*/ eTeam, bool bNewDiplo, int /*WarPlanTypes*/ eWarPlan, TCHAR* szLog)
+{
+	if (m_pTeam)
+		m_pTeam->declareWar((TeamTypes)eTeam, bNewDiplo, (WarPlanTypes)eWarPlan, szLog);
+}
+
 void CyTeam::makePeace(int /*TeamTypes*/ eTeam)
 {
 	if (m_pTeam)
@@ -96,9 +102,9 @@ int CyTeam::getWarPlanCount(int /*WarPlanTypes*/ eWarPlan, bool bIgnoreMinors)
 	return m_pTeam ? m_pTeam->getWarPlanCount((WarPlanTypes) eWarPlan, bIgnoreMinors) : -1;
 }
 
-int CyTeam::getAnyWarPlanCount(bool bIgnoreMinors)
+int CyTeam::getAnyWarPlanCount(bool bIgnoreMinors,int /*TeamTypes*/ eTeam)
 {
-	return m_pTeam ? m_pTeam->getAnyWarPlanCount(bIgnoreMinors) : -1;
+	return m_pTeam ? m_pTeam->getAnyWarPlanCount(bIgnoreMinors,(TeamTypes)eTeam) : -1;
 }
 
 int CyTeam::getChosenWarCount(bool bIgnoreMinors)

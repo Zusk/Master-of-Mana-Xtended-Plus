@@ -946,6 +946,16 @@ void CvDeal::endTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eToP
 		break;
 
 	case TRADE_RESOURCES:
+		if(isOOSLogging())
+		{
+			oosLog("AITrade"
+				,"Turn:%d,Player:%S,StopTrading:%S,ToPlayer:%S\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,GC.getCivilizationInfo(GET_PLAYER(eFromPlayer).getCivilizationType()).getDescription()
+				,GC.getBonusInfo((BonusTypes)trade.m_iData).getDescription()
+				,GC.getCivilizationInfo(GET_PLAYER(eToPlayer).getCivilizationType()).getDescription()
+			);
+		}
 		GET_PLAYER(eToPlayer).changeBonusImport(((BonusTypes)trade.m_iData), -1);
 		GET_PLAYER(eFromPlayer).changeBonusExport(((BonusTypes)trade.m_iData), -1);
 		break;
@@ -956,6 +966,16 @@ void CvDeal::endTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eToP
 		break;
 
 	case TRADE_GOLD_PER_TURN:
+		if(isOOSLogging())
+		{
+			oosLog("AITrade"
+				,"Turn:%d,Player:%S,StopTrading:%d,ToPlayer:%S\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,GC.getCivilizationInfo(GET_PLAYER(eFromPlayer).getCivilizationType()).getDescription()
+				,trade.m_iData
+				,GC.getCivilizationInfo(GET_PLAYER(eToPlayer).getCivilizationType()).getDescription()
+			);
+		}
 		GET_PLAYER(eFromPlayer).changeGoldPerTurnByPlayer(eToPlayer, trade.m_iData);
 		GET_PLAYER(eToPlayer).changeGoldPerTurnByPlayer(eFromPlayer, -(trade.m_iData));
 		break;

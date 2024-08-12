@@ -547,16 +547,16 @@ class WheelMultilayeredFractal(CvMapGeneratorUtil.MultilayeredFractal):
 
 class MoM_Wheel:		
 				
-	def getDescription():
+	def getDescription(self):
 		return "TXT_KEY_MAP_SCRIPT_WHEEL_DESCR"
 
-	def getNumCustomMapOptions():
+	def getNumCustomMapOptions(self):
 		"""
 		Number of different user-defined options for this map
 		"""
 		return 4
 		
-	def getCustomMapOptionName(argsList):
+	def getCustomMapOptionName(self,argsList):
 		"""
 		Returns name of specified option
 		argsList[0] is Option ID (int)
@@ -571,7 +571,7 @@ class MoM_Wheel:
 		translated_text = unicode(CyTranslator().getText(option_names[iOption], ()))
 		return translated_text
 		
-	def getNumCustomMapOptionValues(argsList):
+	def getNumCustomMapOptionValues(self,argsList):
 		[iOption] = argsList
 		option_values = {
 			0:	2,
@@ -581,7 +581,7 @@ class MoM_Wheel:
 			}
 		return option_values[iOption]
 		
-	def getCustomMapOptionDescAt(argsList):
+	def getCustomMapOptionDescAt(self,argsList):
 		[iOption, iSelection] = argsList
 		selection_names = {
 			0:	{
@@ -607,7 +607,7 @@ class MoM_Wheel:
 		translated_text = unicode(CyTranslator().getText(selection_names[iOption][iSelection], ()))
 		return translated_text
 		
-	def getCustomMapOptionDefault(argsList):
+	def getCustomMapOptionDefault(self,argsList):
 		[iOption] = argsList
 		option_defaults = {
 			0:	0,
@@ -617,15 +617,15 @@ class MoM_Wheel:
 			}
 		return option_defaults[iOption]
 
-	def getWrapX():
+	def getWrapX(self):
 		return False
-	def getWrapY():
+	def getWrapY(self):
 		return False
 
-	def isBonusIgnoreLatitude():
+	def isBonusIgnoreLatitude(self):
 		return True
 
-	def beforeGeneration():
+	def beforeGeneration(self):
 		# Set up land mass data for all players (Square Wheels) then access later.
 		gc = CyGlobalContext()
 		map = CyMap()
@@ -1142,7 +1142,7 @@ class MoM_Wheel:
 	invert_heights
 	'''
 
-	def generatePlotTypes():
+	def generatePlotTypes(self):
 		NiTextOut("Setting Plot Types (Python Wheel) ...")
 		gc = CyGlobalContext()
 		global map
@@ -1165,25 +1165,25 @@ class MoM_Wheel:
 			wheel_type = 0
 		return fractal_world.generatePlotsByRegion(wheel_type)
 		
-	def generateTerrainTypes():
+	def generateTerrainTypes(self):
 		NiTextOut("Generating Terrain (Python Wheel) ...")
 		terraingen = WheelTerrainGenerator()
 		terrainTypes = terraingen.generateTerrain()
 		return terrainTypes
 
-	def addFeatures():
+	def addFeatures(self):
 		NiTextOut("Adding Features (Python Wheel) ...")
 		featuregen = WheelFeatureGenerator()
 		featuregen.addFeatures()
 		return 0
 
-	def normalizeRemovePeaks():
+	def normalizeRemovePeaks(self):
 		return None
 
-	def normalizeRemoveBadTerrain():
+	def normalizeRemoveBadTerrain(self):
 		return None
 
-	def normalizeAddGoodTerrain():
+	def normalizeAddGoodTerrain(self):
 		return None
 
 mapscript = MoM_Wheel()
@@ -1192,17 +1192,17 @@ def getDescription():
 	return mapscript.getDescription()
 
 #MapOptions
-def isClimateMap():
-	return mapscript.isClimateMap()
+#def isClimateMap():
+#	return mapscript.isClimateMap()
 
-def isSeaLevelMap():
-	return mapscript.isSeaLevelMap()
+#def isSeaLevelMap():
+#	return mapscript.isSeaLevelMap()
 
 def getNumCustomMapOptions():
 	return mapscript.getNumCustomMapOptions()
 
-def getNumHiddenCustomMapOptions():
-	return mapscript.getNumHiddenCustomMapOptions()
+#def getNumHiddenCustomMapOptions():
+#	return mapscript.getNumHiddenCustomMapOptions()
 
 def getCustomMapOptionName(argsList):
 	return mapscript.getCustomMapOptionName(argsList)
@@ -1216,8 +1216,8 @@ def getCustomMapOptionDescAt(argsList):
 def getCustomMapOptionDefault(argsList):
 	return mapscript.getCustomMapOptionDefault(argsList)
 
-def isRandomCustomMapOption(argsList):
-	return mapscript.isRandomCustomMapOption(argsList)
+#def isRandomCustomMapOption(argsList):
+#	return mapscript.isRandomCustomMapOption(argsList)
 
 #general functions
 def beforeGeneration():
@@ -1229,11 +1229,11 @@ def getWrapX():
 def getWrapY():
 	return mapscript.getWrapY()
 	
-def getTopLatitude():
-	return mapscript.getTopLatitude()
+#def getTopLatitude():
+#	return mapscript.getTopLatitude()
 	
-def getBottomLatitude():
-	return mapscript.getBottomLatitude()
+#def getBottomLatitude():
+#	return mapscript.getBottomLatitude()
 
 def generatePlotTypes():
 	return mapscript.generatePlotTypes()
@@ -1244,11 +1244,11 @@ def generateTerrainTypes():
 def addFeatures():
 	return mapscript.addFeatures()
 	
-def addBonusType(argsList):	
-	return mapscript.addBonusType(argsList)		
+#def addBonusType(argsList):
+#	return mapscript.addBonusType(argsList)
 	
 def normalizeRemovePeaks():
-	return mapscript.normalizeRemovePeaks(argsList)		
+	return mapscript.normalizeRemovePeaks()
 
 def normalizeRemoveBadTerrain():
 	return mapscript.normalizeRemoveBadTerrain(argsList)		
@@ -1257,7 +1257,7 @@ def normalizeAddGoodTerrain():
 	return mapscript.normalizeAddGoodTerrain(argsList)		
 	
 def isBonusIgnoreLatitude():
-	return mapscript.isBonusIgnoreLatitude(argsList)		
+	return mapscript.isBonusIgnoreLatitude()
 
 def beforeGeneration():
-	return mapscript.beforeGeneration(argsList)			
+	return mapscript.beforeGeneration()

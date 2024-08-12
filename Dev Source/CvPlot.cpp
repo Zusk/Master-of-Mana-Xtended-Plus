@@ -28,6 +28,9 @@
 #include "CvGameTextMgr.h"
 #include "CvMapGenerator.h"
 
+// lfgr UI 11/2020: Allow cycling through units in plot help
+#include "PlotHelpCycling.h"
+
 #define STANDARD_MINIMAP_ALPHA		(0.6f)
 
 /*************************************************************************************************/
@@ -49,6 +52,7 @@ CvPlot::CvPlot()
 	m_aiYield = new short[NUM_YIELD_TYPES];
 
 	m_aiCulture = NULL;
+	m_aiCultureRangeForts = NULL; // Super Forts *culture*
 	m_aiFoundValue = NULL;
 	m_aiPlayerCityRadiusCount = NULL;
 	m_aiPlotGroup = NULL;
@@ -147,6 +151,7 @@ void CvPlot::uninit()
 	deleteAllSymbols();
 
 	SAFE_DELETE_ARRAY(m_aiCulture);
+	SAFE_DELETE_ARRAY(m_aiCultureRangeForts); // Super Forts *culture*
 	SAFE_DELETE_ARRAY(m_aiFoundValue);
 	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
 	SAFE_DELETE_ARRAY(m_aiPlotGroup);
@@ -225,6 +230,15 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_iMinOriginalStartDist = -1;
 	m_iReconCount = 0;
 	m_iRiverCrossingCount = 0;
+
+	// Super Forts begin *canal* *choke*
+	m_iCanalValue = 0;
+	m_iChokeValue = 0;
+	// Super Forts end
+	// Super Forts begin *bombard*
+	m_iDefenseDamage = 0;
+	m_bBombarded = false;
+	// Super Forts end
 
 	m_bStartingPlot = false;
 	m_bHills = false;
@@ -645,6 +659,16 @@ void CvPlot::doTurn()
 		}
 	}
 
+	// Super Forts begin *bombard*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (!isBombarded() && getDefenseDamage() > 0)
+		{
+			changeDefenseDamage(-(GC.getDefineINT("CITY_DEFENSE_DAMAGE_HEAL_RATE")));
+		}
+		setBombarded(false);
+	}
+	// Super Forts end
 
 	doFeature();
 
@@ -702,30 +726,272 @@ void CvPlot::doImprovement()
 	CvCity* pCity;
 	CvWString szBuffer;
 	int iI;
+	FAssert(isOwned());
+/*
+	bool bIncreasedSpawning = GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN);
+	if(!bIncreasedSpawning)
+	{
+		for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
+		{
+			int iChance = getBonusSpawnChance((BonusTypes)iI, getOwnerINLINE());
+			if(iChance > 0) {
+
+				if (GC.getGameINLINE().getSorenRandNum(10000, "Bonus Discovery") < iChance) {
+
+					setBonusType((BonusTypes)iI);
+
+					pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
+
+					if(isOOSLogging())
+					{
+						int iTotalPlotRandNumPerTurn = 0;
+						for(int i = 0; i < GC.getMapINLINE().numPlots(); +//0) {
+							CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndex(i);
+							if(pLoopPlot->isOwned() && !pLoopPlot->isWater() && pLoopPlot != this && pLoopPlot->getImprovementType() == NO_IMPROVEMENT && pLoopPlot->getBonusType() == NO_BONUS)
+							{
+								iTotalPlotRandNumPerTurn+//0;
+							}
+						}
+						CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+						CvImprovementInfo& kImprovement = GC.getImprovementInfo(getImprovementType());
+						ProjectTypes eFertileLands = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_FERTILE_LANDS");
+						ProjectTypes eArid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_ARID");
+						ProjectTypes eHumid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_HUMID");
+						ProjectTypes eGrow = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_EVERGROW");
+						bool adjacentBonusFound = false;
+						int iModifier = 0;
+						if (isOwned())
+						{
+							iModifier +//0= kPlayer.getDiscoverRandModifier();
+							for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK+//0)
+							{
+								CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+								if (pAdjacentPlot != NULL) {
+									if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+										if (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT) {
+											iModifier +//0= (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+										}
+										if (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == (BonusTypes)iI) {
+											adjacentBonusFound = true;
+										}
+									}
+								}
+							}
+						}
+
+						oosLog("ResourceSpawn"
+							,"Turn:%d,MapSize:%d,TotalPlot:%d,OwnedPlot:%d,LandPlot:%d,Chance:%d,X:%d,Y:%d,Owner:%d,Bonus:%S,TotalRand:%d,Base:%d,eFertileLands:%d,eArid:%d,eHumid:%d,eGrow:%d,MerchantDistrict:%d,Adjacent:%d,Modifier:%d+//0-n"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,GC.getMapINLINE().getWorldSize()
+							,GC.getMapINLINE().getGridWidth() * GC.getMapINLINE().getGridHeight()
+							,GC.getMapINLINE().getOwnedPlots()
+							,GC.getMapINLINE().getLandPlots()
+							,iChance
+							,getX()
+							,getY()
+							,getOwner()
+							,GC.getBonusInfo((BonusTypes)iI).getDescription()
+							,iTotalPlotRandNumPerTurn
+
+							,!isWater() ? kImprovement.getImprovementBonusDiscoverRand((BonusTypes)iI) : -1
+							,eFertileLands != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eFertileLands) > 0 ? 1 : 0
+							,eArid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eArid) > 0 ? 1 : 0
+							,eHumid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eHumid) > 0 ? 1 : 0
+							,eGrow != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eGrow) > 0 ? 1 : 0
+							,kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT())
+							,adjacentBonusFound
+							,iModifier
+						);
+					}
+
+					if (pCity != NULL) {
+						szBuffer = gDLL->getText("TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE", GC.getBonusInfo((BonusTypes) iI).getTextKeyWide(), pCity->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DISCOVERBONUS", MESSAGE_TYPE_MINOR_EVENT, GC.getBonusInfo((BonusTypes) iI).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+					}
+
+					break;
+				}
+			}
+		}
+		return;
+	}
+*/
 	std::vector<int> foundBonuses;
 	bool resourceFound = false;
-	FAssert(isOwned());
 
+	//SpyFanatic: shift array each turn so that first element is always different, giving some different chances of bonus to spawn. Testing with all increase the rand number and increase the spawning rate
+	std::vector<int> listBonus;
+	/*
+	int shifts = GC.getGameINLINE().getElapsedGameTurns() % GC.getNumBonusInfos();
+	for (iI = shifts; iI < GC.getNumBonusInfos(); ++iI)
+	{
+		listBonus.push_back(iI);
+	}
+	for (iI = 0; iI < shifts; ++iI)
+	{
+		listBonus.push_back(iI);
+	}
+	*/
 	for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 	{
+		BonusTypes eBonus = listBonus.size() != 0 ? (BonusTypes)listBonus.at(iI) : (BonusTypes)iI;
 		int iChance = 0;
 		
 		if (isWater())
-			iChance = getPossibleWaterBonusDiscoverChance((BonusTypes)iI, getOwnerINLINE());
+			iChance = getPossibleWaterBonusDiscoverChance(eBonus, getOwnerINLINE());
 		else
-			iChance = getLandBonusDiscoverChance((BonusTypes)iI, getOwnerINLINE()); 
+			iChance = getLandBonusDiscoverChance(eBonus, getOwnerINLINE());
 
-		if(iChance > 0) {
-
-			if (GC.getGameINLINE().getSorenRandNum(100000, "Bonus Discovery") < iChance) {
-				foundBonuses.push_back(iI);
+		if(iChance > 0)
+		{
+			//if (GC.getGameINLINE().getSorenRandNum(100000, "Bonus Discovery") < iChance)
+			if (GC.getGameINLINE().getSorenRandNum(10000, "Bonus Discovery") < iChance)
+			{
+				foundBonuses.push_back(eBonus);
 				resourceFound = true;
-			}	
+				//DEBUG
+				if(isOOSLogging())
+				{
+					int iTotalPlotRandNumPerTurn = 0;
+					for(int i = 0; i < GC.getMapINLINE().numPlots(); i++) {
+						CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndex(i);
+						if(pLoopPlot->isOwned() && !pLoopPlot->isWater() && pLoopPlot != this && pLoopPlot->getImprovementType() == NO_IMPROVEMENT && pLoopPlot->getBonusType() == NO_BONUS)
+						{
+							iTotalPlotRandNumPerTurn++;
+						}
+					}
+					CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+					if(!isWater())
+					{
+						CvImprovementInfo& kImprovement = GC.getImprovementInfo(getImprovementType());
+						ProjectTypes eFertileLands = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_FERTILE_LANDS");
+						ProjectTypes eArid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_ARID");
+						ProjectTypes eHumid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_HUMID");
+						ProjectTypes eGrow = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_EVERGROW");
+						bool adjacentBonusFound = false;
+						int iModifier = 0;
+						if (isOwned())
+						{
+							iModifier += kPlayer.getDiscoverRandModifier();
+							for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK++)
+							{
+								CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+								if (pAdjacentPlot != NULL) {
+									if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+										if (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT) {
+											iModifier += (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+										}
+										if (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus) {
+											adjacentBonusFound = true;
+										}
+									}
+								}
+							}
+						}
+						oosLog("ResourceSpawnLand"
+							,"Turn:%d,MapSize:%d,TotalPlot:%d,OwnedPlot:%d,LandPlot:%d,Chance:%d,X:%d,Y:%d,Owner:%d,Bonus:%S,TotalRand:%d,Base:%d,eFertileLands:%d,eArid:%d,eHumid:%d,eGrow:%d,MerchantDistrict:%d,Adjacent:%d,Modifier:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,GC.getMapINLINE().getWorldSize()
+							,GC.getMapINLINE().getGridWidth() * GC.getMapINLINE().getGridHeight()
+							,GC.getMapINLINE().getOwnedPlots()
+							,GC.getMapINLINE().getLandPlots()
+							,iChance
+							,getX()
+							,getY()
+							,getOwner()
+							,GC.getBonusInfo(eBonus).getDescription()
+							,iTotalPlotRandNumPerTurn
+
+							,kImprovement.getImprovementBonusDiscoverRand(eBonus)
+							,eFertileLands != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eFertileLands) > 0 ? 1 : 0
+							,eArid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eArid) > 0 ? 1 : 0
+							,eHumid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eHumid) > 0 ? 1 : 0
+							,eGrow != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eGrow) > 0 ? 1 : 0
+							,kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT())
+							,adjacentBonusFound
+							,iModifier
+						);
+					}
+					else
+					{
+						ProjectTypes eRichSeas = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_RICHES_OF_THE_SEA");
+						bool riverFound = false;
+						int iNearbyModifier = 0;
+						for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK++)
+						{
+							CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+							if (pAdjacentPlot != NULL && pAdjacentPlot->isWater()) {
+								if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+									if (((pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus && eBonus != GC.getInfoTypeForString("BONUS_WHALE"))
+										|| (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == GC.getInfoTypeForString("BONUS_FISH") && eBonus == GC.getInfoTypeForString("BONUS_WHALE")))) {
+										iNearbyModifier += GC.getBonusInfo(eBonus).getDiscoverRandModifier();
+									}
+								}
+							}
+							else if (pAdjacentPlot != NULL && pAdjacentPlot->isRiver()) {
+								if (pAdjacentPlot->getRiverNSDirection() == CARDINALDIRECTION_NORTH) {
+									if ((DirectionTypes)iK == DIRECTION_SOUTH || (DirectionTypes)iK == DIRECTION_SOUTHWEST) {
+										riverFound = true;
+									}
+								}
+								else if (pAdjacentPlot->getRiverNSDirection() == CARDINALDIRECTION_SOUTH) {
+									if ((DirectionTypes)iK == DIRECTION_NORTH || (DirectionTypes)iK == DIRECTION_NORTHWEST) {
+										riverFound = true;
+									}
+								}
+								else if (pAdjacentPlot->getRiverWEDirection() == CARDINALDIRECTION_EAST) {
+									if ((DirectionTypes)iK == DIRECTION_WEST || (DirectionTypes)iK == DIRECTION_NORTHWEST) {
+										riverFound = true;
+									}
+								}
+								else if (pAdjacentPlot->getRiverWEDirection() == CARDINALDIRECTION_WEST) {
+									if ((DirectionTypes)iK == DIRECTION_EAST || (DirectionTypes)iK == DIRECTION_NORTHEAST) {
+										riverFound = true;
+									}
+								}
+							}
+						}
+						oosLog("ResourceSpawnWater"
+							,"Turn:%d,MapSize:%d,TotalPlot:%d,OwnedPlot:%d,LandPlot:%d,Chance:%d,X:%d,Y:%d,Owner:%d,Bonus:%S,TotalRand:%d,Base:%d,eRichSeas:%d,Improvement:%d,Seafaring:%d,Kelp:%d,ReligionOO:%d,HeronThrone:%d,Harbour:%d,RiverFound:%d,NearbyModifier:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,GC.getMapINLINE().getWorldSize()
+							,GC.getMapINLINE().getGridWidth() * GC.getMapINLINE().getGridHeight()
+							,GC.getMapINLINE().getOwnedPlots()
+							,GC.getMapINLINE().getLandPlots()
+							,iChance
+							,getX()
+							,getY()
+							,getOwner()
+							,GC.getBonusInfo((BonusTypes)iI).getDescription()
+							,iTotalPlotRandNumPerTurn
+
+							,GC.getBonusInfo(eBonus).getDiscoverRandModifier()
+							,eRichSeas != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eRichSeas) > 0 ? 1 : 0
+							,getImprovementType() != NO_IMPROVEMENT ? 1 : 0
+							,kPlayer.isHasTech(GC.getInfoTypeForString("TECH_SEAFARING")) ? 1 : 0
+							,getFeatureType() == GC.getInfoTypeForString("FEATURE_KELP") ? 1 : 0
+							,kPlayer.getStateReligion() == RELIGION_OCTOPUS_OVERLORDS ? 1 : 0
+							,kPlayer.getBuildingClassCount((BuildingClassTypes) GC.getInfoTypeForString("BUILDINGCLASS_HERON_THRONE", false)) > 0 ? 1 : 0
+							,(getWorkingCity() != 0 && (getWorkingCity()->getNumActiveBuilding((BuildingTypes)GC.getInfoTypeForString("BUILDING_HARBOR", false)) > 0 || getWorkingCity()->getNumActiveBuilding((BuildingTypes) GC.getInfoTypeForString("BUILDING_HARBOR_LANUN", false)) > 0)) ? 1 : 0
+							,riverFound
+							,iNearbyModifier
+						);
+					}
+				}
+				//DEBUG
+				//if( !GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+				if(listBonus.size() != 0)
+				{
+					break; //Stop at first resource found
+				}
+			}
 		}
 	}
 
-	if (resourceFound) {
-		int bonus = foundBonuses.at(GC.getGameINLINE().getSorenRandNum(foundBonuses.size(), "Bonus Discovery"));
+	if (resourceFound)
+	{
+		int bonus = foundBonuses.at(foundBonuses.size() == 1 ? 0 : GC.getGameINLINE().getSorenRandNum(foundBonuses.size(), "Bonus Discovery Index"));
 		setBonusType((BonusTypes)bonus);
 
 		pCity = GC.getMapINLINE().findCity(getX_INLINE(), getY_INLINE(), getOwnerINLINE(), NO_TEAM, false);
@@ -744,6 +1010,52 @@ void CvPlot::doImprovementUpgrade()
 		ImprovementTypes eImprovementUpdrade = (ImprovementTypes)GC.getImprovementInfo(getImprovementType()).getImprovementUpgrade();
 		if (eImprovementUpdrade != NO_IMPROVEMENT)
 		{
+			// Super Forts begin *upgrade* - added if-else statement
+			if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0)
+			{
+					bool bDefenderFound = false;
+					CLinkList<IDInfo> oldUnits;
+					CLLNode<IDInfo>* pUnitNode = headUnitNode();
+					CvUnit* pLoopUnit;
+
+					while (pUnitNode != NULL)
+					{
+						oldUnits.insertAtEnd(pUnitNode->m_data);
+						pUnitNode = nextUnitNode(pUnitNode);
+					}
+
+					pUnitNode = oldUnits.head();
+
+					while (pUnitNode != NULL)
+					{
+						pLoopUnit = ::getUnit(pUnitNode->m_data);
+						pUnitNode = nextUnitNode(pUnitNode);
+
+						if(pLoopUnit->getFortifyTurns() > 0)
+						{
+							//SpyFanatic: must be also != NO_UNITCOMBAT
+							if (pLoopUnit->getTeam() == getTeam() && pLoopUnit->canDefend() && pLoopUnit->getUnitCombatType() != NO_UNITCOMBAT)
+							{
+								bDefenderFound = true;
+								break;
+							}
+						}
+					}
+
+					if(bDefenderFound)
+					{
+						//changeUpgradeProgress(calculateImprovementUpgradeRate(getImprovementType(), getOwnerINLINE()));
+
+						changeUpgradeProgress(GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeRate());
+
+						if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+						{
+							setImprovementType(eImprovementUpdrade);
+						}
+					}
+			}
+			else
+			{
 			if (isBeingWorked() || GC.getImprovementInfo(eImprovementUpdrade).isOutsideBorders())
 			{
 
@@ -787,16 +1099,37 @@ void CvPlot::doImprovementUpgrade()
 					setImprovementType(eImprovementUpdrade);
 				}
 			}
+			} // Super Forts end
 		}
 	}
 }
 
 void CvPlot::updateCulture(bool bBumpUnits, bool bUpdatePlotGroups)
 {
-	if (!isCity())
+	// Super Forts begin *culture*
+	bool bNotCityPlot = !isCity();
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && bNotCityPlot) //If its a city no need to check
+	{
+//oosLog("CultureFort","Plot %d %d noplayer:%d noimprovement:%d improvementculture:%d bNotCityPlot:%d",getX_INLINE(),getY_INLINE(),getOwnerINLINE() == NO_PLAYER,NO_IMPROVEMENT == getImprovementType(),NO_IMPROVEMENT != getImprovementType() ?GC.getImprovementInfo(getImprovementType()).getCulture() : -1,bNotCityPlot);
+//return (getPlotCity() != NULL);
+		if(getOwnerINLINE() == NO_PLAYER || NO_IMPROVEMENT == getImprovementType() || GC.getImprovementInfo(getImprovementType()).getCulture() <= 0)
+		{
+			bNotCityPlot = true;
+		}
+		else
+		{
+			bNotCityPlot = false;
+		}
+	}
+	if(bNotCityPlot)
+//if (!isCity(true) || (getOwnerINLINE() == NO_PLAYER))
+	//if (!isCity() || (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && (!isCity(true) || getOwnerINLINE() == NO_PLAYER)))
+//	if (!isCity() || (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && (!isCity(true) || getOwnerINLINE() == NO_PLAYER)))
+	// if (!isCity()) Original Code
 	{
 		setOwner(calculateCulturalOwner(), bBumpUnits, bUpdatePlotGroups);
 	}
+	// Super Forts end
 }
 
 
@@ -1115,6 +1448,9 @@ void CvPlot::updateCenterUnit()
 
 	setCenterUnit(getSelectedUnit());
 
+	// lfgr UI 11/2020: No cycling when a unit on this plot is selected (since the selected unit is alawys shown; can use plot list buttons instead)
+	bool bUsedSelectedUnit = ( getCenterUnit() != NULL );
+
 	if (getCenterUnit() == NULL)
 	{
 		setCenterUnit(getBestDefender(GC.getGameINLINE().getActivePlayer(), NO_PLAYER, NULL, false, false, true));
@@ -1138,6 +1474,30 @@ void CvPlot::updateCenterUnit()
 	if (getCenterUnit() == NULL)
 	{
 		setCenterUnit(getBestDefender(NO_PLAYER, GC.getGameINLINE().getActivePlayer()));
+	}
+	// lfgr UI 11/2020: Consider cycling
+	if( getCenterUnit() != NULL && !bUsedSelectedUnit && PlotHelpCyclingManager::getInstance().getCycleIdx() != 0 )
+	{
+		std::vector<CvUnit *> plotUnits;
+		GC.getGameINLINE().getPlotUnits( this, plotUnits );
+		int iCenterUnitIdx = -1;
+		for( int i = 0; i < (int) plotUnits.size(); i++ )
+		{
+			if( plotUnits.at( i ) == getCenterUnit() )
+			{
+				iCenterUnitIdx = i;
+				break;
+			}
+		}
+		FAssertMsg( iCenterUnitIdx != -1, "Center unit not found in unit list." )
+
+		int iNewIdx = iCenterUnitIdx + PlotHelpCyclingManager::getInstance().getCycleIdx();
+		iNewIdx %= plotUnits.size();
+		if( iNewIdx < 0 )
+		{
+			iNewIdx += plotUnits.size();
+		}
+		setCenterUnit( plotUnits.at( iNewIdx ) );
 	}
 }
 
@@ -1357,8 +1717,23 @@ void CvPlot::nukeExplosion(int iRange, CvUnit* pNukeUnit)
 
 bool CvPlot::isConnectedTo(const CvCity* pCity) const
 {
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+	if(isOwned())
+	{
+		return ((getPlotGroup(getOwnerINLINE()) == pCity->plotGroup(getOwnerINLINE())) || (getPlotGroup(pCity->getOwnerINLINE()) == pCity->plotGroup(pCity->getOwnerINLINE())));
+	}
+	else
+	{
+		return false;
+	}
+	}
+	else
+	{
 	FAssert(isOwned());
 	return ((getPlotGroup(getOwnerINLINE()) == pCity->plotGroup(getOwnerINLINE())) || (getPlotGroup(pCity->getOwnerINLINE()) == pCity->plotGroup(pCity->getOwnerINLINE())));
+	}
+	// Super Forts end
 }
 
 
@@ -1480,6 +1855,8 @@ void CvPlot::updatePlotGroupBonus(bool bAdd)
 			if (GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getBonusInfo(eNonObsoleteBonus).getTechCityTrade())))
 			{
 				if (isCity(true, getTeam()) ||
+					//SpyFanatic: add also forts to connect to bonus
+					(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).getCulture() > 0) ||
 					((getImprovementType() != NO_IMPROVEMENT) && GC.getImprovementInfo(getImprovementType()).isImprovementBonusTrade(eNonObsoleteBonus)))
 				{
 					if ((pPlotGroup != NULL) && isBonusNetwork(getTeam()))
@@ -1976,6 +2353,13 @@ int CvPlot::seeFromLevel(TeamTypes eTeam) const
 	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
 
 	iLevel = GC.getTerrainInfo(getTerrainType()).getSeeFromLevel();
+
+	// Super Forts begin *vision*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && getImprovementType() != NO_IMPROVEMENT)
+	{
+		iLevel += GC.getImprovementInfo(getImprovementType()).getSeeFrom();
+	}
+	// Super Forts end
 
 	if (isPeak())
 	{
@@ -2549,7 +2933,7 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 	return true;
 }
 
-bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, bool bPotential) const
+bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, bool bPotential, bool bIgnoreFeature) const
 {
 	CvPlot* pLoopPlot;
 	bool bValid;
@@ -2592,7 +2976,6 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		}
     }
 //FfH: End Modify
-
 	if (!GC.getMapINLINE().useClimateBasedStartPos() && GC.getMap().isPlanes()) {
 		if (GC.getImprovementInfo(eImprovement).getNativePlane() != NO_PLANE) {
 			if(getPlane() != GC.getImprovementInfo(eImprovement).getNativePlane()) {
@@ -2608,7 +2991,6 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 	
-
 	if (GC.getImprovementInfo(eImprovement).isWater() != isWater())
 	{
 		return false;
@@ -2706,7 +3088,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
-		if (calculateNatureYield(((YieldTypes)iI), eTeam) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI))
+		if (calculateNatureYield(((YieldTypes)iI), eTeam, bIgnoreFeature) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI))
 		{
 			return false;
 		}
@@ -2776,6 +3158,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
     }
 //FfH: End Add
 
+
 	ImprovementTypes eImprovement;
 	ImprovementTypes eFinalImprovementType;
 	RouteTypes eRoute;
@@ -2812,17 +3195,54 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	if (eImprovement != NO_IMPROVEMENT)
 	{
-		if (!canHaveImprovement(eImprovement, GET_PLAYER(ePlayer).getTeam(), bTestVisible))
+		//SpyFanatic: if the build will remove the feature check without considering the feature (e.g. farm on a pasture/jungle plot near a river)
+		bool bIgnoreFeature = getFeatureType() != NO_FEATURE && GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType());
+		if (!canHaveImprovement(eImprovement, GET_PLAYER(ePlayer).getTeam(), bTestVisible, bIgnoreFeature))
 		{
 			return false;
 		}
+
+		// Super Forts begin *build*
+		if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(eImprovement).getUniqueRange() > 0)
+		{
+			int iUniqueRange = GC.getImprovementInfo(eImprovement).getUniqueRange();
+			for (int iDX = -iUniqueRange; iDX <= iUniqueRange; iDX++) 
+			{
+				for (int iDY = -iUniqueRange; iDY <= iUniqueRange; iDY++)
+				{
+					CvPlot *pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+					if (pLoopPlot != NULL && pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
+					{
+						if (finalImprovementUpgrade(pLoopPlot->getImprovementType()) == finalImprovementUpgrade(eImprovement))
+						{
+							return false;
+						}
+					}
+				}
+			}
+		}
+		// Super Forts end
 
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
 			if (GC.getImprovementInfo(getImprovementType()).isPermanent())
 			{
-				return false;
+				//SpyFanatic: allow destroy of mana shrine, witch hut and ancient tower for human player
+				if(!GET_PLAYER(ePlayer).isHuman() || (getImprovementType() != (ImprovementTypes)GC.getIMPROVEMENT_MANA_SHRINE() && getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_WITCH_HUT") && getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TOWER") && getImprovementType() != (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_LOST_TEMPLE")))
+				{
+					return false;
+				}
 			}
+
+			// Super Forts begin *AI_worker* - prevent forts from being built over when outside culture range
+			if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0 /*isActsAsCity()*/)
+			{
+				if (!isWithinCultureRange(ePlayer) && !(getCultureRangeForts(ePlayer) > 1))
+				{
+					return false;
+				}
+			}
+			// Super Forts end
 
 			if (getImprovementType() == eImprovement)
 			{
@@ -2857,6 +3277,42 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 					return false;
 				}
 			}
+			// Super Forts begin *AI_worker* - prevent workers from two different players from building a fort in the same plot
+			if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(eImprovement).getCulture() > 0 /*isActsAsCity()*/)
+			{
+				CLinkList<IDInfo> oldUnits;
+				CLLNode<IDInfo>* pUnitNode = headUnitNode();
+				CvUnit* pLoopUnit;
+
+				while (pUnitNode != NULL)
+				{
+					oldUnits.insertAtEnd(pUnitNode->m_data);
+					pUnitNode = nextUnitNode(pUnitNode);
+				}
+
+				pUnitNode = oldUnits.head();
+
+				while (pUnitNode != NULL)
+				{
+					pLoopUnit = ::getUnit(pUnitNode->m_data);
+					pUnitNode = nextUnitNode(pUnitNode);
+					if(pLoopUnit->getOwner() != ePlayer)	
+					{
+						if(pLoopUnit->getBuildType() != NO_BUILD)
+						{
+							ImprovementTypes eImprovementBuild = (ImprovementTypes)(GC.getBuildInfo(pLoopUnit->getBuildType()).getImprovement());
+							if(eImprovementBuild != NO_IMPROVEMENT)
+							{
+								if(GC.getImprovementInfo(eImprovementBuild).isActsAsCity())
+								{
+									return false;
+								}
+							}
+						}
+					}
+				}
+			}
+			// Super Forts end
 		}
 
 		bValid = true;
@@ -3228,6 +3684,506 @@ int CvPlot::getUnitPower(PlayerTypes eOwner) const
 	return iCount;
 }
 
+// Super Forts begin *bombard*
+bool CvPlot::isBombardable(const CvUnit* pUnit) const
+{
+	ImprovementTypes eImprovement;
+
+	if (NULL != pUnit && !pUnit->isEnemy(getTeam()))
+	{
+		return false;
+	}
+
+	eImprovement = getImprovementType();
+	if(eImprovement == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+	else
+	{
+		if(GC.getImprovementInfo(eImprovement).isBombardable())
+		{
+			return (getDefenseDamage() < GC.getImprovementInfo(eImprovement).getDefenseModifier());
+		}
+	}
+	return false;
+}
+
+bool CvPlot::isBombarded() const
+{
+	return m_bBombarded;
+}
+
+void CvPlot::setBombarded(bool bNewValue)
+{
+	m_bBombarded = bNewValue;
+}
+
+int CvPlot::getDefenseDamage() const																
+{
+	return m_iDefenseDamage;
+}
+
+void CvPlot::changeDefenseDamage(int iChange)
+{
+	if ((iChange != 0) && (getImprovementType() != NO_IMPROVEMENT))
+	{
+		m_iDefenseDamage = range((m_iDefenseDamage + iChange), 0, GC.getImprovementInfo(getImprovementType()).getDefenseModifier());
+
+		if (iChange > 0)
+		{
+			setBombarded(true);
+		}
+	}
+}
+// Super Forts end
+
+// Super Forts begin *culture*
+int CvPlot::getCultureRangeForts(PlayerTypes ePlayer) const
+{
+	if (NULL == m_aiCultureRangeForts)
+	{
+		return 0;
+	}
+
+	return m_aiCultureRangeForts[ePlayer];
+}
+
+void CvPlot::setCultureRangeForts(PlayerTypes ePlayer, int iNewValue)
+{
+	if (getCultureRangeForts(ePlayer) != iNewValue /*&& ePlayer < BARBARIAN_PLAYER*/)
+	{
+		if(NULL == m_aiCultureRangeForts)
+		{
+			m_aiCultureRangeForts = new short[MAX_PLAYERS];
+			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
+			{
+				m_aiCultureRangeForts[iI] = 0;
+			}
+		}
+
+		m_aiCultureRangeForts[ePlayer] = iNewValue;
+		
+		if(getCulture(ePlayer) == 0)
+		{
+			changeCulture(ePlayer, 1, false);
+		}
+	}
+}
+
+void CvPlot::changeCultureRangeForts(PlayerTypes ePlayer, int iChange)
+{
+	if (0 != iChange)
+	{
+		setCultureRangeForts(ePlayer, (getCultureRangeForts(ePlayer) + iChange));
+	}
+}
+
+bool CvPlot::isWithinFortCultureRange(PlayerTypes ePlayer) const
+{
+	return (getCultureRangeForts(ePlayer) > 0);
+}
+
+void CvPlot::changeCultureRangeFortsWithinRange(PlayerTypes ePlayer, int iChange, int iRange, bool bUpdate)
+{
+	CvPlot* pLoopPlot;
+	int iDX, iDY;
+	int iCultureDistance;
+
+	if ((0 != iChange) && (iRange >= 0) /*&& ePlayer < BARBARIAN_PLAYER*/)
+	{
+		for (iDX = -iRange; iDX <= iRange; iDX++)
+		{
+			for (iDY = -iRange; iDY <= iRange; iDY++)
+			{
+				iCultureDistance = plotDistance(0, 0, iDX, iDY);
+
+				if(iCultureDistance <= iRange)
+				{
+					pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+
+					if (pLoopPlot != NULL)
+					{
+						pLoopPlot->changeCultureRangeForts(ePlayer, iChange);
+//oosLog("CultureFort","Plot %d %d update:%d change:%d range:%d x:%d y:%d",getX_INLINE(),getY_INLINE(),bUpdate,iChange,iRange,pLoopPlot->getX_INLINE(),pLoopPlot->getY_INLINE());
+						if(bUpdate)
+						{
+							pLoopPlot->updateCulture(true,true);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+void CvPlot::doImprovementCulture()
+{
+	CvPlot* pLoopPlot;
+	int iDX, iDY;
+	int iCultureDistance, iCulture, iCultureRange;
+	ImprovementTypes eImprovement;
+	PlayerTypes ePlayer;
+
+	eImprovement = getImprovementType();
+	if (eImprovement != NO_IMPROVEMENT)
+	{
+		ePlayer = getOwnerINLINE();
+		if(ePlayer != NO_PLAYER /* && ePlayer < BARBARIAN_PLAYER*/)
+		{
+			iCulture = GC.getImprovementInfo(eImprovement).getCulture();
+			if(iCulture > 0)
+			{
+				iCultureRange = GC.getImprovementInfo(eImprovement).getCultureRange();
+				
+				if(iCultureRange > 0)
+				{
+					for (iDX = -iCultureRange; iDX <= iCultureRange; iDX++)
+					{
+						for (iDY = -iCultureRange; iDY <= iCultureRange; iDY++)
+						{
+							iCultureDistance = plotDistance(0, 0, iDX, iDY);
+
+							if(iCultureDistance <= iCultureRange)
+							{
+								pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+
+								if (pLoopPlot != NULL)
+								{
+									int iChange = ((iCultureRange - ((iCultureDistance == 0) ? 1 : iCultureDistance))*iCulture) + iCulture;
+									pLoopPlot->changeCulture(ePlayer,iChange,false);
+								}
+							}
+						}
+					}
+				}
+				else
+				{
+					changeCulture(ePlayer,iCulture,false);
+				}
+			}
+		}
+	}
+}
+// Super Forts end
+
+// Super Forts begin *canal* *choke*
+int CvPlot::countRegionPlots(const CvPlot* pInvalidPlot) const
+{
+	int iCount = 0;
+	int iInvalidPlot = (pInvalidPlot == NULL) ? 0 : GC.getMapINLINE().plotNum(pInvalidPlot->getX_INLINE(), pInvalidPlot->getY_INLINE()) + 1;
+	FAStar* pRegionFinder = gDLL->getFAStarIFace()->create();
+	gDLL->getFAStarIFace()->Initialize(pRegionFinder, GC.getMapINLINE().getGridWidthINLINE(), GC.getMapINLINE().getGridHeightINLINE(), GC.getMapINLINE().isWrapXINLINE(), GC.getMapINLINE().isWrapYINLINE(), 
+		NULL, NULL, NULL, stepValid, NULL, countPlotGroup, NULL);
+	gDLL->getFAStarIFace()->SetData(pRegionFinder, &iCount);
+	// Note to self: for GeneratePath() should bReuse be true or false?
+	gDLL->getFAStarIFace()->GeneratePath(pRegionFinder, getX_INLINE(), getY_INLINE(), -1, -1, false, iInvalidPlot, false);
+	gDLL->getFAStarIFace()->destroy(pRegionFinder);
+	return iCount;
+}
+
+int CvPlot::countAdjacentPassableSections(bool bWater) const
+{
+	CvPlot* pAdjacentPlot;
+	int iPassableSections = 0;
+	bool bInPassableSection = false;
+
+	// Are we looking for water passages or land passages?
+	if(bWater)
+	{
+		bool bPlotIsWater = isWater();
+		// This loop is for water
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if(pAdjacentPlot != NULL)
+			{
+				if(pAdjacentPlot->isWater())
+				{
+					// Don't count diagonal hops across land isthmus
+					if (bPlotIsWater && !isCardinalDirection((DirectionTypes)iI))
+					{
+						if (!(GC.getMapINLINE().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMapINLINE().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
+						{
+							continue;
+						}
+					}
+					if(pAdjacentPlot->isImpassable())
+					{
+						if(isCardinalDirection((DirectionTypes)iI))
+						{
+							bInPassableSection = false;
+						}
+					}
+					else if(!bInPassableSection)
+					{
+						bInPassableSection = true;
+						++iPassableSections;
+					}
+				}
+				else
+				{
+					bInPassableSection = false;
+				}
+			}
+		}
+	}
+	else
+	{
+		// This loop is for land
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if(pAdjacentPlot != NULL)
+			{
+				if(pAdjacentPlot->isWater() || pAdjacentPlot->isImpassable())
+				{	
+					if(isCardinalDirection((DirectionTypes)iI))
+					{
+						bInPassableSection = false;
+					}
+				}
+				else if(!bInPassableSection)
+				{
+					bInPassableSection = true;
+					++iPassableSections;
+				}
+			}
+		}
+	}
+	// Corner Case Correction
+	pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_NORTH);
+	if(pAdjacentPlot != NULL && (bWater == pAdjacentPlot->isWater()) && !pAdjacentPlot->isImpassable())
+	{
+		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_NORTHWEST);
+		if(pAdjacentPlot != NULL && (bWater == pAdjacentPlot->isWater()))
+		{
+			if(pAdjacentPlot->isImpassable())
+			{
+				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_WEST);
+				if(pAdjacentPlot != NULL && (bWater == pAdjacentPlot->isWater()) && !pAdjacentPlot->isImpassable())
+				{
+					--iPassableSections;
+				}
+			}
+			else
+			{
+				--iPassableSections;
+			}
+		}
+		else if(!bWater)
+		{
+			pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_WEST);
+			if(pAdjacentPlot != NULL && !pAdjacentPlot->isWater() && !pAdjacentPlot->isImpassable())
+			{
+				--iPassableSections;
+			}
+		}
+	}
+	return iPassableSections;
+}
+
+int CvPlot::countImpassableCardinalDirections() const
+{
+	CvPlot* pAdjacentPlot;
+	int iCount = 0;
+	for(int iI = 0; iI < NUM_CARDINALDIRECTION_TYPES; ++iI)
+	{
+		pAdjacentPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
+		if(pAdjacentPlot != NULL)
+		{
+			if(pAdjacentPlot->isImpassable() || (area() != pAdjacentPlot->area()))
+			{
+				++iCount;
+			}
+		}
+	}
+	return iCount;
+}
+// Super Forts end
+
+// Super Forts begin *canal*
+int CvPlot::getCanalValue() const																
+{
+	return m_iCanalValue;
+}
+
+void CvPlot::setCanalValue(int iNewValue)
+{
+	m_iCanalValue = iNewValue;
+}
+
+void CvPlot::calculateCanalValue()
+{
+	bool bInWaterSection;
+	CvPlot *pAdjacentPlot, *apPlotsToCheck[4];
+	int iWaterSections, iPlotsFound, iMaxDistance;
+	int iCanalValue = 0;
+
+	if(isCoastalLand() && !isImpassable())
+	{
+		iWaterSections = countAdjacentPassableSections(true);
+		if(iWaterSections > 1)
+		{
+			iMaxDistance = 0;
+			iPlotsFound = 0;
+			bInWaterSection = false;
+			// Find appropriate plots to be used for path distance calculations
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+			{
+				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+				if(pAdjacentPlot != NULL)
+				{
+					if(pAdjacentPlot->isWater())
+					{
+						if(pAdjacentPlot->isImpassable())
+						{
+							if(isCardinalDirection((DirectionTypes)iI))
+							{
+								bInWaterSection = false;
+							}
+						}
+						else if(!bInWaterSection)
+						{
+							bInWaterSection = true;
+							apPlotsToCheck[iPlotsFound] = pAdjacentPlot;
+							if((++iPlotsFound) == iWaterSections)
+								break;
+						}
+					}
+					else
+					{
+						bInWaterSection = false;
+					}
+				}
+			}
+			// Find the max path distance out of all possible pairs of plots
+			for (int iI = 0; iI < (iPlotsFound - 1); ++iI)
+			{
+				for (int iJ = iI + 1; iJ < iPlotsFound; ++iJ)
+				{
+					if(!apPlotsToCheck[iI]->isLake() || !apPlotsToCheck[iJ]->isLake())
+					{
+						int iDistance = GC.getMapINLINE().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ]);
+						if(iDistance == -1)
+						{
+						
+							// If no path was found then value is based off the number of plots in the region minus a minimum area
+							iDistance = std::min(apPlotsToCheck[iI]->countRegionPlots(), apPlotsToCheck[iJ]->countRegionPlots()) - 7;
+							iDistance *= 4;
+						}
+						else
+						{
+							// Path already would have required 2 steps, and I don't care that much about saving just 1 or 2 moves
+							iDistance -= 4;
+						}
+						if(iDistance > iMaxDistance)
+						{
+							iMaxDistance = iDistance;
+						}
+					}
+				}
+			}
+			iCanalValue = iMaxDistance * (iPlotsFound - 1);
+		}
+	}
+	setCanalValue(iCanalValue);
+}
+// Super Forts end
+
+// Super Forts begin *choke*
+int CvPlot::getChokeValue() const
+{
+	return m_iChokeValue;
+}
+
+void CvPlot::setChokeValue(int iNewValue)
+{
+	m_iChokeValue = iNewValue;
+}
+
+void CvPlot::calculateChokeValue()
+{
+	bool bInPassableSection;
+	CvPlot *pAdjacentPlot, *apPlotsToCheck[4];
+	int iPassableSections, iPlotsFound, iMaxDistance;
+	int iChokeValue = 0;
+	bool bWater = isWater();
+
+	if(!isImpassable() && countImpassableCardinalDirections() > 1)
+	{
+		iPassableSections = countAdjacentPassableSections(bWater);
+		if(iPassableSections > 1)
+		{
+			iMaxDistance = 0;
+			iPlotsFound = 0;
+			bInPassableSection = false;
+			// Find appropriate plots to be used for path distance calculations
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+			{
+				pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+				if(pAdjacentPlot != NULL)
+				{
+					if(pAdjacentPlot->isWater() == bWater)
+					{	
+						// Don't count diagonal hops across land isthmus
+						if (bWater && !isCardinalDirection((DirectionTypes)iI))
+						{
+							if (!(GC.getMapINLINE().plotINLINE(getX_INLINE(), pAdjacentPlot->getY_INLINE())->isWater()) && !(GC.getMapINLINE().plotINLINE(pAdjacentPlot->getX_INLINE(), getY_INLINE())->isWater()))
+							{
+								continue;
+							}
+						}
+						if(pAdjacentPlot->isImpassable())
+						{
+							if(isCardinalDirection((DirectionTypes)iI))
+							{
+								bInPassableSection = false;
+							}
+						}
+						else if(!bInPassableSection)
+						{
+							bInPassableSection = true;
+							apPlotsToCheck[iPlotsFound] = pAdjacentPlot;
+							if((++iPlotsFound) == iPassableSections)
+								break;
+						}
+					}
+					else if(bWater || isCardinalDirection((DirectionTypes)iI))
+					{
+						bInPassableSection = false;
+					}
+				}
+			}
+			// Find the max path distance out of all possible pairs of plots
+			for (int iI = 0; iI < (iPlotsFound - 1); ++iI)
+			{
+				for (int iJ = iI + 1; iJ < iPlotsFound; ++iJ)
+				{
+					int iDistance = GC.getMapINLINE().calculatePathDistance(apPlotsToCheck[iI], apPlotsToCheck[iJ], this);
+					if(iDistance == -1)
+					{
+						// If no path was found then value is based off the number of plots in the region minus a minimum area
+						iDistance = std::min(apPlotsToCheck[iI]->countRegionPlots(this), apPlotsToCheck[iJ]->countRegionPlots(this)) - 4;
+						iDistance *= 4;
+					}
+					else
+					{
+						// Path already would have required 2 steps, but we forced the enemy to go another way so there is some value
+						iDistance -= 1;
+					}
+					if(iDistance > iMaxDistance)
+					{
+						iMaxDistance = iDistance;
+					}
+				}
+			}
+			iChokeValue = iMaxDistance * (iPlotsFound - 1);
+		}
+	}
+	setChokeValue(iChokeValue);
+}
+// Super Forts end
 
 int CvPlot::defenseModifier(TeamTypes eDefender, bool bIgnoreBuilding, bool bHelp) const
 {
@@ -3270,7 +4226,10 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bIgnoreBuilding, bool bHel
 	{
 		if (eDefender != NO_TEAM && (getTeam() == NO_TEAM || GET_TEAM(eDefender).isFriendlyTerritory(getTeam())))
 		{
-			iModifier += GC.getImprovementInfo(eImprovement).getDefenseModifier();
+			// Super Forts begin *bombard*
+			iModifier += GC.getImprovementInfo(eImprovement).getDefenseModifier() -  (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ? getDefenseDamage() : 0);
+			// iModifier += GC.getImprovementInfo(eImprovement).getDefenseModifier(); - Original code
+			// Super Forts end
 		}
 	}
 
@@ -3544,7 +4503,10 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 			if (iCulture > 0)
 			{
-				if (isWithinCultureRange((PlayerTypes)iI))
+				// Super Forts begin *culture* - modified if statement
+				if (isWithinCultureRange((PlayerTypes)iI) || (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && /*((PlayerTypes)iI) < BARBARIAN_PLAYER &&*/ isWithinFortCultureRange((PlayerTypes)iI)))
+				//if (isWithinCultureRange((PlayerTypes)iI)) - Original Code
+				// Super Forts end
 				{
 					if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
 					{
@@ -3635,7 +4597,10 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 			}
 		}
 
-		if (!bValid)
+		if (!bValid
+			// Super Forts begin *culture*
+			|| (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && !GET_PLAYER(eBestPlayer).isAlive()))
+			// Super Forts end
 		{
 			eBestPlayer = NO_PLAYER;
 		}
@@ -3945,6 +4910,14 @@ bool CvPlot::isCity(bool bCheckImprovement, TeamTypes eForTeam) const
 				return true;
 			}
 		}
+		//SpyFanatic: super forts are friendly cities
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0)
+		{
+			if (NO_TEAM == eForTeam || (NO_TEAM == getTeam() && GC.getImprovementInfo(getImprovementType()).isOutsideBorders()) || GET_TEAM(eForTeam).isFriendlyTerritory(getTeam()))
+			{
+				return true;
+			}
+		}
 	}
 
 	return (getPlotCity() != NULL);
@@ -3996,6 +4969,16 @@ bool CvPlot::isFriendlyCity(const CvUnit& kUnit, bool bCheckImprovement) const
 
 bool CvPlot::isEnemyCity(const CvUnit& kUnit) const
 {
+	// Super Forts begin *culture*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		TeamTypes ePlotTeam = getTeam();
+		if (isCity(true) && (ePlotTeam != NO_TEAM))
+		{
+			return kUnit.isEnemy(ePlotTeam, this);
+		}
+		return false;
+	}
 	CvCity* pCity = getPlotCity();
 
 	if (pCity != NULL)
@@ -4082,6 +5065,35 @@ int CvPlot::getNumVisiblePotentialEnemyDefenders(const CvUnit* pUnit) const
 bool CvPlot::isVisibleEnemyUnit(PlayerTypes ePlayer) const
 {
 	return (plotCheck(PUF_isEnemy, ePlayer, false, NO_PLAYER, NO_TEAM, PUF_isVisible, ePlayer) != NULL);
+}
+
+bool CvPlot::isVisibleEnemyUnitNoBarbarian(PlayerTypes ePlayer) const
+{
+	CLLNode<IDInfo>* pUnitNode;
+	CvUnit* pLoopUnit;
+
+	pUnitNode = headUnitNode();
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getOwnerINLINE() < BARBARIAN_PLAYER)
+		{
+			if (pLoopUnit->getTeam() < BARBARIAN_TEAM)
+			{
+				if (PUF_isEnemy(pLoopUnit, ePlayer, false))
+				{
+					if (PUF_isVisible(pLoopUnit, ePlayer, -1))
+					{
+						return pLoopUnit;
+					}
+				}
+			}
+		}
+	}
+	return NULL;
 }
 
 int CvPlot::getNumVisibleUnits(PlayerTypes ePlayer) const
@@ -4638,7 +5650,17 @@ void CvPlot::setArea(int iNewValue)
 	if (getArea() != iNewValue)
 	{
 		bOldLake = isLake();
-
+/*
+		oosLog("AreaPower"
+			,"Turn: %d,Player:%d,X:%d,Y:%d,FromArea:%d,ToAfter:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getX_INLINE()
+			,getY_INLINE()
+			,m_iArea
+			,iNewValue
+		);
+*/
 		if (area() != NULL)
 		{
 			processArea(area(), -1);
@@ -4746,6 +5768,17 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	{
 		return iUpgradeLeft;
 	}
+	//SpyFanatic: what about improvement that does not have an upgrade or the upgrade is not for your civilization
+	if(GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT)
+	{
+		return 0;
+	}
+	ImprovementTypes eImprovementUpgrade = (ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+	if(GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() != NO_CIVILIZATION && GC.getImprovementInfo(eImprovementUpgrade).getPrereqCivilization() != GET_PLAYER(ePlayer).getCivilizationType())
+	{
+		return 0;
+	}
+	//SpyFanatic end
 
 	iUpgradeRate = calculateImprovementUpgradeRate(eImprovement, ePlayer);
 		
@@ -5456,6 +6489,13 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 				if (getImprovementType() != NO_IMPROVEMENT)
 				{
 					GET_PLAYER(getOwnerINLINE()).changeImprovementCount(getImprovementType(), -1);
+					// Super Forts begin *culture*
+//oosLog("CultureFort","Plot %d %d Improvement:%S culture:%d setOwner",getX_INLINE(),getY_INLINE(),GC.getImprovementInfo(getImprovementType()).getDescription(),GC.getImprovementInfo(getImprovementType()).getCulture());
+					if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0 /*.isActsAsCity() && getOwnerINLINE() < BARBARIAN_PLAYER*/)
+					{
+						changeCultureRangeFortsWithinRange(getOwnerINLINE(), -1, GC.getImprovementInfo(getImprovementType()).getCultureRange(), false);
+					}
+					// Super Forts end
 				}
 
 				updatePlotGroupBonus(false);
@@ -5475,6 +6515,19 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 //					GET_PLAYER(pLoopUnit->getOwnerINLINE()).changeNumOutsideUnits(-1);
                     if (pLoopUnit->getDuration() == 0 && pLoopUnit->getUnitInfo().isCitySupportNeeded())
                     {
+						/*if(isOOSLogging())
+						{
+							oosLog("OutSideUnit"
+								,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numoutsideunits:%d,setOwner:-1"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,pLoopUnit->getOwnerINLINE()
+								,pLoopUnit->getID()
+								,pLoopUnit->getName().GetCString()
+								,getX_INLINE()
+								,getY_INLINE()
+								,GET_PLAYER(pLoopUnit->getOwnerINLINE()).getNumOutsideUnits()
+							);
+						}*/
                         GET_PLAYER(pLoopUnit->getOwnerINLINE()).changeNumOutsideUnits(-1);
                     }
 //FfH: End Modify
@@ -5518,6 +6571,14 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 				if (getImprovementType() != NO_IMPROVEMENT)
 				{
 					GET_PLAYER(getOwnerINLINE()).changeImprovementCount(getImprovementType(), 1);
+			// Super Forts begin *culture*
+
+			if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0/*.isActsAsCity()*/)
+			{
+//oosLog("CultureFort","Plot %d %d Improvement:%S culture:%d setOwner",getX_INLINE(),getY_INLINE(),GC.getImprovementInfo(getImprovementType()).getDescription(),GC.getImprovementInfo(getImprovementType()).getCulture());
+				changeCultureRangeFortsWithinRange(getOwnerINLINE(), 1, GC.getImprovementInfo(getImprovementType()).getCultureRange(), true);
+			}
+			// Super Forts end
 				}
 
 				updatePlotGroupBonus(true);
@@ -5537,6 +6598,19 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 //					GET_PLAYER(pLoopUnit->getOwnerINLINE()).changeNumOutsideUnits(1);
                     if (pLoopUnit->getDuration() == 0 && pLoopUnit->getUnitInfo().isCitySupportNeeded())
                     {
+						/*if(isOOSLogging())
+						{
+							oosLog("OutSideUnit"
+								,"Turn:%d,Player:%d,Unit:%d,Name:%S,X:%d,Y:%d,numoutsideunits:%d,setOwner:1"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,pLoopUnit->getOwnerINLINE()
+								,pLoopUnit->getID()
+								,pLoopUnit->getName().GetCString()
+								,getX_INLINE()
+								,getY_INLINE()
+								,GET_PLAYER(pLoopUnit->getOwnerINLINE()).getNumOutsideUnits()
+							);
+						}*/
                         GET_PLAYER(pLoopUnit->getOwnerINLINE()).changeNumOutsideUnits(1);
                     }
 //FfH: End Modify
@@ -6320,8 +7394,21 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue, bool bWorker)
 			if (isOwned())
 			{
 				GET_PLAYER(getOwnerINLINE()).changeImprovementCount(getImprovementType(), -1);
+				// Super Forts begin *culture*
+//oosLog("CultureFort","Plot %d %d Improvement:%S culture:%d setImprovementType",getX_INLINE(),getY_INLINE(),GC.getImprovementInfo(getImprovementType()).getDescription(),GC.getImprovementInfo(getImprovementType()).getCulture());
+				if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0 /*.isActsAsCity()*/)
+				{
+					changeCultureRangeFortsWithinRange(getOwnerINLINE(), -1, GC.getImprovementInfo(getImprovementType()).getCultureRange(), true);
+				}
+				// Super Forts end
 			}
 		}
+		// Super Forts begin *vision*
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+		{
+			updateSight(false, true);
+		}
+		// Super Forts end
 
 		updatePlotGroupBonus(false);
 		m_eImprovementType = eNewValue;
@@ -6351,11 +7438,25 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue, bool bWorker)
 			{
 				area()->changeNumImprovements(getImprovementType(), 1);
 			}
+
 			if (isOwned())
 			{
 				GET_PLAYER(getOwnerINLINE()).changeImprovementCount(getImprovementType(), 1);
+				// Super Forts begin *culture*
+//oosLog("CultureFort","Plot %d %d Improvement:%S culture:%d setImprovementType",getX_INLINE(),getY_INLINE(),GC.getImprovementInfo(getImprovementType()).getDescription(),GC.getImprovementInfo(getImprovementType()).getCulture());
+				if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(getImprovementType()).getCulture() > 0 /*.isActsAsCity()*/)
+				{
+					changeCultureRangeFortsWithinRange(getOwnerINLINE(), 1, GC.getImprovementInfo(getImprovementType()).getCultureRange(), true);
+				}
+				// Super Forts end
 			}
 		}
+		// Super Forts begin *vision*
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+		{
+			updateSight(true, true);
+		}
+		// Super Forts end
 
 		updateIrrigated();
 		updateYield();
@@ -6609,7 +7710,22 @@ void CvPlot::setPlotCity(CvCity* pNewValue)
 
 				if (pLoopPlot != NULL)
 				{
-					pLoopPlot->changeCityRadiusCount(-1);		//TODO: When a Kuriotate second city is founded (at least via AS), the starting culture causes it to be founded with 2 rings, but the m_iCityRadiusCount is only set to 1 so that if/when it is conquered, this gives an error because it sets the value to -1
+					/*
+					if(isOOSLogging())
+					{
+						oosLog("AICityRadius","Turn:%d,Player:%d,CityID:%d,X:%d,Y:%d,iChange:%d,m_iCityRadiusCount:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getPlotCity() != NULL ? getPlotCity()->getOwner() : -1
+								,getPlotCity() != NULL ? getPlotCity()->getID() : 0
+								,pLoopPlot->getX()
+								,pLoopPlot->getY()
+								,-1
+								,pLoopPlot->getCityRadiusCount()
+							);
+					}
+					*/
+					//SpyFanatic: fixed the below issue in CvCity setPlotRadius
+					pLoopPlot->changeCityRadiusCount(-1);		//When a Kuriotate second city is founded (at least via AS), the starting culture causes it to be founded with 2 rings, but the m_iCityRadiusCount is only set to 1 so that if/when it is conquered, this gives an error because it sets the value to -1
 					pLoopPlot->changePlayerCityRadiusCount(getPlotCity()->getOwnerINLINE(), -1);
 				}
 			}
@@ -6660,6 +7776,21 @@ void CvPlot::setPlotCity(CvCity* pNewValue)
 
 				if (pLoopPlot != NULL)
 				{
+					/*
+					if(isOOSLogging())
+					{
+						oosLog("AICityRadius","Turn:%d,Player:%d,CityID:%d,X:%d,Y:%d,iChange:%d,m_iCityRadiusCount:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getPlotCity() != NULL ? getPlotCity()->getOwner() : -1
+								,getPlotCity() != NULL ? getPlotCity()->getID() : 0
+								,pLoopPlot->getX()
+								,pLoopPlot->getY()
+								,1
+								,pLoopPlot->getCityRadiusCount()
+							);
+					}
+					*/
+
 					pLoopPlot->changeCityRadiusCount(1);
 					pLoopPlot->changePlayerCityRadiusCount(getPlotCity()->getOwnerINLINE(), 1);
 				}
@@ -7754,6 +8885,19 @@ void CvPlot::setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue)
 					FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::setPlotGroup");
 					for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 					{
+						/*if(isOOSLogging() && (pOldPlotGroup->getNumBonuses((BonusTypes)iI)) != 0)
+						{
+							oosLog("AIBonuses","Turn:%d,Player:%d,CityID:%d,Bonus:%S,pOldPlotGroup:%d,GoodHealth:%d,BadHealth:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,pCity->getOwnerINLINE()
+								,pCity->getID()
+								,GC.getBonusInfo((BonusTypes)iI).getDescription()
+								,-(pOldPlotGroup->getNumBonuses((BonusTypes)iI))
+								,pCity->getBonusGoodHealth()
+								,pCity->getBonusBadHealth()
+							);
+						}*/
+
 						pCity->changeNumBonuses(((BonusTypes)iI), -(pOldPlotGroup->getNumBonuses((BonusTypes)iI)));
 					}
 				}
@@ -7778,6 +8922,19 @@ void CvPlot::setPlotGroup(PlayerTypes ePlayer, CvPlotGroup* pNewValue)
 					FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlot::setPlotGroup");
 					for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
 					{
+						/*if(isOOSLogging() && getPlotGroup(ePlayer)->getNumBonuses((BonusTypes)iI) != 0)
+						{
+							oosLog("AIBonuses","Turn:%d,Player:%d,CityID:%d,Bonus:%S,pNewValue:%d,GoodHealth:%d,BadHealth:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,pCity->getOwnerINLINE()
+								,pCity->getID()
+								,GC.getBonusInfo((BonusTypes)iI).getDescription()
+								,getPlotGroup(ePlayer)->getNumBonuses((BonusTypes)iI)
+								,pCity->getBonusGoodHealth()
+								,pCity->getBonusBadHealth()
+							);
+						}*/
+
 						pCity->changeNumBonuses(((BonusTypes)iI), getPlotGroup(ePlayer)->getNumBonuses((BonusTypes)iI));
 					}
 				}
@@ -8440,6 +9597,18 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 	pCity = getPlotCity();
 
+	/*if(isOOSLogging())
+	{
+		oosLog("AIPlotVisibility"
+			,"Turn:%d,X:%d,Y:%d,Team:%d,NewVal:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getX()
+			,getY()
+			,eTeam
+			,bNewValue
+		);
+	}*/
+
 	if (isRevealed(eTeam, false) != bNewValue)
 	{
 		if (NULL == m_abRevealed)
@@ -8839,6 +10008,17 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 		}
 	}
 
+	/*if(isOOSLogging())
+	{
+		oosLog("AIWorker"
+			,"Turn: %d,X:%d,Y:%d,bFinished:%d,changeBuildProgress:%S\n"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getX()
+			,getY()
+			,bFinished
+			,eBuild!=NO_IMPROVEMENT?GC.getBuildInfo(eBuild).getDescription():L"NO_IMPROVEMENT"
+		);
+	}*/
 	//added Sephi
 	//Update BestBuild now that Improvement is Build
 	if(bFinished)
@@ -9856,6 +11036,61 @@ void CvPlot::doCulture()
 	int iGarrison;
 	int iCityStrength;
 
+	// Super Forts begin *culture*
+	if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) /*&& getOwnerINLINE() < BARBARIAN_PLAYER*/)
+	{
+		doImprovementCulture();
+
+		ImprovementTypes eImprovement = getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			// Check for a fort culture flip
+			if(GC.getImprovementInfo(eImprovement).getCulture() > 0 /*.isActsAsCity()*/ && (getOwnershipDuration() > GC.getDefineINT("SUPER_FORTS_DURATION_BEFORE_REVOLT")))
+			{
+				eCulturalOwner = calculateCulturalOwner();
+				if(eCulturalOwner != NO_PLAYER)
+				{
+					if(GET_PLAYER(eCulturalOwner).getTeam() != getTeam())
+					{
+						bool bDefenderFound = false;
+						CLinkList<IDInfo> oldUnits;
+						pUnitNode = headUnitNode();
+
+						while (pUnitNode != NULL)
+						{
+							oldUnits.insertAtEnd(pUnitNode->m_data);
+							pUnitNode = nextUnitNode(pUnitNode);
+						}
+
+						pUnitNode = oldUnits.head();
+
+						while (pUnitNode != NULL)
+						{
+							pLoopUnit = ::getUnit(pUnitNode->m_data);
+							pUnitNode = nextUnitNode(pUnitNode);
+							if(pLoopUnit->canDefend(this))
+							{
+								if(pLoopUnit->getOwner() == getOwnerINLINE())
+								{
+									bDefenderFound = true;
+									break;
+								}
+							}
+						}
+						if(!bDefenderFound)
+						{
+							szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED", GC.getImprovementInfo(getImprovementType()).getText(), GET_PLAYER(eCulturalOwner).getCivilizationDescriptionKey());
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+							gDLL->getInterfaceIFace()->addMessage(eCulturalOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREFLIP", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+							setOwner(eCulturalOwner,true,true);
+						}
+					}
+				}
+			}
+		}
+	}
+	// Super Forts end
+
 	pCity = getPlotCity();
 
 	if (pCity != NULL)
@@ -10139,6 +11374,15 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iReconCount);
 	pStream->Read(&m_iRiverCrossingCount);
 
+	// Super Forts begin *canal* *choke*
+	pStream->Read(&m_iCanalValue);
+	pStream->Read(&m_iChokeValue);
+	// Super Forts end
+	// Super Forts begin *bombard*
+	pStream->Read(&m_iDefenseDamage);
+	pStream->Read(&m_bBombarded);
+	// Super Forts end
+	
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
 	pStream->Read(&bVal);
@@ -10213,6 +11457,16 @@ void CvPlot::read(FDataStreamBase* pStream)
 		m_aiCulture = new int[cCount];
 		pStream->Read(cCount, m_aiCulture);
 	}
+
+	// Super Forts begin *culture*
+	SAFE_DELETE_ARRAY(m_aiCultureRangeForts);
+	pStream->Read(&cCount);
+	if(cCount > 0)
+	{
+		m_aiCultureRangeForts = new short[cCount];
+		pStream->Read(cCount, m_aiCultureRangeForts);
+	}
+	// Super Forts end
 
 	SAFE_DELETE_ARRAY(m_aiFoundValue);
 	pStream->Read(&cCount);
@@ -10395,6 +11649,15 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iReconCount);
 	pStream->Write(m_iRiverCrossingCount);
 
+	// Super Forts begin *canal* *choke*
+	pStream->Write(m_iCanalValue);
+	pStream->Write(m_iChokeValue);
+	// Super Forts end
+	// Super Forts begin *bombard*
+	pStream->Write(m_iDefenseDamage);
+	pStream->Write(m_bBombarded);
+	// Super Forts end
+
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
 	pStream->Write(m_bNOfRiver);
@@ -10465,6 +11728,18 @@ void CvPlot::write(FDataStreamBase* pStream)
 		pStream->Write((char)MAX_PLAYERS);
 		pStream->Write(MAX_PLAYERS, m_aiCulture);
 	}
+
+	// Super Forts begin *culture*
+	if (NULL == m_aiCultureRangeForts)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		pStream->Write(MAX_PLAYERS, m_aiCultureRangeForts);
+	}
+	// Super Forts end
 
 	if (NULL == m_aiFoundValue)
 	{
@@ -11236,7 +12511,7 @@ void CvPlot::applyEvent(EventTypes eEvent)
 	}
 }
 
-bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
+bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreResources) const
 {
 	CvCity* pCity = getPlotCity();
 
@@ -11264,7 +12539,7 @@ bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
 		}
 	}
 
-	if (GC.getUnitInfo(eUnit).isPrereqBonuses())
+	if (!bIgnoreResources && GC.getUnitInfo(eUnit).isPrereqBonuses())
 	{
 		if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
 		{
@@ -13650,7 +14925,209 @@ int CvPlot::getLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer) c
 }
 
 int CvPlot::getPossibleLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer, CvImprovementInfo& kImprovement) const
-{	//TODO: This doesn't show the correct values in debug mode.
+{
+	if (!isOwned())
+		return 0;
+
+	if (kImprovement.getPrereqTerrainSpreadResources() != NO_TERRAIN &&
+		kImprovement.getPrereqTerrainSpreadResources() != getTerrainType())
+		return 0;
+
+	if (getWilderness() < GC.getBonusInfo(eBonus).getMinWilderness()
+		|| getWilderness() > GC.getBonusInfo(eBonus).getMaxWilderness())
+		return 0;
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	TechTypes eTechReveal = (TechTypes)GC.getBonusInfo(eBonus).getTechReveal();
+
+	if (eTechReveal != NO_TECH && (!GET_TEAM(kPlayer.getTeam()).isHasTech(eTechReveal)))
+		return 0;
+
+	TechTypes eTechDiscover = (TechTypes)GC.getBonusInfo(eBonus).getTechDiscover();
+	if (eTechDiscover != NO_TECH && (!GET_TEAM(kPlayer.getTeam()).isHasTech(eTechDiscover)))
+		return 0;
+
+	int iBase = kImprovement.getImprovementBonusDiscoverRand(eBonus);
+
+	if (iBase == 0)
+		return 0;
+
+	//GLOBAL ENCHANTMENTS
+	ProjectTypes eFertileLands = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_FERTILE_LANDS");
+	if (eFertileLands != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eFertileLands) > 0)
+	{
+		if (GC.getProjectInfo(eFertileLands).getManaBonusLinked() != NO_BONUS) {
+			//OLD: iBase += 3 +//0 GET_PLAYER(getOwnerINLINE()).getNumAvailableBonuses(GC.getProjectInfo(eFertileLands).getManaBonusLinked());
+			iBase *= 2;
+			iBase *= 100 + 20 * GET_PLAYER(getOwnerINLINE()).getNumAvailableBonuses(GC.getProjectInfo(eFertileLands).getManaBonusLinked());
+			iBase /= 100;
+		}
+	}
+
+	//if(GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+	{
+		int iMod = 100;
+		ProjectTypes eArid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_ARID");
+		if (eArid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eArid) > 0)
+		{	//We already know the improvement can discover the resource, but we want to make sure it can discover a mining resource before applying the bonus.
+			if (GC.getImprovementInfo((ImprovementTypes) GC.getInfoTypeForString("IMPROVEMENT_MINE")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes) GC.getInfoTypeForString("IMPROVEMENT_QUARRY_SCIONS")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_WINERY")).getImprovementBonusDiscoverRand(eBonus) > 0) {	//IRL wineries thrive with long warm summers
+				iMod += 40;
+			}
+		}
+
+		ProjectTypes eHumid = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_CLIMATE_HUMID");
+		if (eHumid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eHumid) > 0)
+		{	//All food and forest bonus discover chances are increased
+			if (kImprovement.getYieldChange(YIELD_FOOD) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FOREST_LODGE")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CAMP")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_WINERY")).getImprovementBonusDiscoverRand(eBonus) > 0) { //IRL wineries thrive with rainy winters
+				iMod += 40;
+			}
+		}
+
+		ProjectTypes eGrow = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_EVERGROW");
+		if (eGrow != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eGrow) > 0)
+		{	//All food and forest bonus discover chances are increased
+			if (kImprovement.getYieldChange(YIELD_FOOD) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FOREST_LODGE")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CAMP")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_WINERY")).getImprovementBonusDiscoverRand(eBonus) > 0 ||
+				GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_PLANTATION")).getImprovementBonusDiscoverRand(eBonus) > 0) {
+				iMod += 50;
+			}
+		}
+
+		if (eArid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eArid) > 0 && eHumid != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eHumid) > 0)
+		{
+			if (GC.getImprovementInfo((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_PLANTATION")).getImprovementBonusDiscoverRand(eBonus) > 0) {
+				iMod += 20;	//As of this writing there are 8 bonuses for plantations vs. only 3 for farms, and each bonus rolls once per turn so balance it here.
+			}
+		}
+		iBase *= iMod;
+		iBase /= 100;
+	}
+
+	//Player
+	if (isOwned())
+	{
+		iBase += kPlayer.getDiscoverRandModifier();
+	}
+
+	//Adjacent cottages and trade post
+	bool adjacentBonusFound = false;
+	int iModifier = 0;	//Fertile lands shouldn't increase the chance of cottages to find resources
+	if (isOwned())
+	{
+		for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+			if (pAdjacentPlot != NULL) {
+				if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+					if (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT) {
+						int iTempModifier = (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+						/*
+						//TODO: set in XML
+                        if(
+							pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE")
+							|| pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FROZEN_COTTAGE")
+							|| pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_INFERNAL_COTTAGE")
+						){
+							iTempModifier=1;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_HAMLET​")){
+							iTempModifier=2;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_VILLAGE")){
+							iTempModifier=3;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TOWN")){
+							iTempModifier=4;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_ENCLAVE")){
+							iTempModifier=5;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRADE1")){
+							iTempModifier=1;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRADE2")){
+							iTempModifier=2;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRADE3")){
+							iTempModifier=3;
+						}else if(pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CARAVAN_CENTER")
+							|| pAdjacentPlot->getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CARAVANSARY")){
+							iTempModifier=4;
+						}*/
+						iModifier += iTempModifier;
+						/*
+						if(GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+						{
+							if(iTempModifier > iModifier)
+							{
+								iModifier = iTempModifier;
+							}
+						}
+						else
+						{
+							iModifier +//0= iTempModifier;
+						}
+						*/
+					}
+					if (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus) {
+						adjacentBonusFound = true;
+					}
+				}
+			}
+		}
+	}
+	iBase += GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN) ? iModifier : 0;
+
+	//Merchant district
+	if (GC.getBUILDINGCLASS_MERCHANT_DISTRICT() != NO_BUILDINGCLASS)
+	{
+		if(GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+		{
+			iBase *= 100 + 20 * kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT());
+			iBase /= 100;
+		}
+		else
+		{
+			iModifier *= 100 + 20 * kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT());
+			iModifier /= 100;
+		}
+	}
+
+	//Adjacent resource
+	if (adjacentBonusFound)
+	{
+		if(GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+		{
+			iBase *= 2;
+		}
+		else
+		{
+			iBase += iModifier;
+		}
+	}
+
+	iBase = range(iBase, 0, 100);
+
+	//Scale by speed
+	iBase *= 100;
+	iBase /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
+
+	//AI
+	/*
+	if (!kPlayer.isHuman()) {
+		iBase *= 100;
+		iBase /= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent();
+		//iBase = iBase / (GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent() / 100.0);		//TODO: AI needs lots of help to develop.  Likes to spam one improvement type rather than buff with complementary cottages.
+	}
+	*/
+	return iBase;
+
+
+
+
+/*
+	//TODO: This doesn't show the correct values in debug mode.
 	if (!isOwned())
 		return 0;
 
@@ -13739,7 +15216,18 @@ int CvPlot::getPossibleLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes eP
 			if (pAdjacentPlot != NULL) {
 				if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
 					if (pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT) {
-						iModifier += (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+						//iModifier += (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+						int iTempModifier = (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+						if(iTempModifier!=0){
+							if(iTempModifier==3){iModifier+=0;}
+							else if(iTempModifier==6){iModifier+=1;}
+							else if(iTempModifier==9){iModifier+=2;}
+							else if(iTempModifier==10){iModifier+=1;}
+							else if(iTempModifier==15){iModifier+=3;}
+							else if(iTempModifier==20){iModifier+=2;}
+							else if(iTempModifier==21){iModifier+=5;}
+							else if(iTempModifier==30){iModifier+=3;}
+						}
 					}
 					if (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus) {
 						adjacentBonusFound = true;
@@ -13749,39 +15237,37 @@ int CvPlot::getPossibleLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes eP
 		}
 	}
 	iBase = (iBase * iMod) / 100;
-	//iBase += iModifier;
+	iBase += iModifier;
 
 	if (GC.getBUILDINGCLASS_MERCHANT_DISTRICT() != NO_BUILDINGCLASS && kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT()) > 0)
 	{
-		//mmmm...
-		//iBase *= (1.20 * kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT()));
 		iBase *= 1 + (0.20 * kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT()));
 	}
 
 	if (adjacentBonusFound)
 		iBase *= 2;
 
-	iBase += iModifier; //Moved here to have first multiplication, then additions....
-
-	iBase *= 1000;
+	//iBase *= 1000;
+	iBase *= 500; //SpyFanatic: scale down probability of a factor 2
 	iBase = range((int) iBase, 0, 10000000);
 
-/*
-	iBase = range(iBase, 0, 100);
-	iBase *= 100;
-*/
+
+//	iBase = range(iBase, 0, 100);
+//	iBase *= 100;
+
 	iBase /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
 
 	if (!kPlayer.isHuman()) {
 		iBase = iBase / (GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent() / 100.0);		//TODO: AI needs lots of help to develop.  Likes to spam one improvement type rather than buff with complementary cottages.
 	}
-/*
+
 	oosLog("AIPlotDiscovery"
-		,"Turn: %d,Owner:%d,X:%d,Y:%d,iBase:%d,iModifier:%d,iMod:%d,MerchantDistrict:%d,adjacentBonusFound:%d,getDiscoverRandModifier:%d,getImprovementBonusDiscoverRand:%d\n"
+		,"Turn: %d,Owner:%d,X:%d,Y:%d,Bonus:%S,iBase:%d,iModifier:%d,iMod:%d,MerchantDistrict:%d,adjacentBonusFound:%d,getDiscoverRandModifier:%d,getImprovementBonusDiscoverRand:%d"
 		,GC.getGameINLINE().getElapsedGameTurns()
 		,getOwner()
 		,getX()
 		,getY()
+		,GC.getBonusInfo(eBonus).getDescription()
 		,(int) iBase
 		,(int) iModifier
 		,iMod
@@ -13790,11 +15276,137 @@ int CvPlot::getPossibleLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes eP
 		,kPlayer.getDiscoverRandModifier()
 		,kImprovement.getImprovementBonusDiscoverRand(eBonus)
 	);
-*/
+
 	return (int) iBase;
+	*/
 }
 
 int CvPlot::getPossibleWaterBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer) const {
+
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_INCREASE_RESOURCE_SPAWN))
+		return 0;
+
+	if (!isOwned() || getBonusType() != NO_BONUS)
+		return 0;
+
+	if (!isWater())
+		return 0;
+
+	if (getWilderness() < GC.getBonusInfo(eBonus).getMinWilderness()
+		|| getWilderness() > GC.getBonusInfo(eBonus).getMaxWilderness())
+		return 0;
+
+	if (!GC.getBonusInfo(eBonus).isTerrain(getTerrainType()))
+		return 0;
+
+	if (getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isUnique()) //SpyFanatic: do now spawn water resources on improvement (maelstrom)
+		return 0;
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	TechTypes eTechReveal = (TechTypes)GC.getBonusInfo(eBonus).getTechReveal();
+
+	if (eTechReveal != NO_TECH && (!GET_TEAM(kPlayer.getTeam()).isHasTech(eTechReveal)))
+		return 0;
+
+	TechTypes eTechDiscover = (TechTypes)GC.getBonusInfo(eBonus).getTechDiscover();
+	if (eTechDiscover != NO_TECH && (!GET_TEAM(kPlayer.getTeam()).isHasTech(eTechDiscover)))
+		return 0;
+
+	int iBase = GC.getBonusInfo(eBonus).getDiscoverRandModifier();
+
+	if (iBase <= 0)
+		return 0;
+
+	//River
+	bool riverFound = false;
+	for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+		if (pAdjacentPlot != NULL && pAdjacentPlot->isWater()) {
+			if (pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+				if (((pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus && eBonus != GC.getInfoTypeForString("BONUS_WHALE"))
+					|| (pAdjacentPlot->getBonusType(kPlayer.getTeam()) == GC.getInfoTypeForString("BONUS_FISH") && eBonus == GC.getInfoTypeForString("BONUS_WHALE")))) {
+					if(pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT){ //SpyFanatic: only if adjacentPlot has an improvement
+						iBase += GC.getBonusInfo(eBonus).getDiscoverRandModifier();
+					}
+				}
+			}
+		}
+		else if (pAdjacentPlot != NULL && pAdjacentPlot->isRiver()) {
+			if (pAdjacentPlot->getRiverNSDirection() == CARDINALDIRECTION_NORTH) {
+				if ((DirectionTypes)iK == DIRECTION_SOUTH || (DirectionTypes)iK == DIRECTION_SOUTHWEST) {
+					riverFound = true;
+				}
+			}
+			else if (pAdjacentPlot->getRiverNSDirection() == CARDINALDIRECTION_SOUTH) {
+				if ((DirectionTypes)iK == DIRECTION_NORTH || (DirectionTypes)iK == DIRECTION_NORTHWEST) {
+					riverFound = true;
+				}
+			}
+			else if (pAdjacentPlot->getRiverWEDirection() == CARDINALDIRECTION_EAST) {
+				if ((DirectionTypes)iK == DIRECTION_WEST || (DirectionTypes)iK == DIRECTION_NORTHWEST) {
+					riverFound = true;
+				}
+			}
+			else if (pAdjacentPlot->getRiverWEDirection() == CARDINALDIRECTION_WEST) {
+				if ((DirectionTypes)iK == DIRECTION_EAST || (DirectionTypes)iK == DIRECTION_NORTHEAST) {
+					riverFound = true;
+				}
+			}
+		}
+	}
+
+	//Global Enchantments
+	ProjectTypes eRichSeas = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_RICHES_OF_THE_SEA");
+	if (eRichSeas != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eRichSeas) > 0)
+	{
+		if (GC.getProjectInfo(eRichSeas).getManaBonusLinked() != NO_BONUS && kPlayer.getNumAvailableBonuses(GC.getProjectInfo(eRichSeas).getManaBonusLinked()) > 0) {
+			iBase *= 100 + 20 * kPlayer.getNumAvailableBonuses(GC.getProjectInfo(eRichSeas).getManaBonusLinked());
+			iBase /= 100;
+		}
+	}
+
+	if ((getImprovementType() != NO_IMPROVEMENT)) {	//Improvements should be an additive multiplier not affected by riches of the sea.
+		CvImprovementInfo& kImprovement = GC.getImprovementInfo(getImprovementType());
+		iBase += kImprovement.getImprovementBonusDiscoverRand(eBonus);
+	}
+
+	int iModifier = 100;
+	if (kPlayer.isHasTech(GC.getInfoTypeForString("TECH_SEAFARING")))
+		iModifier += 100;
+
+	if(getFeatureType() == GC.getInfoTypeForString("FEATURE_KELP"))
+		iModifier += 100;
+
+	if ( kPlayer.getStateReligion() == RELIGION_OCTOPUS_OVERLORDS)
+		iModifier += 50;
+
+	if (getWorkingCity() != 0 && (getWorkingCity()->getNumActiveBuilding((BuildingTypes)GC.getInfoTypeForString("BUILDING_HARBOR", false)) > 0 || getWorkingCity()->getNumActiveBuilding((BuildingTypes) GC.getInfoTypeForString("BUILDING_HARBOR_LANUN", false)) > 0))
+		iModifier += 50;
+
+	if (kPlayer.getBuildingClassCount((BuildingClassTypes) GC.getInfoTypeForString("BUILDINGCLASS_HERON_THRONE", false)) > 0)
+		iModifier += 20;
+
+	if (riverFound)
+		iModifier += 50;
+
+	iBase *= iModifier;
+	iBase /= 100;
+
+
+	iBase = range(iBase, 0, 100);
+
+	iBase *= 100;
+	iBase /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
+
+	/*if (!kPlayer.isHuman()) {
+		iBase = iBase / (GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent() / 100.0);	//TODO: AI needs lots of help to develop.  Likes to spam one improvement type rather than buff with complementary cottages.
+	}*/
+
+	return iBase;
+
+/*
 	if (!isOwned() || getBonusType() != NO_BONUS)
 		return 0;
 
@@ -13806,6 +15418,9 @@ int CvPlot::getPossibleWaterBonusDiscoverChance(BonusTypes eBonus, PlayerTypes e
 		return 0;
 
 	if (!GC.getBonusInfo(eBonus).isTerrain(getTerrainType()))
+		return 0;
+
+	if (getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isUnique()) //SpyFanatic: do now spawn water resources on improvement (maelstrom)
 		return 0;
 
 	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
@@ -13896,7 +15511,8 @@ int CvPlot::getPossibleWaterBonusDiscoverChance(BonusTypes eBonus, PlayerTypes e
 
 	iBase /= 3;
 
-	iBase *= 1000;
+	//iBase *= 1000;
+	iBase *= 500; //SpyFanatic: scale down probability of a factor 2
 	iBase = range((int) iBase, 0, 10000000);
 
 	iBase /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
@@ -13906,7 +15522,102 @@ int CvPlot::getPossibleWaterBonusDiscoverChance(BonusTypes eBonus, PlayerTypes e
 	}
 
 	return (int) iBase;
+	*/
 }
+
+int CvPlot::getBonusSpawnChance(BonusTypes eBonus, PlayerTypes ePlayer) const
+{
+	if(!isOwned() || getBonusType() != NO_BONUS)
+		return 0;
+
+	if(getImprovementType() == NO_IMPROVEMENT || eBonus == NO_BONUS)
+		return 0;
+
+	CvImprovementInfo& kImprovement = GC.getImprovementInfo(getImprovementType());
+	bool bNearSameBonus = false;
+	bool bOnlySpreadNearSameBonus = false;
+	int iModifier = 20;
+
+	if(kImprovement.getPrereqTerrainSpreadResources() != NO_TERRAIN &&
+		kImprovement.getPrereqTerrainSpreadResources() != getTerrainType())
+		bOnlySpreadNearSameBonus = true;
+
+	if(getWilderness() < GC.getBonusInfo(eBonus).getMinWilderness()
+		|| getWilderness() > GC.getBonusInfo(eBonus).getMaxWilderness())
+		return 0;
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	TechTypes eTechReveal = (TechTypes)GC.getBonusInfo(eBonus).getTechReveal();
+
+	if(eTechReveal != NO_TECH && (!GET_TEAM(kPlayer.getTeam()).isHasTech(eTechReveal)))
+		return 0;
+
+	int iBase = kImprovement.getImprovementBonusDiscoverRand(eBonus);
+
+	if(iBase == 0)
+		return 0;
+
+	ProjectTypes eFertileLands = (ProjectTypes)GC.getInfoTypeForString("PROJECT_GLOBAL_FERTILE_LANDS");
+	if(eFertileLands != NO_PROJECT && GET_TEAM(getTeam()).getProjectCount(eFertileLands) > 0)
+	{
+		if(GC.getProjectInfo(eFertileLands).getManaBonusLinked() != NO_BONUS) {
+			iBase += 3 + GET_PLAYER(getOwnerINLINE()).getNumAvailableBonuses(GC.getProjectInfo(eFertileLands).getManaBonusLinked());
+		}
+	}
+
+	if (isOwned())
+	{
+		iModifier += kPlayer.getDiscoverRandModifier();
+
+		for (int iK = 0; iK < NUM_DIRECTION_TYPES; iK++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iK));
+			if(pAdjacentPlot != NULL) {
+				if(pAdjacentPlot->getTeam() == kPlayer.getTeam()) {
+					if(pAdjacentPlot->getImprovementType() != NO_IMPROVEMENT) {
+						//iModifier += GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify();
+						int iTempModifier = (GC.getImprovementInfo(pAdjacentPlot->getImprovementType()).getAdjacentFindResourceModify());
+						if(iTempModifier!=0){
+							if(iTempModifier==3){iModifier+=0;}
+							else if(iTempModifier==6){iModifier+=1;}
+							else if(iTempModifier==9){iModifier+=2;}
+							else if(iTempModifier==10){iModifier+=1;}
+							else if(iTempModifier==15){iModifier+=3;}
+							else if(iTempModifier==20){iModifier+=2;}
+							else if(iTempModifier==21){iModifier+=5;}
+							else if(iTempModifier==30){iModifier+=3;}
+						}
+					}
+					if(pAdjacentPlot->getBonusType(kPlayer.getTeam()) == eBonus) {
+						bNearSameBonus = true;
+					}
+				}
+			}
+		}
+	}
+
+	if(bOnlySpreadNearSameBonus && !bNearSameBonus)
+		return 0;
+
+	if(GC.getBUILDINGCLASS_MERCHANT_DISTRICT() != NO_BUILDINGCLASS)
+	{
+		iModifier *= 100 + 20 * kPlayer.getBuildingClassCount((BuildingClassTypes)GC.getBUILDINGCLASS_MERCHANT_DISTRICT());
+		iModifier /= 100;
+	}
+
+	if(bNearSameBonus)
+		iBase += iModifier;
+
+
+	iBase = range(iBase, 0, 100);
+
+	iBase *= 100;
+	iBase /= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getResearchPercent();
+
+	return iBase;
+}
+
 
 bool CvPlot::isNearUF(int iRange) const
 {

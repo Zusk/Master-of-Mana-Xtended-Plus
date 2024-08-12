@@ -47,6 +47,44 @@
 					<TerrainType>TERRAIN_DARK_MUSHGROUND</TerrainType>
 					<bTerrainTrade>1</bTerrainTrade>
 				</TerrainTrade>
+				<!--
+				<TerrainTrade>
+					<TerrainType>TERRAIN_BROKEN_LANDS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_BURNING_SANDS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_GRASS_FERTILE</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_FIELDS_OF_PERDITION</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_NEVER_NEVER</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_SHALLOWS</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_SWAMP</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_WASTELAND</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+				-->
 			</TerrainTrades>						
 			<Flavors>
 			</Flavors>

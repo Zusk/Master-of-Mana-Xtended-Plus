@@ -87,16 +87,16 @@ bool CvPlayerAI::AI_chooseAnotherHeroUnit()
 	if(pBestUnit!=NULL)
 	{
 		pBestUnit->AI_setUnitAIType(UNITAI_HERO);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, Player: %S,New Hero Unit:: %S \n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getID()
-			,getName()
-			,GC.getUnitInfo(pBestUnit->getUnitType()).getDescription()
-		);
-		gDLL->logMsg("AI_Heroes.log",szOut, false, false);		
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AI_Heroes"
+				,"Turn:%d,PlayerID:%d,Player:%S,New Hero Unit::%S"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getID()
+				,getName()
+				,GC.getUnitInfo(pBestUnit->getUnitType()).getDescription()
+			);
+		}
 
 		return true;
 	}

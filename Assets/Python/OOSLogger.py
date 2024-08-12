@@ -44,12 +44,12 @@ def writeLog():
             PlayerID=iPlayer
 
     if sys.platform == 'darwin':
-        if gc.getDefineINT("ENABLE_OOSLOG") > 1:
+        if gc.getDefineINT("ENABLE_OOSLOG") == 1:
             szFilename = BugPath.userDir + "//Beyond the Sword" + "//Logs//" + "OOSLog (Turn " + str(bWroteLog) + ").txt"
         else:
             szFilename = BugPath.userDir + "//Beyond the Sword" + "//Logs//" + "OOSLog (Turn " + str(bWroteLog) + ") Player " + str(PlayerID) + ".txt"
     else:
-        if gc.getDefineINT("ENABLE_OOSLOG") > 1:
+        if gc.getDefineINT("ENABLE_OOSLOG") == 1:
             szFilename = BugPath.userDir + "\\Beyond the Sword" + "\\Logs\\" + "OOSLog (Turn " + str(bWroteLog) + ").txt"
         else:
             szFilename = BugPath.userDir + "\\Beyond the Sword" + "\\Logs\\" + "OOSLog (Turn " + str(bWroteLog) + ") Player " + str(PlayerID) + ".txt"

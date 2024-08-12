@@ -24,6 +24,7 @@ public:
 	bool canChangeWarPeace(int /*TeamTypes*/ eTeam);
 	bool canDeclareWar(int /*TeamTypes*/ eTeam);
 	void declareWar(int /*TeamTypes*/ eTeam, bool bNewDiplo, int /*WarPlanTypes*/ eWarPlan);
+	void declareWarLog(int /*TeamTypes*/ eTeam, bool bNewDiplo, int /*WarPlanTypes*/ eWarPlan, TCHAR* szLog);
 	void makePeace(int /*TeamTypes*/ eTeam);
 	bool canContact(int /*TeamTypes*/ eTeam);
 	void meet(int /*TeamTypes*/ eTeam, bool bNewDiplo);
@@ -37,7 +38,7 @@ public:
 
 	int getAtWarCount(bool bIgnoreMinors);
 	int getWarPlanCount(int /*WarPlanTypes*/ eWarPlan, bool bIgnoreMinors);
-	int getAnyWarPlanCount(bool bIgnoreMinors);
+	int getAnyWarPlanCount(bool bIgnoreMinors,int /*TeamTypes*/ eTeam = -1);
 	int getChosenWarCount(bool bIgnoreMinors);
 	int getHasMetCivCount(bool bIgnoreMinors);
 	bool hasMetHuman();

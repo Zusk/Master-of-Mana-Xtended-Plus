@@ -158,6 +158,7 @@
 	<ElementType name="bSmugglingRing" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iCrime" content="textOnly" dt:type="int"/>
 	<ElementType name="NoBonus" content="textOnly"/>
+	<ElementType name="PyCanDo" content="textOnly"/>
 	<ElementType name="PyResult" content="textOnly"/>
 	<ElementType name="VoteInfo" content="eltOnly">
 		<element type="Type"/>
@@ -771,6 +772,7 @@
 		<element type="iPopulationToExperienceRate" minOccurs="0"/>		
 		<element type="bAddPromotionToUnits" minOccurs="0"/>
 		<element type="bAddBuildingToCities" minOccurs="0"/>
+		<element type="PyCanDo" minOccurs="0"/>
 		<element type="PyResult" minOccurs="0"/>
 		<element type="iCreateUnitFromExperience" minOccurs="0"/>
 		<element type="UnitType" minOccurs="0"/>

@@ -1204,7 +1204,7 @@
         <SpellInfo>
             <Type>SPELL_HIRE_UNITS</Type>
             <Description>TXT_KEY_SPELL_HIRE_UNITS</Description>
-            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_SPELL_HIRE_UNITS_PEDIA</Civilopedia>
             <UnitClassPrereq>UNITCLASS_MAGNADINE</UnitClassPrereq>
             <bInBordersOnly>1</bInBordersOnly>
             <bInCityOnly>1</bInCityOnly>

@@ -321,7 +321,7 @@
             <PromotionPrereq1>PROMOTION_ARCANE_LACUNA</PromotionPrereq1>
 			<bAllowAI>1</bAllowAI>
             <bGraphicalOnly>1</bGraphicalOnly>
-            <PyRequirement>reqSilencedArcaneLacuna(pCaster)</PyRequirement>
+            <PyRequirement>reqSilencedArcaneLacuna(pCaster,spell)</PyRequirement>
             <Effect>EFFECT_RIFT_SPELL</Effect>
             <Sound>AS3D_SPELL_BANISH</Sound>
             <Button>Modules/NormalModules/Xtended/XReligion/Buttons/Silenced.dds</Button>
@@ -505,7 +505,7 @@
             <Type>SPELL_HIRE_UNITS</Type>
 			<bForceOverwrite>1</bForceOverwrite>
             <Description>TXT_KEY_SPELL_HIRE_UNITS</Description>
-            <Civilopedia>TXT_KEY_SPELL_PLACEHOLDER_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_SPELL_HIRE_UNITS_PEDIA</Civilopedia>
             <UnitPrereq>UNIT_MAGNADINE</UnitPrereq>
             <bInBordersOnly>1</bInBordersOnly>
             <bInCityOnly>1</bInCityOnly>

@@ -16705,7 +16705,7 @@
             <Type>BUILDING_HERON_THRONE</Type>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>TXT_KEY_BUILDING_HERON_THRONE</Description>
-            <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
+            <Civilopedia>Improves Chance to find a Sea Resource in your Empire.</Civilopedia>
             <Strategy></Strategy>
             <Help></Help>
             <Advisor>ADVISOR_ECONOMY</Advisor>
@@ -45021,7 +45021,8 @@
             <Description>Merchants Quarter</Description>
             <Civilopedia>TXT_KEY_BUILDING_MERCHANT_DISTRICT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MERCHANT_DISTRICT_STRATEGY</Strategy>
-            <Help>[ICON_BULLET]A City with a Merchant Quarter produces twice as many Bonus Resources, so a Goldmine provides two Gold Bonus Resources instead of one. The chance to discover new Resources is increased by 20% in your whole Empire! Build a Merchant Quarter in your Capital to receive a Bazaar of Mammon for free. Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <Help>[ICON_BULLET]A City with a Merchant Quarter produces twice as many Bonus Resources, so a Goldmine provides two Gold Bonus Resources instead of one. The chance to discover new Resources is increased by 20% in your whole Empire! Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <!--Help>[ICON_BULLET]A City with a Merchant Quarter produces twice as many Bonus Resources, so a Goldmine provides two Gold Bonus Resources instead of one. The chance to discover new Resources is increased by 20% in your whole Empire! Build a Merchant Quarter in your Capital to receive a Bazaar of Mammon for free. Kuriotate cities are large enough to accomodate all three quarters.</Help-->
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_MERCHANT_QUARTER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
@@ -45077,7 +45078,8 @@
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>Nobles Quarter</Description>
             <Civilopedia>TXT_KEY_BUILDING_NOBLE_DISTRICT_PEDIA</Civilopedia>
-            <Help>Build a Noble Quarter in your Capital to receive a Grand Menagerie for free. Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <Help>Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <!--Help>Build a Noble Quarter in your Capital to receive a Grand Menagerie for free. Kuriotate cities are large enough to accomodate all three quarters.</Help-->
 			<Strategy>TXT_KEY_BUILDING_NOBLE_DISTRICT_STRATEGY</Strategy>
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_NOBLE_QUARTER</ArtDefineTag>
@@ -45204,7 +45206,8 @@
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <Description>Sages Quarter</Description>
             <Civilopedia>TXT_KEY_BUILDING_PLACEHOLDER_PEDIA</Civilopedia>
-            <Help>Build a Sages Quarter in your Capital to receive a Great Library for free. Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <Help>Kuriotate cities are large enough to accomodate all three quarters.</Help>
+            <!--Help>Build a Sages Quarter in your Capital to receive a Great Library for free. Kuriotate cities are large enough to accomodate all three quarters.</Help-->
             <Advisor>ADVISOR_ECONOMY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_SAGE_QUARTER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>

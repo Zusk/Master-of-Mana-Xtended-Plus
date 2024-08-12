@@ -746,7 +746,7 @@ def spellEnlistAsPillager(caster):
 def reqLaunchPickEquipmentPopup(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 	for i in range(gc.getNumPromotionInfos()):
-		if pPlayer.canEquipUnit(caster,i,false,false):
+		if pPlayer.canEquipUnit(caster,i,false,false,false):
 			return true
 
 	return false

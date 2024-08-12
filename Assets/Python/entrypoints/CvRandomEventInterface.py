@@ -458,7 +458,9 @@ def doFlareFireNode(argsList):
 	for iX in range(kTriggeredData.iPlotX-1, kTriggeredData.iPlotX+2, 1):
 		for iY in range(kTriggeredData.iPlotY-1, kTriggeredData.iPlotY+2, 1):
 			pPlot = CyMap().plot(iX,iY)
-			if pPlot.isNone() == False:
+			#SpyFanatic: do not affect fire node plot
+			#if pPlot.isNone() == False:
+			if pPlot.isNone() == False and iX != kTriggeredData.iPlotX and iY != kTriggeredData.iPlotY:
 				if (pPlot.getFeatureType() == iForest or pPlot.getFeatureType() == iJungle):
 					pPlot.setFeatureType(iFlames, 0)
 					if pPlot.isOwned():
@@ -563,21 +565,34 @@ def doGovernorAssassination(argsList):
 	pCity = pPlayer.getCity(kTriggeredData.iCityId)
 	bMatch = False
 	iCivic = pPlayer.getCivics(gc.getInfoTypeForString('CIVICOPTION_GOVERNMENT'))
-	if iCivic != gc.getInfoTypeForString('CIVIC_CITY_STATES'):
-#		if iCivic == gc.getInfoTypeForString('CIVIC_GOD_KING'):
-#			bMatch = True
-		if iCivic == gc.getInfoTypeForString('CIVIC_ARISTOCRACY'):
-			if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_1'):
-				bMatch = True
-		if iCivic == gc.getInfoTypeForString('CIVIC_CITY_STATES'): # or iCivic == gc.getInfoTypeForString('CIVIC_REPUBLIC'):
-			if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_3'):
-				bMatch = True
-		if bMatch == True:
-			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_PEOPLE_APPROVE", ()),'',1,'Art/Interface/Buttons/General/happy_person.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
-			pCity.changeHappinessTimer(3)
-		else:
-			CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_JUDGEMENT_WRONG", ()),'',1,'Art/Interface/Buttons/General/unhealthy_person.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
-			pCity.changeHurryAngerTimer(3)
+
+	iCivic2 = pPlayer.getCivics(gc.getInfoTypeForString('CIVICOPTION_CULTURAL_VALUES'))
+	if iCivic2 == gc.getInfoTypeForString('CIVIC_RELIGION'):
+		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_4'):
+			bMatch = True
+	elif iCivic == gc.getInfoTypeForString('CIVIC_ARISTOCRACY') or iCivic == gc.getInfoTypeForString('CIVIC_APPRENTICESHIP'):
+		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_1'):
+			bMatch = True
+	elif iCivic == gc.getInfoTypeForString('CIVIC_CITY_STATES') or iCivic == gc.getInfoTypeForString('CIVIC_CENTRALIZATION'):
+		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_3'):
+			bMatch = True
+	elif iCivic == gc.getInfoTypeForString('CIVIC_MILITARY_STATE') or iCivic == gc.getInfoTypeForString('CIVIC_MAGISTOCRATIE'):
+		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_2'):
+			bMatch = True
+
+	#if iCivic != gc.getInfoTypeForString('CIVIC_CITY_STATES'):
+	#	if iCivic == gc.getInfoTypeForString('CIVIC_ARISTOCRACY'):
+	#		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_1'):
+	#			bMatch = True
+	#	if iCivic == gc.getInfoTypeForString('CIVIC_CITY_STATES'): # or iCivic == gc.getInfoTypeForString('CIVIC_REPUBLIC'):
+	#		if iEvent == gc.getInfoTypeForString('EVENT_GOVERNOR_ASSASSINATION_3'):
+	#			bMatch = True
+	if bMatch == True:
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_PEOPLE_APPROVE", ()),'',1,'Art/Interface/Buttons/General/happy_person.dds',ColorTypes(8),pCity.getX(),pCity.getY(),True,True)
+		pCity.changeHappinessTimer(3)
+	else:
+		CyInterface().addMessage(iPlayer,True,25,CyTranslator().getText("TXT_KEY_MESSAGE_JUDGEMENT_WRONG", ()),'',1,'Art/Interface/Buttons/General/unhealthy_person.dds',ColorTypes(7),pCity.getX(),pCity.getY(),True,True)
+		pCity.changeHurryAngerTimer(3)
 
 def doGuildOfTheNineMerc41(argsList):
 	iEvent = argsList[0]
@@ -1822,6 +1837,9 @@ def canTriggerSlaveRevoltUnit(argsList):
 	pPlot = pUnit.plot()
 	if pPlot.getNumUnits() != 1:
 		return False
+	#SpyFanatic: prevent slave revolt while in city... else the doSlaveRevolt will be messy if it spawn a barbarian in the city
+	if pPlot.getPlotCity() != -1:
+		return False
 	return True
 
 def doSlaveRevolt(argsList):
@@ -2606,7 +2624,7 @@ def applyBlessedSea2(argsList):
 	while(loopCity):
 
 		if (loopCity.getPopulation() >= 5):
-			if (loopCity.canConstruct(iBuilding, false, false, true)):
+			if (loopCity.canConstruct(iBuilding, false, false, true, false)):
 				loopCity.setNumRealBuilding(iBuilding, 1)
 
 		(loopCity, iter) = player.nextCity(iter, false)
@@ -2636,7 +2654,7 @@ def canApplyBlessedSea2(argsList):
 	while(loopCity):
 
 		if (loopCity.getPopulation() >= 5):
-			if (loopCity.canConstruct(iBuilding, false, false, true)):
+			if (loopCity.canConstruct(iBuilding, false, false, true, false)):
 				bFound = true
 				break
 

@@ -279,6 +279,20 @@ class MoM_Maze:
 	def normalizeRemovePeaks(self):
 		return None
 
+	def getTopLatitude(self):
+		"Default is 90. 75 is past the Arctic Circle"
+		return 60
+
+	def getBottomLatitude(self):
+		"Default is -90. -75 is past the Antartic Circle"
+		return -60
+
+	def getWrapX(self):
+		return True
+
+	def getWrapY(self):
+		return False
+
 mapscript = MoM_Maze()
 			
 def getDescription():
@@ -304,8 +318,8 @@ def getCustomMapOptionDefault(argsList):
 	return mapscript.getCustomMapOptionDefault(argsList)
 
 #general functions
-def beforeGeneration():
-	return mapscript.beforeGeneration()
+#def beforeGeneration():
+#	return mapscript.beforeGeneration()
 
 def getWrapX():
 	return mapscript.getWrapX()
@@ -328,8 +342,8 @@ def generateTerrainTypes():
 def addFeatures():
 	return mapscript.addFeatures()
 	
-def addBonusType(argsList):	
-	return mapscript.addBonusType(argsList)		
+#def addBonusType(argsList):
+#	return mapscript.addBonusType(argsList)
 	
 def normalizeRemovePeaks():
 	return mapscript.normalizeRemovePeaks()		
