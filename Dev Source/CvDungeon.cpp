@@ -992,7 +992,8 @@ void CvDungeon::sellSlaves(PlayerTypes ePlayer, int iSlaves) const
 
     // If a target city is found, reduce its population
     if (pTargetCity != NULL) {
-        iPopChange = std::max(1, iSlaves); // Use the number of slaves sold to determine the population change
+        // Ensure the population doesn't drop below 1
+        iPopChange = std::min(iSlaves, std::max(pTargetCity->getPopulation() - 1, 0));
         pTargetCity->changePopulation(-iPopChange);
     }
 }
