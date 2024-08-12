@@ -93,7 +93,7 @@ def LairResultGoldenage(pAdventurer, iValue):
 	pPlayer.changeGoldenAgeTurns(iValue)
 	
 def CanAddRandomBuilding(pCity,iBuildingType):	
-	if pCity.canConstruct(iBuildingType, False, False, False):
+	if pCity.canConstruct(iBuildingType, False, False, False, False):
 		if not gc.getBuildingInfo(iBuildingType).isDistrict():	
 			iClass=gc.getBuildingInfo(iBuildingType).getBuildingClassType()	
 			if not (isWorldWonderClass(iClass)):
@@ -187,7 +187,7 @@ def getEquipment(pAdventurer):
 	iImprovement=pAdventurer.plot().getImprovementType()
 
 	for i in range(gc.getNumPromotionInfos()):
-		if pPlayer.canEquipUnit(pAdventurer,i,true,true):
+		if pPlayer.canEquipUnit(pAdventurer,i,true,true,false):
 			return i
 			
 	return -1
@@ -204,7 +204,7 @@ def LairResultEquipment(pAdventurer, iValue):
 	EquipmentList = []
 
 	for i in range(gc.getNumPromotionInfos()):
-		if pPlayer.canEquipUnit(pAdventurer,i,true,true):
+		if pPlayer.canEquipUnit(pAdventurer,i,true,true,false):
 			EquipmentList.append(i)
 	
 	iPick = gc.getGame().getSorenRandNum(len(EquipmentList),"pick dungeonresult Equipment")

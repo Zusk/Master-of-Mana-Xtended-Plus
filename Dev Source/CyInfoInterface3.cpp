@@ -297,6 +297,7 @@ void CyInfoPythonInterface3()
 		.def("getSuccessRate", &CvProjectInfo::getSuccessRate, "int ()")
 		.def("getProjectsNeeded", &CvProjectInfo::getProjectsNeeded, "int (int i)")
 		.def("getPyResult", &CvProjectInfo::getPyResult, "string ()")
+		.def("getPyCanDo", &CvProjectInfo::getPyCanDo, "string ()")
 		;
 
 	python::class_<CvReligionInfo, python::bases<CvInfoBase> >("CvReligionInfo")

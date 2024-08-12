@@ -358,6 +358,7 @@ def onAristrakhProjectBuilt(argsList):
 		pPlayer.setHasTrait(gc.getInfoTypeForString('TRAIT_AGNOSTIC'),true)
 		pPlayer.setHasTrait(gc.getInfoTypeForString('TRAIT_WASTELAND_ECON'),true)
 		pPlayer.setLastStateReligion(gc.getInfoTypeForString('NO_RELIGION'))
+
 		for pUnit in PyPlayer(iPlayer).getUnitList():
 			if pPlayer.getNumUnits()>2:
 				if pUnit.isAlive() and pUnit.isHasPromotion(gc.getInfoTypeForString('PROMOTION_VAMPIRE'))==false:

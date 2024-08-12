@@ -389,9 +389,9 @@ TechTypes CvPlayerAI::AI_needEarlyTech() const
 	iValue = 0;
 
 	//FirstPass: Access to Tier2 Military Units
-	bool bTier2MilitaryNeeded = AI_isMilitaryTierNeeded(2);
-
-	if(iBestTech == NO_TECH && bTier2MilitaryNeeded)
+	//bool bTier2MilitaryNeeded = AI_isMilitaryTierNeeded(2);
+	if(iBestTech == NO_TECH && AI_isMilitaryTierNeeded(2))
+	//if(iBestTech == NO_TECH && bTier2MilitaryNeeded)
 	{
 		for(int iI=0;iI<GC.getNumTechInfos();iI++)
 		{
@@ -576,6 +576,83 @@ int CvPlayerAI::AI_techValueScience(TechTypes iTech) const
 
 	int iFlavorValue = getFlavorValue(iFlavorType) + 20;
 	iFlavorValue*=GC.getTechInfo(iTech).getFlavorValue(iFlavorType);
+
+	//TODO: less generic and more focused on Priviledge Class, as its only civicoption that gives malus are City Governours and Military State
+
+	bool bHasOptionNoMalusResearch = false;
+	int iCivicResearchValue = 0;
+	int iCIVICOPTION_GOVERNMENT = GC.getInfoTypeForString("CIVICOPTION_GOVERNMENT");
+	for (int iJ = 0; iJ < GC.getNumCivicInfos(); iJ++)
+	{
+		if (GC.getCivicInfo((CivicTypes)iJ).getCivicOptionType() == iCIVICOPTION_GOVERNMENT)
+		{
+			if(GC.getCivicInfo((CivicTypes)iJ).getCommerceModifier(COMMERCE_RESEARCH) >= 0)
+			{
+				if (canDoCivics((CivicTypes)iJ))
+				{
+					//There is already a civic that can give you no malus in research!
+					bHasOptionNoMalusResearch = true;
+					break;
+				}
+				else
+				{
+					//There are other possibilities for which player cannot do civic a part from the tech prereq and most hated civic, but currently there is only that!
+					if(GC.getCivicInfo((CivicTypes)iJ).getTechPrereq() == iTech)
+					{
+						if(
+							!(GC.getLeaderHeadInfo(getLeaderType()).getHatedCivic()==(CivicTypes)iJ)
+						)
+						{
+							//The tech unlock a Civic that allows a non-negative research
+							iCivicResearchValue += AI_civicValue((CivicTypes)iJ);
+						}
+					}
+				}
+			}
+		}
+	}
+	if(!bHasOptionNoMalusResearch){
+		iFlavorValue+=iCivicResearchValue;
+	}
+	//SpyFanatic: Add value of unlocked civic to tech value if all currently available civic gives a malus in research (and if unlocked civic does not)
+	/*
+	for (int iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
+	{
+		bool bHasOptionNoMalusResearch = false;
+		int iCivicResearchValue = 0;
+		for (int iJ = 0; iJ < GC.getNumCivicInfos(); iJ++)
+		{
+			if (GC.getCivicInfo((CivicTypes)iJ).getCivicOptionType() == (CivicOptionTypes)iI)
+			{
+				if (canDoCivics((CivicTypes)iJ))
+				{
+					//There is already a civic that can give you no malus in research!
+					if(GC.getCivicInfo((CivicTypes)iJ).getCommerceModifier(COMMERCE_RESEARCH) >= 0)
+					{
+						bHasOptionNoMalusResearch = true;
+						break;
+					}
+				}
+				else
+				{
+					//TODO: there are other possibilities for which player cannot do civic a part from the tech prereq, for example most hated civic!!
+					if(GC.getCivicInfo((CivicTypes)iJ).getTechPrereq() == iTech)
+					{
+						if(GC.getCivicInfo((CivicTypes)iJ).getCommerceModifier(COMMERCE_RESEARCH) >= 0)
+						{
+							//The tech unlock a Civic that allows a non-negative research
+							iCivicResearchValue += AI_civicValue((CivicTypes)iJ);
+						}
+					}
+				}
+			}
+		}
+		if(!bHasOptionNoMalusResearch){
+			iFlavorValue+=iCivicResearchValue;
+		}
+	}
+	*/
+
 
 	return iFlavorValue;
 }
@@ -892,22 +969,6 @@ TechTypes CvPlayerAI::AI_bestTechNew(int iMaxPathLength, bool bIgnoreCost, bool 
 		iBestTechPick=GC.getGameINLINE().getSorenRandNum(iBestTechAmount,"CvAIChooseTech: random amoung BestTechs");
 	}
 
-	/** DEBUG **/
-	TCHAR szOut[1024];
-	for(int iI=0;iI<MAX_TECH_VARIATION;iI++)
-	{
-		sprintf(szOut, "Turn: %d,PlayerID: %d,Player: %S,Tech: %S,Value: %d,AIValue: %d\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getID()
-			,GC.getCivilizationInfo(getCivilizationType()).getDescription()
-			,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?GC.getTechInfo((TechTypes)aiBestTechs[iI]).getDescription():L""
-			,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?aiBestTechValues[iI]:-1
-			,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?(aiBestTechValues[iI]*100)/iBestTechAmount:-1
-		);
-		gDLL->logMsg("AIResearch.log",szOut, false, false);
-	}
-	/** DEBUG **/
-
 	iBestTechAmount=0;
 	for(int iI=0;iI<MAX_TECH_VARIATION;iI++)
 	{
@@ -919,9 +980,69 @@ TechTypes CvPlayerAI::AI_bestTechNew(int iMaxPathLength, bool bIgnoreCost, bool 
 		}
 	}		
 	
+
 	if(aiBestTechValues[iBestTech]>0)
 	{
+		TechTypes iChoosenTech = (TechTypes)aiBestTechs[iBestTech];
+		if(iChoosenTech>NO_TECH && iChoosenTech<=GC.getNumTechInfos() && iBestTechAmount!=0)
+		{
+			//DEBUG
+			if(isOOSLogging()){
+				TCHAR szOut[1024];
+				sprintf(szOut,"");
+				for(int iI=0;iI<MAX_TECH_VARIATION;iI++)
+				{
+					sprintf(szOut,"%s,Tech%d:%S,Value:%d,AIValue:%d"
+						,szOut
+						,iI
+						,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?GC.getTechInfo((TechTypes)aiBestTechs[iI]).getDescription():L""
+						,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?aiBestTechValues[iI]:-1
+						,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?(aiBestTechValues[iI]*100)/iBestTechAmount:-1
+					);
+				}
+				oosLog("AIResearch"
+					,"Turn: %d,PlayerID: %d,Player: %S,Tech: %S(%d)%s\n"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getID()
+					,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+					,GC.getTechInfo(iChoosenTech).getDescription()
+					,getResearchTurnsLeft(iChoosenTech,true)*100 / std::max(1,GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent())
+					,szOut
+				);
+			}
+			//DEBUG
+			return iChoosenTech;
+		}
+		/*
+		//DEBUG
+		if(isOOSLogging()){
+			TCHAR szOut[1024];
+			sprintf(szOut,"");
+			for(int iI=0;iI<MAX_TECH_VARIATION;iI++)
+			{
+				sprintf(szOut,"%s,Tech%d:%S,Value:%d,AIValue:%d"
+					,szOut
+					,iI
+					,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?GC.getTechInfo((TechTypes)aiBestTechs[iI]).getDescription():L""
+					,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?aiBestTechValues[iI]:-1
+					,(aiBestTechs[iI]>NO_TECH && aiBestTechs[iI]<=GC.getNumTechInfos() && iBestTechAmount!=0)?(aiBestTechValues[iI]*100)/iBestTechAmount:-1
+				);
+			}
+
+			TechTypes iChoosenTech = (aiBestTechs[iBestTech]>NO_TECH && aiBestTechs[iBestTech]<=GC.getNumTechInfos() && iBestTechAmount!=0)?(TechTypes)aiBestTechValues[iBestTech]:NO_TECH;
+			oosLog("AIResearch"
+				,"Turn: %d,PlayerID: %d,Player: %S,Tech: %S(%d)%s\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getID()
+				,GC.getCivilizationInfo(getCivilizationType()).getDescription()
+				,iChoosenTech!=NO_TECH?GC.getTechInfo(iChoosenTech).getDescription():L""
+				,iChoosenTech!=NO_TECH?(getResearchTurnsLeft(iChoosenTech,true)*100)/std::max(1,GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getResearchPercent()):-1
+				,szOut
+			);
+		}
+		//DEBUG
 		return (TechTypes)aiBestTechs[iBestTech];
+		*/
 	}
 
 	return NO_TECH;

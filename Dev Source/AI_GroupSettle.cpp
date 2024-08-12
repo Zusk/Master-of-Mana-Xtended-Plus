@@ -6,8 +6,6 @@ void CvAIGroup::update_Settle()
 	CvUnitAI* pSettler = static_cast<CvUnitAI*>(getHeadUnit());
 	CvPlayerAI &kPlayer = GET_PLAYER(getOwnerINLINE());
 	bool bDebug = true;
-	//TCHAR szFile[1024];
-	//sprintf(szFile, "AI_SettleGroup_%d_%d.log",getOwnerINLINE(),getID());
 
 	if(pSettler == NULL || pSettler->AI_getUnitAIType() != UNITAI_SETTLE) {
 		setDeathDelayed(true);
@@ -24,9 +22,10 @@ void CvAIGroup::update_Settle()
 		}
 	}
 
-	if(bDebug) {
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d::update,%S,NumUnits: %d, UnitsNeeded: %d,MissionX:%d,MissionY:%d,FoundValue:%d\n"
+	if(isOOSLogging())
+	{
+		oosLog("AI_SettleGroup"
+			,"Turn:%d,PlayerID:%d,GroupID:%d::update,%S,NumUnits:%d,UnitsNeeded:%d,MissionX:%d,MissionY:%d,FoundValue:%d"
 			,GC.getGameINLINE().getElapsedGameTurns()
 			,getOwnerINLINE()
 			,getID()
@@ -38,17 +37,6 @@ void CvAIGroup::update_Settle()
 			,(getMissionPlot() != NULL)?getMissionPlot()->getFoundValue(getOwnerINLINE()):-1
 
 		);
-		gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-		/*
-		sprintf(szOut, "CvAISettle %d, %d::update -- %S -- %d\n", getOwnerINLINE(), getID(), GC.getAIGroupInfo(getGroupType()).getDescription(), GC.getGame().getElapsedGameTurns());
-		gDLL->logMsg(szFile, szOut, false, false);
-		sprintf(szOut, "Num Units -- %d / %d\n", getNumUnits(), UnitsNeeded());
-		gDLL->logMsg(szFile,szOut, false, false);		
-		if(getMissionPlot() != NULL) {
-			sprintf(szOut, "Mission Coords -- x: %d, y: %d,  foundvalue: %d\n", getMissionPlot()->getX_INLINE(), getMissionPlot()->getY_INLINE(), getMissionPlot()->getFoundValue(getOwnerINLINE()));
-			gDLL->logMsg(szFile,szOut, false, false);		
-		}
-		*/
 	}
 
 	//logic for gamestart
@@ -105,16 +93,6 @@ void CvAIGroup::update_Settle()
                 }
             }
         }
-/*
-	oosLog("AISettle"
-		,"Turn: %d,Owner:%d,SETTLER [%d,%d] FOUND: [%d,%d],\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,pSettler->getOwner()
-		,pSettler->getOriginPlot()->getX_INLINE()
-		,pSettler->getOriginPlot()->getY_INLINE()
-		,pBestPlot!=NULL?pBestPlot->getX_INLINE():-1
-		,pBestPlot!=NULL?pBestPlot->getY_INLINE():-1
-	);*/
 
         if (pBestPlot != NULL)
         {
@@ -135,19 +113,18 @@ void CvAIGroup::update_Settle()
 	{
 		//Allow Units to go to do other Tasks
 		if(getNumUnits() > 2) {
-
-			if(bDebug) {
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Group Disbanded because of lack of gold\n"
+			if(isOOSLogging()) {
+				oosLog("AI_SettleGroup"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,Group Disbanded because of lack of gold,GoldRate:%d,target:%d,NumCities:%d,Gold:%d,CultivationRate:%d"
 					,GC.getGameINLINE().getElapsedGameTurns()
 					,getOwnerINLINE()
 					,getID()
+					,GET_PLAYER(getOwnerINLINE()).calculateGoldRate()
+					,5 + 5 * GET_PLAYER(getOwnerINLINE()).getNumCities()
+					,GET_PLAYER(getOwnerINLINE()).getNumCities()
+					,GET_PLAYER(getOwnerINLINE()).getGold()
+					,GET_PLAYER(getOwnerINLINE()).getCultivationRate()
 				);
-				gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-				/*
-				sprintf(szOut, "Group Disbanded because of lack of gold \n");
-				gDLL->logMsg(szFile, szOut, false, false);
-				*/
 			}
 			setDeathDelayed(true);
 			return;
@@ -155,23 +132,19 @@ void CvAIGroup::update_Settle()
 	}
 
 	int MAX_UNITS_PER_PLOT=3;
+	bool bUnitJoinedStack = false;
 
 	//let other Units Join the Settler
 	if(!GC.getGameINLINE().isOption(GAMEOPTION_UNIT_PER_TILE_LIMIT)) {
 		if(pSettler->getGroup()->getNumUnits() < getNumUnits())
 		{
-			if(bDebug) {
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Not all Units on same Plot\n"
+			if(isOOSLogging()) {
+				oosLog("AI_SettleGroup"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,Not all Units on same Plot"
 					,GC.getGameINLINE().getElapsedGameTurns()
 					,getOwnerINLINE()
 					,getID()
 				);
-				gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-				/*
-				sprintf(szOut, "Not all Units on same Plot \n");
-				gDLL->logMsg(szFile, szOut, false, false);
-				*/
 			}
 
 			for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
@@ -222,6 +195,7 @@ void CvAIGroup::update_Settle()
 					if(pLoopUnit->atPlot(pSettler->plot()))
 					{
 						pLoopUnit->joinGroup(pSettler->getGroup());
+						bUnitJoinedStack = true;
 					}
 				}
 				else
@@ -245,6 +219,7 @@ void CvAIGroup::update_Settle()
 						if(pLoopUnit->atPlot(pSettler->plot()))
 						{
 							pLoopUnit->joinGroup(pSettler->getGroup());
+							bUnitJoinedStack = true;
 						}
 					}
 				}
@@ -271,18 +246,14 @@ void CvAIGroup::update_Settle()
 	if(bRetreat) {
 		if(!pSettler->plot()->isCity())
 		{
-			if(bDebug) {
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Settler Retreat because of no protection\n"
+			if(isOOSLogging())
+			{
+				oosLog("AI_SettleGroup"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,Settler Retreat because of no protection"
 					,GC.getGameINLINE().getElapsedGameTurns()
 					,getOwnerINLINE()
 					,getID()
 				);
-				gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-				/*
-				sprintf(szOut, "Settler Retreat because of no protection \n");
-				gDLL->logMsg(szFile, szOut, false, false);
-				*/
 			}
 
 			if(pSettler->AI_retreatToCity()) {
@@ -304,20 +275,17 @@ void CvAIGroup::update_Settle()
 	//current Missionplot isn't valid?
 	if(getMissionPlot() == NULL || !pSettler->canFound(getMissionPlot()) || !pSettler->getGroup()->generatePath(pSettler->plot(),getMissionPlot(),0,false,&iPathTurns))
 	{
-		if(bDebug) {
-			TCHAR szOut[1024];
-			sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Pick new MissionPlot\n"
+/*
+		if(isOOSLogging())
+		{
+			oosLog("AI_SettleGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,Pick new MissionPlot"
 				,GC.getGameINLINE().getElapsedGameTurns()
 				,getOwnerINLINE()
 				,getID()
 			);
-			gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-			/*
-			sprintf(szOut, "Pick new MissionPlot \n");
-			gDLL->logMsg(szFile, szOut, false, false);
-			*/
 		}
-
+*/
 		setMissionPlot(NULL);
 		GET_PLAYER(getOwnerINLINE()).AI_updateFoundValues(false);
 /**
@@ -326,35 +294,59 @@ void CvAIGroup::update_Settle()
 			CvPlot* pCitySitePlot = GET_PLAYER(getOwnerINLINE()).AI_getCitySite(iI);
 
 **/
-		for(int iI = 0; iI < GC.getMapINLINE().numPlots(); iI++)
+		for(int iPass = 0; iPass < 2; iPass++)
 		{
-			CvPlot* pCitySitePlot = GC.getMapINLINE().plotByIndex(iI);
-			
-			if (pCitySitePlot->getArea() == pSettler->getArea() || pSettler->isWaterWalking())
+			if(pBestPlot == NULL)
 			{
-				iValue = pCitySitePlot->getFoundValue(getOwnerINLINE());
-
-				if(iValue>iBestValue)
+				for(int iI = 0; iI < GC.getMapINLINE().numPlots(); iI++)
 				{
-					if(kPlayer.getNumCities()==0 || pCitySitePlot->isRevealed(getTeam(), false))
-					{
-						if(GC.getMapINLINE().calculatePathDistance(pSettler->plot(), pCitySitePlot) > -1)
-						{
-							int iLoop;
-							bool bValid = true;
+					CvPlot* pCitySitePlot = GC.getMapINLINE().plotByIndex(iI);
 
-							for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+					if (pCitySitePlot->getArea() == pSettler->getArea() || pSettler->isWaterWalking())
+					{
+						iValue = pCitySitePlot->getFoundValue(getOwnerINLINE());
+
+						/*if(iValue > 0)
+						{
+						oosLog("AI_SettleGroup"
+											,"Turn:%d,PlayerID:%d,GroupID:%d,Possible MissionPlot [%d,%d] found value:%d distance:%d"
+											,GC.getGameINLINE().getElapsedGameTurns()
+											,getOwnerINLINE()
+											,getID()
+											,pCitySitePlot->getX_INLINE()
+											,pCitySitePlot->getY_INLINE()
+											,pCitySitePlot->getFoundValue(getOwnerINLINE())
+											,GC.getMapINLINE().calculatePathDistance(pSettler->plot(), pCitySitePlot)
+										);
+						}*/
+						if(iValue>iBestValue)
+						{
+							if(kPlayer.getNumCities()==0 || pCitySitePlot->isRevealed(getTeam(), false))
 							{
-								if(pAIGroup != this && pAIGroup->getGroupType() == AIGROUP_SETTLE && pAIGroup->getMissionPlot() == pCitySitePlot)
+								//SpyFanatic: picking up a nearby city spot first
+								//int iPathDistance = GC.getMapINLINE().calculatePathDistance(pSettler->plot(), pCitySitePlot);
+								//if(iPathDistance > -1 && (iPathDistance < 10 || iPass > 0))
+								int iPathDistance;
+								bool pathOK = pSettler->getGroup()->generatePath(pSettler->plot(), pCitySitePlot, MOVE_SAFE_TERRITORY, false, &iPathDistance);
+								if(pathOK && (iPathDistance < 10 || iPass > 0))
 								{
-									bValid = false;
-									break;
+									int iLoop;
+									bool bValid = true;
+
+									for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+									{
+										if(pAIGroup != this && pAIGroup->getGroupType() == AIGROUP_SETTLE && pAIGroup->getMissionPlot() == pCitySitePlot)
+										{
+											bValid = false;
+											break;
+										}
+									}
+									if(bValid)
+									{
+										iBestValue = iValue;
+										pBestPlot = pCitySitePlot;
+									}
 								}
-							}
-							if(bValid)
-							{
-								iBestValue = iValue;
-								pBestPlot = pCitySitePlot;
 							}
 						}
 					}
@@ -363,19 +355,17 @@ void CvAIGroup::update_Settle()
 		}
 		if(pBestPlot != NULL) {
 			setMissionPlot(pBestPlot);
-			if(bDebug) {
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,New MissionPlot found value: %d\n"
+			if(isOOSLogging())
+			{
+				oosLog("AI_SettleGroup"
+					,"Turn:%d,PlayerID:%d,GroupID:%d,New MissionPlot [%d,%d] found value:%d"
 					,GC.getGameINLINE().getElapsedGameTurns()
 					,getOwnerINLINE()
 					,getID()
+					,pBestPlot->getX_INLINE()
+					,pBestPlot->getY_INLINE()
 					,pBestPlot->getFoundValue(getOwnerINLINE())
 				);
-				gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-				/*
-				sprintf(szOut, "New MissionPlot found: value %d\n", pBestPlot->getFoundValue(getOwnerINLINE()));
-				gDLL->logMsg(szFile, szOut, false, false);
-				*/
 			}
 		}
 	}
@@ -385,18 +375,14 @@ void CvAIGroup::update_Settle()
 		if(!pSettler->plot()->isCity()) {
 			pSettler->AI_retreatToCity();
 		}
-		if(bDebug) {
-			TCHAR szOut[1024];
-			sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Retreat because still no target\n"
+		if(isOOSLogging())
+		{
+			oosLog("AI_SettleGroup"
+				,"Turn:%d,PlayerID:%d,GroupID:%d,Retreat because still no target"
 				,GC.getGameINLINE().getElapsedGameTurns()
 				,getOwnerINLINE()
 				,getID()
 			);
-			gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-			/*
-			sprintf(szOut, "Retreat because still no target\n");
-			gDLL->logMsg(szFile, szOut, false, false);
-			*/
 		}
 
 		return;
@@ -411,7 +397,14 @@ void CvAIGroup::update_Settle()
 			{
 				if(!pSettler->plot()->isCity())
 				{
-					pSettler->AI_retreatToCity();
+					/*if(pSettler->getGroup()->getNumUnits() > 0 && !pSettler->getGroup()->canAllMove() && !bUnitJoinedStack)
+					{
+						//TODO SpyFanatic: maybe remove settler from stack if no units added to it this turn and stack cannot move?
+					}*/
+					if(/*pSettler->getGroup()->getNumUnits() == 0 || */pSettler->getGroup()->canAllMove()) //SpyFanatic: retreat immediately only if unit/group can move
+					{
+						pSettler->AI_retreatToCity();
+					}
 				}
 				return;
 			}
@@ -420,23 +413,116 @@ void CvAIGroup::update_Settle()
 
 	if (getMissionPlot() != NULL)
 	{
-		if(bDebug) {
-			TCHAR szOut[1024];
-			sprintf(szOut, "Turn: %d,PlayerID: %d,GroupID: %d,Move towards City\n"
-				,GC.getGameINLINE().getElapsedGameTurns()
-				,getOwnerINLINE()
-				,getID()
-			);
-			gDLL->logMsg("AI_SettleGroup.log",szOut, false, false);
-			/*
-			sprintf(szOut, "Move towards City\n");
-			gDLL->logMsg(szFile, szOut, false, false);
-			*/
-		}
-
 		if (!pSettler->atPlot(getMissionPlot()))
 		{
-			pSettler->getGroup()->pushMission(MISSION_MOVE_TO, getMissionPlot()->getX_INLINE(), getMissionPlot()->getY_INLINE(), MOVE_SAFE_TERRITORY, false, false, MISSIONAI_FOUND, getMissionPlot());
+			//SpyFanatic: why not destroy some lair in the meantime?
+			bool bMove = true;
+			if(pSettler->getGroup()->getNumUnits() > 4 && GET_PLAYER((PlayerTypes)getOwnerINLINE()).AI_isPlotThreatened(pSettler->plot(), 1))
+			{
+				for (int iDX = -1; iDX <= 1; iDX++)
+				{
+					for (int iDY = -1; iDY <= 1; iDY++)
+					{
+						CvPlot* pLoopPlot = plotXY(pSettler->plot()->getX_INLINE(), pSettler->plot()->getY_INLINE(), iDX, iDY);
+						if(pLoopPlot->isLair())
+						{
+							//Powerful Enough to Launch attack?
+							//ToDo add in Calculation for Damage Spells pre Combat
+							int iEnemyStrength, iOurStrength;
+							compareAttackStrength(pLoopPlot,&iEnemyStrength,&iOurStrength);
+
+							if(iOurStrength>iEnemyStrength*1.3 || isAllUnitsWithinRange(pLoopPlot,1))
+							{
+								launchAttack(pLoopPlot);
+								if(isOOSLogging()) {
+									oosLog("AI_SettleGroup"
+										,"Turn:%d,PlayerID:%d,GroupID:%d,Attack a Lair during his journey [%d,%d]"
+										,GC.getGameINLINE().getElapsedGameTurns()
+										,getOwnerINLINE()
+										,getID()
+										,pLoopPlot->getX_INLINE()
+										,pLoopPlot->getY_INLINE()
+									);
+								}
+								bMove = false;
+							}
+							else //if(UnitPowerNeeded()<=0)
+							{
+								if(isOOSLogging()) {
+									oosLog("AI_SettleGroup"
+										,"Turn:%d,PlayerID:%d,GroupID:%d,Cannot attack the Lair during his journey [%d,%d] %d vs %d withinrange:%d"
+										,GC.getGameINLINE().getElapsedGameTurns()
+										,getOwnerINLINE()
+										,getID()
+										,pLoopPlot->getX_INLINE()
+										,pLoopPlot->getY_INLINE()
+										,iOurStrength
+										,iEnemyStrength
+										,isAllUnitsWithinRange(pLoopPlot,1)
+									);
+								}
+								//prepareAttack(pLoopPlot,MAX_INT,1);
+								//bMove = false;
+							}
+
+							if(!bMove)
+							{
+								int iExploreSpell=GC.getInfoTypeForString("SPELL_EXPLORE_DUNGEON");
+								if(iExploreSpell!=NO_SPELL)
+								{
+									for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+									{
+										CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data));
+										if (pLoopUnit->plot()==getMissionPlot() )
+										{
+											if(pLoopUnit->canCast(iExploreSpell,false))
+											{
+												pLoopUnit->cast(iExploreSpell);
+												if(isOOSLogging())
+												{
+													oosLog("AI_DestroyLairGroup"
+														,"Turn:%d,PlayerID:%d,GroupID:%d,Lair:[%d,%d],Destroyed by Settle Group"
+														,GC.getGameINLINE().getElapsedGameTurns()
+														,getOwnerINLINE()
+														,getID()
+														,pLoopUnit->plot()->getX_INLINE()
+														,pLoopUnit->plot()->getY_INLINE()
+													);
+												}
+												break;
+											}
+										}
+									}
+								}
+								/*
+								if(UnitPowerNeeded()>0)
+								{
+									checkForPossibleUpgrade();
+								}*/
+								break;
+							}
+						}
+					}
+					if(!bMove)
+					{
+						break;
+					}
+				}
+			}
+			if(bMove)
+			{
+				if(isOOSLogging()) {
+					oosLog("AI_SettleGroup"
+						,"Turn:%d,PlayerID:%d,GroupID:%d,Move towards City [%d,%d]"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwnerINLINE()
+						,getID()
+						,getMissionPlot()->getX_INLINE()
+						,getMissionPlot()->getY_INLINE()
+					);
+				}
+				pSettler->getGroup()->pushMission(MISSION_MOVE_TO, getMissionPlot()->getX_INLINE(), getMissionPlot()->getY_INLINE(), MOVE_SAFE_TERRITORY, false, false, MISSIONAI_FOUND, getMissionPlot());
+			}
 		}
 
 		if (pSettler->atPlot(getMissionPlot()))

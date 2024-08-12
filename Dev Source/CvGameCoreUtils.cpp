@@ -1364,7 +1364,6 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			{
 				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
 				pUnitNode1 = pSelectionGroup->nextUnitNode(pUnitNode1);
-
 				if ((pLoopUnit1->getCargo() > 0) && (pLoopUnit1->domainCargo() == DOMAIN_LAND))
 				{
 					bValid = false;
@@ -1787,6 +1786,44 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return FALSE;
 	}
 
+	// Super Forts begin *choke* 
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		int iInvalidPlot = gDLL->getFAStarIFace()->GetInfo(finder);
+		if(iInvalidPlot > 0)
+		{
+			// 1 is subtracted because 1 was added earlier to avoid a conflict with index 0
+			if(pNewPlot == GC.getMapINLINE().plotByIndexINLINE((iInvalidPlot - 1)))
+			{
+				return FALSE;
+			}
+		}
+	// Super Forts end - Note to mergers: Make sure you also include the code from Better BTS AI below this
+/********************************************************************************/
+/* 	BETTER_BTS_AI_MOD					12/12/08				jdog5000	*/
+/* 																			*/
+/* 	Bugfix																	*/
+/********************************************************************************/
+// original BTS code
+		CvPlot* pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+		if (pFromPlot->area() != pNewPlot->area())
+		{
+			return FALSE;
+		}
+		// Don't count diagonal hops across land isthmus
+		if (pFromPlot->isWater() && pNewPlot->isWater())
+		{
+			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
+			{
+				return FALSE;
+			}
+		}
+/********************************************************************************/
+/* 	BETTER_BTS_AI_MOD						END								*/
+/********************************************************************************/
+		return TRUE;
+	}
+// Super Forts end -
 	if (GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY)->area() != pNewPlot->area())
 	{
 		return FALSE;
@@ -1924,6 +1961,57 @@ int countPlotGroup(FAStarNode* parent, FAStarNode* node, int data, const void* p
 	}
 
 	return 1;
+}
+
+//Check for validity for Land unit discard impassable and field of fire
+int stepUnitValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
+{
+	CvPlot* pNewPlot;
+
+	if (parent == NULL)
+	{
+		return TRUE;
+	}
+
+	//This is maybe a way to pass parameter
+	//int iInvalidPlot = gDLL->getFAStarIFace()->GetInfo(finder);
+	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+
+	if (pNewPlot->isImpassable())
+	{
+		return FALSE;
+	}
+	if (pNewPlot->isWater())
+	{
+		//Dont consider unit with water walking...
+		return FALSE;
+	}
+	if (pNewPlot->isLair())
+	{
+		//Even if its empty, they can respawn so do not count
+		return FALSE;
+	}
+	if (pNewPlot->getFeatureType() != NO_FEATURE)
+	{
+		//Do not consider plot with feature that require resistance, as it is highly unprobable to pass with all your stack!
+		if (GC.getFeatureInfo((FeatureTypes)pNewPlot->getFeatureType()).getRequireResist() != NO_DAMAGE)
+		{
+			return FALSE;
+		}
+	}
+	if (pNewPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pNewPlot->getImprovementType()).isUnique())
+	{
+		if(pNewPlot->getNumDefenders((PlayerTypes)GC.getWILDMANA_PLAYER()) > 0)
+		{
+			return FALSE;
+		}
+	}
+	if (GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY)->area() != pNewPlot->area())
+	{
+		return FALSE;
+	}
+
+	return TRUE;
 }
 
 
@@ -2371,7 +2459,7 @@ std::list<AttackerSpellInfo> calculateAttackerSpellInfo(CLLNode<IDInfo>* pSelect
 	bool singleAttacker = false;
 	if (pSelectedUnitNode == NULL)	//We want to only get the first attacker's information
 		singleAttacker = true;
-	
+
 	while (pSelectedUnitNode != NULL || singleAttacker) {
 		pSelectedUnit = singleAttacker ? pSelectedUnit : ::getUnit(pSelectedUnitNode->m_data);
 
@@ -2439,6 +2527,7 @@ std::list<AttackerSpellInfo> calculateAttackerSpellInfo(CLLNode<IDInfo>* pSelect
 	if (spellType == NO_SPELL)
 		return attackingUnitsInformation;
 
+
 	std::list<AttackerSpellInfo>::iterator it = attackingUnitsInformation.begin();
 	while (it != attackingUnitsInformation.end()){
 		bool erase = false;
@@ -2488,12 +2577,13 @@ std::list<AttackerSpellInfo> calculateAttackerSpellInfo(CLLNode<IDInfo>* pSelect
 //SpyFanatic: OOSLogging functions BEGIN
 bool isOOSLogging()
 {
-	return GC.getDefineINT("ENABLE_OOSLOG") > 0;
+	return GC.getLogging();
+	//return GC.getDefineINT("ENABLE_OOSLOG") > 0;
 }
 void oosLog(CONST TCHAR* szLogName,CONST TCHAR* szFmt, ...)
 {
 	TCHAR szFilename[1024];
-	if(GC.getDefineINT("ENABLE_OOSLOG") > 1)
+	if(GC.getDefineINT("ENABLE_OOSLOG") == 1)
 	{
 		sprintf(szFilename,"%s%s",szLogName,".log");
 	}

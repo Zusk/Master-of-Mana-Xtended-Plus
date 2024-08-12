@@ -234,6 +234,7 @@ public:
 	DllExport FAStar& getBorderFinder();
 	DllExport FAStar& getAreaFinder();
 	DllExport FAStar& getPlotGroupFinder();
+	DllExport FAStar& getStepUnitFinder();
 	DllExport NiPoint3& getPt3Origin();
 
 	DllExport std::vector<CvInterfaceModeInfo*>& getInterfaceModeInfo();
@@ -1024,6 +1025,7 @@ public:
 	int getBUILDINGCLASS_LUXURY_DISTRICT();
 	int getBUILDINGCLASS_FOREIGN_TRADE_DISTRICT();
 	int getBUILDINGCLASS_RESOURCE_DISTRICT();
+	int getBUILDINGCLASS_HERBALIST();
 	int getBUILDINGCLASS_SCHOLA_ARCANA();
 	int getBUILDINGCLASS_SALON();
 	int getBUILDINGCLASS_PALACE();
@@ -1040,6 +1042,7 @@ public:
 	int getIMPROVEMENT_MANA_SHRINE();
 	int getIMPROVEMENT_TRADE1();
 	int getIMPROVEMENT_CAMP();
+	int getDEFAULT_SPECIALIST();
 
 	int getGraphicalDetailPageInRange();
 
@@ -1184,6 +1187,7 @@ public:
 	DllExport void setBorderFinder(FAStar* pVal);
 	DllExport void setAreaFinder(FAStar* pVal);
 	DllExport void setPlotGroupFinder(FAStar* pVal);
+	DllExport void setStepUnitFinder(FAStar* pVal);
 
 	// So that CvEnums are moddable in the DLL
 	DllExport int getNumDirections() const;
@@ -1274,6 +1278,7 @@ protected:
 	FAStar* m_borderFinder;
 	FAStar* m_areaFinder;
 	FAStar* m_plotGroupFinder;
+	FAStar* m_stepUnitFinder;
 
 	NiPoint3 m_pt3Origin;
 
@@ -1640,6 +1645,7 @@ protected:
 	int m_iBUILDINGCLASS_LUXURY_DISTRICT;
 	int m_iBUILDINGCLASS_FOREIGN_TRADE_DISTRICT;
 	int m_iBUILDINGCLASS_RESOURCE_DISTRICT;
+	int m_iBUILDINGCLASS_HERBALIST;
 	int m_iBUILDINGCLASS_SCHOLA_ARCANA;
 	int m_iBUILDINGCLASS_SALON;
 	int m_iBUILDINGCLASS_PALACE;
@@ -1656,6 +1662,7 @@ protected:
 	int m_iIMPROVEMENT_MANA_SHRINE;
 	int m_iIMPROVEMENT_TRADE1;
 	int m_iIMPROVEMENT_CAMP;
+	int m_iDEFAULT_SPECIALIST;
 
 	int m_iGraphicalDetailPageInRange;
 

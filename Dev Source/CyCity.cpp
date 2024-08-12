@@ -135,9 +135,9 @@ bool CyCity::canTrain( int /*UnitTypes*/ eUnit, bool bContinue, bool bTestVisibl
 	return m_pCity ? m_pCity->canTrain((UnitTypes)eUnit, bContinue, bTestVisible) : false;
 }
 
-bool CyCity::canConstruct( int /*BuildingTypes*/ eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost)
+bool CyCity::canConstruct( int /*BuildingTypes*/ eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreResources)
 {
-	return m_pCity ? m_pCity->canConstruct((BuildingTypes)eBuilding, bContinue, bTestVisible, bIgnoreCost) : false;
+	return m_pCity ? m_pCity->canConstruct((BuildingTypes)eBuilding, bContinue, bTestVisible, bIgnoreCost, bIgnoreResources) : false;
 }
 
 bool CyCity::canCreate( int /*ProjectTypes*/ eProject, bool bContinue, bool bTestVisible )
@@ -2061,6 +2061,11 @@ void CyCity::setNumRealBuilding(int /*BuildingTypes*/ iIndex, int iNewValue)
 int CyCity::getNumFreeBuilding(int /*BuildingTypes*/ iIndex)
 {
 	return m_pCity ? m_pCity->getNumFreeBuilding((BuildingTypes) iIndex) : -1;
+}
+
+int CyCity::getReligionCount()
+{
+	return m_pCity ? m_pCity->getReligionCount() : -1;
 }
 
 bool CyCity::isHasReligion(int /*ReligionTypes*/ iIndex)

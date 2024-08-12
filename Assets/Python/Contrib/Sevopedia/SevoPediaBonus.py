@@ -223,6 +223,13 @@ class SevoPediaBonus:
 		if (iTech > -1):
 			screen.attachImageButton( panelName, "", gc.getTechInfo(iTech).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, 1, False )
 			screen.attachLabel(panelName, "", u"(" + localText.getText("TXT_KEY_PEDIA_BONUS_TRADE", ()) + u")")
+		if gc.getDefineINT("SHOW_WILDERNESS_INFO"):
+			minWild = gc.getBonusInfo(self.iBonus).getMinWilderness()
+			maxWild = gc.getBonusInfo(self.iBonus).getMaxWilderness()
+			if minWild > 0 and maxWild >= 2000000: #MAX_iNT
+				screen.attachLabel(panelName, "", u"Wilderness > " +str(minWild))
+			if minWild > 0 and maxWild < 2000000: #MAX_iNT
+				screen.attachLabel(panelName, "", u"Wilderness between " +str(minWild)+ u" and " +str(maxWild))
 
 
 

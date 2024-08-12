@@ -574,5 +574,12 @@
 			<fScale>1.8</fScale>
 			<Path>Art/Effects/FF_Engine_Glow/FF_Engine_Glow.nif</Path>
 		</AttachableInfo>
+		<!-- SpyFanatic -->
+		<AttachableInfo>
+			<Type>ATTACHABLE_GOLSHAN_FIRE</Type>
+			<Description>Golshan Fire</Description>
+			<fScale>0.5</fScale>
+			<Path>Art/Effects/golshan_fire/golshan_fire.nif</Path>
+		</AttachableInfo>
 	</AttachableInfos>
 </Civ4AttachableInfos>

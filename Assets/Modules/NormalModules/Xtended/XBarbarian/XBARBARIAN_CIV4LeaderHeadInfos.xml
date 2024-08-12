@@ -552,11 +552,11 @@
             <ReligionWeightModifiers>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-90</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_FELLOWSHIP_OF_LEAVES</ReligionType>
@@ -1118,7 +1118,7 @@
             <ReligionWeightModifiers>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
@@ -1684,11 +1684,11 @@
             <ReligionWeightModifiers>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-90</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_FELLOWSHIP_OF_LEAVES</ReligionType>
@@ -3382,7 +3382,7 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
             </ReligionWeightModifiers>
         </LeaderHeadInfo>
@@ -6754,7 +6754,7 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
@@ -13523,11 +13523,11 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
             </ReligionWeightModifiers>
         </LeaderHeadInfo>
@@ -14089,11 +14089,11 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
             </ReligionWeightModifiers>
         </LeaderHeadInfo>
@@ -15208,7 +15208,7 @@
 				 </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
 			</ReligionWeightModifiers>
 		</LeaderHeadInfo>
@@ -16319,11 +16319,11 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
             </ReligionWeightModifiers>
         </LeaderHeadInfo>
@@ -17451,11 +17451,11 @@
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_OCTOPUS_OVERLORDS</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ASHEN_VEIL</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
             </ReligionWeightModifiers>
         </LeaderHeadInfo>
@@ -18001,11 +18001,11 @@
 			<ReligionWeightModifiers>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_ORDER</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_THE_EMPYREAN</ReligionType>
-                    <iWeightModifier>-100</iWeightModifier>
+                    <iWeightModifier>-50</iWeightModifier>
                  </ReligionWeightModifier>
                  <ReligionWeightModifier>
                     <ReligionType>RELIGION_RUNES_OF_KILMORPH</ReligionType>

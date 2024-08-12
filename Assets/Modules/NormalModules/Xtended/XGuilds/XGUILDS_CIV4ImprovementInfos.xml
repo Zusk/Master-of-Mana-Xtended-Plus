@@ -362,7 +362,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<iGoldCost>50</iGoldCost>
 			<YieldCosts>
                 <iYield>0</iYield>
@@ -499,7 +499,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>21</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>5</iAdjacentFindResourceModify>
 			<iCultureChange>4</iCultureChange>
         </ImprovementInfo>
 		<ImprovementInfo>
@@ -635,7 +635,7 @@
                 <iYield>25</iYield>
 				<iYield>0</iYield>
 			</YieldCosts>
-			<iAdjacentFindResourceModify>10</iAdjacentFindResourceModify>			
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<bDefaultBuildableAllCivs>1</bDefaultBuildableAllCivs>
 		</ImprovementInfo>
 		<ImprovementInfo>
@@ -4966,7 +4966,7 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
-            <bPermanent>0</bPermanent>
+            <bPermanent>1</bPermanent>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
@@ -5156,6 +5156,15 @@
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
 			<bDefaultBuildableAllCivs>1</bDefaultBuildableAllCivs>
+             <!-- Super Forts -->
+            <iCulture>2</iCulture>
+			<iCultureRange>1</iCultureRange>
+			<!--iVisibilityChange>2</iVisibilityChange-->
+			<iSeeFrom>1</iSeeFrom>
+			<iUnique>2</iUnique>
+			<bBombardable>1</bBombardable>
+			<bUpgradeRequiresFortify>0</bUpgradeRequiresFortify>
+            <!-- Super Forts -->
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_RUINS</Type>

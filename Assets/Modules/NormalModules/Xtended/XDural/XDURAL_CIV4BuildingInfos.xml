@@ -569,7 +569,7 @@
 			<Strategy>TXT_KEY_BUILDING_STATUE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_COURAGE</ArtDefineTag>
-			<MovieDefineTag></MovieDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
 			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<FreePromotion>PROMOTION_COURAGE</FreePromotion>
 			<iCost>180</iCost>
@@ -626,7 +626,7 @@
 			<Strategy>TXT_KEY_BUILDING_STATUE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_LOYALTY</ArtDefineTag>
-			<MovieDefineTag></MovieDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
 			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
 			<FreePromotion>PROMOTION_LOYALTY</FreePromotion>
 			<iCost>180</iCost>

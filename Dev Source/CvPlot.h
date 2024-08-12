@@ -115,7 +115,7 @@ public:
 	void updateSeeFromSight(bool bIncrement, bool bUpdatePlotGroups);
 
 	bool canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude = false) const;																						// Exposed to Python
-	bool canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam = NO_TEAM, bool bPotential = false) const;		// Exposed to Python
+	bool canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam = NO_TEAM, bool bPotential = false, bool bIgnoreFeature = false) const;		// Exposed to Python
 	bool canHaveRiver() const;
 
 	bool canBuild(BuildTypes eBuild, PlayerTypes ePlayer = NO_PLAYER, bool bTestVisible = false) const;														// Exposed to Python
@@ -127,6 +127,33 @@ public:
 	int AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer = NO_PLAYER, DomainTypes eDomainType = NO_DOMAIN, bool bDefensiveBonuses = true, bool bTestAtWar = false, bool bTestPotentialEnemy = false) const;
 	CvUnit* getSelectedUnit() const;																																// Exposed to Python
 	int getUnitPower(PlayerTypes eOwner = NO_PLAYER) const;																					// Exposed to Python
+
+	// Super Forts begin *bombard*
+	bool isBombardable(const CvUnit* pUnit) const;
+	bool isBombarded() const;
+	void setBombarded(bool bNewValue);
+	int getDefenseDamage() const;
+	void changeDefenseDamage(int iChange);
+	// Super Forts end
+	// Super Forts begin *culture*
+	int getCultureRangeForts(PlayerTypes ePlayer) const;
+	void setCultureRangeForts(PlayerTypes ePlayer, int iNewValue);
+	void changeCultureRangeForts(PlayerTypes ePlayer, int iChange);
+	bool isWithinFortCultureRange(PlayerTypes ePlayer) const;
+	void changeCultureRangeFortsWithinRange(PlayerTypes ePlayer, int iChange, int iRange, bool bUpdate);
+	void doImprovementCulture();
+	// Super Forts end
+	// Super Forts begin *canal* *choke*
+	int countRegionPlots(const CvPlot* pInvalidPlot = NULL) const;
+	int countAdjacentPassableSections(bool bWater) const;
+	int countImpassableCardinalDirections() const;
+	int getCanalValue() const;
+	void setCanalValue(int iNewValue);
+	void calculateCanalValue();
+	int getChokeValue() const;
+	void setChokeValue(int iNewValue);
+	void calculateChokeValue();
+	// Super Forts end
 
 	int defenseModifier(TeamTypes eDefender, bool bIgnoreBuilding, bool bHelp = false) const;									// Exposed to Python
 	int movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const;														// Exposed to Python
@@ -178,6 +205,7 @@ public:
 	int getNumVisibleEnemyDefenders(const CvUnit* pUnit) const;																				// Exposed to Python
 	int getNumVisiblePotentialEnemyDefenders(const CvUnit* pUnit) const;															// Exposed to Python
 	DllExport bool isVisibleEnemyUnit(PlayerTypes ePlayer) const;																			// Exposed to Python
+	bool isVisibleEnemyUnitNoBarbarian(PlayerTypes ePlayer) const;
 	DllExport int getNumVisibleUnits(PlayerTypes ePlayer) const;
 	bool isVisibleEnemyUnit(const CvUnit* pUnit) const;
 	bool isVisibleOtherUnit(PlayerTypes ePlayer) const;																								// Exposed to Python
@@ -498,7 +526,7 @@ public:
 	bool canApplyEvent(EventTypes eEvent) const;
 	void applyEvent(EventTypes eEvent);
 
-	bool canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const;
+	bool canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreResources = false) const;
 
 	bool isEspionageCounterSpy(TeamTypes eTeam) const;
 
@@ -652,6 +680,7 @@ public:
 	int getLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer) const;
 	int getPossibleLandBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer, CvImprovementInfo& kImprovement) const;
 	int getPossibleWaterBonusDiscoverChance(BonusTypes eBonus, PlayerTypes ePlayer) const;
+	int getBonusSpawnChance(BonusTypes eBonus, PlayerTypes ePlayer) const;
 /*************************************************************************************************/
 /**	MultiBarb								END													**/
 /*************************************************************************************************/
@@ -686,6 +715,15 @@ protected:
 	short m_iReconCount;
 	short m_iRiverCrossingCount;
 
+	// Super Forts begin *canal* *choke*
+	int m_iCanalValue;
+	int m_iChokeValue;
+	// Super Forts end
+	// Super Forts begin *bombard*
+	int m_iDefenseDamage;
+	bool m_bBombarded;
+	// Super Forts end
+
 	bool m_bStartingPlot:1;
 	bool m_bHills:1;
 	bool m_bNOfRiver:1;
@@ -713,6 +751,9 @@ protected:
 
 	short* m_aiYield;
 	int* m_aiCulture;
+	// Super Forts begin *culture*
+	short* m_aiCultureRangeForts;
+	// Super Forts end
 	short* m_aiFoundValue;
 	char* m_aiPlayerCityRadiusCount;
 	int* m_aiPlotGroup;			// IDs - keep as int

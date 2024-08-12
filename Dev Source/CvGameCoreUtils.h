@@ -340,6 +340,7 @@ int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int plotGroupValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int countPlotGroup(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int stepUnitValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 
 int baseYieldToSymbol(int iNumYieldTypes, int iYieldStack);
 

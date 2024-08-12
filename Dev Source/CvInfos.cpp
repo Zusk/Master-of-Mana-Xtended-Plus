@@ -7272,6 +7272,10 @@ void CvSpellInfo::copyNonDefaults(CvSpellInfo* pClassInfo, CvXMLLoadUtility* pXM
 //------------------------------------------------------------------------------------------------------
 CvAIPromotionSpecializationInfo::CvAIPromotionSpecializationInfo() :
 m_iAIGroup(NO_AIGROUP),
+m_iUnitAIType(NO_UNITAI),
+m_iSpellDamage(0),
+m_iSpellAura(0),
+m_iBombard(0),
 m_iCityAttack(0),
 m_iCityDefense(0),
 m_iCombatPromotions(0),
@@ -7302,6 +7306,22 @@ CvAIPromotionSpecializationInfo::~CvAIPromotionSpecializationInfo()
 int CvAIPromotionSpecializationInfo::getAIGroup() const
 {
 	return m_iAIGroup;
+}
+int CvAIPromotionSpecializationInfo::getUnitAIType() const
+{
+	return m_iUnitAIType;
+}
+int CvAIPromotionSpecializationInfo::getSpellDamage() const
+{
+	return m_iSpellDamage;
+}
+int CvAIPromotionSpecializationInfo::getSpellAura() const
+{
+	return m_iSpellAura;
+}
+int CvAIPromotionSpecializationInfo::getBombard() const
+{
+	return m_iBombard;
 }
 
 int CvAIPromotionSpecializationInfo::getCityAttack() const
@@ -7399,6 +7419,24 @@ bool CvAIPromotionSpecializationInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(szTextVal, "AIGroup");
 	if (szTextVal != "") m_iAIGroup = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(szTextVal, "UnitAIType");
+	if (szTextVal != "") m_iUnitAIType = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iSpellDamage, "iSpellDamage",0);
+	pXML->GetChildXmlValByName(&m_iSpellAura, "iSpellAura",0);
+	pXML->GetChildXmlValByName(&m_iBombard, "iBombard",0);
+
+	pXML->GetChildXmlValByName(&m_iCityAttack, "iCityAttack",0);
+	pXML->GetChildXmlValByName(&m_iCityDefense, "iCityDefense",0);
+	pXML->GetChildXmlValByName(&m_iCombatPromotions, "iCombatPromotions",0);
+	pXML->GetChildXmlValByName(&m_iDefensiveStrikes, "iDefensiveStrikes",0);
+	pXML->GetChildXmlValByName(&m_iFirstStrikes, "iFirstStrikes",0);
+	pXML->GetChildXmlValByName(&m_iGuardsman, "iGuardsman",0);
+	pXML->GetChildXmlValByName(&m_iHunter, "iHunter",0);
+	pXML->GetChildXmlValByName(&m_iLandscape, "iLandscape",0);
+	pXML->GetChildXmlValByName(&m_iMobility, "iMobility",0);
+	pXML->GetChildXmlValByName(&m_iSight, "iSight",0);
+	pXML->GetChildXmlValByName(&m_iWithdraw, "iWithdraw",0);
+	/*
 	pXML->GetChildXmlValByName(&m_iCityAttack, "iCityAttack",5);
 	pXML->GetChildXmlValByName(&m_iCityDefense, "iCityDefense",0);
 	pXML->GetChildXmlValByName(&m_iCombatPromotions, "iCombatPromotions",100);
@@ -7410,6 +7448,7 @@ bool CvAIPromotionSpecializationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMobility, "iMobility",50);
 	pXML->GetChildXmlValByName(&m_iSight, "iSight",2);
 	pXML->GetChildXmlValByName(&m_iWithdraw, "iWithdraw",10);
+	*/
 	pXML->GetChildXmlValByName(&m_bSaveUpPromotions, "bSaveUpPromotions",0);
 
 	pXML->SetVariableListTagPair(&m_piPromotionValue, "Promotions", sizeof(GC.getPromotionInfo((PromotionTypes)0)), GC.getNumPromotionInfos());
@@ -7432,6 +7471,10 @@ void CvAIPromotionSpecializationInfo::copyNonDefaults(CvAIPromotionSpecializatio
 	CvHotkeyInfo::copyNonDefaults(pClassInfo, pXML);
 
 	if (getAIGroup()					== NO_AIGROUP)			m_iAIGroup						= pClassInfo->getAIGroup();
+	if (getUnitAIType()					== NO_UNITAI)			m_iUnitAIType					= pClassInfo->getUnitAIType();
+	if (getSpellDamage()			    == 0)					m_iSpellDamage     				= pClassInfo->getSpellDamage();
+	if (getSpellAura()			        == 0)					m_iSpellAura     				= pClassInfo->getSpellAura();
+	if (getBombard()			        == 0)					m_iBombard     					= pClassInfo->getBombard();
 	if (getCityAttack()			        == 0)					m_iCityAttack     				= pClassInfo->getCityAttack();
 	if (getCityDefense()			    == 0)					m_iCityDefense  				= pClassInfo->getCityDefense();
 	if (getCombatPromotions()			== 0)					m_iCombatPromotions				= pClassInfo->getCombatPromotions();
@@ -23890,6 +23933,15 @@ m_iHappiness(0),
 m_iPillageGold(0),
 m_iImprovementPillage(NO_IMPROVEMENT),
 m_iImprovementUpgrade(NO_IMPROVEMENT),
+// Super Forts begin *XML*
+m_iCulture(0),
+m_iCultureRange(0),
+//m_iVisibilityChange(0),
+m_iSeeFrom(0),
+m_iUniqueRange(0),
+m_bBombardable(false),
+m_bUpgradeRequiresFortify(false),
+// Super Forts end
 m_bActsAsCity(true),
 m_bHillsMakesValid(false),
 m_bFreshWaterMakesValid(false),
@@ -24084,6 +24136,43 @@ void CvImprovementInfo::setImprovementUpgrade(int i)
 {
 	m_iImprovementUpgrade = i;
 }
+
+// Super Forts begin *XML*
+int CvImprovementInfo::getCulture() const
+{
+	return m_iCulture;
+}
+
+int CvImprovementInfo::getCultureRange() const
+{
+	return m_iCultureRange;
+}
+/*
+int CvImprovementInfo::getVisibilityChange() const
+{
+	return m_iVisibilityChange;
+}*/
+
+int CvImprovementInfo::getSeeFrom() const
+{
+	return m_iSeeFrom;
+}
+
+int CvImprovementInfo::getUniqueRange() const
+{
+	return m_iUniqueRange;
+}
+
+bool CvImprovementInfo::isBombardable() const
+{
+	return m_bBombardable;
+}
+
+bool CvImprovementInfo::isUpgradeRequiresFortify() const
+{
+	return m_bUpgradeRequiresFortify;
+}
+// Super Forts end
 
 bool CvImprovementInfo::isActsAsCity() const
 {
@@ -24501,6 +24590,15 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iPillageGold);
 	stream->Read(&m_iImprovementPillage);
 	stream->Read(&m_iImprovementUpgrade);
+	// Super Forts begin *XML*
+	stream->Read(&m_iCulture);
+	stream->Read(&m_iCultureRange);
+	//stream->Read(&m_iVisibilityChange);
+	stream->Read(&m_iSeeFrom);
+	stream->Read(&m_iUniqueRange);
+	stream->Read(&m_bBombardable);
+	stream->Read(&m_bUpgradeRequiresFortify);
+	// Super Forts end
 
 	stream->Read(&m_bActsAsCity);
 	stream->Read(&m_bHillsMakesValid);
@@ -24642,6 +24740,15 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iPillageGold);
 	stream->Write(m_iImprovementPillage);
 	stream->Write(m_iImprovementUpgrade);
+	// Super Forts begin *XML*
+	stream->Write(m_iCulture);
+	stream->Write(m_iCultureRange);
+	//stream->Write(m_iVisibilityChange);
+	stream->Write(m_iSeeFrom);
+	stream->Write(m_iUniqueRange);
+	stream->Write(m_bBombardable);
+	stream->Write(m_bUpgradeRequiresFortify);
+	// Super Forts end
 
 	stream->Write(m_bActsAsCity);
 	stream->Write(m_bHillsMakesValid);
@@ -24807,6 +24914,15 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iHappiness, "iHappiness");
 	pXML->GetChildXmlValByName(&m_iPillageGold, "iPillageGold");
 	pXML->GetChildXmlValByName(&m_bOutsideBorders, "bOutsideBorders");
+	// Super Forts begin *XML*
+	pXML->GetChildXmlValByName(&m_iCulture, "iCulture");
+	pXML->GetChildXmlValByName(&m_iCultureRange, "iCultureRange");
+	//pXML->GetChildXmlValByName(&m_iVisibilityChange, "iVisibilityChange");
+	pXML->GetChildXmlValByName(&m_iSeeFrom, "iSeeFrom");
+	pXML->GetChildXmlValByName(&m_iUniqueRange, "iUnique");
+	pXML->GetChildXmlValByName(&m_bBombardable, "bBombardable");
+	pXML->GetChildXmlValByName(&m_bUpgradeRequiresFortify, "bUpgradeRequiresFortify");
+	// Super Forts end
 
 	pXML->SetVariableListTagPair(&m_pbTerrainMakesValid, "TerrainMakesValids", sizeof(GC.getTerrainInfo((TerrainTypes)0)), GC.getNumTerrainInfos());
 	pXML->SetVariableListTagPair(&m_pbFeatureMakesValid, "FeatureMakesValids", sizeof(GC.getFeatureInfo((FeatureTypes)0)), GC.getNumFeatureInfos());
@@ -30406,6 +30522,7 @@ bool CvProjectInfo::isAddPromotionToUnits() const { return m_bAddPromotionToUnit
 bool CvProjectInfo::isAddBuildingToCities() const { return m_bAddBuildingToCities;}
 int CvProjectInfo::getCreateUnitFromExperience() const { return m_iCreateUnitFromExperience;}
 int CvProjectInfo::getUnitType() const { return m_iUnitType;}
+const TCHAR* CvProjectInfo::getPyCanDo() const { return m_szPyCanDo; }
 const TCHAR* CvProjectInfo::getPyResult() const { return m_szPyResult; }
 int CvProjectInfo::getPrereqReligion() const { return m_iPrereqReligion;}
 int CvProjectInfo::getPrereqAlignment() const { return m_iPrereqAlignment;}
@@ -30605,6 +30722,7 @@ bool CvProjectInfo::read(CvXMLLoadUtility* pXML)
     pXML->GetChildXmlValByName(&m_iCreateUnitFromExperience, "iCreateUnitFromExperience");
 	pXML->GetChildXmlValByName(szTextVal, "UnitType");
 	m_iUnitType = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(m_szPyCanDo, "PyCanDo");
 	pXML->GetChildXmlValByName(m_szPyResult, "PyResult");
 	pXML->GetChildXmlValByName(szTextVal, "ClimateRitual");
 	m_iClimateRitual = pXML->FindInInfoClass(szTextVal);
@@ -30855,6 +30973,7 @@ void CvProjectInfo::copyNonDefaults(CvProjectInfo* pClassInfo, CvXMLLoadUtility*
 	if (getCreateUnitFromExperience()		== 0)                   m_iCreateUnitFromExperience		= pClassInfo->getCreateUnitFromExperience();
 	if (isAddPromotionToUnits()				== true)                m_bAddPromotionToUnits			= pClassInfo->isAddPromotionToUnits();
 	if (isAddBuildingToCities()				== true)                m_bAddBuildingToCities			= pClassInfo->isAddBuildingToCities();
+	if (getPyCanDo()				== cDefault)			m_szPyCanDo			= pClassInfo->getPyCanDo();
 	if (getPyResult()				== cDefault)			m_szPyResult			= pClassInfo->getPyResult();
 	if (getPrereqReligion()					== NO_RELIGION)		    m_iPrereqReligion				= pClassInfo->getPrereqReligion();
 	if (getPrereqAlignment()				== NO_ALIGNMENT)		m_iPrereqAlignment				= pClassInfo->getPrereqAlignment();

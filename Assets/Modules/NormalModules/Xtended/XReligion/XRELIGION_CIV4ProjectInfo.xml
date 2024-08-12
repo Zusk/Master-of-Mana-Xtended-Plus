@@ -19,7 +19,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iCost>-1</iCost>
-			<iFaithCost>1000</iFaithCost>			
+			<iFaithCost>1500</iFaithCost>			
 			<Button>Art/Interface/Buttons/Projects/Hallowing of the Elohim.dds</Button>
 			<iPrereqGlobalCounter>25</iPrereqGlobalCounter>
 			<iAIWeight>300</iAIWeight>
@@ -41,7 +41,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iCost>-1</iCost>
-			<iManaCost>300</iManaCost>
+			<iManaCost>600</iManaCost>
 			<iFaithCost>0</iFaithCost>			
 			<Button>Art/Interface/Buttons/Projects/Elegy of the Sheaim.dds</Button>
 			<iAIWeight>300</iAIWeight>
@@ -342,6 +342,7 @@
 			<iFaithUpkeep>0</iFaithUpkeep>
 			<bGlobalEnchantment>1</bGlobalEnchantment>
 			<bEffectOnly>1</bEffectOnly>
+			<PyCanDo>whitehandCanDo(iPlayer)</PyCanDo>
 			<PyResult>whitehand(iPlayer)</PyResult>
 		</ProjectInfo>
 		<ProjectInfo>
@@ -363,6 +364,7 @@
 			<iFaithUpkeep>0</iFaithUpkeep>
 			<bGlobalEnchantment>1</bGlobalEnchantment>
 <!--			<bEffectOnly>1</bEffectOnly> -->
+			<PyCanDo>deepeningCanDo(iPlayer)</PyCanDo>
 			<PyResult>deepening(iPlayer)</PyResult>
 		</ProjectInfo>
 		<ProjectInfo>
@@ -382,6 +384,7 @@
 			<iFaithCost>2000</iFaithCost>
 			<bGlobalEnchantment>1</bGlobalEnchantment>
 			<bEffectOnly>1</bEffectOnly>
+			<PyCanDo>stirfromslumberCanDo(iPlayer)</PyCanDo>
 			<PyResult>stirfromslumber(iPlayer)</PyResult>
 		</ProjectInfo>
 		<ProjectInfo>

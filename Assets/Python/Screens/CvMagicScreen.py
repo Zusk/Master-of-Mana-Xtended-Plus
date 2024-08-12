@@ -273,7 +273,7 @@ class CvMagicScreen:
 				if eUnit!=-1:
 					szDescription = gc.getProjectInfo(i).getDescription()
 					szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"
-					if (not gc.getPlayer(gc.getGame().getActivePlayer()).canCreateSummon(i)) or pPlayer.getCurrentMagicRitual()==i:
+					if (not gc.getPlayer(gc.getGame().getActivePlayer()).canCreateSummon(i)) or pPlayer.getCurrentMagicRitual()==i or pPlayer.getDisableSpellcasting() > 0:
 						szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))
 					else:
 						szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))				
@@ -284,7 +284,7 @@ class CvMagicScreen:
 					if gc.getProjectInfo(i).getPrereqCivilization()==gc.getPlayer(gc.getGame().getActivePlayer()).getCivilizationType():
 						szDescription = gc.getProjectInfo(i).getDescription()
 						szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"						
-						if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i:
+						if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i or pPlayer.getDisableSpellcasting() > 0:
 							szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))
 						else:
 							szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))				
@@ -324,7 +324,7 @@ class CvMagicScreen:
 						if gc.getProjectInfo(i).getNumTerrainChanges()>0 and gc.getProjectInfo(i).getManaCost()!=-1:	#need to add: only show summons that are unlocked by Spellresearch
 							szDescription = gc.getProjectInfo(i).getDescription()
 							szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"							
-							if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoTerraformRitual(i)) or pPlayer.getCurrentMagicRitual()==i:											
+							if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoTerraformRitual(i)) or pPlayer.getCurrentMagicRitual()==i or pPlayer.getDisableSpellcasting() > 0:
 								szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))
 							else:
 								szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))				
@@ -378,7 +378,7 @@ class CvMagicScreen:
 										
 									szDescription = "      " + gc.getProjectInfo(i).getDescription()
 									szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"								
-									if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i:
+									if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i or pPlayer.getDisableSpellcasting() > 0:
 										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))												
 									else:
 										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))								
@@ -395,7 +395,7 @@ class CvMagicScreen:
 			for j in range(gc.getMAX_CIV_TEAMS()):
 				if pTeam.isAtWar(j):
 					if gc.getProjectInfo(i).isGlobalEnchantment() and gc.getProjectInfo(i).isHostile() and gc.getTeam(j).getProjectCount(i)==1:
-						if gc.getProjectInfo(i).getFaithCost()==0 and gc.getProjectInfo(i).getFaithUpkeep()==0:					
+						if gc.getProjectInfo(i).getFaithCost()==0 and gc.getProjectInfo(i).getFaithUpkeep()==0 or pPlayer.getDisableSpellcasting() > 0:
 							szDescription = gc.getProjectInfo(i).getDescription()
 							szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))				
 							screen.appendListBoxString(self.GE_HOSTILE_LIST_ID, szDescription, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)		
@@ -442,14 +442,15 @@ class CvMagicScreen:
 								if not (gc.getProjectInfo(i).getFaithCost()==0 and gc.getProjectInfo(i).getFaithUpkeep()==0):							
 									if bFirst:
 										bFirst=false
-										screen.appendListBoxString(self.GE_NEW_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)														
+										screen.appendListBoxString(self.GE_NEW_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 									szDescription = "      " + gc.getProjectInfo(i).getDescription()
-									szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"								
-									if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i:
-										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))												
+									szDescription = szDescription + "("+str(pPlayer.getMagicRitualTurnsNeeded(i,false))+" Turns)"
+									#SpyFanatic: dont show miracle if victory option not enabled
+									if (not gc.getPlayer(gc.getGame().getActivePlayer()).canDoGlobalEnchantment(i)) or pPlayer.getCurrentMagicRitual()==i or pPlayer.getDisableSpellcasting() > 0 or (gc.getProjectInfo(i).getVictoryPrereq() >= 0 and not CyGame().isVictoryValid(gc.getProjectInfo(i).getVictoryPrereq())):
+										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))
 									else:
-										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))								
-									screen.appendListBoxString(self.GE_NEW_LIST_ID, szDescription, WidgetTypes.WIDGET_DO_GLOBAL_ENCHANTMENT, i, iCapitalID, CvUtil.FONT_LEFT_JUSTIFY)		
+										szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_GREEN"))
+									screen.appendListBoxString(self.GE_NEW_LIST_ID, szDescription, WidgetTypes.WIDGET_DO_GLOBAL_ENCHANTMENT, i, iCapitalID, CvUtil.FONT_LEFT_JUSTIFY)
 
 		for i in range(gc.getNumProjectInfos()):
 			if gc.getProjectInfo(i).isGlobalEnchantment() and pTeam.getProjectCount(i)==1:
@@ -462,7 +463,7 @@ class CvMagicScreen:
 			for j in range(gc.getMAX_CIV_TEAMS()):
 				if pTeam.isAtWar(j):
 					if gc.getProjectInfo(i).isGlobalEnchantment() and gc.getProjectInfo(i).isHostile() and gc.getTeam(j).getProjectCount(i)==1:
-						if not (gc.getProjectInfo(i).getFaithCost()==0 and gc.getProjectInfo(i).getFaithUpkeep()==0):												
+						if not (gc.getProjectInfo(i).getFaithCost()==0 and gc.getProjectInfo(i).getFaithUpkeep()==0) or pPlayer.getDisableSpellcasting() > 0:
 							szDescription = gc.getProjectInfo(i).getDescription()
 							szDescription = localText.changeTextColor(szDescription, gc.getInfoTypeForString("COLOR_RED"))				
 							screen.appendListBoxString(self.GE_HOSTILE_LIST_ID, szDescription, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)		
@@ -486,14 +487,14 @@ class CvMagicScreen:
 ############################################
 ### BEGIN CHANGES ENHANCED INTERFACE MOD ###
 ############################################
-			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL):
-				if (inputClass.getData1() == self.SCROLL_TABLE_UP):
-					self.scrollTradeTableUp()
-				elif (inputClass.getData1() == self.SCROLL_TABLE_DOWN):
-					self.scrollTradeTableDown()
-			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS):
-#				ExoticForPrint ("FOOOOOO!!!!")
-				pass
+#			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL):
+#				if (inputClass.getData1() == self.SCROLL_TABLE_UP):
+#					self.scrollTradeTableUp()
+#				elif (inputClass.getData1() == self.SCROLL_TABLE_DOWN):
+#					self.scrollTradeTableDown()
+#			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS):
+##				ExoticForPrint ("FOOOOOO!!!!")
+#				pass
 ##########################################
 ### END CHANGES ENHANCED INTERFACE MOD ###
 ##########################################

@@ -630,6 +630,18 @@ void CvArea::changePower(PlayerTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be < MAX_PLAYERS");
+	/*oosLog("AreaPower"
+		,"Turn: %d,Player:%d,AreaID:%d,Cities:%d,Units:%d,Portals:%d,Power:%d,Change:%d,After:%d"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,eIndex
+		,getID()
+		,getNumCities()
+		,getNumUnits()
+		,getNumPortals()
+		,m_aiPower[eIndex]
+		,iChange
+		,(m_aiPower[eIndex] + iChange)
+	);*/
 	m_aiPower[eIndex] = (m_aiPower[eIndex] + iChange);
 	FAssert(getPower(eIndex) >= 0);
 }

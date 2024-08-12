@@ -69,6 +69,7 @@ void CyInfoPythonInterface4()
 		.def("isVictoryFailed", &CvAdventureInfo::isVictoryFailed, "bool ()")
 		.def("getAdventureCounter", &CvAdventureInfo::getAdventureCounter, "int (int)")
 		.def("getAdventureStep", &CvAdventureInfo::getAdventureStep, "int (int)")
+		.def("isPrereqCiv", &CvAdventureInfo::isPrereqCiv, "bool (int)")
 		;
 
     python::class_<CvAdventureStepInfo, python::bases<CvInfoBase> >("CvAdventureStepInfo")

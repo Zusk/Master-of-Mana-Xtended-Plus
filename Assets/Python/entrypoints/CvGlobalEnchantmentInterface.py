@@ -17,6 +17,14 @@ def globalenchantment(argsList):
 	GE = gc.getProjectInfo(eProject)
 	eval(GE.getPyResult())
 	
+def globalenchantmentcando(argsList):
+	iPlayer, eProject = argsList
+	GE = gc.getProjectInfo(eProject)
+	return eval(GE.getPyCanDo())
+	#iResult = eval(GE.getPyCanDo())
+	#CvUtil.pyPrint('PyCanDo: %s' %(iResult))
+	#return iResult
+
 def addWhiteHandUnit(iUnit):
 	pBestPlot = -1
 	iBestPlot = -1
@@ -51,6 +59,29 @@ def samhain(iPlayer):
 		addWhiteHandUnit(gc.getInfoTypeForString('UNIT_FROSTLING_WOLF_RIDER'))
 	addWhiteHandUnit(gc.getInfoTypeForString('UNIT_MOKKA'))
 
+def whitehandCanDo(iPlayer):
+	pPlayer = gc.getPlayer(iPlayer)
+	py = PyPlayer(iPlayer)
+	iPriest = gc.getInfoTypeForString('UNIT_PRIEST_OF_WINTER')
+	iHighPriest = gc.getInfoTypeForString('UNIT_HIGH_PRIEST_OF_WINTER')
+
+	bDum=true
+	bRiu=true
+	bAna=true
+	for pUnit in py.getUnitList():
+		if (pUnit.getUnitType()==iPriest or pUnit.getUnitType()==iHighPriest):
+			if pUnit.getNameKey()=="Dumannios":
+				bDum=false
+			if pUnit.getNameKey()=="Riuros":
+				bRiu=false
+			if pUnit.getNameKey()=="Anagantios":
+				bAna=false
+
+	if not bDum and not bRiu and not bAna:
+		return False
+
+	return True
+
 def whitehand(iPlayer):
 	pPlayer = gc.getPlayer(iPlayer)
 	pCity = pPlayer.getCapitalCity()
@@ -82,6 +113,29 @@ def whitehand(iPlayer):
 		newUnit3 = pPlayer.initUnit(iPriest, pCity.getX(), pCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 		newUnit3.setName("Anagantios")
 		
+def deepeningCanDo(iPlayer):
+	pPlayer = gc.getPlayer(iPlayer)
+	py = PyPlayer(iPlayer)
+	iPriest = gc.getInfoTypeForString('UNIT_PRIEST_OF_WINTER')
+	iHighPriest = gc.getInfoTypeForString('UNIT_HIGH_PRIEST_OF_WINTER')
+
+	bDum=False
+	bRiu=False
+	bAna=False
+	for pUnit in py.getUnitList():
+		if (pUnit.getUnitType()==iPriest or pUnit.getUnitType()==iHighPriest):
+			if pUnit.getNameKey()=="Dumannios":
+				bDum=True
+			if pUnit.getNameKey()=="Riuros":
+				bRiu=True
+			if pUnit.getNameKey()=="Anagantios":
+				bAna=True
+
+	if bDum and bRiu and bAna:
+		return True
+
+	return False
+
 def deepening(iPlayer):	
 	iDesert = gc.getInfoTypeForString('TERRAIN_DESERT')
 	iGrass = gc.getInfoTypeForString('TERRAIN_GRASS')
@@ -126,6 +180,23 @@ def deepening(iPlayer):
 					if CyGame().getSorenRandNum(750, "The Deepening") < 10:
 						pPlot.setFeatureType(iBlizzard,-1)
 						
+def stirfromslumberCanDo(iPlayer):
+	pPlayer = gc.getPlayer(iPlayer)
+	pCity = pPlayer.getCapitalCity()
+	iDragon = gc.getInfoTypeForString('UNIT_DRIFA')
+
+	bDrifa=true
+
+	py = PyPlayer(iPlayer)
+	for pUnit in py.getUnitList():
+		if pUnit.getUnitType()==iDragon:
+				bDrifa=false
+
+	if bDrifa:
+		return True
+
+	return False
+
 def stirfromslumber(iPlayer):
 	pPlayer = gc.getPlayer(iPlayer)
 	pCity = pPlayer.getCapitalCity()
@@ -210,14 +281,16 @@ def AscensionFinal(iPlayer):
 				iEvent = CvUtil.findInfoTypeNum(gc.getEventTriggerInfo, gc.getNumEventTriggerInfos(),'EVENTTRIGGER_GODSLAYER')
 				triggerData = gc.getPlayer(iBestPlayer).initTriggeredData(iEvent, true, -1, pBestCity.getX(), pBestCity.getY(), iBestPlayer, -1, -1, -1, -1, -1)
 			else:
-				containerUnit = -1
-				pPlot = pBestCity.plot()
-				for i in range(pPlot.getNumUnits()):
-					if pPlot.getUnit(i).getUnitType() == gc.getInfoTypeForString('EQUIPMENT_CONTAINER'):
-						containerUnit = pPlot.getUnit(i)
-				if containerUnit == -1:
-					containerUnit = gc.getPlayer(gc.getBARBARIAN_PLAYER()).initUnit(gc.getInfoTypeForString('EQUIPMENT_CONTAINER'), caster.getX(), caster.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-				containerUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_GODSLAYER'), True)
+				pBestPlayer.initUnit(gc.getInfoTypeForString('EQUIPMENT_GODSLAYER'), pBestCity.getX(), pBestCity.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+				#SpyFanatic: corrected Ascension to just spawn godslayer equipment in the capital of the biggest player
+				#containerUnit = -1
+				#pPlot = pBestCity.plot()
+				#for i in range(pPlot.getNumUnits()):
+				#	if pPlot.getUnit(i).getUnitType() == gc.getInfoTypeForString('EQUIPMENT_CONTAINER'):
+				#		containerUnit = pPlot.getUnit(i)
+				#if containerUnit == -1:
+				#	containerUnit = gc.getPlayer(gc.getBARBARIAN_PLAYER()).initUnit(gc.getInfoTypeForString('EQUIPMENT_CONTAINER'), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+				#containerUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_GODSLAYER'), True)
 
 
 def GrigoriAdventure(iPlayer):
@@ -257,7 +330,7 @@ def HallowingElohim(iPlayer):
 	CyGame().changeGlobalCounter(-25)
 
 def ElegySheaim(iPlayer):
-	CyGame().changeGlobalCounter(15)
+	CyGame().changeGlobalCounter(10)
 
 def DemonPortal(iPlayer):
 	pPlayer = gc.getPlayer(iPlayer)

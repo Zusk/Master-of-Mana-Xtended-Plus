@@ -529,7 +529,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getHealth() > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getHealth()
 
@@ -570,7 +570,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getHappiness() > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getHappiness()
 
@@ -611,7 +611,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getDefenseModifier() > pCity.getNaturalDefense()):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getDefenseModifier()
 
@@ -652,7 +652,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getMaintenanceModifier() < 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getMaintenanceModifier()
 
@@ -693,7 +693,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getObsoleteSafeCommerceChange(CommerceTypes.COMMERCE_CULTURE) > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getObsoleteSafeCommerceChange(CommerceTypes.COMMERCE_CULTURE)
 
@@ -734,7 +734,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getCommerceModifier(CommerceTypes.COMMERCE_GOLD) > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getCommerceModifier(CommerceTypes.COMMERCE_GOLD)
 
@@ -775,7 +775,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getCommerceModifier(CommerceTypes.COMMERCE_RESEARCH) > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getCommerceModifier(CommerceTypes.COMMERCE_RESEARCH)
 
@@ -816,7 +816,7 @@ def cityAdvise(pCity, iPlayer):
 								
 									if (gc.getBuildingInfo(eLoopBuilding).getSeaPlotYieldChange(YieldTypes.YIELD_FOOD) > 0):
 
-										if pCity.canConstruct(eLoopBuilding, False, False, False):
+										if pCity.canConstruct(eLoopBuilding, False, False, False, False):
 
 											iValue = gc.getBuildingInfo(eLoopBuilding).getSeaPlotYieldChange(YieldTypes.YIELD_FOOD)
 

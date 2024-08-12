@@ -101,6 +101,17 @@ class SevoPediaIndex:
 				traitList.remove((szIndexName, iItemID, szItemName))
 			if szIndexName == localText.getText("TXT_KEY_PEDIA_TRAITS_LEADER",		()):
 				traitList.remove((szIndexName, iItemID, szItemName))
+		for szIndexName, iItemID, szItemName in civicList:
+			if szIndexName == localText.getText("TXT_KEY_PEDIA_CIVICS_PRIVILEGED_CLASS",		()):
+				civicList.remove((szIndexName, iItemID, szItemName))
+			if szIndexName == localText.getText("TXT_KEY_PEDIA_CIVICS_VIRTUES",		()):
+				civicList.remove((szIndexName, iItemID, szItemName))
+			if szIndexName == localText.getText("TXT_KEY_PEDIA_CIVICS_RELIGION",		()):
+				civicList.remove((szIndexName, iItemID, szItemName))
+			if szIndexName == localText.getText("TXT_KEY_PEDIA_CIVICS_MEMBERSHIP",		()):
+				civicList.remove((szIndexName, iItemID, szItemName))
+			if szIndexName == localText.getText("TXT_KEY_PEDIA_CIVICS_SPECIAL",		()):
+				civicList.remove((szIndexName, iItemID, szItemName))
 			
 		"""
 		for item in techList:

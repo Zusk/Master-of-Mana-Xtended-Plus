@@ -1443,6 +1443,12 @@
 					<iTrainXPRate>3000</iTrainXPRate>
 				</TrainXPRate>
 			</TrainXPRates>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_ARCHERY_RANGE</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
             <PrereqBuildingClasses>
 				<PrereqBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_ARCHERY_RANGE</BuildingClassType>
@@ -1515,6 +1521,12 @@
                     <iExperience>30</iExperience>
                 </DomainFreeExperience>
             </DomainFreeExperiences>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
             <PrereqBuildingClasses>
 			<PrereqBuildingClass>
 				<BuildingClassType>BUILDINGCLASS_SHIPYARD</BuildingClassType>
@@ -1602,6 +1614,12 @@
                     <iExperience>20</iExperience>
                 </UnitCombatFreeExperience>
             </UnitCombatFreeExperiences>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
             <PrereqBuildingClasses>
 				<PrereqBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
@@ -1667,6 +1685,12 @@
                     <iExperience>30</iExperience>
                 </UnitCombatFreeExperience>
             </UnitCombatFreeExperiences>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
             <PrereqBuildingClasses>
 				<PrereqBuildingClass>
 					<BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>

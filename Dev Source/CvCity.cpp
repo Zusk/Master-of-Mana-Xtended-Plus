@@ -19,6 +19,8 @@
 #include "CyArgsList.h"
 #include "FProfiler.h"
 #include "CvGameTextMgr.h"
+#include "FAStarNode.h"
+#include "CvDLLFAStarIFaceBase.h"
 
 // interfaces used
 #include "CvDLLEngineIFaceBase.h"
@@ -316,6 +318,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	updateFeatureHappiness();
 	updatePowerHealth();
 
+//SpyFanatic: moved above before setPlotCity(this)
 //FfH: Added by Kael 11/07/2007
     if (GET_PLAYER(getOwnerINLINE()).getMaxCities() != -1)
     {
@@ -1546,9 +1549,11 @@ void CvCity::doTurn()
 
 		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
-			FAssert(getBaseYieldRate((YieldTypes)iI) >= 0);
-			FAssert(getYieldRate((YieldTypes)iI) >= 0);
-
+			//FAssert(getBaseYieldRate((YieldTypes)iI) >= 0); //SpyFanatic: can be zero due to negative rate building (tribute to...)
+			//FAssert(getYieldRate((YieldTypes)iI) >= 0);
+/*if(getBaseYieldRate((YieldTypes)iI)<0){
+	oosLog("debugissue","PlayerID:%d,CityID:%d,Yield:%S,base:%d,rate:%d",getOwnerINLINE(),getID(),GC.getYieldInfo((YieldTypes)iI).getDescription(),getBaseYieldRate((YieldTypes)iI),getYieldRate((YieldTypes)iI));
+}*/
 			iCount = 0;
 
 //			for (iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
@@ -1849,7 +1854,19 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		GET_TEAM(getTeam()).setHasTech((TechTypes)iData1,true,getOwnerINLINE(),true,true);
 		break;
 	case TASK_CITY_DUNGEON_EVENT:
-		GC.getMapINLINE().getDungeon(iData1)->ResolveDeal(getOwnerINLINE(), (DungeonEventTypes)iData2);
+		{
+			//GC.getMapINLINE().getDungeon(iData1)->ResolveDeal(getOwnerINLINE(), (DungeonEventTypes)iData2);
+			//SpyFanatic: CTD in case in the meantime AI civ destroyed that Dungeon, so as safe measure, crosscheck that Dungeon is still existing before proceeding, so adding a NULL check
+			CvDungeon* pTargetDungeon = GC.getMapINLINE().getDungeon(iData1);
+			if(pTargetDungeon != NULL)
+			{
+				//Do not execute if the dungeon is a barbaric city not anymore belonging to barbs player
+				if(pTargetDungeon->plot() == NULL || pTargetDungeon->plot()->getPlotCity() == NULL || pTargetDungeon->plot()->getPlotCity()->getOwnerINLINE() >= BARBARIAN_PLAYER)
+				{
+					pTargetDungeon->ResolveDeal(getOwnerINLINE(), (DungeonEventTypes)iData2);
+				}
+			}
+		}
 		break;
 /*************************************************************************************************/
 /**	END                                                                                         **/
@@ -2367,7 +2384,7 @@ bool CvCity::isBuildingsMaxed() const
 
 //FfH: Modified by Kael 08/07/2007
 //bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreUpgrades) const
-bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreUpgrades) const
+bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreUpgrades, bool bIgnoreResources) const
 {
 	if (eUnit == NO_UNIT)
 	{
@@ -2430,10 +2447,10 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		}
 	}
 
-    return canUpgrade(eUnit, bContinue, bTestVisible, bIgnoreCost, bIgnoreUpgrades);
+    return canUpgrade(eUnit, bContinue, bTestVisible, bIgnoreCost, bIgnoreUpgrades,bIgnoreResources);
 }
 
-bool CvCity::canUpgrade(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreUpgrades) const
+bool CvCity::canUpgrade(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreUpgrades, bool bIgnoreResources) const
 //FfH: End Modify
 
 {
@@ -2480,7 +2497,7 @@ bool CvCity::canUpgrade(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 		}
 	}
 
-	if (!plot()->canTrain(eUnit, bContinue, bTestVisible))
+	if (!plot()->canTrain(eUnit, bContinue, bTestVisible,bIgnoreResources))
 	{
 		return false;
 	}
@@ -2630,7 +2647,7 @@ bool CvCity::canTrain(UnitCombatTypes eUnitCombat) const
 }
 
 
-bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost) const
+bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreResources) const
 {
 	BuildingTypes ePrereqBuilding;
 
@@ -2773,6 +2790,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		return false;
 	}
 //END
+
 	if (!bTestVisible)
 	{
 		if (!bContinue)
@@ -2823,14 +2841,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			}
 		}
 
-		if (GC.getBuildingInfo(eBuilding).getPrereqAndBonus() != NO_BONUS)
-		{
-			if (!hasBonus((BonusTypes)GC.getBuildingInfo(eBuilding).getPrereqAndBonus()))
-			{
-				return false;
-			}
-		}
-
 		eCorporation = (CorporationTypes)GC.getBuildingInfo(eBuilding).getFoundsCorporation();
 		if (eCorporation != NO_CORPORATION)
 		{
@@ -2874,6 +2884,32 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 			return false;
 		}
 
+		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+		{
+			if (GC.getBuildingInfo(eBuilding).isBuildingClassNeededInCity(iI))
+			{
+				ePrereqBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+
+				if (ePrereqBuilding != NO_BUILDING)
+				{
+					if (0 == getNumBuilding(ePrereqBuilding) /* && (bContinue || (getFirstBuildingOrder(ePrereqBuilding) == -1))*/)
+					{
+						return false;
+					}
+				}
+			}
+		}
+	}
+	if (!bTestVisible || !bIgnoreResources)
+	{
+		if (GC.getBuildingInfo(eBuilding).getPrereqAndBonus() != NO_BONUS)
+		{
+			if (!hasBonus((BonusTypes)GC.getBuildingInfo(eBuilding).getPrereqAndBonus()))
+			{
+				return false;
+			}
+		}
+
 		bRequiresBonus = false;
 		bNeedsBonus = true;
 
@@ -2893,24 +2929,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		{
 			return false;
 		}
-
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			if (GC.getBuildingInfo(eBuilding).isBuildingClassNeededInCity(iI))
-			{
-				ePrereqBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
-
-				if (ePrereqBuilding != NO_BUILDING)
-				{
-					if (0 == getNumBuilding(ePrereqBuilding) /* && (bContinue || (getFirstBuildingOrder(ePrereqBuilding) == -1))*/)
-					{
-						return false;
-					}
-				}
-			}
-		}
 	}
-
 //FfH: Added by Kael 08/04/2007
 
 	if (GC.getBuildingInfo(eBuilding).getPrereqCiv() != NO_CIVILIZATION)
@@ -2969,34 +2988,52 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	for(iI=0;iI<GC.getNumBonusInfos();iI++)
+	if (!bIgnoreResources)
 	{
-		if(GC.getBuildingInfo(eBuilding).isBonusConsumed(iI))
+		for(iI=0;iI<GC.getNumBonusInfos();iI++)
 		{
-			bValid=false;
-			bFound=false;
-
-			int iCurrent=0;
-
-			CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
-
-			while (pOrderNode != NULL)
+			if(GC.getBuildingInfo(eBuilding).isBonusConsumed(iI))
 			{
-				if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT)
+				int iCurrent=0;
+
+				CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+				while (pOrderNode != NULL)
 				{
-					BuildingTypes eBuilding = (BuildingTypes)pOrderNode->m_data.iData1;
-					if (GC.getBuildingInfo(eBuilding).isBonusConsumed(iI))
+					if (pOrderNode->m_data.eOrderType == ORDER_CONSTRUCT)
 					{
-						iCurrent++;
-						break;
+						BuildingTypes eBuilding = (BuildingTypes)pOrderNode->m_data.iData1;
+						if (GC.getBuildingInfo(eBuilding).isBonusConsumed(iI))
+						{
+							iCurrent++;
+							break;
+						}
 					}
+					pOrderNode = nextOrderQueueNode(pOrderNode);
 				}
-				pOrderNode = nextOrderQueueNode(pOrderNode);
-			}
-
-			if(kPlayer.getNumAvailableBonuses((BonusTypes)iI)-kPlayer.getBonusImport((BonusTypes)iI)-kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI)+iCurrent<=0)
-			{
-				return false;
+				/*
+				if(isOOSLogging())
+				{
+					oosLog("ConsumeResource"
+						,"Turn:%d,Player:%S,Bonus:%S,Available(%d)[+Import(%d)]-Export(%d)-ConsumedByProduction(%d)-CurrentBuildQueue(%d)=%d,old=%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,GC.getCivilizationInfo(kPlayer.getCivilizationType()).getDescription()
+						,GC.getBonusInfo((BonusTypes)iI).getDescription()
+						,kPlayer.getNumAvailableBonuses((BonusTypes)iI)
+						,kPlayer.getBonusImport((BonusTypes)iI)
+						,kPlayer.getBonusExport((BonusTypes)iI)
+						,kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI)
+						,iCurrent
+						,kPlayer.getNumAvailableBonuses((BonusTypes)iI) - kPlayer.getBonusExport((BonusTypes)iI) - kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI) + iCurrent
+						,kPlayer.getNumAvailableBonuses((BonusTypes)iI)-kPlayer.getBonusImport((BonusTypes)iI)-kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI)+iCurrent
+					);
+				}*/
+				//SpyFanatic: use imported/exported bonus (available already count for import, and getNumBonusesConsumedByProduction is counting also producion queue so this is why +iCurrent)
+				//if(kPlayer.getNumAvailableBonuses((BonusTypes)iI)-kPlayer.getBonusImport((BonusTypes)iI)-kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI)+iCurrent<=0)
+				if(kPlayer.getNumAvailableBonuses((BonusTypes)iI) - kPlayer.getBonusExport((BonusTypes)iI) - kPlayer.getNumBonusesConsumedByProduction((BonusTypes)iI) + iCurrent <= 0)
+				{
+					return false;
+				}
 			}
 		}
 	}
@@ -4796,6 +4833,24 @@ void CvCity::processBonus(BonusTypes eBonus, int iChange)
 	int iGoodValue;
 	int iBadValue;
 
+	/*if(eBonus == 46 && iChange == -1 && getBonusGoodHealth() == 2)
+	{
+		FAssert(eBonus != 46);
+	}
+	if(isOOSLogging() && iChange != 0)
+	{
+		oosLog("AIBonuses","Turn:%d,Player:%d,CityID:%d,eBonus:%d,Bonus:%S,processBonus:%d,GoodHealth:%d,BadHealth:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,getOwnerINLINE()
+			,getID()
+			,eBonus
+			,GC.getBonusInfo(eBonus).getDescription()
+			,iChange
+			,getBonusGoodHealth()
+			,getBonusBadHealth()
+		);
+	}*/
+
 	iValue = GC.getBonusInfo(eBonus).getHealth();
 	iGoodValue = std::max(0, iValue);
 	iBadValue = std::min(0, iValue);
@@ -4861,10 +4916,13 @@ void CvCity::processBonus(BonusTypes eBonus, int iChange)
     }
     if (isCapital())
     {
-        if (GC.getBonusInfo(eBonus).getDiscoverRandModifier() != 0)
+        //SpyFanatic: removed as water resources in capital are then increasing global spawning rate
+		/*
+		if (GC.getBonusInfo(eBonus).getDiscoverRandModifier() != 0)
         {
             GET_PLAYER(getOwnerINLINE()).changeDiscoverRandModifier(GC.getBonusInfo(eBonus).getDiscoverRandModifier() * iChange);
         }
+        */
         if (GC.getBonusInfo(eBonus).getHealChange() != 0)
         {
             GET_PLAYER(getOwnerINLINE()).changeHealChange(GC.getBonusInfo(eBonus).getHealChange() * iChange);
@@ -5194,7 +5252,12 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			{
 				if (GC.getBuildingInfo(eBuilding).isTeamShare() || (iI == getOwnerINLINE()))
 				{
-					GET_PLAYER((PlayerTypes)iI).processBuilding(eBuilding, iChange, area());
+					GET_PLAYER((PlayerTypes)iI).processBuilding(eBuilding, iChange, area()); //SpyFanatic: turn 218, spawn of mercurians on same city which hold What happen when city is lost due to spawn of mercurians and we just lose the House of Healing? Same team... but health bonus not yet processed by Mercurians
+					/*
+PlayerID:10,CityName:TXT_KEY_CITY_ELOHIM_2,Building:House of Healing,num:0,oldnum:1
+PlayerID:10,changeBuildingGoodHealth:1,change:-1,after:0
+PlayerID:12,changeBuildingGoodHealth:0,change:-1,after:-1
+					*/
 				}
 			}
 		}
@@ -7719,7 +7782,7 @@ void CvCity::changeBonusGoodHealth(int iChange)
 	if (iChange != 0)
 	{
 		m_iBonusGoodHealth += iChange;
-		FAssert(getBonusGoodHealth() >= 0);
+		//FAssert(getBonusGoodHealth() >= 0); //SpyFanatic:same assert as below
 
 		FAssertMsg(getBonusGoodHealth() >= 0, "getBonusGoodHealth is expected to be >= 0");
 
@@ -7738,7 +7801,7 @@ void CvCity::changeBonusBadHealth(int iChange)
 	if (iChange != 0)
 	{
 		m_iBonusBadHealth += iChange;
-		FAssert(getBonusBadHealth() <= 0);
+		//FAssert(getBonusBadHealth() <= 0); //SpyFanatic:same assert as below
 
 		FAssertMsg(getBonusBadHealth() <= 0, "getBonusBadHealth is expected to be <= 0");
 
@@ -10297,7 +10360,8 @@ void CvCity::calculateCityBonusCommerceRateModifier()
 			if(pLoopPlot != NULL && pLoopPlot->getWorkingCity() == this) {
 				if(pLoopPlot->getBonusType(getTeam()) != NO_BONUS) 
 					if(GC.getBonusInfo(pLoopPlot->getBonusType(getTeam())).getCityCommerceModifierType() == i)
-						if(pLoopPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pLoopPlot->getImprovementType()).isImprovementBonusTrade(pLoopPlot->getBonusType(getTeam())))
+						if(pLoopPlot == plot() ||
+							(pLoopPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pLoopPlot->getImprovementType()).isImprovementBonusTrade(pLoopPlot->getBonusType(getTeam()))))
 							iModifier += GC.getBonusInfo(pLoopPlot->getBonusType(getTeam())).getCityBonusModifier();
 			}
 		}
@@ -10306,12 +10370,15 @@ void CvCity::calculateCityBonusCommerceRateModifier()
 		for (int k = 0; k < GC.getNumBuildingInfos(); k++) {
 			if (getNumBuilding((BuildingTypes)k) > 0) {
 				if (GC.getBuildingInfo((BuildingTypes)k).getNumFreeBonuses() > 0) {
-					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus()).getCityCommerceModifierType() == (CommerceTypes)i)
+					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus()).getCityCommerceModifierType() == (CommerceTypes)i){
 						iModifier += GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus()).getCityBonusModifier();
-					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus2() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus()).getCityCommerceModifierType() == (CommerceTypes)i)
+					}
+					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus2() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus2()).getCityCommerceModifierType() == (CommerceTypes)i){
 						iModifier += GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus2()).getCityBonusModifier();
-					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus3() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus()).getCityCommerceModifierType() == (CommerceTypes)i)
+					}
+					if (GC.getBuildingInfo((BuildingTypes)k).getFreeBonus3() != NO_BONUS && GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus3()).getCityCommerceModifierType() == (CommerceTypes)i){
 						iModifier += GC.getBonusInfo((BonusTypes)GC.getBuildingInfo((BuildingTypes)k).getFreeBonus3()).getCityBonusModifier();
+					}
 				}
 			}
 		}
@@ -10721,6 +10788,18 @@ void CvCity::changeCulture(PlayerTypes eIndex, int iChange, bool bPlots, bool bU
 
 void CvCity::changeCultureTimes100(PlayerTypes eIndex, int iChange, bool bPlots, bool bUpdatePlotGroups)
 {
+	/*if(isOOSLogging() && getCultureTimes100(eIndex) + iChange < 0)
+	{
+		oosLog("AINegativeCulture"
+				,"Turn:%d,Player:%d,CityID:%d,Culture:%d,Change:%d,Founded:%d\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,getCultureTimes100(eIndex)
+				,iChange
+				,getGameTurnFounded()
+			);
+	}*/
 	setCultureTimes100(eIndex, (getCultureTimes100(eIndex) + iChange), bPlots, bUpdatePlotGroups);
 }
 
@@ -11080,8 +11159,8 @@ void CvCity::changeNumBonuses(BonusTypes eIndex, int iChange)
 		m_paiNumBonuses[eIndex] += iChange;
 
 //FfH: Modified by Kael 08/21/2007
-//		if (bOldHasBonus != hasBonus(eIndex))
-		if (bOldHasBonus != hasBonus(eIndex) && !GC.getBonusInfo(eIndex).isModifierPerBonus())
+		if (bOldHasBonus != hasBonus(eIndex))
+//		if (bOldHasBonus != hasBonus(eIndex) && !GC.getBonusInfo(eIndex).isModifierPerBonus())
 //FfH: End Modify
 
 		{
@@ -11098,7 +11177,15 @@ void CvCity::changeNumBonuses(BonusTypes eIndex, int iChange)
 //FfH: Added by Kael 08/21/2007
 		if (GC.getBonusInfo(eIndex).isModifierPerBonus())
 		{
-            processBonus(eIndex, iChange);
+            //processBonus(eIndex, iChange); //SpyFanatic: this is only for the below Mana Bonus topic, not for health or else...
+			if (GC.getBonusInfo(eIndex).getMutateChance() != 0)
+			{
+				changeMutateChance(GC.getBonusInfo(eIndex).getMutateChance() * iChange);
+			}
+			if (GC.getBonusInfo(eIndex).getResearchModifier() != 0)
+			{
+				changeCommerceRateModifier(COMMERCE_RESEARCH, GC.getBonusInfo(eIndex).getResearchModifier() * iChange);
+			}
 		}
 //FfH: End Add
 
@@ -11478,9 +11565,9 @@ void CvCity::alterSpecialistCount(SpecialistTypes eIndex, int iChange)
 					{
 						changeSpecialistCount(eIndex, -1);
 
-						if ((eIndex != GC.getDefineINT("DEFAULT_SPECIALIST")) && (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST))
+						if ((eIndex != GC.getDEFAULT_SPECIALIST()) && (GC.getDEFAULT_SPECIALIST() != NO_SPECIALIST))
 						{
-							changeSpecialistCount(((SpecialistTypes)GC.getDefineINT("DEFAULT_SPECIALIST")), 1);
+							changeSpecialistCount(((SpecialistTypes)GC.getDEFAULT_SPECIALIST()), 1);
 						}
 						else if (extraFreeSpecialists() > 0)
 						{
@@ -11536,7 +11623,24 @@ int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
 
 bool CvCity::isSpecialistValid(SpecialistTypes eIndex, int iExtra) const
 {
-	return (((getSpecialistCount(eIndex) + iExtra) <= getMaxSpecialistCount(eIndex)) || GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex) || (eIndex == GC.getDefineINT("DEFAULT_SPECIALIST")));
+	/**
+	GC.getTimeMeasure().Start("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::first");
+	int first = getSpecialistCount(eIndex) + iExtra;
+	GC.getTimeMeasure().Stop("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::first");
+	GC.getTimeMeasure().Start("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::second");
+	int second = getMaxSpecialistCount(eIndex);
+	GC.getTimeMeasure().Stop("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::second");
+	GC.getTimeMeasure().Start("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::third");
+	int third =  GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex);
+	GC.getTimeMeasure().Stop("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::third");
+	GC.getTimeMeasure().Start("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::fourth");
+	int fourth = GC.getDefineINT("DEFAULT_SPECIALIST");
+	GC.getTimeMeasure().Stop("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid::fourth");
+
+	return ((first <= second) || third || (eIndex == fourth));
+	*/
+	//return (((getSpecialistCount(eIndex) + iExtra) <= getMaxSpecialistCount(eIndex)) || GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex) || (eIndex == GC.getDefineINT("DEFAULT_SPECIALIST")));
+	return (((getSpecialistCount(eIndex) + iExtra) <= getMaxSpecialistCount(eIndex)) || GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex) || (eIndex == GC.getDEFAULT_SPECIALIST()));
 }
 
 
@@ -11911,9 +12015,9 @@ void CvCity::alterWorkingPlot(int iIndex)
 				{
 					setWorkingPlot(iIndex, false);
 
-					if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+					if (GC.getDEFAULT_SPECIALIST() != NO_SPECIALIST)
 					{
-						changeSpecialistCount(((SpecialistTypes)GC.getDefineINT("DEFAULT_SPECIALIST")), 1);
+						changeSpecialistCount(((SpecialistTypes)GC.getDEFAULT_SPECIALIST()), 1);
 					}
 					else
 					{
@@ -12719,7 +12823,9 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 					else {
 						YieldTypes eYield = (YieldTypes)GC.getUnitInfo((UnitTypes)iData1).getGlobalYieldTypeCost();
 						CvPlayer& pPlayer = GET_PLAYER(getOwnerINLINE());
-						int iChange = std::max(pPlayer.getGlobalYield(eYield) - 500, 0);
+						//int iChange = std::max(pPlayer.getGlobalYield(eYield) - 500, 0);
+						//SpyFanatic: put discount on xml alt defines... Trying to set to 0 to see impact for acquiring equipments
+						int iChange = std::max(pPlayer.getGlobalYield(eYield) - GC.getDefineINT("AI_DISCOUNT_GLOBAL_YIELD"), 0);
 						iChange = std::min(iChange, getGlobalYieldCost((UnitTypes)iData1));							
 						GET_PLAYER(getOwnerINLINE()).changeGlobalYield(eYield, -iChange);
 					}			
@@ -12742,6 +12848,7 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 				if(kBuilding.isBonusConsumed(iI))
 				{
 					GET_PLAYER(getOwnerINLINE()).changeNumBonusesConsumedByProduction((BonusTypes)iI,1);
+					//oosLog("consumeBonus","%d %S 1",iI,GC.getBonusInfo((BonusTypes)iI).getDescription()); //,GET_PLAYER(getOwnerINLINE()).getNumBonusesConsumedByProduction((BonusTypes)iI)
 				}
 			}
 
@@ -12754,7 +12861,9 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 					else {
 						YieldTypes eYield = (YieldTypes)GC.getBuildingInfo((BuildingTypes)iData1).getGlobalYieldTypeCost();
 						CvPlayer& pPlayer = GET_PLAYER(getOwnerINLINE());
-						int iChange = std::max(pPlayer.getGlobalYield(eYield) - 500, 0);
+						//int iChange = std::max(pPlayer.getGlobalYield(eYield) - 500, 0);
+						//SpyFanatic: put discount on xml alt defines... Trying to set to 0 to see impact for acquiring equipments
+						int iChange = std::max(pPlayer.getGlobalYield(eYield) - GC.getDefineINT("AI_DISCOUNT_GLOBAL_YIELD"), 0);
 						iChange = std::min(iChange, getGlobalYieldCost((BuildingTypes)iData1));							
 						GET_PLAYER(getOwnerINLINE()).changeGlobalYield(eYield, -iChange);
 					}			
@@ -16806,7 +16915,7 @@ int CvCity::getNumCityPlots() const
 {
     if (getPlotRadius() == 3)
     {
-        return 37;
+        return NUM_CITY_PLOTS;
     }
 
     else if (getPlotRadius() == 1)
@@ -16814,7 +16923,7 @@ int CvCity::getNumCityPlots() const
         return 9;
     }
 
-    return 21;
+    return NUM_CITY_PLOTS_STANDARD;
 }
 
 int CvCity::getPlotRadius() const
@@ -16847,9 +16956,38 @@ void CvCity::setPlotRadius(int iNewValue)
                 pLoopPlot->updateWorkingCity();
             }
         }
-
+		int iOldPlotRadius = m_iPlotRadius;
         m_iPlotRadius = iNewValue;
+        //SpyFanatic: added to manage plot radius increase plot from 2 to 3 and avoid issue setPlotCity for Kuriotates
+		if (iOldPlotRadius != m_iPlotRadius)
+        {
+			for (iI = iOldPlotRadius; iI < NUM_CITY_PLOTS; ++iI)
+			{
+				pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 
+				if (pLoopPlot != NULL)
+				{
+					/*
+					if(isOOSLogging())
+					{
+						oosLog("AICityRadius","Turn:%d,Player:%d,CityID:%d,X:%d,Y:%d,AdditionalChange:%d,m_iCityRadiusCount:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getOwner()
+								,getID()
+								,pLoopPlot->getX()
+								,pLoopPlot->getY()
+								,(iOldPlotRadius < m_iPlotRadius) ? 1 : -1
+								,pLoopPlot->getCityRadiusCount()
+							);
+					}
+					*/
+
+					pLoopPlot->changeCityRadiusCount((iOldPlotRadius < m_iPlotRadius) ? 1 : -1);
+					pLoopPlot->changePlayerCityRadiusCount(getOwnerINLINE(), (iOldPlotRadius < m_iPlotRadius) ? 1 : -1);
+				}
+			}
+		}
+		//
         updateFeatureHealth();
         updateFeatureHappiness();
     }
@@ -17266,6 +17404,8 @@ void CvCity::updateCommerceFromUnits()
             {
 				for(int i = 0; i < NUM_COMMERCE_TYPES; ++i) {
 					m_paiCommerceFromUnits[i] += pLoopUnit->getUnitInfo().getCityCommerceChanges((CommerceTypes)i) * 100;
+					//SpyFanatic: make sure that Balseraph Puppet does not cause negative culture or research
+					m_paiCommerceFromUnits[i] = std::max(0,m_paiCommerceFromUnits[i]);
 				}
 			}
 		}
@@ -17855,9 +17995,24 @@ int CvCity::getAdditionalYieldByBuilding(YieldTypes eIndex, BuildingTypes eBuild
 	int iModifier = getBaseYieldRateModifier(eIndex);
 
 	if (getNumActiveBuilding(eBuilding) > 0)	//If the city already has the building, then the formula needs to be adjusted to properly calculate how much the building is actually giving.
+	{
+/*
+		oosLog("debugissue","PlayerID:%d,CityID:%d,Yield:%S,extrarate:%d,extramodifier:%d,rate:%d,modifier:%d,unhappy:%d,poweryield:%d,area:%d",getOwnerINLINE(),getID(),GC.getYieldInfo(eIndex).getDescription(),iExtraRate,iExtraModifier,iRate,iModifier,unhappyLevel(0), isPower() ? getPowerYieldRateModifier(eIndex) : -666,(area() != NULL) ? area()->getYieldRateModifier(getOwnerINLINE(), eIndex) : -666);
+*/
+		if(iExtraRate < 0)
+		{
+			//SpyFanatic: for negative rate from a building, modifier should be added.. not subtracted! PS: as of now there is no building who provide negative extra rate and extra modifiers... So the formula has been simplified
+			//Tribute to overloard -1 production, tribute to lugus -1 gold, kilmore -1 culture, junil -1 spellreasearch
+			//Building that decrease percentage: energy drain, defiled soil -20 % production. ash rain -20% food production commerce
+			return ((200 - iModifier) * iExtraRate) / 100;
+		}
+
 		return ((iExtraModifier * iExtraRate) + (iExtraModifier * (iRate - iExtraRate)) + ((iModifier - iExtraModifier) * iExtraRate)) / 100;
+	}
 	else
+	{
 		return (((iModifier + iExtraModifier) * (iExtraRate + iRate)) - (iModifier * iRate)) / 100;
+	}
 }
 
 /*
@@ -19452,6 +19607,19 @@ void CvCity::spawnGarrisonUnits() const
 		CvUnit* newUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getX_INLINE(), getY_INLINE());
 		newUnit->setGarrision(true);
 	}
+}
+
+//SpyFanatic: plot distance to another plot without counting impassable, water and plot which require resistance
+int CvCity::getStepDistance(CvPlot* pTargetPlot)
+{
+	gDLL->getFAStarIFace()->ForceReset(&GC.getStepUnitFinder());
+	gDLL->getFAStarIFace()->GeneratePath(&GC.getStepUnitFinder(), getX_INLINE(), getY_INLINE(), pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), false, 0, false);
+	FAStarNode* pNode = gDLL->getFAStarIFace()->GetLastNode(&GC.getStepUnitFinder());
+	if(pNode != NULL)
+	{
+		return pNode->m_iData1;
+	}
+	return -1;
 }
 
 /*************************************************************************************************/

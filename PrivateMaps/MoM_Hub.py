@@ -1100,42 +1100,77 @@ def minStartingDistanceModifier():
 	else:
 		return -50
 
+def isPlaneMapscript():
+	return False
+
 def findStartingPlot(argsList):
+
+	[playerID] = argsList
+
 	# Set up for maximum of 18 players! If more, use default implementation.
 	global bSuccessFlag
 	if bSuccessFlag == False:
 		return CvMapGeneratorUtil.findStartingPlot(playerID, true)
-		
-	[playerID] = argsList
 
-	def isValid(playerID, x, y):
-		gc = CyGlobalContext()
-		map = CyMap()
-		pPlot = map.plot(x, y)
-		# Check to ensure the plot is on the main landmass.
-		if (pPlot.getArea() != map.findBiggestArea(False).getID()):
-			return false
+	gc = CyGlobalContext()
+	map = CyMap()
+	player = gc.getPlayer(playerID)
+	player.AI_updateFoundValues(True)
 
-		iW = map.getGridWidth()
-		iH = map.getGridHeight()
-		iPlayers = gc.getGame().countCivPlayersEverAlive()
-		global start_plots
-		global iPlotShift
-		global shuffledPlayers
-		playerTemplateAssignment = shuffledPlayers[playerID]
-		[iStartX, iStartY] = start_plots[playerTemplateAssignment]
-		
-		# Now check for eligibility according to the defintions found in the template.
-		westX = max(2, iStartX - iPlotShift)
-		eastX = min(iW - 3, iStartX + iPlotShift)
-		southY = max(2, iStartY - iPlotShift)
-		northY = min(iH - 3, iStartY + iPlotShift)
-		if x < westX or x > eastX or y < southY or y > northY:
-			return false
-		else:
-			return true
+	iRange = player.startingPlotRange()
+	iPass = 0
 
-	return CvMapGeneratorUtil.findStartingPlot(playerID, isValid)
+	iBestValue = 0
+	pBestPlot = None
+
+	iW = map.getGridWidth()
+	iH = map.getGridHeight()
+	iPlayers = gc.getGame().countCivPlayersEverAlive()
+	global start_plots
+	global iPlotShift
+	global shuffledPlayers
+	playerTemplateAssignment = shuffledPlayers[playerID]
+	[iStartX, iStartY] = start_plots[playerTemplateAssignment]
+
+	# Now check for eligibility according to the defintions found in the template.
+	westX = max(2, iStartX - iPlotShift)
+	eastX = min(iW - 3, iStartX + iPlotShift)
+	southY = max(2, iStartY - iPlotShift)
+	northY = min(iH - 3, iStartY + iPlotShift)
+
+	print "Player " + str(playerID) + " map " + str(iW) + "x" + str(iH) + " [" + str(iStartX) + " - " + str(iPlotShift) + "][" + str(iStartY) + " - " + str(iPlotShift) + "][" + str(iStartX) + " + " + str(iPlotShift) + "][" + str(iStartY) + " + " + str(iPlotShift) + "]"
+	for iX in xrange(westX, eastX + 1):
+		for iY in xrange(southY, northY + 1):
+			pLoopPlot = map.plot(iX, iY)
+			# Check to ensure the plot is on the main landmass.
+			if (pLoopPlot.getArea() == map.findBiggestArea(False).getID()):
+				val = pLoopPlot.getFoundValue(playerID)
+
+				if val > iBestValue:
+					valid = True
+					for iI in xrange(gc.getMAX_CIV_PLAYERS()):
+						if (gc.getPlayer(iI).isAlive()):
+							if (iI != playerID):
+								if gc.getPlayer(iI).startingPlotWithinRange(pLoopPlot, playerID, iRange, iPass):
+									print "Player " + str(playerID) + " [" + str(iX) + "," + str(iY) + "] in other player range"
+									valid = False
+									break
+
+					if valid:
+						print "Player " + str(playerID) + " [" + str(iX) + "," + str(iY) + "] best value: " + str(val)
+						iBestValue = val
+						pBestPlot = pLoopPlot
+				else:
+					print "Player " + str(playerID) + " [" + str(iX) + "," + str(iY) + "] value: " + str(val) + " < " + str(iBestValue)
+			else:
+				print "Player " + str(playerID) + " [" + str(iX) + "," + str(iY) + "] area: " + str(pLoopPlot.getArea()) + " not in main area: " + str(map.findBiggestArea(False).getID())
+
+	if pBestPlot != None:
+		print "Player " + str(playerID) + " starting [" + str(pBestPlot.getX()) + "," + str(pBestPlot.getY()) + "]"
+		return map.plotNum(pBestPlot.getX(), pBestPlot.getY())
+	else:
+		print "Player " + str(playerID) + " pass " + str(iPass) + " failed"
+		return CvMapGeneratorUtil.findStartingPlot(playerID)
 
 def normalizeRemovePeaks():
 	return None

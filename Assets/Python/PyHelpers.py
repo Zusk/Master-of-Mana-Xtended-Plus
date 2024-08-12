@@ -473,7 +473,7 @@ class PyCity:
 		return self.city.canTrain(iUnit, False, False)
 
 	def canConstruct (self, iBuilding):
-		return self.city.canConstruct(iBuilding, False, False, False)
+		return self.city.canConstruct(iBuilding, False, False, False, False)
 
 	def canCreate (self, iProject):
 		return self.city.canCreate(iProject, False, False)

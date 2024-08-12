@@ -31,6 +31,11 @@
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvStructs.h"
+#include "CvDiploParameters.h"
+
+// lfgr UI 11/2020: Allow cycling through units in plot help
+#include "PlotHelpCycling.h"
+
 
 int shortenID(int iId)
 {
@@ -471,7 +476,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 	bool bFirst;
 	bool bShift = gDLL->shiftKey();
 	bool bAlt = gDLL->altKey();
-
+	bool bCtrl = gDLL->ctrlKey();	//SpyFanatic: use ctrl button to reduce some display for CombatAura
 	/*************************************************************************************************/
 	/**	ADDON (Ranged Combat) Sephi								                     				**/
 	/**																								**/
@@ -890,7 +895,18 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 
 	if (!bOneLine)
 	{
+if(!bAlt && !bShift && !bCtrl){
 		if (!bShort) {
+			//SpyFanatic: show level
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_LEVEL", pUnit->getLevel()));
+			//SpyFanatic: TEMP to show free promotion
+			if(pUnit->getFreePromotionPick() > 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_FREEPROMOTION", pUnit->getFreePromotionPick()));
+			}
+
 			//////////////////////////////////////////////////
 			// general Combat Bonuses that are the most useful
 			//////////////////////////////////////////////////
@@ -1593,7 +1609,6 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 			/*************************************************************************************************/
 		}
 
-
 		if (pUnit->isImmuneToDefensiveStrike())
 		{
 			szString.append(NEWLINE);
@@ -2148,6 +2163,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 				/********************************************************/
 				/*	BUGFfH comment: about Damage types ability			*/
 				/********************************************************/
+
 		if (!bShort)
 		{
 			for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
@@ -2462,6 +2478,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 				}
 			}
 		}
+}
 		if (bShift && (gDLL->getChtLvl() > 0))
 		{
 			szTempBuffer.Format(L"\nUnitAI Type = %s.", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription());
@@ -2474,42 +2491,83 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szString, CvUnit* pUnit, bool b
 
 		if (pUnit->getCombatAura() != NULL)
 		{
-			setCombatAuraStr(szTempBuffer, pUnit->getCombatAura(), pUnit, 0);
-			szString.append(NEWLINE);
-			szString.append(szTempBuffer);
-			szTempBuffer.clear();
+			if(!bAlt && !bShift && bCtrl)
+			{
+				setCombatAuraStr(szTempBuffer, pUnit->getCombatAura(), pUnit, 0);
+				szString.append(NEWLINE);
+				szString.append(szTempBuffer);
+				szTempBuffer.clear();
+			}
+			else
+			{
+				szString.append(NEWLINE);
+				szString.append(L"Use CTRL to see Combat Aura");
+				szTempBuffer.clear();
+			}
 		}
-
 		if (pUnit->getBlessing1() != NULL)
 		{
-			setCombatAuraStr(szTempBuffer, pUnit->getBlessing1(), pUnit, 3);
-			szString.append(NEWLINE);
-			szString.append(szTempBuffer);
-			szTempBuffer.clear();
+			if(!bAlt && bShift && !bCtrl)
+			{
+				setCombatAuraStr(szTempBuffer, pUnit->getBlessing1(), pUnit, 3);
+				szString.append(NEWLINE);
+				szString.append(szTempBuffer);
+				szTempBuffer.clear();
+			}
+			else
+			{
+				szString.append(NEWLINE);
+				szString.append(L"Use SHIFT to see applied first Blessings");
+				szTempBuffer.clear();
+			}
 		}
-
 		if (pUnit->getBlessing2() != NULL)
 		{
-			setCombatAuraStr(szTempBuffer, pUnit->getBlessing2(), pUnit, 4);
-			szString.append(NEWLINE);
-			szString.append(szTempBuffer);
-			szTempBuffer.clear();
+			if(bAlt && !bShift && !bCtrl)
+			{
+				setCombatAuraStr(szTempBuffer, pUnit->getBlessing2(), pUnit, 4);
+				szString.append(NEWLINE);
+				szString.append(szTempBuffer);
+				szTempBuffer.clear();
+			}
+			else
+			{
+				szString.append(NEWLINE);
+				szString.append(L"Use ALT to see applied second Blessings");
+				szTempBuffer.clear();
+			}
 		}
-
 		if (pUnit->getCurse1() != NULL)
 		{
-			setCombatAuraStr(szTempBuffer, pUnit->getCurse1(), pUnit, 1);
-			szString.append(NEWLINE);
-			szString.append(szTempBuffer);
-			szTempBuffer.clear();
+			if(bAlt && !bShift && bCtrl)
+			{
+				setCombatAuraStr(szTempBuffer, pUnit->getCurse1(), pUnit, 1);
+				szString.append(NEWLINE);
+				szString.append(szTempBuffer);
+				szTempBuffer.clear();
+			}
+			else
+			{
+				szString.append(NEWLINE);
+				szString.append(L"Use CTRL + ALT to see applied first Curses");
+				szTempBuffer.clear();
+			}
 		}
-
 		if (pUnit->getCurse2() != NULL)
 		{
-			setCombatAuraStr(szTempBuffer, pUnit->getCurse2(), pUnit, 2);
-			szString.append(NEWLINE);
-			szString.append(szTempBuffer);
-			szTempBuffer.clear();
+			if(!bAlt && bShift && bCtrl)
+			{
+				setCombatAuraStr(szTempBuffer, pUnit->getCurse2(), pUnit, 2);
+				szString.append(NEWLINE);
+				szString.append(szTempBuffer);
+				szTempBuffer.clear();
+			}
+			else
+			{
+				szString.append(NEWLINE);
+				szString.append(L"Use CTRL + SHIFT to see applied second Curses");
+				szTempBuffer.clear();
+			}
 		}
 	}
 
@@ -2815,9 +2873,11 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer& szString, CvPlot* pPlot, bo
 		return;
 	}
 
+	// lfgr UI 11/2020: Allow cycling through units in plot help
+	PlotHelpCyclingManager::getInstance().updateCurrentPlot( GC.getMapINLINE().plotNumINLINE( pPlot->getX_INLINE(), pPlot->getY_INLINE() ) );
 
 	CvUnit* pLoopUnit;
-	static const uint iMaxNumUnits = 15;
+	static const uint iMaxNumUnits = GC.getDefineINT("PLOT_HELP_NUM_UNITS");
 //	static std::vector<CvUnit*> apUnits;
 	static std::vector<int> aiUnitNumbers;
 	static std::vector<int> aiUnitStrength;
@@ -2827,7 +2887,8 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer& szString, CvPlot* pPlot, bo
 
 	GC.getGameINLINE().getPlotUnits(pPlot, plotUnits);
 
-	int iNumVisibleUnits = 0;
+	//int iNumVisibleUnits = 0;
+	uint iNumVisibleUnits = 0;
 	if (pPlot->isVisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 	{
 		CLLNode<IDInfo>* pUnitNode5 = pPlot->headUnitNode();
@@ -2872,7 +2933,8 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer& szString, CvPlot* pPlot, bo
 	}
 
 	int iCount = 0;
-	for (int iI = iMaxNumUnits; iI < iNumVisibleUnits && iI < (int)plotUnits.size(); ++iI)
+	for (uint iI = iMaxNumUnits; iI < iNumVisibleUnits && iI < (int)plotUnits.size(); ++iI)
+	//for (int iI = iMaxNumUnits; iI < iNumVisibleUnits && iI < (int)plotUnits.size(); ++iI)
 	{
 		pLoopUnit = plotUnits[iI];
 
@@ -3936,8 +3998,11 @@ bool CvGameTextMgr::setSpellFactorsPlotHelp(CvWStringBuffer& szString, CvPlot* p
 
 	pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 	pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();	//Select the group. Spin through the selection and show the cumulative effects of the various spell castings
-
+	if(pSelectedUnit == NULL)
+		return false;
 	PlayerTypes ePlayer = pSelectedUnit->getOwner();
+	if(ePlayer == NO_PLAYER)
+		return false;
 	CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
 
 	SpellTypes spellType = (SpellTypes)pSelectedUnit->getMissionSpell();
@@ -3945,7 +4010,9 @@ bool CvGameTextMgr::setSpellFactorsPlotHelp(CvWStringBuffer& szString, CvPlot* p
 		while (pSelectedUnitNode != NULL && spellType == NO_SPELL) {
 			if (pSelectedUnit->getMissionSpell() == NO_SPELL) {			//If you have a group with say a non-caster, don't include that unit in the group.
 				pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
-				pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+				if(pSelectedUnitNode != NULL){ //SpyFanatic: fix possible null pointer exception
+					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+				}
 				continue;
 			}
 
@@ -3954,8 +4021,10 @@ bool CvGameTextMgr::setSpellFactorsPlotHelp(CvWStringBuffer& szString, CvPlot* p
 	}
 
 	std::list<AttackerSpellInfo> attackingUnitsInformation = calculateAttackerSpellInfo(pSelectedUnitNode, pSelectedUnit, pTargetplot, kPlayer);
+
 	if (attackingUnitsInformation.size() == 0)
 		return false;
+
 
 	if (attackingUnitsInformation.size() == 1) {
 		AttackerSpellInfo attacker = attackingUnitsInformation.front();
@@ -4188,10 +4257,12 @@ bool CvGameTextMgr::setSpellFactorsPlotHelp(CvWStringBuffer& szString, CvPlot* p
 			if (attacker.kSpell->isHighCrit())
 				szString.append(CvWString::format(NEWLINE L"%c    High crit spell; 2x crit damage (total 6x)", gDLL->getSymbolID(BULLET_CHAR)));
 		}
-
+		//TODO Spyfanatic
+/*
 		if (attacker.kSpell->getDoT() != NO_PROMOTION || attacker.kSpell->getImmobileTurns() > 0 || (attacker.kSpell->getForcedTeleport() > 0 && !pTargetplot->isCity()) || (PromotionTypes)attacker.kSpell->getAddPromotionType1() != NO_PROMOTION ||
 			(PromotionTypes)attacker.kSpell->getAddPromotionType2() != NO_PROMOTION || (PromotionTypes)attacker.kSpell->getAddPromotionType3() != NO_PROMOTION || (PromotionTypes)attacker.kSpell->getAddPromotionType4() != NO_PROMOTION || (PromotionTypes)attacker.kSpell->getAddPromotionType5() != NO_PROMOTION ||
-			attacker.kSpell->isDomination() > 0 || attacker.kSpell->getUnitCombatCapture() > 0 || attacker.kSpell->getTriggerSecondaryPlotChance() > 0 || (attacker.kSpell->isBombard() && pTargetplot->isCity())) {
+			attacker.kSpell->isDomination() > 0 || attacker.kSpell->getUnitCombatCapture() > 0 || attacker.kSpell->getTriggerSecondaryPlotChance() > 0 || (attacker.kSpell->isBombard() && pTargetplot->isCity()))
+		{
 			szString.append(CvWString::format(NEWLINE L"%cSecondary effects: ", gDLL->getSymbolID(BULLET_CHAR)));
 
 			if (attacker.kSpell->getDoT() != NO_PROMOTION)
@@ -4245,7 +4316,7 @@ bool CvGameTextMgr::setSpellFactorsPlotHelp(CvWStringBuffer& szString, CvPlot* p
 			if (attacker.kSpell->getTriggerSecondaryPlotChance() > 0) {
 				szString.append(CvWString::format(NEWLINE L"%c    Chance to affect nearby tiles: " SETCOLR L"%d%%" ENDCOLR, gDLL->getSymbolID(BULLET_CHAR), TEXT_COLOR("COLOR_POSITIVE_TEXT"), attacker.kSpell->getTriggerSecondaryPlotChance()));
 			}
-		}
+		}*/
 
 	}
 
@@ -4754,6 +4825,11 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(szTempBuffer);
 		}
 
+		if(GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+		{
+			szTempBuffer.Format(L"\nChokeValue %d CanalValue %d", pPlot->getChokeValue() , pPlot->getCanalValue());
+			szString.append(szTempBuffer);
+		}
 		bool bFirst = true;
 		for (iI = 0; iI < MAX_PLAYERS; ++iI)
 		{
@@ -4910,7 +4986,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					int iMaxThisSpecialist = pCity->getMaxSpecialistCount((SpecialistTypes)iI);
 					int iSpecialistCount = pCity->getSpecialistCount((SpecialistTypes)iI);
 					bool bUsingSpecialist = (iSpecialistCount > 0);
-					bool bIsDefaultSpecialist = (iI == GC.getDefineINT("DEFAULT_SPECIALIST"));
+					bool bIsDefaultSpecialist = (iI == GC.getDEFAULT_SPECIALIST());
 
 					// can this city have any of this specialist?
 					if (iMaxThisSpecialist > 0 || bIsDefaultSpecialist)
@@ -5298,7 +5374,15 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					GC.getGameINLINE().getActivePlayer() == NO_PLAYER ||
 					GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType() == GC.getImprovementInfo((ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getPrereqCivilization())
 				{
-					if ((pPlot->getUpgradeProgress() > 0) || pPlot->isBeingWorked())
+					// Super Forts begin *text* *upgrade*
+					if ((pPlot->getUpgradeProgress() > 0) || (pPlot->isBeingWorked() && (
+						!GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) ||
+						!GC.getImprovementInfo(eImprovement).isUpgradeRequiresFortify()
+						)
+						)
+					)
+					// if ((pPlot->getUpgradeProgress() > 0) || pPlot->isBeingWorked()) - Original Code
+					// Super Forts end
 					{
 						iTurns = pPlot->getUpgradeTimeLeft(eImprovement, eRevealOwner);
 						szString.append(gDLL->getText("TXT_KEY_PLOT_IMP_UPGRADE", iTurns, GC.getImprovementInfo((ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getTextKeyWide()));
@@ -5307,7 +5391,16 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					{
 						if (GC.getImprovementInfo((ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getPrereqCivilization() == NO_CIVILIZATION)
 						{
-							szString.append(gDLL->getText("TXT_KEY_PLOT_WORK_TO_UPGRADE", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getTextKeyWide()));
+							// Super Forts begin *text* *upgrade*
+							if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && GC.getImprovementInfo(eImprovement).getCulture() > 0)
+							{
+								szString.append(gDLL->getText("TXT_KEY_PLOT_FORTIFY_TO_UPGRADE", GC.getImprovementInfo((ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getTextKeyWide()));
+							}
+							else
+							{
+								szString.append(gDLL->getText("TXT_KEY_PLOT_WORK_TO_UPGRADE", GC.getImprovementInfo((ImprovementTypes)GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getTextKeyWide()));
+							}
+							// Super Forts end
 						}
 						else
 						{
@@ -5354,6 +5447,14 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(CvWString::format(ENDCOLR));
 		}
 	}
+
+	if (!(bShift && !bAlt && (gDLL->getChtLvl() > 0)) && GC.getDefineINT("SHOW_WILDERNESS_INFO") == 1)
+	{
+		szTempBuffer.Format(L"\nWilderness Value: %d", pPlot->getWilderness());
+		szString.append(NEWLINE);
+		szString.append(szTempBuffer);
+	}
+
 	/** Improvement Slots
 		if (pPlot->getWorkingCity() != NULL && pPlot->getOwnerINLINE()==GC.getGameINLINE().getActivePlayer())
 		{
@@ -5368,7 +5469,9 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		}
 	**/
 	//FfH: Added by Kael 05/10/2008
-	if (pPlot->getMinLevel() != 0)
+	//SpyFanatic: avoid to show minimum level -1 to enter....
+	//if (pPlot->getMinLevel() != 0)
+	if (pPlot->getMinLevel() > 0)
 	{
 		szString.append(NEWLINE);
 		szString.append(gDLL->getText("TXT_KEY_PLOT_MIN_LEVEL", pPlot->getMinLevel()));
@@ -8940,7 +9043,8 @@ void CvGameTextMgr::parseEquipmentHelp(CvWStringBuffer& szBuffer, PromotionTypes
 
 	parsePromotionHelp(szBuffer, ePromotion, pcNewline);
 
-	if (GC.getPromotionInfo(ePromotion).getEquipmentCategory() == NO_EQUIPMENTCATEGORY || GC.getPromotionInfo(ePromotion).getEquipmentLevel() <= 0
+	//SpyFanatic: Equipment Level seems partially implemented, and it does not come in effect while removing the existing category
+	if (GC.getPromotionInfo(ePromotion).getEquipmentCategory() == NO_EQUIPMENTCATEGORY /*|| GC.getPromotionInfo(ePromotion).getEquipmentLevel() <= 0*/
 		|| GC.getPromotionInfo(ePromotion).getDurabilityType() == NO_DURABILITY)
 	{
 		return;
@@ -11488,6 +11592,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer& szBuffer, UnitTypes eUnit,
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_AIR_RANGE", GC.getUnitInfo(eUnit).getAirRange()));
 		}
 	}
+
 	/*************************************************************************************************/
 	/**	ADDON (Units can be unlocked by Gameoptions) Sephi                     					**/
 	/*************************************************************************************************/
@@ -11561,7 +11666,9 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer& szBuffer, UnitTypes eUnit,
 			iManaCost = GC.getProjectInfo(eProject).getManaCost();
 			if (GC.getGameINLINE().getActivePlayer() != NO_PLAYER)
 			{
-				iManaCost = GET_PLAYER((PlayerTypes)GC.getGameINLINE().getActivePlayer()).getSummonManaCost(eProject);
+				//SpyFanatic: correct discount for Balsph
+				//iManaCost = GET_PLAYER((PlayerTypes)GC.getGameINLINE().getActivePlayer()).getSummonManaCost(eProject);
+				iManaCost = GET_PLAYER((PlayerTypes)GC.getGameINLINE().getActivePlayer()).getSpecificMagicRitualCost(eProject);
 			}
 
 			szBuffer.append(NEWLINE);
@@ -12993,6 +13100,13 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer& szBuffer, UnitTypes eUnit, bool
 		//<<<<	BUGFfH: End Modify
 		//FfH: End Modify
 
+	}
+
+	//SpyFanatic: show Tier
+	//if (bCivilopediaText)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_TIER_PEDIA", GC.getUnitInfo(eUnit).getTier()));
 	}
 
 	if (isWorldUnitClass(eUnitClass))
@@ -16540,7 +16654,9 @@ void CvGameTextMgr::setProjectHelp(CvWStringBuffer& szBuffer, ProjectTypes eProj
 	if (kProject.getDisjunctionPower() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_DISJUNCTION"));
+		//szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_DISJUNCTION"));
+		//SpyFanatic: show percentage
+		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_DISJUNCTION",10+kProject.getDisjunctionPower()));
 	}
 	if (kProject.getDoubleCostOfOtherManaSchools() != NO_MANASCHOOL)
 	{
@@ -16586,7 +16702,9 @@ void CvGameTextMgr::setProjectHelp(CvWStringBuffer& szBuffer, ProjectTypes eProj
 	if (kProject.getResistHostileTerraforming() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_RESISTHOSTILE_TERRAFORMING"));
+		//szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_RESISTHOSTILE_TERRAFORMING"));
+		//SpyFanatic: showing values
+		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GLOBAL_RESISTHOSTILE_TERRAFORMING",kProject.getResistHostileTerraforming()));
 	}
 
 	if (kProject.getDevilSummon() != NO_UNIT)
@@ -17031,7 +17149,8 @@ void CvGameTextMgr::setBadHealthHelp(CvWStringBuffer& szBuffer, CvCity& city)
 	int iHealth;
 	int iI;
 
-	if (city.badHealth() > 0)
+	int iCityBadHealth = city.badHealth();
+	if (iCityBadHealth > 0)
 	{
 		iHealth = -(city.getFreshWaterBadHealth());
 		if (iHealth > 0)
@@ -17165,7 +17284,7 @@ void CvGameTextMgr::setBadHealthHelp(CvWStringBuffer& szBuffer, CvCity& city)
 
 		szBuffer.append(L"-----------------------\n");
 
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_TOTAL_UNHEALTHY", city.badHealth()));
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_TOTAL_UNHEALTHY", iCityBadHealth));
 	}
 }
 
@@ -17176,7 +17295,8 @@ void CvGameTextMgr::setGoodHealthHelp(CvWStringBuffer& szBuffer, CvCity& city)
 	int iHealth;
 	int iI;
 
-	if (city.goodHealth() > 0)
+	int iCityGoodHealth = city.goodHealth();
+	if (iCityGoodHealth > 0)
 	{
 		iHealth = city.getFreshWaterGoodHealth();
 		if (iHealth > 0)
@@ -17253,6 +17373,7 @@ void CvGameTextMgr::setGoodHealthHelp(CvWStringBuffer& szBuffer, CvCity& city)
 			szBuffer.append(NEWLINE);
 		}
 
+		iHealth=0; //SpyFanatic: reset iHealth
 		if (!city.isHuman()) {
 			int iInterval = GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIFreeHappinessInterval();
 			if (iInterval > 0) {
@@ -17286,7 +17407,7 @@ void CvGameTextMgr::setGoodHealthHelp(CvWStringBuffer& szBuffer, CvCity& city)
 
 		szBuffer.append(L"-----------------------\n");
 
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_TOTAL_HEALTHY", city.goodHealth()));
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_TOTAL_HEALTHY", iCityGoodHealth));
 	}
 }
 
@@ -19808,6 +19929,29 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer& szBuffer, ImprovementTyp
 	}
 	if (bCivilopediaText)
 	{
+		// Super Forts begin *text*
+		if (info.getCulture() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_PLOT_CULTURE", info.getCulture()));
+		}
+		if (info.getCultureRange() > 0 && ((info.getCulture() > 0) || info.isActsAsCity()))
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_CULTURE_RANGE", info.getCultureRange()));
+		}
+		if (info.getVisibilityChange() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE", info.getVisibilityChange()));
+		}
+		if (info.getSeeFrom() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_SEE_FROM", info.getSeeFrom()));
+		}
+		// Super Forts end
+
 		if (info.getPillageGold() > 0)
 		{
 			szBuffer.append(NEWLINE);
@@ -19828,6 +19972,14 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer& szBuffer, ImprovementTyp
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_EVOLVES",
 				getLinkedText((ImprovementTypes)info.getImprovementUpgrade()).c_str(),
 				iTurns));
+
+				// Super Forts begin *text* *upgrade*
+				if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS) && info.isUpgradeRequiresFortify())
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE"));
+				}
+				// Super Forts end
 		}
 		else
 		{
@@ -19957,6 +20109,22 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer& szBuffer, ImprovementTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_LESS_GROWTH"));
 	}
+
+	// Super Forts begin *text* *bombard*
+	if (GC.getGameINLINE().isOption(GAMEOPTION_SUPER_FORTS))
+	{
+		if (info.isBombardable() && (info.getDefenseModifier() > 0))
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BOMBARD"));
+		}
+		if (info.getUniqueRange() > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_UNIQUE_RANGE", info.getUniqueRange()));
+		}
+	}
+	// Super Forts end
 
 	if (info.getGoldCost() > 0) {
 		szBuffer.append(NEWLINE);
@@ -24365,7 +24533,9 @@ void CvGameTextMgr::getPlotHelp(CvPlot* pMouseOverPlot, CvCity* pCity, CvPlot* p
 					{
 						if (pMouseOverPlot->headUnitNode() != NULL && gDLL->getInterfaceIFace()->getInterfaceMode() == INTERFACEMODE_SPELL_OFFENSIVE) {
 							if (::getUnit(pMouseOverPlot->headUnitNode()->m_data)->getTeam() != gDLL->getInterfaceIFace()->getHeadSelectedUnit()->getTeam())
+							{
 								setSpellFactorsPlotHelp(strHelp, pMouseOverPlot);
+							}
 						}
 						else if (pMouseOverPlot->isActiveVisible(true)) {
 							setPlotListHelp(strHelp, pMouseOverPlot, true, false);

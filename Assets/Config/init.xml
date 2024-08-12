@@ -142,7 +142,7 @@
 	<load mod="Expansion"/>
 	<load mod="Not Just Another Game Clock"/>
 	<load mod="Advanced Scoreboard"/>
-<!--	<load mod="Plot List Enhancements"/>	-->
+	<load mod="Plot List Enhancements"/>
 
 <!--	<load mod="Autolog"/>	-->
 <!--	<load mod="Reminder"/> --> <!-- requires Autolog -->
@@ -151,7 +151,7 @@
 	<load mod="FavoriteCivicDetector"/>
 	<load mod="Strategy Overlay"/>
 
-
+	<load mod="FfHUI"/> <!-- FfHUI 05/2020 lfgr -->
 
 	<!-- Options Screens -->
 

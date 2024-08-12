@@ -18308,7 +18308,7 @@
             </ClearEvents>
             <PythonCallback></PythonCallback>
             <PythonExpireCheck></PythonExpireCheck>
-            <PythonCanDo></PythonCanDo>
+            <PythonCanDo>CanDoImmigrants1</PythonCanDo>
             <PythonHelp></PythonHelp>
             <Button>,Art/Interface/Buttons/Process/Blank.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
@@ -51867,7 +51867,7 @@
             <iConvertOtherCities>0</iConvertOtherCities>
             <iMaxNumReligions>-1</iMaxNumReligions>
             <iOurAttitudeModifier>0</iOurAttitudeModifier>
-            <iAttitudeModifier>0</iAttitudeModifier>
+            <iAttitudeModifier>-3</iAttitudeModifier>
             <iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
             <iPopulationChange>0</iPopulationChange>
             <AdditionalEvents>
@@ -51876,7 +51876,7 @@
             </EventTimes>
             <ClearEvents>
             </ClearEvents>
-            <PythonCallback></PythonCallback>
+            <PythonCallback>doClairone1</PythonCallback>
             <PythonExpireCheck></PythonExpireCheck>
             <PythonCanDo></PythonCanDo>
             <PythonHelp></PythonHelp>

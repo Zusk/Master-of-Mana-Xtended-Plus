@@ -2309,17 +2309,17 @@ def addBonusType(argsList):
 	return mapscript.addBonusType(argsList)
 
 def normalizeAddRiver():
-	return mapscript.normalizeAddRiver(argsList)
+	return mapscript.normalizeAddRiver()
 def normalizeRemovePeaks():
-	return mapscript.normalizeRemovePeaks(argsList)
+	return mapscript.normalizeRemovePeaks()
 def addLakes():
-	return mapscript.addLakes(argsList)
+	return mapscript.addLakes()
 
 def addRivers():
-	return mapscript.addRivers(argsList)
+	return mapscript.addRivers()
 	
 def beforeInit():
-	return mapscript.beforeInit(argsList)
+	return mapscript.beforeInit()
 
 
 

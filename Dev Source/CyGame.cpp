@@ -544,6 +544,12 @@ int CyGame::getAIAutoPlay() const
 	return (NULL != m_pGame ? m_pGame->getAIAutoPlay() : 0);
 }
 
+void CyGame::setAIAutoPlayCiv(int iNewValue, int iCiv)
+{
+	if (m_pGame)
+		m_pGame->setAIAutoPlayCiv(iNewValue, iCiv);
+}
+
 void CyGame::setAIAutoPlay(int iNewValue)
 {
 	if (m_pGame)
@@ -1312,6 +1318,11 @@ void CyGame::testVictory()
 {
    	if (m_pGame)
         m_pGame->testVictory();
+}
+void CyGame::setVictoryValid(int /*VictoryTypes*/ eIndex, bool bValid)
+{
+   	if (m_pGame)
+        m_pGame->setVictoryValid((VictoryTypes)eIndex,bValid);
 }
 //FfH: End Add
 //>>>>	BUGFfH: Added by Denev 2009/10/13

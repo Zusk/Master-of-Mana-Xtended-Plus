@@ -521,7 +521,6 @@ void CvCityAI::AI_assignWorkingPlots()
 			break;
 		}
 	}
-
 	// if automated, look for better choices than the current ones
 	if (!isHuman() || isCitizensAutomated())
 	{
@@ -856,8 +855,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 	}
 	else
 	{
-		SpecialistTypes eGenericCitizen = (SpecialistTypes) GC.getDefineINT("DEFAULT_SPECIALIST");
-
+		SpecialistTypes eGenericCitizen = (SpecialistTypes) GC.getDEFAULT_SPECIALIST();
 		// are we the generic specialist?
 		if (eSpecialist == eGenericCitizen)
 		{
@@ -994,11 +992,26 @@ void CvCityAI::AI_chooseProduction()
 **/
 
 //added Sephi
+/*************************************************************************************************/
+/**	TIME MEASURE																	SpyFanatic	**/
+/*************************************************************************************************/
+	GC.getTimeMeasure().Start("CvCity::AI_choose_Production::AI_chooseProductionNew");
+/*************************************************************************************************/
+/**	TIME MEASURE							END													**/
+/*************************************************************************************************/
+
 	if (AI_chooseProductionNew())
 	{
 		return;
 	}
 // added end
+/*************************************************************************************************/
+/**	TIME MEASURE																	SpyFanatic	**/
+/*************************************************************************************************/
+	GC.getTimeMeasure().Stop("CvCity::AI_choose_Production::AI_chooseProductionNew");
+/*************************************************************************************************/
+/**	TIME MEASURE							END													**/
+/*************************************************************************************************/
 
     if (isHuman() && isProductionAutomated())
     {
@@ -3462,7 +3475,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				int iCurrentSpecialistsRunnable = 0;
 				for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 				{
-					if (iI != GC.getDefineINT("DEFAULT_SPECIALIST"))
+					if (iI != GC.getDEFAULT_SPECIALIST())
 					{
 						bool bUnlimited = (GET_PLAYER(getOwnerINLINE()).isSpecialistValid((SpecialistTypes)iI));
 						int iRunnable = (getMaxSpecialistCount((SpecialistTypes)iI) > 0);
@@ -5729,9 +5742,9 @@ void CvCityAI::AI_doHurry(bool bForce)
 
 			if (eProductionBuilding != NO_BUILDING)
 			{
-				if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+				if (GC.getDEFAULT_SPECIALIST() != NO_SPECIALIST)
 				{
-					if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > 0)
+					if (getSpecialistCount((SpecialistTypes)(GC.getDEFAULT_SPECIALIST())) > 0)
 					{
 						for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
 						{
@@ -6041,6 +6054,22 @@ void CvCityAI::AI_doEmphasize()
 		{
 		    AI_setEmphasize(((EmphasizeTypes)iI), true);
 		}
+
+		//SpyFanatic: try to give emphasize to AI at first city only, when there are not enough troops to fill a settler group
+		if(GET_PLAYER(getOwner()).getNumCities() == 1 /*&& GET_PLAYER(getOwner()).getUnitSupportUsed() <= 8*/)
+		{
+			//getUnitSupportLimitTotal
+			//getUnitSupportUsed
+			if (GC.getEmphasizeInfo((EmphasizeTypes)iI).getYieldChange(YIELD_PRODUCTION) > 0)
+			{
+				AI_setEmphasize(((EmphasizeTypes)iI), true);
+			}
+		}
+		else
+		{
+			AI_setEmphasize(((EmphasizeTypes)iI), false);
+		}
+		//SpyFanatic
 	}
 
 	return;
@@ -6517,7 +6546,11 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 		{
 			for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 			{
-				if (isSpecialistValid((SpecialistTypes)iI, 1))
+				GC.getTimeMeasure().Start("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid");
+				bool isValid = isSpecialistValid((SpecialistTypes)iI, 1);
+				GC.getTimeMeasure().Stop("CvCityAI::AI_addBestCitizen::AI_specialistValue::isSpecialistValid");
+				if(isValid)
+				//if (isSpecialistValid((SpecialistTypes)iI, 1))
 				{
 					int iValue = AI_specialistValue(((SpecialistTypes)iI), bAvoidGrowth, false);
 					if (iValue >= iBestSpecialistValue)
@@ -6594,6 +6627,19 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 
 		}
 **/
+		//SpyFanatic: Try to force grow as in long run more population can mean more research
+		//TODO: getPopulationLimit Austrin
+		if(!GET_PLAYER(getOwnerINLINE()).isIgnoreFood() && getCityIndexPlot(iBestPlot)->calculateNatureYield(YIELD_FOOD,getTeam())>0)
+		{
+			if(happyLevel()>unhappyLevel(0) )
+			{
+				if(foodDifference() > 0 && getPopulation() < 15)
+				{
+					eBestSpecialist = NO_SPECIALIST;
+				}
+			}
+		}
+
 
 	}
 
@@ -6607,16 +6653,19 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 			*piBestPlot = -1;
 		}
 		//DEBUG
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d,Player: %S,CityID: %d,ExtraPopulation: %d,Value: %d,SelectedSpecialist: %S\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,GET_PLAYER(getOwner()).getName()
-			,getID()
-			,extraPopulation()
-			,iBestSpecialistValue
-			,GC.getSpecialistInfo(eBestSpecialist).getDescription()
-		);
-		gDLL->logMsg("AIGoverneur.log",szOut, false, false);
+		/*if(isOOSLogging())
+		{
+			oosLog("AIGoverneur"
+				,"Turn:%d,Player:%d,CityID:%d,Population:%d,Happy:%d,Food:%d,SelectedSpecialist:%S\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,getPopulation()
+				,happyLevel() - unhappyLevel()
+				,foodDifference()
+				,GC.getSpecialistInfo(eBestSpecialist).getDescription()
+			);
+		}*/
 		//DEBUG
 		
 		return true;
@@ -6633,24 +6682,27 @@ bool CvCityAI::AI_addBestCitizen(bool bWorkers, bool bSpecialists, int* piBestPl
 		}
 
 		//DEBUG
-		TCHAR szOut[1024];
-		CvPlot* pTarget=getCityIndexPlot(iBestPlot);
-		sprintf(szOut, "Turn: %d,Player: %S,CityID: %d,ExtraPopulation: %d,Value: %d,YIELD_FOOD: %d,YIELD_PRODUCTION: %d,YIELD_COMMERCE: %d,YIELD_LUMBER: %d,YIELD_LEATHER: %d,YIELD_METAL: %d,YIELD_HERB: %d,YIELD_STONE: %d\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,GET_PLAYER(getOwner()).getName()
-			,getID()
-			,extraPopulation()
-			,iBestPlotValue
-			,pTarget->getYield(YIELD_FOOD)
-			,pTarget->getYield(YIELD_PRODUCTION)
-			,pTarget->getYield(YIELD_COMMERCE)
-			,pTarget->getYield(YIELD_LUMBER)
-			,pTarget->getYield(YIELD_LEATHER)
-			,pTarget->getYield(YIELD_METAL)
-			,pTarget->getYield(YIELD_HERB)
-			,pTarget->getYield(YIELD_STONE)
-		);
-		gDLL->logMsg("AIGoverneur.log",szOut, false, false);
+		/*if(isOOSLogging())
+		{
+			CvPlot* pTarget=getCityIndexPlot(iBestPlot);
+			oosLog("AIGoverneur"
+				,"Turn:%d,Player:%d,CityID:%d,Population:%d,Happy:%d,Food:%d,Plot:%d/%d/%d\n"//,LUMBER:%d,LEATHER:%d,METAL:%d,HERB:%d,STONE:%d\n"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,getPopulation()
+				,happyLevel() - unhappyLevel()
+				,foodDifference()
+				,pTarget->getYield(YIELD_FOOD)
+				,pTarget->getYield(YIELD_PRODUCTION)
+				,pTarget->getYield(YIELD_COMMERCE)
+				//,pTarget->getYield(YIELD_LUMBER)
+				//,pTarget->getYield(YIELD_LEATHER)
+				//,pTarget->getYield(YIELD_METAL)
+				//,pTarget->getYield(YIELD_HERB)
+				//,pTarget->getYield(YIELD_STONE)
+			);
+		}*/
 		//DEBUG
 
 		return true;
@@ -6676,16 +6728,16 @@ bool CvCityAI::AI_removeWorstCitizen(SpecialistTypes eIgnoreSpecialist)
 	if (extraFreeSpecialists() < 0)
 	{
 		// does generic 'citizen' specialist exist?
-		if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+		if (GC.getDEFAULT_SPECIALIST() != NO_SPECIALIST)
 		{
 			// is ignore something other than generic citizen?
-			if (eIgnoreSpecialist != GC.getDefineINT("DEFAULT_SPECIALIST"))
+			if (eIgnoreSpecialist != GC.getDEFAULT_SPECIALIST())
 			{
 				// do we have at least one more generic citizen than we are forcing?
-				if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > getForceSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))))
+				if (getSpecialistCount((SpecialistTypes)(GC.getDEFAULT_SPECIALIST())) > getForceSpecialistCount((SpecialistTypes)(GC.getDEFAULT_SPECIALIST())))
 				{
 					// remove the extra generic citzen
-					changeSpecialistCount(((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))), -1);
+					changeSpecialistCount(((SpecialistTypes)(GC.getDEFAULT_SPECIALIST())), -1);
 					return true;
 				}
 			}
@@ -6863,6 +6915,87 @@ void CvCityAI::AI_juggleCitizens()
 		{
 			//good enough, the starvation code
 			break;
+		}
+	}
+	if(isOOSLogging())
+	{
+
+		int iYeomanCount = getSpecialistCount((SpecialistTypes)GC.getInfoTypeForString("SPECIALIST_YEOMAN"));
+		int iEngineerCount = getSpecialistCount((SpecialistTypes)GC.getSPECIALIST_ENGINEER());
+		int iMerchantCount = getSpecialistCount((SpecialistTypes)GC.getSPECIALIST_MERCHANT());
+		int iSageCount = getSpecialistCount((SpecialistTypes)GC.getSPECIALIST_SCIENTIST());
+		int iBardCount = getSpecialistCount((SpecialistTypes)GC.getSPECIALIST_ARTIST());
+		int iPriestCount = getSpecialistCount((SpecialistTypes)GC.getSPECIALIST_PRIEST());
+		int iCitizenCount = getSpecialistCount((SpecialistTypes)GC.getInfoTypeForString("SPECIALIST_CITIZEN"));
+
+		if(iYeomanCount > 0 || iEngineerCount > 0 || iMerchantCount > 0 || iSageCount > 0 || iBardCount > 0 || iPriestCount > 0 || iCitizenCount > 0)
+		{
+			BuildingTypes eDistrictBuilding = NO_BUILDING;
+
+			if(isHasBuildingClass(GC.getBUILDINGCLASS_SCHOLA_ARCANA()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_SCHOLA_ARCANA());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_SALON()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_SALON());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_SAGE_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_SAGE_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_WARRIOR_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_WARRIOR_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_BARD_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_BARD_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_TEMPLE_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_TEMPLE_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_NOBLE_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_NOBLE_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_LUXURY_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_LUXURY_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_FOREIGN_TRADE_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_FOREIGN_TRADE_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_RESOURCE_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_RESOURCE_DISTRICT());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_HERBALIST()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_HERBALIST());
+			}
+			else if(isHasBuildingClass(GC.getBUILDINGCLASS_MERCHANT_DISTRICT()))
+			{
+				eDistrictBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getBUILDINGCLASS_MERCHANT_DISTRICT());
+			}
+
+			oosLog("AISpecialist"
+				,"Turn:%d,Player:%d,CityID:%d,District:%S,CitySpecialization:%S,Yeoman:%d,Engineer:%d,Merchant:%d,Sage:%d,Bard:%d,Priest:%d,Citizien:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwnerINLINE()
+				,getID()
+				,eDistrictBuilding != NO_BUILDING ? GC.getBuildingInfo(eDistrictBuilding).getDescription() : L"NONE"
+				,AI_getCitySpecialization() != NO_CITYSPECIALIZATION ? GC.getCitySpecializationInfo(AI_getCitySpecialization()).getDescription() : L"NO_CITYSPECIALIZATION"
+				,iYeomanCount
+				,iEngineerCount
+				,iMerchantCount
+				,iSageCount
+				,iBardCount
+				,iPriestCount
+				,iCitizenCount
+			);
 		}
 	}
 }
@@ -8025,9 +8158,9 @@ void CvCityAI::AI_buildGovernorChooseProduction()
 		}
 	}
 
-    if (GC.getDefineINT("DEFAULT_SPECIALIST") != NO_SPECIALIST)
+    if (GC.getDEFAULT_SPECIALIST() != NO_SPECIALIST)
     {
-        if (getSpecialistCount((SpecialistTypes)(GC.getDefineINT("DEFAULT_SPECIALIST"))) > 0)
+		if (getSpecialistCount((SpecialistTypes)(GC.getDEFAULT_SPECIALIST())) > 0)
         {
             if (AI_chooseBuilding(BUILDINGFOCUS_SPECIALIST, 60))
             {
@@ -8404,7 +8537,7 @@ int CvCityAI::AI_buildingSpecialYieldChangeValue(BuildingTypes eBuilding, YieldT
     }
     if (iWorkedCount == 0)
     {
-		SpecialistTypes eDefaultSpecialist = (SpecialistTypes)GC.getDefineINT("DEFAULT_SPECIALIST");
+		SpecialistTypes eDefaultSpecialist = (SpecialistTypes)GC.getDEFAULT_SPECIALIST();
 		if ((getPopulation() > 2) && ((eDefaultSpecialist == NO_SPECIALIST) || (getSpecialistCount(eDefaultSpecialist) == 0)))
 		{
 			iValue /= 2;

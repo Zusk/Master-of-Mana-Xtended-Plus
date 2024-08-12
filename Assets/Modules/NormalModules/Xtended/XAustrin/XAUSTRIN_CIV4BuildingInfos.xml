@@ -269,7 +269,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HUNTING_LODGE</ArtDefineTag>
 			<fVisibilityPriority>1</fVisibilityPriority>
-			<MovieDefineTag></MovieDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
 			<iCost>-1</iCost>
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>

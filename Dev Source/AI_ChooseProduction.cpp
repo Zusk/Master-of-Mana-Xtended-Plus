@@ -40,7 +40,6 @@ int CvCityAI::AI_getBuildingValue(BuildingTypes eBuilding)
 
 	iValue*=100;
 	iValue/=std::max(1,getProductionTurnsLeft(eBuilding,0));
-
 	//block Palace
 	if(GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()).getMaxPlayerInstances()==1)
 	{
@@ -623,6 +622,23 @@ int CvCityAI::AI_ValueUnitBaseCombat(UnitTypes eUnit, bool bOnlyDefense, bool bW
         iValue += GC.getUnitInfo(eUnit).getDamageTypeCombat((DamageTypes) iI) *((bOnlyDefense)? 1 : 2);
     }
 
+    if(GC.getUnitInfo(eUnit).isScaleWithTech())
+	{
+		for(int iI=0;iI<GC.getNumTechInfos();iI++)
+		{
+			if(GC.getTechInfo((TechTypes)iI).getIncreaseStrengthOfRegularUnits() > 0)
+			{
+				if ((GET_TEAM(GET_PLAYER(getOwnerINLINE()).getTeam()).isHasTech((TechTypes)iI)))
+				{
+					if(GC.getTechInfo((TechTypes)iI).getPrereqReligion()==NO_RELIGION || GC.getTechInfo((TechTypes)iI).getPrereqReligion()==GET_PLAYER(getOwnerINLINE()).getStateReligion())
+					{
+						iValue+=(bOnlyDefense) ? 1 : 2;
+					}
+				}
+			}
+		}
+	}
+
 	if(GC.getUnitInfo(eUnit).isImmortal()) {
 		iValue *= 3;
 		iValue /= 2;
@@ -765,6 +781,10 @@ int CvCityAI::AI_ValueCityInvasionUnit(CvAIGroup* pAIGroup, UnitTypes eUnit)
 	CvUnitInfo &kUnit=GC.getUnitInfo(eUnit);
 
 	if(kUnit.getMoves()<1)
+	{
+		return -MAX_INT;
+	}
+	if (kUnit.isOnlyDefensive())
 	{
 		return -MAX_INT;
 	}
@@ -931,6 +951,255 @@ bool CvCityAI::AI_chooseProductionBarbarian()
 	return false;
 }
 
+bool CvCityAI::AI_chooseBuildingHealth()
+{
+	BuildingTypes eBestBuilding=NO_BUILDING;
+	int iBestValue=0;
+	int iValue;
+
+	//Only if unhealth is preventing grow
+	if(!GET_PLAYER(getOwnerINLINE()).isIgnoreFood() && (goodHealth() - badHealth() <= 0) && foodDifference() < 3 )
+	{
+		for (int iBuildingIndex = 0; iBuildingIndex < GC.getNumBuildingClassInfos(); iBuildingIndex++)
+		{
+			BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iBuildingIndex);
+
+			if(canConstruct(eBuilding,true))
+			{
+				if(!GC.getBuildingInfo(eBuilding).isDistrict())
+				{
+					int iProductionTurns = getProductionTurnsLeft(eBuilding,0);
+					if(iProductionTurns < 10)
+					{
+						int iGood = 0, iBad = 0, iChange = getAdditionalHealthByBuilding(eBuilding, iGood, iBad);
+						if(iChange > 0)
+						{
+							iValue = std::max(0,iChange * 100);
+							if(iValue > 0)
+							{
+								//The cheaper the better
+								iValue += std::max(0,10 - getProductionTurnsLeft(eBuilding,0)) * 100;
+
+							}
+							if(iValue > iBestValue)
+							{
+								iBestValue=iValue;
+								eBestBuilding=eBuilding;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if(eBestBuilding!=NO_BUILDING)
+	{
+		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseBuildingHealth,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
+		return true;
+	}
+
+	return false;
+}
+bool CvCityAI::AI_chooseBuildingHappiness()
+{
+	BuildingTypes eBestBuilding=NO_BUILDING;
+	int iBestValue=0;
+	int iValue;
+
+	//Only if there is no much happiness left and we are growing...
+	if (happyLevel() - unhappyLevel() < 2 && (GET_PLAYER(getOwnerINLINE()).isIgnoreFood() || foodDifference() > 0))
+	{
+		for (int iBuildingIndex = 0; iBuildingIndex < GC.getNumBuildingClassInfos(); iBuildingIndex++)
+		{
+			BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iBuildingIndex);
+
+			if(canConstruct(eBuilding,true))
+			{
+				if(!GC.getBuildingInfo(eBuilding).isDistrict())
+				{
+					int iProductionTurns = getProductionTurnsLeft(eBuilding,0);
+					if(iProductionTurns < 10)
+					{
+						int iGood = 0, iBad = 0, iChange = getAdditionalHappinessByBuilding(eBuilding, iGood, iBad);
+						if(iChange > 0)
+						{
+							iValue = std::max(0,iChange * 100);
+							if(iValue > 0)
+							{
+								//The cheaper the better
+								iValue += std::max(0,10 - getProductionTurnsLeft(eBuilding,0)) * 100;
+
+							}
+/*
+ *
+					foodDifference()
+					int iGood = 0, iBad = 0, iChange = getAdditionalHappinessByBuilding(eBuilding, iGood, iBad);
+
+
+
+					int PopulationValue=GC.getDefineINT("AI_BUILDINGVALUE_HAPPINESS");
+					int iValue=0;
+					CvBuildingInfo &kBuilding = GC.getBuildingInfo(eBuilding);
+
+					int iGood = 0, iBad = 0, iChange = getAdditionalHappinessByBuilding(eBuilding, iGood, iBad);
+
+					if(happyLevel()<unhappyLevel(0)+2)
+					{
+						iValue+=PopulationValue*std::min(iGood,unhappyLevel(0)+2-happyLevel());
+					}
+
+					if(happyLevel()<=unhappyLevel(0))
+					{
+						iValue+=-PopulationValue*iBad;
+					}
+
+					return iValue;
+*/
+
+
+							if(iValue > iBestValue)
+							{
+								iBestValue=iValue;
+								eBestBuilding=eBuilding;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if(eBestBuilding!=NO_BUILDING)
+	{
+		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseBuildingHappiness,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
+		return true;
+	}
+
+	return false;
+}
+
+bool CvCityAI::AI_chooseCheapGoldBuilding()
+{
+	BuildingTypes eBestBuilding=NO_BUILDING;
+	int iBestValue=100;
+	int iValue;
+
+	for (int iBuildingIndex = 0; iBuildingIndex < GC.getNumBuildingClassInfos(); iBuildingIndex++)
+	{
+		BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iBuildingIndex);
+		if(canConstruct(eBuilding,true))
+		{
+			if(!GC.getBuildingInfo(eBuilding).isDistrict() && getProductionTurnsLeft(eBuilding,0) < 3) {
+				iValue = getAdditionalCommerceTimes100ByBuilding(COMMERCE_GOLD,eBuilding);
+
+				if(iValue > iBestValue)
+				{
+					iBestValue=iValue;
+					eBestBuilding=eBuilding;
+				}
+			}
+		}
+	}
+	if(eBestBuilding!=NO_BUILDING)
+	{
+		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseCheapGoldBuilding,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
+		return true;
+	}
+
+	return false;
+}
+bool CvCityAI::AI_chooseCheapProductionBuilding()
+{
+	BuildingTypes eBestBuilding=NO_BUILDING;
+	int iBestValue=100;
+	int iValue;
+
+	int YieldValue=GC.getDefineINT("AI_BUILDINGVALUE_PRODUCTION");
+	for (int iBuildingIndex = 0; iBuildingIndex < GC.getNumBuildingClassInfos(); iBuildingIndex++)
+	{
+		BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iBuildingIndex);
+		if(canConstruct(eBuilding,true))
+		{
+			if(!GC.getBuildingInfo(eBuilding).isDistrict() && getProductionTurnsLeft(eBuilding,0) < 6) {
+				iValue = YieldValue * getAdditionalYieldByBuilding(YIELD_PRODUCTION,eBuilding);
+
+				if(iValue > iBestValue)
+				{
+					iBestValue=iValue;
+					eBestBuilding=eBuilding;
+				}
+			}
+		}
+	}
+	if(eBestBuilding!=NO_BUILDING)
+	{
+		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseCheapProductionBuilding,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
+		return true;
+	}
+
+	return false;
+}
 bool CvCityAI::AI_chooseCheapCultureBuilding()
 {
 	BuildingTypes eBestBuilding=NO_BUILDING;
@@ -977,19 +1246,21 @@ bool CvCityAI::AI_chooseCheapCultureBuilding()
 	if(eBestBuilding!=NO_BUILDING)
 	{
 		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseCheapCultureBuilding\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestBuilding
-			,GC.getBuildingInfo(eBestBuilding).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseCheapCultureBuilding,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
 		return true;
 	}
 
@@ -1030,19 +1301,21 @@ bool CvCityAI::AI_chooseEarlyDefenseGroupUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseEarlyDefenseGroupUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseEarlyDefenseGroupUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1060,18 +1333,20 @@ bool CvCityAI::AI_chooseHero()
 			if(eUnit!=NO_UNIT && canTrain(eUnit))
 			{
 				pushOrder(ORDER_TRAIN,eUnit,NO_UNITAI,false,false,false);
-				/** DEBUG **/
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: 0,CitySpecialization: %d,ReligiousHero1\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,getOwner()
-					,getID()
-					,eUnit
-					,GC.getUnitInfo(eUnit).getDescription()
-					,AI_getCitySpecialization()
-				);
-				gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-				/** DEBUG **/
+				if(isOOSLogging())
+				{
+					oosLog("AIBestProductionValue"
+						,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,ReligiousHero1,SupportUsed:%d,Limit:%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwner()
+						,getID()
+						,eUnit
+						,GC.getUnitInfo(eUnit).getDescription()
+						,AI_getCitySpecialization()
+						,GET_PLAYER(getOwner()).getUnitSupportUsed()
+						,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+					);
+				}
 				return true;
 			}
 		}
@@ -1082,18 +1357,20 @@ bool CvCityAI::AI_chooseHero()
 			if(eUnit!=NO_UNIT && canTrain(eUnit))
 			{
 				pushOrder(ORDER_TRAIN,eUnit,NO_UNITAI,false,false,false);
-				/** DEBUG **/
-				TCHAR szOut[1024];
-				sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: 0,CitySpecialization: %d,ReligiousHero2\n"
-					,GC.getGameINLINE().getElapsedGameTurns()
-					,getOwner()
-					,getID()
-					,eUnit
-					,GC.getUnitInfo(eUnit).getDescription()
-					,AI_getCitySpecialization()
-				);
-				gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-				/** DEBUG **/
+				if(isOOSLogging())
+				{
+					oosLog("AIBestProductionValue"
+						,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,ReligiousHero2,SupportUsed:%d,Limit:%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwner()
+						,getID()
+						,eUnit
+						,GC.getUnitInfo(eUnit).getDescription()
+						,AI_getCitySpecialization()
+						,GET_PLAYER(getOwner()).getUnitSupportUsed()
+						,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+					);
+				}
 				return true;
 			}
 		}
@@ -1103,18 +1380,20 @@ bool CvCityAI::AI_chooseHero()
 	if(eHero!=NO_UNIT && canTrain(eHero))
 	{
 		pushOrder(ORDER_TRAIN,eHero,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: 0,CitySpecialization: %d,CivHero\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eHero
-			,GC.getUnitInfo(eHero).getDescription()
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,CivHero,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eHero
+				,GC.getUnitInfo(eHero).getDescription()
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1170,19 +1449,21 @@ bool CvCityAI::AI_chooseCityInvasionUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseCityInvasionUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseCityInvasionUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1238,19 +1519,21 @@ bool CvCityAI::AI_chooseCityLairUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseCityLairUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseCityLairUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1305,19 +1588,21 @@ bool CvCityAI::AI_chooseWarwizardUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseWarwizardUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseWarwizardUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1390,19 +1675,21 @@ bool CvCityAI::AI_chooseMagicNodeUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseMagicNodeUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseMagicNodeUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1455,19 +1742,21 @@ bool CvCityAI::AI_chooseCitySiegeUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseCitySiegeUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseCitySiegeUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1524,19 +1813,21 @@ bool CvCityAI::AI_chooseCounterUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseCounterUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseCounterUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1613,19 +1904,21 @@ bool CvCityAI::AI_choosePermDefenseReserveUnit()
 		if(eBestUnit!=NO_UNIT)
 		{
 			pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-			/** DEBUG **/
-			TCHAR szOut[1024];
-			sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_choosePermDefenseReserveUnit\n"
-				,GC.getGameINLINE().getElapsedGameTurns()
-				,getOwner()
-				,getID()
-				,eBestUnit
-				,GC.getUnitInfo(eBestUnit).getDescription()
-				,iBestValue
-				,AI_getCitySpecialization()
-			);
-			gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-			/** DEBUG **/
+			if(isOOSLogging())
+			{
+				oosLog("AIBestProductionValue"
+					,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_choosePermDefenseReserveUnit,SupportUsed:%d,Limit:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,getID()
+					,eBestUnit
+					,GC.getUnitInfo(eBestUnit).getDescription()
+					,iBestValue
+					,AI_getCitySpecialization()
+					,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+				);
+			}
 			return true;
 		}
 	}
@@ -1733,19 +2026,21 @@ bool CvCityAI::AI_choosePermDefenseUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_choosePermDefenseUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_choosePermDefenseUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -1794,42 +2089,177 @@ bool CvCityAI::AI_chooseSettlerUnit()
 		return false;
 	}
 
-	//SpyFanatic: do not create Settler if there is no space to found a city
+
+
+	//SpyFanatic: A settler may have been already created and not yet associated to a AIGROUP_SETTLE, thus wait at a minimum that it can be associated to a AIGroup and start to move to found a City
+	int iExistingSettlers = 0;
+	int iLoop;
+	for (CvCity* pLoopCity = GET_PLAYER((PlayerTypes)getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)getOwnerINLINE()).nextCity(&iLoop))
+	{
+		CvPlot* pCityPlot = GC.getMapINLINE().plotINLINE(pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
+		for (CLLNode<IDInfo>* pUnitNode = pCityPlot->headUnitNode(); pUnitNode != NULL; pUnitNode = pCityPlot->nextUnitNode(pUnitNode))
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			/*oosLog("AIBestProductionValueSettler"
+					,"Turn: %d, PlayerID: %d, City [%d,%d] pLoopUnit:%d TurnCreated:%d UnitArea:%d ThisCityArea:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,getX_INLINE()
+					,getY_INLINE()
+					,pLoopUnit != NULL ? pLoopUnit->getUnitClassType() == (UnitClassTypes)GC.getUNITCLASS_SETTLER() : -1
+					,pLoopUnit != NULL ? pLoopUnit->getGameTurnCreated() : -1
+					,pLoopUnit->getArea()
+					,getArea()
+				);*/
+			if(pLoopUnit != NULL && pLoopUnit->getUnitClassType() == (UnitClassTypes)GC.getUNITCLASS_SETTLER())
+			{
+				iExistingSettlers++;
+				if(pLoopUnit->getGameTurnCreated() == GC.getGameINLINE().getElapsedGameTurns() && pLoopUnit->getArea() == getArea())
+				{
+					return false; //There is a Settler created this turn in one of the player city in the same area
+				}
+			}
+		}
+	}
+	//SpyFanatic: Or check that if an AIGROUP exists (which will have a settler) its at a minimum complete
+	for(CvAIGroup* pAIGroup = GET_PLAYER((PlayerTypes)getOwnerINLINE()).firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = GET_PLAYER((PlayerTypes)getOwnerINLINE()).nextAIGroup(&iLoop))
+	{
+		if(pAIGroup->getGroupType()==AIGROUP_SETTLE && pAIGroup->getNumUnits() > 0 && (pAIGroup->getMissionPlot() == NULL || pAIGroup->getMissionPlot()->getArea() == getArea()) && pAIGroup->UnitsNeeded() > 0)
+		{
+			//If there is already a settler group in the area with not enough unit build another defense unit instead
+			bool bPermDefense = AI_choosePermDefenseReserveUnit();
+			/*oosLog("AIBestProductionValueSettler"
+				,"Turn: %d, PlayerID: %d, City [%d,%d] bPermDefense:%d iMissionArea:%d iGroupArea:%d numunits:%d needed:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getX_INLINE()
+				,getY_INLINE()
+				,bPermDefense
+				,pAIGroup->getMissionPlot()->getArea()
+				,getArea()
+				,pAIGroup->getNumUnits()
+				,pAIGroup->UnitsNeeded()
+			);*/
+			if(bPermDefense)
+			{
+				return true; //If a reserve unit for an existing AIGROUP_SETTLE has been pushed to production, then return true to stop main production loop
+			}
+			return false; //No unit thus build something else instead
+		}
+	}
+
+
+/*
+	//Use world size?
 	int iSpaceForCity = 0;
+	//iSpaceForCity = GC.getMapINLINE().getWorldSize() <= 2 ? 1 : 2;
+	int iReserveGroupUnit = 0;
+	int iSettleGroupUnit = 0;
+	for(CvAIGroup* pAIGroup = GET_PLAYER((PlayerTypes)getOwnerINLINE()).firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = GET_PLAYER((PlayerTypes)getOwnerINLINE()).nextAIGroup(&iLoop))
+	{
+		if(pAIGroup->getGroupType()==AIGROUP_RESERVE && pAIGroup->getNumUnits() > 0)
+		{
+			iReserveGroupUnit+=pAIGroup->getNumUnits();
+		}
+		if(pAIGroup->getGroupType()==AIGROUP_SETTLE && pAIGroup->getNumUnits() > 0)
+		{
+			iSettleGroupUnit+=pAIGroup->getNumUnits();
+		}
+	}
+
+	int iCityRange = GC.getMIN_CITY_RANGE();
+	std::vector<CvPlot*> vPossibleCitySites;
 	for (int iI = 0; iI < GET_PLAYER(getOwnerINLINE()).AI_getNumCitySites(); iI++)
 	{
 		CvPlot* pCitySitePlot = GET_PLAYER(getOwnerINLINE()).AI_getCitySite(iI);
 		if (GET_PLAYER(getOwnerINLINE()).canFound(pCitySitePlot->getX_INLINE(),pCitySitePlot->getY_INLINE()))
 		{
-			oosLog("AIBestBuildingValue"
-				,"Turn: %d, PlayerID: %d, City [%d,%d] canFound [%d,%d]\n"
-				,GC.getGameINLINE().getElapsedGameTurns()
-				,getOwner()
-				,getX_INLINE()
-				,getY_INLINE()
-				,pCitySitePlot->getX_INLINE()
-				,pCitySitePlot->getY_INLINE()
-			);
-			iSpaceForCity += 1;
+			if(vPossibleCitySites.size() == 0)
+			{
+				oosLog("AIBestProductionValueSettler"
+					,"Turn: %d, PlayerID: %d, City [%d,%d] canFound [%d,%d] area:%d iReserveGroupUnit:%d iSettleGroupUnit:%d grouparea:%d "
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,getX_INLINE()
+					,getY_INLINE()
+					,pCitySitePlot->getX_INLINE()
+					,pCitySitePlot->getY_INLINE()
+					,pCitySitePlot->getArea()
+					,iReserveGroupUnit
+					,iSettleGroupUnit
+					,getArea()
+					//,getMissionPlot()!=NULL ? getMissionPlot()->getArea() : -1
+				);
+				vPossibleCitySites.push_back(pCitySitePlot);
+				iSpaceForCity++;
+			}
+			else
+			{
+				bool bSeparateCityPlot = true;
+				for (std::vector<CvPlot*>::iterator it = vPossibleCitySites.begin(); it != vPossibleCitySites.end(); it++)
+				{
+					int iXDist = abs((*it)->getX_INLINE() - pCitySitePlot->getX_INLINE());
+					int iYDist = abs((*it)->getY_INLINE() - pCitySitePlot->getY_INLINE());
+					if (iXDist <= iCityRange || iYDist <= iCityRange)
+					{
+						//oosLog("AIBestProductionValueSettler"
+						//	,"Turn: %d, PlayerID: %d, City [%d,%d] canFound [%d,%d] area:%d near [%d,%d]"
+						//	,GC.getGameINLINE().getElapsedGameTurns()
+						//	,getOwner()
+						//	,getX_INLINE()
+						//	,getY_INLINE()
+						//	,pCitySitePlot->getX_INLINE()
+						//	,pCitySitePlot->getY_INLINE()
+						//	,pCitySitePlot->getArea()
+						//	,(*it)->getX_INLINE()
+						//	,(*it)->getY_INLINE()
+						//);
+						bSeparateCityPlot = false;
+						break;
+					}
+				}
+				if(bSeparateCityPlot)
+				{
+					oosLog("AIBestProductionValueSettler"
+						,"Turn: %d, PlayerID: %d, City [%d,%d] canFound [%d,%d] area:%d range:%d iReserveGroupUnit:%d iSettleGroupUnit:%d"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwner()
+						,getX_INLINE()
+						,getY_INLINE()
+						,pCitySitePlot->getX_INLINE()
+						,pCitySitePlot->getY_INLINE()
+						,pCitySitePlot->getArea()
+						,iCityRange
+						,iReserveGroupUnit
+						,iSettleGroupUnit
+					);
+					vPossibleCitySites.push_back(pCitySitePlot);
+					iSpaceForCity++;
+				}
+			}
 		}
 	}
+	//iSpaceForCity=1; //TODO: SpyFanatic in the meantime let's limit settler to max 1
 	if(GET_PLAYER((PlayerTypes)getOwnerINLINE()).getUnitClassCountPlusMaking(eSettler) >= iSpaceForCity)
 	{
 		return false;
 	}
+*/
 
 	pushOrder(ORDER_TRAIN,eUnit,NO_UNITAI,false,false,false);
 	if(isOOSLogging())
 	{
-		oosLog("AIBestBuildingValue"
-			,"Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: 0,CitySpecialization: %d,NeedSettler [%d]\n"
+		oosLog("AIBestProductionValue"
+			,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,NeedSettler:%d,SupportUsed:%d,Limit:%d"
 			,GC.getGameINLINE().getElapsedGameTurns()
 			,getOwner()
 			,getID()
 			,eUnit
 			,GC.getUnitInfo(eUnit).getDescription()
 			,AI_getCitySpecialization()
-			,iSpaceForCity
+			,iExistingSettlers
+			,GET_PLAYER(getOwner()).getUnitSupportUsed()
+			,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
 		);
 	}
 	return true;
@@ -1961,19 +2391,21 @@ bool CvCityAI::AI_chooseTrainingBuilding(bool bPatrol)
 		if(eBestBuilding!=NO_BUILDING)
 		{
 			pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
-			/** DEBUG **/
-			TCHAR szOut[1024];
-			sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseTrainingBuilding\n"
-				,GC.getGameINLINE().getElapsedGameTurns()
-				,getOwner()
-				,getID()
-				,eBestBuilding
-				,GC.getBuildingInfo(eBestBuilding).getDescription()
-				,iBestValue
-				,AI_getCitySpecialization()
-			);
-			gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-			/** DEBUG **/
+			if(isOOSLogging())
+			{
+				oosLog("AIBestProductionValue"
+					,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseTrainingBuilding1,Happy:%d,Health:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,getOwner()
+					,getID()
+					,eBestBuilding
+					,GC.getBuildingInfo(eBestBuilding).getDescription()
+					,iBestValue
+					,AI_getCitySpecialization()
+					,happyLevel() - unhappyLevel()
+					,goodHealth() - badHealth()
+				);
+			}
 			return true;
 		}
 	}
@@ -2015,19 +2447,21 @@ bool CvCityAI::AI_chooseTrainingBuilding(bool bPatrol)
 	if(eBestBuilding!=NO_BUILDING)
 	{
 		pushOrder(ORDER_CONSTRUCT,eBestBuilding,-1,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,CitySpecialization: %d,AIBestBuildingValue: %d\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestBuilding
-			,GC.getBuildingInfo(eBestBuilding).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,AI_chooseTrainingBuilding2,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
+		}
 		return true;
 	}
 
@@ -2050,18 +2484,20 @@ bool CvCityAI::AI_chooseWorkerUnit()
 					if(eUnit!=NO_UNIT && canTrain(eUnit,true))
 					{
 						pushOrder(ORDER_TRAIN,eUnit,NO_UNITAI,false,false,false);
-						/** DEBUG **/
-						TCHAR szOut[1024];
-						sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,AIBestBuildingValue: 0,CitySpecialization: %d,NeedSeaWorker\n"
-							,GC.getGameINLINE().getElapsedGameTurns()
-							,getOwner()
-							,getID()
-							,eUnit
-							,GC.getUnitInfo(eUnit).getDescription()
-							,AI_getCitySpecialization()
-						);
-						gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-						/** DEBUG **/
+						if(isOOSLogging())
+						{
+							oosLog("AIBestProductionValue"
+								,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,NeedSeaWorker,SupportUsed:%d,Limit:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getOwner()
+								,getID()
+								,eUnit
+								,GC.getUnitInfo(eUnit).getDescription()
+								,AI_getCitySpecialization()
+								,GET_PLAYER(getOwner()).getUnitSupportUsed()
+								,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+							);
+						}
 						return true;
 					}
 				}
@@ -2080,18 +2516,20 @@ bool CvCityAI::AI_chooseWorkerUnit()
 //				if(getAIGroup_Worker()->getNumUnits()==0)
 //				{
 					pushOrder(ORDER_TRAIN,eUnit,NO_UNITAI,false,false,false);
-					/** DEBUG **/
-					TCHAR szOut[1024];
-					sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,AIBestBuildingValue: 0,CitySpecialization: %d,NeedWorker\n"
-						,GC.getGameINLINE().getElapsedGameTurns()
-						,getOwner()
-						,getID()
-						,eUnit
-						,GC.getUnitInfo(eUnit).getDescription()
-						,AI_getCitySpecialization()
-					);
-					gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-					/** DEBUG **/
+					if(isOOSLogging())
+					{
+						oosLog("AIBestProductionValue"
+							,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:0,CitySpecialization:%d,NeedWorker,SupportUsed:%d,Limit:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,getOwner()
+							,getID()
+							,eUnit
+							,GC.getUnitInfo(eUnit).getDescription()
+							,AI_getCitySpecialization()
+							,GET_PLAYER(getOwner()).getUnitSupportUsed()
+							,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+						);
+					}
 					return true;
 //				}
 			}
@@ -2179,11 +2617,11 @@ bool CvCityAI::AI_chooseProductionDistrict()
 		// DEBUG
 		if(isOOSLogging())
 		{
-			oosLog("AISpecialization","Turn:%d,PlayerID:%d,Player:%S,City:%S,X:%d,Y:%d,Count:%d,District:%S,CitySpecialization:%S\n"
+			oosLog("AISpecialization","Turn:%d,PlayerID:%d,Player:%S,City:%S,X:%d,Y:%d,Count:%d,District:%S,CitySpecialization:%S"
 				,GC.getGameINLINE().getElapsedGameTurns()
 				,getOwner()
 				,GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getDescription()
-				,getNameKey()
+				,getName().c_str()//,getNameKey()
 				,getX()
 				,getY()
 				,GET_PLAYER(getOwner()).getNumCities()
@@ -2218,18 +2656,20 @@ bool CvCityAI::AI_chooseEarlyProject()
 			if(canCreate(eProject,true,true)) {
 				if(getProductionTurnsLeft(eProject, 0) < iMaxTurns){
 					if(GC.getGame().getElapsedGameTurns() + getProductionTurnsLeft(eProject, 0) <= iLastTurns){
-						/** DEBUG **/
-						TCHAR szOut[1024];
-						sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,AIBestBuildingValue: 0,CitySpecialization: %d,AI_chooseEarlyProject\n"
-							,GC.getGameINLINE().getElapsedGameTurns()
-							,getOwner()
-							,getID()
-							,eProject
-							,GC.getProjectInfo(eProject).getDescription()
-							,AI_getCitySpecialization()
-						);
-						gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-						/** DEBUG **/
+						if(isOOSLogging())
+						{
+							oosLog("AIBestProductionValue"
+								,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:0,CitySpecialization:%d,AI_chooseEarlyProject,Happy:%d,Health:%d"
+								,GC.getGameINLINE().getElapsedGameTurns()
+								,getOwner()
+								,getID()
+								,eProject
+								,GC.getProjectInfo(eProject).getDescription()
+								,AI_getCitySpecialization()
+								,happyLevel() - unhappyLevel()
+								,goodHealth() - badHealth()
+							);
+						}
 						pushOrder(ORDER_CREATE, i, -1, false, false, false);
 						return true;
 					}
@@ -2256,9 +2696,123 @@ bool CvCityAI::AI_chooseProductionNew()
 		}
 	}
 
+/*
+	Here AI may be able to build stronger units in:
+	AI_chooseEarlyDefenseGroupUnit
+		AI_chooseCityInvasionUnit
+		AI_chooseCityLairUnit
+	AI_chooseWarwizardUnit
+	AI_chooseMagicNodeUnit
+	AI_chooseCitySiegeUnit
+	AI_chooseCounterUnit
+	AI_choosePermDefenseReserveUnit
+	AI_chooseBestPermDefenseUnit
+	AI_choosePermDefenseUnit
+	But maybe cannot due to not enough space to produce units...
+
+*/
+//SpyFanatic: not needed as of now, AI is now building better units
+/*
+	if(!kPlayer.canSupportMoreUnits(1))
+	{
+		int iLoop;
+		for(CvAIGroup* pAIGroup = kPlayer.firstAIGroup(&iLoop); pAIGroup != NULL; pAIGroup = kPlayer.nextAIGroup(&iLoop))
+		{
+			if(
+				true
+				//pAIGroup->getGroupType()==AIGROUP_CITY_INVASION
+				//|| pAIGroup->getGroupType()==AIGROUP_DESTROY_LAIR
+					//|| pAIGroup->getGroupType()==AIGROUP_COUNTER //Maybe kill used as a counter during invasion is not a great idea...
+				//|| pAIGroup->getGroupType()==AIGROUP_RESERVE
+					//AIGROUP_CITY_DEFENSE this should not be replaced....
+					//AIGROUP_SETTLE maybe not replace also this
+					//AIGROUP_CITY_DEFENSE
+			)
+			{
+				if(getArea()==pAIGroup->getMissionArea()) //Maybe move it at CvPlayer level? Now let's only crosscheck group whos area is the same of the city...
+				{
+					if(true) //pAIGroup->UnitsNeeded()>0
+					{
+						for (int iI = 1; iI < 4; iI++)
+						//for (int iI = 1; iI < 3; iI++) //Let's only replace tier 0,1,2 with 2,3,4
+						{
+							UnitTypes eUnitFound = NO_UNIT;
+							UnitCombatTypes eUnitFoundCombatType = NO_UNITCOMBAT;
+							for (CLLNode<IDInfo>* pUnitNode = pAIGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pAIGroup->nextUnitNode(pUnitNode))
+							{
+								CvUnit* pLoopUnit = getUnit(pUnitNode->m_data);
+								CvUnitInfo& pLoopUnitInfo = GC.getUnitInfo(pLoopUnit->getUnitType());
+								if(pLoopUnitInfo.getTier() <= iI && pLoopUnitInfo.getCombat() > 0 && pLoopUnitInfo.getProductionCost() > 0)
+								{
+									eUnitFound = pLoopUnit->getUnitType();
+									eUnitFoundCombatType = pLoopUnit->getUnitCombatType();
+								}
+							}
+							if(eUnitFound != NO_UNIT)
+							{
+								for(int iJ=0;iJ<GC.getNumUnitClassInfos();iJ++)
+								{
+									UnitTypes eUnit=(UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iJ);
+									if(eUnit != NO_UNIT)
+									{
+										CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+										if(
+											kUnitInfo.getTier() > iI
+											&& kUnitInfo.getProductionCost() > 0
+											&& kUnitInfo.getCombat() > 0
+											//&& kUnitInfo.getCombatDefense() > 0 Combat defense not needed
+											&& eUnitFoundCombatType == kUnitInfo.getUnitCombatType()
+										)
+										{
+											if(canTrain(eUnit,true))
+											{
+												//TODO: Check if for best unit to build (first does not mean its the best)
+												oosLog(
+													"AIStack"
+													,"Turn:%d,PlayerID:%d,CityID:%d,CanTrain:%S[%d %S],InsteadOf:%S[%d %S],Group:%S,NeedsUnit:%d,X:%d,Y:%d\n"
+													,GC.getGameINLINE().getElapsedGameTurns()
+													,getOwner()
+													,getID()
+													,GC.getUnitInfo(eUnit).getDescription()
+													,GC.getUnitInfo(eUnit).getTier()
+													,GC.getUnitInfo(eUnit).getUnitCombatType()>=0?GC.getUnitCombatInfo((UnitCombatTypes)GC.getUnitInfo(eUnit).getUnitCombatType()).getDescription():L""
+													,GC.getUnitInfo(eUnitFound).getDescription()
+													,GC.getUnitInfo(eUnitFound).getTier()
+													,GC.getUnitInfo(eUnitFound).getUnitCombatType()>=0?GC.getUnitCombatInfo((UnitCombatTypes)GC.getUnitInfo(eUnitFound).getUnitCombatType()).getDescription():L""
+													,GC.getAIGroupInfo(pAIGroup->getGroupType()).getDescription()
+													,pAIGroup->UnitsNeeded()
+													,pAIGroup->getHeadUnit()->plot()->getX_INLINE()
+													,pAIGroup->getHeadUnit()->plot()->getY_INLINE()
+												);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+*/
 	if(AI_choosePermDefenseUnit())
 	{
 		return true;
+	}
+	if(AI_chooseCheapProductionBuilding())
+	{
+		return true;
+	}
+
+	if(kPlayer.AI_getCitySpecializationCount(CITYSPECIALIZATION_GOLD) <= 0 && kPlayer.getCommercePercent(COMMERCE_RESEARCH) < 100)
+	//if(kPlayer.getNumCities() < 4 && kPlayer.getCommercePercent(COMMERCE_RESEARCH) < 100)
+	{
+		//If player does not yet have a merchant district and research below 100%
+		if(AI_chooseCheapGoldBuilding())
+		{
+			return true;
+		}
 	}
 
 	if(getCulture((PlayerTypes)getOwnerINLINE())==0 && getCommerceRate(COMMERCE_CULTURE)==0)
@@ -2310,7 +2864,9 @@ bool CvCityAI::AI_chooseProductionNew()
 		return true;
 	}
 //		if ((!kPlayer.isConquestMode()) && kPlayer.getNumCities()>2)
-	if(kPlayer.getUnitSupportUsed()<6)
+	//SpyFanatic: add 2 to this till cities are <= 3
+	//if(kPlayer.getUnitSupportUsed()<6)
+	if(kPlayer.getUnitSupportUsed()<6 || (kPlayer.getUnitSupportUsed()<8 && kPlayer.getNumCities() < 3))
 	{
 		if(AI_chooseTrainingBuilding())
 		{
@@ -2344,10 +2900,20 @@ bool CvCityAI::AI_chooseProductionNew()
 	//TODO: Only if AI wants to build a Unit
 	if(2>1)
 	{
+		if(AI_chooseBuildingHappiness())
+		{
+			return true;
+		}
+		if(AI_chooseBuildingHealth())
+		{
+			return true;
+		}
 		if(AI_chooseTrainingBuilding())
 		{
 			return true;
 		}
+
+		//SpyFanatic: moved down the list to prioritize unit for city invasion over lair....
 
 		//Need a Unit to take out a Lair?
 		if(AI_chooseCityLairUnit())
@@ -2394,7 +2960,12 @@ bool CvCityAI::AI_chooseProductionNew()
 		{
 			return true;
 		}
-		
+		/*
+		//Need a Unit to take out a Lair?
+		if(AI_chooseCityLairUnit())
+		{
+			return true;
+		}*/
 	}
 
 	int iValue=0;
@@ -2426,17 +2997,19 @@ bool CvCityAI::AI_chooseProductionNew()
 	if(eBestBuilding != NO_BUILDING){
 		if(isOOSLogging())	
 		{
-		oosLog(
-		"AIBestBuildingValue"
-		,"Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S,AIBestBuildingValue: %d,CitySpecialization: %d,Building\n"
-		,GC.getGameINLINE().getElapsedGameTurns()
-		,getOwner()
-		,getID()
-		,eBestBuilding
-		,GC.getBuildingInfo(eBestBuilding).getDescription()
-		,iBestBuildingValue
-		,AI_getCitySpecialization()
-		);
+			oosLog(
+				"AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestBuildingValue:%d,CitySpecialization:%d,Building,Happy:%d,Health:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestBuilding
+				,GC.getBuildingInfo(eBestBuilding).getDescription()
+				,iBestBuildingValue
+				,AI_getCitySpecialization()
+				,happyLevel() - unhappyLevel()
+				,goodHealth() - badHealth()
+			);
 		}
 	}
 	//DEBUG
@@ -2588,19 +3161,21 @@ bool CvCityAI::AI_chooseNavalInvasionUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseNavalInvasionUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseNavalInvasionUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -2660,19 +3235,21 @@ bool CvCityAI::AI_chooseNavalSettleUnit()
 
 	if(eBestUnit != NO_UNIT) {
 		pushOrder(ORDER_TRAIN, eBestUnit, NO_UNITAI, false, false, false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseNavalSettleUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseNavalSettleUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -2725,19 +3302,21 @@ bool CvCityAI::AI_chooseNavalExplorerUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseNavalExplorerUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseNavalExplorerUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 
@@ -2791,19 +3370,21 @@ bool CvCityAI::AI_chooseNavalCounterUnit()
 	if(eBestUnit!=NO_UNIT)
 	{
 		pushOrder(ORDER_TRAIN,eBestUnit,NO_UNITAI,false,false,false);
-		/** DEBUG **/
-		TCHAR szOut[1024];
-		sprintf(szOut, "Turn: %d, PlayerID: %d, CityID: %d,ItemID: %d,ItemName: %S, AIBestBuildingValue: %d,CitySpecialization: %d,AI_chooseNavalCounterUnit\n"
-			,GC.getGameINLINE().getElapsedGameTurns()
-			,getOwner()
-			,getID()
-			,eBestUnit
-			,GC.getUnitInfo(eBestUnit).getDescription()
-			,iBestValue
-			,AI_getCitySpecialization()
-		);
-		gDLL->logMsg("AIBestBuildingValue.log",szOut, false, false);
-		/** DEBUG **/
+		if(isOOSLogging())
+		{
+			oosLog("AIBestProductionValue"
+				,"Turn:%d,PlayerID:%d,CityID:%d,ItemID:%d,ItemName:%S,AIBestUnitValue:%d,CitySpecialization:%d,AI_chooseNavalCounterUnit,SupportUsed:%d,Limit:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,getOwner()
+				,getID()
+				,eBestUnit
+				,GC.getUnitInfo(eBestUnit).getDescription()
+				,iBestValue
+				,AI_getCitySpecialization()
+				,GET_PLAYER(getOwner()).getUnitSupportUsed()
+				,GET_PLAYER(getOwner()).getUnitSupportLimitTotal()
+			);
+		}
 		return true;
 	}
 

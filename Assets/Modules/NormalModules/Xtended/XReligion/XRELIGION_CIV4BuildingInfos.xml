@@ -1902,7 +1902,8 @@
             <Advisor>ADVISOR_MILITARY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_ALTAR_OF_THE_LUONNOTAR_FINAL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
-            <VictoryPrereq>VICTORY_ALTAR_OF_THE_LUONNOTAR</VictoryPrereq>
+            <!--VictoryPrereq>VICTORY_ALTAR_OF_THE_LUONNOTAR</VictoryPrereq-->
+            <VictoryPrereq></VictoryPrereq>
             <PrereqTech>TECH_DIVINE_ESSENCE</PrereqTech>
             <bStateReligion>0</bStateReligion>
             <FreePromotion>PROMOTION_BLESSED</FreePromotion>

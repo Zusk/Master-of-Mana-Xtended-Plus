@@ -1126,7 +1126,7 @@
             <BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
             <ArtDefineTag>ART_DEF_BONUS_GOLD</ArtDefineTag>
             <TechReveal>NONE</TechReveal>
-            <TechCityTrade>NONE</TechCityTrade>
+            <TechCityTrade>TECH_MINING_GUILD</TechCityTrade>
             <TechObsolete>NONE</TechObsolete>
 			<TechDiscover>TECH_MINING_GUILD</TechDiscover>
 			<YieldChanges>
@@ -1204,7 +1204,7 @@
             <BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
             <ArtDefineTag>ART_DEF_BONUS_SILVER</ArtDefineTag>
             <TechReveal>NONE</TechReveal>
-            <TechCityTrade>NONE</TechCityTrade>
+            <TechCityTrade>TECH_MINING_GUILD</TechCityTrade>
             <TechObsolete>NONE</TechObsolete>
 			<TechDiscover>TECH_MINING_GUILD</TechDiscover>
             <YieldChanges>
@@ -1285,7 +1285,7 @@
             <BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
             <ArtDefineTag>ART_DEF_BONUS_AMBER</ArtDefineTag>
             <TechReveal>NONE</TechReveal>
-            <TechCityTrade>NONE</TechCityTrade>
+            <TechCityTrade>TECH_MINING_GUILD</TechCityTrade>
             <TechObsolete>NONE</TechObsolete>
 			<TechDiscover>TECH_MINING_GUILD</TechDiscover>
             <YieldChanges>
@@ -1826,7 +1826,7 @@
             <BonusClassType>BONUSCLASS_RUSH</BonusClassType>
             <ArtDefineTag>ART_DEF_BONUS_COPPER</ArtDefineTag>
             <TechReveal>NONE</TechReveal>
-            <TechCityTrade>NONE</TechCityTrade>
+            <TechCityTrade>TECH_MINING_GUILD</TechCityTrade>
             <TechObsolete>NONE</TechObsolete>
 			<TechDiscover>TECH_MINING_GUILD</TechDiscover>
             <YieldChanges>
@@ -2766,7 +2766,7 @@
             <BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
             <ArtDefineTag>ART_DEF_BONUS_GEMS</ArtDefineTag>
             <TechReveal>NONE</TechReveal>
-            <TechCityTrade>NONE</TechCityTrade>
+            <TechCityTrade>TECH_MINING_GUILD</TechCityTrade>
             <TechObsolete>NONE</TechObsolete>
 			<TechDiscover>TECH_MINING_GUILD</TechDiscover>
             <YieldChanges>

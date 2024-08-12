@@ -83,5 +83,8 @@ void CyMapPythonInterface()
 		.def("updateMinOriginalStartDist", &CyMap::updateMinOriginalStartDist, "void (CyArea* pArea)")
 
 		.def("placeCityState", &CyMap::placeCityState, "int (int)")
+		// Super Forts begin *canal* *choke*
+		.def("calculateCanalAndChokePoints", &CyMap::calculateCanalAndChokePoints, "void ()")
+		// Super Forts end
 		;
 }

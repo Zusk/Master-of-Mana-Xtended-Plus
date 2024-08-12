@@ -888,7 +888,7 @@
 			<iFear>100</iFear>
 			<bImmuneToFear>1</bImmuneToFear>
 			<iMinLevel>6</iMinLevel>			
-			<iCombatAuraFearEffectChange>30</iCombatAuraFearEffectChange>
+			<iCombatAuraFearEffectChange>50</iCombatAuraFearEffectChange>
         	<iPowerModifier>25</iPowerModifier>
         </PromotionInfo>
         <PromotionInfo>
@@ -995,7 +995,7 @@
                     <iResist>5</iResist>
                 </DamageTypeResist>
             </CombatAuraDamageTypeResists>
-			<iCombatAuraFearEffectChange>10</iCombatAuraFearEffectChange>
+			<iCombatAuraFearEffectChange>30</iCombatAuraFearEffectChange>
         	<iPowerModifier>15</iPowerModifier>
 		</PromotionInfo>
         <PromotionInfo>

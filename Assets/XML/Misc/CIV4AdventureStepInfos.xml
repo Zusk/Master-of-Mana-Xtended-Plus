@@ -478,10 +478,18 @@
             <Description>TXT_KEY_ADVENTURESTEP_RAZE_HOLY_CITY_ASHEN_VEIL</Description>
 			<RazeHolyCity>RELIGION_THE_ASHEN_VEIL</RazeHolyCity>
 		</AdventureStepInfo>
+		<!--
 		<AdventureStepInfo>
 			<Type>ADVENTURESTEP_PURITY_COUNTER_100</Type>
             <Description>TXT_KEY_ADVENTURESTEP_PURITY_COUNTER_100</Description>
 			<iPurityCounter>100</iPurityCounter>
+		</AdventureStepInfo>
+		-->
+		<!-- SpyFanatic: replace purity counter for elohim -->
+		<AdventureStepInfo>
+			<Type>ADVENTURESTEP_ABBEY</Type>
+            <Description>TXT_KEY_ADVENTURESTEP_ABBEY</Description>
+			<iNumBuildingOwned>1</iNumBuildingOwned>
 		</AdventureStepInfo>
 		<AdventureStepInfo>
 			<Type>ADVENTURESTEP_REDUCE_AC_TO_10</Type>

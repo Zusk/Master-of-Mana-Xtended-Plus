@@ -50,7 +50,7 @@ public:
 	bool isBuildingsMaxed();
 
 	bool canTrain( int iUnit, bool bContinue, bool bTestVisible);
-	bool canConstruct( int iBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost);
+	bool canConstruct( int iBuilding, bool bContinue, bool bTestVisible, bool bIgnoreCost, bool bIgnoreResources);
 	bool canCreate( int iProject, bool bContinue, bool bTestVisible );
 	bool canMaintain( int iProcess, bool bContinue );
 	bool canJoin();
@@ -455,6 +455,7 @@ public:
 	bool isActiveCorporation(int /*CorporationTypes*/ eCorporation);
 	CyCity* getTradeCity(int iIndex);
 	int getTradeRoutes();
+	int getReligionCount();
 
 	void clearOrderQueue();
 	void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce);

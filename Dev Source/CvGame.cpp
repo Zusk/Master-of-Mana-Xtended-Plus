@@ -256,8 +256,10 @@ void CvGame::init(HandicapTypes eHandicap)
                     {
                         iAlignment = GC.getLeaderHeadInfo((LeaderHeadTypes)GC.getInitCore().getLeader((PlayerTypes)iPlayer)).getAlignment();
                     }
+
                     for (int iCiv = 0; iCiv < GC.getNumCivilizationInfos(); iCiv++)
                     {
+
 						if (civIsOkForThisPlayer(iPlayer, iCiv))
                         {
                             for (int iLeader = 0; iLeader < GC.getNumLeaderHeadInfos(); iLeader++)
@@ -268,7 +270,8 @@ void CvGame::init(HandicapTypes eHandicap)
                                     {
 										/** Plane Requirement **/
 										int iPlane = GC.getCivilizationInfo((CivilizationTypes)iCiv).getNativePlane();
-										if(iPlane == NO_PLANE || aAlreadyCivs[iPlane] < aNumCivsOnPlane[iPlane]) {
+										//SpyFanatic: As of now only civ with NO_PLANE are the random one, so adding iRndCiv != iCiv   else @random will not work
+										if(iRndCiv != iCiv && (iPlane == NO_PLANE || aAlreadyCivs[iPlane] < aNumCivsOnPlane[iPlane])) {
 
 											iValue = 40000 + GC.getGameINLINE().getSorenRandNum(1000, "Random Leader");
 											for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
@@ -295,6 +298,8 @@ void CvGame::init(HandicapTypes eHandicap)
                             }
                         }
                     }
+
+					//oosLog("AIGame","FIRST PASS iPlayer:%d,iAlignment:%d,iBestCiv:%d,iBestLeader:%d",iPlayer,iAlignment,iBestCiv,iBestLeader);
 
 					//backup plan if we found no civ/leader yet
 					if(iBestCiv == -1 || iBestLeader == -1) {
@@ -594,6 +599,10 @@ void CvGame::regenerateMap()
 	CvEventReporter::getInstance().resetStatistics();
 
 	setInitialItems();
+
+	// Super Forts begin *choke* *canal*
+	GC.getMapINLINE().calculateCanalAndChokePoints();
+	// Super Forts end
 
 	initScoreCalculation();
 	setFinalInitialized(true);
@@ -1191,6 +1200,17 @@ void CvGame::assignStartingPlots()
 	int iPlayer;
 	if (GC.getMapINLINE().useClimateBasedStartPos())
 	{
+
+		//SpyFanatic: added for MoM_Hub_Climate, Erebus_Climate and Lakes_Climate are not having this method so no risk of regression
+		/*if (gDLL->getPythonIFace()->callFunction(gDLL->getPythonIFace()->getMapScriptModule(), "assignStartingPlots"))
+		{
+			if (!gDLL->getPythonIFace()->pythonUsingDefaultImpl())
+			{
+				// Python override
+				//return;
+			}
+		}*/
+
 		std::vector<CvPlot*> startingPosAlreadyTaken;
 		for (iPlayer = 0; iPlayer < MAX_CIV_PLAYERS; iPlayer++)
 		{
@@ -1225,6 +1245,7 @@ void CvGame::assignStartingPlots()
 			GET_PLAYER((PlayerTypes)iPlayer).setStartingPlot(foundStartPlot, true);
 		}
 		startingPosAlreadyTaken.clear();
+
 		return;
 	}
 
@@ -4512,7 +4533,18 @@ int CvGame::getAIAutoPlay()
 	return m_iAIAutoPlay;
 }
 
+void CvGame::setAIAutoPlayCiv(int iNewValue, int iCiv)
+{
+	int iOldValue;
 
+	iOldValue = getAIAutoPlay();
+
+	if (iOldValue != iNewValue)
+	{
+		m_iAIAutoPlay = std::max(0, iNewValue);
+		GET_PLAYER((PlayerTypes)iCiv).setHumanDisabled((getAIAutoPlay() != 0));
+	}
+}
 void CvGame::setAIAutoPlay(int iNewValue)
 {
 	int iOldValue;
@@ -4545,7 +4577,31 @@ void CvGame::setAIAutoPlay(int iNewValue)
 
 void CvGame::changeAIAutoPlay(int iChange)
 {
-	setAIAutoPlay(getAIAutoPlay() + iChange);
+	int iNewValue = getAIAutoPlay() + iChange;
+	if (iNewValue == 0)
+	{
+		//Disable for everyone
+		setAIAutoPlay(getAIAutoPlay() + iChange);
+	}
+	else
+	{
+		//Count only DisableHuman
+		int iOldValue;
+		iOldValue = getAIAutoPlay();
+		if (iOldValue != iNewValue)
+		{
+			m_iAIAutoPlay = std::max(0, iNewValue);
+			for( int iI = 0; iI < MAX_CIV_PLAYERS; iI++ )
+			{
+				if(GET_PLAYER((PlayerTypes)iI).isHumanDisabled())
+				{
+					GET_PLAYER((PlayerTypes)iI).setHumanDisabled((getAIAutoPlay() != 0));
+				}
+			}
+		}
+	}
+
+	//setAIAutoPlay(getAIAutoPlay() + iChange);
 
 //FfH: Added by Kael 05/29/2008 (for jdog5000's AIAutoPlay)
 	//GET_PLAYER(getActivePlayer()).setDisableHuman((getAIAutoPlay() != 0));
@@ -5594,7 +5650,7 @@ bool CvGame::isOption(GameOptionTypes eIndex) const
 /**						Rigid assurance that we never have bad options							**/
 /*************************************************************************************************/
 
-	if (eIndex >= GAMEOPTION_DUMMY_02)
+	if (eIndex >= GAMEOPTION_DUMMY_05)
 	{
 		return false;
 	}
@@ -7791,7 +7847,8 @@ void CvGame::createAnimals()
 
 	iNeededAnimals = 2;
 
-    if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+    //if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+	if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_ANIMALS)) //Spyfanatic: separate raging wilderness
     {
         iNeededAnimals *= 2;
     }
@@ -7816,7 +7873,8 @@ void CvGame::createAnimals()
 				iNeededAnimalsPlot = 0;
 			}
 
-			else if (!GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+			//else if (!GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+			else if (!GC.getGameINLINE().isOption(GAMEOPTION_RAGING_ANIMALS)) //Spyfanatic: separate raging wilderness
 			{
 				if(pPlot->isVisibleToCivTeam())
 				{
@@ -7831,7 +7889,8 @@ void CvGame::createAnimals()
 					int iAnimalFreq = 2;
 					iAnimalFreq*=GC.getDefineINT("ANIMAL_SPAWNFREQ_PERCENT");
 
-					if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+					//if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+					if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_ANIMALS)) //Spyfanatic: separate raging wilderness
 					{
 						iAnimalFreq *= 3;
 						iAnimalFreq /= 2;
@@ -7967,7 +8026,8 @@ void CvGame::createAnimals()
         if (iNeededAnimals > 0)
         {
             iNeededAnimals = ((iNeededAnimals / 5) + 1);
-            if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+            //if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_BARBARIANS))
+			if (GC.getGameINLINE().isOption(GAMEOPTION_RAGING_ANIMALS)) //Spyfanatic: separate raging wilderness
             {
                 iNeededAnimals *= 2;
             }
@@ -8073,7 +8133,7 @@ void CvGame::updateMoves()
 	int iLoop;
 	int iI;
 
-	TCHAR szTask[1024]; //DEBUG
+	//TCHAR szTask[1024]; //DEBUG
 
 	if (isMPOption(MPOPTION_SIMULTANEOUS_TURNS))
 	{
@@ -8100,9 +8160,9 @@ void CvGame::updateMoves()
 /*************************************************************************************************/
 /**	TIME MEASURE																	Sephi		**/
 /*************************************************************************************************/
-					sprintf(szTask, "CvGame::updateMoves::AI_unitUpdate %d", player.getID());
+					//sprintf(szTask, "CvGame::updateMoves::AI_unitUpdate %d", player.getID());
 					if(!player.isHuman())
-						GC.getTimeMeasure().Start(szTask);
+						GC.getTimeMeasure().Start("CvGame::updateMoves::AI_unitUpdate");
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
@@ -8112,7 +8172,7 @@ void CvGame::updateMoves()
 /**	TIME MEASURE																	Sephi		**/
 /*************************************************************************************************/
 					if(!player.isHuman())
-						GC.getTimeMeasure().Stop(szTask);
+						GC.getTimeMeasure().Stop("CvGame::updateMoves::AI_unitUpdate");
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
@@ -8137,9 +8197,9 @@ void CvGame::updateMoves()
 /*************************************************************************************************/
 /**	TIME MEASURE																	Sephi		**/
 /*************************************************************************************************/
-				sprintf(szTask, "CvGame::updateMoves::setAutoMoves");
+				//sprintf(szTask, "CvGame::updateMoves::setAutoMoves");
 				if(!player.isHuman())
-					GC.getTimeMeasure().Start(szTask);
+					GC.getTimeMeasure().Start("CvGame::updateMoves::setAutoMoves");
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
@@ -8148,7 +8208,7 @@ void CvGame::updateMoves()
 /**	TIME MEASURE																	Sephi		**/
 /*************************************************************************************************/
 				if(!player.isHuman())
-					GC.getTimeMeasure().Stop(szTask);
+					GC.getTimeMeasure().Stop("CvGame::updateMoves::setAutoMoves");
 /*************************************************************************************************/
 /**	TIME MEASURE							END													**/
 /*************************************************************************************************/
@@ -8882,6 +8942,15 @@ void CvGame::processVote(const VoteTriggeredData& kData, int iChange)
 				{
 					if (GET_TEAM(kLoopPlayer.getTeam()).canChangeWarPeace(kPlayer.getTeam()))
 					{
+						if(isOOSLogging() && !GET_TEAM(kLoopPlayer.getTeam()).isAtWar(kPlayer.getTeam()) && !GET_TEAM(kPlayer.getTeam()).isAtWar(kLoopPlayer.getTeam()))
+						{
+							oosLog("AIGroupDeclareWar"
+								,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Council War declaration"
+								,GC.getGame().getElapsedGameTurns()
+								,kLoopPlayer.getTeam()
+								,kPlayer.getTeam()
+							);
+						}
 						GET_TEAM(kLoopPlayer.getTeam()).declareWar(kPlayer.getTeam(), false, WARPLAN_DOGPILE);
 					}
 				}
@@ -10016,18 +10085,20 @@ void CvGame::addPlayerAdvanced(PlayerTypes eNewPlayer, int iNewTeam, LeaderHeadT
                         GET_TEAM((TeamTypes)iNewTeam).setAtWar((TeamTypes)iJ, true);
 						//added Sephi - just to be on the safe side
                         GET_TEAM((TeamTypes)iJ).setAtWar((TeamTypes)iNewTeam, true);
+						//added SpyFanatic - to keep aligned war and warplan
+						GET_TEAM((TeamTypes)iJ).AI_setWarPlan((TeamTypes)iNewTeam, WARPLAN_LIMITED);
                     }
                 }
         	}
         }
     }
+
 	GC.getInitCore().setTeam(eNewPlayer, (TeamTypes)iNewTeam);
 	GC.getInitCore().setLeader(eNewPlayer, eLeader);
 	GC.getInitCore().setCiv(eNewPlayer, eCiv);
 	GC.getInitCore().setSlotStatus(eNewPlayer, SS_COMPUTER);
 	GC.getInitCore().setColor(eNewPlayer, eColor);
 	GET_PLAYER(eNewPlayer).init(eNewPlayer);
-
 	for (int iI = 0; iI < GC.getNumTechInfos(); ++iI)
 	{
 	    if (GET_TEAM((TeamTypes)iNewTeam).isHasTech((TechTypes)iI))
@@ -10035,6 +10106,8 @@ void CvGame::addPlayerAdvanced(PlayerTypes eNewPlayer, int iNewTeam, LeaderHeadT
             GET_PLAYER(eNewPlayer).changeAssets(GC.getTechInfo((TechTypes)iI).getAssetValue());
             GET_PLAYER(eNewPlayer).changePower(GC.getTechInfo((TechTypes)iI).getPowerValue());
             GET_PLAYER(eNewPlayer).changeTechScore(getTechScore((TechTypes)iI));
+
+			GET_PLAYER(eNewPlayer).processTech((TechTypes)iI,1); //SpyFanatic: process also tech related bonus that modify player state
 	    }
 	}
 }

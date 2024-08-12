@@ -152,6 +152,20 @@ void CvDungeon::changePowerTimes1000(int iChange)
 		int iUnitPowerChange = (m_iPower / 1000) - (m_iOld / 1000);
 		//Update Power of Units on Plot
 		if(iUnitPowerChange != 0) {
+			if(isOOSLogging())
+			{
+				oosLog("Dungeon"
+					,"Turn:%d,Dungeon:%S,ID:%d,X:%d,Y:%d,Attitude:%d,OldPower:%d,NewPower:%d"
+					,GC.getGameINLINE().getElapsedGameTurns()
+					,GC.getImprovementInfo(plot()->getImprovementType()).getDescription()
+					,getID()
+					,getX()
+					,getY()
+					,getAttitude((PlayerTypes)0)
+					,m_iOld / 1000
+					,m_iPower / 1000
+				);
+			}
 			CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 			while (pUnitNode != NULL)
 			{
@@ -272,6 +286,48 @@ void CvDungeon::DecreaseAttitude(PlayerTypes ePlayer)
 
 void CvDungeon::doTurn()
 {
+	//SpyFanatic: patch taken from Zusk, to remove Dungeon destroyed but not removed
+	CvPlot* pPlot = plot();
+	if(pPlot == NULL
+		|| pPlot->getImprovementType() == NO_IMPROVEMENT
+		|| GC.getImprovementInfo(pPlot->getImprovementType()).getSpawnUnitCiv() == NO_CIVILIZATION
+		|| (pPlot->getPlotCity() != NULL && pPlot->getPlotCity()->getOwnerINLINE() < BARBARIAN_PLAYER)
+	)
+	{
+		if(isOOSLogging())
+		{
+			oosLog("Dungeon"
+				,"Turn:%d,Dungeon:%S,SpawnTeam:%d,ID:%d,X:%d,Y:%d,Owner:%d,isCity:%d,Kill"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,plot()->getImprovementType() != NO_IMPROVEMENT ? GC.getImprovementInfo(plot()->getImprovementType()).getDescription() : L"NO_IMPROVEMENT"
+				,plot()->getImprovementType() != NO_IMPROVEMENT ? GC.getImprovementInfo(pPlot->getImprovementType()).getSpawnUnitCiv() : -1
+				,getID()
+				,getX()
+				,getY()
+				,m_eOwner
+				,plot()->getPlotCity()!=NULL
+			);
+		}
+		kill(); // Destroy the object which is probably a leftover and can cause CTD
+		return;
+	}
+	/*
+	ImprovementTypes iGraveYard = (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_GRAVEYARD");
+	ImprovementTypes iDungeon = (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_DUNGEON");
+	ImprovementTypes iBarrow = (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_BARROW");
+	CvPlot* pPlot = plot();
+	if (pPlot == NULL || (pPlot->getImprovementType() != iGraveYard && pPlot->getImprovementType() != iDungeon && pPlot->getImprovementType() != iBarrow))
+	{
+		kill(); // Destroy the object if the plot is null or the improvement is not a graveyard, dungeon, or barrow
+		return;
+	}
+	if (pPlot != NULL && (pPlot->getPlotCity() != NULL && pPlot->getPlotCity()->getOwnerINLINE() < BARBARIAN_PLAYER))
+	{
+		kill(); // Destroy the object if the plot is null or the improvement is not a graveyard, dungeon, or barrow
+		return;
+	}
+	*/
+	//Rest of code normal after this
 	doLogging();
 	triggerDeals();
 
@@ -321,17 +377,24 @@ void CvDungeon::doTurn()
 
 void CvDungeon::doLogging()
 {
-	TCHAR szOut[1024];
-	sprintf(szOut, "ID: %d, Attitude: %d,Last Turn Triggered Deal: %d,Chance to Trigger: %d,Guard Unit: %S,Owner: %d,Power: %d\n"
-		,getID()
-		,getAttitude((PlayerTypes)0)
-		,m_iLastTurnTriggeredDeal
-		,getChanceToTriggerDealsTimes100((PlayerTypes)0) / 100
-		,(m_eGuardUnit != NO_UNIT?GC.getUnitInfo(m_eGuardUnit).getDescription():L"None")
-		,m_eOwner
-		,getPower()
-	);
-	gDLL->logMsg("Dungeon.log",szOut, false, false);
+	if(isOOSLogging())
+	{
+		oosLog("Dungeon"
+			,"Turn:%d,Dungeon:%S,ID:%d,X:%d,Y:%d,Attitude:%d,Last Turn Triggered Deal:%d,Chance to Trigger:%d,Guard Unit:%S,Owner:%d,Power:%d,isCity:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,GC.getImprovementInfo(plot()->getImprovementType()).getDescription()
+			,getID()
+			,getX()
+			,getY()
+			,getAttitude((PlayerTypes)0)
+			,m_iLastTurnTriggeredDeal
+			,getChanceToTriggerDealsTimes100((PlayerTypes)0) / 100
+			,(m_eGuardUnit != NO_UNIT?GC.getUnitInfo(m_eGuardUnit).getDescription():L"None")
+			,m_eOwner
+			,getPower()
+			,plot()->getPlotCity()!=NULL
+		);
+	}
 }
 
 //returns Chance to Trigger Deals with Barbs Times 100

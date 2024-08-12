@@ -10,6 +10,7 @@
 			<Type>AIPROMOTIONSPECIALIZATION_PERMDEFENSE_GENERAL</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_PERMDEFENSE_GENERAL</Description>
 			<iCityDefense>100</iCityDefense>
+			<!--iCombatPromotions>100</iCombatPromotions-->
 			<iMobility>0</iMobility>	
 			<iWithdraw>0</iWithdraw>
 			<AIGroup>AIGROUP_CITY_DEFENSE</AIGroup>
@@ -45,12 +46,16 @@
 		<AIPromotionSpecializationInfo>
 			<Type>AIPROMOTIONSPECIALIZATION_DESTROY_LAIR</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_DESTROY_LAIR</Description>						
-			<iMobility>100</iMobility>
+			<!--iMobility>100</iMobility-->
+			<iCityAttack>100</iCityAttack>
+			<iCombatPromotions>100</iCombatPromotions>
 			<AIGroup>AIGROUP_DESTROY_LAIR</AIGroup>			
 		</AIPromotionSpecializationInfo>						
 		<AIPromotionSpecializationInfo>
 			<Type>AIPROMOTIONSPECIALIZATION_SETTLE</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_SETTLE</Description>									
+			<iCityDefense>100</iCityDefense>
+			<iCombatPromotions>100</iCombatPromotions>
 			<AIGroup>AIGROUP_SETTLE</AIGroup>			
 		</AIPromotionSpecializationInfo>
 		<AIPromotionSpecializationInfo>
@@ -64,14 +69,32 @@
 			<Type>AIPROMOTIONSPECIALIZATION_CITY_INVASION</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_CITY_INVASION</Description>												
 			<iCityAttack>100</iCityAttack>						
-			<Promotions>													
+			<iCombatPromotions>100</iCombatPromotions>
+			<!--Promotions>
 				<Promotion>
 					<PromotionType>PROMOTION_BLITZ</PromotionType>
 					<iValue>2000</iValue>
 				</Promotion>				
-			</Promotions>								
+			</Promotions-->
 			<AIGroup>AIGROUP_CITY_INVASION</AIGroup>						
 		</AIPromotionSpecializationInfo>				
+		<AIPromotionSpecializationInfo>
+			<Type>AIPROMOTIONSPECIALIZATION_CITY_INVASION_DEFENSE</Type>
+			<Description>AIPROMOTIONSPECIALIZATION_CITY_INVASION_DEFENSE</Description>
+			<iDefensiveStrikes>100</iDefensiveStrikes>
+			<iFirstStrikes>100</iFirstStrikes>
+			<iCombatPromotions>100</iCombatPromotions>
+			<iGuardsman>100</iGuardsman>
+			<AIGroup>AIGROUP_CITY_INVASION</AIGroup>
+			<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
+		</AIPromotionSpecializationInfo>
+		<AIPromotionSpecializationInfo>
+			<Type>AIPROMOTIONSPECIALIZATION_WARWIZARD</Type>
+			<Description>AIPROMOTIONSPECIALIZATION_WARWIZARD</Description>
+			<iSpellDamage>100</iSpellDamage>
+			<iSpellAura>100</iSpellAura>
+			<UnitAIType>UNITAI_WARWIZARD</UnitAIType>
+		</AIPromotionSpecializationInfo>
 		<AIPromotionSpecializationInfo>
 			<Type>AIPROMOTIONSPECIALIZATION_HERO_BARNAXUS</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_HERO_BARNAXUS</Description>															
@@ -84,9 +107,11 @@
 		</AIPromotionSpecializationInfo>																				
 		<AIPromotionSpecializationInfo>
 			<Type>AIPROMOTIONSPECIALIZATION_UNITAI_HERO</Type>
-			<Description>AIPROMOTIONSPECIALIZATION_UNITAI_HERO</Description>																					
+			<Description>AIPROMOTIONSPECIALIZATION_UNITAI_HERO</Description>
+			<iCityAttack>100</iCityAttack>
+			<iCombatPromotions>100</iCombatPromotions>
 			<iFirstStrikes>50</iFirstStrikes>
-			<iMobility>33</iMobility>
+			<!--iMobility>33</iMobility-->
 			<Promotions>													
 				<Promotion>
 					<PromotionType>PROMOTION_HEROIC_STRENGTH</PromotionType>
@@ -97,7 +122,14 @@
 					<iValue>2000</iValue>
 				</Promotion>							
 			</Promotions>																			
+			<UnitAIType>UNITAI_HERO</UnitAIType>
 		</AIPromotionSpecializationInfo>																				
+		<AIPromotionSpecializationInfo>
+			<Type>AIPROMOTIONSPECIALIZATION_UNITAI_MANA_HERO</Type>
+			<Description>AIPROMOTIONSPECIALIZATION_UNITAI_MANA_HERO</Description>
+			<UnitAIType>UNITAI_HERO</UnitAIType>
+			<AIGroup>AIGROUP_MANA_NODE</AIGroup>
+		</AIPromotionSpecializationInfo>
 		<AIPromotionSpecializationInfo>
 			<Type>AIPROMOTIONSPECIALIZATION_UNITAI_HERO_LATEGAME</Type>
 			<Description>AIPROMOTIONSPECIALIZATION_UNITAI_HERO</Description>																								

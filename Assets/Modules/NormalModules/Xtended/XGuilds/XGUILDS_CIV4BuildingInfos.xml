@@ -1066,7 +1066,7 @@
 				<bCommerce>0</bCommerce>
 				<bCommerce>0</bCommerce>
 				<bCommerce>0</bCommerce>
-				<bCommerce>1</bCommerce>
+				<bCommerce>0</bCommerce>
 				<bCommerce>1</bCommerce>
 			</CommerceFlexibles>
  			<BonusCommerceType>COMMERCE_MANA</BonusCommerceType>
@@ -2291,6 +2291,7 @@
             <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
             <Type>BUILDING_SHIPYARD</Type>
             <PrereqTech>TECH_GUILD_HALL</PrereqTech>
+            <iMinAreaSize>10</iMinAreaSize>
             <DomainFreeExperiences>
                 <DomainFreeExperience>
                     <DomainType>DOMAIN_SEA</DomainType>
@@ -2743,6 +2744,7 @@
             <BuildingClass>BUILDINGCLASS_HERON_THRONE</BuildingClass>
             <Type>BUILDING_HERON_THRONE</Type>
             <PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+            <iMinAreaSize>10</iMinAreaSize>
         </BuildingInfo>
         <BuildingInfo>
             <BuildingClass>BUILDINGCLASS_INN</BuildingClass>
@@ -3021,7 +3023,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>10</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>0</iCommerce>
             </CommerceHappinesses>
 			<CommercePerCultureLevelChanges>
 				<CommercePerCultureLevelChange>
@@ -3937,7 +3939,7 @@
             <Help></Help>
             <Advisor>ADVISOR_MILITARY</Advisor>
             <ArtDefineTag>ART_DEF_BUILDING_NOX_NOCTIS</ArtDefineTag>
-            <MovieDefineTag></MovieDefineTag>
+            <MovieDefineTag>NONE</MovieDefineTag>
             <PrereqTech>TECH_ESUS_NIGHT</PrereqTech>
             <FreeBonus>NONE</FreeBonus>
             <iNumFreeBonuses>0</iNumFreeBonuses>

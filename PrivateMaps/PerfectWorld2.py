@@ -3871,15 +3871,20 @@ class BonusPlacer :
         if bIgnoreArea == False and bonusInfo.isOneArea() == True:
             areaID = plot.getArea()
             areaFound = False
-            for i in range(len(self.bonusList)):
-                if self.bonusList[i].eBonus == eBonus:
-                    areaList = self.bonusList[i].areaList
-                    for n in range(len(areaList)):
-                        if areaList[n] == areaID:
-                            areaFound = True
+            #SpyFanatic: add a try catch as assignStartingPlots is called from dll before addBonuses in CvMapGenerator and thus self.bonusList is not yet populated
+            try:
+                for i in range(len(self.bonusList)):
+                    if self.bonusList[i].eBonus == eBonus:
+                        areaList = self.bonusList[i].areaList
+                        for n in range(len(areaList)):
+                            if areaList[n] == areaID:
+                                areaFound = True
+                                break
+                        if areaFound == True:
                             break
-                    if areaFound == True:
-                        break
+            except Exception, e:
+                areaFound = False
+
             if areaFound == False:
                 return False
                         
@@ -4014,9 +4019,9 @@ class StartingPlotFinder :
 
             #get old/new world status
             areaOldWorld = self.setupOldWorldAreaList()
-            
+
             print "len(areaOldWorld) = %d" % len(areaOldWorld)
-            
+
             #Shuffle players so the same player doesn't always get the first pick.
             #lifted from Highlands.py that ships with Civ.
             player_list = []
@@ -4049,14 +4054,14 @@ class StartingPlotFinder :
             #Get rid of areas that have less value than oldWorldValuePerPlayer
             #as they are too small to put a player on, however leave at least
             #half as many continents as there are players, just in case the
-            #continents are *all* quite small. 
+            #continents are *all* quite small.
             numAreas = max(1,len(self.startingAreaList) - len(shuffledPlayers)/2)
             for i in range(numAreas):
                 if self.startingAreaList[0].rawValue < oldWorldValuePerPlayer:
                     del self.startingAreaList[0]
                 else:
                     break #All remaining should be big enough
-                
+
             #Recalculate the value of the whole old world
             oldWorldValue = 0
             for i in range(len(self.startingAreaList)):
@@ -4095,20 +4100,20 @@ class StartingPlotFinder :
                     if startingArea.idealNumberOfPlayers + playersPlaced <= len(shuffledPlayers):
                         chosenStartingAreas.append(startingArea)
                         playersPlaced += startingArea.idealNumberOfPlayers
-                        
+
                 #add up idealNumbers again
                 idealNumbers = 0
                 for startingArea in chosenStartingAreas:
                     idealNumbers += startingArea.idealNumberOfPlayers
                 if idealNumbers == len(shuffledPlayers):
                     break
-                
+
             for startingArea in chosenStartingAreas:
                 for i in range(startingArea.idealNumberOfPlayers):
                     startingArea.playerList.append(shuffledPlayers[0])
                     del shuffledPlayers[0]
                 startingArea.FindStartingPlots()
-                            
+
             if len(shuffledPlayers) > 0:
                 raise ValueError,"Some players not placed in starting plot finder!"
 
@@ -4118,7 +4123,7 @@ class StartingPlotFinder :
                 for i in range(len(startingArea.plotList)):
     ##                print len(startingArea.plotList)
                     self.plotList.append(startingArea.plotList[i])
-                    
+
             #Remove bad features. (Jungle in the case of standard game)
             for i in range(len(self.plotList)):
                 if self.plotList[i].vacant == True:
@@ -4131,7 +4136,7 @@ class StartingPlotFinder :
                         totalYield += featureInfo.getYieldChange(YieldTypes(y))
                     if totalYield <= 0:#bad feature
                         plot.setFeatureType(FeatureTypes.NO_FEATURE,-1)
-                
+
                 for n in range(DirectionTypes.NUM_DIRECTION_TYPES):
                     loopPlot = plotDirection(self.plotList[i].x,self.plotList[i].y,DirectionTypes(n))
                     if loopPlot == None:
@@ -4143,7 +4148,7 @@ class StartingPlotFinder :
                             totalYield += featureInfo.getYieldChange(YieldTypes(y))
                         if totalYield <= 0:#bad feature
                             loopPlot.setFeatureType(FeatureTypes.NO_FEATURE,-1)
-                            
+
             #find the best totalValue
             self.plotList.sort(lambda x,y:cmp(x.totalValue,y.totalValue))
             self.plotList.reverse()
@@ -4161,7 +4166,7 @@ class StartingPlotFinder :
                     self.boostCityPlotValue(self.plotList[i].x,self.plotList[i].y,bonuses)
         except Exception, e:
             errorPopUp("PerfectWorld's starting plot finder has failed due to a rarely occuring bug, and this map likely has unfair starting locations. You may wish to quit this game and generate a new map.")
-            raise Exception, e            
+            raise Exception, e
         return
     
     def setupOldWorldAreaList(self):

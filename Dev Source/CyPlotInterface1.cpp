@@ -284,5 +284,11 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getWilderness", &CyPlot::getWilderness, "int ()")
 		.def("getPlane", &CyPlot::getPlane, "int ()")
 		.def("destroyDungeon", &CyPlot::destroyDungeon, "void ()")		
+		// Super Forts begin *canal* *choke*
+		.def("getCanalValue", &CyPlot::getCanalValue, "int ()")
+		.def("calculateCanalValue", &CyPlot::calculateCanalValue, "void ()")
+		.def("getChokeValue", &CyPlot::getChokeValue, "int ()")
+		.def("calculateChokeValue", &CyPlot::calculateChokeValue, "void ()")
+		// Super Forts end
 	;
 }

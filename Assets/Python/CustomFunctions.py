@@ -45,7 +45,7 @@ class CustomFunctions:
 		popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_POPUP_CLOSE", ()), "")
 		popupInfo.addPopup(iPlayer)
 
-	def addUnit(self, iUnit):
+	def addUnit(self, iUnit, notNearbyRange = 0):
 		pBestPlot = -1
 		iBestPlot = -1
 		for i in range (CyMap().numPlots()):
@@ -55,15 +55,25 @@ class CustomFunctions:
 				if pPlot.getNumUnits() == 0:
 					if pPlot.isCity() == False:
 						if pPlot.isImpassable() == False:
-							iPlot = CyGame().getSorenRandNum(500, "Add Unit")
-							iPlot = iPlot + (pPlot.area().getNumTiles() * 10)
-							if pPlot.isBarbarian():
-								iPlot = iPlot + 200
-							if pPlot.isOwned():
-								iPlot = iPlot / 2
-							if iPlot > iBestPlot:
-								iBestPlot = iPlot
-								pBestPlot = pPlot
+							#SpyFanatic: added optional check to not place unit too much nearby a player. Mainly for Zarcaz
+							iX = pPlot.getX()
+							iY = pPlot.getY()
+							notNearby = True
+							for iiX in range(iX-notNearbyRange, iX+notNearbyRange+1, 1):
+								for iiY in range(iY-notNearbyRange, iY+notNearbyRange+1, 1):
+									pPlot2 = CyMap().plot(iiX,iiY)
+									if pPlot2.getNumUnits() != 0:
+										notNearby = False
+							if notNearby == True:
+								iPlot = CyGame().getSorenRandNum(500, "Add Unit")
+								iPlot = iPlot + (pPlot.area().getNumTiles() * 10)
+								if pPlot.isBarbarian():
+									iPlot = iPlot + 200
+								if pPlot.isOwned():
+									iPlot = iPlot / 2
+								if iPlot > iBestPlot:
+									iBestPlot = iPlot
+									pBestPlot = pPlot
 		if iBestPlot != -1:
 			bPlayer = gc.getPlayer(gc.getBARBARIAN_PLAYER())
 			if iUnit==gc.getInfoTypeForString('UNIT_GURID') or iUnit==gc.getInfoTypeForString('UNIT_MARGALARD'):
@@ -1271,7 +1281,7 @@ class CustomFunctions:
 				if gc.getImprovementInfo(pPlot.getImprovementType()).isUnique():
 					pPlot.setRevealed(iTeam, True, False, TeamTypes.NO_TEAM)
 
-	def startWar(self, iPlayer, i2Player, iWarPlan):
+	def startWar(self, iPlayer, i2Player, iWarPlan, szlog = None):
 		iTeam = gc.getPlayer(iPlayer).getTeam()
 		i2Team = gc.getPlayer(i2Player).getTeam()
 		eTeam = gc.getTeam(iTeam)
@@ -1282,7 +1292,10 @@ class CustomFunctions:
 					if iTeam != i2Team:
 						if eTeam.isHasMet(i2Team):
 							if not eTeam.isPermanentWarPeace(i2Team):
-								eTeam.declareWar(i2Team, false, iWarPlan)
+								if szlog is None:
+									eTeam.declareWar(i2Team, false, iWarPlan)
+								else:
+									eTeam.declareWarLog(i2Team, false, iWarPlan,szlog)
 
 	def warScript(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
@@ -1301,12 +1314,12 @@ class CustomFunctions:
 					if self.warScriptAllow(iPlayer, iPlayer2):
 						if pPlayer2.getBuildingClassMaking(gc.getInfoTypeForString('BUILDINGCLASS_TOWER_OF_MASTERY')) > 0:
 							if eTeam.getAtWarCount(True) == 0:
-								self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+								self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Tower of Mastery")
 								
 						if (pPlayer2.getNumBuilding(gc.getInfoTypeForString('BUILDING_ALTAR_OF_THE_LUONNOTAR_DIVINE')) > 0 or pPlayer2.getNumBuilding(gc.getInfoTypeForString('BUILDING_ALTAR_OF_THE_LUONNOTAR_EXALTED')) > 0):
 							if pPlayer.getAlignment() == gc.getInfoTypeForString('ALIGNMENT_EVIL'):
 								if eTeam.getAtWarCount(True) == 0:
-									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Altar of Luonnotar vs Evil civ")
 									
 						if (pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_ESSENCE_OF_LAW')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_VIRTUE_LUGUS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DEDICATION')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_SACRED_WOODS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_NIGHTMARISH_EPIPHANY')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_INFERNAL_PACT'))):
 							if (pPlayer.getStateReligion() != pPlayer2.getStateReligion()):
@@ -1314,7 +1327,7 @@ class CustomFunctions:
 									iRand = CyGame().getSorenRandNum(100, "Holy War")
 									if iRand > 50:
 										if eTeam.getAtWarCount(True) == 0:
-											self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+											self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Religion Level 1")
 						if (pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_JUDGEMENT_OF_JUNIL')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DEVOTION_TO_LUGUS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_TRADITION_OF_THE_GODDESS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_HIDDEN_PATHS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_COMPLACENCY_OO')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_INFERNAL_POSSESION'))):
 							if (pPlayer.getStateReligion() != pPlayer2.getStateReligion()):
 								iRand = CyGame().getSorenRandNum(100, "Holy War")
@@ -1322,23 +1335,24 @@ class CustomFunctions:
 									iRand = iRand + 25
 								if iRand > 50:
 									if eTeam.getAtWarCount(True) == 0:
-										self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+										self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Religion Level 2")
 						if (pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_JUNIL')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_LUGUS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_KILMORPH')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_CERNUNNOS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_OVERLORDS')) or pPlayer2.isHasTech(gc.getInfoTypeForString('TECH_DIVINE_AGARES'))):
 							if (pPlayer.getStateReligion() != pPlayer2.getStateReligion()):
 								if eTeam.getAtWarCount(True) == 0:
-									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Religion Level 3")
 									
 						if pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_MERCURIANS'):
 							if pPlayer2.getStateReligion() == gc.getInfoTypeForString('RELIGION_THE_ASHEN_VEIL'):
-								self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+								self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Mercurian vs Ashen Veil")
 								
 						if CyGame().getGlobalCounter() > 20:
 							if pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR'):
 								if (pPlayer2.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_LJOSALFAR') and CyGame().getPlayerRank(iPlayer) > CyGame().getPlayerRank(iPlayer2)):
-									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Svartalfar vs Ljosalfar")
 							if pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_LJOSALFAR'):
 								if (pPlayer2.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_SVARTALFAR') and CyGame().getPlayerRank(iPlayer) > CyGame().getPlayerRank(iPlayer2)):
-									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL)
+									self.startWar(iPlayer, iPlayer2, WarPlanTypes.WARPLAN_TOTAL,"Ljosalfar vs Svartalfar")
+
 						if (CyGame().getGlobalCounter() > 40 or pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_INFERNAL') or pPlayer.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_DOVIELLO')):
 							if pPlayer.getAlignment() == gc.getInfoTypeForString('ALIGNMENT_EVIL'):
 								if (eTeam.getAtWarCount(True) == 0 and CyGame().getPlayerRank(iPlayer2) > CyGame().getPlayerRank(iPlayer)):
@@ -1346,7 +1360,7 @@ class CustomFunctions:
 										iEnemy = iPlayer2
 		if iEnemy != -1:
 			if CyGame().getPlayerRank(iPlayer) > CyGame().getPlayerRank(iEnemy):
-				self.startWar(iPlayer, iEnemy, WarPlanTypes.WARPLAN_TOTAL)
+				self.startWar(iPlayer, iEnemy, WarPlanTypes.WARPLAN_TOTAL,"Evil Doviello - Infernal vs Higher Rank player")
 
 	def warScriptAllow(self, iPlayer, iPlayer2):
 		pPlayer = gc.getPlayer(iPlayer)
@@ -1386,7 +1400,7 @@ class CustomFunctions:
 							if pPlayer2.getCivilizationType() == gc.getInfoTypeForString('CIVILIZATION_BALSERAPHS'):
 								iChance = CyGame().getSorenRandNum(50, "Dogpile")
 							if CyGame().getSorenRandNum(100, "Dogpile") < iChance:
-								self.startWar(iPlayer2, iVictim, WarPlanTypes.WARPLAN_DOGPILE)
+								self.startWar(iPlayer2, iVictim, WarPlanTypes.WARPLAN_DOGPILE,"dogpile")
 
 	def dogPileAllow(self, iPlayer, iPlayer2):
 		pPlayer = gc.getPlayer(iPlayer)

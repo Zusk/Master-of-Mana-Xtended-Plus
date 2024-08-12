@@ -382,7 +382,23 @@ bool CvUnitAI::AI_update_main()
 void CvUnitAI::AI_update_debug()
 {
 	//DEBUG
-    if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL4")==1)
+	if(isOOSLogging())
+	{
+		int CombatType=this->getUnitCombatType();
+		oosLog("pdebug"
+			,"start CvUnitAI::AI_update() UnitCombatType:%d, %S,UnitType:%S,UnitAIType:%S,GetX: %d GetY: %d,UnitID: %d,GroupID: %d, Groupsize: %d"
+			,CombatType
+			,CombatType==-1?L"NO_UNITCOMBAT":GC.getUnitCombatInfo(this->getUnitCombatType()).getDescription()
+			,getUnitType()!=NO_UNIT?GC.getUnitInfo(this->getUnitType()).getDescription():L"NO_UNIT"
+			,AI_getUnitAIType()!=NO_UNITAI?GC.getUnitAIInfo(this->AI_getUnitAIType()).getDescription():L"NO_UNITAI"
+			,this->getX()
+			,this->getY()
+			,this->getID()
+			,this->getGroupID()
+			,this->getGroup()->getNumUnits()
+		);
+	}
+    /*if (GC.getDefineINT("USE_PERFORMANCE_LOG_LEVEL4")==1)
     {
         CvString szError="start CvUnitAI::AI_update()";
 		gDLL->logMsg("pdebug.log", szError);
@@ -413,7 +429,7 @@ void CvUnitAI::AI_update_debug()
 		gDLL->logMsg("pdebug.log",szOut);
         sprintf(szOut, "UnitID: %d, GroupID: %d, Groupsize: %d\n",this->getID(), this->getGroupID(), this->getGroup()->getNumUnits());
 		gDLL->logMsg("pdebug.log",szOut);
-    }
+    }*/
 }
 
 bool CvUnitAI::AI_update_specialCases()

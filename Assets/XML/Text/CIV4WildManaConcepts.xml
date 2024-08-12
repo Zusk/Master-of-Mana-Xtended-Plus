@@ -2231,37 +2231,32 @@ Animals are a integrated part of a living world. They spawn throughout the game 
 The Animals are at War with the Barbarians, so will love to eat any tasty Orcs. Sometimes Animals enter a Rage in which they can even enter civilized lands. Once they found something to eat, their rage ends.
 Some Animals live in lairs. When Culture spreads to the tile with the lair, the animals will attempt to move their lair into uncivilized lands.
 [H2]Gameoptions for Animals[\H2]
-[ICON_BULLET]Wildlands - more Wild Animals
-[ICON_BULLET]Tamed Wilderness - Less Wild Animals  ( and Barbarians)
+[ICON_BULLET]Raging Wilderness - more Animals Spawns
 </English>
         <French>[H1]Animals[\H1][PARAGRAPH:1]
 Animals are a integrated part of a living world. They spawn throughout the game and while initially only weak Animals may roam the wilderness, later even Werewolfs and minor Dragons appear.
 The Animals are at War with the Barbarians, so will love to eat any tasty Orcs. Sometimes Animals enter a Rage in which they can even enter civilized lands. Once they found something to eat, their rage ends.
 Some Animals live in lairs. When Culture spreads to the tile with the lair, the animals will attempt to move their lair into uncivilized lands.
 [H2]Gameoptions for Animals[\H2]
-[ICON_BULLET]Wildlands - more Wild Animals
-[ICON_BULLET]Tamed Wilderness - Less Wild Animals  ( and Barbarians)</French>
+[ICON_BULLET]Raging Wilderness - more Animals Spawns</French>
         <German>[H1]Animals[\H1][PARAGRAPH:1]
 Animals are a integrated part of a living world. They spawn throughout the game and while initially only weak Animals may roam the wilderness, later even Werewolfs and minor Dragons appear.
 The Animals are at War with the Barbarians, so will love to eat any tasty Orcs. Sometimes Animals enter a Rage in which they can even enter civilized lands. Once they found something to eat, their rage ends.
 Some Animals live in lairs. When Culture spreads to the tile with the lair, the animals will attempt to move their lair into uncivilized lands.
 [H2]Gameoptions for Animals[\H2]
-[ICON_BULLET]Wildlands - more Wild Animals
-[ICON_BULLET]Tamed Wilderness - Less Wild Animals  ( and Barbarians)</German>
+[ICON_BULLET]Raging Wilderness - more Animals Spawns</German>
         <Italian>[H1]Animals[\H1][PARAGRAPH:1]
 Animals are a integrated part of a living world. They spawn throughout the game and while initially only weak Animals may roam the wilderness, later even Werewolfs and minor Dragons appear.
 The Animals are at War with the Barbarians, so will love to eat any tasty Orcs. Sometimes Animals enter a Rage in which they can even enter civilized lands. Once they found something to eat, their rage ends.
 Some Animals live in lairs. When Culture spreads to the tile with the lair, the animals will attempt to move their lair into uncivilized lands.
 [H2]Gameoptions for Animals[\H2]
-[ICON_BULLET]Wildlands - more Wild Animals
-[ICON_BULLET]Tamed Wilderness - Less Wild Animals  ( and Barbarians)</Italian>
+[ICON_BULLET]Raging Wilderness - more Animals Spawns</Italian>
         <Spanish>[H1]Animals[\H1][PARAGRAPH:1]
 Animals are a integrated part of a living world. They spawn throughout the game and while initially only weak Animals may roam the wilderness, later even Werewolfs and minor Dragons appear.
 The Animals are at War with the Barbarians, so will love to eat any tasty Orcs. Sometimes Animals enter a Rage in which they can even enter civilized lands. Once they found something to eat, their rage ends.
 Some Animals live in lairs. When Culture spreads to the tile with the lair, the animals will attempt to move their lair into uncivilized lands.
 [H2]Gameoptions for Animals[\H2]
-[ICON_BULLET]Wildlands - more Wild Animals
-[ICON_BULLET]Tamed Wilderness - Less Wild Animals  ( and Barbarians)</Spanish>
+[ICON_BULLET]Raging Wilderness - more Animals Spawns</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WILDMANA_CONCEPT_BARBARIANS</Tag>
@@ -2277,38 +2272,32 @@ Some Animals live in lairs. When Culture spreads to the tile with the lair, the 
 Barbarians are a major threat, ready to pillage everything in sight. The whole spawning function and AI of barbarians has been rewritten to fix some major issues. Barbs are now a lot more evenly distributed over the map and won't target one player exclusively. Barbarians can also spawn in visible tiles, but nearby culture greatly reduces the spawnchance. Later in the game tougher Barbarians will spawn.
 Orthus the Barbarian Hero has a unique AI that makes him far more dangerous.
 [H2]Gameoptions for Barbarians[\H2]
-[ICON_BULLET]Barbarian World - Barbarians Cities are placed in the world at game start
 [ICON_BULLET]Raging Barbarians - more Barbarians
-[ICON_BULLET]Tamed Wilderness - Less Barbarians (and Wild Animals)
 </English>
         <French>[H1]Barbarians[\H1][PARAGRAPH:1]
 Barbarians are a major threat, ready to pillage everything in sight. The whole spawning function and AI of barbarians has been rewritten to fix some major issues. Barbs are now a lot more evenly distributed over the map and won't target one player exclusively. Barbarians can also spawn in visible tiles, but nearby culture greatly reduces the spawnchance. Later in the game tougher Barbarians will spawn.
 Orthus the Barbarian Hero has a unique AI that makes him far more dangerous.
 [H2]Gameoptions for Barbarians[\H2]
-[ICON_BULLET]Barbarian World - Barbarians Cities are placed in the world at game start
 [ICON_BULLET]Raging Barbarians - more Barbarians
-[ICON_BULLET]Tamed Wilderness - Less Barbarians (and Wild Animals)</French>
+</French>
         <German>[H1]Barbarians[\H1][PARAGRAPH:1]
 Barbarians are a major threat, ready to pillage everything in sight. The whole spawning function and AI of barbarians has been rewritten to fix some major issues. Barbs are now a lot more evenly distributed over the map and won't target one player exclusively. Barbarians can also spawn in visible tiles, but nearby culture greatly reduces the spawnchance. Later in the game tougher Barbarians will spawn.
 Orthus the Barbarian Hero has a unique AI that makes him far more dangerous.
 [H2]Gameoptions for Barbarians[\H2]
-[ICON_BULLET]Barbarian World - Barbarians Cities are placed in the world at game start
 [ICON_BULLET]Raging Barbarians - more Barbarians
-[ICON_BULLET]Tamed Wilderness - Less Barbarians (and Wild Animals)</German>
+</German>
         <Italian>[H1]Barbarians[\H1][PARAGRAPH:1]
 Barbarians are a major threat, ready to pillage everything in sight. The whole spawning function and AI of barbarians has been rewritten to fix some major issues. Barbs are now a lot more evenly distributed over the map and won't target one player exclusively. Barbarians can also spawn in visible tiles, but nearby culture greatly reduces the spawnchance. Later in the game tougher Barbarians will spawn.
 Orthus the Barbarian Hero has a unique AI that makes him far more dangerous.
 [H2]Gameoptions for Barbarians[\H2]
-[ICON_BULLET]Barbarian World - Barbarians Cities are placed in the world at game start
 [ICON_BULLET]Raging Barbarians - more Barbarians
-[ICON_BULLET]Tamed Wilderness - Less Barbarians (and Wild Animals)</Italian>
+</Italian>
         <Spanish>[H1]Barbarians[\H1][PARAGRAPH:1]
 Barbarians are a major threat, ready to pillage everything in sight. The whole spawning function and AI of barbarians has been rewritten to fix some major issues. Barbs are now a lot more evenly distributed over the map and won't target one player exclusively. Barbarians can also spawn in visible tiles, but nearby culture greatly reduces the spawnchance. Later in the game tougher Barbarians will spawn.
 Orthus the Barbarian Hero has a unique AI that makes him far more dangerous.
 [H2]Gameoptions for Barbarians[\H2]
-[ICON_BULLET]Barbarian World - Barbarians Cities are placed in the world at game start
 [ICON_BULLET]Raging Barbarians - more Barbarians
-[ICON_BULLET]Tamed Wilderness - Less Barbarians (and Wild Animals)</Spanish>
+</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WILDMANA_CONCEPT_MAPSCRIPTS</Tag>
@@ -2635,7 +2624,10 @@ The new base then has the following modifiers added:
 [ICON_BULLET][TAB]50% for food resources, and resources discoverable from lumbermills (and forest lodges), camps, plantations, and wineries from the Evergrow realm global enchantment
 [ICON_BULLET][TAB]20% for plantations with both the Arid Climate and Humid Climate global enchantments.
 
-Then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type.
+[H2]Gameoptions for Resource Spawning[\H2]
+[ICON_BULLET]Increase Resource Spawning on Improvements
+If this option is enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type. if the option is NOT enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) and for every merchant district in your empire are applied only if there is a adjacent bonus of that type (and the result is not doubled).
+
 
 Note: 
 [ICON_BULLET]A single improvement can find many different resource types, and not all of those types will have the same discovery rate.
@@ -2644,10 +2636,10 @@ Note:
 [ICON_BULLET]The bonus to having a neighboring bonus will only be applied once, but all improvements that grant a bonus to resource discovery will improve the chances of discovering a bonus.
 
 [H2]Sea[\H2]
-All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land.
+All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land, and if Gameoptions for Resource Spawning is not enabled resources will not spawn at all in water.
 
 Base chance:
-[ICON_BULLET]Adjacent plots with a bonus significantly increases the base spawn chance.  
+[ICON_BULLET]Adjacent plots with a bonus and the improvement significantly increases the base spawn chance.
 [ICON_BULLET][TAB]Whales eat fish and so an adjacent fish bonus will double their discovery chance.
 [ICON_BULLET][TAB]Whales don't give a bonus spawn chance to any sea resource.
 [ICON_BULLET]The Riches of the Sea global enchantment increases the base discovery chance by 20% for each water mana.
@@ -2704,7 +2696,9 @@ The new base then has the following modifiers added:
 [ICON_BULLET][TAB]50% for food resources, and resources discoverable from lumbermills (and forest lodges), camps, plantations, and wineries from the Evergrow realm global enchantment
 [ICON_BULLET][TAB]20% for plantations with both the Arid Climate and Humid Climate global enchantments.
 
-Then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type.
+[H2]Gameoptions for Resource Spawning[\H2]
+[ICON_BULLET]Increase Resource Spawning on Improvements
+If this option is enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type. if the option is NOT enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) and for every merchant district in your empire are applied only if there is a adjacent bonus of that type (and the result is not doubled).
 
 Note: 
 [ICON_BULLET]A single improvement can find many different resource types, and not all of those types will have the same discovery rate.
@@ -2713,10 +2707,10 @@ Note:
 [ICON_BULLET]The bonus to having a neighboring bonus will only be applied once, but all improvements that grant a bonus to resource discovery will improve the chances of discovering a bonus.
 
 [H2]Sea[\H2]
-All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land.
+All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land, and if Gameoptions for Resource Spawning is not enabled resources will not spawn at all in water.
 
 Base chance:
-[ICON_BULLET]Adjacent plots with a bonus significantly increases the base spawn chance.  
+[ICON_BULLET]Adjacent plots with a bonus  and the improvement significantly increases the base spawn chance.
 [ICON_BULLET][TAB]Whales eat fish and so an adjacent fish bonus will double their discovery chance.
 [ICON_BULLET][TAB]Whales don't give a bonus spawn chance to any sea resource.
 [ICON_BULLET]The Riches of the Sea global enchantment increases the base discovery chance by 20% for each water mana.
@@ -2772,7 +2766,9 @@ The new base then has the following modifiers added:
 [ICON_BULLET][TAB]50% for food resources, and resources discoverable from lumbermills (and forest lodges), camps, plantations, and wineries from the Evergrow realm global enchantment
 [ICON_BULLET][TAB]20% for plantations with both the Arid Climate and Humid Climate global enchantments.
 
-Then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type.
+[H2]Gameoptions for Resource Spawning[\H2]
+[ICON_BULLET]Increase Resource Spawning on Improvements
+If this option is enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type. if the option is NOT enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) and for every merchant district in your empire are applied only if there is a adjacent bonus of that type (and the result is not doubled).
 
 Note: 
 [ICON_BULLET]A single improvement can find many different resource types, and not all of those types will have the same discovery rate.
@@ -2781,10 +2777,10 @@ Note:
 [ICON_BULLET]The bonus to having a neighboring bonus will only be applied once, but all improvements that grant a bonus to resource discovery will improve the chances of discovering a bonus.
 
 [H2]Sea[\H2]
-All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land.
+All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land, and if Gameoptions for Resource Spawning is not enabled resources will not spawn at all in water.
 
 Base chance:
-[ICON_BULLET]Adjacent plots with a bonus significantly increases the base spawn chance.  
+[ICON_BULLET]Adjacent plots with a bonus  and the improvement significantly increases the base spawn chance.
 [ICON_BULLET][TAB]Whales eat fish and so an adjacent fish bonus will double their discovery chance.
 [ICON_BULLET][TAB]Whales don't give a bonus spawn chance to any sea resource.
 [ICON_BULLET]The Riches of the Sea global enchantment increases the base discovery chance by 20% for each water mana.
@@ -2840,7 +2836,9 @@ The new base then has the following modifiers added:
 [ICON_BULLET][TAB]50% for food resources, and resources discoverable from lumbermills (and forest lodges), camps, plantations, and wineries from the Evergrow realm global enchantment
 [ICON_BULLET][TAB]20% for plantations with both the Arid Climate and Humid Climate global enchantments.
 
-Then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type.
+[H2]Gameoptions for Resource Spawning[\H2]
+[ICON_BULLET]Increase Resource Spawning on Improvements
+If this option is enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type. if the option is NOT enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) and for every merchant district in your empire are applied only if there is a adjacent bonus of that type (and the result is not doubled).
 
 Note: 
 [ICON_BULLET]A single improvement can find many different resource types, and not all of those types will have the same discovery rate.
@@ -2849,10 +2847,10 @@ Note:
 [ICON_BULLET]The bonus to having a neighboring bonus will only be applied once, but all improvements that grant a bonus to resource discovery will improve the chances of discovering a bonus.
 
 [H2]Sea[\H2]
-All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land.
+All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land, and if Gameoptions for Resource Spawning is not enabled resources will not spawn at all in water.
 
 Base chance:
-[ICON_BULLET]Adjacent plots with a bonus significantly increases the base spawn chance.  
+[ICON_BULLET]Adjacent plots with a bonus  and the improvement significantly increases the base spawn chance.
 [ICON_BULLET][TAB]Whales eat fish and so an adjacent fish bonus will double their discovery chance.
 [ICON_BULLET][TAB]Whales don't give a bonus spawn chance to any sea resource.
 [ICON_BULLET]The Riches of the Sea global enchantment increases the base discovery chance by 20% for each water mana.
@@ -2908,7 +2906,9 @@ The new base then has the following modifiers added:
 [ICON_BULLET][TAB]50% for food resources, and resources discoverable from lumbermills (and forest lodges), camps, plantations, and wineries from the Evergrow realm global enchantment
 [ICON_BULLET][TAB]20% for plantations with both the Arid Climate and Humid Climate global enchantments.
 
-Then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type.
+[H2]Gameoptions for Resource Spawning[\H2]
+[ICON_BULLET]Increase Resource Spawning on Improvements
+If this option is enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) is added and the result is multiplied by 20% for every merchant district in your empire and then doubled if next to an adjacent bonus of that type. if the option is NOT enabled, then the flat bonus for having an adjacent improvement that helps with resource discovery (such as a cottage or trade center) and for every merchant district in your empire are applied only if there is a adjacent bonus of that type (and the result is not doubled).
 
 Note: 
 [ICON_BULLET]A single improvement can find many different resource types, and not all of those types will have the same discovery rate.
@@ -2917,7 +2917,7 @@ Note:
 [ICON_BULLET]The bonus to having a neighboring bonus will only be applied once, but all improvements that grant a bonus to resource discovery will improve the chances of discovering a bonus.
 
 [H2]Sea[\H2]
-All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land.
+All water tiles in a civilization's borders have a base chance to spawn resources but the base disovery chance for water based resources is much lower than on land, and if Gameoptions for Resource Spawning is not enabled resources will not spawn at all in water.
 
 Bonuses to growth for improvements that assist other improvements in discovering resources (i.e. cottages and trade centers):
 [ICON_BULLET]+1 for being next to an improvement that can discover resources. Doesn't apply to quick and normal gamespeeds.

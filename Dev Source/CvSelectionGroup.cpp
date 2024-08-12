@@ -94,11 +94,23 @@ void CvSelectionGroup::reset(int iID, PlayerTypes eOwner, bool bConstructorCall)
 	{
 		AI_reset();
 	}
+	/*oosLog("AISelectionGroup"
+		,"Turn:%d,Player:%d,SelectionGroup:%d,reset\n"
+		,-1//,GC.getGameINLINE().getElapsedGameTurns()
+		,getOwnerINLINE()
+		,getID()
+	);*/
 }
 
 
 void CvSelectionGroup::kill()
 {
+	/*oosLog("AISelectionGroup"
+		,"Turn:%d,Player:%d,SelectionGroup:%d,kill\n"
+		,GC.getGameINLINE().getElapsedGameTurns()
+		,getOwnerINLINE()
+		,getID()
+	);*/
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	FAssertMsg(getID() != FFreeList::INVALID_INDEX, "getID() is not expected to be equal with FFreeList::INVALID_INDEX");
 	FAssertMsg(getNumUnits() == 0, "The number of units is expected to be 0");
@@ -225,7 +237,11 @@ void CvSelectionGroup::doTurn()
 /**								---- Start Original Code ----									**
 			((eActivityType == ACTIVITY_SENTRY) && (sentryAlert())))
 /**								----  End Original Code  ----									**/
-			((eActivityType == ACTIVITY_SENTRY || (eActivityType == ACTIVITY_HEAL && plot()->getBestDefender(getOwnerINLINE())->getGroup() == this)) && (sentryAlert())))
+			//Spyfanatic: split between sentry and sentryAlert and heal checking for danger (not true for example with wildmana guardian)
+			//((eActivityType == ACTIVITY_SENTRY || (eActivityType == ACTIVITY_HEAL && plot()->getBestDefender(getOwnerINLINE())->getGroup() == this)) && (sentryAlert())))
+			(eActivityType == ACTIVITY_SENTRY && sentryAlert()) ||
+			(eActivityType == ACTIVITY_HEAL && plot()->getBestDefender(getOwnerINLINE())->getGroup() == this && GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot()) > 0)
+		)
 /*************************************************************************************************/
 /**	Alertness								END													**/
 /*************************************************************************************************/
@@ -962,6 +978,18 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
             FAssertMsg(((BuildTypes)iData1) < GC.getNumBuildInfos(), "Invalid Build");
             if (pLoopUnit->canBuild(pPlot, ((BuildTypes)iData1), bTestVisible))
             {
+				/*if(isOOSLogging())
+				{
+					oosLog("AIWorker"
+						,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,SelectionGroupCanBuild:%S\n"
+						,GC.getGameINLINE().getElapsedGameTurns()
+						,getOwner()
+						,getID()
+						,plot()->getX()
+						,plot()->getY()
+						,((BuildTypes)iData1)!=NO_IMPROVEMENT?GC.getBuildInfo(((BuildTypes)iData1)).getDescription():L"NO_IMPROVEMENT"
+					);
+				}*/
                 return true;
             }
 			break;
@@ -1112,6 +1140,16 @@ void CvSelectionGroup::startMission()
 					{
 						if(GET_TEAM(getTeam()).canDeclareWar(eEnemyTeam))
 						{
+							if(isOOSLogging())
+							{
+								oosLog("AIGroupDeclareWar"
+									,"Turn:%d,TeamID:%d,DeclareWarOn:%d,Stack is moving towards target"
+									,GC.getGame().getElapsedGameTurns()
+									,getTeam()
+									,eEnemyTeam
+								);
+							}
+
 							GET_TEAM(getTeam()).declareWar(eEnemyTeam,true,WARPLAN_LIMITED);
 						}
 					}
@@ -1735,6 +1773,18 @@ void CvSelectionGroup::continueMission(int iSteps)
 				case MISSION_BUILD:
 					if (!groupBuild((BuildTypes)(headMissionQueueNode()->m_data.iData1)))
 					{
+							/*if(isOOSLogging())
+							{
+								oosLog("AIWorker"
+									,"Turn: %d,Player:%d,UnitID:%d,X:%d,Y:%d,groupBuild:%S\n"
+									,GC.getGameINLINE().getElapsedGameTurns()
+									,getOwner()
+									,getID()
+									,plot()->getX()
+									,plot()->getY()
+									,(BuildTypes)(headMissionQueueNode()->m_data.iData1)!=NO_IMPROVEMENT?GC.getBuildInfo((BuildTypes)(headMissionQueueNode()->m_data.iData1)).getDescription():L"NO_IMPROVEMENT"
+								);
+							}*/
 						bDone = true;
 					}
 					break;
@@ -4323,13 +4373,23 @@ bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToP
 /*************************************************************************************************/
 
 	PROFILE("CvSelectionGroup::generatePath()")
-
 	FAStarNode* pNode;
 	bool bSuccess;
 
 	gDLL->getFAStarIFace()->SetData(&GC.getPathFinder(), this);
 
 	bSuccess = gDLL->getFAStarIFace()->GeneratePath(&GC.getPathFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), false, iFlags, bReuse);
+
+	/*if( getID() == 426008)
+	{
+		FAStarNode* pLoopNode;
+		pLoopNode = getPathLastNode();
+		while (pLoopNode != NULL)
+		{
+			oosLog("AIPlot","group:%d,pathx:%d,pathy:%d,[%d,%d],X:%d,Y:%d,tox:%d,toy:%d,reuse:%d",getID(),pLoopNode->m_iX, pLoopNode->m_iY,pLoopNode->m_iData1,pLoopNode->m_iData2,pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pToPlot->getX_INLINE(), pToPlot->getY_INLINE(),bReuse);
+			pLoopNode = pLoopNode->m_pParent;
+		}
+	}*/
 
 	if (piPathTurns != NULL)
 	{

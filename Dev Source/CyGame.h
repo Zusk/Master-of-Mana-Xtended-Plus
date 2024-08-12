@@ -140,6 +140,7 @@ public:
 
 	int getAIAutoPlay() const;
 	void setAIAutoPlay(int iNewValue);
+	void setAIAutoPlayCiv(int iNewValue, int iCiv);
 
 	bool isScoreDirty() const;
 	void setScoreDirty(bool bNewValue);
@@ -301,6 +302,7 @@ public:
 	void setTrophyValue(const TCHAR* szName, int iNewValue);
 	void changeTrophyValue(const TCHAR* szName, int iChange);
 	void testVictory();
+	void setVictoryValid(int /*VictoryTypes*/ eIndex, bool bValid);
 //FfH: End Add
 
 //>>>>	BUGFfH: Added by Denev 2009/10/13

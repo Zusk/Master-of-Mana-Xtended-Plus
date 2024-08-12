@@ -1994,6 +1994,11 @@ class CvMainInterface:
 						if eCommerce==CommerceTypes.COMMERCE_MANA:
 							continue
 
+						if eCommerce==CommerceTypes.COMMERCE_ARCANE and not CyInterface().isCityScreenUp() and not gc.getActivePlayer().isCommerceFlexible(eCommerce):
+							#SpyFanatic: make an empty row for spellresearch in main screen
+							iCount = iCount + 1
+							continue
+
 						iShift = 60
 						if (CyInterface().isCityScreenUp()):
 							iShift = -30
@@ -3144,11 +3149,11 @@ class CvMainInterface:
 					if (not isLimitedWonderClass(i)):
 						eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
 
-						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False)):
+						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False, False)):
 							screen.appendMultiListButton( "BottomButtonContainer", gc.getBuildingInfo(eLoopBuilding).getButton(), iRow, WidgetTypes.WIDGET_CONSTRUCT, i, -1, False )
 							screen.show( "BottomButtonContainer" )
 
-							if ( not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False) ):
+							if ( not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False, False) ):
 								screen.disableMultiListButton( "BottomButtonContainer", iRow, iCount, gc.getBuildingInfo(eLoopBuilding).getButton() )
 
 							iCount = iCount + 1
@@ -3165,11 +3170,11 @@ class CvMainInterface:
 					if (isLimitedWonderClass(i)):
 						eLoopBuilding = gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).getCivilizationBuildings(i)
 
-						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False)):
+						if (pHeadSelectedCity.canConstruct(eLoopBuilding, False, True, False, False)):
 							screen.appendMultiListButton( "BottomButtonContainer", gc.getBuildingInfo(eLoopBuilding).getButton(), iRow, WidgetTypes.WIDGET_CONSTRUCT, i, -1, False )
 							screen.show( "BottomButtonContainer" )
 
-							if ( not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False) ):
+							if ( not pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False, False) ):
 								screen.disableMultiListButton( "BottomButtonContainer", iRow, iCount, gc.getBuildingInfo(eLoopBuilding).getButton() )
 
 							iCount = iCount + 1
@@ -3690,8 +3695,7 @@ class CvMainInterface:
 
 					iCount = iCount + 1
 
-		for i in range( gc.getNumSpecialistInfos() ):
-
+		for i in range(gc.getNumSpecialistInfos()):
 			bHandled = False
 
 			if (pHeadSelectedCity.getOwner() == gc.getGame().getActivePlayer() or gc.getGame().isDebugMode()):
@@ -3702,12 +3706,14 @@ class CvMainInterface:
 					iSpecialistCount = pHeadSelectedCity.getSpecialistCount(i)
 
 				if (pHeadSelectedCity.isSpecialistValid(i, 1) and (pHeadSelectedCity.isCitizensAutomated() or iSpecialistCount < (pHeadSelectedCity.getPopulation() + pHeadSelectedCity.totalFreeSpecialists()))):
+					CvUtil.pyPrint('updateCitizenButtons_Chevron increase %d specialist=%s'%(i,gc.getSpecialistInfo(i).getDescription()))
 					szName = "IncreaseSpecialist" + str(i)
 					screen.show( szName )
 					szName = "CitizenDisabledButton" + str(i)
 					screen.show( szName )
 
 				if iSpecialistCount > 0:
+					CvUtil.pyPrint('updateCitizenButtons_Chevron decrease %d specialist=%s'%(i,gc.getSpecialistInfo(i).getDescription()))
 					szName = "CitizenDisabledButton" + str(i)
 					screen.hide( szName )
 					szName = "DecreaseSpecialist" + str(i)
@@ -4400,19 +4406,27 @@ class CvMainInterface:
 #FfH: End Add
 
 		# changed 94 to 114
-		screen.addPanel( "BonusPane0", u"", u"", True, False, xResolution - 244, 114, 57, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNL )
+		#SpyFanatic: changed 520 to 620 and 536 to 636 else Yeoman is not selectable, and adjusted width
+		#screen.addPanel( "BonusPane0", u"", u"", True, False, xResolution - 244, 114, 57, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNL )
 		screen.hide( "BonusPane0" )
-		screen.addScrollPanel( "BonusBack0", u"", xResolution - 242, 114, 157, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addPanel( "BonusPane0", u"", u"", True, False, xResolution - 244, 114, 65, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNL )
+		screen.hide( "BonusPane0" )
+		#screen.addScrollPanel( "BonusBack0", u"", xResolution - 242, 114, 157, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack0", u"", xResolution - 244, 114, 65, yResolution - 566, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack0" )
 
-		screen.addPanel( "BonusPane1", u"", u"", True, False, xResolution - 187, 114, 68, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNC )
+		#screen.addPanel( "BonusPane1", u"", u"", True, False, xResolution - 187, 114, 68, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNC )
+		screen.addPanel( "BonusPane1", u"", u"", True, False, xResolution - 191, 114, 94, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNC )
 		screen.hide( "BonusPane1" )
-		screen.addScrollPanel( "BonusBack1", u"", xResolution - 191, 114, 184, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		#screen.addScrollPanel( "BonusBack1", u"", xResolution - 191, 114, 184, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack1", u"", xResolution - 191, 114, 94, yResolution - 566, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack1" )
 
-		screen.addPanel( "BonusPane2", u"", u"", True, False, xResolution - 119, 114, 107, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNR )
+		#screen.addPanel( "BonusPane2", u"", u"", True, False, xResolution - 119, 114, 107, yResolution - 520, PanelStyles.PANEL_STYLE_CITY_COLUMNR )
+		screen.addPanel( "BonusPane2", u"", u"", True, False, xResolution - 109, 114, 100, yResolution - 560, PanelStyles.PANEL_STYLE_CITY_COLUMNR )
 		screen.hide( "BonusPane2" )
-		screen.addScrollPanel( "BonusBack2", u"", xResolution - 125, 114, 205, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		#screen.addScrollPanel( "BonusBack2", u"", xResolution - 125, 114, 205, yResolution - 536, PanelStyles.PANEL_STYLE_EXTERNAL )
+		screen.addScrollPanel( "BonusBack2", u"", xResolution - 109, 114, 100, yResolution - 566, PanelStyles.PANEL_STYLE_EXTERNAL )
 		screen.hide( "BonusBack2" )
 
 		screen.hide( "TradeRouteTable" )
@@ -4987,10 +5001,10 @@ class CvMainInterface:
 						iHappiness = pHeadSelectedCity.getBonusHappiness(i)
 ##--------	Advanced Rules: Added by Denev 2009/12/30	--------##
 ##	Cumulative resources show total of healthiness or happiness
-						if gc.getBonusInfo(i).isModifierPerBonus():
-							iNumBonuses = pHeadSelectedCity.getNumBonuses(i)
-							iHealth		*= iNumBonuses
-							iHappiness	*= iNumBonuses
+#						if gc.getBonusInfo(i).isModifierPerBonus():
+#							iNumBonuses = pHeadSelectedCity.getNumBonuses(i)
+#							iHealth		*= iNumBonuses
+#							iHappiness	*= iNumBonuses
 ##--------	Advanced Rules: End Add						--------##
 
 						szBuffer = u""
@@ -5011,17 +5025,21 @@ class CvMainInterface:
 							else:
 								szTempBuffer = u"<font=1>+%d%c</font>" %( -iHappiness, CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR) )
 
-							if ( iHealth > 0 ):
-								szTempBuffer += u"<font=1>, +%d%c</font>" %( iHealth, CyGame().getSymbolID( FontSymbols.HEALTHY_CHAR ) )
+							#SpyFanatic: show health bonus also in column 1
+							#if ( iHealth > 0 ):
+							#	szTempBuffer += u"<font=1>,+%d%c</font>" %( iHealth, CyGame().getSymbolID( FontSymbols.HEALTHY_CHAR ) )
 
 							szName = "RightBonusItemLeft" + str(iRightCount)
 							screen.setLabelAt( szName, "BonusBack2", szLeadBuffer, CvUtil.FONT_LEFT_JUSTIFY, 0, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 							szName = "RightBonusItemRight" + str(iRightCount)
-							screen.setLabelAt( szName, "BonusBack2", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 102, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
+							#screen.setLabelAt( szName, "BonusBack2", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 102, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
+							screen.setLabelAt( szName, "BonusBack2", szTempBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 62, (iRightCount * 20) + 4, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, i, -1 )
 
 							iRightCount = iRightCount + 1
 
-							bHandled = True
+							#bHandled = True
+							if ( iHealth == 0 ):
+								bHandled = True
 
 						if (iHealth != 0 and bHandled == False):
 							if ( iHealth > 0 ):

@@ -90,6 +90,18 @@ void CvCombatAura::reset(int iID, int iOwner, int iUnit, int iCombatAuraType, bo
         {
             m_paiDamageTypeResist[iI] = 0;
         }
+
+        /*if(isOOSLogging())
+		{
+			oosLog(
+				"CombatAura"
+				,"Turn:%d,Player:%d,UnitID:%d,InitCombatAura:%d"
+				,GC.getGameINLINE().getElapsedGameTurns()
+				,iOwner
+				,iUnit
+				,iCombatAuraType
+			);
+		}*/
 	}
 
 	//Modify Value by existing Promotions
@@ -145,7 +157,7 @@ void CvCombatAura::kill()
 				break;
 			}
 
-			if(GET_PLAYER((PlayerTypes)iI).isAlive())
+			//if(GET_PLAYER((PlayerTypes)iI).isAlive()) //SpyFanatic: in case a player is dead and we are removing units, combat aura should be removed as well
 			{				
 				for (CvUnit* pLoopUnit = GET_PLAYER((PlayerTypes)iI).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER((PlayerTypes)iI).nextUnit(&iLoop))
 				{
@@ -153,7 +165,41 @@ void CvCombatAura::kill()
 					{
 						break;
 					}
-
+					//DEBUG
+					/*if(isOOSLogging() &&
+						(
+							(pLoopUnit->getBlessing1()==this)
+							|| (pLoopUnit->getBlessing2()==this)
+							|| (pLoopUnit->getCurse1()==this)
+							|| (pLoopUnit->getCurse2()==this)
+						)
+					)
+					{
+						oosLog(
+							"CombatAura"
+							,"Turn:%d,Player:%d,UnitID:%d,RemoveAura:%d,id:%d,FromUnit:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,m_eOwner
+							,m_iUnit
+							,getCombatAuraType()
+							,getID()
+							,pLoopUnit->getID()
+						);
+					}
+					else if(isOOSLogging())
+					{
+						oosLog(
+							"CombatAura"
+							,"Turn:%d,Player:%d,UnitID:%d,NotRemovedAura:%d,id:%d,FromUnit:%d"
+							,GC.getGameINLINE().getElapsedGameTurns()
+							,m_eOwner
+							,m_iUnit
+							,getCombatAuraType()
+							,getID()
+							,pLoopUnit->getID()
+						);
+					}*/
+					//DEBUG
 					if (pLoopUnit->getBlessing1()==this)
 					{
 						Remove(pLoopUnit);
@@ -409,12 +455,38 @@ void CvCombatAura::RemoveEffectsFromUnit(CvUnit* pUnit)
 
 void CvCombatAura::Apply(CvUnit* pUnit)
 {
+	/*if(isOOSLogging())
+	{
+		oosLog(
+			"CombatAura"
+			,"Turn:%d,Player:%d,UnitID:%d,Apply:%d,id:%d,ToUnit:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,m_eOwner
+			,m_iUnit
+			,getCombatAuraType()
+			,getID()
+			,pUnit != NULL ? pUnit->getID() : -1
+		);
+	}*/
 	ApplyEffectsToUnit(pUnit);
 	changeTargetsApplied(1);
 }
 
 void CvCombatAura::Remove(CvUnit* pUnit)
 {
+	/*if(isOOSLogging())
+	{
+		oosLog(
+			"CombatAura"
+			,"Turn:%d,Player:%d,UnitID:%d,Remove:%d,id:%d,ToUnit:%d"
+			,GC.getGameINLINE().getElapsedGameTurns()
+			,m_eOwner
+			,m_iUnit
+			,getCombatAuraType()
+			,getID()
+			,pUnit != NULL ? pUnit->getID() : -1
+		);
+	}*/
 	RemoveEffects(pUnit);
 	changeTargetsApplied(-1);
 }

@@ -595,6 +595,7 @@ enum WidgetTypes					// Exposed to Python
 /**	END                                                                                         **/
 /*************************************************************************************************/
 
+	WIDGET_PEDIA_JUMP_TO_CIV_EPIC,
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
 #endif
@@ -853,11 +854,11 @@ enum GameOptionTypes				// Exposed to Python
 	GAMEOPTION_OPTIMIZATION_MEMORY_LARGE_MAPS,
 	GAMEOPTION_UNIT_PER_TILE_LIMIT,
 	GAMEOPTION_NO_WONDER_UNIQUEUNIT,
+	GAMEOPTION_INCREASE_RESOURCE_SPAWN,
+	GAMEOPTION_RAGING_ANIMALS,
 /** these are used to make sure, no invisible gameoptions are triggered **/
 
-	GAMEOPTION_DUMMY_02,
-	GAMEOPTION_DUMMY_03,
-	GAMEOPTION_DUMMY_04,
+	GAMEOPTION_SUPER_FORTS,
 	GAMEOPTION_DUMMY_05,
 	GAMEOPTION_DUMMY_06,
 	GAMEOPTION_DUMMY_07,

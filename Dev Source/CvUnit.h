@@ -176,6 +176,9 @@ public:
 	bool airBomb(int iX, int iY);
 
 	CvCity* bombardTarget(const CvPlot* pPlot) const;																							// Exposed to Python
+	// Super Forts begin *bombard*
+	CvPlot* bombardImprovementTarget(const CvPlot* pPlot) const;
+	// Super Forts end
 	bool canBombard(const CvPlot* pPlot = NULL);																										// Exposed to Python
 	int bombard(const CvPlot* pTarget, bool bCoundDamageOnly = false);
 
@@ -947,6 +950,8 @@ public:
 //<<<<Refined Defensive Strikes: End Modify
 	int getSpellDefenderValue(CvUnit* pLoopUnit, CvPlot* pTargetplot, int iDmgType) const;
 
+	bool isImmortalRebirthDestinationExisting();
+	CvCity* getImmortalRebirthDestination();
     void doEscape();
     void doImmortalRebirth();
 

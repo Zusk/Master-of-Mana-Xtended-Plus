@@ -237,5 +237,8 @@ void CyGlobalContextPythonInterface4(python::class_<CyGlobalContext>& x)
 		.def("getContactTypes", &CyGlobalContext::getContactTypes, "string () - Returns enum string")
 
 		.def("getDiplomacyPowerTypes", &CyGlobalContext::getDiplomacyPowerTypes, "string () - Returns enum string")
+
+		// lfgr UI 11/2020: Allow cycling through units in plot help
+		.def("changePlotHelpCycleIdx", &CyGlobalContext::changePlotHelpCycleIdx, "void (int) - Cycle through units in plot help" )
 		;
 }

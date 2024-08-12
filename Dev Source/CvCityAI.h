@@ -149,7 +149,11 @@ public:
 	bool AI_chooseProductionDistrict();
 	bool AI_chooseProductionNew();
 	bool AI_chooseProductionBarbarian();
+	bool AI_chooseBuildingHappiness();
+	bool AI_chooseBuildingHealth();
 	bool AI_chooseCheapCultureBuilding();
+	bool AI_chooseCheapProductionBuilding();
+	bool AI_chooseCheapGoldBuilding();
 	bool AI_chooseEarlyDefenseGroupUnit();
 	bool AI_chooseHero();
 	bool AI_chooseCityInvasionUnit();

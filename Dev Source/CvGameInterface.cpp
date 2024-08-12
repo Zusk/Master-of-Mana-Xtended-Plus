@@ -112,7 +112,8 @@ void CvGame::updateColoredPlots()
 								}
 							}
 							else if (plotDistance(iX, iY, iX + iDX, iY + iDY) <= iRange + iExtraRevealRange + 1) {	//This gives 3 extra spaces per side but its better than too few.
-								pLoopPlot->setRevealed(getActiveTeam(), true, false, NO_TEAM, false);
+								//SpyFanatic: removed as this cause OOS (moved in CvPlayer initFreeUnits9
+								//pLoopPlot->setRevealed(getActiveTeam(), true, false, NO_TEAM, false);
 							}
 						}
 					}

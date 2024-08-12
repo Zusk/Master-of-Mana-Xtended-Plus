@@ -1592,6 +1592,11 @@ int CyPlayer::getGoldPerTurnByPlayer(int /*PlayerTypes*/ eIndex)
 	return m_pPlayer ? m_pPlayer->getGoldPerTurnByPlayer((PlayerTypes) eIndex) : -1;
 }
 
+int CyPlayer::getGoldPerTurnNetAtZeroPercent()
+{
+	return m_pPlayer ? m_pPlayer->getGoldPerTurnNetAtZeroPercent() : -1;
+}
+
 bool CyPlayer::isFeatAccomplished(int /*FeatTypes*/ eIndex)
 {
 	return m_pPlayer ? m_pPlayer->isFeatAccomplished((FeatTypes)eIndex) : false;
@@ -2609,6 +2614,16 @@ bool CyPlayer::canCreateSummon(int eProject) const
 	return m_pPlayer ? m_pPlayer->canCreateSummon((ProjectTypes)eProject) : -1;
 }
 
+int CyPlayer::doTerraformRitual(int eRitual) const
+{
+	return m_pPlayer ? m_pPlayer->doTerraformRitual((ProjectTypes)eRitual, false) : -1;
+}
+void CyPlayer::doSummonRitual(int eProject) const
+{
+	   if (m_pPlayer)
+        m_pPlayer->doSummonRitual((ProjectTypes)eProject);
+}
+
 /*************************************************************************************************/
 /**	ADDON (Houses of Erebus) Sephi			                                 					**/
 /**																								**/
@@ -2713,9 +2728,9 @@ void CyPlayer::launchPickEquipmentPopup()
 		m_pPlayer->launchPickEquipmentPopup();
 }
 
-bool CyPlayer::canEquipUnit(CyUnit* pUnit, int Equipment, bool bTestVisible, bool bTreasure)
+bool CyPlayer::canEquipUnit(CyUnit* pUnit, int Equipment, bool bTestVisible, bool bTreasure, bool bResources)
 {
-	return m_pPlayer ? m_pPlayer->canEquipUnit(pUnit->getUnit(),(PromotionTypes)Equipment,bTestVisible, bTreasure) : -1;
+	return m_pPlayer ? m_pPlayer->canEquipUnit(pUnit->getUnit(),(PromotionTypes)Equipment,bTestVisible, bTreasure, bResources) : -1;
 }
 
 bool CyPlayer::isCanEverSpellResearch(int iSpellResearch)
@@ -2827,6 +2842,10 @@ int CyPlayer::getUnitSupportLimitTotal() const
 {
 	return m_pPlayer ? m_pPlayer->getUnitSupportLimitTotal() : -1;
 }
+int CyPlayer::getUnitSupportUsed() const
+{
+	return m_pPlayer ? m_pPlayer->getUnitSupportUsed() : -1;
+}
 /*************************************************************************************************/
 /**	    									END													**/
 /*************************************************************************************************/
@@ -2841,4 +2860,10 @@ int CyPlayer::AI_getEconomyType()
 	}
 
 	return NO_AIECONOMY;
+}
+
+void CyPlayer::setHumanDisabled(bool bNewValue)
+{
+	if (m_pPlayer)
+		m_pPlayer->setHumanDisabled(bNewValue);
 }

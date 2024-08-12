@@ -38,7 +38,7 @@ public:
 
 	bool canChangeWarPeace(TeamTypes eTeam, bool bAllowVassal = false) const;																			// Exposed to Python
 	DllExport bool canDeclareWar(TeamTypes eTeam) const;																// Exposed to Python
-	DllExport void declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan);										// Exposed to Python
+	DllExport void declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, TCHAR* szLog = NULL);										// Exposed to Python
 	DllExport void makePeace(TeamTypes eTeam, bool bBumpUnits = true);																		// Exposed to Python
 	bool canContact(TeamTypes eTeam) const;																							// Exposed to Python
 	void meet(TeamTypes eTeam, bool bNewDiplo);																		// Exposed to Python
@@ -57,7 +57,7 @@ public:
 
 	int getAtWarCount(bool bIgnoreMinors) const;																				// Exposed to Python
 	int getWarPlanCount(WarPlanTypes eWarPlan, bool bIgnoreMinors) const;								// Exposed to Python
-	int getAnyWarPlanCount(bool bIgnoreMinors) const;																		// Exposed to Python
+	int getAnyWarPlanCount(bool bIgnoreMinors,TeamTypes eTeam = NO_TEAM) const;																		// Exposed to Python
 	int getChosenWarCount(bool bIgnoreMinors) const;																		// Exposed to Python
 	int getHasMetCivCount(bool bIgnoreMinors) const;																		// Exposed to Python
 	bool hasMetHuman() const;																														// Exposed to Python

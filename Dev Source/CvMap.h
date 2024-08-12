@@ -304,7 +304,11 @@ public:
 	void recalculateAreas();																		// Exposed to Python
 
 	void resetPathDistance();																		// Exposed to Python
-	int calculatePathDistance(CvPlot *pSource, CvPlot *pDest);	// Exposed to Python
+	// Super Forts begin *canal* *choke*
+	//int calculatePathDistance(CvPlot *pSource, CvPlot *pDest);	// Exposed to Python
+	int calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvalidPlot = NULL);	// Exposed to Python
+	void calculateCanalAndChokePoints();	// Exposed to Python
+	// Super Forts end
 
 	void calculateWilderness();
 	void calculatePlanes();

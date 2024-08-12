@@ -1018,7 +1018,7 @@
 			<Button>Art/Interface/Buttons/Promotions/Destroyer.dds</Button>
 			<iCombatAuraIgnoreFirstStrikes>5</iCombatAuraIgnoreFirstStrikes>
 			<iCombatAuraIncreaseFirstStrikes>5</iCombatAuraIncreaseFirstStrikes>
-			<iCombatAuraFearEffectChange>5</iCombatAuraFearEffectChange>
+			<iCombatAuraFearEffectChange>100</iCombatAuraFearEffectChange>
         	<iPowerModifier>5</iPowerModifier>
             <iMinLevel>-1</iMinLevel>
 		</PromotionInfo>

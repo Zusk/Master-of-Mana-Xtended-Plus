@@ -48,7 +48,7 @@ import SevoPediaGear
 import SevoPediaSpell
 import random
 ##--------	BUGFfH: End Add
-
+import SevoPediaEpics
 import UnitUpgradesGraph
 ##--------	BUGFfH: Deleted by Denev 2009/09/11
 #import TraitUtil
@@ -215,6 +215,7 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 			SevoScreenEnums.PEDIA_BTS_CONCEPTS	: self.placeBTSConcepts,
 			SevoScreenEnums.PEDIA_WILDMANA_CONCEPTS	: self.placeWildmanaConcepts,
 			SevoScreenEnums.PEDIA_WILDMANA_GUIDES	: self.placeWildmanaGuides,
+			SevoScreenEnums.PEDIA_EPICS			: self.placeEpics,
 			SevoScreenEnums.PEDIA_HINTS			: self.placeHints,
 			SevoScreenEnums.PEDIA_SHORTCUTS  	: self.placeShortcuts,
 			SevoScreenEnums.PEDIA_STRATEGY  	: self.placeStrategy,
@@ -288,6 +289,7 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 			SevoScreenEnums.PEDIA_CONCEPTS		: SevoPediaHistory.SevoPediaHistory(self),
 			SevoScreenEnums.PEDIA_BTS_CONCEPTS	: SevoPediaHistory.SevoPediaHistory(self),
 			SevoScreenEnums.PEDIA_WILDMANA_CONCEPTS	: SevoPediaHistory.SevoPediaHistory(self),
+			SevoScreenEnums.PEDIA_EPICS			: SevoPediaEpics.SevoPediaEpics(self),
 			SevoScreenEnums.PEDIA_WILDMANA_GUIDES	: SevoPediaHistory.SevoPediaHistory(self),			
 			SevoScreenEnums.PEDIA_SHORTCUTS  	: SevoPediaHistory.SevoPediaHistory(self),
 			SevoScreenEnums.PEDIA_STRATEGY  	: SevoPediaHistory.SevoPediaHistory(self),
@@ -557,6 +559,7 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 ##--------	BUGFfH: Deleted by Denev 2009/08/12
 #		self.szCategoryConceptsNew	= localText.getText("TXT_KEY_PEDIA_CATEGORY_CONCEPT_NEW", ())
 ##--------	BUGFfH: End Delete
+		self.szCategoryEpics			= localText.getText("TXT_KEY_VICTORY_EPIC_ADVENTURE", ())
 		self.szCategoryHints			= localText.getText("TXT_KEY_PEDIA_CATEGORY_HINTS", ())
 		self.szCategoryShortcuts		= localText.getText("TXT_KEY_PEDIA_CATEGORY_SHORTCUTS", ())
 ##--------	BUGFfH: Deleted by Denev 2009/08/12
@@ -632,7 +635,7 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 #			["HINTS",	self.szCategoryConcepts],
 			["HINTS",	self.szCategoryConceptsWildmana],
 #			["HINTS",	self.szCategoryWildmanaGuides],			
-			
+			["HINTS",	self.szCategoryEpics],
 ##--------	BUGFfH: Deleted by Denev 2009/08/12
 #			["HINTS",	self.szCategoryConceptsNew],
 ##--------	BUGFfH: End Delete
@@ -1084,6 +1087,10 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 	def getWildmanaGuideList(self):
 		return self.getSortedList(gc.getNumWildmanaGuideInfos(), gc.getWildmanaGuideInfo)
 
+	def placeEpics(self):
+		self.list = self.getCivilizationList()
+		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV_EPIC, gc.getCivilizationInfo)
+
 	def placeHints(self):
 		screen = self.getScreen()
 		self.getScreen().deleteWidget("PediaMainItemList")
@@ -1276,6 +1283,8 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 ##--------	BUGFfH: End Add
 		elif (szLink == "PEDIA_MAIN_CONCEPT_WILDMANA"):
 			return self.pediaJump(SevoScreenEnums.PEDIA_MAIN, SevoScreenEnums.PEDIA_WILDMANA_CONCEPTS, True, True)
+#		elif (szLink == "PEDIA_EPICS"):
+#			return self.pediaJump(SevoScreenEnums.PEDIA_MAIN, SevoScreenEnums.PEDIA_EPICS, True, True)
 		elif (szLink == "PEDIA_MAIN_WILDMANA_GUIDE"):
 			return self.pediaJump(SevoScreenEnums.PEDIA_MAIN, SevoScreenEnums.PEDIA_WILDMANA_GUIDES, True, True)
 
@@ -1406,13 +1415,17 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 		bSortDifferent = false
 		bGear = false
 		bTrait = false
-		
+		bCivic = false
+
 		if getInfo == gc.getPromotionInfo and iCategory == SevoScreenEnums.TYPE_GEAR:
 			bSortDifferent = true
 			bGear = true
 		if getInfo == gc.getTraitInfo:
 			bSortDifferent=true		
 			bTrait = true
+		if getInfo == gc.getCivicInfo:
+			bSortDifferent=true
+			bCivic = true
 			
 		if not bSortDifferent:
 			for iItemID in range(numInfos):
@@ -1441,7 +1454,29 @@ class SevoPediaMain(CvPediaScreen.CvPediaScreen):
 										infoList.append( (szDescription[4:], iItemID, szDescription) )
 									else:
 										infoList.append( (szDescription, iItemID, szDescription) )
-						
+
+				if bCivic:
+					if iPass == 0:
+						szDescriptionHeader = localText.getText("TXT_KEY_PEDIA_CIVICS_PRIVILEGED_CLASS",		())
+					if iPass == 1:
+						szDescriptionHeader = localText.getText("TXT_KEY_PEDIA_CIVICS_VIRTUES",		())
+					if iPass == 2:
+						szDescriptionHeader = localText.getText("TXT_KEY_PEDIA_CIVICS_RELIGION",		())
+					if iPass == 3:
+						szDescriptionHeader = localText.getText("TXT_KEY_PEDIA_CIVICS_MEMBERSHIP",		())
+					if iPass == 4:
+						szDescriptionHeader = localText.getText("TXT_KEY_PEDIA_CIVICS_SPECIAL",		())
+
+					bAddedHeader = false
+					for iItemID in range(numInfos):
+						if getInfo(iItemID):
+							if getInfo(iItemID).getCivicOptionType() == iPass:
+								if not bAddedHeader:
+									bAddedHeader = true
+									infoList.append( (szDescriptionHeader, iItemID, szDescriptionHeader) )
+								szDescription = getInfo(iItemID).getDescription()
+								infoList.append( (szDescription, iItemID, szDescription) )
+
 				if bTrait:
 					#Each pass adds one of the trait categories to the list.  Then we spin through all the traits and determine which main trait the sub-trait belongs to.
 					if iPass == 0:

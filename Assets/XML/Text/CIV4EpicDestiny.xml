@@ -455,19 +455,19 @@
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVENTURESTEP_STAY_IN_PACIFISM_CIVIC</Tag>
-        <English>Turns in Pacifism: %D1 of %D2</English>
-        <French>Turns in Pacifism: %D1 of %D2</French>
-        <German>Turns in Pacifism: %D1 of %D2</German>
-        <Italian>Turns in Pacifism: %D1 of %D2</Italian>
-        <Spanish>Turns in Pacifism: %D1 of %D2</Spanish>
+        <English>Turns in Scholarship: %D1 of %D2</English>
+        <French>Turns in Scholarship: %D1 of %D2</French>
+        <German>Turns in Scholarship: %D1 of %D2</German>
+        <Italian>Turns in Scholarship: %D1 of %D2</Italian>
+        <Spanish>Turns in Scholarship: %D1 of %D2</Spanish>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVENTURESTEP_DEMAGOGS_CREATED</Tag>
-        <English>Demagogs recruited: %D1 of %D2</English>
-        <French>Demagogs recruited: %D1 of %D2</French>
-        <German>Demagogs recruited: %D1 of %D2</German>
-        <Italian>Demagogs recruited: %D1 of %D2</Italian>
-        <Spanish>Demagogs recruited: %D1 of %D2</Spanish>
+        <English>Footmans recruited: %D1 of %D2</English>
+        <French>Footmans recruited: %D1 of %D2</French>
+        <German>Footmans recruited: %D1 of %D2</German>
+        <Italian>Footmans recruited: %D1 of %D2</Italian>
+        <Spanish>Footmans recruited: %D1 of %D2</Spanish>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVENTURESTEP_DESTROY_CIVILIZATION_SHEAIM</Tag>
@@ -1391,11 +1391,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVENTURESTEP_CAST_EMPOWERED_LIGHTNING</Tag>
-        <English>Empowered Lightning cast: %D1 of %D2</English>
-        <French>Empowered Lightning cast: %D1 of %D2</French>
-        <German>Empowered Lightning cast: %D1 of %D2</German>
-        <Italian>Empowered Lightning cast: %D1 of %D2</Italian>
-        <Spanish>Empowered Lightning cast: %D1 of %D2</Spanish>
+        <English>Lightning Blast cast: %D1 of %D2</English>
+        <French>Lightning Blast cast: %D1 of %D2</French>
+        <German>Lightning Blast cast: %D1 of %D2</German>
+        <Italian>Lightning Blast cast: %D1 of %D2</Italian>
+        <Spanish>Lightning Blast cast: %D1 of %D2</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVENTURE_CLAN_OF_EMBERS_EPIC2</Tag>
@@ -1676,5 +1676,13 @@
         <German>Rise of Coatlann</German>
         <Italian>Rise of Coatlann</Italian>
         <Spanish>Rise of Coatlann</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ADVENTURESTEP_ABBEY</Tag>
+        <English>Abbey: %D1 of %D2</English>
+        <French>Abbey: %D1 of %D2</French>
+        <German>Abbey: %D1 of %D2</German>
+        <Italian>Abbey: %D1 of %D2</Italian>
+        <Spanish>Abbey: %D1 of %D2</Spanish>
     </TEXT>
 </Civ4GameText>

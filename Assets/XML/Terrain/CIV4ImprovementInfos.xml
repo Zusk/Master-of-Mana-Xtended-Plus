@@ -544,8 +544,15 @@
             <PythonAtRange></PythonAtRange>
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
-			<iImprovementClassType>0</iImprovementClassType>
-			<NativePlane>PLANE_MYRROR</NativePlane>
+             <!-- Super Forts -->
+            <iCulture>2</iCulture>
+			<iCultureRange>1</iCultureRange>
+			<!--iVisibilityChange>2</iVisibilityChange-->
+			<iSeeFrom>1</iSeeFrom>
+			<iUnique>2</iUnique>
+			<bBombardable>1</bBombardable>
+			<bUpgradeRequiresFortify>0</bUpgradeRequiresFortify>
+            <!-- Super Forts -->
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_CITADEL</Type>
@@ -602,8 +609,15 @@
             <PythonAtRange></PythonAtRange>
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
-			<iImprovementClassType>0</iImprovementClassType>
-			<NativePlane>PLANE_MYRROR</NativePlane>
+             <!-- Super Forts -->
+            <iCulture>2</iCulture>
+			<iCultureRange>1</iCultureRange>
+			<!--iVisibilityChange>2</iVisibilityChange-->
+			<iSeeFrom>1</iSeeFrom>
+			<iUnique>2</iUnique>
+			<bBombardable>1</bBombardable>
+			<bUpgradeRequiresFortify>0</bUpgradeRequiresFortify>
+            <!-- Super Forts -->
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_CITY_RUINS</Type>
@@ -743,7 +757,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<iGoldCost>50</iGoldCost>
 			<YieldCosts>
                 <iYield>0</iYield>
@@ -1037,7 +1051,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>21</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>5</iAdjacentFindResourceModify>
 			<iCultureChange>5</iCultureChange>
         </ImprovementInfo>
         <ImprovementInfo>
@@ -1538,8 +1552,15 @@
             <PythonAtRange></PythonAtRange>
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
-			<iImprovementClassType>0</iImprovementClassType>
-			<NativePlane>PLANE_MYRROR</NativePlane>
+             <!-- Super Forts -->
+            <iCulture>2</iCulture>
+			<iCultureRange>1</iCultureRange>
+			<!--iVisibilityChange>2</iVisibilityChange-->
+			<iSeeFrom>1</iSeeFrom>
+			<iUnique>2</iUnique>
+			<bBombardable>1</bBombardable>
+			<bUpgradeRequiresFortify>0</bUpgradeRequiresFortify>
+            <!-- Super Forts -->
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT</Type>
@@ -1856,7 +1877,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>6</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>2</iAdjacentFindResourceModify>
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_HELLFIRE</Type>
@@ -5112,7 +5133,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>15</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>4</iAdjacentFindResourceModify>
 			<iCultureChange>2</iCultureChange>
         </ImprovementInfo>
         <ImprovementInfo>
@@ -5185,7 +5206,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>9</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
 			<iCultureChange>1</iCultureChange>
         </ImprovementInfo>
         <ImprovementInfo>
@@ -6077,7 +6098,7 @@
                 <iYield>25</iYield>
 				<iYield>0</iYield>
 			</YieldCosts>
-			<iAdjacentFindResourceModify>10</iAdjacentFindResourceModify>			
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<bDefaultBuildableAllCivs>1</bDefaultBuildableAllCivs>
 		</ImprovementInfo>
 		<ImprovementInfo>
@@ -6132,7 +6153,7 @@
 			</RouteYieldChanges>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>20</iAdjacentFindResourceModify>						
+			<iAdjacentFindResourceModify>2</iAdjacentFindResourceModify>
 		</ImprovementInfo>
 		<ImprovementInfo>
 			<Type>IMPROVEMENT_TRADE3</Type>
@@ -6203,7 +6224,7 @@
 			</RouteYieldChanges>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>30</iAdjacentFindResourceModify>						
+			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
 		</ImprovementInfo>
 		<ImprovementInfo>
 			<Type>IMPROVEMENT_MANA_SHRINE</Type>
@@ -8159,7 +8180,9 @@
                     <BonusType>BONUS_HERBS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <bBonusTrade>1</bBonusTrade>
-                    <iDiscoverRand>0</iDiscoverRand>
+                    <!-- SpyFanatic: allow latest upgrade to spawn resource -->
+                    <!--iDiscoverRand>0</iDiscoverRand-->
+                    <iDiscoverRand>2000</iDiscoverRand>
                     <YieldChanges>
                         <iYieldChange>0</iYieldChange>
                         <iYieldChange>0</iYieldChange>
@@ -8192,7 +8215,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>10</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>4</iAdjacentFindResourceModify>
 			<iCultureChange>2</iCultureChange>
 		</ImprovementInfo>
 		<ImprovementInfo>
@@ -8246,7 +8269,9 @@
                     <BonusType>BONUS_HERBS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <bBonusTrade>1</bBonusTrade>
-                    <iDiscoverRand>0</iDiscoverRand>
+                     <!-- SpyFanatic: allow latest upgrade to spawn resource -->
+                    <!--iDiscoverRand>0</iDiscoverRand-->
+                    <iDiscoverRand>2000</iDiscoverRand>
                     <YieldChanges>
                         <iYieldChange>0</iYieldChange>
                         <iYieldChange>0</iYieldChange>
@@ -8279,7 +8304,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>4</iAdjacentFindResourceModify>
 			<iGoldCost>50</iGoldCost>
 			<YieldCosts>
                 <iYield>0</iYield>
@@ -8740,7 +8765,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<iGoldCost>50</iGoldCost>
 			<YieldCosts>
                 <iYield>0</iYield>
@@ -8823,7 +8848,7 @@
             <PythonOnMove></PythonOnMove>
             <SpawnUnitType>NONE</SpawnUnitType>
 			<iImprovementClassType>0</iImprovementClassType>
-			<iAdjacentFindResourceModify>3</iAdjacentFindResourceModify>
+			<iAdjacentFindResourceModify>1</iAdjacentFindResourceModify>
 			<iGoldCost>50</iGoldCost>
 			<YieldCosts>
                 <iYield>0</iYield>

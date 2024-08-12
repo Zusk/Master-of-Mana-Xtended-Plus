@@ -259,7 +259,7 @@
 			<Button>, ,Art/Interface/Buttons/Misc_Atlas2.dds,4,2</Button>
 			<CreateSound/>
 			<MovieDefineTag/>
-			<iAIWeight>0</iAIWeight>
+			<iAIWeight>-10000</iAIWeight>
 			<iManaCost>50</iManaCost>
 			<iNumTerrainChanges>1</iNumTerrainChanges>
 			<bCreateHills>1</bCreateHills>

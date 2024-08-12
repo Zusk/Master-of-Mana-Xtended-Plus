@@ -1680,7 +1680,7 @@ class CvCustomizableDomesticAdvisor:
 				else:
 					szReturn += u"X"
 
-			elif not city.canConstruct(self.BUILDING_DICT.get(szKey), False, False, False):
+			elif not city.canConstruct(self.BUILDING_DICT.get(szKey), False, False, False, False):
 				szReturn += u"-"
 
 			else:
@@ -1705,9 +1705,9 @@ class CvCustomizableDomesticAdvisor:
 				return self.objectHaveObsolete
 		elif city.getFirstBuildingOrder(arg) != -1:
 			return self.objectUnderConstruction
-		elif city.canConstruct(arg, False, False, False):
+		elif city.canConstruct(arg, False, False, False, False):
 			return self.objectPossible
-		elif city.canConstruct(arg, True, False, False):
+		elif city.canConstruct(arg, True, False, False, False):
 			return self.objectPossibleConcurrent
 		else:
 			return self.objectNotPossible
@@ -1879,7 +1879,7 @@ class CvCustomizableDomesticAdvisor:
 	def canAdviseToConstruct(self, city, i):
 		
 		info = gc.getBuildingInfo(i)
-		if not city.canConstruct(i, True, False, False):
+		if not city.canConstruct(i, True, False, False, False):
 			return False
 		if info.isGovernmentCenter() or info.isCapital():
 			return False

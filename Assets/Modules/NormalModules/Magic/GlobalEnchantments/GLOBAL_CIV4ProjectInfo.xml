@@ -1097,6 +1097,7 @@
 		<ProjectInfo>
 			<Type>PROJECT_GLOBAL_RICHES_OF_THE_SEA</Type>
 			<Description>TXT_KEY_PROJECT_GLOBAL_RICHES_OF_THE_SEA</Description>
+			<Civilopedia>Improves Chance to find a Sea Resource in your Empire.</Civilopedia>
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<TechPrereq>SPELLRESEARCH_RICHES_OF_THE_SEA</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
@@ -1258,7 +1259,7 @@
 		<ProjectInfo>
 			<Type>PROJECT_GLOBAL_WANING</Type>
 			<Description>Waning</Description>
-			<Civilopedia>TXT_KEY_PROJECT_PLACEHOLDER_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_PROJECT_WANING_PEDIA</Civilopedia>
 			<PrereqCivilization>CIVILIZATION_SIDAR</PrereqCivilization>
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
@@ -1343,6 +1344,7 @@
 			<CreateSound/>
 			<MovieDefineTag/>
 			<iManaCost>300</iManaCost>
+			<iAIWeight>-10000</iAIWeight>
 			<YieldChangeType>YIELD_STONE</YieldChangeType>
 			<iYieldChange>200</iYieldChange>
 			<iBonusPerMana>60</iBonusPerMana>
@@ -1362,6 +1364,7 @@
 			<CreateSound/>
 			<MovieDefineTag/>
 			<iManaCost>300</iManaCost>
+			<iAIWeight>-10000</iAIWeight>
 			<YieldChangeType>YIELD_LUMBER</YieldChangeType>
 			<iYieldChange>200</iYieldChange>
 			<iBonusPerMana>60</iBonusPerMana>
@@ -1381,6 +1384,7 @@
 			<CreateSound/>
 			<MovieDefineTag/>
 			<iManaCost>300</iManaCost>
+			<iAIWeight>-10000</iAIWeight>
 			<YieldChangeType>YIELD_LEATHER</YieldChangeType>
 			<iYieldChange>200</iYieldChange>
 			<iBonusPerMana>60</iBonusPerMana>
@@ -1400,6 +1404,7 @@
 			<CreateSound/>
 			<MovieDefineTag/>
 			<iManaCost>300</iManaCost>
+			<iAIWeight>-10000</iAIWeight>
 			<YieldChangeType>YIELD_METAL</YieldChangeType>
 			<iYieldChange>200</iYieldChange>
 			<iBonusPerMana>60</iBonusPerMana>
@@ -1441,6 +1446,7 @@
 			 <iFaithCost>500</iFaithCost>
 			 <bGlobalEnchantment>1</bGlobalEnchantment>
 			 <bEffectOnly>1</bEffectOnly>
+			 <PyCanDo>whitehandCanDo(iPlayer)</PyCanDo>
 			 <PyResult>whitehand(iPlayer)</PyResult>
 		 </ProjectInfo>
 		 <ProjectInfo>
@@ -1459,6 +1465,7 @@
 			 <iFaithCost>2000</iFaithCost>
 			 <bGlobalEnchantment>1</bGlobalEnchantment>
 			 <bEffectOnly>1</bEffectOnly>
+			 <PyCanDo>deepeningCanDo(iPlayer)</PyCanDo>
 			 <PyResult>deepening(iPlayer)</PyResult>
 		 </ProjectInfo>
 	</ProjectInfos>

@@ -57,7 +57,8 @@ def reqVisionary(pCaster):
 	if pPlot.getImprovementType() == -1:
 		return false
 
-	if pPlot.getUpgradeTimeLeft(pPlot.getImprovementType(), ePlayer) <= 0:
+	#SpyFanatic: only if upgrade take more than 1 turn
+	if pPlot.getUpgradeTimeLeft(pPlot.getImprovementType(), ePlayer) <= 1:
 		return false
 
 	return true
@@ -96,31 +97,55 @@ def	spellMiracleKilmorphProduction(pCaster):
 
 	pCity.changeProduction(60)
 
+#SpyFanatic: spawn in caster plot rather then in random one,like fellowship of leaves Call to Nature
+def reqSpellBountyOfKilmorph(caster):
+	pPlot = caster.plot()
+	if pPlot.isHills():
+		if pPlot.getOwner()==caster.getOwner():
+			if pPlot.getBonusType(-1)==-1:
+				return True
+	return False
+
 def spellBountyOfKilmorph(caster):
 	pPlayer = gc.getPlayer(caster.getOwner())
 
-	iMapPlots=CyMap().numPlots()
+	pPlot = caster.plot()
+	if pPlot.isHills():
+		if pPlot.getOwner()==caster.getOwner():
+			if pPlot.getBonusType(-1)==-1:
+				lBonusList = []
+				lBonusList = lBonusList + ['BONUS_IRON']
+				lBonusList = lBonusList + ['BONUS_COPPER']
+				lBonusList = lBonusList + ['BONUS_MITHRIL']
+				lBonusList = lBonusList + ['BONUS_GEMS']
+				lBonusList = lBonusList + ['BONUS_SILVER']
+				lBonusList = lBonusList + ['BONUS_AMBER']
 
-	listPlots = []
+				sBonus = lBonusList[CyGame().getSorenRandNum(len(lBonusList), "Pick Bonus")]
+				pPlot.setBonusType(gc.getInfoTypeForString(sBonus))
 
-	for i in range(iMapPlots):
-		pPlot = CyMap().plotByIndex(i)
-		if pPlot.isHills():
-			if pPlot.getOwner()==caster.getOwner():
-				if pPlot.getBonusType(-1)==-1:
-					listPlots.append(i)
+	#iMapPlots=CyMap().numPlots()
 
-	if len(listPlots)>0:
-		iRnd=CyGame().getSorenRandNum(len(listPlots), "Arrrgh")
-		pPlot = CyMap().plotByIndex(listPlots[iRnd])
-		lBonusList = []
-		lBonusList = lBonusList + ['BONUS_IRON']
-		lBonusList = lBonusList + ['BONUS_COPPER']
-		lBonusList = lBonusList + ['BONUS_MITHRIL']
-		lBonusList = lBonusList + ['BONUS_GEMS']
-		lBonusList = lBonusList + ['BONUS_SILVER']
-		lBonusList = lBonusList + ['BONUS_AMBER']
+	#listPlots = []
 
-		sBonus = lBonusList[CyGame().getSorenRandNum(len(lBonusList), "Pick Bonus")]
-		pPlot.setBonusType(gc.getInfoTypeForString(sBonus))
-		return
+	#for i in range(iMapPlots):
+	#	pPlot = CyMap().plotByIndex(i)
+	#	if pPlot.isHills():
+	#		if pPlot.getOwner()==caster.getOwner():
+	#			if pPlot.getBonusType(-1)==-1:
+	#				listPlots.append(i)
+
+	#if len(listPlots)>0:
+	#	iRnd=CyGame().getSorenRandNum(len(listPlots), "Arrrgh")
+	#	pPlot = CyMap().plotByIndex(listPlots[iRnd])
+	#	lBonusList = []
+	#	lBonusList = lBonusList + ['BONUS_IRON']
+	#	lBonusList = lBonusList + ['BONUS_COPPER']
+	#	lBonusList = lBonusList + ['BONUS_MITHRIL']
+	#	lBonusList = lBonusList + ['BONUS_GEMS']
+	#	lBonusList = lBonusList + ['BONUS_SILVER']
+	#	lBonusList = lBonusList + ['BONUS_AMBER']
+
+	#	sBonus = lBonusList[CyGame().getSorenRandNum(len(lBonusList), "Pick Bonus")]
+	#	pPlot.setBonusType(gc.getInfoTypeForString(sBonus))
+	#	return

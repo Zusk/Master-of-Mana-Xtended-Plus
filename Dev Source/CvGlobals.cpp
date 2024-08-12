@@ -142,6 +142,7 @@ m_routeFinder(NULL),
 m_borderFinder(NULL),
 m_areaFinder(NULL),
 m_plotGroupFinder(NULL),
+m_stepUnitFinder(NULL),
 m_pDLL(NULL),
 m_aiPlotDirectionX(NULL),
 m_aiPlotDirectionY(NULL),
@@ -254,6 +255,7 @@ m_iBUILDINGCLASS_BARD_DISTRICT(-1),
 m_iBUILDINGCLASS_LUXURY_DISTRICT(-1),
 m_iBUILDINGCLASS_FOREIGN_TRADE_DISTRICT(-1),
 m_iBUILDINGCLASS_RESOURCE_DISTRICT(-1),
+m_iBUILDINGCLASS_HERBALIST(-1),
 m_iBUILDINGCLASS_SCHOLA_ARCANA(-1),
 m_iBUILDINGCLASS_SALON(-1),
 m_iBUILDINGCLASS_PALACE(-1),
@@ -270,6 +272,7 @@ m_iSPECIALIST_ENGINEER(-1),
 m_iIMPROVEMENT_MANA_SHRINE(-1),
 m_iIMPROVEMENT_TRADE1(-1),
 m_iIMPROVEMENT_CAMP(-1),
+m_iDEFAULT_SPECIALIST(-1),
 m_TimeMeasure(NULL),
 /*************************************************************************************************/
 /**	ADDON (WINAMP) merged Sephi																	**/
@@ -578,6 +581,7 @@ void CvGlobals::uninit()
 	m_borderFinder=NULL;
 	m_areaFinder=NULL;
 	m_plotGroupFinder=NULL;
+	m_stepUnitFinder=NULL;
 
 	delete m_TimeMeasure;
 /*************************************************************************************************/
@@ -738,6 +742,10 @@ FAStar& CvGlobals::getAreaFinder()
 FAStar& CvGlobals::getPlotGroupFinder()
 {
 	return *m_plotGroupFinder;
+}
+FAStar& CvGlobals::getStepUnitFinder()
+{
+	return *m_stepUnitFinder;
 }
 
 NiPoint3& CvGlobals::getPt3Origin()
@@ -3421,6 +3429,7 @@ void CvGlobals::cacheGlobals(bool bXMLLoaded)
 		m_iBUILDINGCLASS_LUXURY_DISTRICT = GC.getDefineINT("BUILDINGCLASS_LUXURY_DISTRICT");
 		m_iBUILDINGCLASS_FOREIGN_TRADE_DISTRICT = GC.getDefineINT("BUILDINGCLASS_FOREIGN_TRADE_DISTRICT");
 		m_iBUILDINGCLASS_RESOURCE_DISTRICT = GC.getDefineINT("BUILDINGCLASS_RESOURCE_DISTRICT");
+		m_iBUILDINGCLASS_HERBALIST = GC.getDefineINT("BUILDINGCLASS_HERBALIST");
 		m_iBUILDINGCLASS_SCHOLA_ARCANA = GC.getDefineINT("BUILDINGCLASS_SCHOLA_ARCANA");
 		m_iBUILDINGCLASS_SALON = GC.getDefineINT("BUILDINGCLASS_SALON");
 		m_iBUILDINGCLASS_PALACE = GC.getDefineINT("BUILDINGCLASS_PALACE");
@@ -3437,6 +3446,7 @@ void CvGlobals::cacheGlobals(bool bXMLLoaded)
 		m_iIMPROVEMENT_MANA_SHRINE = GC.getDefineINT("IMPROVEMENT_MANA_SHRINE");
 		m_iIMPROVEMENT_TRADE1 = GC.getDefineINT("IMPROVEMENT_TRADE1");
 		m_iIMPROVEMENT_CAMP = GC.getDefineINT("IMPROVEMENT_CAMP");
+		m_iDEFAULT_SPECIALIST = GC.getDefineINT("DEFAULT_SPECIALIST");
 	}
 }
 
@@ -3965,6 +3975,11 @@ int CvGlobals::getBUILDINGCLASS_RESOURCE_DISTRICT()
 	return m_iBUILDINGCLASS_RESOURCE_DISTRICT;
 }
 
+int CvGlobals::getBUILDINGCLASS_HERBALIST()
+{
+	return m_iBUILDINGCLASS_HERBALIST;
+}
+
 int CvGlobals::getBUILDINGCLASS_SCHOLA_ARCANA()
 {
 	return m_iBUILDINGCLASS_SCHOLA_ARCANA;
@@ -4053,6 +4068,11 @@ int CvGlobals::getIMPROVEMENT_TRADE1()
 int CvGlobals::getIMPROVEMENT_CAMP()
 {
 	return m_iIMPROVEMENT_CAMP;
+}
+
+int CvGlobals::getDEFAULT_SPECIALIST()
+{
+	return m_iDEFAULT_SPECIALIST;
 }
 
 int CvGlobals::getGraphicalDetailPageInRange()
@@ -4968,4 +4988,5 @@ void CvGlobals::setRouteFinder(FAStar* pVal) { m_routeFinder = pVal; }
 void CvGlobals::setBorderFinder(FAStar* pVal) { m_borderFinder = pVal; }
 void CvGlobals::setAreaFinder(FAStar* pVal) { m_areaFinder = pVal; }
 void CvGlobals::setPlotGroupFinder(FAStar* pVal) { m_plotGroupFinder = pVal; }
+void CvGlobals::setStepUnitFinder(FAStar* pVal) { m_stepUnitFinder = pVal; }
 CvDLLUtilityIFaceBase* CvGlobals::getDLLIFaceNonInl() { return m_pDLL; }

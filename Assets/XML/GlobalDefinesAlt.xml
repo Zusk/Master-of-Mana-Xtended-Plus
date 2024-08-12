@@ -1087,7 +1087,33 @@
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>	
     <Define>
-        <DefineName>ENABLE_OOSLOG</DefineName><!-- Further OOS logging -->
-        <iDefineIntVal>2</iDefineIntVal><!-- 0 disabled, 1 enabled, 2 enabled but with filename without playerid usefull is multiple civ instances are logging to separate folders-->
+        <DefineName>ENABLE_OOSLOG</DefineName><!-- Tune OOS filename logging -->
+        <iDefineIntVal>1</iDefineIntVal><!-- 0 legacy (with player id in filename) if multiple instances are writing in the same log folder, 1 filename without playerid usefull is multiple civ instances are logging to separate folders -->
     </Define>
+<!-- Super Forts begin -->
+	<Define>
+		<DefineName>AI_WORKER_MAX_DISTANCE_FROM_CITY_OUT_BORDERS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SUPER_FORTS_DURATION_BEFORE_REVOLT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+<!-- Super Forts end -->
+    <Define>
+		<DefineName>PLOT_HELP_NUM_UNITS</DefineName>
+        <iDefineIntVal>5</iDefineIntVal> <!-- 15 original value -->
+	</Define>
+    <Define>
+		<DefineName>SHOW_WILDERNESS_INFO</DefineName>
+        <iDefineIntVal>1</iDefineIntVal> <!-- 0 dont show, 1 show -->
+	</Define>
+    <Define>
+		<DefineName>AI_DISCOUNT_GLOBAL_YIELD</DefineName>
+        <iDefineIntVal>0</iDefineIntVal> <!-- reduce global yield cost for buildings and units, default was 500 ps: still AI can always build-->
+	</Define>
+    <Define>
+		<DefineName>CLIMATE_MAP_ALLOW_FOUND_NO_FOOD</DefineName>
+        <iDefineIntVal>1</iDefineIntVal> <!-- 0 vanilla dont allow settle city if there is no food, 1 allow as for non-climate map to found where there is no food-->
+	</Define>
 </Civ4Defines>
